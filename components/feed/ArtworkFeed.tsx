@@ -2,22 +2,26 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
-import type { Artwork } from "@/lib/artworks/types";
+import { hideArtworkLocally, readHiddenArtworkIds, readStoredEvents, recordAnalyticsEvent, restoreHiddenArtworkHistory } from "@/lib/analytics/client";
+import type { AnalyticsEvent } from "@/lib/analytics/types";
+import type { RecommendationPage, RecommendedArtwork } from "@/lib/recommendations/types";
 import { ArtworkSlide } from "@/components/artwork/ArtworkSlide";
 
-const HIDDEN_KEY = "arte:guest:hidden";
 const SCROLL_KEY = "arte:discover:scrollY";
 
-function readHidden(): Set<string> {
-  try {
-    const parsed = JSON.parse(localStorage.getItem(HIDDEN_KEY) ?? "[]");
-    return new Set(Array.isArray(parsed) ? parsed : []);
-  } catch {
-    return new Set();
-  }
+type ApiPage = RecommendationPage & { profileEventCount?: number };
+
+async function requestPage(events: AnalyticsEvent[], hiddenArtworkIds: string[], cursor: string | null): Promise<ApiPage> {
+  const response = await fetch("/api/recommendations", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ events, hiddenArtworkIds, cursor, limit: 4 }),
+  });
+  if (!response.ok) throw new Error("Recommendation request failed");
+  return response.json() as Promise<ApiPage>;
 }
 
-export function ArtworkFeed({ initialItems, initialCursor }: { initialItems: Artwork[]; initialCursor: string | null }) {
+export function ArtworkFeed({ initialItems, initialCursor }: { initialItems: RecommendedArtwork[]; initialCursor: string | null }) {
   const router = useRouter();
   const [items, setItems] = useState(initialItems);
   const [cursor, setCursor] = useState(initialCursor);
@@ -25,13 +29,26 @@ export function ArtworkFeed({ initialItems, initialCursor }: { initialItems: Art
   const [error, setError] = useState<string | null>(null);
   const loadingRef = useRef(false);
   const sentinelRef = useRef<HTMLDivElement | null>(null);
+  const eventsRef = useRef<AnalyticsEvent[]>([]);
+  const hiddenRef = useRef<string[]>([]);
 
   useEffect(() => {
+    let cancelled = false;
     const frame = window.requestAnimationFrame(() => {
-      const hidden = readHidden();
-      if (hidden.size) setItems((current) => current.filter((artwork) => !hidden.has(artwork.id)));
+      eventsRef.current = readStoredEvents();
+      hiddenRef.current = readHiddenArtworkIds();
+      void requestPage(eventsRef.current, hiddenRef.current, null)
+        .then((page) => {
+          if (cancelled) return;
+          setItems(page.items);
+          setCursor(page.nextCursor);
+          recordAnalyticsEvent({ eventType: "feed_refresh", source: "discover_feed", payload: { profileEventCount: page.profileEventCount ?? 0 } });
+        })
+        .catch(() => {
+          if (!cancelled) setError("Personalization is temporarily unavailable. The default gallery remains available.");
+        });
     });
-    return () => window.cancelAnimationFrame(frame);
+    return () => { cancelled = true; window.cancelAnimationFrame(frame); };
   }, []);
 
   useEffect(() => {
@@ -39,16 +56,11 @@ export function ArtworkFeed({ initialItems, initialCursor }: { initialItems: Art
     const restoreFrame = window.requestAnimationFrame(() => {
       if (Number.isFinite(saved) && saved > 0) window.scrollTo({ top: saved, behavior: "auto" });
     });
-
     let frame = 0;
     const remember = () => {
       if (frame) return;
-      frame = window.requestAnimationFrame(() => {
-        sessionStorage.setItem(SCROLL_KEY, String(window.scrollY));
-        frame = 0;
-      });
+      frame = window.requestAnimationFrame(() => { sessionStorage.setItem(SCROLL_KEY, String(window.scrollY)); frame = 0; });
     };
-
     window.addEventListener("scroll", remember, { passive: true });
     return () => {
       window.cancelAnimationFrame(restoreFrame);
@@ -63,17 +75,11 @@ export function ArtworkFeed({ initialItems, initialCursor }: { initialItems: Art
     loadingRef.current = true;
     setLoading(true);
     setError(null);
-
     try {
-      const response = await fetch(`/api/feed?cursor=${encodeURIComponent(cursor)}&limit=4`);
-      if (!response.ok) throw new Error("Feed request failed");
-      const page = (await response.json()) as { items: Artwork[]; nextCursor: string | null };
-      const hidden = readHidden();
-
+      const page = await requestPage(eventsRef.current, hiddenRef.current, cursor);
       setItems((current) => {
         const known = new Set(current.map(({ id }) => id));
-        const additions = page.items.filter(({ id }) => !known.has(id) && !hidden.has(id));
-        return [...current, ...additions];
+        return [...current, ...page.items.filter(({ id }) => !known.has(id))];
       });
       setCursor(page.nextCursor);
     } catch {
@@ -87,11 +93,7 @@ export function ArtworkFeed({ initialItems, initialCursor }: { initialItems: Art
   useEffect(() => {
     const sentinel = sentinelRef.current;
     if (!sentinel || !cursor) return;
-
-    const observer = new IntersectionObserver(
-      ([entry]) => { if (entry.isIntersecting) void loadMore(); },
-      { rootMargin: "500px 0px" },
-    );
+    const observer = new IntersectionObserver(([entry]) => { if (entry.isIntersecting) void loadMore(); }, { rootMargin: "500px 0px" });
     observer.observe(sentinel);
     return () => observer.disconnect();
   }, [cursor, loadMore]);
@@ -101,7 +103,6 @@ export function ArtworkFeed({ initialItems, initialCursor }: { initialItems: Art
       if (event.metaKey || event.ctrlKey || event.altKey) return;
       const target = event.target as HTMLElement | null;
       if (target?.isContentEditable || ["INPUT", "TEXTAREA", "SELECT"].includes(target?.tagName ?? "")) return;
-
       const slides = Array.from(document.querySelectorAll<HTMLElement>("[data-artwork-id]"));
       if (!slides.length) return;
       const center = window.innerHeight / 2;
@@ -111,32 +112,22 @@ export function ArtworkFeed({ initialItems, initialCursor }: { initialItems: Art
         return distance < best.distance ? { index, distance } : best;
       }, { index: 0, distance: Number.POSITIVE_INFINITY }).index;
       const active = slides[activeIndex];
-
       if (event.key === "ArrowDown" || event.key === "ArrowUp") {
         event.preventDefault();
         const direction = event.key === "ArrowDown" ? 1 : -1;
         slides[Math.max(0, Math.min(slides.length - 1, activeIndex + direction))]?.scrollIntoView({ behavior: "smooth", block: "start" });
-      } else if (event.key.toLowerCase() === "l") {
-        active.querySelector<HTMLButtonElement>('[data-action="like"]')?.click();
-      } else if (event.key.toLowerCase() === "s") {
-        active.querySelector<HTMLButtonElement>('[data-action="save"]')?.click();
-      } else if (event.key.toLowerCase() === "i") {
-        const slug = active.dataset.artworkSlug;
-        if (slug) router.push(`/artwork/${slug}`);
-      } else if (event.key.toLowerCase() === "m") {
-        const slug = active.dataset.artworkSlug;
-        if (slug) router.push(`/artwork/${slug}#related`);
-      }
+      } else if (event.key.toLowerCase() === "l") active.querySelector<HTMLButtonElement>('[data-action="like"]')?.click();
+      else if (event.key.toLowerCase() === "s") active.querySelector<HTMLButtonElement>('[data-action="save"]')?.click();
+      else if (event.key.toLowerCase() === "i") { const slug = active.dataset.artworkSlug; if (slug) router.push(`/artwork/${slug}`); }
+      else if (event.key.toLowerCase() === "m") { const slug = active.dataset.artworkSlug; if (slug) router.push(`/artwork/${slug}#related`); }
     };
-
     window.addEventListener("keydown", handleKeyboard);
     return () => window.removeEventListener("keydown", handleKeyboard);
   }, [router]);
 
-  function hideArtwork(artwork: Artwork) {
-    const hidden = readHidden();
-    hidden.add(artwork.id);
-    localStorage.setItem(HIDDEN_KEY, JSON.stringify([...hidden]));
+  function hideArtwork(artwork: RecommendedArtwork) {
+    hideArtworkLocally(artwork.id);
+    hiddenRef.current = [...new Set([...hiddenRef.current, artwork.id])];
     setItems((current) => current.filter(({ id }) => id !== artwork.id));
   }
 
@@ -144,24 +135,17 @@ export function ArtworkFeed({ initialItems, initialCursor }: { initialItems: Art
     return (
       <section className="mx-auto flex min-h-[70vh] max-w-lg flex-col items-center justify-center px-6 text-center">
         <p className="display-serif text-4xl">Your current gallery is empty.</p>
-        <button type="button" onClick={() => { localStorage.removeItem(HIDDEN_KEY); window.location.reload(); }} className="focus-ring mt-7 border-b border-[var(--primary-ink)] pb-1 text-xs uppercase tracking-[0.14em]">Restore hidden works</button>
+        <button type="button" onClick={() => { restoreHiddenArtworkHistory(); window.location.reload(); }} className="focus-ring mt-7 border-b border-[var(--primary-ink)] pb-1 text-xs uppercase tracking-[0.14em]">Restore hidden works</button>
       </section>
     );
   }
 
   return (
     <div className="snap-y snap-proximity" data-feed-count={items.length}>
-      {items.map((artwork) => (
-        <ArtworkSlide key={artwork.id} artwork={artwork} onHide={() => hideArtwork(artwork)} />
-      ))}
+      {items.map((artwork, index) => <ArtworkSlide key={artwork.id} artwork={artwork} position={index} onHide={() => hideArtwork(artwork)} />)}
       <div ref={sentinelRef} data-feed-sentinel className="flex min-h-28 items-center justify-center px-6 py-10 text-center">
         {loading ? <p role="status" className="text-xs uppercase tracking-[0.15em] text-[var(--muted-text)]">Preparing the next room…</p> : null}
-        {error ? (
-          <div>
-            <p className="text-sm text-[var(--muted-text)]">{error}</p>
-            <button type="button" onClick={() => void loadMore()} className="focus-ring mt-4 border-b border-[var(--primary-ink)] pb-1 text-xs uppercase tracking-[0.12em]">Try again</button>
-          </div>
-        ) : null}
+        {error ? <div><p className="text-sm text-[var(--muted-text)]">{error}</p>{cursor ? <button type="button" onClick={() => void loadMore()} className="focus-ring mt-4 border-b border-[var(--primary-ink)] pb-1 text-xs uppercase tracking-[0.12em]">Try again</button> : null}</div> : null}
         {!cursor && !loading && !error ? <p className="text-xs uppercase tracking-[0.15em] text-[var(--muted-text)]">End of the current demo collection</p> : null}
       </div>
     </div>

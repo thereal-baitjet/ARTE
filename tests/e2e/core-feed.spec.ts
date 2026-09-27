@@ -28,41 +28,44 @@ test("cursor pagination appends unique artworks", async ({ page }) => {
   expect(new Set(ids).size).toBe(ids.length);
 });
 
-test("guest likes and saves persist across reload", async ({ page }) => {
+test("guest likes and saves persist across reload even when the feed adapts", async ({ page }) => {
   await page.goto("/discover", { waitUntil: "networkidle" });
   const first = page.locator("[data-artwork-id]").first();
-  const like = first.locator('[data-action="like"]');
-  const save = first.locator('[data-action="save"]');
-  await expect(like).toBeEnabled();
-  await like.click();
-  await save.click();
-  await expect(like).toHaveAttribute("aria-pressed", "true");
-  await expect(save).toHaveAttribute("aria-pressed", "true");
+  const artworkId = await first.getAttribute("data-artwork-id");
+  expect(artworkId).toBeTruthy();
+  await first.locator('[data-action="like"]').click();
+  await first.locator('[data-action="save"]').click();
   await page.reload({ waitUntil: "networkidle" });
-  const restored = page.locator("[data-artwork-id]").first();
-  await expect(restored.locator('[data-action="like"]')).toHaveAttribute("aria-pressed", "true");
-  await expect(restored.locator('[data-action="save"]')).toHaveAttribute("aria-pressed", "true");
+  const restored = page.locator(`[data-artwork-id="${artworkId}"]`);
+  if (!(await restored.count())) {
+    await page.locator("[data-feed-sentinel]").scrollIntoViewIfNeeded();
+    await expect.poll(async () => page.locator(`[data-artwork-id="${artworkId}"]`).count()).toBeGreaterThan(0);
+  }
+  await expect(page.locator(`[data-artwork-id="${artworkId}"]`).locator('[data-action="like"]')).toHaveAttribute("aria-pressed", "true");
+  await expect(page.locator(`[data-artwork-id="${artworkId}"]`).locator('[data-action="save"]')).toHaveAttribute("aria-pressed", "true");
 });
 
 test("artwork and artist routes work and feed position is restored", async ({ page }) => {
   await page.goto("/discover", { waitUntil: "networkidle" });
   const second = page.locator("[data-artwork-id]").nth(1);
+  const artworkHref = await second.getByRole("link", { name: "View artwork" }).getAttribute("href");
   await second.scrollIntoViewIfNeeded();
   await expect.poll(() => page.evaluate(() => window.scrollY)).toBeGreaterThan(100);
   await second.getByRole("link", { name: "View artwork" }).click();
-  await expect(page).toHaveURL(/\/artwork\/night-window-demo/);
-  await expect(page.getByRole("heading", { level: 1, name: "Night Window — Demo" })).toBeVisible();
+  await expect(page).toHaveURL(new RegExp(`${artworkHref}$`));
+  await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
   await page.goBack({ waitUntil: "networkidle" });
   await expect.poll(() => page.evaluate(() => window.scrollY)).toBeGreaterThan(100);
-  await second.getByRole("link", { name: "View artist" }).click();
-  await expect(page).toHaveURL(/\/artist\/atelier-nocturne-demo/);
-  await expect(page.getByRole("heading", { level: 1, name: "Atelier Nocturne — Demo" })).toBeVisible();
+  const currentSecond = page.locator("[data-artwork-id]").nth(1);
+  await currentSecond.getByRole("link", { name: "View artist" }).click();
+  await expect(page).toHaveURL(/\/artist\//);
+  await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
 });
 
 test("missing artwork imagery has an intentional fallback", async ({ page }) => {
-  await page.goto("/discover", { waitUntil: "networkidle" });
-  await expect(page.getByTestId("artwork-visual-missing")).toBeAttached();
-  await expect(page.getByText("Rights review in progress")).toBeAttached();
+  await page.goto("/artwork/image-awaiting-clearance-demo", { waitUntil: "networkidle" });
+  await expect(page.getByTestId("artwork-visual-missing")).toBeVisible();
+  await expect(page.getByText("Rights review in progress")).toBeVisible();
 });
 
 test("invalid feed cursors fail safely", async ({ request }) => {
