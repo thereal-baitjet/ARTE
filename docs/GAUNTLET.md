@@ -106,20 +106,74 @@ None; no application existed.
 
 ## Phase 1 — Foundation and Design System
 
+### Work completed
+- Bootstrapped a Next.js App Router application with React, TypeScript, Tailwind CSS, ESLint, and Playwright.
+- Added the ARTE design palette, typography, reduced-motion behavior, and focus treatment.
+- Added responsive desktop and mobile navigation.
+- Added reusable empty/loading states plus global error and not-found states.
+- Added the Phase 1 landing page and truthful placeholder routes for later product phases.
+- Added unit tests and CI.
+- Added browser validation using Playwright at the required responsive sizes.
+
+### Commands executed in CI
+GitHub Actions run: `36348443394` on commit `ce39c36d42db820863aeb0a8a2387b0f91e655ff`.
+
+Successful steps:
+- `npm install`
+- `npm run lint`
+- `npm run typecheck`
+- `npm test`
+- `npm run build`
+- `npx playwright install --with-deps chromium`
+- `npm run test:e2e`
+
+### Tests passed
+- Foundation unit tests passed.
+- Production build passed.
+- Playwright route-reachability test passed.
+- Playwright landing-shell tests passed at:
+  - 375 × 812 mobile
+  - 768 × 1024 tablet
+  - 1440 × 900 desktop
+  - 1920 × 1080 large desktop
+- Browser tests collect console and page errors and assert the list is empty.
+
+### Bugs discovered
+- No release-blocking Phase 1 defects reproduced in the passing gate run.
+
+### Bugs repaired
+- No reproducible defects remained after the passing run.
+
+### Screens inspected
+Playwright captured full-page screenshots for all four required viewport classes.
+Artifact:
+- `playwright-report`
+- Artifact ID: `10941257687`
+- SHA-256: `82be67b21b97e2213b93d50f615c5c4d909dab7a4e16f92aad7c4fe661cd2628`
+
+### Known external blockers
+- Local sandbox DNS still prevents cloning the repository directly; GitHub CI provides executable build and browser evidence.
+- No production deployment has been performed yet. Deployment is not required for the Phase 1 gate.
+
+### Phase 1 gate
+- Lint passes: PASS
+- Type check passes: PASS
+- Production build passes: PASS
+- Responsive shell visually verified: PASS
+- No console errors: PASS
+
+**Final gate status: PASS**
+
+---
+
+## Phase 2 — Database, Auth, and Rights
+
 Status: IN PROGRESS
 
 Planned deliverables:
-- Application shell
-- Design tokens
-- Typography
-- Responsive desktop/mobile navigation
-- Loading and error primitives
-- Landing page
-- Baseline CI validation
-
-Required gate evidence before PASS:
-- Lint passes
-- Type check passes
-- Production build passes
-- Responsive shell visually verified
-- No browser console errors
+- Supabase schema and migrations
+- Row-level security
+- Authentication boundary
+- Artwork source records
+- Rights and attribution model
+- Deterministic seed pipeline
