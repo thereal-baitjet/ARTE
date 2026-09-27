@@ -13,8 +13,20 @@ as $$
   );
 $$;
 
+create or replace function public.current_arte_role()
+returns public.arte_user_role
+language sql
+stable
+security definer
+set search_path = public
+as $
+  select role from public.profiles where id = (select auth.uid());
+$;
+
 revoke all on function public.is_admin() from public;
+revoke all on function public.current_arte_role() from public;
 grant execute on function public.is_admin() to authenticated;
+grant execute on function public.current_arte_role() to authenticated;
 
 alter table public.profiles enable row level security;
 alter table public.artists enable row level security;
@@ -53,7 +65,7 @@ on public.profiles for update
 to authenticated
 using ((select auth.uid()) = id or (select public.is_admin()))
 with check (
-  ((select auth.uid()) = id and role = (select p.role from public.profiles p where p.id = (select auth.uid())))
+  ((select auth.uid()) = id and role = (select public.current_arte_role()))
   or (select public.is_admin())
 );
 
