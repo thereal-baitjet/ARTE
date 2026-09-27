@@ -15,3 +15,11 @@ enabled = false
 
 [analytics]
 enabled = false
+
+[auth]
+enabled = true
+site_url = "http://127.0.0.1:3000"
+
+[auth.email]
+enable_signup = true
+enable_confirmations = false
