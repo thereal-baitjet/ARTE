@@ -2,7 +2,7 @@ begin;
 
 create extension if not exists pgtap with schema extensions;
 
-select plan(11);
+select plan(13);
 
 select has_table('public', 'artworks', 'artworks table exists');
 select has_table('public', 'artwork_sources', 'artwork_sources table exists');
@@ -10,8 +10,21 @@ select has_table('public', 'collections', 'collections table exists');
 
 select results_eq(
   $$select count(*)::bigint from public.artworks$$,
-  $$values (3::bigint)$$,
-  'deterministic seed loads exactly three Phase 2 demo artworks'
+  $$values (12::bigint)$$,
+  'deterministic seed loads all twelve personalized-feed demo artworks'
+);
+
+select results_eq(
+  $$select count(*)::bigint
+    from public.artists
+    where id in (
+      '10000000-0000-0000-0000-000000000001',
+      '10000000-0000-0000-0000-000000000002',
+      '10000000-0000-0000-0000-000000000003',
+      '10000000-0000-0000-0000-000000000004'
+    )$$,
+  $$values (4::bigint)$$,
+  'seed contains the four synthetic catalog artists'
 );
 
 select results_eq(
@@ -22,6 +35,16 @@ select results_eq(
     )$$,
   $$values (0::bigint)$$,
   'every seeded artwork has source provenance'
+);
+
+select results_eq(
+  $$select count(*)::bigint
+    from public.artworks a
+    where not exists (
+      select 1 from public.artwork_movements m where m.artwork_id = a.id
+    )$$,
+  $$values (0::bigint)$$,
+  'every seeded artwork has a movement classification'
 );
 
 select results_eq(
