@@ -160,15 +160,94 @@ Database/Auth validation — GitHub Actions run `36349274803`, commit `10437ecb4
 
 ## Phase 3 — Core Feed Vertical Slice
 
+### Work completed
+
+- Added a full-height, artwork-first discover feed using deterministic, clearly labeled synthetic demo work.
+- Added stable cursor pagination through `/api/feed` with duplicate suppression and safe invalid-cursor responses.
+- Added artwork presentation, metadata, rights-aware missing-image fallback, and interaction controls.
+- Added guest like/save persistence through local storage and authenticated Supabase persistence when connected.
+- Added optimistic interaction updates with rollback on Supabase failure.
+- Added artwork detail pages, artist detail pages, related works, source attribution, and a synthetic-data disclosure route.
+- Added feed-position preservation when opening detail pages and returning.
+- Added keyboard controls for previous/next artwork, like, save, artwork information, and related works.
+- Added hide/not-for-me behavior and a recovery path when all visible works are hidden.
+
+### Attack findings and repairs
+
+Initial CI run `36349835881` failed lint and correctly blocked the phase gate.
+
+Reproduced failures:
+
+- Unescaped apostrophe in the demo-source disclosure.
+- Synchronous state update inside a React effect.
+- Internal navigation used `window.location.assign` rather than the Next.js router.
+- Existing anonymous PostCSS export produced a lint warning.
+
+Repairs:
+
+- Replaced the unsafe text character.
+- Deferred hidden-state hydration through `requestAnimationFrame`.
+- Moved internal shortcut navigation to `useRouter().push()`.
+- Named the PostCSS configuration export.
+
+### Commands and evidence
+
+Passing GitHub Actions run `36349923375`, commit `f0936ac0577d2f614fd5194e127cbfbe739cbf93`:
+
+- `npm install` — PASS
+- `npm run lint` — PASS
+- `npm run typecheck` — PASS
+- `npm test` — PASS
+- `npm run build` — PASS
+- `npx playwright install --with-deps chromium` — PASS
+- `npm run test:e2e` — PASS
+
+### Browser verification
+
+Playwright verified:
+
+- Discover feed at 375 × 812 mobile with no console/page errors.
+- Discover feed at 1440 × 900 desktop with no console/page errors.
+- Cursor pagination appends unique artwork IDs.
+- Guest likes and saves survive page reload.
+- Artwork and artist routes resolve correctly.
+- Feed scroll position restores after returning from an artwork.
+- Intentional missing imagery renders a rights-first fallback rather than a broken asset.
+- Invalid cursors return HTTP 400 with a controlled error payload.
+- Arrow-key navigation advances the feed.
+
+Browser report artifact:
+
+- Name: `playwright-report`
+- Artifact ID: `10941534263`
+- Digest: `sha256:47894a35d8a325eb915e45d26f1e4f07a592466eebb8da6f55605061cf83f801`
+
+### External blockers
+
+- Hosted authenticated persistence requires the external Supabase project credentials documented in `.env.example`. Guest persistence and local Supabase ownership behavior are verified.
+
+### Gate
+
+- User can complete the core journey: **PASS**
+- Likes and saves persist: **PASS**
+- Feed does not duplicate records unexpectedly: **PASS**
+- Mobile and desktop visual checks pass: **PASS**
+- No broken-image crash: **PASS**
+
+**Final gate status: PASS**
+
+---
+
+## Phase 4 — Personalization
+
 **Status: IN PROGRESS**
 
 Planned gate deliverables:
 
-- Artwork-first discover feed
-- Artwork slide and metadata/actions
-- Cursor pagination
-- Artwork and artist detail routes
-- Feed-position preservation
-- Like and save persistence with safe guest fallback
-- Missing-image handling
-- Mobile and desktop browser validation
+- Typed event tracking
+- Deterministic recommendation profile
+- Explainable ranking service
+- Diversity controls
+- More Like This modes
+- Why This? explanations tied to actual signals
+- Hidden-work suppression
