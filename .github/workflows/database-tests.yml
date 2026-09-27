@@ -5,10 +5,14 @@ on:
     branches: ["main"]
     paths:
       - "supabase/**"
+      - "tests/integration/auth-local.mjs"
+      - "package.json"
       - ".github/workflows/database-tests.yml"
   pull_request:
     paths:
       - "supabase/**"
+      - "tests/integration/auth-local.mjs"
+      - "package.json"
       - ".github/workflows/database-tests.yml"
 
 permissions:
@@ -17,9 +21,13 @@ permissions:
 jobs:
   database:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install
       - uses: supabase/setup-cli@v1
         with:
           version: latest
@@ -29,6 +37,11 @@ jobs:
         run: supabase db reset --local
       - name: Run database tests
         run: supabase test db
+      - name: Run local Auth integration
+        shell: bash
+        run: |
+          eval "$(supabase status -o env)"
+          SUPABASE_URL="$API_URL"           SUPABASE_ANON_KEY="$ANON_KEY"           SUPABASE_SERVICE_ROLE_KEY="$SERVICE_ROLE_KEY"           node tests/integration/auth-local.mjs
       - name: Re-apply migrations and seed to prove repeatability
         run: supabase db reset --local
       - name: Re-run database tests
