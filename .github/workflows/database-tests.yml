@@ -31,8 +31,8 @@ jobs:
       - uses: supabase/setup-cli@v1
         with:
           version: latest
-      - name: Start local Supabase database
-        run: supabase db start
+      - name: Start local Supabase stack
+        run: supabase start
       - name: Apply migrations and seed
         run: supabase db reset --local
       - name: Run database tests
@@ -46,6 +46,6 @@ jobs:
         run: supabase db reset --local
       - name: Re-run database tests
         run: supabase test db
-      - name: Stop local Supabase database
+      - name: Stop local Supabase stack
         if: always()
         run: supabase stop --no-backup
