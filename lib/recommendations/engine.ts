@@ -197,7 +197,7 @@ function diversify(sorted: RecommendedArtwork[]) {
   while (remaining.length) {
     const window = result.slice(-DIVERSITY_WINDOW + 1);
     const previousArtist = result.at(-1)?.artist.id;
-    const candidateIndex = remaining.findIndex((candidate) => {
+    let candidateIndex = remaining.findIndex((candidate) => {
       const sameMovement = window.filter((item) => item.movement === candidate.movement).length;
       const sameMedium = window.filter((item) => item.features.mediumCategory === candidate.features.mediumCategory).length;
       return (
@@ -206,6 +206,11 @@ function diversify(sorted: RecommendedArtwork[]) {
         sameMedium < MAX_SAME_MEDIUM_IN_WINDOW
       );
     });
+
+    if (candidateIndex < 0) {
+      candidateIndex = remaining.findIndex((candidate) => candidate.artist.id !== previousArtist);
+    }
+
     result.push(remaining.splice(candidateIndex >= 0 ? candidateIndex : 0, 1)[0]);
   }
 
