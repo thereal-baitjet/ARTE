@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { DEMO_ARTWORKS } from "../../lib/artworks/demoArtworks.ts";
-import type { AnalyticsEvent, AnalyticsEventType } from "../../lib/analytics/types.ts";
+import { isAnalyticsEvent, type AnalyticsEvent, type AnalyticsEventType } from "../../lib/analytics/types.ts";
 import { buildTasteProfile, getRecommendationPage, rankArtworks } from "../../lib/recommendations/engine.ts";
 import { findSimilarArtworks } from "../../lib/recommendations/similarity.ts";
 
@@ -75,4 +75,31 @@ test("similarity modes produce evidence-based connections", () => {
   const unexpected = findSimilarArtworks(source, DEMO_ARTWORKS, "unexpected");
   assert.ok(unexpected.length > 0);
   assert.equal(unexpected[0].connection.signals[0].key, "contrast");
+});
+
+test("impressions mark work seen without inventing a preference", () => {
+  const profile = buildTasteProfile([event("artwork_impression", source.id, 1)], DEMO_ARTWORKS);
+  assert.deepEqual(profile.seenArtworkIds, [source.id]);
+  assert.deepEqual(profile.artists, {});
+  assert.equal(profile.eventCount, 0);
+  const work = rankArtworks(DEMO_ARTWORKS, profile).find(({ id }) => id === source.id);
+  assert.ok(work!.recommendation.components.seenPenalty > 0);
+});
+
+test("unknown artist IDs cannot inject affinity keys", () => {
+  const follow = { ...event("artist_follow", source.id, 1), artworkId: null, artistId: "constructor" };
+  const profile = buildTasteProfile([follow], DEMO_ARTWORKS);
+  assert.deepEqual(profile.artists, {});
+  assert.equal(profile.maxAffinity, 1);
+  assert.ok(rankArtworks(DEMO_ARTWORKS, profile).every(({ recommendation }) => Number.isFinite(recommendation.score)));
+});
+
+test("event validation rejects hostile optional fields and nested payloads", () => {
+  const valid = event("artist_follow", source.id, 1);
+  assert.equal(isAnalyticsEvent(valid), true);
+  assert.equal(isAnalyticsEvent({ ...valid, artistId: { toString: null } }), false);
+  assert.equal(isAnalyticsEvent({ ...valid, payload: { durationMs: Number.POSITIVE_INFINITY } }), false);
+  assert.equal(isAnalyticsEvent({ ...valid, payload: { unexpected: { nested: true } } }), false);
+  assert.equal(isAnalyticsEvent({ ...valid, viewport: { width: -1, height: 900 } }), false);
+  assert.equal(isAnalyticsEvent({ ...valid, timestamp: "invalid-date" }), false);
 });

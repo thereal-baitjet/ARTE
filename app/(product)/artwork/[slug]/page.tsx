@@ -27,7 +27,7 @@ export default async function ArtworkPage({ params }: Props) {
   return (
     <article className="px-6 py-8 md:px-10 lg:px-14 lg:py-12">
       <ArtworkDetailSignal artwork={artwork} />
-      <div className="flex items-center justify-between gap-4"><BackToFeed /><p className="text-[10px] uppercase tracking-[0.2em] text-[var(--oxblood)]">Demo artwork</p></div>
+      <div className="flex items-center justify-between gap-4"><BackToFeed /><p className="text-[10px] uppercase tracking-[0.2em] text-[var(--oxblood)]">{artwork.isDemo ? "Demo artwork" : "The Met · Open Access"}</p></div>
       <div className="mt-10 grid gap-10 xl:grid-cols-[minmax(0,1fr)_24rem]">
         <div className="flex justify-center"><ArtworkVisual artwork={artwork} /></div>
         <aside>
@@ -36,6 +36,7 @@ export default async function ArtworkPage({ params }: Props) {
           <p className="mt-3 text-sm text-[var(--muted-text)]">{artwork.year}</p>
           <p className="mt-7 text-sm leading-7">{artwork.medium}<br />{artwork.dimensions}<br />{artwork.movement}</p>
           <p className="mt-7 text-sm leading-7 text-[var(--secondary-ink)]">{artwork.description}</p>
+          {artwork.museum ? <p className="mt-5 text-xs leading-6 text-[var(--muted-text)]">Collection: <a className="focus-ring underline underline-offset-4" href={artwork.museum.url}>{artwork.museum.name}</a>, {artwork.museum.city}. This work is presented for discovery and is not offered for sale.</p> : null}
           <ArtworkActions artwork={artwork} context="detail" />
         </aside>
       </div>

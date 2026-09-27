@@ -2,16 +2,51 @@ begin;
 
 create extension if not exists pgtap with schema extensions;
 
-select plan(13);
+select plan(17);
 
 select has_table('public', 'artworks', 'artworks table exists');
 select has_table('public', 'artwork_sources', 'artwork_sources table exists');
 select has_table('public', 'collections', 'collections table exists');
 
 select results_eq(
-  $$select count(*)::bigint from public.artworks$$,
+  $$select count(*)::bigint from public.artworks where is_synthetic$$,
   $$values (12::bigint)$$,
   'deterministic seed loads all twelve personalized-feed demo artworks'
+);
+
+select results_eq(
+  $$select count(*)::bigint from public.artworks$$,
+  $$values (90::bigint)$$,
+  'deterministic seed loads twelve synthetic plus seventy-eight public-domain artworks'
+);
+
+select results_eq(
+  $$select count(*)::bigint from public.artworks
+    where not is_synthetic and image_rights_state = 'public_domain'
+      and image_license = 'CC0 1.0 Universal' and museum_id is not null$$,
+  $$values (78::bigint)$$,
+  'every real catalog artwork has museum linkage and public-domain license evidence'
+);
+
+select results_eq(
+  $$select count(*)::bigint from public.artworks a
+    where not a.is_synthetic and not exists (
+      select 1 from public.artwork_images i where i.artwork_id = a.id
+        and length(i.image_source) > 0 and length(i.rights_holder) > 0
+        and length(i.license) > 0 and length(i.source_url) > 0
+    )$$,
+  $$values (0::bigint)$$,
+  'every real catalog artwork has image source and attribution'
+);
+
+select results_eq(
+  $$select count(*)::bigint from public.artworks
+    where is_published and (
+      coalesce(length(image_creator), 0) = 0 or coalesce(length(image_source), 0) = 0
+      or coalesce(length(image_license), 0) = 0 or length(source_url) = 0
+    )$$,
+  $$values (0::bigint)$$,
+  'all published catalog records retain required rights evidence'
 );
 
 select results_eq(
@@ -59,7 +94,7 @@ select results_eq(
 select throws_ok(
   $$insert into public.artworks (
       artist_id, slug, title, source_name, source_url, metadata_source,
-      image_rights_state, is_published
+      image_source, image_creator, image_license, image_rights_state, is_synthetic, is_published
     ) values (
       '10000000-0000-0000-0000-000000000001',
       'unsafe-rights-test',
@@ -67,7 +102,11 @@ select throws_ok(
       'test',
       '/test',
       'test',
+      'Test source',
+      'Test attribution',
+      'Claim is awaiting rights review',
       'unclear',
+      false,
       true
     )$$,
   '23514',

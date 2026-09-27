@@ -1,5 +1,6 @@
-import { EmptyState } from "@/components/ui/EmptyState";
+import { CollectionsWorkspace } from "@/components/collections/CollectionsWorkspace";
+import { getArtworkCatalog } from "@/lib/artworks/feed";
 
 export default function CollectionsPage() {
-  return <EmptyState eyebrow="Collections" title="Your visual notebook starts here." description="Private-by-default collections will be enabled after authentication and row-level security are in place." />;
+  return <CollectionsWorkspace artworks={getArtworkCatalog()} />;
 }

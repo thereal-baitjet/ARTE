@@ -54,10 +54,12 @@ function connection(source: Artwork, candidate: Artwork, mode: SimilarityMode) {
 
   const paletteScore = jaccard(source.features.palette, candidate.features.palette);
   const compositionScore = jaccard(source.features.composition, candidate.features.composition);
-  const shapeScore = source.visual.shape === candidate.visual.shape ? 1 : 0;
+  const sourceShape = "shape" in source.visual ? source.visual.shape : source.visual.aspect;
+  const candidateShape = "shape" in candidate.visual ? candidate.visual.shape : candidate.visual.aspect;
+  const shapeScore = sourceShape === candidateShape ? 1 : 0;
   const score = paletteScore * 0.45 + compositionScore * 0.4 + shapeScore * 0.15;
   const values = [...palettes, ...compositions].slice(0, 3);
-  return { score, text: values.length ? `A visual connection through ${values.join(", ")}.` : "A looser visual connection based on overall form.", signals: [signal("visualSimilarity", "Visual similarity", values.length ? values : [source.visual.shape], score)] };
+  return { score, text: values.length ? `A metadata connection through ${values.join(", ")}.` : "A looser metadata connection based on format. Image embeddings are not enabled.", signals: [signal("visualSimilarity", "Metadata similarity", values.length ? values : [sourceShape], score)] };
 }
 
 export function findSimilarArtworks(source: Artwork, candidates: Artwork[], mode: SimilarityMode, limit = 4): SimilarityResult[] {

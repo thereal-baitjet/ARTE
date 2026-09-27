@@ -1,11 +1,13 @@
 # ARTE Gauntlet Report
 
-This is the evidence log for the ARTE release-gate process.
+This is the evidence log for the ARTE release-gate process. Historical passing gates below apply to their recorded commits. The September 27 release continuation records the current scope, new evidence, and remaining blockers; the full gauntlet is not complete.
 
 ## Status legend
 
 - **PASS** — all gate requirements have command or browser evidence.
 - **PASS WITH EXTERNAL BLOCKER** — implementation is complete and only an external account, credential, agreement, or domain action remains.
+- **PARTIAL** — a bounded implementation is working, but product requirements still need code or integration work.
+- **NOT VERIFIED** — required command, database, hosted, or deployment evidence has not been obtained.
 - **FAIL** — one or more gate requirements remain unverified or broken.
 
 ---
@@ -240,7 +242,7 @@ Browser report:
 
 ### External blockers
 
-- Cross-device hosted personalization requires the external Supabase project credentials documented in `.env.example`. Guest adaptation and the complete local Supabase persistence/security path are verified.
+- Historical evidence above verifies guest adaptation and the then-current local Supabase persistence/security path. Cross-device history hydration is not implemented; adding credentials alone does not complete hosted personalization. The new release migration and expanded seed also require their own database run, described in the continuation below.
 
 ### Gate
 
@@ -256,9 +258,9 @@ Browser report:
 
 ## Phase 5 — Search, Collections, and Art DNA
 
-**Status: IN PROGRESS**
+**Status: Guest application workflows verified; hosted and full-product acceptance remain pending.**
 
-Planned gate deliverables:
+Deliverables implemented in the release continuation below:
 
 - Structured and descriptive search
 - Search filters and typo tolerance
@@ -266,3 +268,97 @@ Planned gate deliverables:
 - Art DNA estimates derived from actual event history
 - Shareable taste card
 - Analytics/privacy controls and personalization reset
+
+
+---
+
+## Release continuation — September 27, 2026
+
+### Current outcome and scope
+
+The local guest application has passed its application validation suite and a follow-up visual/accessibility regression after a contrast fix. It includes a real public-domain artwork catalog, discovery, search, private collections, onboarding, Art DNA, local activity controls, demo market flows, local attention views, and a fail-closed administration boundary.
+
+This is not a completed commercial-product gauntlet or a verified Vercel deployment. Hosted database/authentication verification, cross-device personalization, a live database-backed public catalog, complete administration/ingestion, and commercial marketplace operations remain open. Some require implementation work, not only credentials.
+
+### Catalog and feature completion
+
+- Expanded the bundled catalog to **90 artworks: 78 Met Open Access records and 12 synthetic fixtures**. The app exposes **37 artist pages** and **21 displayed movement/category labels**. Museum classifications are presented as source categories, not invented art-historical movements. Attribution-qualified artist identities remain distinct; these figures are not a claim of 37 distinct real artists.
+- Archived per-record public-domain evidence, original museum source links and metadata, optimized local images, and matching deterministic database seed identities. Rights/source checks and a browser test verify a genuine museum artwork, decoded local image, visible attribution, and source link. See `CATALOG.md`.
+- Implemented structured/descriptive search, bounded typo tolerance, intersecting filters, URL state, and recoverable empty results.
+- Implemented guest saves and private named collections with create/add/rename/remove/delete/reload behavior. Independent saves survive collection deletion. Authenticated persistence code exists; the current hosted flow is not a passing gate without real backend verification.
+- Implemented optional onboarding with at least five selected works from twenty displayable candidates. Only committed selections add likes. Existing likes are not counted twice when onboarding repeats.
+- Implemented Art DNA from actual weighted local events, relative affinity explanations, a shareable text summary, passive tracking pause/resume, hidden-work restoration, and explicit local resets that preserve saved works/collections. Guest analytics stay on the device. Pausing passive tracking does not disable intentional likes, saves, searches, and other explicit actions.
+- Added a signed-in account activity reset with a separate confirmation. Its RPC accepts the originally confirmed user ID and checks it against `auth.uid()` inside the transaction. UI identity/epoch checks prevent a completed request for a previous account from clearing a newly selected account's local history. This code and its SQL tests are present; current hosted/SQL execution remains unverified.
+- Added artist following and attention views derived from actual local activity. Empty history remains honestly empty; no invented global popularity is displayed. Cross-device history hydration and a global, abuse-resistant attention aggregate are not implemented.
+- Added an explicitly demo-only market with currency/budget/availability filters, stale/expired inventory exclusions, a truthful verified-only empty state, and local inquiry drafts that can be reopened or deleted. A draft is not a sent inquiry or a purchase.
+- Added an offline, pluggable embedding contract and deterministic metadata-hash fallback. All vectors have 512 dimensions. Generate/update/rebuild commands write versioned JSON with input hashes; they do not inspect images, call paid models, alter live recommendations, or write to the database. A 90-record generation, unchanged 90-record reuse, and 90-record rebuild were exercised. See `EMBEDDINGS.md`.
+- Added locked admin views, authenticated role checks, narrow allowed mutations, bounded input, audit protections, and a repeatable internal synthetic-source adapter. Public browsing still uses the bundled catalog, so database archive/listing changes do not yet change the public catalog. Full artwork/source/artist CRUD, external-source administration, publication integration, and complete health operations remain unfinished. See `INGESTION.md`.
+
+### Attack findings and repairs
+
+- Repaired hiding the pagination cursor without losing the remainder of the gallery; subsequent pages keep a consistent ranking snapshot and suppress hidden records.
+- Hardened analytics payload validation and recommendation API bounds; unknown artist IDs cannot inject profile keys. Impressions mark works as seen without inventing positive affinity.
+- Hardened like/save/follow/account-state handling against storage failures, stale asynchronous responses, and account switches. Failed writes report failure and permit retry rather than claiming persistence.
+- Corrected feed visibility/dwell measurement when an artwork article is taller than a small viewport.
+- Added owner-only account-history reset policies and the expected-user-ID RPC check. Removed the unsafe zero-argument reset overload and disabled anonymous hosted analytics insertion.
+- Strengthened rights/publication and fresh-listing constraints, inquiry limits, privileged mutation validation, and transactional audit behavior. These SQL changes still await database execution evidence.
+- Corrected browser tests that assumed the original small catalog's first artwork would always appear on the initial page after expansion. Tests now act on the actual first displayed work or navigate directly when testing a specific fixture; production ranking was not weakened.
+- An earlier validation attempt included generated Playwright report JavaScript in lint. Generated report files were excluded from source linting, then the full command sequence was rerun successfully.
+- **Visual inspection after the full browser run found a real defect that the earlier assertions had missed:** an unlayered global anchor color rule overrode the landing CTA's light text, making its label effectively invisible on the dark button. The anchor defaults were moved into Tailwind's base layer. A computed foreground/background contrast assertion now requires at least 4.5:1 for the primary CTA. Fresh screenshots at all four viewports were visually reviewed after the repair.
+
+### Command and browser evidence
+
+The consolidated local application run is recorded in `/tmp/arte-final-validation.log`. These are local execution results, not new GitHub Actions run IDs:
+
+| Command/check | Observed result |
+| --- | --- |
+| `npm run lint` | PASS |
+| `npm run typecheck` | PASS |
+| `npm test` | PASS — 43 tests total: 5 JavaScript tests and 38 TypeScript tests |
+| `npm run build` | PASS — production build, 149 generated static pages |
+| `npm run test:e2e -- --workers=2` | PASS — 48 Chromium tests, zero retries used, 56.6 seconds |
+
+After the global-anchor contrast fix, the follow-up run in `/tmp/arte-contrast-validation.log` verified the changed surface:
+
+| Command/check | Observed result |
+| --- | --- |
+| `npm run lint` | PASS |
+| `npm run build` | PASS — production TypeScript check and 149 generated static pages |
+| `npm run test:e2e -- tests/e2e/foundation.spec.ts tests/e2e/release.spec.ts --workers=2` | PASS — 10 tests, zero retries used, 30.1 seconds |
+| Screenshot review | All four landing viewport captures reviewed after the contrast repair |
+
+The full 48-test run preceded the final CSS repair; the 10-test targeted run is the post-repair browser evidence. It is not a claim that all 48 tests were rerun after that CSS-only change.
+
+Browser dimensions: **375×812**, **768×1024**, **1440×900**, and **1920×1080**. The release suite checks `/`, `/search`, `/collections`, `/profile/taste`, `/market`, and `/trending` at each size for visible primary content, horizontal overflow, console/page errors, and Axe WCAG 2 A/AA and WCAG 2.1 A/AA violations. Those checks passed. Foundation checks additionally verify the primary CTA contrast and route reachability. The broader suite covers discovery, pagination, artist/artwork routes, save/reload, private collection CRUD, onboarding, Art DNA sharing/privacy, inquiry-draft persistence, invalid API input, listing expiry, guest admin denial, and a real museum image.
+
+Automated Axe results are scoped to those rendered routes and states; they are not a claim of exhaustive accessibility certification. The local browser used the configured Chromium executable override after the standard browser download failed; passing tests ran against a real Chromium process and a production `next start` server.
+
+### New database release gate — NOT VERIFIED
+
+`20260927220000_release_security.sql`, the expanded 90-work seed, and the updated database tests are included in the release changes for CI execution. The test plans total **49 pgTAP assertions: 17 foundation assertions plus 32 release assertions**. The workflow also starts Supabase, applies migrations/seed, runs local Auth integration, resets again, and reruns database tests to establish repeatability.
+
+The current revision of that workflow has **not yet supplied passing execution evidence**. Historical database passes above do not validate the new migration, the expanded seed, or the new reset/anonymous-write/rights/listing/audit controls. Do not mark this gate PASS until the current workflow succeeds and its run/commit are recorded. Real hosted credentials and hosted account isolation remain separately unverified.
+
+### Phase and release status
+
+| Area | Current status | What still blocks the full gate |
+| --- | --- | --- |
+| Guest discovery, search, collections, onboarding and Art DNA | PASS for the tested local guest scope | Hosted persistence and account-reset flows need current backend evidence |
+| Demo market and local attention | PASS for the explicitly labeled demo/local scope | Real inventory agreements, inquiry delivery, global attention and abuse controls require further work |
+| Embedding pipeline | PASS for offline deterministic metadata generation/update/rebuild | Image/semantic embeddings and live ranking integration are not implemented or claimed |
+| New database migration/seed/security gate | NOT VERIFIED | Current 49-assertion pgTAP/Auth/repeatability CI run pending |
+| Phase 7 — Administration and ingestion | PARTIAL | Static public catalog remains disconnected from DB publication; external-source workflows and full CRUD remain incomplete |
+| Cross-device personalization | PARTIAL / NOT IMPLEMENTED | Hosted-history retrieval, hydration, merging and device/account behavior need implementation and verification; keys alone are insufficient |
+| Vercel production deployment | BLOCKED / NOT VERIFIED | Authorized deployment and READY-state production smoke tests have not completed |
+
+### Vercel access and latest deployment direction
+
+The connected deployment endpoint was unavailable (`Tool deploy_to_vercel not found`). Reading ARTE in the intended Vercel team returned **HTTP 403** with re-authentication required. The interactive sign-in attempt did not complete after a passkey authentication failure. No verified production URL or READY deployment resulted from these attempts.
+
+The user's latest direction is to use the **Vercel CLI** instead of continuing the blocked browser authentication path. `docs/DEPLOYMENT.md` documents the CLI route. The release still needs an authorized CLI session, deployment of the intended repository revision, a recorded READY deployment URL/commit, and smoke checks on that actual URL. Local build/browser success is not deployment evidence.
+
+**Current release conclusion: tested local guest release candidate; full gauntlet, new database gate, and Vercel deployment remain open.**
+
+### Prepared delivery
+
+The final guest release includes a local CLI helper (`npm run deploy:vercel`), Vercel build configuration, and screenshot evidence in `screenshots/`. Following an initial approval block, the user explicitly authorized committing and publishing the release to GitHub on September 27, 2026. The release incorporates newer main commits for Supabase setup and Vercel configuration; neither is discarded. A source ZIP was also provided for local CLI deployment. GitHub publication is separate from successful deployment and hosted database verification.

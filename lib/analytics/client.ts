@@ -9,6 +9,8 @@ const SESSION_STORAGE_KEY = "arte:analytics:anonymous-session";
 const ANALYTICS_PREFERENCE_KEY = "arte:analytics:personalization-enabled";
 const HIDDEN_STORAGE_KEY = "arte:guest:hidden";
 const MAX_STORED_EVENTS = 500;
+const pendingHostedWrites = new Set<Promise<void>>();
+let hostedResetInProgress = false;
 
 const EXPLICIT_EVENTS = new Set<AnalyticsEventType>([
   "artwork_like",
@@ -45,7 +47,13 @@ function anonymousSessionId() {
 }
 
 export function personalizationAnalyticsEnabled() {
-  return localStorage.getItem(ANALYTICS_PREFERENCE_KEY) !== "false";
+  try { return localStorage.getItem(ANALYTICS_PREFERENCE_KEY) !== "false"; }
+  catch { return false; }
+}
+
+export function setPersonalizationAnalyticsEnabled(enabled: boolean) {
+  localStorage.setItem(ANALYTICS_PREFERENCE_KEY, String(enabled));
+  window.dispatchEvent(new Event("arte:analytics-preference"));
 }
 
 export function readStoredEvents(): AnalyticsEvent[] {
@@ -79,11 +87,46 @@ export function hideArtworkLocally(artworkId: string) {
 export function restoreHiddenArtworkHistory() {
   localStorage.removeItem(HIDDEN_STORAGE_KEY);
   writeStoredEvents(readStoredEvents().filter((event) => event.eventType !== "artwork_hide"));
+  window.dispatchEvent(new Event("arte:analytics-reset"));
+}
+
+/** A device-only reset. Never implies deletion of hosted events or account data. */
+export function resetLocalTasteHistory(clearGuestLikes = false) {
+  localStorage.removeItem(EVENT_STORAGE_KEY);
+  localStorage.removeItem(HIDDEN_STORAGE_KEY);
+  localStorage.removeItem(SESSION_STORAGE_KEY);
+  if (clearGuestLikes) {
+    localStorage.removeItem("arte:guest:likes");
+    localStorage.removeItem("arte:guest:follows");
+    window.dispatchEvent(new Event("arte:follows-changed"));
+  }
+  window.dispatchEvent(new Event("arte:analytics-reset"));
+}
+
+export async function resetHostedTasteHistory(expectedUserId: string) {
+  const client = getSupabaseBrowserClient();
+  if (!client) throw new Error("Account storage is unavailable.");
+  const { data, error } = await client.auth.getUser();
+  if (error || !data.user) throw new Error("Sign in before clearing account activity.");
+  if (data.user.id !== expectedUserId) throw new Error("Your signed-in account changed. Review the reset and try again.");
+  if (hostedResetInProgress) throw new Error("A reset is already in progress.");
+  hostedResetInProgress = true;
+  try {
+    // Finish earlier writes before deleting, so they cannot restore old history later.
+    await Promise.allSettled([...pendingHostedWrites]);
+    const current = await client.auth.getUser();
+    if (current.error || current.data.user?.id !== data.user.id) throw new Error("Your signed-in account changed. Review the reset and try again.");
+    // The RPC checks this ID against auth.uid() within the deletion transaction.
+    // A mutable browser session cannot redirect a confirmed reset to another account.
+    const result = await client.rpc("reset_my_personalization", { expected_user_id: expectedUserId });
+    if (result.error) throw new Error("Account activity could not be cleared. Try again later.");
+  } finally { hostedResetInProgress = false; }
 }
 
 type RecordEventInput = {
   eventType: AnalyticsEventType;
   artwork?: Artwork;
+  artistId?: string;
   source: string;
   position?: number | null;
   recommendationReason?: string | null;
@@ -94,9 +137,10 @@ async function persistEvent(event: AnalyticsEvent) {
   const client = getSupabaseBrowserClient();
   if (!client) return;
 
-  const { data } = await client.auth.getUser();
+  const { data, error } = await client.auth.getUser();
+  if (error || !data.user) return;
   await client.from("events").insert({
-    user_id: data.user?.id ?? null,
+    user_id: data.user.id,
     anonymous_session_id: event.anonymousSessionId,
     artwork_id: event.artworkId ?? null,
     artist_id: event.artistId ?? null,
@@ -114,12 +158,16 @@ async function persistEvent(event: AnalyticsEvent) {
 export function recordAnalyticsEvent(input: RecordEventInput): AnalyticsEvent | null {
   if (!personalizationAnalyticsEnabled() && !EXPLICIT_EVENTS.has(input.eventType)) return null;
 
+  // Private browsing and storage restrictions must never break a user action.
+  let sessionId: string;
+  try { sessionId = anonymousSessionId(); } catch { return null; }
+
   const event: AnalyticsEvent = {
     id: identifier("event"),
     eventType: input.eventType,
-    anonymousSessionId: anonymousSessionId(),
+    anonymousSessionId: sessionId,
     artworkId: input.artwork?.id ?? null,
-    artistId: input.artwork?.artist.id ?? null,
+    artistId: input.artwork?.artist.id ?? input.artistId ?? null,
     source: input.source,
     position: input.position ?? null,
     recommendationReason: input.recommendationReason ?? null,
@@ -130,8 +178,12 @@ export function recordAnalyticsEvent(input: RecordEventInput): AnalyticsEvent | 
 
   const events = readStoredEvents();
   events.push(event);
-  writeStoredEvents(events);
+  try { writeStoredEvents(events); } catch { return null; }
   window.dispatchEvent(new CustomEvent("arte:analytics-event", { detail: event }));
-  void persistEvent(event);
+  if (!hostedResetInProgress) {
+    const write = persistEvent(event).catch(() => { /* Local preferences remain usable when hosting is unavailable. */ });
+    pendingHostedWrites.add(write);
+    void write.finally(() => pendingHostedWrites.delete(write));
+  }
   return event;
 }

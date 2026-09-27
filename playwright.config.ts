@@ -8,9 +8,13 @@ export default defineConfig({
   use: {
     baseURL: "http://127.0.0.1:3000",
     trace: "retain-on-failure",
+    launchOptions: process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH ? {
+      executablePath: process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH,
+      args: ["--no-sandbox", "--disable-dev-shm-usage", "--no-zygote", "--disable-gpu"],
+    } : undefined,
   },
   webServer: {
-    command: "npm run start",
+    command: "npm run start -- --hostname 127.0.0.1",
     url: "http://127.0.0.1:3000",
     reuseExistingServer: false,
     timeout: 120_000,

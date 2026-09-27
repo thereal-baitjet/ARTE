@@ -1,4 +1,9 @@
 # Logs
+.met-import-cache/
+.cache/
+.vercel/
+playwright-report/
+test-results/
 logs
 *.log
 npm-debug.log*

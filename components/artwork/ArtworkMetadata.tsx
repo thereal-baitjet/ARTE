@@ -9,7 +9,7 @@ export function ArtworkMetadata({ artwork, position }: { artwork: Artwork | Reco
 
   return (
     <div>
-      <p className="text-[10px] uppercase tracking-[0.2em] text-[var(--oxblood)]">Demo artwork</p>
+      <p className="text-[10px] uppercase tracking-[0.2em] text-[var(--oxblood)]">{artwork.isDemo ? "Demo artwork" : "The Met · Open Access"}</p>
       <p className="mt-5 text-sm text-[var(--secondary-ink)]">{artwork.artist.name}</p>
       <h2 className="display-serif mt-2 text-4xl font-medium leading-none lg:text-5xl">
         <cite className="not-italic">{artwork.title}</cite>
@@ -18,7 +18,7 @@ export function ArtworkMetadata({ artwork, position }: { artwork: Artwork | Reco
       <dl className="mt-7 space-y-3 border-t border-[var(--hairline)] pt-5 text-sm leading-6">
         <div><dt className="sr-only">Medium</dt><dd>{artwork.medium}</dd></div>
         <div><dt className="sr-only">Dimensions</dt><dd>{artwork.dimensions}</dd></div>
-        <div><dt className="sr-only">Movement</dt><dd>{artwork.movement}</dd></div>
+        <div><dt className="sr-only">Movement or category</dt><dd>{artwork.movement}</dd></div>
       </dl>
       <p className="mt-6 text-sm leading-7 text-[var(--secondary-ink)]">{artwork.description}</p>
       <WhyThisRecommendation artwork={artwork} explanation={explanation} position={position} />

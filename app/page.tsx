@@ -9,7 +9,7 @@ const principles = [
 
 export default function Home() {
   return (
-    <main className="min-h-screen overflow-hidden">
+    <main id="main-content" className="min-h-screen overflow-hidden">
       <header className="page-shell flex items-center justify-between px-6 py-6 md:px-10">
         <Link href="/" className="focus-ring display-serif text-2xl tracking-[0.18em]" aria-label="ARTE home">
           ARTE
@@ -22,13 +22,13 @@ export default function Home() {
       <section className="page-shell grid min-h-[78vh] items-center gap-12 px-6 py-14 md:px-10 lg:grid-cols-[1.15fr_0.85fr] lg:py-20">
         <div>
           <p className="text-[11px] uppercase tracking-[0.28em] text-[var(--muted-text)]">
-            The personalized world of fine art
+            The personalized world of fine art · Early access
           </p>
           <h1 className="display-serif mt-7 max-w-4xl text-[clamp(4rem,9vw,8.8rem)] font-medium leading-[0.82] tracking-[-0.045em]">
             Discover art that discovers you.
           </h1>
           <p className="mt-9 max-w-xl text-base leading-8 text-[var(--secondary-ink)] md:text-lg">
-            An endless private museum that learns from what holds your attention—without reducing art to an engagement trick.
+            A private gallery that learns from what holds your attention. Explore visual connections, collect what moves you, and discover your Art DNA.
           </p>
           <div className="mt-10 flex flex-wrap gap-5">
             <Link href="/discover" className="focus-ring bg-[var(--primary-ink)] px-6 py-4 text-xs uppercase tracking-[0.14em] text-[var(--soft-white)]">
@@ -38,6 +38,7 @@ export default function Home() {
               Shape your taste
             </Link>
           </div>
+          <p className="mt-6 max-w-xl text-xs leading-6 text-[var(--muted-text)]">Try the working demo without an account. Explore public-domain museum artworks and clearly labeled synthetic studies. Real marketplace inventory is not connected yet.</p>
         </div>
 
         <div className="relative mx-auto w-full max-w-xl">
@@ -54,6 +55,14 @@ export default function Home() {
           </p>
         </div>
       </section>
+      <footer className="page-shell flex flex-wrap items-center justify-between gap-6 px-6 py-9 text-xs text-[var(--muted-text)] md:px-10">
+        <span>ARTE · Discover art that discovers you.</span>
+        <nav aria-label="Footer" className="flex flex-wrap gap-6">
+          <Link href="/sources/demo" className="focus-ring underline underline-offset-4">Sources & rights</Link>
+          <Link href="/settings" className="focus-ring underline underline-offset-4">Privacy controls</Link>
+          <Link href="/profile" className="focus-ring underline underline-offset-4">Your account</Link>
+        </nav>
+      </footer>
 
       <section className="border-y border-[var(--hairline)] bg-[var(--soft-white)]">
         <div className="page-shell grid gap-10 px-6 py-14 md:grid-cols-2 md:px-10 lg:grid-cols-4">

@@ -12,6 +12,7 @@ function weightFor(event: AnalyticsEvent) { return event.eventType === "artwork_
 export function buildTasteProfile(events: AnalyticsEvent[], artworks: Artwork[]): TasteProfile {
   const profile: TasteProfile = { artists: {}, movements: {}, media: {}, palettes: {}, moods: {}, compositions: {}, subjects: {}, tags: {}, hiddenArtworkIds: [], seenArtworkIds: [], eventCount: 0, maxAffinity: 1 };
   const artworkIndex = new Map(artworks.map((artwork) => [artwork.id, artwork]));
+  const knownArtists = new Set(artworks.map((artwork) => artwork.artist.id));
   const hidden = new Set<string>();
   const seen = new Set<string>();
 
@@ -19,9 +20,9 @@ export function buildTasteProfile(events: AnalyticsEvent[], artworks: Artwork[])
     const artwork = event.artworkId ? artworkIndex.get(event.artworkId) : undefined;
     const weight = weightFor(event);
     if (event.eventType === "artwork_hide" && event.artworkId) hidden.add(event.artworkId);
-    if (event.artworkId && weight !== 0) seen.add(event.artworkId);
+    if (artwork && (weight !== 0 || event.eventType === "artwork_impression" || event.eventType === "artwork_visible")) seen.add(artwork.id);
     if (!artwork || weight === 0) {
-      if (event.artistId && (event.eventType === "artist_follow" || event.eventType === "artist_unfollow")) { add(profile.artists, event.artistId, weight); profile.eventCount += 1; }
+      if (event.artistId && knownArtists.has(event.artistId) && (event.eventType === "artist_follow" || event.eventType === "artist_unfollow")) { add(profile.artists, event.artistId, weight); profile.eventCount += 1; }
       continue;
     }
     add(profile.artists, artwork.artist.id, weight);

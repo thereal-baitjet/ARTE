@@ -1,5 +1,7 @@
 # Supabase Setup for ARTE
 
+> Release note: apply **all** migrations in `supabase/migrations/` in timestamp order, including the release security migration. The historical two-file manual example below is incomplete for the current release. See `docs/DEPLOYMENT.md` and `docs/RELEASE-CHECKLIST.md` for current requirements and unverified hosted flows.
+
 ## Quick Start
 
 ### 1. Create a Supabase Project

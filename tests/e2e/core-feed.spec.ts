@@ -79,3 +79,20 @@ test("keyboard navigation advances the feed", async ({ page }) => {
   await page.keyboard.press("ArrowDown");
   await expect.poll(() => page.evaluate(() => window.scrollY)).toBeGreaterThan(100);
 });
+
+test("hiding the pagination cursor still loads the rest of the gallery", async ({ page }) => {
+  const failedResponses: number[] = [];
+  page.on("response", (response) => {
+    if (response.url().includes("/api/recommendations") && !response.ok()) failedResponses.push(response.status());
+  });
+  await page.goto("/discover", { waitUntil: "networkidle" });
+  await expect(page.locator("[data-artwork-id]")).toHaveCount(4);
+  const last = page.locator("[data-artwork-id]").last();
+  const hiddenId = await last.getAttribute("data-artwork-id");
+  // Invoke the button before scrolling near the sentinel can load the next page.
+  await last.getByRole("button", { name: "Hide / Not for me" }).evaluate((button: HTMLButtonElement) => button.click());
+  await expect(page.locator(`[data-artwork-id="${hiddenId}"]`)).toHaveCount(0);
+  await page.locator("[data-feed-sentinel]").scrollIntoViewIfNeeded();
+  await expect.poll(async () => page.locator("[data-artwork-id]").count()).toBeGreaterThan(4);
+  expect(failedResponses).toEqual([]);
+});

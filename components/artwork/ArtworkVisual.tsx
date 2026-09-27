@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { Artwork } from "@/lib/artworks/types";
 
 const widthClasses = {
@@ -15,6 +16,14 @@ const primaryShapeClasses = {
 
 export function ArtworkVisual({ artwork, compact = false }: { artwork: Artwork; compact?: boolean }) {
   const widthClass = compact ? "max-w-full" : widthClasses[artwork.visual.aspect];
+
+  if (artwork.visual.kind === "image") {
+    return (
+      <div className={`${widthClass} relative flex w-full items-center justify-center overflow-hidden border border-black/10`} style={{ aspectRatio: artwork.visual.aspectRatio, background: artwork.visual.background }}>
+        <Image src={artwork.visual.src} alt={artwork.visual.alt} fill sizes={compact ? "(max-width: 767px) 100vw, (max-width: 1279px) 45vw, 30vw" : "(max-width: 767px) 100vw, (max-width: 1279px) 75vw, 65vw"} className="object-contain" />
+      </div>
+    );
+  }
 
   if (artwork.visual.kind === "missing") {
     return (

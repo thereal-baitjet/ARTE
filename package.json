@@ -9,16 +9,21 @@
     "start": "next start",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
-    "test": "node --test tests/unit/**/*.test.mjs && node --experimental-strip-types --test tests/unit/recommendations.test.ts",
-    "test:e2e": "playwright test"
+    "test": "node --test tests/unit/**/*.test.mjs && node --experimental-strip-types --test tests/unit/*.test.ts",
+    "test:e2e": "playwright test",
+    "embeddings:generate": "node --experimental-strip-types scripts/embeddings.ts generate",
+    "embeddings:update": "node --experimental-strip-types scripts/embeddings.ts update",
+    "embeddings:rebuild": "node --experimental-strip-types scripts/embeddings.ts rebuild",
+    "deploy:vercel": "bash scripts/deploy-vercel.sh"
   },
   "dependencies": {
+    "@supabase/supabase-js": "2",
     "next": "16.3.6",
     "react": "19.3.0",
-    "react-dom": "19.3.0",
-    "@supabase/supabase-js": "2"
+    "react-dom": "19.3.0"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
     "@playwright/test": "^1.55.0",
     "@tailwindcss/postcss": "4.3.0",
     "@types/node": "^22.15.0",
@@ -30,6 +35,6 @@
     "typescript": "^5.8.0"
   },
   "engines": {
-    "node": ">=22.0.0"
+    "node": "22.x"
   }
 }

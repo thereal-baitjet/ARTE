@@ -1,15 +1,23 @@
 export type ArtworkShape = "orb" | "bands" | "frame" | "veil";
 export type ArtworkAspect = "portrait" | "landscape" | "square";
 
-export type ArtworkVisual = {
-  kind: "gradient" | "missing";
+type ArtworkVisualBase = {
   aspect: ArtworkAspect;
   aspectRatio: string;
   background: string;
-  accent: string;
-  shape: ArtworkShape;
   alt: string;
 };
+
+export type ArtworkVisual = ArtworkVisualBase & ({
+  kind: "gradient" | "missing";
+  accent: string;
+  shape: ArtworkShape;
+} | {
+  kind: "image";
+  src: string;
+  width: number;
+  height: number;
+});
 
 export type ArtworkFeatures = {
   palette: string[];
@@ -43,7 +51,8 @@ export type Artwork = {
   artist: Artist;
   visual: ArtworkVisual;
   recommendationReason: string;
-  isDemo: true;
+  isDemo: boolean;
+  museum?: { name: string; city: string; country: string; url: string };
   rights: {
     imageSource: string;
     rightsHolder: string;

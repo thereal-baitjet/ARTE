@@ -19,7 +19,23 @@ for (const viewport of viewports) {
     await page.goto("/", { waitUntil: "networkidle" });
 
     await expect(page.getByRole("heading", { name: /discover art that discovers you/i })).toBeVisible();
-    await expect(page.getByRole("link", { name: /start discovering/i })).toBeVisible();
+    const primaryAction = page.getByRole("link", { name: /start discovering/i });
+    await expect(primaryAction).toBeVisible();
+    const contrast = await primaryAction.evaluate((element) => {
+      const style = getComputedStyle(element);
+      const luminance = (color: string) => {
+        const channels = color.match(/[\d.]+/g)!.slice(0, 3).map(Number).map((channel) => {
+          const value = channel / 255;
+          return value <= 0.04045 ? value / 12.92 : ((value + 0.055) / 1.055) ** 2.4;
+        });
+        return channels[0] * 0.2126 + channels[1] * 0.7152 + channels[2] * 0.0722;
+      };
+      const text = luminance(style.color);
+      const background = luminance(style.backgroundColor);
+      return { text, background, ratio: (Math.max(text, background) + 0.05) / (Math.min(text, background) + 0.05) };
+    });
+    expect(contrast.text).toBeGreaterThan(contrast.background);
+    expect(contrast.ratio).toBeGreaterThanOrEqual(4.5);
 
     const screenshot = await page.screenshot({ fullPage: true });
     await testInfo.attach(`landing-${viewport.name}`, { body: screenshot, contentType: "image/png" });

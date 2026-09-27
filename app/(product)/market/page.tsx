@@ -1,5 +1,8 @@
-import { EmptyState } from "@/components/ui/EmptyState";
+import type { Metadata } from "next";
+import { MarketExplorer } from "@/components/market/MarketExplorer";
+
+export const metadata: Metadata = { title: "Market", description: "Explore ARTE’s clearly labeled demo market, compare sample prices, and keep a private inquiry draft." };
 
 export default function MarketPage() {
-  return <EmptyState eyebrow="Market" title="Discovery before checkout." description="Verified and demo listings will be clearly separated. ARTE will not expose a fake checkout or synthetic inventory as real." />;
+  return <MarketExplorer />;
 }

@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useId, useRef, useState } from "react";
 import { recordAnalyticsEvent } from "@/lib/analytics/client";
 import { getSupabaseBrowserClient } from "@/lib/supabase/client";
 import type { Artwork } from "@/lib/artworks/types";
@@ -16,12 +16,11 @@ const storageKeys: Record<InteractionTable, string> = {
 };
 
 function readGuestSet(table: InteractionTable): Set<string> {
+  const raw = localStorage.getItem(storageKeys[table]);
   try {
-    const parsed = JSON.parse(localStorage.getItem(storageKeys[table]) ?? "[]");
-    return new Set(Array.isArray(parsed) ? parsed : []);
-  } catch {
-    return new Set();
-  }
+    const parsed: unknown = JSON.parse(raw ?? "[]");
+    return new Set(Array.isArray(parsed) ? parsed.filter((value): value is string => typeof value === "string") : []);
+  } catch { return new Set(); }
 }
 
 function writeGuestSet(table: InteractionTable, values: Set<string>) {
@@ -44,78 +43,137 @@ function PersistentToggle({ table, artwork, inactiveLabel, activeLabel, action, 
   const [active, setActive] = useState(false);
   const [ready, setReady] = useState(false);
   const [pending, setPending] = useState(false);
-  const [userId, setUserId] = useState<string | null>(null);
   const [status, setStatus] = useState<string | null>(null);
+  const [revision, setRevision] = useState(0);
+  const identityEpoch = useRef(0);
+  const owner = useRef<string | null | undefined>(undefined);
+  const inFlight = useRef(false);
+  const originId = useId();
+  const client = getSupabaseBrowserClient();
+
+  useEffect(() => {
+    function invalidateIdentity() {
+      identityEpoch.current++;
+      owner.current = undefined;
+    }
+    function refresh() {
+      invalidateIdentity();
+      setReady(false);
+      setRevision((value) => value + 1);
+    }
+    const subscription = client?.auth.onAuthStateChange((event, session) => {
+      if (event === "INITIAL_SESSION") return;
+      if (event === "SIGNED_OUT" || session?.user.id !== owner.current) refresh();
+    }).data.subscription;
+    function storageChanged(event: StorageEvent) {
+      if (event.key === null || event.key === storageKeys[table]) refresh();
+    }
+    function interactionChanged(event: Event) {
+      if ((event as CustomEvent<{ originId?: string }>).detail?.originId !== originId) refresh();
+    }
+    window.addEventListener("storage", storageChanged);
+    window.addEventListener(`arte:${table}-changed`, interactionChanged);
+    window.addEventListener("arte:analytics-reset", refresh);
+    return () => {
+      invalidateIdentity();
+      subscription?.unsubscribe();
+      window.removeEventListener("storage", storageChanged);
+      window.removeEventListener(`arte:${table}-changed`, interactionChanged);
+      window.removeEventListener("arte:analytics-reset", refresh);
+    };
+  }, [client, originId, table]);
 
   useEffect(() => {
     let cancelled = false;
+    const epoch = ++identityEpoch.current;
     async function hydrate() {
-      const client = getSupabaseBrowserClient();
-      if (!client) {
-        if (!cancelled) { setActive(readGuestSet(table).has(artwork.id)); setReady(true); }
-        return;
+      setReady(false);
+      try {
+        const response = client ? await client.auth.getUser() : null;
+        if (response?.error && response.error.name !== "AuthSessionMissingError") throw response.error;
+        const user = response?.data.user ?? null;
+        let next: boolean;
+        if (client && user) {
+          const result = await client.from(table).select("artwork_id").eq("user_id", user.id).eq("artwork_id", artwork.id).maybeSingle();
+          if (result.error) throw result.error;
+          next = Boolean(result.data);
+        } else next = readGuestSet(table).has(artwork.id);
+        if (!cancelled && epoch === identityEpoch.current) {
+          owner.current = user?.id ?? null;
+          setActive(next);
+          setReady(true);
+          setStatus(null);
+        }
+      } catch {
+        if (!cancelled && epoch === identityEpoch.current) {
+          owner.current = undefined;
+          setActive(false);
+          setStatus(`${inactiveLabel} status could not be loaded. Please retry.`);
+        }
       }
-      const { data } = await client.auth.getUser();
-      const user = data.user;
-      if (!user) {
-        if (!cancelled) { setActive(readGuestSet(table).has(artwork.id)); setReady(true); }
-        return;
-      }
-      const result = await client.from(table).select("artwork_id").eq("user_id", user.id).eq("artwork_id", artwork.id).maybeSingle();
-      if (!cancelled) { setUserId(user.id); setActive(Boolean(result.data)); setReady(true); }
     }
     void hydrate();
     return () => { cancelled = true; };
-  }, [artwork.id, table]);
+  }, [artwork.id, client, inactiveLabel, revision, table]);
 
   async function toggle() {
-    if (!ready || pending) return;
+    if (!ready || inFlight.current || owner.current === undefined) return;
+    const epoch = identityEpoch.current;
+    const userId = owner.current;
+    const previous = active;
     const next = !active;
+    inFlight.current = true;
     setActive(next);
     setPending(true);
     setStatus(null);
-
-    const client = getSupabaseBrowserClient();
-    if (!client || !userId) {
-      const values = readGuestSet(table);
-      if (next) values.add(artwork.id); else values.delete(artwork.id);
-      writeGuestSet(table, values);
-      recordAnalyticsEvent({
-        eventType: table === "likes" ? (next ? "artwork_like" : "artwork_unlike") : (next ? "artwork_save" : "artwork_unsave"),
-        artwork,
-        source,
-        position,
-        recommendationReason: recommendationReason(artwork),
-      });
+    try {
+      if (client) {
+        const response = await client.auth.getUser();
+        if (response.error && response.error.name !== "AuthSessionMissingError") throw response.error;
+        if ((response.data.user?.id ?? null) !== userId || epoch !== identityEpoch.current) {
+          identityEpoch.current++;
+          owner.current = undefined;
+          setReady(false);
+          setRevision((value) => value + 1);
+          return;
+        }
+      }
+      if (client && userId) {
+        const result = next
+          ? await client.from(table).upsert({ user_id: userId, artwork_id: artwork.id }).select("artwork_id").single()
+          : await client.from(table).delete().eq("user_id", userId).eq("artwork_id", artwork.id).select("artwork_id").single();
+        if (result.error) throw result.error;
+      } else {
+        const values = readGuestSet(table);
+        if (next) values.add(artwork.id); else values.delete(artwork.id);
+        writeGuestSet(table, values);
+      }
+      if (epoch !== identityEpoch.current) return;
+      // A successful save remains successful if analytics storage is unavailable.
+      try {
+        recordAnalyticsEvent({
+          eventType: table === "likes" ? (next ? "artwork_like" : "artwork_unlike") : (next ? "artwork_save" : "artwork_unsave"),
+          artwork, source, position, recommendationReason: recommendationReason(artwork),
+        });
+      } catch { /* Analytics is best-effort. */ }
+      window.dispatchEvent(new CustomEvent(`arte:${table}-changed`, { detail: { originId, artworkId: artwork.id } }));
+    } catch {
+      if (epoch === identityEpoch.current) {
+        setActive(previous);
+        setStatus(`${inactiveLabel} could not be updated. Please try again.`);
+      }
+    } finally {
+      inFlight.current = false;
       setPending(false);
-      return;
     }
-
-    const result = next
-      ? await client.from(table).upsert({ user_id: userId, artwork_id: artwork.id })
-      : await client.from(table).delete().eq("user_id", userId).eq("artwork_id", artwork.id);
-
-    if (result.error) {
-      setActive(!next);
-      setStatus(`${inactiveLabel} could not be updated.`);
-    } else {
-      recordAnalyticsEvent({
-        eventType: table === "likes" ? (next ? "artwork_like" : "artwork_unlike") : (next ? "artwork_save" : "artwork_unsave"),
-        artwork,
-        source,
-        position,
-        recommendationReason: recommendationReason(artwork),
-      });
-    }
-    setPending(false);
   }
 
   return (
     <>
-      <button type="button" data-action={action} aria-pressed={active} aria-label={`${active ? activeLabel : inactiveLabel} ${artwork.title}`} disabled={!ready || pending} onClick={toggle} className="focus-ring min-h-11 border border-[var(--hairline)] px-4 text-[11px] uppercase tracking-[0.12em] disabled:opacity-45">
+      <button type="button" data-action={action} aria-pressed={active} aria-label={`${active ? activeLabel : inactiveLabel} ${artwork.title}`} disabled={!ready || pending} onClick={() => void toggle()} className="focus-ring min-h-11 border border-[var(--hairline)] px-4 text-[11px] uppercase tracking-[0.12em] disabled:opacity-45">
         {active ? activeLabel : inactiveLabel}
       </button>
-      {status ? <span role="status" className="sr-only">{status}</span> : null}
+      {status ? <span role="status" className="col-span-2 text-xs leading-6 text-[var(--oxblood)]">{status}{!ready ? <button type="button" className="focus-ring ml-2 min-h-11 underline" onClick={() => setRevision((value) => value + 1)}>Retry {inactiveLabel.toLowerCase()}</button> : null}</span> : null}
     </>
   );
 }

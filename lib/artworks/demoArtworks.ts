@@ -1,4 +1,5 @@
 import type { Artist, Artwork } from "./types.ts";
+import { MET_ARTWORKS } from "./metArtworks.ts";
 
 const artists = {
   nocturne: {
@@ -39,7 +40,7 @@ const sharedRights = {
   sourceUrl: "/sources/demo",
 };
 
-export const DEMO_ARTWORKS: Artwork[] = [
+export const SYNTHETIC_ARTWORKS: Artwork[] = [
   {
     id: "30000000-0000-0000-0000-000000000001",
     slug: "quiet-red-study-demo",
@@ -246,4 +247,7 @@ export const DEMO_ARTWORKS: Artwork[] = [
   },
 ];
 
-export const DEMO_ARTISTS: Artist[] = Object.values(artists);
+// Legacy exports remain stable for consumers. The original twelve fixture IDs and order
+// are preserved; verified museum records extend the same discovery catalog.
+export const DEMO_ARTWORKS: Artwork[] = [...SYNTHETIC_ARTWORKS, ...MET_ARTWORKS];
+export const DEMO_ARTISTS: Artist[] = [...new Map(DEMO_ARTWORKS.map(({ artist }) => [artist.id, artist])).values()];

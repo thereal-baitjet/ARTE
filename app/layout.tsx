@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     template: "%s — ARTE",
   },
   description:
-    "A personalized world of fine art: museum masterpieces, contemporary work, and meaningful visual discovery.",
+    "Explore ARTE's early-access art discovery demo. Find visual connections, build private collections, and discover your Art DNA.",
 };
 
 export default function RootLayout({
@@ -29,6 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${display.variable} ${interfaceFont.variable}`}>
+        <a href="#main-content" className="focus-ring sr-only z-[100] bg-[var(--gallery-ivory)] p-4 focus:not-sr-only focus:fixed focus:left-4 focus:top-4">Skip to content</a>
         {children}
       </body>
     </html>

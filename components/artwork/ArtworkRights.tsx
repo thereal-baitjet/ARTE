@@ -14,7 +14,7 @@ export function ArtworkRights({ rights }: { rights: ArtworkRightsData }) {
       </h2>
       <dl className="mt-4 grid gap-3 text-sm md:grid-cols-2">
         <div><dt className="text-[var(--muted-text)]">Image source</dt><dd>{rights.imageSource}</dd></div>
-        <div><dt className="text-[var(--muted-text)]">Rights holder</dt><dd>{rights.rightsHolder ?? "Not supplied"}</dd></div>
+        <div><dt className="text-[var(--muted-text)]">Rights / attribution</dt><dd>{rights.rightsHolder ?? "Not supplied"}</dd></div>
         <div><dt className="text-[var(--muted-text)]">License</dt><dd>{rights.license ?? "Not supplied"}</dd></div>
         <div><dt className="text-[var(--muted-text)]">Usage notes</dt><dd>{rights.usageNotes ?? "None supplied"}</dd></div>
       </dl>
