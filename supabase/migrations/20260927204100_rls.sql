@@ -19,9 +19,7 @@ language sql
 stable
 security definer
 set search_path = public
-as $
-  select role from public.profiles where id = (select auth.uid());
-$;
+as 'select role from public.profiles where id = (select auth.uid());';
 
 revoke all on function public.is_admin() from public;
 revoke all on function public.current_arte_role() from public;
