@@ -191,27 +191,56 @@ function explanationFor(artwork: Artwork, profile: TasteProfile, components: Sco
 }
 
 function diversify(sorted: RecommendedArtwork[]) {
-  const remaining = [...sorted];
+  const groups = new Map<string, RecommendedArtwork[]>();
+  for (const artwork of sorted) {
+    const group = groups.get(artwork.artist.id) ?? [];
+    group.push(artwork);
+    groups.set(artwork.artist.id, group);
+  }
+
   const result: RecommendedArtwork[] = [];
+  let previousArtist: string | undefined;
+  let remainingTotal = sorted.length;
 
-  while (remaining.length) {
+  while (remainingTotal > 0) {
     const window = result.slice(-DIVERSITY_WINDOW + 1);
-    const previousArtist = result.at(-1)?.artist.id;
-    let candidateIndex = remaining.findIndex((candidate) => {
-      const sameMovement = window.filter((item) => item.movement === candidate.movement).length;
-      const sameMedium = window.filter((item) => item.features.mediumCategory === candidate.features.mediumCategory).length;
-      return (
-        candidate.artist.id !== previousArtist &&
-        sameMovement < MAX_SAME_MOVEMENT_IN_WINDOW &&
-        sameMedium < MAX_SAME_MEDIUM_IN_WINDOW
-      );
-    });
+    const choices = [...groups.entries()]
+      .filter(([artistId, items]) => items.length > 0 && artistId !== previousArtist)
+      .map(([artistId, items]) => {
+        const strictIndex = items.findIndex((candidate) => {
+          const sameMovement = window.filter((item) => item.movement === candidate.movement).length;
+          const sameMedium = window.filter((item) => item.features.mediumCategory === candidate.features.mediumCategory).length;
+          return sameMovement < MAX_SAME_MOVEMENT_IN_WINDOW && sameMedium < MAX_SAME_MEDIUM_IN_WINDOW;
+        });
+        const itemIndex = strictIndex >= 0 ? strictIndex : 0;
+        const countsAfter = [...groups.entries()].map(([id, candidates]) => candidates.length - (id === artistId ? 1 : 0));
+        const totalAfter = remainingTotal - 1;
+        const feasible = totalAfter === 0 || Math.max(...countsAfter) <= Math.ceil(totalAfter / 2);
+        return { artistId, itemIndex, item: items[itemIndex], strict: strictIndex >= 0, feasible, remaining: items.length };
+      });
 
-    if (candidateIndex < 0) {
-      candidateIndex = remaining.findIndex((candidate) => candidate.artist.id !== previousArtist);
+    if (!choices.length) {
+      const fallback = [...groups.entries()].find(([, items]) => items.length > 0);
+      if (!fallback) break;
+      const [artistId, items] = fallback;
+      result.push(items.shift()!);
+      previousArtist = artistId;
+      remainingTotal -= 1;
+      continue;
     }
 
-    result.push(remaining.splice(candidateIndex >= 0 ? candidateIndex : 0, 1)[0]);
+    const feasibleChoices = choices.filter((choice) => choice.feasible);
+    const pool = feasibleChoices.length ? feasibleChoices : choices;
+    pool.sort((left, right) => {
+      if (left.strict !== right.strict) return left.strict ? -1 : 1;
+      return right.item.recommendation.score - left.item.recommendation.score || right.remaining - left.remaining;
+    });
+
+    const selected = pool[0];
+    groups.get(selected.artistId)!.splice(selected.itemIndex, 1);
+    result.push(selected.item);
+    previousArtist = selected.artistId;
+    remainingTotal -= 1;
   }
 
   return result;
