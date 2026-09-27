@@ -1,0 +1,38 @@
+name: Database Tests
+
+on:
+  push:
+    branches: ["main"]
+    paths:
+      - "supabase/**"
+      - ".github/workflows/database-tests.yml"
+  pull_request:
+    paths:
+      - "supabase/**"
+      - ".github/workflows/database-tests.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  database:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: supabase/setup-cli@v1
+        with:
+          version: latest
+      - name: Start local Supabase database
+        run: supabase db start
+      - name: Apply migrations and seed
+        run: supabase db reset --local
+      - name: Run database tests
+        run: supabase test db
+      - name: Re-apply migrations and seed to prove repeatability
+        run: supabase db reset --local
+      - name: Re-run database tests
+        run: supabase test db
+      - name: Stop local Supabase database
+        if: always()
+        run: supabase stop --no-backup
