@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
-    "test": "node --test tests/unit/**/*.test.mjs",
+    "test": "node --test tests/unit/**/*.test.mjs && node --experimental-strip-types --test tests/unit/recommendations.test.ts",
     "test:e2e": "playwright test"
   },
   "dependencies": {

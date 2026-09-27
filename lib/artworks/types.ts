@@ -11,6 +11,16 @@ export type ArtworkVisual = {
   alt: string;
 };
 
+export type ArtworkFeatures = {
+  palette: string[];
+  mood: string[];
+  composition: string[];
+  subjects: string[];
+  mediumCategory: string;
+  period: string;
+  geography: string;
+};
+
 export type Artist = {
   id: string;
   slug: string;
@@ -29,6 +39,7 @@ export type Artwork = {
   description: string;
   movement: string;
   tags: string[];
+  features: ArtworkFeatures;
   artist: Artist;
   visual: ArtworkVisual;
   recommendationReason: string;
