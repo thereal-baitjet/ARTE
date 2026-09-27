@@ -35,7 +35,7 @@ Temporary metadata/downloads live in the ignored `.met-import-cache/` directory.
 - `supabase/seed.sql`: matching deterministic UUIDs for museum, artists, artworks, images, source records, categories, and tags. Generated SQL is idempotent and replaces only the marked Met section when rebuilt.
 - `/sources/met`: public provenance and policy explanation.
 
-The original twelve fixture IDs, ordering, and synthetic records are preserved. Legacy `DEMO_ARTWORKS` and `DEMO_ARTISTS` exports now expose the combined catalog to avoid a broad import migration. `SYNTHETIC_ARTWORKS` and `MET_ARTWORKS` expose the two factual source groups separately.
+The original twelve fixture IDs, ordering, and synthetic records are preserved. Legacy `DEMO_ARTWORKS` and `DEMO_ARTISTS` exports expose the combined catalog. `GALLERY_ARTWORKS` excludes every synthetic record: the main Discover gallery and both feed APIs serve only the **78 real museum works**, including personalized refreshes and pagination. `SYNTHETIC_ARTWORKS` and `MET_ARTWORKS` expose the two factual source groups separately.
 
 Apply the current migrations and seed to a configured Supabase project before enabling hosted interactions for this catalog; its artist/artwork foreign keys must match these deterministic IDs. Guest browsing uses the checked-in catalog directly.
 

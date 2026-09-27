@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { isAnalyticsEvent } from "@/lib/analytics/types";
-import { DEMO_ARTWORKS } from "@/lib/artworks/demoArtworks";
+import { GALLERY_ARTWORKS } from "@/lib/artworks/demoArtworks";
 import { buildTasteProfile, getRecommendationPage, rankArtworks } from "@/lib/recommendations/engine";
 
 const MAX_BODY_BYTES = 512 * 1024;
@@ -59,8 +59,8 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: "Invalid recommendation request." }, { status: 400 });
   }
 
-  const profile = buildTasteProfile(events, DEMO_ARTWORKS);
-  const ranked = rankArtworks(DEMO_ARTWORKS, profile, hiddenArtworkIds);
+  const profile = buildTasteProfile(events, GALLERY_ARTWORKS);
+  const ranked = rankArtworks(GALLERY_ARTWORKS, profile, hiddenArtworkIds);
   const page = getRecommendationPage(ranked, cursor, limit);
 
   if (!page.validCursor) {

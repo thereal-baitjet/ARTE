@@ -1,4 +1,4 @@
-import { DEMO_ARTISTS, DEMO_ARTWORKS } from "./demoArtworks";
+import { DEMO_ARTISTS, DEMO_ARTWORKS, GALLERY_ARTWORKS } from "./demoArtworks";
 import type { Artwork, FeedPage } from "./types";
 
 const DEFAULT_PAGE_SIZE = 4;
@@ -8,13 +8,13 @@ export function getDemoFeedPage(cursor?: string | null, requestedLimit = DEFAULT
   const limit = Math.max(1, Math.min(MAX_PAGE_SIZE, requestedLimit));
   let start = 0;
   if (cursor) {
-    const cursorIndex = DEMO_ARTWORKS.findIndex((artwork) => artwork.slug === cursor);
+    const cursorIndex = GALLERY_ARTWORKS.findIndex((artwork) => artwork.slug === cursor);
     if (cursorIndex < 0) return { items: [], nextCursor: null, validCursor: false };
     start = cursorIndex + 1;
   }
-  const items = DEMO_ARTWORKS.slice(start, start + limit);
+  const items = GALLERY_ARTWORKS.slice(start, start + limit);
   const end = start + items.length;
-  const nextCursor = end < DEMO_ARTWORKS.length ? items.at(-1)?.slug ?? null : null;
+  const nextCursor = end < GALLERY_ARTWORKS.length ? items.at(-1)?.slug ?? null : null;
   return { items, nextCursor, validCursor: true };
 }
 

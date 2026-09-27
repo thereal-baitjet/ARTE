@@ -247,7 +247,7 @@ export const SYNTHETIC_ARTWORKS: Artwork[] = [
   },
 ];
 
-// Legacy exports remain stable for consumers. The original twelve fixture IDs and order
-// are preserved; verified museum records extend the same discovery catalog.
+// Preserve fixture IDs for existing saves and demo flows; discovery uses only real works.
 export const DEMO_ARTWORKS: Artwork[] = [...SYNTHETIC_ARTWORKS, ...MET_ARTWORKS];
+export const GALLERY_ARTWORKS: Artwork[] = DEMO_ARTWORKS.filter((artwork) => !artwork.isDemo);
 export const DEMO_ARTISTS: Artist[] = [...new Map(DEMO_ARTWORKS.map(({ artist }) => [artist.id, artist])).values()];
