@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
+import { useRouter } from "next/navigation";
 import type { Artwork } from "@/lib/artworks/types";
 import { ArtworkSlide } from "@/components/artwork/ArtworkSlide";
 
@@ -17,6 +18,7 @@ function readHidden(): Set<string> {
 }
 
 export function ArtworkFeed({ initialItems, initialCursor }: { initialItems: Artwork[]; initialCursor: string | null }) {
+  const router = useRouter();
   const [items, setItems] = useState(initialItems);
   const [cursor, setCursor] = useState(initialCursor);
   const [loading, setLoading] = useState(false);
@@ -25,8 +27,11 @@ export function ArtworkFeed({ initialItems, initialCursor }: { initialItems: Art
   const sentinelRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    const hidden = readHidden();
-    if (hidden.size) setItems((current) => current.filter((artwork) => !hidden.has(artwork.id)));
+    const frame = window.requestAnimationFrame(() => {
+      const hidden = readHidden();
+      if (hidden.size) setItems((current) => current.filter((artwork) => !hidden.has(artwork.id)));
+    });
+    return () => window.cancelAnimationFrame(frame);
   }, []);
 
   useEffect(() => {
@@ -117,16 +122,16 @@ export function ArtworkFeed({ initialItems, initialCursor }: { initialItems: Art
         active.querySelector<HTMLButtonElement>('[data-action="save"]')?.click();
       } else if (event.key.toLowerCase() === "i") {
         const slug = active.dataset.artworkSlug;
-        if (slug) window.location.assign(`/artwork/${slug}`);
+        if (slug) router.push(`/artwork/${slug}`);
       } else if (event.key.toLowerCase() === "m") {
         const slug = active.dataset.artworkSlug;
-        if (slug) window.location.assign(`/artwork/${slug}#related`);
+        if (slug) router.push(`/artwork/${slug}#related`);
       }
     };
 
     window.addEventListener("keydown", handleKeyboard);
     return () => window.removeEventListener("keydown", handleKeyboard);
-  }, []);
+  }, [router]);
 
   function hideArtwork(artwork: Artwork) {
     const hidden = readHidden();
