@@ -41,7 +41,7 @@ export default function Home() {
               Shape your taste
             </Link>
           </div>
-          <p className="mt-6 max-w-xl text-xs leading-6 text-[var(--muted-text)]">Explore {PUBLIC_ARTWORKS.length} public-domain artworks from The Met and the Cleveland Museum of Art without an account. Save favorites, discover connections, and build your own collection.</p>
+          <p className="mt-6 max-w-xl text-xs leading-6 text-[var(--muted-text)]">Explore {PUBLIC_ARTWORKS.length.toLocaleString("en-US")} public-domain artworks from four museum collections without an account. Save favorites, discover connections, and build your own collection.</p>
         </div>
 
         <div className="relative mx-auto w-full max-w-xl">

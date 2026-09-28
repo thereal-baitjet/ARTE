@@ -23,7 +23,12 @@ select results_eq(
 select results_eq(
   $$select count(*)::bigint from public.artworks
     where not is_synthetic and image_rights_state = 'public_domain'
-      and image_license = 'CC0 1.0 Universal' and museum_id is not null$$,
+      and image_license = case source_name
+        when 'The Metropolitan Museum of Art' then 'CC0 1.0 Universal'
+        when 'Cleveland Museum of Art' then 'CC0 1.0 Universal'
+        when 'National Gallery of Art' then 'Public domain (NGA Open Access)'
+        when 'The Museum of Modern Art' then 'Public domain'
+      end and museum_id is not null$$,
   $$select count(*)::bigint from public.artworks where not is_synthetic$$,
   'every real catalog artwork has museum linkage and public-domain license evidence'
 );
