@@ -1,6 +1,6 @@
 # ARTE Gauntlet Report
 
-This is the evidence log for the ARTE release-gate process. Historical passing gates below apply to their recorded commits. The September 27 release continuation records the current scope, new evidence, and remaining blockers; the full gauntlet is not complete.
+This is the evidence log for the ARTE release-gate process. Historical passing gates below apply to their recorded commits. The latest [1,000-work expansion](#1000-work-four-source-expansion--current-gate) records the current scope and pending evidence. Earlier release continuations are historical snapshots; the full gauntlet is not complete.
 
 ## Status legend
 
@@ -272,7 +272,7 @@ Deliverables implemented in the release continuation below:
 
 ---
 
-## Release continuation — September 27, 2026
+## Release continuation — September 27, 2026 (historical 90-record snapshot)
 
 ### Current outcome and scope
 
@@ -357,8 +357,118 @@ The connected deployment endpoint was unavailable (`Tool deploy_to_vercel not fo
 
 The user's latest direction is to use the **Vercel CLI** instead of continuing the blocked browser authentication path. `docs/DEPLOYMENT.md` documents the CLI route. The release still needs an authorized CLI session, deployment of the intended repository revision, a recorded READY deployment URL/commit, and smoke checks on that actual URL. Local build/browser success is not deployment evidence.
 
-**Current release conclusion: tested local guest release candidate; full gauntlet, new database gate, and Vercel deployment remain open.**
+**Historical conclusion at preparation time: tested local guest release candidate; full gauntlet, new database gate, and Vercel smoke verification remained open. Later CI/deployment observations are recorded below.**
 
 ### Prepared delivery
 
 The final guest release includes a local CLI helper (`npm run deploy:vercel`), Vercel build configuration, and screenshot evidence in `screenshots/`. Following an initial approval block, the user explicitly authorized committing and publishing the release to GitHub on September 27, 2026. The release incorporates newer main commits for Supabase setup and Vercel configuration; neither is discarded. A source ZIP was also provided for local CLI deployment. GitHub publication is separate from successful deployment and hosted database verification.
+
+
+---
+
+## 500-work expansion — intermediate checkpoint
+
+**Historical intermediate status: 500-work source validation completed; 79 unit tests and the 771-page production build passed. Its browser run ended with 55 passes and four failures, so this was not a complete browser/release gate. The 1,000-work release supersedes it below.**
+
+### Intended catalog and source evidence
+
+The completed public catalog contains **500 real public-domain artworks: 339 from The Metropolitan Museum of Art and 161 from the Cleveland Museum of Art**, plus twelve separate legacy synthetic fixtures. The complete source-qualified manifest is the release authority; a target or source-local build is not a passing combined-catalog gate.
+
+The Met source contribution has been generated with 339 image-ready records, 65 attribution-qualified artist identities, 26 categories, and 16,985,218 WebP bytes. All 339 optimized hashes are unique. The original 78 artwork identities, slugs, and image bytes remain unchanged. The pipeline obtained 340 cleared metadata records; one new image (object 198608) returned 404. Later Met requests returned an Incapsula 403 denial, including for a known earlier object, so bulk requests stopped. No challenge was bypassed. See [MET-IMPORT](MET-IMPORT.md) for staged publication/recovery and importer evidence.
+
+The remaining 161 works use Cleveland as a separate source. Its API also returned 403. The source integration uses the museum's officially published GitHub Open Access dataset instead, with pinned dataset provenance and explicit CC0/image gates. That contribution is now generated: 161 CC0 paintings, 161 source-attributed artist identities, and 13,197,442 WebP bytes. The dataset is pinned to museum repository commit `4684c48c7c07b1452db7963adf4aad8052055b7d` and its 343,572,124-byte LFS payload hash `e8b29e67f3df840bca6cd1ffd37ca5d187b913af2ab2edf6ddb8cf164cd4359f`. Combined-manifest generation and `--check` validation passed against actual source records and images; source-qualified SQL expectation generation and its `--check` also passed. The final manifest records 226 source-qualified artist identities and 26 categories, not necessarily 226 distinct individuals. Importer availability is not permission to omit verification or fill the target with synthetic records.
+
+### Application changes and review findings
+
+- Public discovery, search, onboarding, attention, related recommendations, and collection choices exclude synthetic works. Explicit lookup preserves old saved demo IDs, while the demo marketplace remains labeled and unsent.
+- Public catalog computation moved to server boundaries. Search returns twelve summaries by default (maximum twenty-four); onboarding sends twenty choices; related results send at most four cards for each of five modes; attention returns twenty cards; collection choices return twenty and explicit lookups accept forty IDs. Taste returns a small summary rather than the catalog.
+- Recommendation/taste/attention inputs cap recent events at 500 and actual bytes at 512 KiB. The shared hidden-ID bound is 1,000. At this checkpoint the public catalog had 500 works plus separately retained legacy references. A regression now hides 101 actual works, preserves a remaining like signal, and verifies duplicate-free pagination without hidden IDs returning.
+- Guest history remains device-local persistence, but a bounded copy is sent to ARTE for server calculation. The calculation handlers do not persist guest activity, and their responses are `no-store`. Privacy copy states this distinction. Signed-in account writes and cross-device hydration remain separate capabilities.
+- Review found stale Art DNA/attention could survive a reset when the new API failed. These views now clear old results when refreshing/resetting; a regression covers reset with an unavailable calculation endpoint.
+- Review found missing palette/mood/composition was described as an observed visual contrast. Similarity fallback copy and scoring now disclose missing metadata and use only available catalog/format evidence.
+- Museum labels, source records, image paths, and database parity checks must be source-specific for the Cleveland addition. Numeric museum object IDs are qualified by their source rather than assumed globally unique.
+- The home hero is now an actual museum work. The obsolete placeholder-text assertion was removed. Four viewport browser checks now decode the hero image, check attribution, follow its artwork link, and verify CC0/source disclosure. Health assertions require the real catalog count to be an integer at least 500.
+
+### Earlier exact-revision evidence
+
+These are completed results for earlier revisions, not for the current 500-work changes:
+
+| Revision | Evidence | Observed result |
+| --- | --- | --- |
+| `a06a1a039e93bc44a403d3cb68ce80bdf2bee0c9` | [Application CI 36354619386](https://github.com/thereal-baitjet/ARTE/actions/runs/36354619386) | PASS, including lint, types, units, production build, and Chromium suite |
+| `a06a1a039e93bc44a403d3cb68ce80bdf2bee0c9` | [Database CI 36354619411](https://github.com/thereal-baitjet/ARTE/actions/runs/36354619411) | FAIL; the expanded museum seed omitted the required museum slug; correction awaits current workflow evidence |
+| `403a2ee9bdb793adbaa2f9ded1d1b683b760da9f` | [Application CI 36355470554](https://github.com/thereal-baitjet/ARTE/actions/runs/36355470554) | PASS for removing synthetic works from the earlier Discover gallery; database workflow was not triggered by that change |
+| Earlier published release | GitHub Vercel commit status | Success was observed; this is deployment-status evidence only |
+| `403a2ee9bdb793adbaa2f9ded1d1b683b760da9f` | Unique deployment URL `/api/health` request | Redirected to Vercel login; returned HTML, not application health JSON |
+
+The protected unique deployment was `https://arte-5p6vimxwu-thereal-baitjets-projects.vercel.app`. Production-project and branch aliases were also observed redirecting to login. No authenticated Vercel access was available, so these observations do not constitute a public production smoke pass.
+
+### Gallery scrolling
+
+The gallery starts with four works and appends two at a time within 150 pixels of the end. Automatic loading requires further forward scrolling, a 1.2-second cooldown, and leaving the end zone between batches. A manual load/retry button remains available. Disabling scroll anchoring on the root scroller only while the gallery is mounted preserves the reading position; the previous style is restored on navigation. The browser regression verifies position preservation, a second legitimate batch, no repeated loading while the marker remains visible, keyboard loading, and explicit error retry. NGA's verified 843-pixel images use direct delivery to avoid the optimizer's upstream timeout.
+
+### Current validation ledger
+
+| Gate | Current evidence |
+| --- | --- |
+| Focused implementation checks | Scoped lint/type checks and targeted importer/activity/related unit tests have passed during development; these do not validate the final combined revision |
+| Root preflight lint and typecheck | PASS before Cleveland source integration; rerun on the final source required |
+| Combined 500-work source/manifest/image validation | PASS — generation and `--check` against both source archives, catalog records, and actual image bytes/dimensions; SQL expectations also generated and checked, without executing PostgreSQL |
+| Intermediate application validation | Lint/types passed; 79 unit tests passed (21 JavaScript and 58 TypeScript); production build passed with 771 generated pages. These results preceded the final 1,000-work integration. |
+| Balanced asset visual sample | PASS — forty actual images (twenty per museum), all decoded at expected dimensions and visually inspected; historical contact sheet (superseded by the current four-source JPEG), 1600×4993, 4,079,770 bytes, SHA-256 `b433ac763bdacc623318360d266bf4acb623c6798e29c28962eb2ab97e158686` |
+| Intermediate browser suite | 55 passed and 4 failed assertions. Follow-up fixes address catalog-order assumptions in core/related tests and the search announcer. A full passing rerun remains required. The asset contact sheet is not production-page verification. |
+| Current database pgTAP, Auth, seed and reset/reapply workflow | PENDING |
+| Exact pushed SHA and current application/database CI | PENDING |
+| Current Vercel deployment status and public production smoke | PENDING; earlier protected URLs do not satisfy this gate |
+
+The source integration also updates generated SQL expectations and the database workflow so the manifest, seed, museum attribution, and local image paths agree. Their presence is not proof that PostgreSQL executed them successfully. Hosted account isolation remains a separate deployment-specific check.
+
+The full-product limitations remain: no complete cross-device history hydration, no live database-backed public publication, incomplete administration/external-source workflows, demo commercial inventory and unsent inquiries, and no platform-wide attention aggregate. Closing the catalog expansion must not mark those implementation gaps complete.
+
+
+---
+
+## 1000-work four-source expansion — current gate
+
+**Status: all four source contributions and the exact 1,000-work combined-manifest gate have passed source validation. Consolidated application/browser tests now pass. Database execution, exact-SHA CI, and production smoke remain pending at this pre-push checkpoint.**
+
+### Scope and source evidence
+
+The combined release manifest contains exactly 1,000 real image-backed works: 339 Met, 350 Cleveland, 299 National Gallery of Art, and 12 MoMA. Twelve legacy synthetic fixtures remain outside public choices, producing 1,012 total seed records. The verified delivery split is 512 checked-in local images and 488 official museum-CDN images. No metadata-only record counts as an image-ready artwork.
+
+- **Met 339:** existing verified contribution retained; original 78 identity/slug/image bytes preserved. Earlier Met 403 denial stopped further collection. This is a four-source expansion, not a claim of 1,000 Met works.
+- **Cleveland 350:** generated with pinned official GitHub dataset provenance and explicit CC0 status. The original 161 local works remain unchanged; 189 additions use official CDN URLs, with original bytes decoded/hashed and normalized image evidence archived. Selection adds media diversity across 45 classifications and has 334 source-qualified artist identities.
+- **NGA 299:** final artifacts generated; 299 works, 291 source-qualified artist identities, and 10 classifications. All primary JPEGs decoded and source/normalized hashes were recorded, with cross-source duplicate checks including MoMA. Fourteen source-focused unit tests passed. Import joins a pinned official CSV snapshot to primary images with `openaccess=1`, independently of metadata CC0. Accessioned/nonvirtual records and verified bounded official IIIF JPEGs are required. AIC's image 403 led to this legitimate separate source rather than retries around the denial.
+- **MoMA 12:** generated and visually reviewed. The museum's pinned CC0 metadata is joined to independently checked Commons public-domain reproductions. The archive preserves permanent file revisions, complete API metadata, original hashes, attribution/credit, expired-copyright/faithful-reproduction evidence, and explicit identity matches. Missing license/attribution API fields remain null. Twelve actual images across six artists decoded correctly; local derivatives total 3,878,732 bytes. Three focused validator tests passed, covering all records and eight hostile/missing-evidence scenarios. Scoped ESLint passed.
+
+See [CATALOG](CATALOG.md) for source hashes, precise rights, import commands, and the external-image dependency. Public data is interleaved across sources; image-source links and museum-record links are distinct when their provenance differs.
+
+### Ranking optimization and limits of the measurement
+
+The diversity scheduler now calculates the largest two remaining artist-group sizes once per selection round, rather than rescanning all groups for each candidate. Output parity was verified on two histories after the optimization. An informal development comparison informed the change, but no reproducible benchmark artifact is retained here; numerical speedups and production/user-latency claims are therefore omitted.
+
+The existing bounds remain: 500 recent events, 1,000 hidden IDs, 512 KiB of actual activity-request bytes, small paginated card summaries, and private/no-store calculation responses. Raw guest event bodies are not persisted by these calculation APIs. More catalog records do not imply that the browser receives the whole catalog.
+
+### Gallery scrolling
+
+The gallery starts with four works and appends two at a time within 150 pixels of the end. Automatic loading requires further forward scrolling, a 1.2-second cooldown, and leaving the end zone between batches. A manual load/retry button remains available. Disabling scroll anchoring on the root scroller only while the gallery is mounted preserves the reading position; the previous style is restored on navigation. The browser regression verifies position preservation, a second legitimate batch, no repeated loading while the marker remains visible, keyboard loading, and explicit error retry. NGA's verified 843-pixel images use direct delivery to avoid the optimizer's upstream timeout.
+
+### Current validation ledger
+
+| Gate | Current evidence |
+| --- | --- |
+| Met 339 and Cleveland 350 source artifacts | PASS — generated and included in the passing combined source validation |
+| NGA 299 final source artifacts | PASS — 299 generated records, per-image Open Access/identity checks, decoded official JPEGs, 14 focused tests |
+| MoMA 12 independent image-rights/identity validation | PASS — 12 generated/decoded images, three focused tests, scoped lint, original/derivative hashes verified |
+| Combined 1,000-work manifest and generated SQL expectations | PASS — 339/350/299/12 sources; 512 actual local WebP files and 488 archived remote JPEG proofs; manifest and generated SQL `--check` pass; 10 validator/generator unit cases and scoped lint pass. PostgreSQL execution is not implied. |
+| Four-source visual asset sample | PASS — 48 actual images, 12 per source including all MoMA selections; hashes and decoded dimensions verified, zero page/request errors, three sixteen-image sheets visually reviewed. [JPEG](screenshots/catalog-1000-contactsheet.jpg): 1600×5455, 1,387,479 bytes, SHA-256 `3303ede95f6e845d713011fc112fb720ad64c4599b43a37dbb75740158cc9a51`. Remote panels use verified cached bytes, not live CDN checks. |
+| Current 1,000-work lint/type/unit checkpoint | PASS — lint, typecheck, 87 total unit tests (27 JavaScript and 60 TypeScript); combined manifest/SQL `--check` also passes. Final lint/type checks also pass after the feed and image-delivery fixes. |
+| Current 1,000-work production build | PASS — production build generated 1,743 pages. Full browser verification and any affected checks after further changes remain separate. |
+| Full current browser suite | PASS — 65 Chromium tests with no retries or failures (2.3 minutes), including four viewport layouts, accessibility checks, all four museum image/source links, bounded pagination, guest persistence, and the scroll regression. This runtime used its explicitly configured network proxy and pinned proxy CA key for live remote image requests; CI defaults are unchanged. |
+| Current database pgTAP, Auth, complete seed and reset/reapply | PENDING |
+| Exact pushed SHA and matching application/database CI | PENDING |
+| Current Vercel status and actual public production smoke | PENDING; redirects to Vercel login do not satisfy smoke verification |
+
+New remote images remain external runtime dependencies despite import-time successful decoding. A cached-image contact sheet proves the reviewed bytes displayed correctly; it does not prove the current production browser can reach the source CDNs. Git publication must include generated source metadata/catalogs, manifests, seed sections, and local assets; ignored import caches and generated browser reports must not be published.
+
+The full-product limitations are unchanged: no complete cross-device history hydration, no live database-backed public publication, incomplete external-source administration, demo commerce with unsent inquiries, and no platform-wide attention aggregate. Completing this catalog release does not close those separate implementation gates.

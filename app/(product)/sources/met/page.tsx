@@ -14,7 +14,8 @@ export default function MetSourcePage() {
         <a className="focus-ring underline underline-offset-4" href="https://www.metmuseum.org/policies/image-resources">The Met’s Open Access policy</a>
         <a className="focus-ring underline underline-offset-4" href="https://metmuseum.github.io/">Collection API documentation</a>
         <a className="focus-ring underline underline-offset-4" href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>
-        <Link className="focus-ring underline underline-offset-4" href="/search?q=Metropolitan">Explore museum works</Link>
+        <Link className="focus-ring underline underline-offset-4" href="/search?q=Metropolitan">Explore Met works</Link>
+        <Link className="focus-ring underline underline-offset-4" href="/sources">All museum sources</Link>
       </div>
     </section>
   );

@@ -13,8 +13,3 @@ test("design tokens include the required primary palette", async () => {
     assert.match(css, new RegExp(value));
   }
 });
-
-test("placeholder artwork copy does not make a rights claim", async () => {
-  const page = await readFile(new URL("../../app/page.tsx", import.meta.url), "utf8");
-  assert.match(page, /no artwork or rights claim is implied/i);
-});

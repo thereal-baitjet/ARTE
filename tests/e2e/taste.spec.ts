@@ -1,22 +1,22 @@
 import { expect, test } from "@playwright/test";
-import { DEMO_ARTWORKS } from "../../lib/artworks/demoArtworks";
+import { PUBLIC_ARTWORKS } from "../../lib/artworks/publicCatalog";
 import { summarizeTaste, tasteShareText } from "../../lib/taste/profile";
 import type { AnalyticsEvent } from "../../lib/analytics/types";
 
-const firstId = DEMO_ARTWORKS[0].id;
+const firstId = PUBLIC_ARTWORKS[0].id;
 
 function likeEvent(eventType: AnalyticsEvent["eventType"] = "artwork_like"): AnalyticsEvent {
   return { id: `taste-test-${eventType}`, eventType, artworkId: firstId, anonymousSessionId: "taste-test", source: "test", timestamp: "2026-09-27T00:00:00.000Z" };
 }
 
 test("taste estimates come from weighted activity and undoing a like removes its affinity", () => {
-  expect(summarizeTaste([], DEMO_ARTWORKS).hasPositiveSignals).toBe(false);
-  const liked = summarizeTaste([likeEvent()], DEMO_ARTWORKS);
+  expect(summarizeTaste([], PUBLIC_ARTWORKS).hasPositiveSignals).toBe(false);
+  const liked = summarizeTaste([likeEvent()], PUBLIC_ARTWORKS);
   expect(liked.eventCount).toBe(1);
-  expect(liked.dimensions.find((dimension) => dimension.label === "Movements")?.signals[0]).toEqual({ label: "Demo Abstraction", strength: 100 });
+  expect(liked.dimensions.find((dimension) => dimension.label === "Movements")?.signals[0]).toEqual({ label: PUBLIC_ARTWORKS[0].movement, strength: 100 });
   expect(tasteShareText(liked)).toContain("1 activity signals across 1 artworks");
   expect(tasteShareText(liked)).not.toContain(firstId);
-  expect(summarizeTaste([likeEvent(), likeEvent("artwork_unlike")], DEMO_ARTWORKS).hasPositiveSignals).toBe(false);
+  expect(summarizeTaste([likeEvent(), likeEvent("artwork_unlike")], PUBLIC_ARTWORKS).hasPositiveSignals).toBe(false);
 });
 
 test.beforeEach(async ({ page }) => {
@@ -27,15 +27,13 @@ test.beforeEach(async ({ page }) => {
 test("optional onboarding records only committed choices and builds an honest shareable card", async ({ page }) => {
   await page.goto("/onboarding");
   await expect(page.getByRole("button", { name: "Build my Art DNA" })).toBeDisabled();
-  const first = page.getByRole("button", { name: "Choose Quiet Red Study — Demo", exact: true });
+  const choices = page.locator("[data-onboarding-artwork]");
+  await expect(choices).toHaveCount(20);
+  const first = choices.first();
   await first.click();
   await first.click();
   expect(await page.evaluate(() => localStorage.getItem("arte:analytics:events"))).toBeNull();
-  await first.click();
-  await page.getByRole("button", { name: "Choose Blue Interval — Demo", exact: true }).click();
-  await page.getByRole("button", { name: "Choose Night Window — Demo", exact: true }).click();
-  await page.getByRole("button", { name: "Choose Form III — Demo", exact: true }).click();
-  await page.getByRole("button", { name: "Choose Garden After Rain — Demo", exact: true }).click();
+  for (let index = 0; index < 5; index++) await choices.nth(index).click();
   await page.getByRole("button", { name: "Build my Art DNA" }).click();
   await expect(page).toHaveURL(/\/taste$/);
   await expect(page.getByTestId("taste-card")).toContainText("5 weighted activity signals");
@@ -48,11 +46,7 @@ test("optional onboarding records only committed choices and builds an honest sh
   await expect(page.getByLabel("Your shareable summary — no raw activity history or account details")).toHaveValue(/My ARTE Art DNA/);
   await expect(page.getByRole("status")).toContainText("Taste card text copied");
   await page.goto("/onboarding");
-  await page.getByRole("button", { name: "Choose Quiet Red Study — Demo", exact: true }).click();
-  await page.getByRole("button", { name: "Choose Blue Interval — Demo", exact: true }).click();
-  await page.getByRole("button", { name: "Choose Night Window — Demo", exact: true }).click();
-  await page.getByRole("button", { name: "Choose Form III — Demo", exact: true }).click();
-  await page.getByRole("button", { name: "Choose Garden After Rain — Demo", exact: true }).click();
+  for (let index = 0; index < 5; index++) await page.locator("[data-onboarding-artwork]").nth(index).click();
   await page.getByRole("button", { name: "Build my Art DNA" }).click();
   await expect(page).toHaveURL(/\/taste$/);
   await expect(page.getByTestId("taste-card")).toContainText("5 weighted activity signals");
@@ -87,7 +81,7 @@ test("restoring hidden work removes the hide penalty; local reset keeps saved co
   await page.goto("/taste");
   await expect(page.getByRole("heading", { name: "No positive pattern yet." })).toBeVisible();
   await page.getByRole("button", { name: "Restore hidden works (1)" }).click();
-  await expect(page.getByRole("region", { name: "Movements", exact: true })).toContainText("Demo Abstraction");
+  await expect(page.getByRole("region", { name: "Movements", exact: true })).toContainText(PUBLIC_ARTWORKS[0].movement);
   await page.getByRole("button", { name: "Reset local recommendations" }).click();
   await page.getByRole("button", { name: "Cancel", exact: true }).click();
   expect(await page.evaluate(() => JSON.parse(localStorage.getItem("arte:analytics:events") ?? "[]").length)).toBe(1);

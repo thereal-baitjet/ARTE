@@ -1,3 +1,5 @@
+export const MAX_HIDDEN_ARTWORK_IDS = 1000;
+
 export const ANALYTICS_EVENT_TYPES = [
   "artwork_impression",
   "artwork_visible",

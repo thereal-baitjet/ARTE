@@ -1,10 +1,10 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useState } from "react";
 import { ArtworkCard } from "@/components/artwork/ArtworkCard";
 import { recordAnalyticsEvent } from "@/lib/analytics/client";
 import type { Artwork } from "@/lib/artworks/types";
-import { findSimilarArtworks } from "@/lib/recommendations/similarity";
+import type { RelatedArtworkGroups } from "@/lib/recommendations/related";
 import type { SimilarityMode } from "@/lib/recommendations/types";
 
 const modes: Array<{ value: SimilarityMode; label: string }> = [
@@ -15,9 +15,9 @@ const modes: Array<{ value: SimilarityMode; label: string }> = [
   { value: "unexpected", label: "Unexpected Connection" },
 ];
 
-export function MoreLikeThisPanel({ source, candidates }: { source: Artwork; candidates: Artwork[] }) {
+export function MoreLikeThisPanel({ source, groups }: { source: Artwork; groups: RelatedArtworkGroups }) {
   const [mode, setMode] = useState<SimilarityMode>("visual");
-  const results = useMemo(() => findSimilarArtworks(source, candidates, mode), [candidates, mode, source]);
+  const results = groups[mode];
 
   function selectMode(nextMode: SimilarityMode) {
     setMode(nextMode);

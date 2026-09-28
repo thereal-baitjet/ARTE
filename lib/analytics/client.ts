@@ -2,7 +2,7 @@
 
 import type { Artwork } from "../artworks/types.ts";
 import { getSupabaseBrowserClient } from "../supabase/client";
-import { isAnalyticsEvent, type AnalyticsEvent, type AnalyticsEventType, type AnalyticsPayload } from "./types.ts";
+import { isAnalyticsEvent, MAX_HIDDEN_ARTWORK_IDS, type AnalyticsEvent, type AnalyticsEventType, type AnalyticsPayload } from "./types.ts";
 
 const EVENT_STORAGE_KEY = "arte:analytics:events";
 const SESSION_STORAGE_KEY = "arte:analytics:anonymous-session";
@@ -72,7 +72,7 @@ function writeStoredEvents(events: AnalyticsEvent[]) {
 export function readHiddenArtworkIds() {
   try {
     const parsed: unknown = JSON.parse(localStorage.getItem(HIDDEN_STORAGE_KEY) ?? "[]");
-    return Array.isArray(parsed) ? parsed.filter((value): value is string => typeof value === "string") : [];
+    return Array.isArray(parsed) ? [...new Set(parsed.filter((value): value is string => typeof value === "string" && value.length > 0 && value.length <= 128))].slice(-MAX_HIDDEN_ARTWORK_IDS) : [];
   } catch {
     return [];
   }
@@ -125,7 +125,7 @@ export async function resetHostedTasteHistory(expectedUserId: string) {
 
 type RecordEventInput = {
   eventType: AnalyticsEventType;
-  artwork?: Artwork;
+  artwork?: Pick<Artwork, "id"> & { artist: Pick<Artwork["artist"], "id"> };
   artistId?: string;
   source: string;
   position?: number | null;

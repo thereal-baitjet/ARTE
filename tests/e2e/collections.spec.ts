@@ -25,7 +25,7 @@ test("private collection create, add, rename, remove and delete survive reload",
   await page.getByRole("button", { name: "Create collection" }).click();
   await expect(page.getByRole("heading", { name: "Quiet mornings", exact: true })).toBeVisible();
   await expect(page.getByText("private collection · 0 artworks", { exact: true })).toBeVisible();
-  await page.getByRole("combobox", { name: "Add artwork" }).selectOption("30000000-0000-0000-0000-000000000001");
+  await page.getByRole("combobox", { name: "Add artwork" }).selectOption({ index: 1 });
   await page.getByRole("button", { name: "Add to collection" }).click();
   await expect(page.locator("[data-collection-artwork]")).toHaveCount(1);
   await page.getByRole("textbox", { name: "Rename collection" }).fill("Evening studies");

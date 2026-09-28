@@ -1,7 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
-import { isAnalyticsEvent } from "@/lib/analytics/types";
-import { GALLERY_ARTWORKS } from "@/lib/artworks/demoArtworks";
-import { buildTasteProfile, getRecommendationPage, rankArtworks } from "@/lib/recommendations/engine";
+import { isAnalyticsEvent, MAX_HIDDEN_ARTWORK_IDS } from "@/lib/analytics/types";
+import { getPublicRecommendationPage } from "@/lib/recommendations/pageCache";
 
 const MAX_BODY_BYTES = 512 * 1024;
 
@@ -51,7 +50,7 @@ export async function POST(request: NextRequest) {
   const limit = candidate.limit ?? 4;
   if (
     !Array.isArray(events) || events.length > 500 || !events.every(isAnalyticsEvent) ||
-    !Array.isArray(hiddenArtworkIds) || hiddenArtworkIds.length > 100 ||
+    !Array.isArray(hiddenArtworkIds) || hiddenArtworkIds.length > MAX_HIDDEN_ARTWORK_IDS ||
     !hiddenArtworkIds.every((value): value is string => typeof value === "string" && value.length > 0 && value.length <= 128) ||
     (cursor !== null && (typeof cursor !== "string" || cursor.length === 0 || cursor.length > 160)) ||
     typeof limit !== "number" || !Number.isInteger(limit) || limit < 1 || limit > 8
@@ -59,16 +58,14 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: "Invalid recommendation request." }, { status: 400 });
   }
 
-  const profile = buildTasteProfile(events, GALLERY_ARTWORKS);
-  const ranked = rankArtworks(GALLERY_ARTWORKS, profile, hiddenArtworkIds);
-  const page = getRecommendationPage(ranked, cursor, limit);
+  const page = getPublicRecommendationPage(events, hiddenArtworkIds, cursor, limit);
 
   if (!page.validCursor) {
     return NextResponse.json({ error: "Invalid recommendation cursor." }, { status: 400 });
   }
 
   return NextResponse.json(
-    { items: page.items, nextCursor: page.nextCursor, profileEventCount: profile.eventCount },
+    { items: page.items, nextCursor: page.nextCursor, profileEventCount: page.profileEventCount },
     { headers: { "Cache-Control": "no-store" } },
   );
 }

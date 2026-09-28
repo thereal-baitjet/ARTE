@@ -37,8 +37,24 @@ for (const viewport of viewports) {
     expect(contrast.text).toBeGreaterThan(contrast.background);
     expect(contrast.ratio).toBeGreaterThanOrEqual(4.5);
 
+    const museumHero = page.getByRole("link", { name: "View Corridor in the Asylum", exact: true });
+    await expect(museumHero).toHaveAttribute("href", "/artwork/corridor-in-the-asylum-met-336327");
+    const museumImage = museumHero.getByRole("img");
+    await expect(museumImage).toBeVisible();
+    await expect(museumImage).toHaveAttribute("alt", /Corridor in the Asylum by Vincent van Gogh/);
+    await museumImage.evaluate((element) => (element as HTMLImageElement).decode());
+    expect(await museumImage.evaluate((element) => (element as HTMLImageElement).naturalWidth)).toBeGreaterThan(0);
+    await expect(museumHero.locator("..")).toContainText("Corridor in the Asylum · Vincent van Gogh");
+    await expect(museumHero.locator("..")).toContainText("The Metropolitan Museum of Art · Public domain");
+
     const screenshot = await page.screenshot({ fullPage: true });
     await testInfo.attach(`landing-${viewport.name}`, { body: screenshot, contentType: "image/png" });
+
+    await museumHero.click();
+    await expect(page).toHaveURL(/\/artwork\/corridor-in-the-asylum-met-336327$/);
+    await expect(page.getByRole("heading", { name: "Corridor in the Asylum", exact: true })).toBeVisible();
+    await expect(page.getByText("CC0 1.0 Universal", { exact: true })).toBeVisible();
+    await expect(page.getByRole("link", { name: "View source record" })).toHaveAttribute("href", /metmuseum\.org\/art\/collection\/search\/336327$/);
 
     expect(consoleErrors).toEqual([]);
   });

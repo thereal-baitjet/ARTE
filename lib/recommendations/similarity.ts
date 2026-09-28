@@ -30,12 +30,24 @@ function connection(source: Artwork, candidate: Artwork, mode: SimilarityMode) {
   const moods = overlap(source.features.mood, candidate.features.mood);
   const compositions = overlap(source.features.composition, candidate.features.composition);
   const subjects = overlap(source.features.subjects, candidate.features.subjects);
+  const paletteAvailable = source.features.palette.length > 0 && candidate.features.palette.length > 0;
+  const moodAvailable = source.features.mood.length > 0 && candidate.features.mood.length > 0;
+  const compositionAvailable = source.features.composition.length > 0 && candidate.features.composition.length > 0;
+  const missingVisualMetadata = [!paletteAvailable ? "palette" : "", !compositionAvailable ? "composition" : ""].filter(Boolean).join(" and ");
+  const missingVisualDisclosure = missingVisualMetadata
+    ? `${missingVisualMetadata[0].toUpperCase()}${missingVisualMetadata.slice(1)} metadata is unavailable for comparison.`
+    : "";
+  const formatConnection = source.visual.aspect === candidate.visual.aspect
+    ? `Both works use a ${source.visual.aspect} format.`
+    : `The catalog connects ${source.visual.aspect} and ${candidate.visual.aspect} formats.`;
 
   if (mode === "palette") {
+    if (!paletteAvailable) return { score: 0, text: `Palette metadata is unavailable for one or both works. ${formatConnection}`, signals: [signal("visualSimilarity", "Palette", ["metadata unavailable"], 0)] };
     const score = jaccard(source.features.palette, candidate.features.palette);
     return { score, text: palettes.length ? `Shared palette: ${palettes.join(", ")}.` : "A contrasting palette broadens the connection.", signals: [signal("visualSimilarity", "Palette", palettes.length ? palettes : ["contrast"], score)] };
   }
   if (mode === "mood") {
+    if (!moodAvailable) return { score: 0, text: `Mood metadata is unavailable for one or both works. ${formatConnection}`, signals: [signal("behavioralInterest", "Mood", ["metadata unavailable"], 0)] };
     const score = jaccard(source.features.mood, candidate.features.mood);
     return { score, text: moods.length ? `Shared mood: ${moods.join(", ")}.` : "A different emotional register creates contrast.", signals: [signal("behavioralInterest", "Mood", moods.length ? moods : ["contrast"], score)] };
   }
@@ -45,11 +57,26 @@ function connection(source: Artwork, candidate: Artwork, mode: SimilarityMode) {
     return { score, text: sameMovement ? `Both works are labeled ${source.movement}.` : subjects.length ? `A subject connection crosses movements: ${subjects.join(", ")}.` : "An across-movement discovery connection.", signals: [signal("movementAffinity", "Movement", [sameMovement ? source.movement : "cross-movement"], score)] };
   }
   if (mode === "unexpected") {
-    const visual = (jaccard(source.features.palette, candidate.features.palette) + jaccard(source.features.composition, candidate.features.composition)) / 2;
     const bridge = subjects.length || moods.length;
-    const score = (1 - visual) * 0.7 + (bridge ? 0.3 : stableFraction(candidate.id) * 0.15);
     const values = [...subjects, ...moods].slice(0, 2);
-    return { score, text: values.length ? `An unexpected formal contrast connected by ${values.join(" and ")}.` : "An intentional contrast in palette, structure, and visual rhythm.", signals: [signal("contrast", "Unexpected contrast", values.length ? values : ["formal contrast"], score)] };
+    const knownVisualScores = [
+      ...(paletteAvailable ? [jaccard(source.features.palette, candidate.features.palette)] : []),
+      ...(compositionAvailable ? [jaccard(source.features.composition, candidate.features.composition)] : []),
+    ];
+    const discoveryScore = bridge ? 0.3 : stableFraction(candidate.id) * 0.15;
+    if (!knownVisualScores.length) {
+      const bridgeText = values.length ? `Shared subject or mood tags: ${values.join(", ")}.` : formatConnection;
+      return { score: discoveryScore, text: `An unexpected catalog discovery. ${missingVisualDisclosure} ${bridgeText}`, signals: [signal("discoveryScore", "Catalog discovery", values.length ? values : ["catalog selection"], discoveryScore)] };
+    }
+    const visual = knownVisualScores.reduce((sum, value) => sum + value, 0) / knownVisualScores.length;
+    const hasContrast = visual < 1;
+    const score = (1 - visual) * 0.7 + discoveryScore;
+    const comparedMetadata = [paletteAvailable ? "palette" : "", compositionAvailable ? "composition" : ""].filter(Boolean).join(" and ");
+    const bridgeText = values.length ? ` Connected by ${values.join(" and ")}.` : "";
+    const text = hasContrast
+      ? `An unexpected contrast in ${comparedMetadata} metadata.${bridgeText}`
+      : `An unexpected catalog connection with shared ${comparedMetadata} metadata.${bridgeText}`;
+    return { score, text: `${text}${missingVisualDisclosure ? ` ${missingVisualDisclosure}` : ""}`, signals: [signal(hasContrast ? "contrast" : "discoveryScore", hasContrast ? "Unexpected contrast" : "Catalog connection", values.length ? values : [comparedMetadata], score)] };
   }
 
   const paletteScore = jaccard(source.features.palette, candidate.features.palette);
@@ -59,7 +86,10 @@ function connection(source: Artwork, candidate: Artwork, mode: SimilarityMode) {
   const shapeScore = sourceShape === candidateShape ? 1 : 0;
   const score = paletteScore * 0.45 + compositionScore * 0.4 + shapeScore * 0.15;
   const values = [...palettes, ...compositions].slice(0, 3);
-  return { score, text: values.length ? `A metadata connection through ${values.join(", ")}.` : "A looser metadata connection based on format. Image embeddings are not enabled.", signals: [signal("visualSimilarity", "Metadata similarity", values.length ? values : [sourceShape], score)] };
+  const text = values.length
+    ? `A metadata connection through ${values.join(", ")}.${missingVisualDisclosure ? ` ${missingVisualDisclosure}` : ""}`
+    : `${formatConnection} ${missingVisualDisclosure || "No shared palette or composition tags were found."} Image embeddings are not enabled.`;
+  return { score, text, signals: [signal("visualSimilarity", "Metadata similarity", values.length ? values : [sourceShape], score)] };
 }
 
 export function findSimilarArtworks(source: Artwork, candidates: Artwork[], mode: SimilarityMode, limit = 4): SimilarityResult[] {

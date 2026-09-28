@@ -1,4 +1,6 @@
 # Logs
+__pycache__/
+*.py[cod]
 .met-import-cache/
 .cache/
 .vercel/

@@ -1,12 +1,18 @@
+import Link from "next/link";
+import { museumProviderForSourceUrl } from "@/lib/artworks/providers";
+
 export type ArtworkRightsData = {
   imageSource: string;
   rightsHolder?: string | null;
   license?: string | null;
   usageNotes?: string | null;
   sourceUrl: string;
+  imageSourceUrl?: string;
+  licenseUrl?: string;
 };
 
 export function ArtworkRights({ rights }: { rights: ArtworkRightsData }) {
+  const provider = museumProviderForSourceUrl(rights.sourceUrl);
   return (
     <section aria-labelledby="artwork-rights-title" className="border-t border-[var(--hairline)] pt-6">
       <h2 id="artwork-rights-title" className="text-[11px] uppercase tracking-[0.18em] text-[var(--muted-text)]">
@@ -21,6 +27,9 @@ export function ArtworkRights({ rights }: { rights: ArtworkRightsData }) {
       <a href={rights.sourceUrl} className="focus-ring mt-5 inline-block border-b border-[var(--primary-ink)] pb-1 text-xs uppercase tracking-[0.12em]">
         View source record
       </a>
+      {rights.imageSourceUrl ? <a href={rights.imageSourceUrl} className="focus-ring mt-5 block w-fit border-b border-[var(--hairline)] pb-1 text-xs uppercase tracking-[0.12em]">View image source</a> : null}
+      {rights.licenseUrl ? <a href={rights.licenseUrl} className="focus-ring mt-5 block w-fit border-b border-[var(--hairline)] pb-1 text-xs uppercase tracking-[0.12em]">Read image license</a> : null}
+      {provider ? <Link href={provider.guideUrl} className="focus-ring mt-5 block w-fit border-b border-[var(--hairline)] pb-1 text-xs uppercase tracking-[0.12em]">About {provider.shortName} source & rights</Link> : null}
     </section>
   );
 }

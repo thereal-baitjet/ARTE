@@ -37,11 +37,8 @@ export function summarizeTaste(events: AnalyticsEvent[], artworks: Artwork[]): T
     eventCount: profile.eventCount,
     artworkCount: profile.seenArtworkIds.filter((id) => artworks.some((artwork) => artwork.id === id)).length,
     hasPositiveSignals: dimensions.some((dimension) => dimension.signals.length > 0),
-    headline: mood && palette ? `Drawn to ${mood} worlds and ${palette} tones.` : "Your eye is still exploring.",
+    headline: mood && palette ? `Drawn to ${mood} worlds and ${palette} tones.` : dimensions[0].signals[0] ? `A curiosity for ${dimensions[0].signals[0].label.toLowerCase()}.` : "Your eye is still exploring.",
   };
 }
 
-export function tasteShareText(summary: TasteSummary): string {
-  const lines = summary.dimensions.filter((dimension) => dimension.signals.length).map((dimension) => `${dimension.label}: ${dimension.signals.map((signal) => signal.label).join(", ")}`);
-  return ["My ARTE Art DNA", summary.headline, ...lines, `An evolving estimate from ${summary.eventCount} activity signals across ${summary.artworkCount} artworks on this device.`, "Based on ARTE’s current artwork catalog, not a fixed identity."].join("\n");
-}
+export { tasteShareText } from "./share.ts";

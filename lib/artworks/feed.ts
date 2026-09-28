@@ -1,4 +1,5 @@
-import { DEMO_ARTISTS, DEMO_ARTWORKS, GALLERY_ARTWORKS } from "./demoArtworks";
+import { DEMO_ARTISTS, DEMO_ARTWORKS } from "./demoArtworks";
+import { PUBLIC_ARTWORKS } from "./publicCatalog";
 import type { Artwork, FeedPage } from "./types";
 
 const DEFAULT_PAGE_SIZE = 4;
@@ -8,22 +9,22 @@ export function getDemoFeedPage(cursor?: string | null, requestedLimit = DEFAULT
   const limit = Math.max(1, Math.min(MAX_PAGE_SIZE, requestedLimit));
   let start = 0;
   if (cursor) {
-    const cursorIndex = GALLERY_ARTWORKS.findIndex((artwork) => artwork.slug === cursor);
+    const cursorIndex = PUBLIC_ARTWORKS.findIndex((artwork) => artwork.slug === cursor);
     if (cursorIndex < 0) return { items: [], nextCursor: null, validCursor: false };
     start = cursorIndex + 1;
   }
-  const items = GALLERY_ARTWORKS.slice(start, start + limit);
+  const items = PUBLIC_ARTWORKS.slice(start, start + limit);
   const end = start + items.length;
-  const nextCursor = end < GALLERY_ARTWORKS.length ? items.at(-1)?.slug ?? null : null;
+  const nextCursor = end < PUBLIC_ARTWORKS.length ? items.at(-1)?.slug ?? null : null;
   return { items, nextCursor, validCursor: true };
 }
 
 export function getArtworkBySlug(slug: string): Artwork | undefined { return DEMO_ARTWORKS.find((artwork) => artwork.slug === slug); }
 export function getArtistBySlug(slug: string) { return DEMO_ARTISTS.find((artist) => artist.slug === slug); }
 export function getArtworksByArtist(slug: string): Artwork[] { return DEMO_ARTWORKS.filter((artwork) => artwork.artist.slug === slug); }
-export function getArtworkCatalog(): Artwork[] { return [...DEMO_ARTWORKS]; }
+export function getArtworkCatalog(): Artwork[] { return [...PUBLIC_ARTWORKS]; }
 export function getRelatedArtworks(artwork: Artwork, limit = 4): Artwork[] {
-  return DEMO_ARTWORKS.filter((candidate) => candidate.id !== artwork.id).slice(0, limit);
+  return PUBLIC_ARTWORKS.filter((candidate) => candidate.id !== artwork.id).slice(0, limit);
 }
 export function getAllArtworkSlugs() { return DEMO_ARTWORKS.map(({ slug }) => ({ slug })); }
 export function getAllArtistSlugs() { return DEMO_ARTISTS.map(({ slug }) => ({ slug })); }

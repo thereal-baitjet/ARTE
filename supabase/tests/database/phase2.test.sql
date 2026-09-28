@@ -15,16 +15,16 @@ select results_eq(
 );
 
 select results_eq(
-  $$select count(*)::bigint from public.artworks$$,
-  $$values (90::bigint)$$,
-  'deterministic seed loads twelve synthetic plus seventy-eight public-domain artworks'
+  $$select id from public.artworks order by id$$,
+  $$select distinct artwork_id from public.artwork_sources order by artwork_id$$,
+  'seeded catalog and provenance contain the same complete artwork identities'
 );
 
 select results_eq(
   $$select count(*)::bigint from public.artworks
     where not is_synthetic and image_rights_state = 'public_domain'
       and image_license = 'CC0 1.0 Universal' and museum_id is not null$$,
-  $$values (78::bigint)$$,
+  $$select count(*)::bigint from public.artworks where not is_synthetic$$,
   'every real catalog artwork has museum linkage and public-domain license evidence'
 );
 

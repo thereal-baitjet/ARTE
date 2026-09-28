@@ -59,7 +59,13 @@ export type Artwork = {
     license: string;
     usageNotes: string;
     sourceUrl: string;
+    imageSourceUrl?: string;
+    licenseUrl?: string;
   };
+};
+
+export type ArtworkSummary = Pick<Artwork, "id" | "slug" | "title" | "year" | "medium" | "visual"> & {
+  artist: Pick<Artist, "id" | "slug" | "name">;
 };
 
 export type FeedPage = {

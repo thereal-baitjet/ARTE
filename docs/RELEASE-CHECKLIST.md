@@ -1,36 +1,48 @@
 # Release checklist
 
-Current evidence is recorded in `GAUNTLET.md`, September 27 release continuation. Checked items apply only to the scope stated below. The full 48-test application run passed; after the final CTA contrast repair, lint/build and the 10 relevant foundation/release tests passed again. No new database or production-deployment pass is implied.
+This checklist applies to the **1,000-real-work release: Met 339, Cleveland 350, NGA 299, and MoMA 12**, with twelve separate legacy synthetic fixtures (1,012 total seed records). All four source contributions and combined-manifest/source validation are complete; consolidated application checks pass; database and deployment gates remain pending at this pre-push checkpoint. The verified image split is 512 local and 488 official remote museum images. Earlier 500-work validation does not transfer automatically to this revision.
 
-## Local guest application evidence
+## Implemented scope and focused evidence
 
-- [x] Consolidated lint, types, 43 unit tests, production build with 149 generated static pages, and 48 Chromium regressions pass on the tested application snapshot; zero browser retries used.
-- [x] Final CSS contrast repair passes lint/build and 10 foundation/release browser tests, including a 4.5:1 primary CTA contrast assertion.
-- [x] Inspect mobile 375×812, tablet 768×1024, desktop 1440×900 and large desktop 1920×1080 screenshots after the repair.
-- [x] Six primary routes pass Axe A/AA checks, browser console/page-error checks, and horizontal-overflow checks at all four viewports; museum artwork browser coverage verifies decoded local imagery.
-- [x] Guest search, save/reload, private named collection create/add/rename/remove/delete, onboarding, Art DNA share text, privacy resets, and local demo inquiry-draft journeys are verified.
-- [x] Invalid API input, hidden-cursor pagination, stale/expired listing exclusions and unauthorized admin requests are verified within application tests.
-- [x] All 78 real museum works retain archived public-domain clearance, local images, source attribution and seed identities; 12 synthetic works stay clearly labeled.
-- [x] Demo listings and local inquiry drafts are unmistakable; no fake purchase or successful-send action is presented.
-- [x] Offline metadata embeddings generate/rebuild 90 records and reuse all 90 unchanged records on update, without implying image understanding or changing live ranking.
+- [x] Met 339 generated with unique optimized hashes; original 78 IDs/slugs/images preserved.
+- [x] Cleveland 350 generated with explicit CC0, pinned official provenance, original 161 local records/images preserved, and 189 downloaded/hash-verified remote image records.
+- [x] MoMA 12 generated with pinned official metadata and independent Commons public-domain image evidence, permanent revisions, and preserved source credits; three focused validator tests pass.
+- [x] Public browsing excludes synthetic fixtures; explicit legacy saved references still resolve.
+- [x] Search, onboarding, related works, attention, taste, and collection lookups use bounded server payloads.
+- [x] Activity endpoints validate event types and actual request bytes; calculation responses are `no-store` and do not persist guest history.
+- [x] Privacy copy discloses server calculation from bounded device-local events; reset clears stale displayed results.
+- [x] Missing palette/mood/composition metadata is described as unavailable.
+- [x] Regressions cover more than 100 hidden works, real museum hero decoding/attribution/navigation, bounded APIs, pagination, and recoverable search failures.
+- [x] The diversity scheduler removes redundant group-count scans; output parity was verified on two histories. No production latency claim is made.
+- [x] Earlier 500-work unit suite passed 79 tests and production build generated 771 pages; its browser run had 55 passes and 4 failing assertions, so it was not a full browser pass.
 
-## Required before closing release and deployment gates
+## Required for this release
 
-- [ ] Record the final pushed commit and passing current application CI result; local evidence above must not be relabeled as a GitHub Actions run.
-- [ ] Database workflow passes the new migration and 90-work seed, all 49 pgTAP assertions, Auth integration and reset/reapply repeatability. Historical database passes do not satisfy this revision.
-- [ ] Obtain the authorized Vercel CLI session requested by the user following the connected-tool HTTP 403 and failed passkey sign-in path.
-- [ ] Vercel deployment is READY; record the actual production URL and deployed commit.
-- [ ] Smoke-test `/api/health`, browsing, museum attribution/image, search, save/reload, collections, onboarding/Art DNA, demo inquiry persistence and locked admin behavior on the actual production URL.
+- [x] Confirm NGA 299 final typed catalog/manifest/seed and independent per-image Open Access evidence, decode/hash checks, and cross-source duplicate checks.
+- [x] Combined manifest and `--check` confirm exactly 1,000 real works, split 339/350/299/12, twelve separate fixtures, and matching local/remote image evidence.
+- [x] Generate source-qualified SQL catalog expectations and confirm `--check` consistency; generation alone is not PostgreSQL execution.
+- [x] Review a balanced four-source asset sample including all 12 MoMA works and varied remote-image records. Cached-byte review is not a runtime CDN availability test.
+- [x] Current 1,000-work checkpoint passes lint, typecheck, and 87 unit tests (27 JavaScript, 60 TypeScript).
+- [x] Current 1,000-work production build passes with 1,743 generated pages.
+- [x] Complete the full Chromium suite: 65 tests pass without retries; final scroll regressions, lint, types, and production build pass.
+- [ ] Review fresh 375×812, 768×1024, 1440×900, and 1920×1080 product screenshots. Verify actual decoded imagery from all four museums, source/image-credit links, usable controls, no horizontal overflow or console errors, and tested Axe A/AA checks.
+- [ ] Exercise the Cleveland CDN and NGA IIIF service in the browser, including a usable failed-image state.
+- [ ] Current database workflow passes migrations/seed, generated expectations, pgTAP security checks, local Auth, and reset/reapply repeatability. Close the earlier missing-museum-slug failure with actual execution evidence.
+- [ ] Record the pushed revision and passing application/database CI URLs for that exact SHA.
+- [ ] Record Vercel deployment status, deployed SHA, and actual production URL.
+- [ ] Smoke-test health (`artworkCount >= 1000`), source-specific image/attribution, discovery/search pagination, save/reload, collections, onboarding/Art DNA, attention, demo inquiry persistence, and locked admin on the actual public URL.
+
+A deployment URL redirecting to Vercel login is not a successful application smoke test. Earlier GitHub status success does not establish that this catalog is deployed or publicly reachable.
 
 ## Before claiming the full commercial product
 
-- [ ] Hosted Supabase is configured with the current migrations/seed; real authentication, account persistence, reset identity isolation and cross-account security are verified.
-- [ ] Implement and verify cross-device recommendation history/preference retrieval, hydration and merging. This remains code work, not a credential-only blocker.
-- [ ] Replace the bundled public catalog retrieval path with live database publication and cache invalidation so admin publication/archive changes affect public browsing.
-- [ ] Complete external-source ingestion administration, artwork/source/artist CRUD, rights review and publication workflows. Phase 7 remains partial.
-- [ ] Live seller/gallery agreements, source permissions, inventory verification and expiry operations are in place.
-- [ ] Real inquiries have a secure delivery workflow and production abuse controls.
-- [ ] Global attention aggregation and anti-manipulation are implemented and verified.
-- [ ] Operational monitoring, backups, alerts and rights takedown processes are configured and tested.
+- [ ] Hosted Supabase uses current migrations/seed; real authentication, persistence, reset identity isolation, and cross-account security are verified.
+- [ ] Implement and verify cross-device recommendation-history retrieval, hydration, and merging.
+- [ ] Connect live database publication/archive operations to public catalog retrieval and cache invalidation.
+- [ ] Complete external-source administration, artwork/source/artist CRUD, rights review, and publication workflows.
+- [ ] Establish live seller/gallery agreements, source permissions, verified inventory, and expiry operations.
+- [ ] Implement secure inquiry delivery and production abuse controls; demo drafts remain unsent.
+- [ ] Implement and verify global attention aggregation and resistance to manipulation.
+- [ ] Configure and test monitoring, backups, alerts, rights-takedown operations, and external-image availability monitoring.
 
-Unchecked items are not passing gates. The guest application evidence does not establish a completed commercial product, a passing new database release, or a successful deployment.
+Unchecked items are not passing gates. Catalog size alone does not complete hosted personalization, commerce, or the full gauntlet.

@@ -6,7 +6,10 @@ import { ArtworkVisual } from "@/components/artwork/ArtworkVisual";
 import { ArtworkDetailSignal } from "@/components/analytics/ArtworkDetailSignal";
 import { BackToFeed } from "@/components/navigation/BackToFeed";
 import { MoreLikeThisPanel } from "@/components/recommendation/MoreLikeThisPanel";
-import { getAllArtworkSlugs, getArtworkBySlug, getArtworkCatalog } from "@/lib/artworks/feed";
+import { getAllArtworkSlugs, getArtworkBySlug } from "@/lib/artworks/feed";
+import { museumSourceLabel } from "@/lib/artworks/providers";
+import { PUBLIC_ARTWORKS } from "@/lib/artworks/publicCatalog";
+import { getRelatedArtworkGroups } from "@/lib/recommendations/related";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -22,12 +25,12 @@ export default async function ArtworkPage({ params }: Props) {
   const { slug } = await params;
   const artwork = getArtworkBySlug(slug);
   if (!artwork) notFound();
-  const candidates = getArtworkCatalog().filter((candidate) => candidate.id !== artwork.id);
+  const relatedGroups = getRelatedArtworkGroups(artwork, PUBLIC_ARTWORKS);
 
   return (
     <article className="px-6 py-8 md:px-10 lg:px-14 lg:py-12">
       <ArtworkDetailSignal artwork={artwork} />
-      <div className="flex items-center justify-between gap-4"><BackToFeed /><p className="text-[10px] uppercase tracking-[0.2em] text-[var(--oxblood)]">{artwork.isDemo ? "Demo artwork" : "The Met · Open Access"}</p></div>
+      <div className="flex items-center justify-between gap-4"><BackToFeed /><p className="text-[10px] uppercase tracking-[0.2em] text-[var(--oxblood)]">{artwork.isDemo ? "Demo artwork" : museumSourceLabel(artwork.rights.sourceUrl, artwork.museum?.name)}</p></div>
       <div className="mt-10 grid gap-10 xl:grid-cols-[minmax(0,1fr)_24rem]">
         <div className="flex justify-center"><ArtworkVisual artwork={artwork} /></div>
         <aside>
@@ -41,7 +44,7 @@ export default async function ArtworkPage({ params }: Props) {
         </aside>
       </div>
       <div className="mx-auto mt-16 max-w-4xl"><ArtworkRights rights={artwork.rights} /></div>
-      <MoreLikeThisPanel source={artwork} candidates={candidates} />
+      <MoreLikeThisPanel source={artwork} groups={relatedGroups} />
     </article>
   );
 }

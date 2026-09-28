@@ -3,6 +3,12 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
+  images: {
+    remotePatterns: [
+      { protocol: "https", hostname: "openaccess-cdn.clevelandart.org", pathname: "/**", search: "" },
+      { protocol: "https", hostname: "api.nga.gov", pathname: "/iiif/**", search: "" },
+    ],
+  },
   async headers() {
     return [{ source: "/(.*)", headers: [
       { key: "X-Content-Type-Options", value: "nosniff" },

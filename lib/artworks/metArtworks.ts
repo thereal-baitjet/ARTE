@@ -3293,7 +3293,7 @@ export const MET_ARTWORKS: Artwork[] = [
     "year": "1914",
     "medium": "Medium not supplied",
     "dimensions": "cix, 164 pages, [100] leaves of plates : illustrations (some color) ; Height: 11 13/16 in. (30 cm)",
-    "description": "Les cathédrales de France (1914). Auguste Rodin; . Collection: The Metropolitan Museum of Art.",
+    "description": "Les cathédrales de France (1914). Auguste Rodin. Collection: The Metropolitan Museum of Art.",
     "movement": "The Libraries",
     "tags": [
       "the libraries"
@@ -4795,6 +4795,15713 @@ export const MET_ARTWORKS: Artwork[] = [
       "license": "CC0 1.0 Universal",
       "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Fishbein-Bender Collection, Gift of T. Richard Fishbein and Estelle P. Bender, 2012 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
       "sourceUrl": "https://www.metmuseum.org/art/collection/search/77204"
+    }
+  },
+  {
+    "id": "e4bd2e7c-9fe7-727e-2d35-0e5dab637d63",
+    "slug": "the-bather-met-11109",
+    "title": "The Bather",
+    "year": "1899",
+    "medium": "Watercolor and graphite on off-white wove paper",
+    "dimensions": "14 7/16 x 21 1/16 in. (36.7 x 53.5 cm)\r\nFramed: 24 1/2 x 30 1/2 in. (62.2 x 77.5 cm)",
+    "description": "The Bather (1899). Winslow Homer; Watercolor and graphite on off-white wove paper. Collection: The Metropolitan Museum of Art. Credit: Amelia B. Lazarus Fund, 1910",
+    "movement": "Watercolor",
+    "tags": [
+      "men",
+      "bathing",
+      "watercolor",
+      "the american wing"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "men",
+        "bathing"
+      ],
+      "mediumCategory": "watercolor",
+      "period": "1899",
+      "geography": "American"
+    },
+    "artist": {
+      "id": "36d6ae21-65dd-7e0e-ca9a-445b44195cd2",
+      "slug": "winslow-homer-met-36d6ae21",
+      "name": "Winslow Homer",
+      "nationality": "American",
+      "biography": "American, Boston, Massachusetts 1836–1910 Prouts Neck, Maine"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "599 / 416",
+      "background": "#ede8df",
+      "alt": "The Bather by Winslow Homer, 1899. Watercolor and graphite on off-white wove paper. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-11109.webp",
+      "width": 599,
+      "height": 416
+    },
+    "recommendationReason": "Explore watercolor from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Amelia B. Lazarus Fund, 1910 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/11109"
+    }
+  },
+  {
+    "id": "76041c97-62ae-4615-96ea-d263924ce439",
+    "slug": "the-bathers-met-11110",
+    "title": "The Bathers",
+    "year": "1882",
+    "medium": "Black and white chalk on off-white wove paper",
+    "dimensions": "12 5/8 x 19 5/8 in. (32.1 x 49.8 cm)",
+    "description": "The Bathers (1882). Winslow Homer; Black and white chalk on off-white wove paper. Collection: The Metropolitan Museum of Art. Credit: Rogers Fund, 1920",
+    "movement": "Drawing",
+    "tags": [
+      "women",
+      "bathing",
+      "drawing",
+      "the american wing"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "women",
+        "bathing"
+      ],
+      "mediumCategory": "drawing",
+      "period": "1882",
+      "geography": "American"
+    },
+    "artist": {
+      "id": "36d6ae21-65dd-7e0e-ca9a-445b44195cd2",
+      "slug": "winslow-homer-met-36d6ae21",
+      "name": "Winslow Homer",
+      "nationality": "American",
+      "biography": "American, Boston, Massachusetts 1836–1910 Prouts Neck, Maine"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "599 / 415",
+      "background": "#ede8df",
+      "alt": "The Bathers by Winslow Homer, 1882. Black and white chalk on off-white wove paper. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-11110.webp",
+      "width": 599,
+      "height": 415
+    },
+    "recommendationReason": "Explore drawing from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Rogers Fund, 1920 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/11110"
+    }
+  },
+  {
+    "id": "f4f6f3a5-8199-dc00-52d3-86d870dfcaa0",
+    "slug": "the-beach-late-afternoon-met-11111",
+    "title": "The Beach, Late Afternoon",
+    "year": "1869",
+    "medium": "Oil on wood",
+    "dimensions": "9 1/4 x 21 in. (23.5 x 53.3 cm)",
+    "description": "The Beach, Late Afternoon (1869). Winslow Homer; Oil on wood. Collection: The Metropolitan Museum of Art. Credit: Bequest of Miss Adelaide Milton de Groot (1876-1967), 1967",
+    "movement": "Painting",
+    "tags": [
+      "human figures",
+      "beaches",
+      "painting",
+      "the american wing"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "human figures",
+        "beaches"
+      ],
+      "mediumCategory": "painting",
+      "period": "1869",
+      "geography": "American"
+    },
+    "artist": {
+      "id": "36d6ae21-65dd-7e0e-ca9a-445b44195cd2",
+      "slug": "winslow-homer-met-36d6ae21",
+      "name": "Winslow Homer",
+      "nationality": "American",
+      "biography": "American, Boston, Massachusetts 1836–1910 Prouts Neck, Maine"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "598 / 282",
+      "background": "#ede8df",
+      "alt": "The Beach, Late Afternoon by Winslow Homer, 1869. Oil on wood. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-11111.webp",
+      "width": 598,
+      "height": 282
+    },
+    "recommendationReason": "Explore painting from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Bequest of Miss Adelaide Milton de Groot (1876-1967), 1967 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/11111"
+    }
+  },
+  {
+    "id": "99619258-4a28-6192-9dd5-e59254b98e83",
+    "slug": "camp-fire-met-11112",
+    "title": "Camp Fire",
+    "year": "1880",
+    "medium": "Oil on canvas",
+    "dimensions": "23 3/4 x 38 1/8 in. (60.3 x 96.8 cm)",
+    "description": "Camp Fire (1880). Winslow Homer; Oil on canvas. Collection: The Metropolitan Museum of Art. Credit: Gift of Josephine Pomeroy Hendrick, in the name of Henry Keney Pomeroy, 1927",
+    "movement": "Painting",
+    "tags": [
+      "tents",
+      "men",
+      "fire",
+      "camps",
+      "painting",
+      "the american wing"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "tents",
+        "men",
+        "fire",
+        "camps"
+      ],
+      "mediumCategory": "painting",
+      "period": "1880",
+      "geography": "American"
+    },
+    "artist": {
+      "id": "36d6ae21-65dd-7e0e-ca9a-445b44195cd2",
+      "slug": "winslow-homer-met-36d6ae21",
+      "name": "Winslow Homer",
+      "nationality": "American",
+      "biography": "American, Boston, Massachusetts 1836–1910 Prouts Neck, Maine"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "599 / 373",
+      "background": "#ede8df",
+      "alt": "Camp Fire by Winslow Homer, 1880. Oil on canvas. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-11112.webp",
+      "width": 599,
+      "height": 373
+    },
+    "recommendationReason": "Explore painting from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Gift of Josephine Pomeroy Hendrick, in the name of Henry Keney Pomeroy, 1927 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/11112"
+    }
+  },
+  {
+    "id": "278927cf-4283-7b2f-a31e-c9a2736f34ca",
+    "slug": "cannon-rock-met-11113",
+    "title": "Cannon Rock",
+    "year": "1895",
+    "medium": "Oil on canvas",
+    "dimensions": "40 x 40 in. (101.6 x 101.6 cm)",
+    "description": "Cannon Rock (1895). Winslow Homer; Oil on canvas. Collection: The Metropolitan Museum of Art. Credit: Gift of George A. Hearn, 1906",
+    "movement": "Painting",
+    "tags": [
+      "seascapes",
+      "waves",
+      "painting",
+      "the american wing"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "seascapes",
+        "waves"
+      ],
+      "mediumCategory": "painting",
+      "period": "1895",
+      "geography": "American"
+    },
+    "artist": {
+      "id": "36d6ae21-65dd-7e0e-ca9a-445b44195cd2",
+      "slug": "winslow-homer-met-36d6ae21",
+      "name": "Winslow Homer",
+      "nationality": "American",
+      "biography": "American, Boston, Massachusetts 1836–1910 Prouts Neck, Maine"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "square",
+      "aspectRatio": "599 / 599",
+      "background": "#ede8df",
+      "alt": "Cannon Rock by Winslow Homer, 1895. Oil on canvas. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-11113.webp",
+      "width": 599,
+      "height": 599
+    },
+    "recommendationReason": "Explore painting from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Gift of George A. Hearn, 1906 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/11113"
+    }
+  },
+  {
+    "id": "bc592e9a-838e-f654-c388-b274396149fd",
+    "slug": "channel-bass-met-11114",
+    "title": "Channel Bass",
+    "year": "1904",
+    "medium": "Watercolor and graphite on white wove paper",
+    "dimensions": "11 1/4 x 19 3/8 in. (28.6 x 49.2 cm)\r\nFramed: 24 1/2 x 30 1/2 in. (62.2 x 77.5 cm)",
+    "description": "Channel Bass (1904). Winslow Homer; Watercolor and graphite on white wove paper. Collection: The Metropolitan Museum of Art. Credit: George A. Hearn Fund, 1952",
+    "movement": "Watercolor",
+    "tags": [
+      "fish",
+      "watercolor",
+      "the american wing"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "fish"
+      ],
+      "mediumCategory": "watercolor",
+      "period": "1904",
+      "geography": "American"
+    },
+    "artist": {
+      "id": "36d6ae21-65dd-7e0e-ca9a-445b44195cd2",
+      "slug": "winslow-homer-met-36d6ae21",
+      "name": "Winslow Homer",
+      "nationality": "American",
+      "biography": "American, Boston, Massachusetts 1836–1910 Prouts Neck, Maine"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "600 / 357",
+      "background": "#ede8df",
+      "alt": "Channel Bass by Winslow Homer, 1904. Watercolor and graphite on white wove paper. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-11114.webp",
+      "width": 600,
+      "height": 357
+    },
+    "recommendationReason": "Explore watercolor from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. George A. Hearn Fund, 1952 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/11114"
+    }
+  },
+  {
+    "id": "dae06fec-ebdb-4e11-4c86-6a2e993f7e9b",
+    "slug": "the-croquet-players-met-11115",
+    "title": "The Croquet Players",
+    "year": "1866",
+    "medium": "Conté crayon, on tan wove paper",
+    "dimensions": "11 1/2 x 10 1/8 in. (29.2 x 25.7 cm)",
+    "description": "The Croquet Players (1866). Winslow Homer; Conté crayon, on tan wove paper. Collection: The Metropolitan Museum of Art. Credit: Fletcher Fund, 1937",
+    "movement": "Drawing",
+    "tags": [
+      "men",
+      "women",
+      "drawing",
+      "the american wing"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "men",
+        "women"
+      ],
+      "mediumCategory": "drawing",
+      "period": "1866",
+      "geography": "American"
+    },
+    "artist": {
+      "id": "36d6ae21-65dd-7e0e-ca9a-445b44195cd2",
+      "slug": "winslow-homer-met-36d6ae21",
+      "name": "Winslow Homer",
+      "nationality": "American",
+      "biography": "American, Boston, Massachusetts 1836–1910 Prouts Neck, Maine"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "547 / 624",
+      "background": "#ede8df",
+      "alt": "The Croquet Players by Winslow Homer, 1866. Conté crayon, on tan wove paper. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-11115.webp",
+      "width": 547,
+      "height": 624
+    },
+    "recommendationReason": "Explore drawing from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Fletcher Fund, 1937 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/11115"
+    }
+  },
+  {
+    "id": "f7bc25d8-0f57-3047-ab09-4d7bd414317f",
+    "slug": "dressing-for-the-carnival-met-11116",
+    "title": "Dressing for the Carnival",
+    "year": "1877",
+    "medium": "Oil on canvas",
+    "dimensions": "20 x 30in. (50.8 x 76.2cm)\r\nFramed: 31 9/16 × 41 1/2 × 5 7/8 in. (80.1 × 105.4 × 14.9 cm)",
+    "description": "Dressing for the Carnival (1877). Winslow Homer; Oil on canvas. Collection: The Metropolitan Museum of Art. Credit: Amelia B. Lazarus Fund, 1922",
+    "movement": "Painting",
+    "tags": [
+      "children",
+      "boys",
+      "girls",
+      "women",
+      "painting",
+      "the american wing"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "children",
+        "boys",
+        "girls",
+        "women"
+      ],
+      "mediumCategory": "painting",
+      "period": "1877",
+      "geography": "American"
+    },
+    "artist": {
+      "id": "36d6ae21-65dd-7e0e-ca9a-445b44195cd2",
+      "slug": "winslow-homer-met-36d6ae21",
+      "name": "Winslow Homer",
+      "nationality": "American",
+      "biography": "American, Boston, Massachusetts 1836–1910 Prouts Neck, Maine"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "600 / 401",
+      "background": "#ede8df",
+      "alt": "Dressing for the Carnival by Winslow Homer, 1877. Oil on canvas. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-11116.webp",
+      "width": 600,
+      "height": 401
+    },
+    "recommendationReason": "Explore painting from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Amelia B. Lazarus Fund, 1922 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/11116"
+    }
+  },
+  {
+    "id": "7cc4e881-d21a-a561-56e5-48c8847f4942",
+    "slug": "alhambra-granada-met-12027",
+    "title": "Alhambra, Granada",
+    "year": "1912",
+    "medium": "Watercolor and graphite on white wove paper",
+    "dimensions": "19 7/8 x 13 7/8 in. (50.5 x 35.2 cm)",
+    "description": "Alhambra, Granada (1912). John Singer Sargent; Watercolor and graphite on white wove paper. Collection: The Metropolitan Museum of Art. Credit: Gift of Mrs. Francis Ormond, 1950",
+    "movement": "Watercolor",
+    "tags": [
+      "trees",
+      "watercolor",
+      "the american wing"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "trees"
+      ],
+      "mediumCategory": "watercolor",
+      "period": "1912",
+      "geography": "American"
+    },
+    "artist": {
+      "id": "7849a21a-7b52-3999-bf28-589aff9a0847",
+      "slug": "john-singer-sargent-met-7849a21a",
+      "name": "John Singer Sargent",
+      "nationality": "American",
+      "biography": "American, Florence 1856–1925 London"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "509 / 624",
+      "background": "#ede8df",
+      "alt": "Alhambra, Granada by John Singer Sargent, 1912. Watercolor and graphite on white wove paper. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-12027.webp",
+      "width": 509,
+      "height": 624
+    },
+    "recommendationReason": "Explore watercolor from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Gift of Mrs. Francis Ormond, 1950 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/12027"
+    }
+  },
+  {
+    "id": "286be15f-d4d5-6759-ccc2-c5aa7124ec2b",
+    "slug": "alpine-pool-met-12028",
+    "title": "Alpine Pool",
+    "year": "1907",
+    "medium": "Oil on canvas",
+    "dimensions": "27 1/2 x 38 in. (69.9 x 96.5 cm)",
+    "description": "Alpine Pool (1907). John Singer Sargent; Oil on canvas. Collection: The Metropolitan Museum of Art. Credit: Gift of Mrs. Francis Ormond, 1950",
+    "movement": "Painting",
+    "tags": [
+      "landscapes",
+      "painting",
+      "the american wing"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "landscapes"
+      ],
+      "mediumCategory": "painting",
+      "period": "1907",
+      "geography": "American"
+    },
+    "artist": {
+      "id": "7849a21a-7b52-3999-bf28-589aff9a0847",
+      "slug": "john-singer-sargent-met-7849a21a",
+      "name": "John Singer Sargent",
+      "nationality": "American",
+      "biography": "American, Florence 1856–1925 London"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "599 / 430",
+      "background": "#ede8df",
+      "alt": "Alpine Pool by John Singer Sargent, 1907. Oil on canvas. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-12028.webp",
+      "width": 599,
+      "height": 430
+    },
+    "recommendationReason": "Explore painting from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Gift of Mrs. Francis Ormond, 1950 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/12028"
+    }
+  },
+  {
+    "id": "1afddf64-90f7-8e43-28d3-a8731411cad4",
+    "slug": "camp-with-ambulance-met-12029",
+    "title": "Camp with Ambulance",
+    "year": "1918",
+    "medium": "Watercolor and graphite on white wove paper",
+    "dimensions": "15 5/16 x 20 3/4 in. (38.9 x 52.7 cm)",
+    "description": "Camp with Ambulance (1918). John Singer Sargent; Watercolor and graphite on white wove paper. Collection: The Metropolitan Museum of Art. Credit: Gift of Mrs. Francis Ormond, 1950",
+    "movement": "Watercolor",
+    "tags": [
+      "tents",
+      "world war i",
+      "ambulances",
+      "watercolor",
+      "the american wing"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "tents",
+        "world war i",
+        "ambulances"
+      ],
+      "mediumCategory": "watercolor",
+      "period": "1918",
+      "geography": "American"
+    },
+    "artist": {
+      "id": "7849a21a-7b52-3999-bf28-589aff9a0847",
+      "slug": "john-singer-sargent-met-7849a21a",
+      "name": "John Singer Sargent",
+      "nationality": "American",
+      "biography": "American, Florence 1856–1925 London"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "600 / 440",
+      "background": "#ede8df",
+      "alt": "Camp with Ambulance by John Singer Sargent, 1918. Watercolor and graphite on white wove paper. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-12029.webp",
+      "width": 600,
+      "height": 440
+    },
+    "recommendationReason": "Explore watercolor from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Gift of Mrs. Francis Ormond, 1950 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/12029"
+    }
+  },
+  {
+    "id": "24d229df-dbe3-2d3a-e256-06a20ba76c35",
+    "slug": "study-for-death-and-victory-met-12030",
+    "title": "Study for \"Death and Victory\"",
+    "year": "1921–22",
+    "medium": "Watercolor, graphite, and gouache on off-white wove paper",
+    "dimensions": "20 15/16 x 8 15/16 in. (53.2 x 22.7 cm)",
+    "description": "Study for \"Death and Victory\" (1921–22). John Singer Sargent; Watercolor, graphite, and gouache on off-white wove paper. Collection: The Metropolitan Museum of Art. Credit: Gift of Mrs. Francis Ormond, 1950",
+    "movement": "Watercolor",
+    "tags": [
+      "victory",
+      "death",
+      "watercolor",
+      "the american wing"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "victory",
+        "death"
+      ],
+      "mediumCategory": "watercolor",
+      "period": "1921–22",
+      "geography": "American"
+    },
+    "artist": {
+      "id": "7849a21a-7b52-3999-bf28-589aff9a0847",
+      "slug": "john-singer-sargent-met-7849a21a",
+      "name": "John Singer Sargent",
+      "nationality": "American",
+      "biography": "American, Florence 1856–1925 London"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "301 / 624",
+      "background": "#ede8df",
+      "alt": "Study for \"Death and Victory\" by John Singer Sargent, 1921–22. Watercolor, graphite, and gouache on off-white wove paper. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-12030.webp",
+      "width": 301,
+      "height": 624
+    },
+    "recommendationReason": "Explore watercolor from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Gift of Mrs. Francis Ormond, 1950 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/12030"
+    }
+  },
+  {
+    "id": "06753e11-d02c-086e-2aed-3153a34078e0",
+    "slug": "arab-woman-met-12031",
+    "title": "Arab Woman",
+    "year": "1905–6",
+    "medium": "Watercolor and gouache on off-white wove paper",
+    "dimensions": "18 x 12 in. (45.7 x 30.5 cm)\r\nMat: 22 × 16 in. (55.9 × 40.6 cm)\r\nFramed (standard exhibition frame): 24 1/4 × 18 1/4 × 1 1/8 in. (61.6 × 46.4 × 2.9 cm)",
+    "description": "Arab Woman (1905–6). John Singer Sargent; Watercolor and gouache on off-white wove paper. Collection: The Metropolitan Museum of Art. Credit: Gift of Mrs. Francis Ormond, 1950",
+    "movement": "Watercolor",
+    "tags": [
+      "women",
+      "watercolor",
+      "the american wing"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "women"
+      ],
+      "mediumCategory": "watercolor",
+      "period": "1905–6",
+      "geography": "American"
+    },
+    "artist": {
+      "id": "7849a21a-7b52-3999-bf28-589aff9a0847",
+      "slug": "john-singer-sargent-met-7849a21a",
+      "name": "John Singer Sargent",
+      "nationality": "American",
+      "biography": "American, Florence 1856–1925 London"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "417 / 624",
+      "background": "#ede8df",
+      "alt": "Arab Woman by John Singer Sargent, 1905–6. Watercolor and gouache on off-white wove paper. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-12031.webp",
+      "width": 417,
+      "height": 624
+    },
+    "recommendationReason": "Explore watercolor from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Gift of Mrs. Francis Ormond, 1950 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/12031"
+    }
+  },
+  {
+    "id": "2ecd1290-7177-a582-9f5d-fcc953d266be",
+    "slug": "patio-de-los-leones-alhambra-met-12033",
+    "title": "Patio de los Leones, Alhambra",
+    "year": "1879",
+    "medium": "Watercolor, gouache, and graphite on off-white wove paper",
+    "dimensions": "9 3/4 x 13 1/2 in. (24.8 x 34.3 cm)",
+    "description": "Patio de los Leones, Alhambra (1879). John Singer Sargent; Watercolor, gouache, and graphite on off-white wove paper. Collection: The Metropolitan Museum of Art. Credit: Gift of Mrs. Francis Ormond, 1950",
+    "movement": "Watercolor",
+    "tags": [
+      "watercolor",
+      "the american wing"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [],
+      "mediumCategory": "watercolor",
+      "period": "1879",
+      "geography": "American"
+    },
+    "artist": {
+      "id": "7849a21a-7b52-3999-bf28-589aff9a0847",
+      "slug": "john-singer-sargent-met-7849a21a",
+      "name": "John Singer Sargent",
+      "nationality": "American",
+      "biography": "American, Florence 1856–1925 London"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "599 / 458",
+      "background": "#ede8df",
+      "alt": "Patio de los Leones, Alhambra by John Singer Sargent, 1879. Watercolor, gouache, and graphite on off-white wove paper. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-12033.webp",
+      "width": 599,
+      "height": 458
+    },
+    "recommendationReason": "Explore watercolor from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Gift of Mrs. Francis Ormond, 1950 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/12033"
+    }
+  },
+  {
+    "id": "71b84109-885c-b371-741a-073d8617bd69",
+    "slug": "mules-met-12036",
+    "title": "Mules",
+    "year": "1918",
+    "medium": "Watercolor, graphite, and wax crayon on off-white wove paper",
+    "dimensions": "13 3/16 x 20 15/16 in. (33.5 x 53.2 cm)",
+    "description": "Mules (1918). John Singer Sargent; Watercolor, graphite, and wax crayon on off-white wove paper. Collection: The Metropolitan Museum of Art. Credit: Gift of Mrs. Francis Ormond, 1950",
+    "movement": "Watercolor",
+    "tags": [
+      "animals",
+      "watercolor",
+      "the american wing"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "animals"
+      ],
+      "mediumCategory": "watercolor",
+      "period": "1918",
+      "geography": "American"
+    },
+    "artist": {
+      "id": "7849a21a-7b52-3999-bf28-589aff9a0847",
+      "slug": "john-singer-sargent-met-7849a21a",
+      "name": "John Singer Sargent",
+      "nationality": "American",
+      "biography": "American, Florence 1856–1925 London"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "600 / 385",
+      "background": "#ede8df",
+      "alt": "Mules by John Singer Sargent, 1918. Watercolor, graphite, and wax crayon on off-white wove paper. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-12036.webp",
+      "width": 600,
+      "height": 385
+    },
+    "recommendationReason": "Explore watercolor from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Gift of Mrs. Francis Ormond, 1950 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/12036"
+    }
+  },
+  {
+    "id": "6d92541d-9abe-dbe1-c3a2-42ed1bb6b276",
+    "slug": "astarte-met-12037",
+    "title": "Astarte",
+    "year": "ca. 1890–95",
+    "medium": "Oil on canvas",
+    "dimensions": "38 5/8 x 12 in. (98.1 x 30.5 cm)",
+    "description": "Astarte (ca. 1890–95). John Singer Sargent; Oil on canvas. Collection: The Metropolitan Museum of Art. Credit: Gift of Mrs. Francis Ormond, 1950",
+    "movement": "Painting",
+    "tags": [
+      "goddess",
+      "painting",
+      "the american wing"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "goddess"
+      ],
+      "mediumCategory": "painting",
+      "period": "ca. 1890–95",
+      "geography": "American"
+    },
+    "artist": {
+      "id": "7849a21a-7b52-3999-bf28-589aff9a0847",
+      "slug": "john-singer-sargent-met-7849a21a",
+      "name": "John Singer Sargent",
+      "nationality": "American",
+      "biography": "American, Florence 1856–1925 London"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "203 / 622",
+      "background": "#ede8df",
+      "alt": "Astarte by John Singer Sargent, ca. 1890–95. Oil on canvas. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-12037.webp",
+      "width": 203,
+      "height": 622
+    },
+    "recommendationReason": "Explore painting from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Gift of Mrs. Francis Ormond, 1950 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/12037"
+    }
+  },
+  {
+    "id": "8ca985e3-12ac-b486-ebc2-46119db83570",
+    "slug": "henry-irving-as-philip-ii-of-spain-met-13008",
+    "title": "Henry Irving as Philip II of Spain",
+    "year": "after 1872",
+    "medium": "Oil on canvas",
+    "dimensions": "19 1/8 x 14 3/8 in. (48.6 x 36 cm)",
+    "description": "Henry Irving as Philip II of Spain (after 1872). Formerly attributed to James McNeill Whistler; Oil on canvas. Collection: The Metropolitan Museum of Art. Credit: Gift of George S. Hellman, 1955",
+    "movement": "Painting",
+    "tags": [
+      "men",
+      "portraits",
+      "painting",
+      "the american wing"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "men",
+        "portraits"
+      ],
+      "mediumCategory": "painting",
+      "period": "after 1872",
+      "geography": "American"
+    },
+    "artist": {
+      "id": "27c6290c-b1b4-aca8-797b-a8814b3389b3",
+      "slug": "formerly-attributed-to-james-mcneill-whistler-met-27c6290c",
+      "name": "Formerly attributed to James McNeill Whistler",
+      "nationality": "American",
+      "biography": "American, Lowell, Massachusetts 1834–1903 London"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "454 / 625",
+      "background": "#ede8df",
+      "alt": "Henry Irving as Philip II of Spain by Formerly attributed to James McNeill Whistler, after 1872. Oil on canvas. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-13008.webp",
+      "width": 454,
+      "height": 625
+    },
+    "recommendationReason": "Explore painting from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Gift of George S. Hellman, 1955 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/13008"
+    }
+  },
+  {
+    "id": "05704694-6f13-0387-8e82-cd5e2b9688b6",
+    "slug": "40-and-50-man-and-woman-seated-from-sketchbook-met-13206",
+    "title": "40 and 50 (Man and Woman Seated) (from Sketchbook)",
+    "year": "1854–55",
+    "medium": "Black ink and graphite on off-white wove paper",
+    "dimensions": "3 x 3 9/16 in. (7.6 x 9 cm)",
+    "description": "40 and 50 (Man and Woman Seated) (from Sketchbook) (1854–55). James McNeill Whistler; Black ink and graphite on off-white wove paper. Collection: The Metropolitan Museum of Art. Credit: Gift of Margaret C. Buell, Helen L. King, and Sybil A. Walk, 1970",
+    "movement": "Drawing",
+    "tags": [
+      "men",
+      "women",
+      "cross",
+      "drawing",
+      "the american wing"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "men",
+        "women",
+        "cross"
+      ],
+      "mediumCategory": "drawing",
+      "period": "1854–55",
+      "geography": "American"
+    },
+    "artist": {
+      "id": "d6ec0380-b96f-424f-646e-6b47c4e220d0",
+      "slug": "james-mcneill-whistler-met-d6ec0380",
+      "name": "James McNeill Whistler",
+      "nationality": "American",
+      "biography": "American, Lowell, Massachusetts 1834–1903 London"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "467 / 625",
+      "background": "#ede8df",
+      "alt": "40 and 50 (Man and Woman Seated) (from Sketchbook) by James McNeill Whistler, 1854–55. Black ink and graphite on off-white wove paper. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-13206.webp",
+      "width": 467,
+      "height": 625
+    },
+    "recommendationReason": "Explore drawing from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Gift of Margaret C. Buell, Helen L. King, and Sybil A. Walk, 1970 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/13206"
+    }
+  },
+  {
+    "id": "faa27834-ace7-3049-62a9-da0692047b2d",
+    "slug": "after-dinner-possibly-ross-winans-from-sketchbook-met-13207",
+    "title": "After Dinner (Possibly Ross Winans) (from Sketchbook)",
+    "year": "1854–55",
+    "medium": "Brown ink on blue wove paper",
+    "dimensions": "3 x 3 3/16 in. (7.6 x 8.1 cm)",
+    "description": "After Dinner (Possibly Ross Winans) (from Sketchbook) (1854–55). James McNeill Whistler; Brown ink on blue wove paper. Collection: The Metropolitan Museum of Art. Credit: Gift of Margaret C. Buell, Helen L. King, and Sybil A. Walk, 1970",
+    "movement": "Drawing",
+    "tags": [
+      "soldiers",
+      "women",
+      "drawing",
+      "the american wing"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "soldiers",
+        "women"
+      ],
+      "mediumCategory": "drawing",
+      "period": "1854–55",
+      "geography": "American"
+    },
+    "artist": {
+      "id": "d6ec0380-b96f-424f-646e-6b47c4e220d0",
+      "slug": "james-mcneill-whistler-met-d6ec0380",
+      "name": "James McNeill Whistler",
+      "nationality": "American",
+      "biography": "American, Lowell, Massachusetts 1834–1903 London"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "502 / 624",
+      "background": "#ede8df",
+      "alt": "After Dinner (Possibly Ross Winans) (from Sketchbook) by James McNeill Whistler, 1854–55. Brown ink on blue wove paper. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-13207.webp",
+      "width": 502,
+      "height": 624
+    },
+    "recommendationReason": "Explore drawing from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Gift of Margaret C. Buell, Helen L. King, and Sybil A. Walk, 1970 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/13207"
+    }
+  },
+  {
+    "id": "14c1aebd-962e-0ccb-55dc-a3b2c75ee363",
+    "slug": "arrangement-in-black-no-3-sir-henry-irving-as-philip-ii-of-spain-met-13209",
+    "title": "Arrangement in Black, No. 3: Sir Henry Irving as Philip II of Spain",
+    "year": "1876, reworked 1885",
+    "medium": "Oil on canvas",
+    "dimensions": "84 3/4 x 42 3/4 in. (215.3 x 108.6 cm)",
+    "description": "Arrangement in Black, No. 3: Sir Henry Irving as Philip II of Spain (1876, reworked 1885). James McNeill Whistler; Oil on canvas. Collection: The Metropolitan Museum of Art. Credit: Rogers Fund, 1910",
+    "movement": "Painting",
+    "tags": [
+      "men",
+      "portraits",
+      "actors",
+      "painting",
+      "the american wing"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "men",
+        "portraits",
+        "actors"
+      ],
+      "mediumCategory": "painting",
+      "period": "1876, reworked 1885",
+      "geography": "American"
+    },
+    "artist": {
+      "id": "d6ec0380-b96f-424f-646e-6b47c4e220d0",
+      "slug": "james-mcneill-whistler-met-d6ec0380",
+      "name": "James McNeill Whistler",
+      "nationality": "American",
+      "biography": "American, Lowell, Massachusetts 1834–1903 London"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "318 / 624",
+      "background": "#ede8df",
+      "alt": "Arrangement in Black, No. 3: Sir Henry Irving as Philip II of Spain by James McNeill Whistler, 1876, reworked 1885. Oil on canvas. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-13209.webp",
+      "width": 318,
+      "height": 624
+    },
+    "recommendationReason": "Explore painting from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Rogers Fund, 1910 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/13209"
+    }
+  },
+  {
+    "id": "6f2a1ed0-1a5c-982b-0f3d-c5349c04c814",
+    "slug": "arrangement-in-black-girl-reading-met-13210",
+    "title": "Arrangement in Black: Girl Reading",
+    "year": "ca. 1880–90",
+    "medium": "Oil on wood",
+    "dimensions": "12 x 9 in. (22.9 x 30.5 cm)",
+    "description": "Arrangement in Black: Girl Reading (ca. 1880–90). James McNeill Whistler; Oil on wood. Collection: The Metropolitan Museum of Art. Credit: Bequest of Miss Adelaide Milton de Groot (1876-1967), 1967",
+    "movement": "Painting",
+    "tags": [
+      "women",
+      "reading",
+      "painting",
+      "the american wing"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "women",
+        "reading"
+      ],
+      "mediumCategory": "painting",
+      "period": "ca. 1880–90",
+      "geography": "American"
+    },
+    "artist": {
+      "id": "d6ec0380-b96f-424f-646e-6b47c4e220d0",
+      "slug": "james-mcneill-whistler-met-d6ec0380",
+      "name": "James McNeill Whistler",
+      "nationality": "American",
+      "biography": "American, Lowell, Massachusetts 1834–1903 London"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "465 / 624",
+      "background": "#ede8df",
+      "alt": "Arrangement in Black: Girl Reading by James McNeill Whistler, ca. 1880–90. Oil on wood. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-13210.webp",
+      "width": 465,
+      "height": 624
+    },
+    "recommendationReason": "Explore painting from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Bequest of Miss Adelaide Milton de Groot (1876-1967), 1967 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/13210"
+    }
+  },
+  {
+    "id": "0cf92d29-54f6-570f-881b-63698afd50f9",
+    "slug": "arrangement-in-flesh-colour-and-black-portrait-of-theodore-duret-met-13211",
+    "title": "Arrangement in Flesh Colour and Black: Portrait of Theodore Duret",
+    "year": "1883",
+    "medium": "Oil on canvas",
+    "dimensions": "76 1/8 x 35 3/4 in. (193.4 x 90.8 cm)",
+    "description": "Arrangement in Flesh Colour and Black: Portrait of Theodore Duret (1883). James McNeill Whistler; Oil on canvas. Collection: The Metropolitan Museum of Art. Credit: Catharine Lorillard Wolfe Collection, Wolfe Fund, 1913",
+    "movement": "Painting",
+    "tags": [
+      "men",
+      "portraits",
+      "painting",
+      "the american wing"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "men",
+        "portraits"
+      ],
+      "mediumCategory": "painting",
+      "period": "1883",
+      "geography": "American"
+    },
+    "artist": {
+      "id": "d6ec0380-b96f-424f-646e-6b47c4e220d0",
+      "slug": "james-mcneill-whistler-met-d6ec0380",
+      "name": "James McNeill Whistler",
+      "nationality": "American",
+      "biography": "American, Lowell, Massachusetts 1834–1903 London"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "296 / 624",
+      "background": "#ede8df",
+      "alt": "Arrangement in Flesh Colour and Black: Portrait of Theodore Duret by James McNeill Whistler, 1883. Oil on canvas. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-13211.webp",
+      "width": 296,
+      "height": 624
+    },
+    "recommendationReason": "Explore painting from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Catharine Lorillard Wolfe Collection, Wolfe Fund, 1913 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/13211"
+    }
+  },
+  {
+    "id": "77723d0d-0979-f142-9e95-ac1e1b51d30e",
+    "slug": "artist-s-studio-from-sketchbook-met-13213",
+    "title": "Artist's Studio (from Sketchbook)",
+    "year": "1854–55",
+    "medium": "Black ink on off-white wove paper",
+    "dimensions": "4 1/4 x 5 in. (10.8 x 12.7 cm)",
+    "description": "Artist's Studio (from Sketchbook) (1854–55). James McNeill Whistler; Black ink on off-white wove paper. Collection: The Metropolitan Museum of Art. Credit: Gift of Margaret C. Buell, Helen L. King, and Sybil A. Walk, 1970",
+    "movement": "Drawing",
+    "tags": [
+      "men",
+      "women",
+      "drawing",
+      "the american wing"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "men",
+        "women"
+      ],
+      "mediumCategory": "drawing",
+      "period": "1854–55",
+      "geography": "American"
+    },
+    "artist": {
+      "id": "d6ec0380-b96f-424f-646e-6b47c4e220d0",
+      "slug": "james-mcneill-whistler-met-d6ec0380",
+      "name": "James McNeill Whistler",
+      "nationality": "American",
+      "biography": "American, Lowell, Massachusetts 1834–1903 London"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "470 / 624",
+      "background": "#ede8df",
+      "alt": "Artist's Studio (from Sketchbook) by James McNeill Whistler, 1854–55. Black ink on off-white wove paper. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-13213.webp",
+      "width": 470,
+      "height": 624
+    },
+    "recommendationReason": "Explore drawing from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Gift of Margaret C. Buell, Helen L. King, and Sybil A. Walk, 1970 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/13213"
+    }
+  },
+  {
+    "id": "4fe6b1fe-a0a1-01dd-05bd-cc1243c0dbd3",
+    "slug": "butterfly-monogram-met-13214",
+    "title": "Butterfly Monogram",
+    "year": "Date not supplied",
+    "medium": "Charcoal on off-white wove paper",
+    "dimensions": "5 x 4 9/16 in. (12.7 x 11.6 cm)",
+    "description": "Butterfly Monogram. James McNeill Whistler; Charcoal on off-white wove paper. Collection: The Metropolitan Museum of Art. Credit: Gift of A. E. Gallatin, 1923",
+    "movement": "Drawing",
+    "tags": [
+      "drawing",
+      "the american wing"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [],
+      "mediumCategory": "drawing",
+      "period": "Date not supplied",
+      "geography": "American"
+    },
+    "artist": {
+      "id": "d6ec0380-b96f-424f-646e-6b47c4e220d0",
+      "slug": "james-mcneill-whistler-met-d6ec0380",
+      "name": "James McNeill Whistler",
+      "nationality": "American",
+      "biography": "American, Lowell, Massachusetts 1834–1903 London"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "square",
+      "aspectRatio": "562 / 624",
+      "background": "#ede8df",
+      "alt": "Butterfly Monogram by James McNeill Whistler, . Charcoal on off-white wove paper. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-13214.webp",
+      "width": 562,
+      "height": 624
+    },
+    "recommendationReason": "Explore drawing from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Gift of A. E. Gallatin, 1923 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/13214"
+    }
+  },
+  {
+    "id": "1ccb6c4a-7674-81f1-c9ea-baad13333f38",
+    "slug": "st-john-the-baptist-met-187569",
+    "title": "St. John the Baptist",
+    "year": "original model 1880, cast 1883",
+    "medium": "Bronze",
+    "dimensions": "Overall (wt. confirmed): 21 3/8 × 15 3/4 × 11 in., 42.5 lb. (54.3 × 40 × 27.9 cm, 19.3 kg)",
+    "description": "St. John the Baptist (original model 1880, cast 1883). Auguste Rodin; Bronze. Collection: The Metropolitan Museum of Art. Credit: Gift of Samuel P. Avery, 1893",
+    "movement": "Sculpture-Bronze",
+    "tags": [
+      "men",
+      "saint john the baptist",
+      "sculpture-bronze",
+      "european sculpture and decorative arts"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "men",
+        "saint john the baptist"
+      ],
+      "mediumCategory": "sculpture-bronze",
+      "period": "original model 1880, cast 1883",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "c47936b5-a69e-03a2-1824-d4ffc5742b6e",
+      "slug": "auguste-rodin-met-c47936b5",
+      "name": "Auguste Rodin",
+      "nationality": "French",
+      "biography": "French, Paris 1840–1917 Meudon"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "477 / 624",
+      "background": "#ede8df",
+      "alt": "St. John the Baptist by Auguste Rodin, original model 1880, cast 1883. Bronze. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-187569.webp",
+      "width": 477,
+      "height": 624
+    },
+    "recommendationReason": "Explore sculpture-bronze from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Gift of Samuel P. Avery, 1893 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/187569"
+    }
+  },
+  {
+    "id": "82e9b269-60ab-5a75-3091-3bc8a06d9944",
+    "slug": "the-age-of-bronze-l-age-d-airain-met-189265",
+    "title": "The Age of Bronze (L'Age d'airain)",
+    "year": "modeled 1876, cast ca. 1906",
+    "medium": "Bronze",
+    "dimensions": "Overall (wt. confirmed): 72 in., 275 lb. (182.9 cm, 124.7 kg)",
+    "description": "The Age of Bronze (L'Age d'airain) (modeled 1876, cast ca. 1906). Auguste Rodin; Bronze. Collection: The Metropolitan Museum of Art. Credit: Gift of Mrs. John W. Simpson, 1907",
+    "movement": "Sculpture-Bronze",
+    "tags": [
+      "male nudes",
+      "sculpture-bronze",
+      "european sculpture and decorative arts"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "male nudes"
+      ],
+      "mediumCategory": "sculpture-bronze",
+      "period": "modeled 1876, cast ca. 1906",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "c47936b5-a69e-03a2-1824-d4ffc5742b6e",
+      "slug": "auguste-rodin-met-c47936b5",
+      "name": "Auguste Rodin",
+      "nationality": "French",
+      "biography": "French, Paris 1840–1917 Meudon"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "416 / 624",
+      "background": "#ede8df",
+      "alt": "The Age of Bronze (L'Age d'airain) by Auguste Rodin, modeled 1876, cast ca. 1906. Bronze. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-189265.webp",
+      "width": 416,
+      "height": 624
+    },
+    "recommendationReason": "Explore sculpture-bronze from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Gift of Mrs. John W. Simpson, 1907 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/189265"
+    }
+  },
+  {
+    "id": "31b8b40a-1505-efff-60d3-e80fe6c11af9",
+    "slug": "the-hand-of-god-met-191046",
+    "title": "The Hand of God",
+    "year": "original model before 1895, carved ca. 1907",
+    "medium": "Marble",
+    "dimensions": "Overall (confirmed): 29 × 23 3/4 × 25 1/4 in., 508 lb. (73.7 × 60.3 × 64.1 cm, 230.4 kg)",
+    "description": "The Hand of God (original model before 1895, carved ca. 1907). Auguste Rodin; Marble. Collection: The Metropolitan Museum of Art. Credit: Gift of Edward D. Adams, 1908",
+    "movement": "Sculpture",
+    "tags": [
+      "hands",
+      "adam",
+      "eve",
+      "sculpture",
+      "european sculpture and decorative arts"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "hands",
+        "adam",
+        "eve"
+      ],
+      "mediumCategory": "sculpture",
+      "period": "original model before 1895, carved ca. 1907",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "c47936b5-a69e-03a2-1824-d4ffc5742b6e",
+      "slug": "auguste-rodin-met-c47936b5",
+      "name": "Auguste Rodin",
+      "nationality": "French",
+      "biography": "French, Paris 1840–1917 Meudon"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "539 / 625",
+      "background": "#ede8df",
+      "alt": "The Hand of God by Auguste Rodin, original model before 1895, carved ca. 1907. Marble. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-191046.webp",
+      "width": 539,
+      "height": 625
+    },
+    "recommendationReason": "Explore sculpture from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Gift of Edward D. Adams, 1908 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/191046"
+    }
+  },
+  {
+    "id": "921abbbb-516d-cee8-6c78-41942c592cb3",
+    "slug": "brother-and-sister-le-frere-et-la-soeur-met-191081",
+    "title": "Brother and Sister (Le frère et la soeur)",
+    "year": "1890",
+    "medium": "Bronze",
+    "dimensions": "Overall (wt. confirmed): 15 × 8 1/2 × 8 in., 18.7 lb. (38.1 × 21.6 × 20.3 cm, 8.5 kg)",
+    "description": "Brother and Sister (Le frère et la soeur) (1890). Auguste Rodin; Bronze. Collection: The Metropolitan Museum of Art. Credit: Rogers Fund, 1908",
+    "movement": "Sculpture-Bronze",
+    "tags": [
+      "boys",
+      "girls",
+      "sculpture-bronze",
+      "european sculpture and decorative arts"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "boys",
+        "girls"
+      ],
+      "mediumCategory": "sculpture-bronze",
+      "period": "1890",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "c47936b5-a69e-03a2-1824-d4ffc5742b6e",
+      "slug": "auguste-rodin-met-c47936b5",
+      "name": "Auguste Rodin",
+      "nationality": "French",
+      "biography": "French, Paris 1840–1917 Meudon"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "460 / 625",
+      "background": "#ede8df",
+      "alt": "Brother and Sister (Le frère et la soeur) by Auguste Rodin, 1890. Bronze. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-191081.webp",
+      "width": 460,
+      "height": 625
+    },
+    "recommendationReason": "Explore sculpture-bronze from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Rogers Fund, 1908 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/191081"
+    }
+  },
+  {
+    "id": "416cc4a8-8c8b-1d88-99ff-4f48cd72d2e5",
+    "slug": "pygmalion-and-galatea-met-191292",
+    "title": "Pygmalion and Galatea",
+    "year": "modeled 1889, carved ca. 1908–9",
+    "medium": "Marble",
+    "dimensions": "overall, wt confirmed: 38 1/4 × 35 × 30 in., 1074 lb. (97.2 × 88.9 × 76.2 cm, 487.2 kg)",
+    "description": "Pygmalion and Galatea (modeled 1889, carved ca. 1908–9). Auguste Rodin; Marble. Collection: The Metropolitan Museum of Art. Credit: Gift of Thomas F. Ryan, in memory of William M. Laffan, 1910",
+    "movement": "Sculpture",
+    "tags": [
+      "men",
+      "female nudes",
+      "galatea",
+      "pygmalion",
+      "sculpture",
+      "european sculpture and decorative arts"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "men",
+        "female nudes",
+        "galatea",
+        "pygmalion"
+      ],
+      "mediumCategory": "sculpture",
+      "period": "modeled 1889, carved ca. 1908–9",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "c47936b5-a69e-03a2-1824-d4ffc5742b6e",
+      "slug": "auguste-rodin-met-c47936b5",
+      "name": "Auguste Rodin",
+      "nationality": "French",
+      "biography": "French, Paris 1840–1917 Meudon"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "600 / 491",
+      "background": "#ede8df",
+      "alt": "Pygmalion and Galatea by Auguste Rodin, modeled 1889, carved ca. 1908–9. Marble. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-191292.webp",
+      "width": 600,
+      "height": 491
+    },
+    "recommendationReason": "Explore sculpture from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Gift of Thomas F. Ryan, in memory of William M. Laffan, 1910 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/191292"
+    }
+  },
+  {
+    "id": "ba8911c3-5849-496b-1ad6-71c19629f9e5",
+    "slug": "cupid-and-psyche-met-191329",
+    "title": "Cupid and Psyche",
+    "year": "before 1893",
+    "medium": "Marble",
+    "dimensions": "Overall (wt. confirmed): 30 × 24 × 48 in., 496 lb. (76.2 × 61 × 121.9 cm, 225 kg)",
+    "description": "Cupid and Psyche (before 1893). Auguste Rodin; Marble. Collection: The Metropolitan Museum of Art. Credit: Gift of Thomas F. Ryan, 1910",
+    "movement": "Sculpture",
+    "tags": [
+      "female nudes",
+      "cupid",
+      "psyche",
+      "sculpture",
+      "european sculpture and decorative arts"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "female nudes",
+        "cupid",
+        "psyche"
+      ],
+      "mediumCategory": "sculpture",
+      "period": "before 1893",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "c47936b5-a69e-03a2-1824-d4ffc5742b6e",
+      "slug": "auguste-rodin-met-c47936b5",
+      "name": "Auguste Rodin",
+      "nationality": "French",
+      "biography": "French, Paris 1840–1917 Meudon"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "599 / 466",
+      "background": "#ede8df",
+      "alt": "Cupid and Psyche by Auguste Rodin, before 1893. Marble. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-191329.webp",
+      "width": 599,
+      "height": 466
+    },
+    "recommendationReason": "Explore sculpture from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Gift of Thomas F. Ryan, 1910 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/191329"
+    }
+  },
+  {
+    "id": "522759d7-fac6-edf8-7126-3f1c258676b3",
+    "slug": "orpheus-and-eurydice-met-191330",
+    "title": "Orpheus and Eurydice",
+    "year": "modeled ca. 1887, carved 1893",
+    "medium": "Marble",
+    "dimensions": "Overall (confirmed): 48 3/4 × 31 1/8 × 25 3/8 in., 856 lb. (123.8 × 79.1 × 64.5 cm, 388.3 kg)",
+    "description": "Orpheus and Eurydice (modeled ca. 1887, carved 1893). Auguste Rodin; Marble. Collection: The Metropolitan Museum of Art. Credit: Gift of Thomas F. Ryan, 1910",
+    "movement": "Sculpture",
+    "tags": [
+      "male nudes",
+      "female nudes",
+      "orpheus",
+      "eurydice",
+      "sculpture",
+      "european sculpture and decorative arts"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "male nudes",
+        "female nudes",
+        "orpheus",
+        "eurydice"
+      ],
+      "mediumCategory": "sculpture",
+      "period": "modeled ca. 1887, carved 1893",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "c47936b5-a69e-03a2-1824-d4ffc5742b6e",
+      "slug": "auguste-rodin-met-c47936b5",
+      "name": "Auguste Rodin",
+      "nationality": "French",
+      "biography": "French, Paris 1840–1917 Meudon"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "468 / 624",
+      "background": "#ede8df",
+      "alt": "Orpheus and Eurydice by Auguste Rodin, modeled ca. 1887, carved 1893. Marble. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-191330.webp",
+      "width": 468,
+      "height": 624
+    },
+    "recommendationReason": "Explore sculpture from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Gift of Thomas F. Ryan, 1910 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/191330"
+    }
+  },
+  {
+    "id": "ae06501a-8584-3219-e3d8-b73c4c56b139",
+    "slug": "eve-met-191804",
+    "title": "Eve",
+    "year": "modeled 1881, cast 1910",
+    "medium": "Bronze",
+    "dimensions": "Overall (wt. confirmed): 68 1/2 × 20 1/2 × 23 1/2 in., 635 lb. (174 × 52.1 × 59.7 cm, 288 kg)",
+    "description": "Eve (modeled 1881, cast 1910). Auguste Rodin; Bronze. Collection: The Metropolitan Museum of Art. Credit: Gift of Thomas F. Ryan, 1910",
+    "movement": "Sculpture-Bronze",
+    "tags": [
+      "suffering",
+      "eve",
+      "sculpture-bronze",
+      "european sculpture and decorative arts"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "suffering",
+        "eve"
+      ],
+      "mediumCategory": "sculpture-bronze",
+      "period": "modeled 1881, cast 1910",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "c47936b5-a69e-03a2-1824-d4ffc5742b6e",
+      "slug": "auguste-rodin-met-c47936b5",
+      "name": "Auguste Rodin",
+      "nationality": "French",
+      "biography": "French, Paris 1840–1917 Meudon"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "351 / 624",
+      "background": "#ede8df",
+      "alt": "Eve by Auguste Rodin, modeled 1881, cast 1910. Bronze. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-191804.webp",
+      "width": 351,
+      "height": 624
+    },
+    "recommendationReason": "Explore sculpture-bronze from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Gift of Thomas F. Ryan, 1910 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/191804"
+    }
+  },
+  {
+    "id": "ab9204a6-ee9a-ce1a-92cc-17acb2aef17f",
+    "slug": "female-nude-seen-from-behind-met-193491",
+    "title": "Female Nude Seen from Behind",
+    "year": "early 17th century",
+    "medium": "Honestone",
+    "dimensions": "wt. confirmed: 6 × 2 5/8 in., 8.818oz. (15.2 × 6.7 cm, 250g)",
+    "description": "Female Nude Seen from Behind (early 17th century). After a composition by Albrecht Dürer; Honestone. Collection: The Metropolitan Museum of Art. Credit: Gift of J. Pierpont Morgan, 1917",
+    "movement": "Sculpture-Miniature",
+    "tags": [
+      "female nudes",
+      "sculpture-miniature",
+      "european sculpture and decorative arts"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "female nudes"
+      ],
+      "mediumCategory": "sculpture-miniature",
+      "period": "early 17th century",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "98939c3c-e60d-c285-9cd4-1eb100bfb5a2",
+      "slug": "after-a-composition-by-albrecht-durer-met-98939c3c",
+      "name": "After a composition by Albrecht Dürer",
+      "nationality": "German",
+      "biography": "German, Nuremberg 1471–1528 Nuremberg"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "357 / 624",
+      "background": "#ede8df",
+      "alt": "Female Nude Seen from Behind by After a composition by Albrecht Dürer, early 17th century. Honestone. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-193491.webp",
+      "width": 357,
+      "height": 624
+    },
+    "recommendationReason": "Explore sculpture-miniature from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Gift of J. Pierpont Morgan, 1917 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/193491"
+    }
+  },
+  {
+    "id": "f37170a6-335a-e370-ed20-02b345bfbac1",
+    "slug": "sixteenth-century-style-pendant-met-193657",
+    "title": "Sixteenth-century-style pendant",
+    "year": "19th century",
+    "medium": "Gold, pearls, sapphire, enamel",
+    "dimensions": "Overall: 1 3/4 × 1 in. (4.4 × 2.5 cm)",
+    "description": "Sixteenth-century-style pendant (19th century). Style of Albrecht Dürer; Gold, pearls, sapphire, enamel. Collection: The Metropolitan Museum of Art. Credit: Gift of J. Pierpont Morgan, 1917",
+    "movement": "Jewelry",
+    "tags": [
+      "mermaids",
+      "jewelry",
+      "european sculpture and decorative arts"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "mermaids"
+      ],
+      "mediumCategory": "jewelry",
+      "period": "19th century",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "1e574244-c1e3-82d9-1da5-fd901c0e3426",
+      "slug": "style-of-albrecht-durer-met-1e574244",
+      "name": "Style of Albrecht Dürer",
+      "nationality": "German",
+      "biography": "German, Nuremberg 1471–1528 Nuremberg"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "square",
+      "aspectRatio": "576 / 625",
+      "background": "#ede8df",
+      "alt": "Sixteenth-century-style pendant by Style of Albrecht Dürer, 19th century. Gold, pearls, sapphire, enamel. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-193657.webp",
+      "width": 576,
+      "height": 625
+    },
+    "recommendationReason": "Explore jewelry from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Gift of J. Pierpont Morgan, 1917 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/193657"
+    }
+  },
+  {
+    "id": "b37aba8a-b266-eedb-acd6-ab699980cc1d",
+    "slug": "la-masseuse-met-196440",
+    "title": "La Masseuse",
+    "year": "modeled perhaps ca. 1895, cast 1920",
+    "medium": "Bronze",
+    "dimensions": "17 × 16 3/8 × 14 in. (43.2 × 41.6 × 35.6 cm)",
+    "description": "La Masseuse (modeled perhaps ca. 1895, cast 1920). Edgar Degas; Bronze. Collection: The Metropolitan Museum of Art. Credit: H.O. Havemeyer Collection, Bequest of Mrs. H.O. Havemeyer, 1929",
+    "movement": "Sculpture-Bronze",
+    "tags": [
+      "human figures",
+      "sculpture-bronze",
+      "european sculpture and decorative arts"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "human figures"
+      ],
+      "mediumCategory": "sculpture-bronze",
+      "period": "modeled perhaps ca. 1895, cast 1920",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "f6028cc4-1b3a-2723-7015-00b332402b32",
+      "slug": "edgar-degas-met-f6028cc4",
+      "name": "Edgar Degas",
+      "nationality": "French",
+      "biography": "French, Paris 1834–1917 Paris"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "square",
+      "aspectRatio": "600 / 600",
+      "background": "#ede8df",
+      "alt": "La Masseuse by Edgar Degas, modeled perhaps ca. 1895, cast 1920. Bronze. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-196440.webp",
+      "width": 600,
+      "height": 600
+    },
+    "recommendationReason": "Explore sculpture-bronze from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. H.O. Havemeyer Collection, Bequest of Mrs. H.O. Havemeyer, 1929 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/196440"
+    }
+  },
+  {
+    "id": "8acd16be-1dc0-38de-949c-2f7c0961cacd",
+    "slug": "seated-woman-wiping-her-left-hip-met-196441",
+    "title": "Seated Woman Wiping her Left Hip",
+    "year": "modeled possibly ca. 1896, cast 1920",
+    "medium": "Bronze",
+    "dimensions": "17-7/8 x 19-5/8 x 11-3/4 in.  (45.4 x 49.8 x 29.8 cm.)",
+    "description": "Seated Woman Wiping her Left Hip (modeled possibly ca. 1896, cast 1920). Edgar Degas; Bronze. Collection: The Metropolitan Museum of Art. Credit: H.O. Havemeyer Collection, Bequest of Mrs. H.O. Havemeyer, 1929",
+    "movement": "Sculpture-Bronze",
+    "tags": [
+      "female nudes",
+      "sculpture-bronze",
+      "european sculpture and decorative arts"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "female nudes"
+      ],
+      "mediumCategory": "sculpture-bronze",
+      "period": "modeled possibly ca. 1896, cast 1920",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "f6028cc4-1b3a-2723-7015-00b332402b32",
+      "slug": "edgar-degas-met-f6028cc4",
+      "name": "Edgar Degas",
+      "nationality": "French",
+      "biography": "French, Paris 1834–1917 Paris"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "410 / 623",
+      "background": "#ede8df",
+      "alt": "Seated Woman Wiping her Left Hip by Edgar Degas, modeled possibly ca. 1896, cast 1920. Bronze. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-196441.webp",
+      "width": 410,
+      "height": 623
+    },
+    "recommendationReason": "Explore sculpture-bronze from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. H.O. Havemeyer Collection, Bequest of Mrs. H.O. Havemeyer, 1929 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/196441"
+    }
+  },
+  {
+    "id": "9a1063fd-ee08-4b4b-f1c2-3cda9728af21",
+    "slug": "study-in-the-nude-for-the-little-fourteen-year-old-dancer-met-196442",
+    "title": "Study in the Nude for The Little Fourteen-Year-Old Dancer",
+    "year": "modeled ca. 1878–80, cast 1920",
+    "medium": "Bronze",
+    "dimensions": "28-1/2 x 13-11/16 x 12-1/4 in.  (72.4 x 34.8 x 31.1 cm.)",
+    "description": "Study in the Nude for The Little Fourteen-Year-Old Dancer (modeled ca. 1878–80, cast 1920). Edgar Degas; Bronze. Collection: The Metropolitan Museum of Art. Credit: H.O. Havemeyer Collection, Bequest of Mrs. H.O. Havemeyer, 1929",
+    "movement": "Sculpture-Bronze",
+    "tags": [
+      "dancers",
+      "sculpture-bronze",
+      "european sculpture and decorative arts"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "dancers"
+      ],
+      "mediumCategory": "sculpture-bronze",
+      "period": "modeled ca. 1878–80, cast 1920",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "f6028cc4-1b3a-2723-7015-00b332402b32",
+      "slug": "edgar-degas-met-f6028cc4",
+      "name": "Edgar Degas",
+      "nationality": "French",
+      "biography": "French, Paris 1834–1917 Paris"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "414 / 625",
+      "background": "#ede8df",
+      "alt": "Study in the Nude for The Little Fourteen-Year-Old Dancer by Edgar Degas, modeled ca. 1878–80, cast 1920. Bronze. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-196442.webp",
+      "width": 414,
+      "height": 625
+    },
+    "recommendationReason": "Explore sculpture-bronze from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. H.O. Havemeyer Collection, Bequest of Mrs. H.O. Havemeyer, 1929 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/196442"
+    }
+  },
+  {
+    "id": "b35f956a-52fd-29be-90c8-d1fb55155ffe",
+    "slug": "torso-woman-rubbing-her-back-with-a-sponge-met-196443",
+    "title": "Torso: Woman Rubbing Her Back with a Sponge",
+    "year": "modeled probably ca. 1888–92, cast 1920",
+    "medium": "Bronze",
+    "dimensions": "19-1/2 x 10-1/2 x 9-1/4 in.  (49.5 x 26.7 x 23.5 cm.)",
+    "description": "Torso: Woman Rubbing Her Back with a Sponge (modeled probably ca. 1888–92, cast 1920). Edgar Degas; Bronze. Collection: The Metropolitan Museum of Art. Credit: H.O. Havemeyer Collection, Bequest of Mrs. H.O. Havemeyer, 1929",
+    "movement": "Sculpture-Bronze",
+    "tags": [
+      "female nudes",
+      "sculpture-bronze",
+      "european sculpture and decorative arts"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "female nudes"
+      ],
+      "mediumCategory": "sculpture-bronze",
+      "period": "modeled probably ca. 1888–92, cast 1920",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "f6028cc4-1b3a-2723-7015-00b332402b32",
+      "slug": "edgar-degas-met-f6028cc4",
+      "name": "Edgar Degas",
+      "nationality": "French",
+      "biography": "French, Paris 1834–1917 Paris"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "439 / 624",
+      "background": "#ede8df",
+      "alt": "Torso: Woman Rubbing Her Back with a Sponge by Edgar Degas, modeled probably ca. 1888–92, cast 1920. Bronze. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-196443.webp",
+      "width": 439,
+      "height": 624
+    },
+    "recommendationReason": "Explore sculpture-bronze from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. H.O. Havemeyer Collection, Bequest of Mrs. H.O. Havemeyer, 1929 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/196443"
+    }
+  },
+  {
+    "id": "133e82e0-d1d0-8e49-0dcb-f18ba6956d09",
+    "slug": "dancer-moving-forward-arms-raised-right-leg-forward-second-state-met-196444",
+    "title": "Dancer Moving Forward, Arms Raised, Right Leg Forward (Second State)",
+    "year": "modeled probably before 1900, cast 1920",
+    "medium": "Bronze",
+    "dimensions": "(W. base): 27-1/4 x 13-5/8 x 11-5/8 in.  (69.2 x 34.6 x 29.5 cm.)",
+    "description": "Dancer Moving Forward, Arms Raised, Right Leg Forward (Second State) (modeled probably before 1900, cast 1920). Edgar Degas; Bronze. Collection: The Metropolitan Museum of Art. Credit: H.O. Havemeyer Collection, Bequest of Mrs. H.O. Havemeyer, 1929",
+    "movement": "Sculpture-Bronze",
+    "tags": [
+      "female nudes",
+      "dancing",
+      "dancers",
+      "sculpture-bronze",
+      "european sculpture and decorative arts"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "female nudes",
+        "dancing",
+        "dancers"
+      ],
+      "mediumCategory": "sculpture-bronze",
+      "period": "modeled probably before 1900, cast 1920",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "f6028cc4-1b3a-2723-7015-00b332402b32",
+      "slug": "edgar-degas-met-f6028cc4",
+      "name": "Edgar Degas",
+      "nationality": "French",
+      "biography": "French, Paris 1834–1917 Paris"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "408 / 624",
+      "background": "#ede8df",
+      "alt": "Dancer Moving Forward, Arms Raised, Right Leg Forward (Second State) by Edgar Degas, modeled probably before 1900, cast 1920. Bronze. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-196444.webp",
+      "width": 408,
+      "height": 624
+    },
+    "recommendationReason": "Explore sculpture-bronze from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. H.O. Havemeyer Collection, Bequest of Mrs. H.O. Havemeyer, 1929 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/196444"
+    }
+  },
+  {
+    "id": "70c6b09b-f320-7af7-af3c-495f26122e67",
+    "slug": "dancer-looking-at-the-sole-of-her-right-foot-first-state-met-196445",
+    "title": "Dancer Looking at the Sole of Her Right Foot (First State)",
+    "year": "modeled probably ca. 1895–1910, cast 1920",
+    "medium": "Bronze",
+    "dimensions": "18-1/4 x 7-3/8 x 8-1/2 in.  (46.4 x 18.7 x 21.6 cm.)",
+    "description": "Dancer Looking at the Sole of Her Right Foot (First State) (modeled probably ca. 1895–1910, cast 1920). Edgar Degas; Bronze. Collection: The Metropolitan Museum of Art. Credit: H.O. Havemeyer Collection, Bequest of Mrs. H.O. Havemeyer, 1929",
+    "movement": "Sculpture-Bronze",
+    "tags": [
+      "feet",
+      "women",
+      "dancers",
+      "sculpture-bronze",
+      "european sculpture and decorative arts"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "feet",
+        "women",
+        "dancers"
+      ],
+      "mediumCategory": "sculpture-bronze",
+      "period": "modeled probably ca. 1895–1910, cast 1920",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "f6028cc4-1b3a-2723-7015-00b332402b32",
+      "slug": "edgar-degas-met-f6028cc4",
+      "name": "Edgar Degas",
+      "nationality": "French",
+      "biography": "French, Paris 1834–1917 Paris"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "309 / 623",
+      "background": "#ede8df",
+      "alt": "Dancer Looking at the Sole of Her Right Foot (First State) by Edgar Degas, modeled probably ca. 1895–1910, cast 1920. Bronze. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-196445.webp",
+      "width": 309,
+      "height": 623
+    },
+    "recommendationReason": "Explore sculpture-bronze from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. H.O. Havemeyer Collection, Bequest of Mrs. H.O. Havemeyer, 1929 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/196445"
+    }
+  },
+  {
+    "id": "2a77257c-574a-dc6a-a753-83f1b6cf0382",
+    "slug": "dancer-looking-at-the-sole-of-her-right-foot-fourth-state-met-196446",
+    "title": "Dancer Looking at the Sole of Her Right Foot (Fourth State)",
+    "year": "modeled before ca. 1895–1900, cast 1920",
+    "medium": "Bronze",
+    "dimensions": "18-1/4 x 9-5/8 x 6-3/4 in.  (46.4 x 24.4 x 17.1 cm.)",
+    "description": "Dancer Looking at the Sole of Her Right Foot (Fourth State) (modeled before ca. 1895–1900, cast 1920). Edgar Degas; Bronze. Collection: The Metropolitan Museum of Art. Credit: H.O. Havemeyer Collection, Bequest of Mrs. H.O. Havemeyer, 1929",
+    "movement": "Sculpture-Bronze",
+    "tags": [
+      "female nudes",
+      "dancers",
+      "sculpture-bronze",
+      "european sculpture and decorative arts"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "female nudes",
+        "dancers"
+      ],
+      "mediumCategory": "sculpture-bronze",
+      "period": "modeled before ca. 1895–1900, cast 1920",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "f6028cc4-1b3a-2723-7015-00b332402b32",
+      "slug": "edgar-degas-met-f6028cc4",
+      "name": "Edgar Degas",
+      "nationality": "French",
+      "biography": "French, Paris 1834–1917 Paris"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "518 / 624",
+      "background": "#ede8df",
+      "alt": "Dancer Looking at the Sole of Her Right Foot (Fourth State) by Edgar Degas, modeled before ca. 1895–1900, cast 1920. Bronze. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-196446.webp",
+      "width": 518,
+      "height": 624
+    },
+    "recommendationReason": "Explore sculpture-bronze from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. H.O. Havemeyer Collection, Bequest of Mrs. H.O. Havemeyer, 1929 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/196446"
+    }
+  },
+  {
+    "id": "be3e33c0-5a43-27a6-b502-a7267613a08b",
+    "slug": "dancer-looking-at-the-sole-of-her-right-foot-third-state-met-196447",
+    "title": "Dancer Looking at the Sole of Her Right Foot (Third State)",
+    "year": "modeled probably ca. 1890–1910, cast 1920",
+    "medium": "Bronze",
+    "dimensions": "19 1/8 × 10 3/4 × 8 5/8 in., 15.6 lb. (48.6 × 27.3 × 21.9 cm)",
+    "description": "Dancer Looking at the Sole of Her Right Foot (Third State) (modeled probably ca. 1890–1910, cast 1920). Edgar Degas; Bronze. Collection: The Metropolitan Museum of Art. Credit: H.O. Havemeyer Collection, Bequest of Mrs. H.O. Havemeyer, 1929",
+    "movement": "Sculpture-Bronze",
+    "tags": [
+      "female nudes",
+      "dancers",
+      "sculpture-bronze",
+      "european sculpture and decorative arts"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "female nudes",
+        "dancers"
+      ],
+      "mediumCategory": "sculpture-bronze",
+      "period": "modeled probably ca. 1890–1910, cast 1920",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "f6028cc4-1b3a-2723-7015-00b332402b32",
+      "slug": "edgar-degas-met-f6028cc4",
+      "name": "Edgar Degas",
+      "nationality": "French",
+      "biography": "French, Paris 1834–1917 Paris"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "424 / 624",
+      "background": "#ede8df",
+      "alt": "Dancer Looking at the Sole of Her Right Foot (Third State) by Edgar Degas, modeled probably ca. 1890–1910, cast 1920. Bronze. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-196447.webp",
+      "width": 424,
+      "height": 624
+    },
+    "recommendationReason": "Explore sculpture-bronze from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. H.O. Havemeyer Collection, Bequest of Mrs. H.O. Havemeyer, 1929 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/196447"
+    }
+  },
+  {
+    "id": "b56cb562-7ced-3354-fa3c-3a0fb3ccca49",
+    "slug": "emile-gauguin-1874-1955-the-artist-s-son-met-202957",
+    "title": "Emile Gauguin (1874–1955), the artist's son",
+    "year": "ca. 1877–78",
+    "medium": "Marble",
+    "dimensions": "Overall (confirmed): 16 15/16 × 9 1/8 × 7 7/8 in., 42 lb. (43 × 23.2 × 20 cm, 19.1 kg)",
+    "description": "Emile Gauguin (1874–1955), the artist's son (ca. 1877–78). Paul Gauguin; Marble. Collection: The Metropolitan Museum of Art. Credit: Gift of the Joseph M. May Memorial Association Inc., 1963",
+    "movement": "Sculpture",
+    "tags": [
+      "boys",
+      "sculpture",
+      "european sculpture and decorative arts"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "boys"
+      ],
+      "mediumCategory": "sculpture",
+      "period": "ca. 1877–78",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "35dc72a9-b304-0da9-a71f-ce0c4710c0b7",
+      "slug": "paul-gauguin-met-35dc72a9",
+      "name": "Paul Gauguin",
+      "nationality": "French",
+      "biography": "French, Paris 1848–1903 Atuona, Hiva Oa, Marquesas Islands"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "499 / 624",
+      "background": "#ede8df",
+      "alt": "Emile Gauguin (1874–1955), the artist's son by Paul Gauguin, ca. 1877–78. Marble. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-202957.webp",
+      "width": 499,
+      "height": 624
+    },
+    "recommendationReason": "Explore sculpture from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Gift of the Joseph M. May Memorial Association Inc., 1963 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/202957"
+    }
+  },
+  {
+    "id": "307eca37-3fbf-aab7-d6eb-08e32f8098b2",
+    "slug": "head-of-medusa-met-204759",
+    "title": "Head of Medusa",
+    "year": "1806–7",
+    "medium": "Plaster cast, with modern metal rod",
+    "dimensions": "confirmed, height including metal attachment rod: 14 7/8 × 13 × 12 3/4 in. (37.8 × 33 × 32.4 cm)\r\nHeight (confirmed, height head only): 12 1/2 in. (31.8 cm)",
+    "description": "Head of Medusa (1806–7). Studio of Antonio Canova; Plaster cast, with modern metal rod. Collection: The Metropolitan Museum of Art. Credit: Fletcher Fund, 1967",
+    "movement": "Sculpture",
+    "tags": [
+      "heads",
+      "medusa",
+      "sculpture",
+      "european sculpture and decorative arts"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "heads",
+        "medusa"
+      ],
+      "mediumCategory": "sculpture",
+      "period": "1806–7",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "31e5fafa-30e0-6652-b939-e812989ddc53",
+      "slug": "studio-of-antonio-canova-met-31e5fafa",
+      "name": "Studio of Antonio Canova",
+      "nationality": "Italian",
+      "biography": "Italian, Possagno 1757–1822 Venice"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "square",
+      "aspectRatio": "600 / 600",
+      "background": "#ede8df",
+      "alt": "Head of Medusa by Studio of Antonio Canova, 1806–7. Plaster cast, with modern metal rod. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-204759.webp",
+      "width": 600,
+      "height": 600
+    },
+    "recommendationReason": "Explore sculpture from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Fletcher Fund, 1967 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/204759"
+    }
+  },
+  {
+    "id": "f1c6ff35-bfe0-e0ae-61a5-645bb9db2421",
+    "slug": "walking-stick-with-a-female-nude-and-a-breton-sabot-on-the-handle-met-204793",
+    "title": "Walking stick with a female nude and a Breton sabot on the handle",
+    "year": "ca. 1888–90",
+    "medium": "Boxwood, mother-of-pearl [Pinctada margaritifera (black-lip pearl oyster)], glass, and iron",
+    "dimensions": "Overall (confirmed): 36 1/2 × 2 1/16 × 1 11/16 in. (92.7 × 5.2 × 4.3 cm)",
+    "description": "Walking stick with a female nude and a Breton sabot on the handle (ca. 1888–90). Paul Gauguin; Boxwood, mother-of-pearl [Pinctada margaritifera (black-lip pearl oyster)], glass, and iron. Collection: The Metropolitan Museum of Art. Credit: Bequest of Miss Adelaide Milton de Groot (1876-1967), 1967",
+    "movement": "Sculpture",
+    "tags": [
+      "sculpture",
+      "european sculpture and decorative arts"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [],
+      "mediumCategory": "sculpture",
+      "period": "ca. 1888–90",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "35dc72a9-b304-0da9-a71f-ce0c4710c0b7",
+      "slug": "paul-gauguin-met-35dc72a9",
+      "name": "Paul Gauguin",
+      "nationality": "French",
+      "biography": "French, Paris 1848–1903 Atuona, Hiva Oa, Marquesas Islands"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "598 / 160",
+      "background": "#ede8df",
+      "alt": "Walking stick with a female nude and a Breton sabot on the handle by Paul Gauguin, ca. 1888–90. Boxwood, mother-of-pearl [Pinctada margaritifera (black-lip pearl oyster)], glass, and iron. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-204793.webp",
+      "width": 598,
+      "height": 160
+    },
+    "recommendationReason": "Explore sculpture from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Bequest of Miss Adelaide Milton de Groot (1876-1967), 1967 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/204793"
+    }
+  },
+  {
+    "id": "fed3193a-e45d-fdfb-839e-186e4cd08b55",
+    "slug": "reclining-naiad-met-205177",
+    "title": "Reclining Naiad",
+    "year": "1819–24",
+    "medium": "Carrara marble",
+    "dimensions": "Overall (wt. confirmed): 35 × 75 × 32 1/2 in., 2558 lb. (88.9 × 190.5 × 82.6 cm, 1160.3 kg)",
+    "description": "Reclining Naiad (1819–24). Antonio Canova , and his studio; Carrara marble. Collection: The Metropolitan Museum of Art. Credit: Purchase, Mrs. Joseph A. Neff Gift, in memory of Joseph A. Neff, 1970",
+    "movement": "Sculpture-Marble",
+    "tags": [
+      "female nudes",
+      "sculpture-marble",
+      "european sculpture and decorative arts"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "female nudes"
+      ],
+      "mediumCategory": "sculpture-marble",
+      "period": "1819–24",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "ae47ede6-3763-ae9e-8b64-5e7dbcd65218",
+      "slug": "antonio-canova-and-his-studio-met-ae47ede6",
+      "name": "Antonio Canova , and his studio",
+      "nationality": "Italian",
+      "biography": "Italian, Possagno 1757–1822 Venice"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "599 / 424",
+      "background": "#ede8df",
+      "alt": "Reclining Naiad by Antonio Canova , and his studio, 1819–24. Carrara marble. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-205177.webp",
+      "width": 599,
+      "height": 424
+    },
+    "recommendationReason": "Explore sculpture-marble from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Purchase, Mrs. Joseph A. Neff Gift, in memory of Joseph A. Neff, 1970 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/205177"
+    }
+  },
+  {
+    "id": "ca8a1c23-b2bf-64ac-d37c-e4a231035772",
+    "slug": "saint-agnes-met-206724",
+    "title": "Saint Agnes",
+    "year": "early 18th century",
+    "medium": "Bronze",
+    "dimensions": "Overall (confirmed): 13 15/16 × 6 × 5 7/8 in. (35.4 × 15.2 × 14.9 cm)",
+    "description": "Saint Agnes (early 18th century). After a model by Gian Lorenzo Bernini; Bronze. Collection: The Metropolitan Museum of Art. Credit: Purchase, Bequest of Vivian W. Lehman, 1978",
+    "movement": "Sculpture-Bronze",
+    "tags": [
+      "women",
+      "saints",
+      "sculpture-bronze",
+      "european sculpture and decorative arts"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "women",
+        "saints"
+      ],
+      "mediumCategory": "sculpture-bronze",
+      "period": "early 18th century",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "6d97c6c3-2880-b91c-61d3-ccf337a119ad",
+      "slug": "after-a-model-by-gian-lorenzo-bernini-met-6d97c6c3",
+      "name": "After a model by Gian Lorenzo Bernini",
+      "nationality": "Italian",
+      "biography": "Italian, Naples 1598–1680 Rome"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "466 / 624",
+      "background": "#ede8df",
+      "alt": "Saint Agnes by After a model by Gian Lorenzo Bernini, early 18th century. Bronze. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-206724.webp",
+      "width": 466,
+      "height": 624
+    },
+    "recommendationReason": "Explore sculpture-bronze from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Purchase, Bequest of Vivian W. Lehman, 1978 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/206724"
+    }
+  },
+  {
+    "id": "77f5ce13-8d52-01b6-c65c-994a66fa3197",
+    "slug": "the-graces-and-venus-dancing-before-mars-met-207652",
+    "title": "The Graces and Venus Dancing before Mars",
+    "year": "19th century",
+    "medium": "Bronze",
+    "dimensions": "2 3/8 × 2 7/8 in. (6 × 7.3 cm)",
+    "description": "The Graces and Venus Dancing before Mars (19th century). After a composition by Antonio Canova; Bronze. Collection: The Metropolitan Museum of Art. Credit: The Erich Lederer Collection, Gift of Mrs. Erich Lederer, 1986",
+    "movement": "Medals and Plaquettes",
+    "tags": [
+      "dancing",
+      "mars",
+      "venus",
+      "medals and plaquettes",
+      "european sculpture and decorative arts"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "dancing",
+        "mars",
+        "venus"
+      ],
+      "mediumCategory": "medals and plaquettes",
+      "period": "19th century",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "f3c61734-2e6d-ecbe-2b7d-2c501a70daca",
+      "slug": "after-a-composition-by-antonio-canova-met-f3c61734",
+      "name": "After a composition by Antonio Canova",
+      "nationality": "Italian",
+      "biography": "Italian, Possagno 1757–1822 Venice"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "600 / 488",
+      "background": "#ede8df",
+      "alt": "The Graces and Venus Dancing before Mars by After a composition by Antonio Canova, 19th century. Bronze. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-207652.webp",
+      "width": 600,
+      "height": 488
+    },
+    "recommendationReason": "Explore medals and plaquettes from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. The Erich Lederer Collection, Gift of Mrs. Erich Lederer, 1986 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/207652"
+    }
+  },
+  {
+    "id": "7cbf4a77-de5e-04cd-e245-c5e20882b0c8",
+    "slug": "venus-and-cupid-met-208133",
+    "title": "Venus and Cupid",
+    "year": "1798–99",
+    "medium": "Terracotta",
+    "dimensions": "Overall: 10 1/4 x 19 11/16 x 7 1/16 in. (26 x 50 x 17.9 cm.)",
+    "description": "Venus and Cupid (1798–99). Antonio Canova; Terracotta. Collection: The Metropolitan Museum of Art. Credit: Wrightsman Fund, 1993",
+    "movement": "Sculpture",
+    "tags": [
+      "cupid",
+      "venus",
+      "beds",
+      "sculpture",
+      "european sculpture and decorative arts"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "cupid",
+        "venus",
+        "beds"
+      ],
+      "mediumCategory": "sculpture",
+      "period": "1798–99",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "8ace4ba1-263f-8171-ccff-c2a0718c1125",
+      "slug": "antonio-canova-met-8ace4ba1",
+      "name": "Antonio Canova",
+      "nationality": "Italian",
+      "biography": "Italian, Possagno 1757–1822 Venice"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "600 / 480",
+      "background": "#ede8df",
+      "alt": "Venus and Cupid by Antonio Canova, 1798–99. Terracotta. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-208133.webp",
+      "width": 600,
+      "height": 480
+    },
+    "recommendationReason": "Explore sculpture from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Wrightsman Fund, 1993 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/208133"
+    }
+  },
+  {
+    "id": "51e4c948-9903-0d02-9178-1fd22cea4c19",
+    "slug": "fan-with-leaves-imitative-of-goya-and-watteau-met-209477",
+    "title": "Fan with leaves imitative of Goya and Watteau",
+    "year": "late 19th century",
+    "medium": "Gouache on parchment; gilt metal, silver (?), paste (?)",
+    "dimensions": "L. 7 1/2 in. (19.1 cm)",
+    "description": "Fan with leaves imitative of Goya and Watteau (late 19th century). Imitator of Goya (Francisco de Goya y Lucientes); Gouache on parchment; gilt metal, silver (?), paste (?). Collection: The Metropolitan Museum of Art. Credit: Gift of Miss Alice H. Greenleaf, 1915",
+    "movement": "Fans",
+    "tags": [
+      "men",
+      "women",
+      "fans",
+      "european sculpture and decorative arts"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "men",
+        "women"
+      ],
+      "mediumCategory": "fans",
+      "period": "late 19th century",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "5b3f3ccf-1f46-afda-c404-92d692a29014",
+      "slug": "imitator-of-goya-francisco-de-goya-y-lucientes-met-5b3f3ccf",
+      "name": "Imitator of Goya (Francisco de Goya y Lucientes)",
+      "nationality": "Spanish",
+      "biography": "Spanish, Fuendetodos 1746–1828 Bordeaux"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "600 / 407",
+      "background": "#ede8df",
+      "alt": "Fan with leaves imitative of Goya and Watteau by Imitator of Goya (Francisco de Goya y Lucientes), late 19th century. Gouache on parchment; gilt metal, silver (?), paste (?). Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-209477.webp",
+      "width": 600,
+      "height": 407
+    },
+    "recommendationReason": "Explore fans from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Gift of Miss Alice H. Greenleaf, 1915 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/209477"
+    }
+  },
+  {
+    "id": "3f72561a-9218-cc09-298b-c33d988d7077",
+    "slug": "palette-met-211372",
+    "title": "Palette",
+    "year": "probably 19th century",
+    "medium": "Oil on wood",
+    "dimensions": "12 3/4 × 10 1/4 in. (32.4 × 26 cm)",
+    "description": "Palette (probably 19th century). Honoré Daumier; Oil on wood. Collection: The Metropolitan Museum of Art. Credit: Gift of A.E. Gallatin, 1932",
+    "movement": "Natural Substances",
+    "tags": [
+      "natural substances",
+      "european sculpture and decorative arts"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [],
+      "mediumCategory": "natural substances",
+      "period": "probably 19th century",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "8ee24ee7-8b96-851b-2765-b97d1d3313cc",
+      "slug": "honore-daumier-met-8ee24ee7",
+      "name": "Honoré Daumier",
+      "nationality": "French",
+      "biography": "French, Marseilles 1808–1879 Valmondois"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "468 / 624",
+      "background": "#ede8df",
+      "alt": "Palette by Honoré Daumier, probably 19th century. Oil on wood. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-211372.webp",
+      "width": 468,
+      "height": 624
+    },
+    "recommendationReason": "Explore natural substances from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Gift of A.E. Gallatin, 1932 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/211372"
+    }
+  },
+  {
+    "id": "784bd312-0428-9299-63ed-054c24f820cd",
+    "slug": "venus-italica-met-211504",
+    "title": "Venus Italica",
+    "year": "probably ca. 1822–23, variant of marble first executed 1810",
+    "medium": "Carrara marble",
+    "dimensions": "wt. confirmed: 69 in., 646 lb. (175.3 cm, 293 kg)",
+    "description": "Venus Italica (probably ca. 1822–23, variant of marble first executed 1810). Workshop of Antonio Canova; Carrara marble. Collection: The Metropolitan Museum of Art. Credit: Bequest of Lillian Rojtman Berkman, 2001",
+    "movement": "Sculpture",
+    "tags": [
+      "female nudes",
+      "venus",
+      "sculpture",
+      "european sculpture and decorative arts"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "female nudes",
+        "venus"
+      ],
+      "mediumCategory": "sculpture",
+      "period": "probably ca. 1822–23, variant of marble first executed 1810",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "d1ed9e29-b8fb-74c4-ce92-97a18bfd5855",
+      "slug": "workshop-of-antonio-canova-met-d1ed9e29",
+      "name": "Workshop of Antonio Canova",
+      "nationality": "Italian",
+      "biography": "Italian, Possagno 1757–1822 Venice"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "539 / 625",
+      "background": "#ede8df",
+      "alt": "Venus Italica by Workshop of Antonio Canova, probably ca. 1822–23, variant of marble first executed 1810. Carrara marble. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-211504.webp",
+      "width": 539,
+      "height": 625
+    },
+    "recommendationReason": "Explore sculpture from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Bequest of Lillian Rojtman Berkman, 2001 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/211504"
+    }
+  },
+  {
+    "id": "5f081037-5384-301e-0065-2b01e9a4751b",
+    "slug": "paris-met-211505",
+    "title": "Paris",
+    "year": "ca. 1822–23, original marble version completed November 1812",
+    "medium": "Marble",
+    "dimensions": "Overall: 80 in. (203.2 cm)",
+    "description": "Paris (ca. 1822–23, original marble version completed November 1812). Workshop of Antonio Canova; Marble. Collection: The Metropolitan Museum of Art. Credit: Bequest of Lillian Rojtman Berkman, 2001",
+    "movement": "Sculpture",
+    "tags": [
+      "male nudes",
+      "paris",
+      "sculpture",
+      "european sculpture and decorative arts"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "male nudes",
+        "paris"
+      ],
+      "mediumCategory": "sculpture",
+      "period": "ca. 1822–23, original marble version completed November 1812",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "d1ed9e29-b8fb-74c4-ce92-97a18bfd5855",
+      "slug": "workshop-of-antonio-canova-met-d1ed9e29",
+      "name": "Workshop of Antonio Canova",
+      "nationality": "Italian",
+      "biography": "Italian, Possagno 1757–1822 Venice"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "square",
+      "aspectRatio": "562 / 624",
+      "background": "#ede8df",
+      "alt": "Paris by Workshop of Antonio Canova, ca. 1822–23, original marble version completed November 1812. Marble. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-211505.webp",
+      "width": 562,
+      "height": 624
+    },
+    "recommendationReason": "Explore sculpture from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Bequest of Lillian Rojtman Berkman, 2001 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/211505"
+    }
+  },
+  {
+    "id": "c0f393ac-c935-283e-8be1-ce99b82490f9",
+    "slug": "the-ascension-from-a-set-of-the-passion-met-219367",
+    "title": "The Ascension from a set of The Passion",
+    "year": "1592",
+    "medium": "Wool, silk, metal thread (20 warp threads per inch, 8 per cm.)",
+    "dimensions": "39 1/4 x 29 3/4 in. (99.7 x 75.6 cm)",
+    "description": "The Ascension from a set of The Passion (1592). Design based on a woodcut by Albrecht Dürer , from the Small Passion; Wool, silk, metal thread (20 warp threads per inch, 8 per cm.). Collection: The Metropolitan Museum of Art. Credit: Gift of J. Pierpont Morgan, 1911",
+    "movement": "Textiles-Tapestries",
+    "tags": [
+      "men",
+      "women",
+      "clouds",
+      "apostles",
+      "christ",
+      "textiles-tapestries",
+      "european sculpture and decorative arts"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "men",
+        "women",
+        "clouds",
+        "apostles",
+        "christ"
+      ],
+      "mediumCategory": "textiles-tapestries",
+      "period": "1592",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "6a713a34-b844-0148-8b48-9d4d40f1740e",
+      "slug": "design-based-on-a-woodcut-by-albrecht-durer-from-the-small-passion-met-6a713a34",
+      "name": "Design based on a woodcut by Albrecht Dürer , from the Small Passion",
+      "nationality": "German",
+      "biography": "German, Nuremberg 1471–1528 Nuremberg"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "516 / 624",
+      "background": "#ede8df",
+      "alt": "The Ascension from a set of The Passion by Design based on a woodcut by Albrecht Dürer , from the Small Passion, 1592. Wool, silk, metal thread (20 warp threads per inch, 8 per cm.). Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-219367.webp",
+      "width": 516,
+      "height": 624
+    },
+    "recommendationReason": "Explore textiles-tapestries from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Gift of J. Pierpont Morgan, 1911 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/219367"
+    }
+  },
+  {
+    "id": "488d8a8e-3f11-9538-05de-13dae50a6cb0",
+    "slug": "christ-washing-the-feet-of-his-disciples-from-a-set-of-the-passion-met-219369",
+    "title": "Christ Washing the Feet of His Disciples from a set of The Passion",
+    "year": "1595",
+    "medium": "Wool, silk, metal thread (20 warp threads per inch, 8 per cm.)",
+    "dimensions": "39 1/2 x 29 3/4 in. (100.3 x 75.6 cm)",
+    "description": "Christ Washing the Feet of His Disciples from a set of The Passion (1595). Design based on a woodcut by Albrecht Dürer , from the Small Passion; Wool, silk, metal thread (20 warp threads per inch, 8 per cm.). Collection: The Metropolitan Museum of Art. Credit: Gift of J. Pierpont Morgan, 1911",
+    "movement": "Textiles-Tapestries",
+    "tags": [
+      "feet",
+      "men",
+      "christ",
+      "textiles-tapestries",
+      "european sculpture and decorative arts"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "feet",
+        "men",
+        "christ"
+      ],
+      "mediumCategory": "textiles-tapestries",
+      "period": "1595",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "6a713a34-b844-0148-8b48-9d4d40f1740e",
+      "slug": "design-based-on-a-woodcut-by-albrecht-durer-from-the-small-passion-met-6a713a34",
+      "name": "Design based on a woodcut by Albrecht Dürer , from the Small Passion",
+      "nationality": "German",
+      "biography": "German, Nuremberg 1471–1528 Nuremberg"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "514 / 624",
+      "background": "#ede8df",
+      "alt": "Christ Washing the Feet of His Disciples from a set of The Passion by Design based on a woodcut by Albrecht Dürer , from the Small Passion, 1595. Wool, silk, metal thread (20 warp threads per inch, 8 per cm.). Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-219369.webp",
+      "width": 514,
+      "height": 624
+    },
+    "recommendationReason": "Explore textiles-tapestries from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Gift of J. Pierpont Morgan, 1911 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/219369"
+    }
+  },
+  {
+    "id": "7857bf34-acda-dea3-7c9a-ae16402e0e57",
+    "slug": "christ-carrying-the-cross-from-a-set-of-the-passion-met-219371",
+    "title": "Christ Carrying the Cross from a set of \"The Passion\"",
+    "year": "1598",
+    "medium": "Wool, silk, metal thread (20 warp threads per inch, 8 per cm.)",
+    "dimensions": "39 1/2 x 29 3/4 in. (100.3 x 75.6 cm)",
+    "description": "Christ Carrying the Cross from a set of \"The Passion\" (1598). Design based on a woodcut by Albrecht Dürer , from the Small Passion; Wool, silk, metal thread (20 warp threads per inch, 8 per cm.). Collection: The Metropolitan Museum of Art. Credit: Gift of J. Pierpont Morgan, 1911",
+    "movement": "Textiles-Tapestries",
+    "tags": [
+      "men",
+      "women",
+      "christ",
+      "cross",
+      "textiles-tapestries",
+      "european sculpture and decorative arts"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "men",
+        "women",
+        "christ",
+        "cross"
+      ],
+      "mediumCategory": "textiles-tapestries",
+      "period": "1598",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "6a713a34-b844-0148-8b48-9d4d40f1740e",
+      "slug": "design-based-on-a-woodcut-by-albrecht-durer-from-the-small-passion-met-6a713a34",
+      "name": "Design based on a woodcut by Albrecht Dürer , from the Small Passion",
+      "nationality": "German",
+      "biography": "German, Nuremberg 1471–1528 Nuremberg"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "485 / 625",
+      "background": "#ede8df",
+      "alt": "Christ Carrying the Cross from a set of \"The Passion\" by Design based on a woodcut by Albrecht Dürer , from the Small Passion, 1598. Wool, silk, metal thread (20 warp threads per inch, 8 per cm.). Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-219371.webp",
+      "width": 485,
+      "height": 625
+    },
+    "recommendationReason": "Explore textiles-tapestries from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Gift of J. Pierpont Morgan, 1911 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/219371"
+    }
+  },
+  {
+    "id": "8837657b-a259-06ec-588b-6288ae3b1b8d",
+    "slug": "kennet-met-221482",
+    "title": "Kennet",
+    "year": "design registered October 18, 1883",
+    "medium": "Silk",
+    "dimensions": "L. 89 3/4 x W. 27 3/4 inches (228 x 70.5 cm)",
+    "description": "Kennet (design registered October 18, 1883). Designed by William Morris; Silk. Collection: The Metropolitan Museum of Art. Credit: Purchase, Edward C. Moore Jr. Gift, 1923",
+    "movement": "Textiles-Woven",
+    "tags": [
+      "flowers",
+      "textiles-woven",
+      "european sculpture and decorative arts"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "flowers"
+      ],
+      "mediumCategory": "textiles-woven",
+      "period": "design registered October 18, 1883",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "0ded9fe8-70ff-431f-d8de-7f7a77dea59d",
+      "slug": "designed-by-william-morris-met-0ded9fe8",
+      "name": "Designed by William Morris",
+      "nationality": "British",
+      "biography": "British, Walthamstow, London 1834–1896 Hammersmith, London"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "397 / 623",
+      "background": "#ede8df",
+      "alt": "Kennet by Designed by William Morris, design registered October 18, 1883. Silk. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-221482.webp",
+      "width": 397,
+      "height": 623
+    },
+    "recommendationReason": "Explore textiles-woven from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Purchase, Edward C. Moore Jr. Gift, 1923 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/221482"
+    }
+  },
+  {
+    "id": "83bb33d8-c4c0-64bd-c167-9c57a7f549f8",
+    "slug": "flower-garden-met-221483",
+    "title": "\"Flower Garden\"",
+    "year": "designed 1879",
+    "medium": "Silk",
+    "dimensions": "L. 90 x W. 27 inches (228.6 x 68.6 cm)",
+    "description": "\"Flower Garden\" (designed 1879). Designed by William Morris; Silk. Collection: The Metropolitan Museum of Art. Credit: Purchase, Edward C. Moore Jr. Gift, 1923",
+    "movement": "Textiles-Woven",
+    "tags": [
+      "textiles-woven",
+      "european sculpture and decorative arts"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [],
+      "mediumCategory": "textiles-woven",
+      "period": "designed 1879",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "0ded9fe8-70ff-431f-d8de-7f7a77dea59d",
+      "slug": "designed-by-william-morris-met-0ded9fe8",
+      "name": "Designed by William Morris",
+      "nationality": "British",
+      "biography": "British, Walthamstow, London 1834–1896 Hammersmith, London"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "452 / 624",
+      "background": "#ede8df",
+      "alt": "\"Flower Garden\" by Designed by William Morris, designed 1879. Silk. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-221483.webp",
+      "width": 452,
+      "height": 624
+    },
+    "recommendationReason": "Explore textiles-woven from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Purchase, Edward C. Moore Jr. Gift, 1923 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/221483"
+    }
+  },
+  {
+    "id": "10b85135-2dc9-b987-8674-dc2143d0d6d0",
+    "slug": "bird-met-221485",
+    "title": "Bird",
+    "year": "designed 1878",
+    "medium": "Wool",
+    "dimensions": "L. 88 1/4 x W. 49 7/8 inches (224.2 x 126.7 cm)",
+    "description": "Bird (designed 1878). Designed by William Morris; Wool. Collection: The Metropolitan Museum of Art. Credit: Purchase, Edward C. Moore Jr. Gift, 1923",
+    "movement": "Textiles-Woven",
+    "tags": [
+      "birds",
+      "textiles-woven",
+      "european sculpture and decorative arts"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "birds"
+      ],
+      "mediumCategory": "textiles-woven",
+      "period": "designed 1878",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "0ded9fe8-70ff-431f-d8de-7f7a77dea59d",
+      "slug": "designed-by-william-morris-met-0ded9fe8",
+      "name": "Designed by William Morris",
+      "nationality": "British",
+      "biography": "British, Walthamstow, London 1834–1896 Hammersmith, London"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "388 / 624",
+      "background": "#ede8df",
+      "alt": "Bird by Designed by William Morris, designed 1878. Wool. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-221485.webp",
+      "width": 388,
+      "height": 624
+    },
+    "recommendationReason": "Explore textiles-woven from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Purchase, Edward C. Moore Jr. Gift, 1923 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/221485"
+    }
+  },
+  {
+    "id": "c00123e7-7636-31ed-187b-2b9cf98cfe41",
+    "slug": "violet-and-columbine-met-221486",
+    "title": "Violet and Columbine",
+    "year": "design registered 1883",
+    "medium": "Wool",
+    "dimensions": "L. 88 x W. 69 1/2 inches (223.5 x 176.5 cm)",
+    "description": "Violet and Columbine (design registered 1883). Designed by William Morris; Wool. Collection: The Metropolitan Museum of Art. Credit: Purchase, Edward C. Moore Jr. Gift, 1923",
+    "movement": "Textiles-Woven",
+    "tags": [
+      "violets",
+      "textiles-woven",
+      "european sculpture and decorative arts"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "violets"
+      ],
+      "mediumCategory": "textiles-woven",
+      "period": "design registered 1883",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "0ded9fe8-70ff-431f-d8de-7f7a77dea59d",
+      "slug": "designed-by-william-morris-met-0ded9fe8",
+      "name": "Designed by William Morris",
+      "nationality": "British",
+      "biography": "British, Walthamstow, London 1834–1896 Hammersmith, London"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "504 / 624",
+      "background": "#ede8df",
+      "alt": "Violet and Columbine by Designed by William Morris, design registered 1883. Wool. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-221486.webp",
+      "width": 504,
+      "height": 624
+    },
+    "recommendationReason": "Explore textiles-woven from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Purchase, Edward C. Moore Jr. Gift, 1923 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/221486"
+    }
+  },
+  {
+    "id": "11c08b39-4ece-d6d2-2356-b3c755d89e31",
+    "slug": "holland-park-carpet-met-222094",
+    "title": "Holland Park carpet",
+    "year": "late 19th century",
+    "medium": "Wool\r\nTurkish (Ghiordes) knot, 25 to the square inch.",
+    "dimensions": "Overall: 203 x 156 1/4 in. (515.6 x 396.9 cm)",
+    "description": "Holland Park carpet (late 19th century). Designed by William Morris; Wool\r\nTurkish (Ghiordes) knot, 25 to the square inch.. Collection: The Metropolitan Museum of Art. Credit: Bequest of Frank A. Munsey, 1927",
+    "movement": "Textiles-Rugs",
+    "tags": [
+      "flowers",
+      "textiles-rugs",
+      "european sculpture and decorative arts"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "flowers"
+      ],
+      "mediumCategory": "textiles-rugs",
+      "period": "late 19th century",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "0ded9fe8-70ff-431f-d8de-7f7a77dea59d",
+      "slug": "designed-by-william-morris-met-0ded9fe8",
+      "name": "Designed by William Morris",
+      "nationality": "British",
+      "biography": "British, Walthamstow, London 1834–1896 Hammersmith, London"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "489 / 624",
+      "background": "#ede8df",
+      "alt": "Holland Park carpet by Designed by William Morris, late 19th century. Wool\r\nTurkish (Ghiordes) knot, 25 to the square inch.. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-222094.webp",
+      "width": 489,
+      "height": 624
+    },
+    "recommendationReason": "Explore textiles-rugs from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Bequest of Frank A. Munsey, 1927 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/222094"
+    }
+  },
+  {
+    "id": "f548b474-357a-c26a-fb1d-a011fca99621",
+    "slug": "honeysuckle-met-222341",
+    "title": "Honeysuckle",
+    "year": "design registered 1876, printed 1876–77",
+    "medium": "Linen",
+    "dimensions": "Overall (\"a\" confirmed): 67 x 70 in. (170.2 x 177.8 cm);\r\nOverall (\"b\" confirmed): 37 3/4 x 53 1/4 in. (95.9 x 135.3 cm);\r\nOverall (\"c\" confirmed): 60 1/4 x 28 in. (153 x 71.1 cm);\r\nOverall (\"d\" confirmed): 20 3/4 x 53 3/4 in. (52.7 x 136.5 cm);\r\nOverall (\"e\" confirmed): 19 x 49 1/2 in. (48.3 x 125.7 cm);\r\nOverall (\"f\" confirmed): 2 3/4 x 55 in. (7 x 139.7 cm);\r\nOverall (assembled): 67 x 60 in. (170.2 x 152.4 cm)",
+    "description": "Honeysuckle (design registered 1876, printed 1876–77). Designed by William Morris; Linen. Collection: The Metropolitan Museum of Art. Credit: Theodore M. Davis Collection, Bequest of Theodore M. Davis, 1915",
+    "movement": "Textiles-Printed",
+    "tags": [
+      "flowers",
+      "textiles-printed",
+      "european sculpture and decorative arts"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "flowers"
+      ],
+      "mediumCategory": "textiles-printed",
+      "period": "design registered 1876, printed 1876–77",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "0ded9fe8-70ff-431f-d8de-7f7a77dea59d",
+      "slug": "designed-by-william-morris-met-0ded9fe8",
+      "name": "Designed by William Morris",
+      "nationality": "British",
+      "biography": "British, Walthamstow, London 1834–1896 Hammersmith, London"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "square",
+      "aspectRatio": "558 / 624",
+      "background": "#ede8df",
+      "alt": "Honeysuckle by Designed by William Morris, design registered 1876, printed 1876–77. Linen. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-222341.webp",
+      "width": 558,
+      "height": 624
+    },
+    "recommendationReason": "Explore textiles-printed from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Theodore M. Davis Collection, Bequest of Theodore M. Davis, 1915 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/222341"
+    }
+  },
+  {
+    "id": "8187cccd-7619-14db-fdbe-da056a569327",
+    "slug": "peacock-and-dragon-met-222347",
+    "title": "\"Peacock and Dragon\"",
+    "year": "designed 1878",
+    "medium": "Wool",
+    "dimensions": "L. 52 1/2 x W. 67 1/4 in. (133.3 x 170.8 cm)",
+    "description": "\"Peacock and Dragon\" (designed 1878). Designed by William Morris; Wool. Collection: The Metropolitan Museum of Art. Credit: Theodore M. Davis Collection, Bequest of Theodore M. Davis, 1915",
+    "movement": "Textiles-Woven",
+    "tags": [
+      "dragons",
+      "peacocks",
+      "textiles-woven",
+      "european sculpture and decorative arts"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "dragons",
+        "peacocks"
+      ],
+      "mediumCategory": "textiles-woven",
+      "period": "designed 1878",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "0ded9fe8-70ff-431f-d8de-7f7a77dea59d",
+      "slug": "designed-by-william-morris-met-0ded9fe8",
+      "name": "Designed by William Morris",
+      "nationality": "British",
+      "biography": "British, Walthamstow, London 1834–1896 Hammersmith, London"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "600 / 476",
+      "background": "#ede8df",
+      "alt": "\"Peacock and Dragon\" by Designed by William Morris, designed 1878. Wool. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-222347.webp",
+      "width": 600,
+      "height": 476
+    },
+    "recommendationReason": "Explore textiles-woven from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Theodore M. Davis Collection, Bequest of Theodore M. Davis, 1915 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/222347"
+    }
+  },
+  {
+    "id": "6055d573-4537-67ab-1bcc-b8487f59386b",
+    "slug": "panel-of-floral-embroidery-met-229381",
+    "title": "Panel of floral embroidery",
+    "year": "ca. 1875–80",
+    "medium": "Silk on silk; linen backing",
+    "dimensions": "H. 78 x W. 46 3/4 inches (198.1 x 118.7 cm)",
+    "description": "Panel of floral embroidery (ca. 1875–80). William Morris; Silk on silk; linen backing. Collection: The Metropolitan Museum of Art. Credit: Rogers Fund, 1972",
+    "movement": "Textiles-Embroidered",
+    "tags": [
+      "flowers",
+      "textiles-embroidered",
+      "european sculpture and decorative arts"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "flowers"
+      ],
+      "mediumCategory": "textiles-embroidered",
+      "period": "ca. 1875–80",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "5adff3bb-242f-5849-1421-e174175c6549",
+      "slug": "william-morris-met-5adff3bb",
+      "name": "William Morris",
+      "nationality": "British",
+      "biography": "British, Walthamstow, London 1834–1896 Hammersmith, London"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "421 / 624",
+      "background": "#ede8df",
+      "alt": "Panel of floral embroidery by William Morris, ca. 1875–80. Silk on silk; linen backing. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-229381.webp",
+      "width": 421,
+      "height": 624
+    },
+    "recommendationReason": "Explore textiles-embroidered from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Rogers Fund, 1972 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/229381"
+    }
+  },
+  {
+    "id": "76b9dabb-fbb0-14e6-e44f-24a91c76076c",
+    "slug": "bacchanal-a-faun-teased-by-children-met-238974",
+    "title": "Bacchanal: A Faun Teased by Children",
+    "year": "ca. 1616–17",
+    "medium": "Marble",
+    "dimensions": "Overall (confirmed): 52 1/8 x 29 x 18 7/8 in. (132.4 x 73.7 x 47.9 cm)",
+    "description": "Bacchanal: A Faun Teased by Children (ca. 1616–17). Gian Lorenzo Bernini; Marble. Collection: The Metropolitan Museum of Art. Credit: Purchase, The Annenberg Fund Inc. Gift, Fletcher, Rogers, and Louis V. Bell Funds, and Gift of J. Pierpont Morgan, by exchange, 1976",
+    "movement": "Sculpture",
+    "tags": [
+      "sculpture",
+      "european sculpture and decorative arts"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [],
+      "mediumCategory": "sculpture",
+      "period": "ca. 1616–17",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "0c77e837-a483-79ac-1ac0-e36bedbe40d9",
+      "slug": "gian-lorenzo-bernini-met-0c77e837",
+      "name": "Gian Lorenzo Bernini",
+      "nationality": "Italian",
+      "biography": "Italian, Naples 1598–1680 Rome"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "480 / 624",
+      "background": "#ede8df",
+      "alt": "Bacchanal: A Faun Teased by Children by Gian Lorenzo Bernini, ca. 1616–17. Marble. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-238974.webp",
+      "width": 480,
+      "height": 624
+    },
+    "recommendationReason": "Explore sculpture from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Purchase, The Annenberg Fund Inc. Gift, Fletcher, Rogers, and Louis V. Bell Funds, and Gift of J. Pierpont Morgan, by exchange, 1976 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/238974"
+    }
+  },
+  {
+    "id": "c7709f23-d36b-2535-d58f-338700f2ff37",
+    "slug": "vessel-with-women-and-goats-met-239364",
+    "title": "Vessel with Women and Goats",
+    "year": "ca. 1887–89",
+    "medium": "Stoneware",
+    "dimensions": "Overall (confirmed, irregular diameter): 7 7/8 × 4 5/8 × 4 3/8 in., 2.2 lb. (20 × 11.7 × 11.1 cm, 1 kg)",
+    "description": "Vessel with Women and Goats (ca. 1887–89). Paul Gauguin; Stoneware. Collection: The Metropolitan Museum of Art. Credit: Robert A. Ellison Jr. Collection, Purchase, Acquisitions Fund; Louis V. Bell, Harris Brisbane Dick, Fletcher, and Rogers Funds and Joseph Pulitzer Bequest; and 2011 Benefit Fund, 2013",
+    "movement": "Ceramics-Pottery",
+    "tags": [
+      "women",
+      "goats",
+      "ceramics-pottery",
+      "european sculpture and decorative arts"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "women",
+        "goats"
+      ],
+      "mediumCategory": "ceramics-pottery",
+      "period": "ca. 1887–89",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "35dc72a9-b304-0da9-a71f-ce0c4710c0b7",
+      "slug": "paul-gauguin-met-35dc72a9",
+      "name": "Paul Gauguin",
+      "nationality": "French",
+      "biography": "French, Paris 1848–1903 Atuona, Hiva Oa, Marquesas Islands"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "468 / 624",
+      "background": "#ede8df",
+      "alt": "Vessel with Women and Goats by Paul Gauguin, ca. 1887–89. Stoneware. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-239364.webp",
+      "width": 468,
+      "height": 624
+    },
+    "recommendationReason": "Explore ceramics-pottery from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Robert A. Ellison Jr. Collection, Purchase, Acquisitions Fund; Louis V. Bell, Harris Brisbane Dick, Fletcher, and Rogers Funds and Joseph Pulitzer Bequest; and 2011 Benefit Fund, 2013 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/239364"
+    }
+  },
+  {
+    "id": "a1aeb903-4817-40de-f322-c60185b826a8",
+    "slug": "bust-of-napoleon-met-239576",
+    "title": "Bust of Napoleon",
+    "year": "ca. 1808–14",
+    "medium": "White marble (probably Carrara)",
+    "dimensions": "wt confirmed: 29 × 19 × 17 in., 265 lb. (73.7 × 48.3 × 43.2 cm, 120.2 kg)",
+    "description": "Bust of Napoleon (ca. 1808–14). After a model by Antonio Canova; White marble (probably Carrara). Collection: The Metropolitan Museum of Art. Credit: Bequest of Roger Prigent, 2015",
+    "movement": "Sculpture",
+    "tags": [
+      "napoleon i",
+      "sculpture",
+      "european sculpture and decorative arts"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "napoleon i"
+      ],
+      "mediumCategory": "sculpture",
+      "period": "ca. 1808–14",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "d9844824-9a2f-4042-b29b-5fdd98c4d706",
+      "slug": "after-a-model-by-antonio-canova-met-d9844824",
+      "name": "After a model by Antonio Canova",
+      "nationality": "Italian",
+      "biography": "Italian, Possagno 1757–1822 Venice"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "475 / 624",
+      "background": "#ede8df",
+      "alt": "Bust of Napoleon by After a model by Antonio Canova, ca. 1808–14. White marble (probably Carrara). Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-239576.webp",
+      "width": 475,
+      "height": 624
+    },
+    "recommendationReason": "Explore sculpture from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Bequest of Roger Prigent, 2015 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/239576"
+    }
+  },
+  {
+    "id": "f49a4be5-6c7c-12d9-e4b7-acb6b0967d19",
+    "slug": "veduta-del-tempio-di-giove-tonante-met-284874",
+    "title": "Veduta del Tempio di Giove Tonante",
+    "year": "1740s–60s",
+    "medium": "Engraving",
+    "dimensions": "Image: 38 x 59.5 cm (14 15/16 x 23 7/16 in.)",
+    "description": "Veduta del Tempio di Giove Tonante (1740s–60s). Giovanni Battista Piranesi; Engraving. Collection: The Metropolitan Museum of Art. Credit: Walker Evans Archive, 1994",
+    "movement": "Prints",
+    "tags": [
+      "human figures",
+      "buildings",
+      "temples",
+      "prints",
+      "photographs"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "human figures",
+        "buildings",
+        "temples"
+      ],
+      "mediumCategory": "prints",
+      "period": "1740s–60s",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "c2222956-dc5f-4842-d026-4624d4e7b4d0",
+      "slug": "giovanni-battista-piranesi-met-c2222956",
+      "name": "Giovanni Battista Piranesi",
+      "nationality": "Italian",
+      "biography": "Italian, Mogliano Veneto 1720–1778 Rome"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "600 / 470",
+      "background": "#ede8df",
+      "alt": "Veduta del Tempio di Giove Tonante by Giovanni Battista Piranesi, 1740s–60s. Engraving. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-284874.webp",
+      "width": 600,
+      "height": 470
+    },
+    "recommendationReason": "Explore prints from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Walker Evans Archive, 1994 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/284874"
+    }
+  },
+  {
+    "id": "ae26f9d1-f1b7-26e8-2371-f4d852dd8290",
+    "slug": "cover-design-for-les-vieilles-histoires-met-330120",
+    "title": "Cover Design for \"Les Vieilles Histoires\"",
+    "year": "1893",
+    "medium": "Hand-colored lithograph",
+    "dimensions": "Sheet: 18 1/16 in. × 24 in. (45.8 × 61 cm)",
+    "description": "Cover Design for \"Les Vieilles Histoires\" (1893). Henri de Toulouse-Lautrec; Hand-colored lithograph. Collection: The Metropolitan Museum of Art. Credit: Bequest of Nanette B. Kelekian, 2020",
+    "movement": "Prints",
+    "tags": [
+      "bears",
+      "men",
+      "prints",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "bears",
+        "men"
+      ],
+      "mediumCategory": "prints",
+      "period": "1893",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "9e8cac87-e629-d855-27d1-61ab0260ac05",
+      "slug": "henri-de-toulouse-lautrec-met-9e8cac87",
+      "name": "Henri de Toulouse-Lautrec",
+      "nationality": "French",
+      "biography": "French, Albi 1864–1901 Saint-André-du-Bois"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "599 / 453",
+      "background": "#ede8df",
+      "alt": "Cover Design for \"Les Vieilles Histoires\" by Henri de Toulouse-Lautrec, 1893. Hand-colored lithograph. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-330120.webp",
+      "width": 599,
+      "height": 453
+    },
+    "recommendationReason": "Explore prints from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Bequest of Nanette B. Kelekian, 2020 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/330120"
+    }
+  },
+  {
+    "id": "fcb61bc7-242a-2418-6196-15fb76687b98",
+    "slug": "hamlet-in-a-wheat-field-vichy-met-330128",
+    "title": "Hamlet in a Wheat Field, Vichy",
+    "year": "1867",
+    "medium": "Pen and brown ink, with brush and brown wash, and watercolor",
+    "dimensions": "Sheet: 8 1/8 × 10 7/16 in. (20.6 × 26.5 cm)",
+    "description": "Hamlet in a Wheat Field, Vichy (1867). Jean-François Millet; Pen and brown ink, with brush and brown wash, and watercolor. Collection: The Metropolitan Museum of Art. Credit: Bequest of Nanette B. Kelekian, 2020",
+    "movement": "Drawings",
+    "tags": [
+      "landscapes",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "landscapes"
+      ],
+      "mediumCategory": "drawings",
+      "period": "1867",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "b92016cd-ad23-5916-7e4a-d19bec1a359c",
+      "slug": "jean-francois-millet-met-b92016cd",
+      "name": "Jean-François Millet",
+      "nationality": "French",
+      "biography": "French, Gruchy 1814–1875 Barbizon"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "600 / 471",
+      "background": "#ede8df",
+      "alt": "Hamlet in a Wheat Field, Vichy by Jean-François Millet, 1867. Pen and brown ink, with brush and brown wash, and watercolor. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-330128.webp",
+      "width": 600,
+      "height": 471
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Bequest of Nanette B. Kelekian, 2020 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/330128"
+    }
+  },
+  {
+    "id": "bbc3f2d9-bfee-051f-8c2e-05868bd863f5",
+    "slug": "charles-v-spearing-a-bull-in-the-ring-at-valladolid-plate-10-from-la-tauromaquia-met-333780",
+    "title": "Charles V spearing a bull in the ring at Valladolid, plate 10 from \"La Tauromaquia\"",
+    "year": "1816",
+    "medium": "Etching, burnished aquatint, drypoint, burin",
+    "dimensions": "Plate: 9 13/16 × 13 3/4 in. (25 × 35 cm)\r\nSheet: 10 15/16 × 15 1/16 in. (27.8 × 38.2 cm)",
+    "description": "Charles V spearing a bull in the ring at Valladolid, plate 10 from \"La Tauromaquia\" (1816). Goya (Francisco de Goya y Lucientes); Etching, burnished aquatint, drypoint, burin. Collection: The Metropolitan Museum of Art. Credit: Gift of Walter E. Sachs, 1916",
+    "movement": "Prints",
+    "tags": [
+      "men",
+      "bulls",
+      "prints",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "men",
+        "bulls"
+      ],
+      "mediumCategory": "prints",
+      "period": "1816",
+      "geography": "Spain"
+    },
+    "artist": {
+      "id": "6b0ccdd0-b551-3a3c-59da-408e95384ee9",
+      "slug": "goya-francisco-de-goya-y-lucientes-met-6b0ccdd0",
+      "name": "Goya (Francisco de Goya y Lucientes)",
+      "nationality": "Spanish",
+      "biography": "Spanish, Fuendetodos 1746–1828 Bordeaux"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "600 / 445",
+      "background": "#ede8df",
+      "alt": "Charles V spearing a bull in the ring at Valladolid, plate 10 from \"La Tauromaquia\" by Goya (Francisco de Goya y Lucientes), 1816. Etching, burnished aquatint, drypoint, burin. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-333780.webp",
+      "width": 600,
+      "height": 445
+    },
+    "recommendationReason": "Explore prints from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Gift of Walter E. Sachs, 1916 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/333780"
+    }
+  },
+  {
+    "id": "22981c57-4e2f-84b2-75f1-d8ed68b1ac76",
+    "slug": "the-agility-and-audacity-of-juanito-apinani-in-the-ring-at-madrid-plate-20-from-la-ta-met-333781",
+    "title": "The agility and audacity of Juanito Apiñani in [the ring] at Madrid, plate 20 from \"La Tauromaquia\"",
+    "year": "1816",
+    "medium": "Etching, aquatint",
+    "dimensions": "Plate: 9 5/8 × 13 7/8 in. (24.5 × 35.3 cm)\r\n11 in. × 15 3/16 in. (28 × 38.5 cm)",
+    "description": "The agility and audacity of Juanito Apiñani in [the ring] at Madrid, plate 20 from \"La Tauromaquia\" (1816). Goya (Francisco de Goya y Lucientes); Etching, aquatint. Collection: The Metropolitan Museum of Art. Credit: Gift of Walter E. Sachs, 1916",
+    "movement": "Prints",
+    "tags": [
+      "men",
+      "sports",
+      "bulls",
+      "prints",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "men",
+        "sports",
+        "bulls"
+      ],
+      "mediumCategory": "prints",
+      "period": "1816",
+      "geography": "Spain"
+    },
+    "artist": {
+      "id": "6b0ccdd0-b551-3a3c-59da-408e95384ee9",
+      "slug": "goya-francisco-de-goya-y-lucientes-met-6b0ccdd0",
+      "name": "Goya (Francisco de Goya y Lucientes)",
+      "nationality": "Spanish",
+      "biography": "Spanish, Fuendetodos 1746–1828 Bordeaux"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "600 / 434",
+      "background": "#ede8df",
+      "alt": "The agility and audacity of Juanito Apiñani in [the ring] at Madrid, plate 20 from \"La Tauromaquia\" by Goya (Francisco de Goya y Lucientes), 1816. Etching, aquatint. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-333781.webp",
+      "width": 600,
+      "height": 434
+    },
+    "recommendationReason": "Explore prints from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Gift of Walter E. Sachs, 1916 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/333781"
+    }
+  },
+  {
+    "id": "7e87d91d-c391-520b-bae0-596fbb1c78e6",
+    "slug": "a-moor-caught-by-the-bull-in-the-ring-plate-8-from-la-tauromaquia-met-333782",
+    "title": "A Moor Caught by the Bull in the ring, plate 8 from \"La Tauromaquia\"",
+    "year": "1816",
+    "medium": "Etching, burnished aquatint, drypoint",
+    "dimensions": "Plate: 9 5/8 × 13 3/4 in. (24.5 × 35 cm)\r\nSheet: 11 in. × 15 1/16 in. (28 × 38.2 cm)",
+    "description": "A Moor Caught by the Bull in the ring, plate 8 from \"La Tauromaquia\" (1816). Goya (Francisco de Goya y Lucientes); Etching, burnished aquatint, drypoint. Collection: The Metropolitan Museum of Art. Credit: Gift of Walter E. Sachs, 1916",
+    "movement": "Prints",
+    "tags": [
+      "men",
+      "bulls",
+      "prints",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "men",
+        "bulls"
+      ],
+      "mediumCategory": "prints",
+      "period": "1816",
+      "geography": "Spain"
+    },
+    "artist": {
+      "id": "6b0ccdd0-b551-3a3c-59da-408e95384ee9",
+      "slug": "goya-francisco-de-goya-y-lucientes-met-6b0ccdd0",
+      "name": "Goya (Francisco de Goya y Lucientes)",
+      "nationality": "Spanish",
+      "biography": "Spanish, Fuendetodos 1746–1828 Bordeaux"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "600 / 438",
+      "background": "#ede8df",
+      "alt": "A Moor Caught by the Bull in the ring, plate 8 from \"La Tauromaquia\" by Goya (Francisco de Goya y Lucientes), 1816. Etching, burnished aquatint, drypoint. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-333782.webp",
+      "width": 600,
+      "height": 438
+    },
+    "recommendationReason": "Explore prints from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Gift of Walter E. Sachs, 1916 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/333782"
+    }
+  },
+  {
+    "id": "92f79502-de3a-de1f-320b-bb557438e584",
+    "slug": "a-bad-night-mala-noche-plate-36-from-los-caprichos-met-333783",
+    "title": "A bad night (Mala noche), plate 36 from \"Los Caprichos\"",
+    "year": "1799",
+    "medium": "Etching, burnished aquatint",
+    "dimensions": "Plate: 8 7/16 x 5 7/8 in. (21.5 x 15 cm)\r\nSheet: 12 1/16 x 7 13/16 in. (30.7 x 19.9 cm)",
+    "description": "A bad night (Mala noche), plate 36 from \"Los Caprichos\" (1799). Goya (Francisco de Goya y Lucientes); Etching, burnished aquatint. Collection: The Metropolitan Museum of Art. Credit: Gift of Walter E. Sachs, 1916",
+    "movement": "Prints",
+    "tags": [
+      "human figures",
+      "prints",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "human figures"
+      ],
+      "mediumCategory": "prints",
+      "period": "1799",
+      "geography": "Spain"
+    },
+    "artist": {
+      "id": "6b0ccdd0-b551-3a3c-59da-408e95384ee9",
+      "slug": "goya-francisco-de-goya-y-lucientes-met-6b0ccdd0",
+      "name": "Goya (Francisco de Goya y Lucientes)",
+      "nationality": "Spanish",
+      "biography": "Spanish, Fuendetodos 1746–1828 Bordeaux"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "405 / 625",
+      "background": "#ede8df",
+      "alt": "A bad night (Mala noche), plate 36 from \"Los Caprichos\" by Goya (Francisco de Goya y Lucientes), 1799. Etching, burnished aquatint. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-333783.webp",
+      "width": 405,
+      "height": 625
+    },
+    "recommendationReason": "Explore prints from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Gift of Walter E. Sachs, 1916 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/333783"
+    }
+  },
+  {
+    "id": "8a73ee18-ea87-0bff-50cb-7a817f0151dd",
+    "slug": "out-hunting-for-teeth-a-caza-des-dientes-plate-12-from-los-caprichos-met-333784",
+    "title": "Out hunting for teeth (A caza des dientes), plate 12 from \"Los Caprichos\"",
+    "year": "1799",
+    "medium": "Etching, burnished aquatint, burin",
+    "dimensions": "Plate: 8 9/16 x 5 7/8 in. (21.8 x 14.9 cm)\r\nSheet: 12 1/16 x 7 13/16 in. (30.7 x 19.9 cm)",
+    "description": "Out hunting for teeth (A caza des dientes), plate 12 from \"Los Caprichos\" (1799). Goya (Francisco de Goya y Lucientes); Etching, burnished aquatint, burin. Collection: The Metropolitan Museum of Art. Credit: Gift of Walter E. Sachs, 1916",
+    "movement": "Prints",
+    "tags": [
+      "fear",
+      "men",
+      "women",
+      "death",
+      "prints",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "fear",
+        "men",
+        "women",
+        "death"
+      ],
+      "mediumCategory": "prints",
+      "period": "1799",
+      "geography": "Spain"
+    },
+    "artist": {
+      "id": "6b0ccdd0-b551-3a3c-59da-408e95384ee9",
+      "slug": "goya-francisco-de-goya-y-lucientes-met-6b0ccdd0",
+      "name": "Goya (Francisco de Goya y Lucientes)",
+      "nationality": "Spanish",
+      "biography": "Spanish, Fuendetodos 1746–1828 Bordeaux"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "416 / 625",
+      "background": "#ede8df",
+      "alt": "Out hunting for teeth (A caza des dientes), plate 12 from \"Los Caprichos\" by Goya (Francisco de Goya y Lucientes), 1799. Etching, burnished aquatint, burin. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-333784.webp",
+      "width": 416,
+      "height": 625
+    },
+    "recommendationReason": "Explore prints from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Gift of Walter E. Sachs, 1916 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/333784"
+    }
+  },
+  {
+    "id": "698ec6d0-f7f7-d7a1-ba8e-37d59e451e13",
+    "slug": "tantalus-tantalo-plate-9-from-los-caprichos-met-333785",
+    "title": "Tantalus (Tantalo), plate 9 from \"Los Caprichos\"",
+    "year": "1799",
+    "medium": "Etching, burnished aquatint",
+    "dimensions": "Plate: 8 3/16 × 5 7/8 in. (20.8 × 15 cm)\r\nSheet: 12 in. × 7 13/16 in. (30.5 × 19.9 cm)",
+    "description": "Tantalus (Tantalo), plate 9 from \"Los Caprichos\" (1799). Goya (Francisco de Goya y Lucientes); Etching, burnished aquatint. Collection: The Metropolitan Museum of Art. Credit: Gift of Walter E. Sachs, 1916",
+    "movement": "Prints",
+    "tags": [
+      "men",
+      "women",
+      "death",
+      "prints",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "men",
+        "women",
+        "death"
+      ],
+      "mediumCategory": "prints",
+      "period": "1799",
+      "geography": "Spain"
+    },
+    "artist": {
+      "id": "6b0ccdd0-b551-3a3c-59da-408e95384ee9",
+      "slug": "goya-francisco-de-goya-y-lucientes-met-6b0ccdd0",
+      "name": "Goya (Francisco de Goya y Lucientes)",
+      "nationality": "Spanish",
+      "biography": "Spanish, Fuendetodos 1746–1828 Bordeaux"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "428 / 625",
+      "background": "#ede8df",
+      "alt": "Tantalus (Tantalo), plate 9 from \"Los Caprichos\" by Goya (Francisco de Goya y Lucientes), 1799. Etching, burnished aquatint. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-333785.webp",
+      "width": 428,
+      "height": 625
+    },
+    "recommendationReason": "Explore prints from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Gift of Walter E. Sachs, 1916 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/333785"
+    }
+  },
+  {
+    "id": "5bb897ac-5b1a-b711-5bd6-e606b9319365",
+    "slug": "it-is-nicely-stretched-bien-tirada-esta-plate-17-from-los-caprichos-met-333786",
+    "title": "It is nicely stretched (Bien tirada está), plate 17 from \"Los Caprichos\"",
+    "year": "1799",
+    "medium": "Etching, burnished aquatint, burin",
+    "dimensions": "Sheet: 9 13/16 x 5 15/16 in. (24.99 x 15.01cm)",
+    "description": "It is nicely stretched (Bien tirada está), plate 17 from \"Los Caprichos\" (1799). Goya (Francisco de Goya y Lucientes); Etching, burnished aquatint, burin. Collection: The Metropolitan Museum of Art. Credit: Gift of Walter E. Sachs, 1916",
+    "movement": "Prints",
+    "tags": [
+      "women",
+      "prints",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "women"
+      ],
+      "mediumCategory": "prints",
+      "period": "1799",
+      "geography": "Spain"
+    },
+    "artist": {
+      "id": "6b0ccdd0-b551-3a3c-59da-408e95384ee9",
+      "slug": "goya-francisco-de-goya-y-lucientes-met-6b0ccdd0",
+      "name": "Goya (Francisco de Goya y Lucientes)",
+      "nationality": "Spanish",
+      "biography": "Spanish, Fuendetodos 1746–1828 Bordeaux"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "418 / 625",
+      "background": "#ede8df",
+      "alt": "It is nicely stretched (Bien tirada está), plate 17 from \"Los Caprichos\" by Goya (Francisco de Goya y Lucientes), 1799. Etching, burnished aquatint, burin. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-333786.webp",
+      "width": 418,
+      "height": 625
+    },
+    "recommendationReason": "Explore prints from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Gift of Walter E. Sachs, 1916 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/333786"
+    }
+  },
+  {
+    "id": "d197fdf5-8605-539e-f4f5-c44deec6f264",
+    "slug": "frontispiece-yvette-guilbert-before-the-prompter-s-box-met-333800",
+    "title": "Frontispiece - Yvette Guilbert before the Prompter's Box",
+    "year": "1898",
+    "medium": "Lithograph on laid paper",
+    "dimensions": "19-3/4 x 14-7/8 in.  (50.2 x 37.8 cm)",
+    "description": "Frontispiece - Yvette Guilbert before the Prompter's Box (1898). Henri de Toulouse-Lautrec; Lithograph on laid paper. Collection: The Metropolitan Museum of Art. Credit: Gift of Mrs. H. Wolf, 1917",
+    "movement": "Prints",
+    "tags": [
+      "women",
+      "prints",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "women"
+      ],
+      "mediumCategory": "prints",
+      "period": "1898",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "9e8cac87-e629-d855-27d1-61ab0260ac05",
+      "slug": "henri-de-toulouse-lautrec-met-9e8cac87",
+      "name": "Henri de Toulouse-Lautrec",
+      "nationality": "French",
+      "biography": "French, Albi 1864–1901 Saint-André-du-Bois"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "473 / 624",
+      "background": "#ede8df",
+      "alt": "Frontispiece - Yvette Guilbert before the Prompter's Box by Henri de Toulouse-Lautrec, 1898. Lithograph on laid paper. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-333800.webp",
+      "width": 473,
+      "height": 624
+    },
+    "recommendationReason": "Explore prints from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Gift of Mrs. H. Wolf, 1917 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/333800"
+    }
+  },
+  {
+    "id": "d93e6c9c-9e0b-0b4d-d5d0-657a35194d4a",
+    "slug": "yvette-guilbert-met-333802",
+    "title": "Yvette Guilbert",
+    "year": "1894",
+    "medium": "Album with lithographed cover on Japan paper and sixteen crayon lithographs printed in olive green on laid paper; only state",
+    "dimensions": "16 in. × 15 1/8 in. (40.6 × 38.4 cm)\r\nSheet: 15 × 15 in. (38.1 × 38.1 cm)",
+    "description": "Yvette Guilbert (1894). Henri de Toulouse-Lautrec; Album with lithographed cover on Japan paper and sixteen crayon lithographs printed in olive green on laid paper; only state. Collection: The Metropolitan Museum of Art. Credit: Rogers Fund, 1918",
+    "movement": "Prints",
+    "tags": [
+      "singers",
+      "prints",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "singers"
+      ],
+      "mediumCategory": "prints",
+      "period": "1894",
+      "geography": "France"
+    },
+    "artist": {
+      "id": "9e8cac87-e629-d855-27d1-61ab0260ac05",
+      "slug": "henri-de-toulouse-lautrec-met-9e8cac87",
+      "name": "Henri de Toulouse-Lautrec",
+      "nationality": "French",
+      "biography": "French, Albi 1864–1901 Saint-André-du-Bois"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "600 / 524",
+      "background": "#ede8df",
+      "alt": "Yvette Guilbert by Henri de Toulouse-Lautrec, 1894. Album with lithographed cover on Japan paper and sixteen crayon lithographs printed in olive green on laid paper; only state. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-333802.webp",
+      "width": 600,
+      "height": 524
+    },
+    "recommendationReason": "Explore prints from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Rogers Fund, 1918 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/333802"
+    }
+  },
+  {
+    "id": "3e26e8b6-9537-ad9f-226e-151184e7d86c",
+    "slug": "at-les-ambassadeurs-au-cafe-concert-at-the-cafe-concert-from-l-estampe-originale-met-333847",
+    "title": "At Les Ambassadeurs (Au Café-Concert / At the Café Concert), from \"L'Estampe Originale\"",
+    "year": "1894",
+    "medium": "Crayon, brush and spatter lithograph printed in six colors; only state",
+    "dimensions": "Image: 4 7/16 × 3 13/16 in. (11.3 × 9.8 cm)\r\nSheet: 23 1/4 in. × 17 in. (59.1 × 43.2 cm)",
+    "description": "At Les Ambassadeurs (Au Café-Concert / At the Café Concert), from \"L'Estampe Originale\" (1894). Henri de Toulouse-Lautrec; Crayon, brush and spatter lithograph printed in six colors; only state. Collection: The Metropolitan Museum of Art. Credit: Rogers Fund, 1922",
+    "movement": "Prints",
+    "tags": [
+      "women",
+      "prints",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "women"
+      ],
+      "mediumCategory": "prints",
+      "period": "1894",
+      "geography": "France"
+    },
+    "artist": {
+      "id": "9e8cac87-e629-d855-27d1-61ab0260ac05",
+      "slug": "henri-de-toulouse-lautrec-met-9e8cac87",
+      "name": "Henri de Toulouse-Lautrec",
+      "nationality": "French",
+      "biography": "French, Albi 1864–1901 Saint-André-du-Bois"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "494 / 624",
+      "background": "#ede8df",
+      "alt": "At Les Ambassadeurs (Au Café-Concert / At the Café Concert), from \"L'Estampe Originale\" by Henri de Toulouse-Lautrec, 1894. Crayon, brush and spatter lithograph printed in six colors; only state. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-333847.webp",
+      "width": 494,
+      "height": 624
+    },
+    "recommendationReason": "Explore prints from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Rogers Fund, 1922 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/333847"
+    }
+  },
+  {
+    "id": "c50a2ad9-cbd2-dea7-2d22-3483769a2aa5",
+    "slug": "at-the-curtain-au-rideau-from-l-estampe-originale-met-333848",
+    "title": "At the Curtain (Au Rideau), from \"L'Estampe Originale\"",
+    "year": "1895",
+    "medium": "Crayon, brush, and spatter lithograph printed in two colors; only state",
+    "dimensions": "Image: 23 1/8 × 43 13/16 in. (58.7 × 111.3 cm)\r\nSheet: 23 3/4 × 33 9/16 in. (60.3 × 85.2 cm)",
+    "description": "At the Curtain (Au Rideau), from \"L'Estampe Originale\" (1895). Henri de Toulouse-Lautrec; Crayon, brush, and spatter lithograph printed in two colors; only state. Collection: The Metropolitan Museum of Art. Credit: Rogers Fund, 1922",
+    "movement": "Prints",
+    "tags": [
+      "theatre",
+      "men",
+      "women",
+      "elephants",
+      "prints",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "theatre",
+        "men",
+        "women",
+        "elephants"
+      ],
+      "mediumCategory": "prints",
+      "period": "1895",
+      "geography": "France"
+    },
+    "artist": {
+      "id": "9e8cac87-e629-d855-27d1-61ab0260ac05",
+      "slug": "henri-de-toulouse-lautrec-met-9e8cac87",
+      "name": "Henri de Toulouse-Lautrec",
+      "nationality": "French",
+      "biography": "French, Albi 1864–1901 Saint-André-du-Bois"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "599 / 427",
+      "background": "#ede8df",
+      "alt": "At the Curtain (Au Rideau), from \"L'Estampe Originale\" by Henri de Toulouse-Lautrec, 1895. Crayon, brush, and spatter lithograph printed in two colors; only state. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-333848.webp",
+      "width": 599,
+      "height": 427
+    },
+    "recommendationReason": "Explore prints from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Rogers Fund, 1922 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/333848"
+    }
+  },
+  {
+    "id": "056fd95c-7fec-2ab7-2262-dbe6dfeec381",
+    "slug": "a-scene-from-offenbach-s-la-belle-helene-met-333853",
+    "title": "A Scene from Offenbach's La Belle Hélène",
+    "year": "1900",
+    "medium": "Lithograph",
+    "dimensions": "27-15/16 x 20-7/16 in.  (71.0 x 51.9 cm)",
+    "description": "A Scene from Offenbach's La Belle Hélène (1900). Henri de Toulouse-Lautrec; Lithograph. Collection: The Metropolitan Museum of Art. Credit: Harris Brisbane Dick Fund, 1923",
+    "movement": "Prints",
+    "tags": [
+      "soldiers",
+      "men",
+      "women",
+      "prints",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "soldiers",
+        "men",
+        "women"
+      ],
+      "mediumCategory": "prints",
+      "period": "1900",
+      "geography": "France"
+    },
+    "artist": {
+      "id": "9e8cac87-e629-d855-27d1-61ab0260ac05",
+      "slug": "henri-de-toulouse-lautrec-met-9e8cac87",
+      "name": "Henri de Toulouse-Lautrec",
+      "nationality": "French",
+      "biography": "French, Albi 1864–1901 Saint-André-du-Bois"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "524 / 624",
+      "background": "#ede8df",
+      "alt": "A Scene from Offenbach's La Belle Hélène by Henri de Toulouse-Lautrec, 1900. Lithograph. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-333853.webp",
+      "width": 524,
+      "height": 624
+    },
+    "recommendationReason": "Explore prints from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Harris Brisbane Dick Fund, 1923 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/333853"
+    }
+  },
+  {
+    "id": "ecf0f604-5be0-b594-4d59-c0a7c1def30e",
+    "slug": "marcelle-lender-and-eva-lavalliere-in-a-revue-at-the-varietes-met-333854",
+    "title": "Marcelle Lender and Eva Lavalliére in a Revue at the Variétés",
+    "year": "1895",
+    "medium": "Crayon lithograph printed in olive green on wove paper; only state",
+    "dimensions": "Image: 12 in. × 9 13/16 in. (30.5 × 25 cm)\r\nSheet: 19 5/16 × 13 3/8 in. (49.1 × 34 cm)",
+    "description": "Marcelle Lender and Eva Lavalliére in a Revue at the Variétés (1895). Henri de Toulouse-Lautrec; Crayon lithograph printed in olive green on wove paper; only state. Collection: The Metropolitan Museum of Art. Credit: Harris Brisbane Dick Fund, 1923",
+    "movement": "Prints",
+    "tags": [
+      "women",
+      "prints",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "women"
+      ],
+      "mediumCategory": "prints",
+      "period": "1895",
+      "geography": "France"
+    },
+    "artist": {
+      "id": "9e8cac87-e629-d855-27d1-61ab0260ac05",
+      "slug": "henri-de-toulouse-lautrec-met-9e8cac87",
+      "name": "Henri de Toulouse-Lautrec",
+      "nationality": "French",
+      "biography": "French, Albi 1864–1901 Saint-André-du-Bois"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "433 / 625",
+      "background": "#ede8df",
+      "alt": "Marcelle Lender and Eva Lavalliére in a Revue at the Variétés by Henri de Toulouse-Lautrec, 1895. Crayon lithograph printed in olive green on wove paper; only state. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-333854.webp",
+      "width": 433,
+      "height": 625
+    },
+    "recommendationReason": "Explore prints from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Harris Brisbane Dick Fund, 1923 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/333854"
+    }
+  },
+  {
+    "id": "19a1ad9b-3cc5-ea56-d90b-b6b4de4158e8",
+    "slug": "yvette-guilbert-from-le-cafe-concert-met-333855",
+    "title": "Yvette Guilbert (from Le Café Concert)",
+    "year": "1893",
+    "medium": "Brush and crayon lithograph printed in brownish-black ink on laid japan paper; only state",
+    "dimensions": "Sheet: 17 5/16 × 12 5/8 in. (44 × 32 cm)\r\nImage: 9 15/16 × 8 3/4 in. (25.3 × 22.3 cm)",
+    "description": "Yvette Guilbert (from Le Café Concert) (1893). Henri de Toulouse-Lautrec; Brush and crayon lithograph printed in brownish-black ink on laid japan paper; only state. Collection: The Metropolitan Museum of Art. Credit: Harris Brisbane Dick Fund, 1923",
+    "movement": "Prints",
+    "tags": [
+      "profiles",
+      "women",
+      "prints",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "profiles",
+        "women"
+      ],
+      "mediumCategory": "prints",
+      "period": "1893",
+      "geography": "France"
+    },
+    "artist": {
+      "id": "9e8cac87-e629-d855-27d1-61ab0260ac05",
+      "slug": "henri-de-toulouse-lautrec-met-9e8cac87",
+      "name": "Henri de Toulouse-Lautrec",
+      "nationality": "French",
+      "biography": "French, Albi 1864–1901 Saint-André-du-Bois"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "460 / 625",
+      "background": "#ede8df",
+      "alt": "Yvette Guilbert (from Le Café Concert) by Henri de Toulouse-Lautrec, 1893. Brush and crayon lithograph printed in brownish-black ink on laid japan paper; only state. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-333855.webp",
+      "width": 460,
+      "height": 625
+    },
+    "recommendationReason": "Explore prints from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Harris Brisbane Dick Fund, 1923 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/333855"
+    }
+  },
+  {
+    "id": "c67a8bb5-34fc-e63f-3af9-296c0f8852cb",
+    "slug": "don-quixote-and-sancho-panza-met-333888",
+    "title": "Don Quixote and Sancho Panza",
+    "year": "19th century",
+    "medium": "Black chalk and gray wash on wove paper",
+    "dimensions": "Sheet: 7 7/8 x 11 3/4 in. (20 x 29.8cm)",
+    "description": "Don Quixote and Sancho Panza (19th century). Honoré Daumier; Black chalk and gray wash on wove paper. Collection: The Metropolitan Museum of Art. Credit: Rogers Fund, 1927",
+    "movement": "Drawings",
+    "tags": [
+      "men",
+      "horses",
+      "don quixote",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "men",
+        "horses",
+        "don quixote"
+      ],
+      "mediumCategory": "drawings",
+      "period": "19th century",
+      "geography": "France"
+    },
+    "artist": {
+      "id": "8ee24ee7-8b96-851b-2765-b97d1d3313cc",
+      "slug": "honore-daumier-met-8ee24ee7",
+      "name": "Honoré Daumier",
+      "nationality": "French",
+      "biography": "French, Marseilles 1808–1879 Valmondois"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "599 / 396",
+      "background": "#ede8df",
+      "alt": "Don Quixote and Sancho Panza by Honoré Daumier, 19th century. Black chalk and gray wash on wove paper. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-333888.webp",
+      "width": 599,
+      "height": 396
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Rogers Fund, 1927 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/333888"
+    }
+  },
+  {
+    "id": "747eefbb-9945-7e81-fe43-fc453a5a5b0f",
+    "slug": "street-show-paillasse-recto-a-clown-playing-a-drum-verso-met-333889",
+    "title": "Street Show (Paillasse) (recto); a clown playing a drum (verso)",
+    "year": "1825–79",
+    "medium": "Black chalk and watercolor on laid paper (recto);  graphite and black chalk (verso)",
+    "dimensions": "14 3/8 x 10 1/16 in. (36.5 x 25.5cm)",
+    "description": "Street Show (Paillasse) (recto); a clown playing a drum (verso) (1825–79). Honoré Daumier; Black chalk and watercolor on laid paper (recto);  graphite and black chalk (verso). Collection: The Metropolitan Museum of Art. Credit: Rogers Fund, 1927",
+    "movement": "Drawings",
+    "tags": [
+      "men",
+      "drums",
+      "clowns",
+      "chairs",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "men",
+        "drums",
+        "clowns",
+        "chairs"
+      ],
+      "mediumCategory": "drawings",
+      "period": "1825–79",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "8ee24ee7-8b96-851b-2765-b97d1d3313cc",
+      "slug": "honore-daumier-met-8ee24ee7",
+      "name": "Honoré Daumier",
+      "nationality": "French",
+      "biography": "French, Marseilles 1808–1879 Valmondois"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "466 / 625",
+      "background": "#ede8df",
+      "alt": "Street Show (Paillasse) (recto); a clown playing a drum (verso) by Honoré Daumier, 1825–79. Black chalk and watercolor on laid paper (recto);  graphite and black chalk (verso). Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-333889.webp",
+      "width": 466,
+      "height": 625
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Rogers Fund, 1927 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/333889"
+    }
+  },
+  {
+    "id": "739ff84d-4cd3-43c3-fec4-1af5da2d96b8",
+    "slug": "a-man-reading-in-a-garden-recto-preliminary-sketch-for-a-man-reading-in-a-garden-vers-met-333914",
+    "title": "A Man Reading in a Garden (recto); Preliminary sketch for a Man Reading in a Garden (verso)",
+    "year": "ca. 1865",
+    "medium": "Watercolor over black chalk, pen and black ink, brush and gray wash, and lithographic crayon (recto); pen and brown ink, brush and black gray wash, and lithographic crayon (verso)",
+    "dimensions": "13 5/16 x 10 5/8 in. (33.8 x 27cm)",
+    "description": "A Man Reading in a Garden (recto); Preliminary sketch for a Man Reading in a Garden (verso) (ca. 1865). Honoré Daumier; Watercolor over black chalk, pen and black ink, brush and gray wash, and lithographic crayon (recto); pen and brown ink, brush and black gray wash, and lithographic crayon (verso). Collection: The Metropolitan Museum of Art. Credit: H. O. Havemeyer Collection, Bequest of Mrs. H. O. Havemeyer, 1929",
+    "movement": "Drawings",
+    "tags": [
+      "gardens",
+      "men",
+      "reading",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "gardens",
+        "men",
+        "reading"
+      ],
+      "mediumCategory": "drawings",
+      "period": "ca. 1865",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "8ee24ee7-8b96-851b-2765-b97d1d3313cc",
+      "slug": "honore-daumier-met-8ee24ee7",
+      "name": "Honoré Daumier",
+      "nationality": "French",
+      "biography": "French, Marseilles 1808–1879 Valmondois"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "496 / 624",
+      "background": "#ede8df",
+      "alt": "A Man Reading in a Garden (recto); Preliminary sketch for a Man Reading in a Garden (verso) by Honoré Daumier, ca. 1865. Watercolor over black chalk, pen and black ink, brush and gray wash, and lithographic crayon (recto); pen and brown ink, brush and black gray wash, and lithographic crayon (verso). Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-333914.webp",
+      "width": 496,
+      "height": 624
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. H. O. Havemeyer Collection, Bequest of Mrs. H. O. Havemeyer, 1929 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/333914"
+    }
+  },
+  {
+    "id": "f8a805a3-91fa-ec79-42a0-4e336add482d",
+    "slug": "the-connoisseur-met-333915",
+    "title": "The Connoisseur",
+    "year": "ca. 1860–65",
+    "medium": "Pen and ink, wash, watercolor, lithographic crayon, and gouache over black chalk on wove paper",
+    "dimensions": "17 1/4 x 14 in. (43.8 x 35.5cm)",
+    "description": "The Connoisseur (ca. 1860–65). Honoré Daumier; Pen and ink, wash, watercolor, lithographic crayon, and gouache over black chalk on wove paper. Collection: The Metropolitan Museum of Art. Credit: H. O. Havemeyer Collection, Bequest of Mrs. H. O. Havemeyer, 1929",
+    "movement": "Drawings",
+    "tags": [
+      "sculpture",
+      "interiors",
+      "contemplation",
+      "men",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "sculpture",
+        "interiors",
+        "contemplation",
+        "men"
+      ],
+      "mediumCategory": "drawings",
+      "period": "ca. 1860–65",
+      "geography": "France"
+    },
+    "artist": {
+      "id": "8ee24ee7-8b96-851b-2765-b97d1d3313cc",
+      "slug": "honore-daumier-met-8ee24ee7",
+      "name": "Honoré Daumier",
+      "nationality": "French",
+      "biography": "French, Marseilles 1808–1879 Valmondois"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "507 / 625",
+      "background": "#ede8df",
+      "alt": "The Connoisseur by Honoré Daumier, ca. 1860–65. Pen and ink, wash, watercolor, lithographic crayon, and gouache over black chalk on wove paper. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-333915.webp",
+      "width": 507,
+      "height": 625
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. H. O. Havemeyer Collection, Bequest of Mrs. H. O. Havemeyer, 1929 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/333915"
+    }
+  },
+  {
+    "id": "26c8af05-66dc-beff-3527-66831b71f602",
+    "slug": "bathers-under-a-bridge-recto-study-after-houdon-s-ecorche-verso-met-334173",
+    "title": "Bathers Under a Bridge (recto); Study after Houdon's Ecorché (verso)",
+    "year": "1894–98 (verso); 1900–06 (recto)",
+    "medium": "Watercolor over graphite (recto); graphite (verso)",
+    "dimensions": "Sheet: 8 1/4 x 10 11/16 in. (21 x 27.2cm)",
+    "description": "Bathers Under a Bridge (recto); Study after Houdon's Ecorché (verso) (1894–98 (verso); 1900–06 (recto)). Paul Cézanne; Watercolor over graphite (recto); graphite (verso). Collection: The Metropolitan Museum of Art. Credit: Maria DeWitt Jesup Fund, 1951; acquired from The Museum of Modern Art, Lillie P. Bliss Collection",
+    "movement": "Drawings",
+    "tags": [
+      "bridges",
+      "bathing",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "bridges",
+        "bathing"
+      ],
+      "mediumCategory": "drawings",
+      "period": "1894–98 (verso); 1900–06 (recto)",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "b28e2fd2-e4f3-2eac-5b1f-327deb6c9664",
+      "slug": "paul-cezanne-met-b28e2fd2",
+      "name": "Paul Cézanne",
+      "nationality": "French",
+      "biography": "French, Aix-en-Provence 1839–1906 Aix-en-Provence"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "600 / 463",
+      "background": "#ede8df",
+      "alt": "Bathers Under a Bridge (recto); Study after Houdon's Ecorché (verso) by Paul Cézanne, 1894–98 (verso); 1900–06 (recto). Watercolor over graphite (recto); graphite (verso). Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-334173.webp",
+      "width": 600,
+      "height": 463
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Maria DeWitt Jesup Fund, 1951; acquired from The Museum of Modern Art, Lillie P. Bliss Collection Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/334173"
+    }
+  },
+  {
+    "id": "b685e439-53ee-cdf8-084e-5823bb4037ab",
+    "slug": "a-woman-fishing-met-334174",
+    "title": "A Woman Fishing",
+    "year": "1884",
+    "medium": "Conté crayon",
+    "dimensions": "12 1/8 x 9 3/8 in. (30.8 x 23.8 cm)",
+    "description": "A Woman Fishing (1884). Georges Seurat; Conté crayon. Collection: The Metropolitan Museum of Art. Credit: Purchase, Joseph Pulitzer Bequest, 1951; acquired from The Museum of Modern Art, Lillie P. Bliss Collection",
+    "movement": "Drawings",
+    "tags": [
+      "women",
+      "fishing",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "women",
+        "fishing"
+      ],
+      "mediumCategory": "drawings",
+      "period": "1884",
+      "geography": "France"
+    },
+    "artist": {
+      "id": "ac40478c-34ab-54f9-9cd4-77f391f9c6d0",
+      "slug": "georges-seurat-met-ac40478c",
+      "name": "Georges Seurat",
+      "nationality": "French",
+      "biography": "French, Paris 1859–1891 Paris"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "480 / 624",
+      "background": "#ede8df",
+      "alt": "A Woman Fishing by Georges Seurat, 1884. Conté crayon. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-334174.webp",
+      "width": 480,
+      "height": 624
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Purchase, Joseph Pulitzer Bequest, 1951; acquired from The Museum of Modern Art, Lillie P. Bliss Collection Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/334174"
+    }
+  },
+  {
+    "id": "1fd9cf90-6eb8-da55-299a-dcc36b08b7c3",
+    "slug": "studies-of-a-tree-recto-and-verso-met-334238",
+    "title": "Studies of a tree (recto and verso)",
+    "year": "1887–90",
+    "medium": "Graphite with green, blue and yellow washes (recto); graphite with green, blue and purple washes (verso)",
+    "dimensions": "Sheet: 19 3/4 x 13 3/4 in. (50.2 x 34.9 cm)",
+    "description": "Studies of a tree (recto and verso) (1887–90). Paul Cézanne; Graphite with green, blue and yellow washes (recto); graphite with green, blue and purple washes (verso). Collection: The Metropolitan Museum of Art. Credit: Gift of Mr. and Mrs. Daniel H. Silberberg, 1962",
+    "movement": "Drawings",
+    "tags": [
+      "trees",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "trees"
+      ],
+      "mediumCategory": "drawings",
+      "period": "1887–90",
+      "geography": "France"
+    },
+    "artist": {
+      "id": "b28e2fd2-e4f3-2eac-5b1f-327deb6c9664",
+      "slug": "paul-cezanne-met-b28e2fd2",
+      "name": "Paul Cézanne",
+      "nationality": "French",
+      "biography": "French, Aix-en-Provence 1839–1906 Aix-en-Provence"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "423 / 624",
+      "background": "#ede8df",
+      "alt": "Studies of a tree (recto and verso) by Paul Cézanne, 1887–90. Graphite with green, blue and yellow washes (recto); graphite with green, blue and purple washes (verso). Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-334238.webp",
+      "width": 423,
+      "height": 624
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Gift of Mr. and Mrs. Daniel H. Silberberg, 1962 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/334238"
+    }
+  },
+  {
+    "id": "27a4da9b-1d12-165f-a022-baaaa8cbe86f",
+    "slug": "bathers-recto-still-life-verso-met-334257",
+    "title": "Bathers (recto); Still Life (verso)",
+    "year": "ca. 1890 (recto) – 1900 (verso)",
+    "medium": "Watercolor over graphite (recto); watercolor (verso)",
+    "dimensions": "Sheet: 8 5/16 x 10 11/16 in. (21.1 x 27.2cm)",
+    "description": "Bathers (recto); Still Life (verso) (ca. 1890 (recto) – 1900 (verso)). Paul Cézanne; Watercolor over graphite (recto); watercolor (verso). Collection: The Metropolitan Museum of Art. Credit: Gift of Mrs. Mabel Rossbach, 1964",
+    "movement": "Drawings",
+    "tags": [
+      "men",
+      "still life",
+      "bathing",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "men",
+        "still life",
+        "bathing"
+      ],
+      "mediumCategory": "drawings",
+      "period": "ca. 1890 (recto) – 1900 (verso)",
+      "geography": "France"
+    },
+    "artist": {
+      "id": "b28e2fd2-e4f3-2eac-5b1f-327deb6c9664",
+      "slug": "paul-cezanne-met-b28e2fd2",
+      "name": "Paul Cézanne",
+      "nationality": "French",
+      "biography": "French, Aix-en-Provence 1839–1906 Aix-en-Provence"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "600 / 465",
+      "background": "#ede8df",
+      "alt": "Bathers (recto); Still Life (verso) by Paul Cézanne, ca. 1890 (recto) – 1900 (verso). Watercolor over graphite (recto); watercolor (verso). Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-334257.webp",
+      "width": 600,
+      "height": 465
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Gift of Mrs. Mabel Rossbach, 1964 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/334257"
+    }
+  },
+  {
+    "id": "ddf9fc7f-c065-9b7b-343b-53c3e571b562",
+    "slug": "man-dreaming-met-334258",
+    "title": "Man Dreaming",
+    "year": "1825–80",
+    "medium": "Lithographic crayon",
+    "dimensions": "Sheet: 7 7/8 x 11 11/16 in. (20 x 29.7cm)",
+    "description": "Man Dreaming (1825–80). Formerly attributed to copy after Honoré Daumier; Lithographic crayon. Collection: The Metropolitan Museum of Art. Credit: Gift of Mrs. Max J.H. Rossbach, 1964",
+    "movement": "Drawings",
+    "tags": [
+      "sleeping",
+      "men",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "sleeping",
+        "men"
+      ],
+      "mediumCategory": "drawings",
+      "period": "1825–80",
+      "geography": "France"
+    },
+    "artist": {
+      "id": "1799f47c-aee3-893f-d42d-c445c655379c",
+      "slug": "formerly-attributed-to-copy-after-honore-daumier-met-1799f47c",
+      "name": "Formerly attributed to copy after Honoré Daumier",
+      "nationality": "French",
+      "biography": "French, Marseilles 1808–1879 Valmondois"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "600 / 383",
+      "background": "#ede8df",
+      "alt": "Man Dreaming by Formerly attributed to copy after Honoré Daumier, 1825–80. Lithographic crayon. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-334258.webp",
+      "width": 600,
+      "height": 383
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Gift of Mrs. Max J.H. Rossbach, 1964 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/334258"
+    }
+  },
+  {
+    "id": "96d927aa-1196-1c4b-2a5c-9c074cea820a",
+    "slug": "saint-sebastian-met-334285",
+    "title": "Saint Sebastian",
+    "year": "1849–50",
+    "medium": "Charcoal on wove paper",
+    "dimensions": "Sheet: 12 11/16 x 7 3/8 in. (32.2 x 18.7cm)",
+    "description": "Saint Sebastian (1849–50). Honoré Daumier; Charcoal on wove paper. Collection: The Metropolitan Museum of Art. Credit: Purchase, Mr. and Mrs. Henry Ittleson Jr. Gift, 1969",
+    "movement": "Drawings",
+    "tags": [
+      "angels",
+      "saints",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "angels",
+        "saints"
+      ],
+      "mediumCategory": "drawings",
+      "period": "1849–50",
+      "geography": "France"
+    },
+    "artist": {
+      "id": "8ee24ee7-8b96-851b-2765-b97d1d3313cc",
+      "slug": "honore-daumier-met-8ee24ee7",
+      "name": "Honoré Daumier",
+      "nationality": "French",
+      "biography": "French, Marseilles 1808–1879 Valmondois"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "365 / 624",
+      "background": "#ede8df",
+      "alt": "Saint Sebastian by Honoré Daumier, 1849–50. Charcoal on wove paper. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-334285.webp",
+      "width": 365,
+      "height": 624
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Purchase, Mr. and Mrs. Henry Ittleson Jr. Gift, 1969 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/334285"
+    }
+  },
+  {
+    "id": "b1fa25f4-da8d-acef-1a3f-7c33bed42932",
+    "slug": "sketchbook-with-views-of-tours-france-and-its-environs-met-334287",
+    "title": "Sketchbook with views of Tours, France and its environs",
+    "year": "1828–29",
+    "medium": "Graphite and watercolor on wove paper",
+    "dimensions": "36 folios, each sheet: 4 15/16 x 7 11/16 in. (12.5 x 19.5 cm)",
+    "description": "Sketchbook with views of Tours, France and its environs (1828–29). Eugène Delacroix; Graphite and watercolor on wove paper. Collection: The Metropolitan Museum of Art. Credit: Gift of Alexander and Gregoire Tarnopol, 1969",
+    "movement": "Drawings",
+    "tags": [
+      "lions",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "lions"
+      ],
+      "mediumCategory": "drawings",
+      "period": "1828–29",
+      "geography": "France"
+    },
+    "artist": {
+      "id": "d7196efb-78c2-05e7-7fab-7c68b3e5f050",
+      "slug": "eugene-delacroix-met-d7196efb",
+      "name": "Eugène Delacroix",
+      "nationality": "French",
+      "biography": "French, Charenton-Saint-Maurice 1798–1863 Paris"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "600 / 384",
+      "background": "#ede8df",
+      "alt": "Sketchbook with views of Tours, France and its environs by Eugène Delacroix, 1828–29. Graphite and watercolor on wove paper. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-334287.webp",
+      "width": 600,
+      "height": 384
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Gift of Alexander and Gregoire Tarnopol, 1969 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/334287"
+    }
+  },
+  {
+    "id": "a38b9fd5-75a7-75c4-dfa5-483183ffe865",
+    "slug": "portrait-of-the-artist-recto-fragment-of-a-landscape-study-verso-met-334305",
+    "title": "Portrait of the Artist (recto); Fragment of a Landscape Study (verso)",
+    "year": "ca. 1880",
+    "medium": "Graphite",
+    "dimensions": "Sheet: 13 7/16 x 11 3/16 in. (34.1 x 28.4cm)",
+    "description": "Portrait of the Artist (recto); Fragment of a Landscape Study (verso) (ca. 1880). Paul Cézanne; Graphite. Collection: The Metropolitan Museum of Art. Credit: Bequest of Walter C. Baker, 1971",
+    "movement": "Drawings",
+    "tags": [
+      "men",
+      "portraits",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "men",
+        "portraits"
+      ],
+      "mediumCategory": "drawings",
+      "period": "ca. 1880",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "b28e2fd2-e4f3-2eac-5b1f-327deb6c9664",
+      "slug": "paul-cezanne-met-b28e2fd2",
+      "name": "Paul Cézanne",
+      "nationality": "French",
+      "biography": "French, Aix-en-Provence 1839–1906 Aix-en-Provence"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "526 / 625",
+      "background": "#ede8df",
+      "alt": "Portrait of the Artist (recto); Fragment of a Landscape Study (verso) by Paul Cézanne, ca. 1880. Graphite. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-334305.webp",
+      "width": 526,
+      "height": 625
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Bequest of Walter C. Baker, 1971 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/334305"
+    }
+  },
+  {
+    "id": "9a8b7479-ec81-91cf-914d-cd78c5de0742",
+    "slug": "a-theater-audience-met-334308",
+    "title": "A Theater Audience",
+    "year": "19th century",
+    "medium": "Pen and black ink, gouache, and watercolor over black chalk",
+    "dimensions": "Sheet: 13 9/16 x 11 11/16 in. (34.4 x 29.7cm)",
+    "description": "A Theater Audience (19th century). Honoré Daumier; Pen and black ink, gouache, and watercolor over black chalk. Collection: The Metropolitan Museum of Art. Credit: Bequest of Walter C. Baker, 1971",
+    "movement": "Drawings",
+    "tags": [
+      "theatre",
+      "men",
+      "spectators",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "theatre",
+        "men",
+        "spectators"
+      ],
+      "mediumCategory": "drawings",
+      "period": "19th century",
+      "geography": "France"
+    },
+    "artist": {
+      "id": "8ee24ee7-8b96-851b-2765-b97d1d3313cc",
+      "slug": "honore-daumier-met-8ee24ee7",
+      "name": "Honoré Daumier",
+      "nationality": "French",
+      "biography": "French, Marseilles 1808–1879 Valmondois"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "543 / 625",
+      "background": "#ede8df",
+      "alt": "A Theater Audience by Honoré Daumier, 19th century. Pen and black ink, gouache, and watercolor over black chalk. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-334308.webp",
+      "width": 543,
+      "height": 625
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Bequest of Walter C. Baker, 1971 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/334308"
+    }
+  },
+  {
+    "id": "b5d60126-5d4a-db64-5170-6471764c3400",
+    "slug": "landscape-recto-sketch-of-rocks-verso-met-334318",
+    "title": "Landscape (recto); Sketch of rocks(?) (verso)",
+    "year": "1890-95",
+    "medium": "Watercolor over black chalk (recto); black chalk and blue wash (verso)",
+    "dimensions": "18 5/8 x 12 5/16 in. (47.3 x 31.3cm)",
+    "description": "Landscape (recto); Sketch of rocks(?) (verso) (1890-95). Paul Cézanne; Watercolor over black chalk (recto); black chalk and blue wash (verso). Collection: The Metropolitan Museum of Art. Credit: Gift of Mrs. Marshall Field, 1972",
+    "movement": "Drawings",
+    "tags": [
+      "landscapes",
+      "trees",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "landscapes",
+        "trees"
+      ],
+      "mediumCategory": "drawings",
+      "period": "1890-95",
+      "geography": "France"
+    },
+    "artist": {
+      "id": "b28e2fd2-e4f3-2eac-5b1f-327deb6c9664",
+      "slug": "paul-cezanne-met-b28e2fd2",
+      "name": "Paul Cézanne",
+      "nationality": "French",
+      "biography": "French, Aix-en-Provence 1839–1906 Aix-en-Provence"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "416 / 624",
+      "background": "#ede8df",
+      "alt": "Landscape (recto); Sketch of rocks(?) (verso) by Paul Cézanne, 1890-95. Watercolor over black chalk (recto); black chalk and blue wash (verso). Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-334318.webp",
+      "width": 416,
+      "height": 624
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Gift of Mrs. Marshall Field, 1972 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/334318"
+    }
+  },
+  {
+    "id": "03e49190-ce32-3e9d-6105-4a8f56659792",
+    "slug": "in-the-oise-valley-met-334350",
+    "title": "In the Oise Valley",
+    "year": "1878–80",
+    "medium": "Graphite, gouache, and watercolor",
+    "dimensions": "12 3/4 x 19 11/16 in. (32.4 x 50 cm)",
+    "description": "In the Oise Valley (1878–80). Paul Cézanne; Graphite, gouache, and watercolor. Collection: The Metropolitan Museum of Art. Credit: Bequest of Mary Cushing Fosburgh, 1978",
+    "movement": "Drawings",
+    "tags": [
+      "landscapes",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "landscapes"
+      ],
+      "mediumCategory": "drawings",
+      "period": "1878–80",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "b28e2fd2-e4f3-2eac-5b1f-327deb6c9664",
+      "slug": "paul-cezanne-met-b28e2fd2",
+      "name": "Paul Cézanne",
+      "nationality": "French",
+      "biography": "French, Aix-en-Provence 1839–1906 Aix-en-Provence"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "600 / 393",
+      "background": "#ede8df",
+      "alt": "In the Oise Valley by Paul Cézanne, 1878–80. Graphite, gouache, and watercolor. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-334350.webp",
+      "width": 600,
+      "height": 393
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Bequest of Mary Cushing Fosburgh, 1978 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/334350"
+    }
+  },
+  {
+    "id": "ed895688-c3f3-feb1-de30-07e3933a819b",
+    "slug": "entrance-to-a-garden-met-334369",
+    "title": "Entrance to a Garden",
+    "year": "1878–80",
+    "medium": "Watercolor over graphite",
+    "dimensions": "Sheet: 18 13/16 x 12 5/16 in. (47.8 x 31.2cm)",
+    "description": "Entrance to a Garden (1878–80). Paul Cézanne; Watercolor over graphite. Collection: The Metropolitan Museum of Art. Credit: Gift of C. Douglas Dillon, 1982",
+    "movement": "Drawings",
+    "tags": [
+      "gates",
+      "houses",
+      "gardens",
+      "trees",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "gates",
+        "houses",
+        "gardens",
+        "trees"
+      ],
+      "mediumCategory": "drawings",
+      "period": "1878–80",
+      "geography": "France"
+    },
+    "artist": {
+      "id": "b28e2fd2-e4f3-2eac-5b1f-327deb6c9664",
+      "slug": "paul-cezanne-met-b28e2fd2",
+      "name": "Paul Cézanne",
+      "nationality": "French",
+      "biography": "French, Aix-en-Provence 1839–1906 Aix-en-Provence"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "412 / 625",
+      "background": "#ede8df",
+      "alt": "Entrance to a Garden by Paul Cézanne, 1878–80. Watercolor over graphite. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-334369.webp",
+      "width": 412,
+      "height": 625
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Gift of C. Douglas Dillon, 1982 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/334369"
+    }
+  },
+  {
+    "id": "3c994343-2b98-b88c-dd45-b18e42280b46",
+    "slug": "a-cat-curled-up-sleeping-met-334638",
+    "title": "A Cat Curled Up, Sleeping",
+    "year": "1861",
+    "medium": "Graphite",
+    "dimensions": "4 5/8 x 4 1/4 in.  (11.7 x 10.8 cm)",
+    "description": "A Cat Curled Up, Sleeping (1861). Edouard Manet; Graphite. Collection: The Metropolitan Museum of Art. Credit: Bequest of Clifford A. Furst, by exchange, 1995",
+    "movement": "Drawings",
+    "tags": [
+      "sleeping",
+      "cats",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "sleeping",
+        "cats"
+      ],
+      "mediumCategory": "drawings",
+      "period": "1861",
+      "geography": "France"
+    },
+    "artist": {
+      "id": "25eff84c-656c-8d62-75d9-4766e8b5bd0a",
+      "slug": "edouard-manet-met-25eff84c",
+      "name": "Edouard Manet",
+      "nationality": "French",
+      "biography": "French, Paris 1832–1883 Paris"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "square",
+      "aspectRatio": "578 / 625",
+      "background": "#ede8df",
+      "alt": "A Cat Curled Up, Sleeping by Edouard Manet, 1861. Graphite. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-334638.webp",
+      "width": 578,
+      "height": 625
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Bequest of Clifford A. Furst, by exchange, 1995 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/334638"
+    }
+  },
+  {
+    "id": "5ee60bdc-5649-2991-4425-6f193d34cc78",
+    "slug": "a-cat-resting-on-all-fours-seen-from-behind-met-334639",
+    "title": "A Cat Resting on All Fours, Seen from Behind",
+    "year": "1861",
+    "medium": "Graphite",
+    "dimensions": "3 3/4 x 4 13/16 in.  (9.5 x 12.2 cm)",
+    "description": "A Cat Resting on All Fours, Seen from Behind (1861). Edouard Manet; Graphite. Collection: The Metropolitan Museum of Art. Credit: Purchase, Gift of Paul Gourary in honor of Marianne Gourary's birthday, 1995",
+    "movement": "Drawings",
+    "tags": [
+      "cats",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "cats"
+      ],
+      "mediumCategory": "drawings",
+      "period": "1861",
+      "geography": "France"
+    },
+    "artist": {
+      "id": "25eff84c-656c-8d62-75d9-4766e8b5bd0a",
+      "slug": "edouard-manet-met-25eff84c",
+      "name": "Edouard Manet",
+      "nationality": "French",
+      "biography": "French, Paris 1832–1883 Paris"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "square",
+      "aspectRatio": "600 / 584",
+      "background": "#ede8df",
+      "alt": "A Cat Resting on All Fours, Seen from Behind by Edouard Manet, 1861. Graphite. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-334639.webp",
+      "width": 600,
+      "height": 584
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Purchase, Gift of Paul Gourary in honor of Marianne Gourary's birthday, 1995 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/334639"
+    }
+  },
+  {
+    "id": "60ff39c7-7db2-0370-6c12-1611b9659427",
+    "slug": "seated-river-god-nymph-with-an-oar-and-putto-met-334651",
+    "title": "Seated River God, Nymph with an Oar, and Putto",
+    "year": "1696–1770",
+    "medium": "Pen and brown ink, brush with pale (yellow) and dark brown wash, over black chalk",
+    "dimensions": "9 5/16 x 12 5/16in. (23.7 x 31.3cm)",
+    "description": "Seated River God, Nymph with an Oar, and Putto (1696–1770). Giovanni Battista Tiepolo; Pen and brown ink, brush with pale (yellow) and dark brown wash, over black chalk. Collection: The Metropolitan Museum of Art. Credit: Rogers Fund, 1937",
+    "movement": "Drawings",
+    "tags": [
+      "male nudes",
+      "nymphs",
+      "putti",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "male nudes",
+        "nymphs",
+        "putti"
+      ],
+      "mediumCategory": "drawings",
+      "period": "1696–1770",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "4c024fbf-ebf1-8d38-5d85-6b1caffc6f15",
+      "slug": "giovanni-battista-tiepolo-met-4c024fbf",
+      "name": "Giovanni Battista Tiepolo",
+      "nationality": "Italian",
+      "biography": "Italian, Venice 1696–1770 Madrid"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "600 / 453",
+      "background": "#ede8df",
+      "alt": "Seated River God, Nymph with an Oar, and Putto by Giovanni Battista Tiepolo, 1696–1770. Pen and brown ink, brush with pale (yellow) and dark brown wash, over black chalk. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-334651.webp",
+      "width": 600,
+      "height": 453
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Rogers Fund, 1937 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/334651"
+    }
+  },
+  {
+    "id": "b73c0d6b-a84f-73c1-a274-10c3b9cc7204",
+    "slug": "embroidery-the-artist-s-mother-met-334652",
+    "title": "Embroidery; The Artist's Mother",
+    "year": "1882–83",
+    "medium": "Conté crayon",
+    "dimensions": "12 5/16 x 9 7/16 in. (31.2 x 24.1 cm)",
+    "description": "Embroidery; The Artist's Mother (1882–83). Georges Seurat; Conté crayon. Collection: The Metropolitan Museum of Art. Credit: Purchase, Joseph Pulitzer Bequest, 1951; acquired from The Museum of Modern Art, Lillie P. Bliss Collection",
+    "movement": "Drawings",
+    "tags": [
+      "portraits",
+      "women",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "portraits",
+        "women"
+      ],
+      "mediumCategory": "drawings",
+      "period": "1882–83",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "ac40478c-34ab-54f9-9cd4-77f391f9c6d0",
+      "slug": "georges-seurat-met-ac40478c",
+      "name": "Georges Seurat",
+      "nationality": "French",
+      "biography": "French, Paris 1859–1891 Paris"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "483 / 624",
+      "background": "#ede8df",
+      "alt": "Embroidery; The Artist's Mother by Georges Seurat, 1882–83. Conté crayon. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-334652.webp",
+      "width": 483,
+      "height": 624
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Purchase, Joseph Pulitzer Bequest, 1951; acquired from The Museum of Modern Art, Lillie P. Bliss Collection Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/334652"
+    }
+  },
+  {
+    "id": "62aad007-11d3-431b-54c8-a251c74a5404",
+    "slug": "sketches-for-a-wall-tomb-with-skeletons-met-334681",
+    "title": "Sketches for a Wall Tomb with Skeletons",
+    "year": "1630–40",
+    "medium": "Pen and brown ink over black chalk (recto); black chalk (verso)",
+    "dimensions": "11-1/2 x 8-13/16 in. (29.2 x 22.4 cm) maximum; irregular borders",
+    "description": "Sketches for a Wall Tomb with Skeletons (1630–40). Gian Lorenzo Bernini; Pen and brown ink over black chalk (recto); black chalk (verso). Collection: The Metropolitan Museum of Art. Credit: Edward Pearce Casey Fund and The Elisha Whittelsey Collection, The Elisha Whittelsey Fund, 1998",
+    "movement": "Drawings",
+    "tags": [
+      "skeletons",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "skeletons"
+      ],
+      "mediumCategory": "drawings",
+      "period": "1630–40",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "0c77e837-a483-79ac-1ac0-e36bedbe40d9",
+      "slug": "gian-lorenzo-bernini-met-0c77e837",
+      "name": "Gian Lorenzo Bernini",
+      "nationality": "Italian",
+      "biography": "Italian, Naples 1598–1680 Rome"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "476 / 625",
+      "background": "#ede8df",
+      "alt": "Sketches for a Wall Tomb with Skeletons by Gian Lorenzo Bernini, 1630–40. Pen and brown ink over black chalk (recto); black chalk (verso). Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-334681.webp",
+      "width": 476,
+      "height": 625
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Edward Pearce Casey Fund and The Elisha Whittelsey Collection, The Elisha Whittelsey Fund, 1998 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/334681"
+    }
+  },
+  {
+    "id": "14ff730d-6efc-c4ff-e560-549097fe44e7",
+    "slug": "suzanne-manet-at-bellevue-met-334737",
+    "title": "Suzanne Manet at Bellevue",
+    "year": "1880",
+    "medium": "Brush and black wash over graphite",
+    "dimensions": "6-3/16 x 4-5/8 in.  (15.7 x 11.7 cm)",
+    "description": "Suzanne Manet at Bellevue (1880). Edouard Manet; Brush and black wash over graphite. Collection: The Metropolitan Museum of Art. Credit: Purchase, The Annenberg Foundation Gift, 1998",
+    "movement": "Drawings",
+    "tags": [
+      "women",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "women"
+      ],
+      "mediumCategory": "drawings",
+      "period": "1880",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "25eff84c-656c-8d62-75d9-4766e8b5bd0a",
+      "slug": "edouard-manet-met-25eff84c",
+      "name": "Edouard Manet",
+      "nationality": "French",
+      "biography": "French, Paris 1832–1883 Paris"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "465 / 624",
+      "background": "#ede8df",
+      "alt": "Suzanne Manet at Bellevue by Edouard Manet, 1880. Brush and black wash over graphite. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-334737.webp",
+      "width": 465,
+      "height": 624
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Purchase, The Annenberg Foundation Gift, 1998 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/334737"
+    }
+  },
+  {
+    "id": "8a35bb09-b785-15f2-f11c-4c20dedc1c6f",
+    "slug": "arch-of-morning-glories-study-for-a-basket-of-flowers-met-334749",
+    "title": "Arch of Morning Glories, Study for \"A Basket of Flowers\"",
+    "year": "1848–49",
+    "medium": "Pastel on blue paper",
+    "dimensions": "12-1/16 x 18 in.  (30.6 x 45.7 cm)",
+    "description": "Arch of Morning Glories, Study for \"A Basket of Flowers\" (1848–49). Eugène Delacroix; Pastel on blue paper. Collection: The Metropolitan Museum of Art. Credit: Bequest of Miss Adelaide Milton de Groot (1876-1967), 1967",
+    "movement": "Drawings",
+    "tags": [
+      "flowers",
+      "leaves",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "flowers",
+        "leaves"
+      ],
+      "mediumCategory": "drawings",
+      "period": "1848–49",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "d7196efb-78c2-05e7-7fab-7c68b3e5f050",
+      "slug": "eugene-delacroix-met-d7196efb",
+      "name": "Eugène Delacroix",
+      "nationality": "French",
+      "biography": "French, Charenton-Saint-Maurice 1798–1863 Paris"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "599 / 409",
+      "background": "#ede8df",
+      "alt": "Arch of Morning Glories, Study for \"A Basket of Flowers\" by Eugène Delacroix, 1848–49. Pastel on blue paper. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-334749.webp",
+      "width": 599,
+      "height": 409
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Bequest of Miss Adelaide Milton de Groot (1876-1967), 1967 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/334749"
+    }
+  },
+  {
+    "id": "d3664156-87a1-9131-08bb-0f0209784020",
+    "slug": "study-for-an-allegorical-figure-of-justice-in-the-ceiling-decoration-of-the-salon-du--met-334750",
+    "title": "Study for an allegorical figure of Justice in the ceiling decoration of the Salon du Roi, Palais Bourbon (recto); studies of allegorical figures, and architectural sketches (verso)",
+    "year": "1833",
+    "medium": "Graphite",
+    "dimensions": "8-9/16 x 13-1/2 in.  (21.7 x 34.3 cm)",
+    "description": "Study for an allegorical figure of Justice in the ceiling decoration of the Salon du Roi, Palais Bourbon (recto); studies of allegorical figures, and architectural sketches (verso) (1833). Eugène Delacroix; Graphite. Collection: The Metropolitan Museum of Art. Credit: Rogers Fund, 1916",
+    "movement": "Drawings",
+    "tags": [
+      "human figures",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "human figures"
+      ],
+      "mediumCategory": "drawings",
+      "period": "1833",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "d7196efb-78c2-05e7-7fab-7c68b3e5f050",
+      "slug": "eugene-delacroix-met-d7196efb",
+      "name": "Eugène Delacroix",
+      "nationality": "French",
+      "biography": "French, Charenton-Saint-Maurice 1798–1863 Paris"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "600 / 383",
+      "background": "#ede8df",
+      "alt": "Study for an allegorical figure of Justice in the ceiling decoration of the Salon du Roi, Palais Bourbon (recto); studies of allegorical figures, and architectural sketches (verso) by Eugène Delacroix, 1833. Graphite. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-334750.webp",
+      "width": 600,
+      "height": 383
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Rogers Fund, 1916 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/334750"
+    }
+  },
+  {
+    "id": "fd94dc6d-269a-9c47-62ab-352c3883e610",
+    "slug": "studies-of-a-goat-met-334751",
+    "title": "Studies of a Goat",
+    "year": "1798–1863",
+    "medium": "Graphite on wove paper",
+    "dimensions": "6-1/4 x 8-5/8 in.  (15.9 x 21.9 cm)",
+    "description": "Studies of a Goat (1798–1863). Eugène Delacroix; Graphite on wove paper. Collection: The Metropolitan Museum of Art. Credit: Gift of Elmer Adler, 1925",
+    "movement": "Drawings",
+    "tags": [
+      "goats",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "goats"
+      ],
+      "mediumCategory": "drawings",
+      "period": "1798–1863",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "d7196efb-78c2-05e7-7fab-7c68b3e5f050",
+      "slug": "eugene-delacroix-met-d7196efb",
+      "name": "Eugène Delacroix",
+      "nationality": "French",
+      "biography": "French, Charenton-Saint-Maurice 1798–1863 Paris"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "600 / 446",
+      "background": "#ede8df",
+      "alt": "Studies of a Goat by Eugène Delacroix, 1798–1863. Graphite on wove paper. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-334751.webp",
+      "width": 600,
+      "height": 446
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Gift of Elmer Adler, 1925 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/334751"
+    }
+  },
+  {
+    "id": "e94c0964-2e5d-3fd6-b322-3ea63e4f2c94",
+    "slug": "studies-of-animals-met-334752",
+    "title": "Studies of Animals",
+    "year": "1810–63",
+    "medium": "Graphite on wove paper",
+    "dimensions": "8-3/16 x 5-3/8 in.  (20.8 x 13.7 cm)",
+    "description": "Studies of Animals (1810–63). Eugène Delacroix; Graphite on wove paper. Collection: The Metropolitan Museum of Art. Credit: Bequest of Catherine D. Wentworth, 1948",
+    "movement": "Drawings",
+    "tags": [
+      "lions",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "lions"
+      ],
+      "mediumCategory": "drawings",
+      "period": "1810–63",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "d7196efb-78c2-05e7-7fab-7c68b3e5f050",
+      "slug": "eugene-delacroix-met-d7196efb",
+      "name": "Eugène Delacroix",
+      "nationality": "French",
+      "biography": "French, Charenton-Saint-Maurice 1798–1863 Paris"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "413 / 625",
+      "background": "#ede8df",
+      "alt": "Studies of Animals by Eugène Delacroix, 1810–63. Graphite on wove paper. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-334752.webp",
+      "width": 413,
+      "height": 625
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Bequest of Catherine D. Wentworth, 1948 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/334752"
+    }
+  },
+  {
+    "id": "fdaf353c-5be5-46fc-fd68-90102e83e12e",
+    "slug": "sheet-of-figure-studies-two-studies-of-a-reclining-figure-and-a-seated-figure-holding-met-334753",
+    "title": "Sheet of figure studies: two studies of a reclining figure, and a seated figure holding a lyre (?)",
+    "year": "Date not supplied",
+    "medium": "Graphite",
+    "dimensions": "9-1/16 x 7-3/8 in.  (23.0 x 18.7 cm)",
+    "description": "Sheet of figure studies: two studies of a reclining figure, and a seated figure holding a lyre (?). Eugène Delacroix; Graphite. Collection: The Metropolitan Museum of Art. Credit: Bequest of Alexandrine Sinsheimer, 1958",
+    "movement": "Drawings",
+    "tags": [
+      "female nudes",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "female nudes"
+      ],
+      "mediumCategory": "drawings",
+      "period": "Date not supplied",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "d7196efb-78c2-05e7-7fab-7c68b3e5f050",
+      "slug": "eugene-delacroix-met-d7196efb",
+      "name": "Eugène Delacroix",
+      "nationality": "French",
+      "biography": "French, Charenton-Saint-Maurice 1798–1863 Paris"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "511 / 625",
+      "background": "#ede8df",
+      "alt": "Sheet of figure studies: two studies of a reclining figure, and a seated figure holding a lyre (?) by Eugène Delacroix, . Graphite. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-334753.webp",
+      "width": 511,
+      "height": 625
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Bequest of Alexandrine Sinsheimer, 1958 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/334753"
+    }
+  },
+  {
+    "id": "b8c23bf9-7b07-72e4-524d-39dccd223eb4",
+    "slug": "studies-of-a-damned-man-for-the-barque-of-dante-met-334754",
+    "title": "Studies of a Damned Man, for \"The Barque of Dante\"",
+    "year": "1822",
+    "medium": "Pen, brown ink, black wash over black chalk and graphite",
+    "dimensions": "10-1/2 x 13-1/4 in.  (26.7 x 33.7 cm)",
+    "description": "Studies of a Damned Man, for \"The Barque of Dante\" (1822). Eugène Delacroix; Pen, brown ink, black wash over black chalk and graphite. Collection: The Metropolitan Museum of Art. Credit: Rogers Fund, 1961",
+    "movement": "Drawings",
+    "tags": [
+      "male nudes",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "male nudes"
+      ],
+      "mediumCategory": "drawings",
+      "period": "1822",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "d7196efb-78c2-05e7-7fab-7c68b3e5f050",
+      "slug": "eugene-delacroix-met-d7196efb",
+      "name": "Eugène Delacroix",
+      "nationality": "French",
+      "biography": "French, Charenton-Saint-Maurice 1798–1863 Paris"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "600 / 477",
+      "background": "#ede8df",
+      "alt": "Studies of a Damned Man, for \"The Barque of Dante\" by Eugène Delacroix, 1822. Pen, brown ink, black wash over black chalk and graphite. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-334754.webp",
+      "width": 600,
+      "height": 477
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Rogers Fund, 1961 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/334754"
+    }
+  },
+  {
+    "id": "6eab90d8-8eb9-dadb-a2d6-8179a1c99f16",
+    "slug": "the-triumph-of-genius-over-envy-met-334755",
+    "title": "The Triumph of Genius over Envy",
+    "year": "ca. 1849–51",
+    "medium": "Pen and brown ink over graphite on laid paper, mounted on cardboard",
+    "dimensions": "10-3/8 x 13-13/16 in.  (26.4 x 35.1 cm)",
+    "description": "The Triumph of Genius over Envy (ca. 1849–51). Eugène Delacroix; Pen and brown ink over graphite on laid paper, mounted on cardboard. Collection: The Metropolitan Museum of Art. Credit: Rogers Fund, 1961",
+    "movement": "Drawings",
+    "tags": [
+      "men",
+      "women",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "men",
+        "women"
+      ],
+      "mediumCategory": "drawings",
+      "period": "ca. 1849–51",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "d7196efb-78c2-05e7-7fab-7c68b3e5f050",
+      "slug": "eugene-delacroix-met-d7196efb",
+      "name": "Eugène Delacroix",
+      "nationality": "French",
+      "biography": "French, Charenton-Saint-Maurice 1798–1863 Paris"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "599 / 466",
+      "background": "#ede8df",
+      "alt": "The Triumph of Genius over Envy by Eugène Delacroix, ca. 1849–51. Pen and brown ink over graphite on laid paper, mounted on cardboard. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-334755.webp",
+      "width": 599,
+      "height": 466
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Rogers Fund, 1961 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/334755"
+    }
+  },
+  {
+    "id": "59e4ae8f-f5ed-ceb0-e035-1969e707d8f2",
+    "slug": "saint-catherine-of-alexandria-met-334817",
+    "title": "Saint Catherine of Alexandria",
+    "year": "1490–1528",
+    "medium": "Pen and brown ink",
+    "dimensions": "6 1/2 x 2 15/16 in.  (16.5 x 7.5 cm)",
+    "description": "Saint Catherine of Alexandria (1490–1528). Albrecht Dürer; Pen and brown ink. Collection: The Metropolitan Museum of Art. Credit: Rogers Fund, 1918",
+    "movement": "Drawings",
+    "tags": [
+      "saint catherine",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "saint catherine"
+      ],
+      "mediumCategory": "drawings",
+      "period": "1490–1528",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "d5cbabc8-7674-2eca-4794-90158b2753c2",
+      "slug": "albrecht-durer-met-d5cbabc8",
+      "name": "Albrecht Dürer",
+      "nationality": "German",
+      "biography": "German, Nuremberg 1471–1528 Nuremberg"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "294 / 625",
+      "background": "#ede8df",
+      "alt": "Saint Catherine of Alexandria by Albrecht Dürer, 1490–1528. Pen and brown ink. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-334817.webp",
+      "width": 294,
+      "height": 625
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Rogers Fund, 1918 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/334817"
+    }
+  },
+  {
+    "id": "e38e0137-758f-6d5d-d6ed-fc7dfeb3bad0",
+    "slug": "bittern-s-wings-study-showing-both-sides-met-334818",
+    "title": "Bittern's Wings: study showing both sides",
+    "year": "1515",
+    "medium": "Watercolor on vellum",
+    "dimensions": "4 1/2 x 5 1/8 in.  (11.5 x 13.0 cm)",
+    "description": "Bittern's Wings: study showing both sides (1515). In the manner of Albrecht Dürer; Watercolor on vellum. Collection: The Metropolitan Museum of Art. Credit: Rogers Fund, 1919",
+    "movement": "Drawings",
+    "tags": [
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [],
+      "mediumCategory": "drawings",
+      "period": "1515",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "fce06412-ccbe-f606-a6fc-c5a5caab77ef",
+      "slug": "in-the-manner-of-albrecht-durer-met-fce06412",
+      "name": "In the manner of Albrecht Dürer",
+      "nationality": "German",
+      "biography": "German, Nuremberg 1471–1528 Nuremberg"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "600 / 521",
+      "background": "#ede8df",
+      "alt": "Bittern's Wings: study showing both sides by In the manner of Albrecht Dürer, 1515. Watercolor on vellum. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-334818.webp",
+      "width": 600,
+      "height": 521
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Rogers Fund, 1919 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/334818"
+    }
+  },
+  {
+    "id": "be86c04a-ed36-cb6e-e687-4e7427b9b545",
+    "slug": "standing-male-nude-holding-a-bow-poynter-apollo-met-334819",
+    "title": "Standing Male Nude Holding a Bow (\"Poynter Apollo\")",
+    "year": "1501–3",
+    "medium": "Pen and brown and black ink",
+    "dimensions": "8 5/8 x 5 11/16 in.  (21.9 x 14.5 cm)",
+    "description": "Standing Male Nude Holding a Bow (\"Poynter Apollo\") (1501–3). Albrecht Dürer; Pen and brown and black ink. Collection: The Metropolitan Museum of Art. Credit: Gift of Mrs. William H. Osborn, 1963",
+    "movement": "Drawings",
+    "tags": [
+      "male nudes",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "male nudes"
+      ],
+      "mediumCategory": "drawings",
+      "period": "1501–3",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "d5cbabc8-7674-2eca-4794-90158b2753c2",
+      "slug": "albrecht-durer-met-d5cbabc8",
+      "name": "Albrecht Dürer",
+      "nationality": "German",
+      "biography": "German, Nuremberg 1471–1528 Nuremberg"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "418 / 625",
+      "background": "#ede8df",
+      "alt": "Standing Male Nude Holding a Bow (\"Poynter Apollo\") by Albrecht Dürer, 1501–3. Pen and brown and black ink. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-334819.webp",
+      "width": 418,
+      "height": 625
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Gift of Mrs. William H. Osborn, 1963 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/334819"
+    }
+  },
+  {
+    "id": "39472c2d-b0f5-abc5-5193-9656939cd22b",
+    "slug": "the-zouave-met-335536",
+    "title": "The Zouave",
+    "year": "ca. June 20, 1888",
+    "medium": "Reed pen and brown ink, wax crayon and watercolor, over graphite on wove paper",
+    "dimensions": "12 3/8 x 9 5/16 in.  (31.5 x 23.6 cm)",
+    "description": "The Zouave (ca. June 20, 1888). Vincent van Gogh; Reed pen and brown ink, wax crayon and watercolor, over graphite on wove paper. Collection: The Metropolitan Museum of Art. Credit: Gift of Emanie Philips, 1962",
+    "movement": "Drawings",
+    "tags": [
+      "soldiers",
+      "men",
+      "portraits",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "soldiers",
+        "men",
+        "portraits"
+      ],
+      "mediumCategory": "drawings",
+      "period": "ca. June 20, 1888",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "bb7e7b17-2698-b302-5a9f-faa4e874f883",
+      "slug": "vincent-van-gogh-met-bb7e7b17",
+      "name": "Vincent van Gogh",
+      "nationality": "Dutch",
+      "biography": "Dutch, Zundert 1853–1890 Auvers-sur-Oise"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "472 / 624",
+      "background": "#ede8df",
+      "alt": "The Zouave by Vincent van Gogh, ca. June 20, 1888. Reed pen and brown ink, wax crayon and watercolor, over graphite on wove paper. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-335536.webp",
+      "width": 472,
+      "height": 624
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Gift of Emanie Philips, 1962 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/335536"
+    }
+  },
+  {
+    "id": "b62945f1-d3bd-c4e7-4293-3b4e32ba1ead",
+    "slug": "wheat-field-met-335537",
+    "title": "Wheat Field",
+    "year": "July 1888",
+    "medium": "Reed pen and logwood ink over graphite on wove paper",
+    "dimensions": "9 1/2 x 12 1/2 in.  (24.1 x 31.7 cm)",
+    "description": "Wheat Field (July 1888). Vincent van Gogh; Reed pen and logwood ink over graphite on wove paper. Collection: The Metropolitan Museum of Art. Credit: Gift of Mrs. Max J.H. Rossbach, 1964",
+    "movement": "Drawings",
+    "tags": [
+      "landscapes",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "landscapes"
+      ],
+      "mediumCategory": "drawings",
+      "period": "July 1888",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "bb7e7b17-2698-b302-5a9f-faa4e874f883",
+      "slug": "vincent-van-gogh-met-bb7e7b17",
+      "name": "Vincent van Gogh",
+      "nationality": "Dutch",
+      "biography": "Dutch, Zundert 1853–1890 Auvers-sur-Oise"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "599 / 459",
+      "background": "#ede8df",
+      "alt": "Wheat Field by Vincent van Gogh, July 1888. Reed pen and logwood ink over graphite on wove paper. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-335537.webp",
+      "width": 599,
+      "height": 459
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Gift of Mrs. Max J.H. Rossbach, 1964 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/335537"
+    }
+  },
+  {
+    "id": "1b752068-948e-b1b9-216d-60ecb7ae9ff9",
+    "slug": "nursery-on-schenkweg-met-335538",
+    "title": "Nursery on Schenkweg",
+    "year": "March–May 1882",
+    "medium": "Black chalk, graphite, pen, brush, and ink, heightened with white body color on laid paper watermarked ED & CIE (in a cartouche)",
+    "dimensions": "11 5/8 x 23 1/16in. (29.6 x 58.5cm)",
+    "description": "Nursery on Schenkweg (March–May 1882). Vincent van Gogh; Black chalk, graphite, pen, brush, and ink, heightened with white body color on laid paper watermarked ED & CIE (in a cartouche). Collection: The Metropolitan Museum of Art. Credit: Bequest of Walter C. Baker, 1971",
+    "movement": "Drawings",
+    "tags": [
+      "trees",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "trees"
+      ],
+      "mediumCategory": "drawings",
+      "period": "March–May 1882",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "bb7e7b17-2698-b302-5a9f-faa4e874f883",
+      "slug": "vincent-van-gogh-met-bb7e7b17",
+      "name": "Vincent van Gogh",
+      "nationality": "Dutch",
+      "biography": "Dutch, Zundert 1853–1890 Auvers-sur-Oise"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "598 / 304",
+      "background": "#ede8df",
+      "alt": "Nursery on Schenkweg by Vincent van Gogh, March–May 1882. Black chalk, graphite, pen, brush, and ink, heightened with white body color on laid paper watermarked ED & CIE (in a cartouche). Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-335538.webp",
+      "width": 598,
+      "height": 304
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Bequest of Walter C. Baker, 1971 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/335538"
+    }
+  },
+  {
+    "id": "4749ac2b-d507-44ce-a8c5-4ec4018819ac",
+    "slug": "street-in-saintes-maries-de-la-mer-met-336318",
+    "title": "Street in Saintes-Maries-de-la-Mer",
+    "year": "ca. July 15, 1888",
+    "medium": "Reed pen, quill, and brown ink over graphite on wove paper (laid down on wove paper; tack holes in all corners); later additions (by a restorer?) in black chalk, lower and upper right",
+    "dimensions": "Sheet: 9 9/16 x 12 1/2 in. (24.3 x 31.7 cm)",
+    "description": "Street in Saintes-Maries-de-la-Mer (ca. July 15, 1888). Vincent van Gogh; Reed pen, quill, and brown ink over graphite on wove paper (laid down on wove paper; tack holes in all corners); later additions (by a restorer?) in black chalk, lower and upper right. Collection: The Metropolitan Museum of Art. Credit: Bequest of Abby Aldrich Rockefeller, 1948",
+    "movement": "Drawings",
+    "tags": [
+      "houses",
+      "roofs",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "houses",
+        "roofs"
+      ],
+      "mediumCategory": "drawings",
+      "period": "ca. July 15, 1888",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "bb7e7b17-2698-b302-5a9f-faa4e874f883",
+      "slug": "vincent-van-gogh-met-bb7e7b17",
+      "name": "Vincent van Gogh",
+      "nationality": "Dutch",
+      "biography": "Dutch, Zundert 1853–1890 Auvers-sur-Oise"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "599 / 461",
+      "background": "#ede8df",
+      "alt": "Street in Saintes-Maries-de-la-Mer by Vincent van Gogh, ca. July 15, 1888. Reed pen, quill, and brown ink over graphite on wove paper (laid down on wove paper; tack holes in all corners); later additions (by a restorer?) in black chalk, lower and upper right. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-336318.webp",
+      "width": 599,
+      "height": 461
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Bequest of Abby Aldrich Rockefeller, 1948 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/336318"
+    }
+  },
+  {
+    "id": "5a089f61-3ccd-0df2-830a-24853a370a78",
+    "slug": "portrait-of-edgar-allan-poe-met-336385",
+    "title": "Portrait of Edgar Allan Poe",
+    "year": "ca. 1860–62",
+    "medium": "Etching on blue laid paper",
+    "dimensions": "plate: 7 1/4 x 5 3/4in. (18.4 x 14.6cm)\r\nsheet: 14 3/8 x 9 1/4in. (36.5 x 23.5cm)",
+    "description": "Portrait of Edgar Allan Poe (ca. 1860–62). Edouard Manet; Etching on blue laid paper. Collection: The Metropolitan Museum of Art. Credit: Rogers Fund, 1921",
+    "movement": "Prints",
+    "tags": [
+      "men",
+      "portraits",
+      "prints",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "men",
+        "portraits"
+      ],
+      "mediumCategory": "prints",
+      "period": "ca. 1860–62",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "25eff84c-656c-8d62-75d9-4766e8b5bd0a",
+      "slug": "edouard-manet-met-25eff84c",
+      "name": "Edouard Manet",
+      "nationality": "French",
+      "biography": "French, Paris 1832–1883 Paris"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "496 / 625",
+      "background": "#ede8df",
+      "alt": "Portrait of Edgar Allan Poe by Edouard Manet, ca. 1860–62. Etching on blue laid paper. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-336385.webp",
+      "width": 496,
+      "height": 625
+    },
+    "recommendationReason": "Explore prints from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Rogers Fund, 1921 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/336385"
+    }
+  },
+  {
+    "id": "954fc6a8-82e1-ac47-5b4f-84622fcc3253",
+    "slug": "swan-and-duck-with-portraits-of-julie-met-336388",
+    "title": "Swan and Duck, with Portraits of Julie",
+    "year": "1889",
+    "medium": "Drypoint on wove paper",
+    "dimensions": "sheet: 10 7/8 x 13 11/16 in. (27.7 x 34.7 cm)\r\nplate: 4 11/16 x 5 13/16 in. (11.9 x 14.8 cm)",
+    "description": "Swan and Duck, with Portraits of Julie (1889). Berthe Morisot; Drypoint on wove paper. Collection: The Metropolitan Museum of Art. Credit: Purchase, Rogers Fund and Jacob H. Schiff Bequest, 1922",
+    "movement": "Prints",
+    "tags": [
+      "prints",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [],
+      "mediumCategory": "prints",
+      "period": "1889",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "3a140e2e-2a9d-bc2c-b42d-e096a42bdc25",
+      "slug": "berthe-morisot-met-3a140e2e",
+      "name": "Berthe Morisot",
+      "nationality": "French",
+      "biography": "French, Bourges 1841–1895 Paris"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "600 / 480",
+      "background": "#ede8df",
+      "alt": "Swan and Duck, with Portraits of Julie by Berthe Morisot, 1889. Drypoint on wove paper. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-336388.webp",
+      "width": 600,
+      "height": 480
+    },
+    "recommendationReason": "Explore prints from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Purchase, Rogers Fund and Jacob H. Schiff Bequest, 1922 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/336388"
+    }
+  },
+  {
+    "id": "181e903f-0442-fe85-1eda-64c7a7a65766",
+    "slug": "duck-and-reeds-met-336389",
+    "title": "Duck and Reeds",
+    "year": "1889",
+    "medium": "Drypoint on wove paper",
+    "dimensions": "sheet: 14 1/16 x 10 15/16 in. (35.7 x 27.8 cm)\r\nplate: 5 1/2 x 3 15/16 in. (13.9 x 10 cm)",
+    "description": "Duck and Reeds (1889). Berthe Morisot; Drypoint on wove paper. Collection: The Metropolitan Museum of Art. Credit: Purchase, Rogers Fund and Jacob H. Schiff Bequest, 1922",
+    "movement": "Prints",
+    "tags": [
+      "ducks",
+      "prints",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "ducks"
+      ],
+      "mediumCategory": "prints",
+      "period": "1889",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "3a140e2e-2a9d-bc2c-b42d-e096a42bdc25",
+      "slug": "berthe-morisot-met-3a140e2e",
+      "name": "Berthe Morisot",
+      "nationality": "French",
+      "biography": "French, Bourges 1841–1895 Paris"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "508 / 624",
+      "background": "#ede8df",
+      "alt": "Duck and Reeds by Berthe Morisot, 1889. Drypoint on wove paper. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-336389.webp",
+      "width": 508,
+      "height": 624
+    },
+    "recommendationReason": "Explore prints from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Purchase, Rogers Fund and Jacob H. Schiff Bequest, 1922 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/336389"
+    }
+  },
+  {
+    "id": "55a4aa3e-2c7b-9e69-4da0-03a27a4dfc97",
+    "slug": "polichinelle-met-336390",
+    "title": "Polichinelle",
+    "year": "1874",
+    "medium": "Lithograph",
+    "dimensions": "Image: 20 1/2 × 14 9/16 in. (52 × 37 cm)\r\nSheet: 22 13/16 × 16 13/16 in. (58 × 42.7 cm)",
+    "description": "Polichinelle (1874). Edouard Manet; Lithograph. Collection: The Metropolitan Museum of Art. Credit: Rogers Fund, 1922",
+    "movement": "Prints",
+    "tags": [
+      "prints",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [],
+      "mediumCategory": "prints",
+      "period": "1874",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "25eff84c-656c-8d62-75d9-4766e8b5bd0a",
+      "slug": "edouard-manet-met-25eff84c",
+      "name": "Edouard Manet",
+      "nationality": "French",
+      "biography": "French, Paris 1832–1883 Paris"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "464 / 625",
+      "background": "#ede8df",
+      "alt": "Polichinelle by Edouard Manet, 1874. Lithograph. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-336390.webp",
+      "width": 464,
+      "height": 625
+    },
+    "recommendationReason": "Explore prints from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Rogers Fund, 1922 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/336390"
+    }
+  },
+  {
+    "id": "b52dce53-d67b-08b4-72d1-9350761d8432",
+    "slug": "portfolio-cover-and-text-for-the-raven-by-edgar-allan-poe-met-336391",
+    "title": "Portfolio cover and text for \"The Raven\" by Edgar Allan Poe",
+    "year": "1875",
+    "medium": "Letterpress in black and red ink",
+    "dimensions": "each of three folded sheets: 21 1/4 x 27 9/16 in. (54 x 70 cm)",
+    "description": "Portfolio cover and text for \"The Raven\" by Edgar Allan Poe (1875). Edouard Manet; Letterpress in black and red ink. Collection: The Metropolitan Museum of Art. Credit: Harris Brisbane Dick Fund, 1924",
+    "movement": "Books",
+    "tags": [
+      "books",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [],
+      "mediumCategory": "books",
+      "period": "1875",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "25eff84c-656c-8d62-75d9-4766e8b5bd0a",
+      "slug": "edouard-manet-met-25eff84c",
+      "name": "Edouard Manet",
+      "nationality": "French",
+      "biography": "French, Paris 1832–1883 Paris"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "422 / 625",
+      "background": "#ede8df",
+      "alt": "Portfolio cover and text for \"The Raven\" by Edgar Allan Poe by Edouard Manet, 1875. Letterpress in black and red ink. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-336391.webp",
+      "width": 422,
+      "height": 625
+    },
+    "recommendationReason": "Explore books from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Harris Brisbane Dick Fund, 1924 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/336391"
+    }
+  },
+  {
+    "id": "a30bdddc-ae25-e03b-e54c-2d660576f89d",
+    "slug": "the-flying-raven-ex-libris-for-the-raven-by-edgar-allan-poe-met-336392",
+    "title": "The Flying Raven, Ex Libris for \"The Raven\" by Edgar Allan Poe",
+    "year": "1875",
+    "medium": "Lithograph on simili-parchment",
+    "dimensions": "Sheet: 6 1/8 x 11 5/8 in. (15.6 x 29.5 cm)",
+    "description": "The Flying Raven, Ex Libris for \"The Raven\" by Edgar Allan Poe (1875). Edouard Manet; Lithograph on simili-parchment. Collection: The Metropolitan Museum of Art. Credit: Harris Brisbane Dick Fund, 1924",
+    "movement": "Prints",
+    "tags": [
+      "birds",
+      "prints",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "birds"
+      ],
+      "mediumCategory": "prints",
+      "period": "1875",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "25eff84c-656c-8d62-75d9-4766e8b5bd0a",
+      "slug": "edouard-manet-met-25eff84c",
+      "name": "Edouard Manet",
+      "nationality": "French",
+      "biography": "French, Paris 1832–1883 Paris"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "600 / 324",
+      "background": "#ede8df",
+      "alt": "The Flying Raven, Ex Libris for \"The Raven\" by Edgar Allan Poe by Edouard Manet, 1875. Lithograph on simili-parchment. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-336392.webp",
+      "width": 600,
+      "height": 324
+    },
+    "recommendationReason": "Explore prints from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Harris Brisbane Dick Fund, 1924 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/336392"
+    }
+  },
+  {
+    "id": "846566b9-2eb8-cdc5-1129-32051c5d2323",
+    "slug": "once-upon-a-midnight-dreary-from-the-raven-by-edgar-allan-poe-met-336393",
+    "title": "Once Upon a Midnight Dreary, from \"The Raven\" by Edgar Allan Poe",
+    "year": "1875",
+    "medium": "Lithograph",
+    "dimensions": "sheet: 13 3/4 x 21 1/16 in. (35 x 53.5 cm)",
+    "description": "Once Upon a Midnight Dreary, from \"The Raven\" by Edgar Allan Poe (1875). Edouard Manet; Lithograph. Collection: The Metropolitan Museum of Art. Credit: Harris Brisbane Dick Fund, 1924",
+    "movement": "Prints",
+    "tags": [
+      "men",
+      "profiles",
+      "prints",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "men",
+        "profiles"
+      ],
+      "mediumCategory": "prints",
+      "period": "1875",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "25eff84c-656c-8d62-75d9-4766e8b5bd0a",
+      "slug": "edouard-manet-met-25eff84c",
+      "name": "Edouard Manet",
+      "nationality": "French",
+      "biography": "French, Paris 1832–1883 Paris"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "600 / 394",
+      "background": "#ede8df",
+      "alt": "Once Upon a Midnight Dreary, from \"The Raven\" by Edgar Allan Poe by Edouard Manet, 1875. Lithograph. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-336393.webp",
+      "width": 600,
+      "height": 394
+    },
+    "recommendationReason": "Explore prints from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Harris Brisbane Dick Fund, 1924 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/336393"
+    }
+  },
+  {
+    "id": "dd0dea26-d6c3-385f-69c2-7161324728c3",
+    "slug": "seated-nude-seen-from-behind-met-336669",
+    "title": "Seated Nude Seen from Behind",
+    "year": "1889",
+    "medium": "Drypoint on wove paper",
+    "dimensions": "sheet: 14 x 10 15/16 in. (35.5 x 27.8 cm)\r\nplate: 5 7/16 x 4 5/16 in. (13.8 x 10.9 cm)",
+    "description": "Seated Nude Seen from Behind (1889). Berthe Morisot; Drypoint on wove paper. Collection: The Metropolitan Museum of Art. Credit: Purchase, Rogers Fund and Jacob H. Schiff Bequest, 1922",
+    "movement": "Prints",
+    "tags": [
+      "female nudes",
+      "prints",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "female nudes"
+      ],
+      "mediumCategory": "prints",
+      "period": "1889",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "3a140e2e-2a9d-bc2c-b42d-e096a42bdc25",
+      "slug": "berthe-morisot-met-3a140e2e",
+      "name": "Berthe Morisot",
+      "nationality": "French",
+      "biography": "French, Bourges 1841–1895 Paris"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "497 / 625",
+      "background": "#ede8df",
+      "alt": "Seated Nude Seen from Behind by Berthe Morisot, 1889. Drypoint on wove paper. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-336669.webp",
+      "width": 497,
+      "height": 625
+    },
+    "recommendationReason": "Explore prints from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Purchase, Rogers Fund and Jacob H. Schiff Bequest, 1922 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/336669"
+    }
+  },
+  {
+    "id": "153c81f4-8a3e-de6f-d49a-9462b904ab09",
+    "slug": "the-drawing-lesson-berthe-morisot-and-her-daughter-met-336670",
+    "title": "The Drawing Lesson (Berthe Morisot and her Daughter)",
+    "year": "1889",
+    "medium": "Drypoint on wove paper",
+    "dimensions": "sheet: 14 1/16 x 10 15/16 in. (35.7 x 27.8 cm)\r\nplate: 7 1/2 x 5 1/2 in. (19 x 13.9 cm)",
+    "description": "The Drawing Lesson (Berthe Morisot and her Daughter) (1889). Berthe Morisot; Drypoint on wove paper. Collection: The Metropolitan Museum of Art. Credit: Purchase, Rogers Fund and Jacob H. Schiff Bequest, 1922",
+    "movement": "Prints",
+    "tags": [
+      "self-portraits",
+      "women",
+      "prints",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "self-portraits",
+        "women"
+      ],
+      "mediumCategory": "prints",
+      "period": "1889",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "3a140e2e-2a9d-bc2c-b42d-e096a42bdc25",
+      "slug": "berthe-morisot-met-3a140e2e",
+      "name": "Berthe Morisot",
+      "nationality": "French",
+      "biography": "French, Bourges 1841–1895 Paris"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "496 / 624",
+      "background": "#ede8df",
+      "alt": "The Drawing Lesson (Berthe Morisot and her Daughter) by Berthe Morisot, 1889. Drypoint on wove paper. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-336670.webp",
+      "width": 496,
+      "height": 624
+    },
+    "recommendationReason": "Explore prints from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Purchase, Rogers Fund and Jacob H. Schiff Bequest, 1922 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/336670"
+    }
+  },
+  {
+    "id": "a57e6681-9d8a-c110-083c-d376dbf1c102",
+    "slug": "young-girl-with-a-cat-after-a-portrait-of-julie-manet-by-renoir-met-336671",
+    "title": "Young Girl with a Cat, after a portrait of Julie Manet by Renoir",
+    "year": "1889",
+    "medium": "Drypoint on laid paper",
+    "dimensions": "sheet: 14 x 10 11/16 in. (35.6 x 27.2 cm)\r\nplate: 5 7/8 x 4 11/16 in. (15 x 11.9 cm)",
+    "description": "Young Girl with a Cat, after a portrait of Julie Manet by Renoir (1889). Berthe Morisot; Drypoint on laid paper. Collection: The Metropolitan Museum of Art. Credit: Purchase, Rogers Fund and Jacob H. Schiff Bequest, 1922",
+    "movement": "Prints",
+    "tags": [
+      "girls",
+      "portraits",
+      "cats",
+      "prints",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "girls",
+        "portraits",
+        "cats"
+      ],
+      "mediumCategory": "prints",
+      "period": "1889",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "3a140e2e-2a9d-bc2c-b42d-e096a42bdc25",
+      "slug": "berthe-morisot-met-3a140e2e",
+      "name": "Berthe Morisot",
+      "nationality": "French",
+      "biography": "French, Bourges 1841–1895 Paris"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "493 / 625",
+      "background": "#ede8df",
+      "alt": "Young Girl with a Cat, after a portrait of Julie Manet by Renoir by Berthe Morisot, 1889. Drypoint on laid paper. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-336671.webp",
+      "width": 493,
+      "height": 625
+    },
+    "recommendationReason": "Explore prints from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Purchase, Rogers Fund and Jacob H. Schiff Bequest, 1922 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/336671"
+    }
+  },
+  {
+    "id": "2051f139-465e-d09f-aa62-275e55bd7851",
+    "slug": "young-woman-reclining-met-336672",
+    "title": "Young Woman Reclining",
+    "year": "1889",
+    "medium": "Drypoint on wove paper",
+    "dimensions": "plate: 10 13/16 x 13 3/4 in. (27.5 x 35 cm)\r\nplate: 3 1/8 x 4 3/4 in. (8 x 12 cm)",
+    "description": "Young Woman Reclining (1889). Berthe Morisot; Drypoint on wove paper. Collection: The Metropolitan Museum of Art. Credit: Purchase, Rogers Fund and Jacob H. Schiff Bequest, 1922",
+    "movement": "Prints",
+    "tags": [
+      "women",
+      "prints",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "women"
+      ],
+      "mediumCategory": "prints",
+      "period": "1889",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "3a140e2e-2a9d-bc2c-b42d-e096a42bdc25",
+      "slug": "berthe-morisot-met-3a140e2e",
+      "name": "Berthe Morisot",
+      "nationality": "French",
+      "biography": "French, Bourges 1841–1895 Paris"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "600 / 477",
+      "background": "#ede8df",
+      "alt": "Young Woman Reclining by Berthe Morisot, 1889. Drypoint on wove paper. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-336672.webp",
+      "width": 600,
+      "height": 477
+    },
+    "recommendationReason": "Explore prints from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Purchase, Rogers Fund and Jacob H. Schiff Bequest, 1922 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/336672"
+    }
+  },
+  {
+    "id": "580d2dfe-aa51-ab2b-4586-8df1dae115bd",
+    "slug": "hail-mary-ia-orana-maria-met-337168",
+    "title": "Hail Mary (Ia Orana Maria)",
+    "year": "ca. 1893–95",
+    "medium": "Fabricated charcoal, red chalk, and white pastel on formerly blue wove paper, mounted on millboard with strips of rose-colored wove paper along two edges",
+    "dimensions": "23 1/2 x 14 3/4 in.  (59.7 x 37.5 cm)",
+    "description": "Hail Mary (Ia Orana Maria) (ca. 1893–95). Paul Gauguin; Fabricated charcoal, red chalk, and white pastel on formerly blue wove paper, mounted on millboard with strips of rose-colored wove paper along two edges. Collection: The Metropolitan Museum of Art. Credit: Bequest of Loula D. Lasker, New York City, 1961",
+    "movement": "Drawings",
+    "tags": [
+      "infants",
+      "women",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "infants",
+        "women"
+      ],
+      "mediumCategory": "drawings",
+      "period": "ca. 1893–95",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "35dc72a9-b304-0da9-a71f-ce0c4710c0b7",
+      "slug": "paul-gauguin-met-35dc72a9",
+      "name": "Paul Gauguin",
+      "nationality": "French",
+      "biography": "French, Paris 1848–1903 Atuona, Hiva Oa, Marquesas Islands"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "430 / 625",
+      "background": "#ede8df",
+      "alt": "Hail Mary (Ia Orana Maria) by Paul Gauguin, ca. 1893–95. Fabricated charcoal, red chalk, and white pastel on formerly blue wove paper, mounted on millboard with strips of rose-colored wove paper along two edges. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-337168.webp",
+      "width": 430,
+      "height": 625
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Bequest of Loula D. Lasker, New York City, 1961 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/337168"
+    }
+  },
+  {
+    "id": "8d1774da-a4d7-6869-fc17-42576667eaa5",
+    "slug": "a-tahitian-woman-with-a-flower-in-her-hair-met-337169",
+    "title": "A Tahitian Woman with a Flower in Her Hair",
+    "year": "1891–92",
+    "medium": "Charcoal, pastel, red chalk, and wash",
+    "dimensions": "15 3/8 x 11 7/8 in.  (39 x 30.2 cm)",
+    "description": "A Tahitian Woman with a Flower in Her Hair (1891–92). Paul Gauguin; Charcoal, pastel, red chalk, and wash. Collection: The Metropolitan Museum of Art. Credit: Bequest of Miss Adelaide Milton de Groot (1876-1967), 1967",
+    "movement": "Drawings",
+    "tags": [
+      "profiles",
+      "women",
+      "flowers",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "profiles",
+        "women",
+        "flowers"
+      ],
+      "mediumCategory": "drawings",
+      "period": "1891–92",
+      "geography": "France"
+    },
+    "artist": {
+      "id": "35dc72a9-b304-0da9-a71f-ce0c4710c0b7",
+      "slug": "paul-gauguin-met-35dc72a9",
+      "name": "Paul Gauguin",
+      "nationality": "French",
+      "biography": "French, Paris 1848–1903 Atuona, Hiva Oa, Marquesas Islands"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "504 / 624",
+      "background": "#ede8df",
+      "alt": "A Tahitian Woman with a Flower in Her Hair by Paul Gauguin, 1891–92. Charcoal, pastel, red chalk, and wash. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-337169.webp",
+      "width": 504,
+      "height": 624
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Bequest of Miss Adelaide Milton de Groot (1876-1967), 1967 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/337169"
+    }
+  },
+  {
+    "id": "95523219-c890-a9e7-8d9f-fa4ea79833af",
+    "slug": "tahitian-faces-frontal-view-and-profiles-met-337172",
+    "title": "Tahitian Faces (Frontal View and Profiles)",
+    "year": "ca. 1899",
+    "medium": "Charcoal on laid paper",
+    "dimensions": "Sheet: 16 1/8 x 12 1/4 in. (41 x 31.1 cm)",
+    "description": "Tahitian Faces (Frontal View and Profiles) (ca. 1899). Paul Gauguin; Charcoal on laid paper. Collection: The Metropolitan Museum of Art. Credit: Purchase, The Annenberg Foundation Gift, 1996",
+    "movement": "Drawings",
+    "tags": [
+      "women",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "women"
+      ],
+      "mediumCategory": "drawings",
+      "period": "ca. 1899",
+      "geography": "Tahiti"
+    },
+    "artist": {
+      "id": "35dc72a9-b304-0da9-a71f-ce0c4710c0b7",
+      "slug": "paul-gauguin-met-35dc72a9",
+      "name": "Paul Gauguin",
+      "nationality": "French",
+      "biography": "French, Paris 1848–1903 Atuona, Hiva Oa, Marquesas Islands"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "443 / 624",
+      "background": "#ede8df",
+      "alt": "Tahitian Faces (Frontal View and Profiles) by Paul Gauguin, ca. 1899. Charcoal on laid paper. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-337172.webp",
+      "width": 443,
+      "height": 624
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Purchase, The Annenberg Foundation Gift, 1996 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/337172"
+    }
+  },
+  {
+    "id": "b76c85da-b880-2795-7ec6-5f347be55b61",
+    "slug": "landscape-with-houses-met-337676",
+    "title": "Landscape with Houses",
+    "year": "1881–82",
+    "medium": "Conté crayon",
+    "dimensions": "9 13/16 x 12 9/16 in.  (24.9 x 31.9 cm)",
+    "description": "Landscape with Houses (1881–82). Georges Seurat; Conté crayon. Collection: The Metropolitan Museum of Art. Credit: Bequest of Walter C. Baker, 1971",
+    "movement": "Drawings",
+    "tags": [
+      "houses",
+      "landscapes",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "houses",
+        "landscapes"
+      ],
+      "mediumCategory": "drawings",
+      "period": "1881–82",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "ac40478c-34ab-54f9-9cd4-77f391f9c6d0",
+      "slug": "georges-seurat-met-ac40478c",
+      "name": "Georges Seurat",
+      "nationality": "French",
+      "biography": "French, Paris 1859–1891 Paris"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "600 / 466",
+      "background": "#ede8df",
+      "alt": "Landscape with Houses by Georges Seurat, 1881–82. Conté crayon. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-337676.webp",
+      "width": 600,
+      "height": 466
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Bequest of Walter C. Baker, 1971 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/337676"
+    }
+  },
+  {
+    "id": "07525e3d-ea06-ae45-235c-0ffd2b1e716b",
+    "slug": "roadworkers-at-lunch-met-337776",
+    "title": "Roadworkers at Lunch",
+    "year": "ca. 1850–52",
+    "medium": "Conté crayon with stumping, heightened with white gouache, on laid paper",
+    "dimensions": "10 7/8 x 8 7/8 in.  (27.6 x 22.5 cm)",
+    "description": "Roadworkers at Lunch (ca. 1850–52). Jean-François Millet; Conté crayon with stumping, heightened with white gouache, on laid paper. Collection: The Metropolitan Museum of Art. Credit: Rogers Fund, 1926",
+    "movement": "Drawings",
+    "tags": [
+      "men",
+      "trees",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "men",
+        "trees"
+      ],
+      "mediumCategory": "drawings",
+      "period": "ca. 1850–52",
+      "geography": "France"
+    },
+    "artist": {
+      "id": "b92016cd-ad23-5916-7e4a-d19bec1a359c",
+      "slug": "jean-francois-millet-met-b92016cd",
+      "name": "Jean-François Millet",
+      "nationality": "French",
+      "biography": "French, Gruchy 1814–1875 Barbizon"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "508 / 625",
+      "background": "#ede8df",
+      "alt": "Roadworkers at Lunch by Jean-François Millet, ca. 1850–52. Conté crayon with stumping, heightened with white gouache, on laid paper. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-337776.webp",
+      "width": 508,
+      "height": 625
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Rogers Fund, 1926 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/337776"
+    }
+  },
+  {
+    "id": "7822a645-e61f-67a2-7051-1148407854e9",
+    "slug": "woman-with-a-churn-met-337778",
+    "title": "Woman with a Churn",
+    "year": "1854",
+    "medium": "Conté crayon on wove paper",
+    "dimensions": "11 1/4 x 7 5/16 in.  (28.6 x 18.5 cm)",
+    "description": "Woman with a Churn (1854). Jean-François Millet; Conté crayon on wove paper. Collection: The Metropolitan Museum of Art. Credit: Gift of Miss Mary W. Tweed, 1929",
+    "movement": "Drawings",
+    "tags": [
+      "women",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "women"
+      ],
+      "mediumCategory": "drawings",
+      "period": "1854",
+      "geography": "France"
+    },
+    "artist": {
+      "id": "b92016cd-ad23-5916-7e4a-d19bec1a359c",
+      "slug": "jean-francois-millet-met-b92016cd",
+      "name": "Jean-François Millet",
+      "nationality": "French",
+      "biography": "French, Gruchy 1814–1875 Barbizon"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "416 / 625",
+      "background": "#ede8df",
+      "alt": "Woman with a Churn by Jean-François Millet, 1854. Conté crayon on wove paper. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-337778.webp",
+      "width": 416,
+      "height": 625
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Gift of Miss Mary W. Tweed, 1929 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/337778"
+    }
+  },
+  {
+    "id": "674e8c6f-dfd3-2333-4f43-c70f3445d0d9",
+    "slug": "shepherdess-knitting-met-337779",
+    "title": "Shepherdess Knitting",
+    "year": "1862",
+    "medium": "Etching in brown ink on laid paper; only state",
+    "dimensions": "image: 12 1/2 x 9 1/4 in. (31.8 x 23.5 cm)\r\nsheet: 16 3/8 x 12 7/16 in. (41.6 x 31.6 cm)\r\nframe: 21 x 16 in. (53.3 cm)",
+    "description": "Shepherdess Knitting (1862). Jean-François Millet; Etching in brown ink on laid paper; only state. Collection: The Metropolitan Museum of Art. Credit: Gift of David Keppel, 1917",
+    "movement": "Prints",
+    "tags": [
+      "animals",
+      "women",
+      "trees",
+      "shepherds",
+      "prints",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "animals",
+        "women",
+        "trees",
+        "shepherds"
+      ],
+      "mediumCategory": "prints",
+      "period": "1862",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "b92016cd-ad23-5916-7e4a-d19bec1a359c",
+      "slug": "jean-francois-millet-met-b92016cd",
+      "name": "Jean-François Millet",
+      "nationality": "French",
+      "biography": "French, Gruchy 1814–1875 Barbizon"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "463 / 625",
+      "background": "#ede8df",
+      "alt": "Shepherdess Knitting by Jean-François Millet, 1862. Etching in brown ink on laid paper; only state. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-337779.webp",
+      "width": 463,
+      "height": 625
+    },
+    "recommendationReason": "Explore prints from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Gift of David Keppel, 1917 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/337779"
+    }
+  },
+  {
+    "id": "e2661de1-68b1-1470-2543-25694c198b13",
+    "slug": "man-with-a-spade-met-337782",
+    "title": "Man with a Spade",
+    "year": "ca. 1855–58",
+    "medium": "Conté crayon on laid paper",
+    "dimensions": "15 7/8 x 11 in.  (40.3 x 27.9 cm)",
+    "description": "Man with a Spade (ca. 1855–58). Jean-François Millet; Conté crayon on laid paper. Collection: The Metropolitan Museum of Art. Credit: Gift of Miss Mary W. Tweed, 1929",
+    "movement": "Drawings",
+    "tags": [
+      "men",
+      "tools",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "men",
+        "tools"
+      ],
+      "mediumCategory": "drawings",
+      "period": "ca. 1855–58",
+      "geography": "France"
+    },
+    "artist": {
+      "id": "b92016cd-ad23-5916-7e4a-d19bec1a359c",
+      "slug": "jean-francois-millet-met-b92016cd",
+      "name": "Jean-François Millet",
+      "nationality": "French",
+      "biography": "French, Gruchy 1814–1875 Barbizon"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "436 / 625",
+      "background": "#ede8df",
+      "alt": "Man with a Spade by Jean-François Millet, ca. 1855–58. Conté crayon on laid paper. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-337782.webp",
+      "width": 436,
+      "height": 625
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Gift of Miss Mary W. Tweed, 1929 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/337782"
+    }
+  },
+  {
+    "id": "da4a067e-8b51-b2b6-1ca1-c9c8e8bb19e3",
+    "slug": "a-shepherdess-with-her-flock-met-337784",
+    "title": "A Shepherdess with Her Flock",
+    "year": "ca. 1852",
+    "medium": "Conté crayon with stumping on laid paper",
+    "dimensions": "Overall: 13 x 18 1/2in. (33 x 47 cm)",
+    "description": "A Shepherdess with Her Flock (ca. 1852). Jean-François Millet; Conté crayon with stumping on laid paper. Collection: The Metropolitan Museum of Art. Credit: H. O. Havemeyer Collection, Bequest of Mrs. H. O. Havemeyer, 1929",
+    "movement": "Drawings",
+    "tags": [
+      "men",
+      "sheep",
+      "trees",
+      "shepherds",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "men",
+        "sheep",
+        "trees",
+        "shepherds"
+      ],
+      "mediumCategory": "drawings",
+      "period": "ca. 1852",
+      "geography": "France"
+    },
+    "artist": {
+      "id": "b92016cd-ad23-5916-7e4a-d19bec1a359c",
+      "slug": "jean-francois-millet-met-b92016cd",
+      "name": "Jean-François Millet",
+      "nationality": "French",
+      "biography": "French, Gruchy 1814–1875 Barbizon"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "600 / 423",
+      "background": "#ede8df",
+      "alt": "A Shepherdess with Her Flock by Jean-François Millet, ca. 1852. Conté crayon with stumping on laid paper. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-337784.webp",
+      "width": 600,
+      "height": 423
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. H. O. Havemeyer Collection, Bequest of Mrs. H. O. Havemeyer, 1929 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/337784"
+    }
+  },
+  {
+    "id": "92bada28-be74-8eac-165b-fb291a9763df",
+    "slug": "human-misery-from-the-volpini-suite-dessins-lithographiques-met-337790",
+    "title": "Human Misery, from the Volpini Suite: Dessins lithographiques",
+    "year": "1889",
+    "medium": "zincograph, on simili-Japan paper; second edition",
+    "dimensions": "11 9/16 x 9 5/16 in.  (29.4 x 23.7 cm)",
+    "description": "Human Misery, from the Volpini Suite: Dessins lithographiques (1889). Paul Gauguin; zincograph, on simili-Japan paper; second edition. Collection: The Metropolitan Museum of Art. Credit: Bequest of Scofield Thayer, 1982",
+    "movement": "Prints",
+    "tags": [
+      "faces",
+      "suffering",
+      "men",
+      "women",
+      "trees",
+      "prints",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "faces",
+        "suffering",
+        "men",
+        "women",
+        "trees"
+      ],
+      "mediumCategory": "prints",
+      "period": "1889",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "35dc72a9-b304-0da9-a71f-ce0c4710c0b7",
+      "slug": "paul-gauguin-met-35dc72a9",
+      "name": "Paul Gauguin",
+      "nationality": "French",
+      "biography": "French, Paris 1848–1903 Atuona, Hiva Oa, Marquesas Islands"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "500 / 624",
+      "background": "#ede8df",
+      "alt": "Human Misery, from the Volpini Suite: Dessins lithographiques by Paul Gauguin, 1889. zincograph, on simili-Japan paper; second edition. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-337790.webp",
+      "width": 500,
+      "height": 624
+    },
+    "recommendationReason": "Explore prints from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Bequest of Scofield Thayer, 1982 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/337790"
+    }
+  },
+  {
+    "id": "a8771bcc-5853-335c-3473-871aec389b55",
+    "slug": "a-woman-burning-weeds-met-337796",
+    "title": "A Woman Burning Weeds",
+    "year": "1830–75",
+    "medium": "Pen and brown (iron gall) ink, watercolor and wash over graphite on laid paper",
+    "dimensions": "15 5/16 x 9 3/4 in.  (38.9 x 24.8 cm)",
+    "description": "A Woman Burning Weeds (1830–75). Jean-François Millet; Pen and brown (iron gall) ink, watercolor and wash over graphite on laid paper. Collection: The Metropolitan Museum of Art. Credit: H. O. Havemeyer Collection, Bequest of Mrs. H. O. Havemeyer, 1929",
+    "movement": "Drawings",
+    "tags": [
+      "women",
+      "fire",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "women",
+        "fire"
+      ],
+      "mediumCategory": "drawings",
+      "period": "1830–75",
+      "geography": "France"
+    },
+    "artist": {
+      "id": "b92016cd-ad23-5916-7e4a-d19bec1a359c",
+      "slug": "jean-francois-millet-met-b92016cd",
+      "name": "Jean-François Millet",
+      "nationality": "French",
+      "biography": "French, Gruchy 1814–1875 Barbizon"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "403 / 625",
+      "background": "#ede8df",
+      "alt": "A Woman Burning Weeds by Jean-François Millet, 1830–75. Pen and brown (iron gall) ink, watercolor and wash over graphite on laid paper. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-337796.webp",
+      "width": 403,
+      "height": 625
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. H. O. Havemeyer Collection, Bequest of Mrs. H. O. Havemeyer, 1929 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/337796"
+    }
+  },
+  {
+    "id": "0a63858a-f471-5b59-94e4-c2823ed8b285",
+    "slug": "a-shepherdess-and-her-flock-in-the-shade-of-trees-met-337797",
+    "title": "A Shepherdess and Her Flock in the Shade of Trees",
+    "year": "1854–55",
+    "medium": "Conté crayon and pastel on laid paper",
+    "dimensions": "14 3/4 x 10 3/4 in.  (37.4 x 27.3 cm)",
+    "description": "A Shepherdess and Her Flock in the Shade of Trees (1854–55). Jean-François Millet; Conté crayon and pastel on laid paper. Collection: The Metropolitan Museum of Art. Credit: H. O. Havemeyer Collection, Bequest of Mrs. H. O. Havemeyer, 1929",
+    "movement": "Drawings",
+    "tags": [
+      "sheep",
+      "trees",
+      "shepherds",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "sheep",
+        "trees",
+        "shepherds"
+      ],
+      "mediumCategory": "drawings",
+      "period": "1854–55",
+      "geography": "France"
+    },
+    "artist": {
+      "id": "b92016cd-ad23-5916-7e4a-d19bec1a359c",
+      "slug": "jean-francois-millet-met-b92016cd",
+      "name": "Jean-François Millet",
+      "nationality": "French",
+      "biography": "French, Gruchy 1814–1875 Barbizon"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "471 / 624",
+      "background": "#ede8df",
+      "alt": "A Shepherdess and Her Flock in the Shade of Trees by Jean-François Millet, 1854–55. Conté crayon and pastel on laid paper. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-337797.webp",
+      "width": 471,
+      "height": 624
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. H. O. Havemeyer Collection, Bequest of Mrs. H. O. Havemeyer, 1929 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/337797"
+    }
+  },
+  {
+    "id": "3339fbe1-5425-fb11-1789-f1346cdcb745",
+    "slug": "portrait-of-stephane-mallarme-met-337818",
+    "title": "Portrait of Stéphane Mallarmé",
+    "year": "1891",
+    "medium": "Etching",
+    "dimensions": "7 3/16 x 5 11/16 in.  (18.3 x 14.4 cm): plate\r\n12 5/8 x 9 1/2 in. (32.1 x 24.1 cm): paper",
+    "description": "Portrait of Stéphane Mallarmé (1891). Paul Gauguin; Etching. Collection: The Metropolitan Museum of Art. Credit: Harris Brisbane Dick Fund, 1936",
+    "movement": "Prints",
+    "tags": [
+      "men",
+      "portraits",
+      "prints",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "men",
+        "portraits"
+      ],
+      "mediumCategory": "prints",
+      "period": "1891",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "35dc72a9-b304-0da9-a71f-ce0c4710c0b7",
+      "slug": "paul-gauguin-met-35dc72a9",
+      "name": "Paul Gauguin",
+      "nationality": "French",
+      "biography": "French, Paris 1848–1903 Atuona, Hiva Oa, Marquesas Islands"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "477 / 625",
+      "background": "#ede8df",
+      "alt": "Portrait of Stéphane Mallarmé by Paul Gauguin, 1891. Etching. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-337818.webp",
+      "width": 477,
+      "height": 625
+    },
+    "recommendationReason": "Explore prints from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Harris Brisbane Dick Fund, 1936 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/337818"
+    }
+  },
+  {
+    "id": "d4ec5bce-0efe-443d-2257-828c81167899",
+    "slug": "young-communards-in-prison-les-federes-a-la-conciergerie-met-338093",
+    "title": "Young Communards in Prison (Les Fédérés à la Conciergerie)",
+    "year": "1871",
+    "medium": "Black chalk, stumped",
+    "dimensions": "Overall: 10 3/16 x 6 1/2 in. (25.9 x 16.6 cm)",
+    "description": "Young Communards in Prison (Les Fédérés à la Conciergerie) (1871). Gustave Courbet; Black chalk, stumped. Collection: The Metropolitan Museum of Art. Credit: Gift of Guy Wildenstein, 1999",
+    "movement": "Drawings",
+    "tags": [
+      "prisons",
+      "prisoners",
+      "men",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "prisons",
+        "prisoners",
+        "men"
+      ],
+      "mediumCategory": "drawings",
+      "period": "1871",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "7b4d0e0b-51ca-226a-e3e4-714fc2c84edf",
+      "slug": "gustave-courbet-met-7b4d0e0b",
+      "name": "Gustave Courbet",
+      "nationality": "French",
+      "biography": "French, Ornans 1819–1877 La Tour-de-Peilz"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "328 / 625",
+      "background": "#ede8df",
+      "alt": "Young Communards in Prison (Les Fédérés à la Conciergerie) by Gustave Courbet, 1871. Black chalk, stumped. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-338093.webp",
+      "width": 328,
+      "height": 625
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Gift of Guy Wildenstein, 1999 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/338093"
+    }
+  },
+  {
+    "id": "ae8a0729-4280-01bd-112d-399ef5ba6070",
+    "slug": "seated-figures-of-saint-ursula-and-saint-cecilia-met-338198",
+    "title": "Seated Figures of Saint Ursula and Saint Cecilia",
+    "year": "1598–1680",
+    "medium": "Pen and brown ink, brush and brown wash",
+    "dimensions": "6 3/4 x 4 15/16in. (17.1 x 12.5cm)",
+    "description": "Seated Figures of Saint Ursula and Saint Cecilia (1598–1680). Gian Lorenzo Bernini - school of; Pen and brown ink, brush and brown wash. Collection: The Metropolitan Museum of Art. Credit: Gift of Cephas G. Thompson, 1887",
+    "movement": "Drawings",
+    "tags": [
+      "saints",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "saints"
+      ],
+      "mediumCategory": "drawings",
+      "period": "1598–1680",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "dd78c680-1176-2623-19c2-b9eaa6ac0ed5",
+      "slug": "gian-lorenzo-bernini-school-of-met-dd78c680",
+      "name": "Gian Lorenzo Bernini - school of",
+      "nationality": "Italian",
+      "biography": "Italian, Naples 1598–1680 Rome"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "461 / 624",
+      "background": "#ede8df",
+      "alt": "Seated Figures of Saint Ursula and Saint Cecilia by Gian Lorenzo Bernini - school of, 1598–1680. Pen and brown ink, brush and brown wash. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-338198.webp",
+      "width": 461,
+      "height": 624
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Gift of Cephas G. Thompson, 1887 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/338198"
+    }
+  },
+  {
+    "id": "f783495e-525e-79e7-6bb7-7993b40e83a4",
+    "slug": "study-for-a-triton-recto-anatomical-studies-verso-met-338199",
+    "title": "Study for a Triton (recto); Anatomical Studies ? (verso)",
+    "year": "1642–43",
+    "medium": "Red chalk, the background tinted with an almost imperceptible pale brown wash, framing lines in pen and brown ink (recto); black chalk (verso)",
+    "dimensions": "14 5/16 x 9 5/8 in.  (36.4 x 24.5 cm)",
+    "description": "Study for a Triton (recto); Anatomical Studies ? (verso) (1642–43). Gian Lorenzo Bernini; Red chalk, the background tinted with an almost imperceptible pale brown wash, framing lines in pen and brown ink (recto); black chalk (verso). Collection: The Metropolitan Museum of Art. Credit: Harry G. Sperling Fund, 1973",
+    "movement": "Drawings",
+    "tags": [
+      "triton",
+      "drinking",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "triton",
+        "drinking"
+      ],
+      "mediumCategory": "drawings",
+      "period": "1642–43",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "0c77e837-a483-79ac-1ac0-e36bedbe40d9",
+      "slug": "gian-lorenzo-bernini-met-0c77e837",
+      "name": "Gian Lorenzo Bernini",
+      "nationality": "Italian",
+      "biography": "Italian, Naples 1598–1680 Rome"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "419 / 625",
+      "background": "#ede8df",
+      "alt": "Study for a Triton (recto); Anatomical Studies ? (verso) by Gian Lorenzo Bernini, 1642–43. Red chalk, the background tinted with an almost imperceptible pale brown wash, framing lines in pen and brown ink (recto); black chalk (verso). Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-338199.webp",
+      "width": 419,
+      "height": 625
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Harry G. Sperling Fund, 1973 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/338199"
+    }
+  },
+  {
+    "id": "2331e8f8-4bae-b1c7-4536-47c557083c19",
+    "slug": "parte-di-ampio-magnifico-porto-all-uso-degli-antichi-romani-ove-si-scuopre-l-interno--met-338737",
+    "title": "Parte di ampio magnifico Porto all'uso degli antichi Romani, ove si scuopre l'interno della gran Piazza pel Comercio... (Part of a spacious and magnificent Harbor for the use of the ancient Romans opening onto a large market square...), from \"Opere Varie di Archiettura, prospettive, grotteschi, antichità; inventate, ed incise da Giambattista Piranesi Architetto Veneziano\" (Various Works of Architecture, perspectives, grotesques, and antiquities; designed and etched by Giambattista Piranesi, Venetian Architect)",
+    "year": "ca. 1749–50",
+    "medium": "Etching, engraving, drypoint; second state of seven (Robison)",
+    "dimensions": "Mat: 8 11/16 x 11 in. (22 x 28 cm)\r\nSheet: 19 1/2 x 25 3/16 in. (49.5 x 64 cm)\r\nPlate: 15 3/4 x 21 7/16 in. (40 x 54.5 cm)",
+    "description": "Parte di ampio magnifico Porto all'uso degli antichi Romani, ove si scuopre l'interno della gran Piazza pel Comercio... (Part of a spacious and magnificent Harbor for the use of the ancient Romans opening onto a large market square...), from \"Opere Varie di Archiettura, prospettive, grotteschi, antichità; inventate, ed incise da Giambattista Piranesi Architetto Veneziano\" (Various Works of Architecture, perspectives, grotesques, and antiquities; designed and etched by Giambattista Piranesi, Venetian Architect) (ca. 1749–50). Giovanni Battista Piranesi; Etching, engraving, drypoint; second state of seven (Robison). Collection: The Metropolitan Museum of Art. Credit: Harris Brisbane Dick Fund, 1937",
+    "movement": "Prints",
+    "tags": [
+      "architecture",
+      "arches",
+      "ruins",
+      "boats",
+      "prints",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "architecture",
+        "arches",
+        "ruins",
+        "boats"
+      ],
+      "mediumCategory": "prints",
+      "period": "ca. 1749–50",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "c2222956-dc5f-4842-d026-4624d4e7b4d0",
+      "slug": "giovanni-battista-piranesi-met-c2222956",
+      "name": "Giovanni Battista Piranesi",
+      "nationality": "Italian",
+      "biography": "Italian, Mogliano Veneto 1720–1778 Rome"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "600 / 444",
+      "background": "#ede8df",
+      "alt": "Parte di ampio magnifico Porto all'uso degli antichi Romani, ove si scuopre l'interno della gran Piazza pel Comercio... (Part of a spacious and magnificent Harbor for the use of the ancient Romans opening onto a large market square...), from \"Opere Varie di Archiettura, prospettive, grotteschi, antichità; inventate, ed incise da Giambattista Piranesi Architetto Veneziano\" (Various Works of Architecture, perspectives, grotesques, and antiquities; designed and etched by Giambattista Piranesi, Venetian Architect) by Giovanni Battista Piranesi, ca. 1749–50. Etching, engraving, drypoint; second state of seven (Robison). Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-338737.webp",
+      "width": 600,
+      "height": 444
+    },
+    "recommendationReason": "Explore prints from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Harris Brisbane Dick Fund, 1937 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/338737"
+    }
+  },
+  {
+    "id": "cbb0ea79-0942-e99f-2e9f-be97e552421d",
+    "slug": "illustration-for-a-book-general-carried-in-triumph-met-339271",
+    "title": "Illustration for a Book: General Carried in Triumph",
+    "year": "1696–1770",
+    "medium": "Graphite or black chalk. Traces of reworking in red chalk. Horizontal and vertical centering lines ruled in faint graphite or black chalk",
+    "dimensions": "4-5/16 x 7-1/2 in.  (11.0 x 19.1 cm)",
+    "description": "Illustration for a Book: General Carried in Triumph (1696–1770). Giovanni Battista Tiepolo; Graphite or black chalk. Traces of reworking in red chalk. Horizontal and vertical centering lines ruled in faint graphite or black chalk. Collection: The Metropolitan Museum of Art. Credit: The Elisha Whittelsey Collection, The Elisha Whittelsey Fund, 1959",
+    "movement": "Drawings",
+    "tags": [
+      "musical instruments",
+      "soldiers",
+      "men",
+      "generals",
+      "musicians",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "musical instruments",
+        "soldiers",
+        "men",
+        "generals",
+        "musicians"
+      ],
+      "mediumCategory": "drawings",
+      "period": "1696–1770",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "4c024fbf-ebf1-8d38-5d85-6b1caffc6f15",
+      "slug": "giovanni-battista-tiepolo-met-4c024fbf",
+      "name": "Giovanni Battista Tiepolo",
+      "nationality": "Italian",
+      "biography": "Italian, Venice 1696–1770 Madrid"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "600 / 345",
+      "background": "#ede8df",
+      "alt": "Illustration for a Book: General Carried in Triumph by Giovanni Battista Tiepolo, 1696–1770. Graphite or black chalk. Traces of reworking in red chalk. Horizontal and vertical centering lines ruled in faint graphite or black chalk. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-339271.webp",
+      "width": 600,
+      "height": 345
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. The Elisha Whittelsey Collection, The Elisha Whittelsey Fund, 1959 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/339271"
+    }
+  },
+  {
+    "id": "a4743ffa-565f-a314-1ca7-50bd714f1f38",
+    "slug": "illustration-for-a-book-saint-luke-with-a-female-allegorical-figure-met-339279",
+    "title": "Illustration for a Book: Saint Luke with a Female Allegorical Figure",
+    "year": "1696–1770",
+    "medium": "Black chalk.  Horizontal and vertical centering lines ruled in faint black chalk",
+    "dimensions": "4-1/2 x 6-15/16 in.  (11.4 x 17.6 cm)",
+    "description": "Illustration for a Book: Saint Luke with a Female Allegorical Figure (1696–1770). Giovanni Battista Tiepolo; Black chalk.  Horizontal and vertical centering lines ruled in faint black chalk. Collection: The Metropolitan Museum of Art. Credit: The Elisha Whittelsey Collection, The Elisha Whittelsey Fund, 1959",
+    "movement": "Drawings",
+    "tags": [
+      "women",
+      "cows",
+      "saints",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "women",
+        "cows",
+        "saints"
+      ],
+      "mediumCategory": "drawings",
+      "period": "1696–1770",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "4c024fbf-ebf1-8d38-5d85-6b1caffc6f15",
+      "slug": "giovanni-battista-tiepolo-met-4c024fbf",
+      "name": "Giovanni Battista Tiepolo",
+      "nationality": "Italian",
+      "biography": "Italian, Venice 1696–1770 Madrid"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "411 / 625",
+      "background": "#ede8df",
+      "alt": "Illustration for a Book: Saint Luke with a Female Allegorical Figure by Giovanni Battista Tiepolo, 1696–1770. Black chalk.  Horizontal and vertical centering lines ruled in faint black chalk. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-339279.webp",
+      "width": 411,
+      "height": 625
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. The Elisha Whittelsey Collection, The Elisha Whittelsey Fund, 1959 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/339279"
+    }
+  },
+  {
+    "id": "f804ca08-4e6f-0c42-864f-2120f84467c0",
+    "slug": "the-church-at-eragny-met-339647",
+    "title": "The Church at Eragny",
+    "year": "ca. 1894–95",
+    "medium": "Black chalk",
+    "dimensions": "9 3/8 x 12 1/16 in.  (23.8 x 30.7 cm)",
+    "description": "The Church at Eragny (ca. 1894–95). Camille Pissarro; Black chalk. Collection: The Metropolitan Museum of Art. Credit: Harris Brisbane Dick Fund, 1948",
+    "movement": "Drawings",
+    "tags": [
+      "churches",
+      "trees",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "churches",
+        "trees"
+      ],
+      "mediumCategory": "drawings",
+      "period": "ca. 1894–95",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "a77d4331-530f-233b-2e1b-2985af47d402",
+      "slug": "camille-pissarro-met-a77d4331",
+      "name": "Camille Pissarro",
+      "nationality": "French",
+      "biography": "French, Charlotte Amalie, Saint Thomas 1830–1903 Paris"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "600 / 452",
+      "background": "#ede8df",
+      "alt": "The Church at Eragny by Camille Pissarro, ca. 1894–95. Black chalk. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-339647.webp",
+      "width": 600,
+      "height": 452
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Harris Brisbane Dick Fund, 1948 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/339647"
+    }
+  },
+  {
+    "id": "5bcb98a9-388a-9d5d-76d1-39a247ddc6c3",
+    "slug": "all-saints-church-upper-norwood-seen-from-the-north-side-of-beulah-hill-met-339648",
+    "title": "All Saints Church, Upper Norwood seen from the north side of Beulah Hill",
+    "year": "second half 19th century",
+    "medium": "Graphite on china paper",
+    "dimensions": "11 3/16 x 17 1/2 in. (28.4 x 44.5 cm)",
+    "description": "All Saints Church, Upper Norwood seen from the north side of Beulah Hill (second half 19th century). Camille Pissarro; Graphite on china paper. Collection: The Metropolitan Museum of Art. Credit: Gift of Sam Salz, 1956",
+    "movement": "Drawings",
+    "tags": [
+      "roads",
+      "churches",
+      "trees",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "roads",
+        "churches",
+        "trees"
+      ],
+      "mediumCategory": "drawings",
+      "period": "second half 19th century",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "a77d4331-530f-233b-2e1b-2985af47d402",
+      "slug": "camille-pissarro-met-a77d4331",
+      "name": "Camille Pissarro",
+      "nationality": "French",
+      "biography": "French, Charlotte Amalie, Saint Thomas 1830–1903 Paris"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "600 / 388",
+      "background": "#ede8df",
+      "alt": "All Saints Church, Upper Norwood seen from the north side of Beulah Hill by Camille Pissarro, second half 19th century. Graphite on china paper. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-339648.webp",
+      "width": 600,
+      "height": 388
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Gift of Sam Salz, 1956 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/339648"
+    }
+  },
+  {
+    "id": "86a778e7-663a-8358-1dbd-c98522fcb8c7",
+    "slug": "two-women-in-a-garden-met-339649",
+    "title": "Two Women in a Garden",
+    "year": "1888",
+    "medium": "Gouache on silk; framing lines in graphite",
+    "dimensions": "mount: 14 15/16 x 12 3/8 in. (37.9 x 31.5 cm)\r\n12 13/16 x 9 11/16 in. (32.5 x 24.6 cm)",
+    "description": "Two Women in a Garden (1888). Camille Pissarro; Gouache on silk; framing lines in graphite. Collection: The Metropolitan Museum of Art. Credit: Bequest of Grégoire Tarnopol, 1979, and Gift of Alexander Tarnopol, 1980",
+    "movement": "Drawings",
+    "tags": [
+      "gardens",
+      "women",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "gardens",
+        "women"
+      ],
+      "mediumCategory": "drawings",
+      "period": "1888",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "a77d4331-530f-233b-2e1b-2985af47d402",
+      "slug": "camille-pissarro-met-a77d4331",
+      "name": "Camille Pissarro",
+      "nationality": "French",
+      "biography": "French, Charlotte Amalie, Saint Thomas 1830–1903 Paris"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "509 / 625",
+      "background": "#ede8df",
+      "alt": "Two Women in a Garden by Camille Pissarro, 1888. Gouache on silk; framing lines in graphite. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-339649.webp",
+      "width": 509,
+      "height": 625
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Bequest of Grégoire Tarnopol, 1979, and Gift of Alexander Tarnopol, 1980 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/339649"
+    }
+  },
+  {
+    "id": "16405fb1-cce8-623f-354b-d8e5a42afbdb",
+    "slug": "armor-met-339671",
+    "title": "Armor",
+    "year": "1891",
+    "medium": "Charcoal and conté crayon",
+    "dimensions": "20 x 14 1/2 in. (50.7 x 36.8 cm)",
+    "description": "Armor (1891). Odilon Redon; Charcoal and conté crayon. Collection: The Metropolitan Museum of Art. Credit: Harris Brisbane Dick Fund, 1948",
+    "movement": "Drawings",
+    "tags": [
+      "armor",
+      "helmets",
+      "women",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "armor",
+        "helmets",
+        "women"
+      ],
+      "mediumCategory": "drawings",
+      "period": "1891",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "9336d52e-cbbb-7187-6af8-c1662cc81e10",
+      "slug": "odilon-redon-met-9336d52e",
+      "name": "Odilon Redon",
+      "nationality": "French",
+      "biography": "French, Bordeaux 1840–1916 Paris"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "458 / 624",
+      "background": "#ede8df",
+      "alt": "Armor by Odilon Redon, 1891. Charcoal and conté crayon. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-339671.webp",
+      "width": 458,
+      "height": 624
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Harris Brisbane Dick Fund, 1948 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/339671"
+    }
+  },
+  {
+    "id": "7e5b9bbc-8c49-3693-bd64-15ac9cf266f7",
+    "slug": "young-woman-with-a-muff-met-339674",
+    "title": "Young Woman with a Muff",
+    "year": "1860–1919",
+    "medium": "Pastel",
+    "dimensions": "20 3/4 x 14 1/4 in. (52.7 x 36.2 cm)",
+    "description": "Young Woman with a Muff (1860–1919). Auguste Renoir; Pastel. Collection: The Metropolitan Museum of Art. Credit: H. O. Havemeyer Collection, Bequest of Mrs. H. O. Havemeyer, 1929",
+    "movement": "Drawings",
+    "tags": [
+      "women",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "women"
+      ],
+      "mediumCategory": "drawings",
+      "period": "1860–1919",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "e81d5813-22c6-d030-914e-8c254f110af5",
+      "slug": "auguste-renoir-met-e81d5813",
+      "name": "Auguste Renoir",
+      "nationality": "French",
+      "biography": "French, Limoges 1841–1919 Cagnes-sur-Mer"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "436 / 625",
+      "background": "#ede8df",
+      "alt": "Young Woman with a Muff by Auguste Renoir, 1860–1919. Pastel. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-339674.webp",
+      "width": 436,
+      "height": 625
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. H. O. Havemeyer Collection, Bequest of Mrs. H. O. Havemeyer, 1929 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/339674"
+    }
+  },
+  {
+    "id": "80465a41-e356-0d37-ab26-d1c26ad14496",
+    "slug": "studies-of-landscape-trees-and-exotic-fruit-met-339677",
+    "title": "Studies of Landscape, Trees, and Exotic Fruit",
+    "year": "ca. 1885",
+    "medium": "Watercolor and ink over graphite",
+    "dimensions": "12 1/2 x 18 3/4 in. (31.8 x 47.6 cm)",
+    "description": "Studies of Landscape, Trees, and Exotic Fruit (ca. 1885). Auguste Renoir; Watercolor and ink over graphite. Collection: The Metropolitan Museum of Art. Credit: Rogers Fund, 1966",
+    "movement": "Drawings",
+    "tags": [
+      "fruit",
+      "landscapes",
+      "trees",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "fruit",
+        "landscapes",
+        "trees"
+      ],
+      "mediumCategory": "drawings",
+      "period": "ca. 1885",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "e81d5813-22c6-d030-914e-8c254f110af5",
+      "slug": "auguste-renoir-met-e81d5813",
+      "name": "Auguste Renoir",
+      "nationality": "French",
+      "biography": "French, Limoges 1841–1919 Cagnes-sur-Mer"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "599 / 403",
+      "background": "#ede8df",
+      "alt": "Studies of Landscape, Trees, and Exotic Fruit by Auguste Renoir, ca. 1885. Watercolor and ink over graphite. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-339677.webp",
+      "width": 599,
+      "height": 403
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Rogers Fund, 1966 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/339677"
+    }
+  },
+  {
+    "id": "cebeec94-35f2-9813-98b7-70d7005d1fd9",
+    "slug": "a-girl-reading-with-a-sketch-of-seated-woman-met-339678",
+    "title": "A Girl Reading (with a Sketch of Seated Woman)",
+    "year": "n.d.",
+    "medium": "Charcoal, some stumping",
+    "dimensions": "24 11/16 x 19 1/8 in.  (62.7 x 48.5 cm)",
+    "description": "A Girl Reading (with a Sketch of Seated Woman) (n.d.). Auguste Renoir; Charcoal, some stumping. Collection: The Metropolitan Museum of Art. Credit: Bequest of Walter C. Baker, 1971",
+    "movement": "Drawings",
+    "tags": [
+      "girls",
+      "reading",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "girls",
+        "reading"
+      ],
+      "mediumCategory": "drawings",
+      "period": "n.d.",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "e81d5813-22c6-d030-914e-8c254f110af5",
+      "slug": "auguste-renoir-met-e81d5813",
+      "name": "Auguste Renoir",
+      "nationality": "French",
+      "biography": "French, Limoges 1841–1919 Cagnes-sur-Mer"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "480 / 624",
+      "background": "#ede8df",
+      "alt": "A Girl Reading (with a Sketch of Seated Woman) by Auguste Renoir, n.d.. Charcoal, some stumping. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-339678.webp",
+      "width": 480,
+      "height": 624
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Bequest of Walter C. Baker, 1971 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/339678"
+    }
+  },
+  {
+    "id": "e4c8faff-5af6-6513-2a8d-d088f68792bf",
+    "slug": "the-octagonal-room-in-the-small-baths-at-the-villa-of-hadrian-tivoli-met-339683",
+    "title": "The Octagonal Room in the Small Baths at the Villa of Hadrian (Tivoli)",
+    "year": "ca. 1777",
+    "medium": "Red chalk over black chalk or charcoal with partly ruled construction",
+    "dimensions": "15 1/2 x 21 3/4in. (39.4 x 55.3cm)",
+    "description": "The Octagonal Room in the Small Baths at the Villa of Hadrian (Tivoli) (ca. 1777). Giovanni Battista Piranesi; Red chalk over black chalk or charcoal with partly ruled construction. Collection: The Metropolitan Museum of Art. Credit: Purchase, Anonymous Gift and George and Lisa McFadden Gift, 1994",
+    "movement": "Drawings",
+    "tags": [
+      "buildings",
+      "ruins",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "buildings",
+        "ruins"
+      ],
+      "mediumCategory": "drawings",
+      "period": "ca. 1777",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "c2222956-dc5f-4842-d026-4624d4e7b4d0",
+      "slug": "giovanni-battista-piranesi-met-c2222956",
+      "name": "Giovanni Battista Piranesi",
+      "nationality": "Italian",
+      "biography": "Italian, Mogliano Veneto 1720–1778 Rome"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "600 / 432",
+      "background": "#ede8df",
+      "alt": "The Octagonal Room in the Small Baths at the Villa of Hadrian (Tivoli) by Giovanni Battista Piranesi, ca. 1777. Red chalk over black chalk or charcoal with partly ruled construction. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-339683.webp",
+      "width": 600,
+      "height": 432
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Purchase, Anonymous Gift and George and Lisa McFadden Gift, 1994 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/339683"
+    }
+  },
+  {
+    "id": "d7243c37-9ed9-7d8e-65d0-0790400781ef",
+    "slug": "house-at-dusk-la-cite-met-339750",
+    "title": "House at Dusk (La Cité)",
+    "year": "1881–82",
+    "medium": "Conté crayon",
+    "dimensions": "12 1/6 x 9 3/8 in. (30.6 x 23.7 cm)",
+    "description": "House at Dusk (La Cité) (1881–82). Georges Seurat; Conté crayon. Collection: The Metropolitan Museum of Art. Credit: Purchase, Joseph Pulitzer Bequest, 1951; acquired from The Museum of Modern Art, Lillie P. Bliss Collection",
+    "movement": "Drawings",
+    "tags": [
+      "houses",
+      "evening",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "houses",
+        "evening"
+      ],
+      "mediumCategory": "drawings",
+      "period": "1881–82",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "ac40478c-34ab-54f9-9cd4-77f391f9c6d0",
+      "slug": "georges-seurat-met-ac40478c",
+      "name": "Georges Seurat",
+      "nationality": "French",
+      "biography": "French, Paris 1859–1891 Paris"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "487 / 625",
+      "background": "#ede8df",
+      "alt": "House at Dusk (La Cité) by Georges Seurat, 1881–82. Conté crayon. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-339750.webp",
+      "width": 487,
+      "height": 625
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Purchase, Joseph Pulitzer Bequest, 1951; acquired from The Museum of Modern Art, Lillie P. Bliss Collection Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/339750"
+    }
+  },
+  {
+    "id": "421133a1-d85f-e7eb-6575-471ee7e87dad",
+    "slug": "peasants-met-339752",
+    "title": "Peasants",
+    "year": "1881–84",
+    "medium": "Conté crayon",
+    "dimensions": "9 13/16 x 12 7/16 in. (24.8 x 31.6 cm)",
+    "description": "Peasants (1881–84). Georges Seurat; Conté crayon. Collection: The Metropolitan Museum of Art. Credit: Bequest of Miss Adelaide Milton de Groot (1876-1967), 1967",
+    "movement": "Drawings",
+    "tags": [
+      "farmers",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "farmers"
+      ],
+      "mediumCategory": "drawings",
+      "period": "1881–84",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "ac40478c-34ab-54f9-9cd4-77f391f9c6d0",
+      "slug": "georges-seurat-met-ac40478c",
+      "name": "Georges Seurat",
+      "nationality": "French",
+      "biography": "French, Paris 1859–1891 Paris"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "600 / 472",
+      "background": "#ede8df",
+      "alt": "Peasants by Georges Seurat, 1881–84. Conté crayon. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-339752.webp",
+      "width": 600,
+      "height": 472
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Bequest of Miss Adelaide Milton de Groot (1876-1967), 1967 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/339752"
+    }
+  },
+  {
+    "id": "1fcd73fd-0b23-034d-7e0d-0c5019e39153",
+    "slug": "monkey-met-339754",
+    "title": "Monkey",
+    "year": "1884",
+    "medium": "Conté crayon",
+    "dimensions": "12 1/4 x 9 3/8 in.  (31.1 x 23.9 cm)",
+    "description": "Monkey (1884). Georges Seurat; Conté crayon. Collection: The Metropolitan Museum of Art. Credit: Bequest of Miss Adelaide Milton de Groot (1876-1967), 1967",
+    "movement": "Drawings",
+    "tags": [
+      "monkeys",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "monkeys"
+      ],
+      "mediumCategory": "drawings",
+      "period": "1884",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "ac40478c-34ab-54f9-9cd4-77f391f9c6d0",
+      "slug": "georges-seurat-met-ac40478c",
+      "name": "Georges Seurat",
+      "nationality": "French",
+      "biography": "French, Paris 1859–1891 Paris"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "599 / 446",
+      "background": "#ede8df",
+      "alt": "Monkey by Georges Seurat, 1884. Conté crayon. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-339754.webp",
+      "width": 599,
+      "height": 446
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Bequest of Miss Adelaide Milton de Groot (1876-1967), 1967 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/339754"
+    }
+  },
+  {
+    "id": "a64e03be-70f3-8c1b-2e88-908a26ae3759",
+    "slug": "still-life-with-hat-parasol-and-clothes-on-a-chair-met-339757",
+    "title": "Still Life with Hat, Parasol, and Clothes on a Chair",
+    "year": "1887",
+    "medium": "Conté crayon and white gouache",
+    "dimensions": "12 3/16 x 9 3/8 in. (31 x 23.8 cm)",
+    "description": "Still Life with Hat, Parasol, and Clothes on a Chair (1887). Georges Seurat; Conté crayon and white gouache. Collection: The Metropolitan Museum of Art. Credit: Bequest of Walter C. Baker, 1971",
+    "movement": "Drawings",
+    "tags": [
+      "hats",
+      "still life",
+      "parasols",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "hats",
+        "still life",
+        "parasols"
+      ],
+      "mediumCategory": "drawings",
+      "period": "1887",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "ac40478c-34ab-54f9-9cd4-77f391f9c6d0",
+      "slug": "georges-seurat-met-ac40478c",
+      "name": "Georges Seurat",
+      "nationality": "French",
+      "biography": "French, Paris 1859–1891 Paris"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "486 / 625",
+      "background": "#ede8df",
+      "alt": "Still Life with Hat, Parasol, and Clothes on a Chair by Georges Seurat, 1887. Conté crayon and white gouache. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-339757.webp",
+      "width": 486,
+      "height": 625
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Bequest of Walter C. Baker, 1971 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/339757"
+    }
+  },
+  {
+    "id": "018e19c3-60f5-e43e-0a94-3ae783611dd2",
+    "slug": "courbevoie-factories-by-moonlight-met-339760",
+    "title": "Courbevoie: Factories by Moonlight",
+    "year": "1882–83",
+    "medium": "Conté crayon",
+    "dimensions": "9 5/16 x 12 1/4 in.  (23.6 x 31.2 cm)",
+    "description": "Courbevoie: Factories by Moonlight (1882–83). Georges Seurat; Conté crayon. Collection: The Metropolitan Museum of Art. Credit: Gift of Alexander and Gregoire Tarnopol, 1976",
+    "movement": "Drawings",
+    "tags": [
+      "factories",
+      "moon",
+      "night",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "factories",
+        "moon",
+        "night"
+      ],
+      "mediumCategory": "drawings",
+      "period": "1882–83",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "ac40478c-34ab-54f9-9cd4-77f391f9c6d0",
+      "slug": "georges-seurat-met-ac40478c",
+      "name": "Georges Seurat",
+      "nationality": "French",
+      "biography": "French, Paris 1859–1891 Paris"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "600 / 456",
+      "background": "#ede8df",
+      "alt": "Courbevoie: Factories by Moonlight by Georges Seurat, 1882–83. Conté crayon. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-339760.webp",
+      "width": 600,
+      "height": 456
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Gift of Alexander and Gregoire Tarnopol, 1976 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/339760"
+    }
+  },
+  {
+    "id": "039b8a26-c2ca-ae20-cb63-b69a32a0ba52",
+    "slug": "two-men-holding-long-staffs-recto-proof-impression-of-part-of-an-etching-and-scribble-met-339830",
+    "title": "Two Men Holding Long Staffs (recto); Proof impression of part of an etching, and scribbles in the artist's hand (verso)",
+    "year": "1720–78",
+    "medium": "Pen and brown ink",
+    "dimensions": "6 9/16 x 8 3/8in. (16.6 x 21.3cm)",
+    "description": "Two Men Holding Long Staffs (recto); Proof impression of part of an etching, and scribbles in the artist's hand (verso) (1720–78). Giovanni Battista Piranesi; Pen and brown ink. Collection: The Metropolitan Museum of Art. Credit: Bequest of Walter C. Baker, 1971",
+    "movement": "Drawings",
+    "tags": [
+      "men",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "men"
+      ],
+      "mediumCategory": "drawings",
+      "period": "1720–78",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "c2222956-dc5f-4842-d026-4624d4e7b4d0",
+      "slug": "giovanni-battista-piranesi-met-c2222956",
+      "name": "Giovanni Battista Piranesi",
+      "nationality": "Italian",
+      "biography": "Italian, Mogliano Veneto 1720–1778 Rome"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "600 / 465",
+      "background": "#ede8df",
+      "alt": "Two Men Holding Long Staffs (recto); Proof impression of part of an etching, and scribbles in the artist's hand (verso) by Giovanni Battista Piranesi, 1720–78. Pen and brown ink. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-339830.webp",
+      "width": 600,
+      "height": 465
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Bequest of Walter C. Baker, 1971 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/339830"
+    }
+  },
+  {
+    "id": "444b7d58-3342-aae4-f615-4b4c8ab4b035",
+    "slug": "haunting-met-340028",
+    "title": "Haunting",
+    "year": "1893–94",
+    "medium": "Lithograph; fifth (final) state",
+    "dimensions": "sheet: 18 3/4 x 13 11/16 in. (47.7 x 34.7 cm)\r\nimage: 14 3/16 x 9 in. (36.1 x 22.8 cm)",
+    "description": "Haunting (1893–94). Odilon Redon; Lithograph; fifth (final) state. Collection: The Metropolitan Museum of Art. Credit: The Elisha Whittelsey Collection, The Elisha Whittelsey Fund, 1955",
+    "movement": "Prints",
+    "tags": [
+      "faces",
+      "women",
+      "snakes",
+      "prints",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "faces",
+        "women",
+        "snakes"
+      ],
+      "mediumCategory": "prints",
+      "period": "1893–94",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "9336d52e-cbbb-7187-6af8-c1662cc81e10",
+      "slug": "odilon-redon-met-9336d52e",
+      "name": "Odilon Redon",
+      "nationality": "French",
+      "biography": "French, Bordeaux 1840–1916 Paris"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "396 / 624",
+      "background": "#ede8df",
+      "alt": "Haunting by Odilon Redon, 1893–94. Lithograph; fifth (final) state. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-340028.webp",
+      "width": 396,
+      "height": 624
+    },
+    "recommendationReason": "Explore prints from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. The Elisha Whittelsey Collection, The Elisha Whittelsey Fund, 1955 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/340028"
+    }
+  },
+  {
+    "id": "16b3d684-db67-9f88-e6bd-9c28f58525c9",
+    "slug": "the-rest-on-the-flight-into-egypt-the-repose-of-the-holy-family-in-egypt-met-340850",
+    "title": "The Rest on the Flight into Egypt (The Repose of the Holy Family in Egypt)",
+    "year": "1806",
+    "medium": "Watercolor, pen and black ink, over graphite",
+    "dimensions": "Sheet: 13 13/16 × 14 9/16 in. (35.1 × 37 cm)",
+    "description": "The Rest on the Flight into Egypt (The Repose of the Holy Family in Egypt) (1806). William Blake; Watercolor, pen and black ink, over graphite. Collection: The Metropolitan Museum of Art. Credit: Rogers Fund, 1906",
+    "movement": "Drawings",
+    "tags": [
+      "animals",
+      "sun",
+      "landscapes",
+      "trees",
+      "holy family",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "animals",
+        "sun",
+        "landscapes",
+        "trees",
+        "holy family"
+      ],
+      "mediumCategory": "drawings",
+      "period": "1806",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "8f14460e-8e75-f52b-df12-e466298bad75",
+      "slug": "william-blake-met-8f14460e",
+      "name": "William Blake",
+      "nationality": "British",
+      "biography": "British, London 1757–1827 London"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "square",
+      "aspectRatio": "600 / 564",
+      "background": "#ede8df",
+      "alt": "The Rest on the Flight into Egypt (The Repose of the Holy Family in Egypt) by William Blake, 1806. Watercolor, pen and black ink, over graphite. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-340850.webp",
+      "width": 600,
+      "height": 564
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Rogers Fund, 1906 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/340850"
+    }
+  },
+  {
+    "id": "92a8276b-4742-6403-96c0-c3cfad716922",
+    "slug": "angel-of-the-divine-presence-bringing-eve-to-adam-the-creation-of-eve-and-she-shall-b-met-340851",
+    "title": "Angel of the Divine Presence Bringing Eve to Adam (The Creation of Eve: \"And She Shall be Called Woman) (recto); Sketch for the same (verso)",
+    "year": "ca. 1803",
+    "medium": "Watercolor, pen and black ink, over graphite",
+    "dimensions": "Sheet: 16 3/8 × 13 1/16 in. (41.6 × 33.2 cm)",
+    "description": "Angel of the Divine Presence Bringing Eve to Adam (The Creation of Eve: \"And She Shall be Called Woman) (recto); Sketch for the same (verso) (ca. 1803). William Blake; Watercolor, pen and black ink, over graphite. Collection: The Metropolitan Museum of Art. Credit: Rogers Fund, 1906",
+    "movement": "Drawings",
+    "tags": [
+      "grapes",
+      "female nudes",
+      "adam",
+      "eve",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "grapes",
+        "female nudes",
+        "adam",
+        "eve"
+      ],
+      "mediumCategory": "drawings",
+      "period": "ca. 1803",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "8f14460e-8e75-f52b-df12-e466298bad75",
+      "slug": "william-blake-met-8f14460e",
+      "name": "William Blake",
+      "nationality": "British",
+      "biography": "British, London 1757–1827 London"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "502 / 624",
+      "background": "#ede8df",
+      "alt": "Angel of the Divine Presence Bringing Eve to Adam (The Creation of Eve: \"And She Shall be Called Woman) (recto); Sketch for the same (verso) by William Blake, ca. 1803. Watercolor, pen and black ink, over graphite. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-340851.webp",
+      "width": 502,
+      "height": 624
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Rogers Fund, 1906 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/340851"
+    }
+  },
+  {
+    "id": "86940b51-88f9-b4d2-c4f9-01241efd55e5",
+    "slug": "angel-of-the-revelation-book-of-revelation-chapter-10-met-340852",
+    "title": "Angel of the Revelation (Book of Revelation, chapter 10)",
+    "year": "ca. 1803–5",
+    "medium": "Watercolor, pen and black ink, brush and wash, over traces of graphite",
+    "dimensions": "Sheet: 15 7/16 × 10 1/4 in. (39.2 × 26 cm)",
+    "description": "Angel of the Revelation (Book of Revelation, chapter 10) (ca. 1803–5). William Blake; Watercolor, pen and black ink, brush and wash, over traces of graphite. Collection: The Metropolitan Museum of Art. Credit: Rogers Fund, 1914",
+    "movement": "Drawings",
+    "tags": [
+      "men",
+      "horses",
+      "angels",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "men",
+        "horses",
+        "angels"
+      ],
+      "mediumCategory": "drawings",
+      "period": "ca. 1803–5",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "8f14460e-8e75-f52b-df12-e466298bad75",
+      "slug": "william-blake-met-8f14460e",
+      "name": "William Blake",
+      "nationality": "British",
+      "biography": "British, London 1757–1827 London"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "418 / 624",
+      "background": "#ede8df",
+      "alt": "Angel of the Revelation (Book of Revelation, chapter 10) by William Blake, ca. 1803–5. Watercolor, pen and black ink, brush and wash, over traces of graphite. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-340852.webp",
+      "width": 418,
+      "height": 624
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Rogers Fund, 1914 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/340852"
+    }
+  },
+  {
+    "id": "f94e921c-0ae1-a8e3-e7b3-c5596434ee02",
+    "slug": "the-parable-of-the-wise-and-foolish-virgins-met-340853",
+    "title": "The Parable of the Wise and Foolish Virgins",
+    "year": "ca. 1799–1800",
+    "medium": "Watercolor, pen and black ink, brush and wash, over graphite",
+    "dimensions": "Sheet: 14 3/16 × 13 1/16 in. (36 × 33.2 cm)",
+    "description": "The Parable of the Wise and Foolish Virgins (ca. 1799–1800). William Blake; Watercolor, pen and black ink, brush and wash, over graphite. Collection: The Metropolitan Museum of Art. Credit: Rogers Fund, 1914",
+    "movement": "Drawings",
+    "tags": [
+      "women",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "women"
+      ],
+      "mediumCategory": "drawings",
+      "period": "ca. 1799–1800",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "8f14460e-8e75-f52b-df12-e466298bad75",
+      "slug": "william-blake-met-8f14460e",
+      "name": "William Blake",
+      "nationality": "British",
+      "biography": "British, London 1757–1827 London"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "square",
+      "aspectRatio": "575 / 625",
+      "background": "#ede8df",
+      "alt": "The Parable of the Wise and Foolish Virgins by William Blake, ca. 1799–1800. Watercolor, pen and black ink, brush and wash, over graphite. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-340853.webp",
+      "width": 575,
+      "height": 625
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Rogers Fund, 1914 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/340853"
+    }
+  },
+  {
+    "id": "d4fb2c28-a5c1-0943-ba50-567ccad0bba0",
+    "slug": "the-complaint-and-the-consolation-or-night-thoughts-met-343210",
+    "title": "The Complaint and the Consolation; or, Night Thoughts",
+    "year": "1797",
+    "medium": "Illustrations: etching and engraving",
+    "dimensions": "16 7/8 × 13 1/4 × 13/16 in. (42.8 × 33.7 × 2 cm)",
+    "description": "The Complaint and the Consolation; or, Night Thoughts (1797). William Blake; Illustrations: etching and engraving. Collection: The Metropolitan Museum of Art. Credit: Gift of Estate of Maurice Everett Hall Jr., also known as Michael Hall, 2021",
+    "movement": "Books",
+    "tags": [
+      "books",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [],
+      "mediumCategory": "books",
+      "period": "1797",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "8f14460e-8e75-f52b-df12-e466298bad75",
+      "slug": "william-blake-met-8f14460e",
+      "name": "William Blake",
+      "nationality": "British",
+      "biography": "British, London 1757–1827 London"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "460 / 625",
+      "background": "#ede8df",
+      "alt": "The Complaint and the Consolation; or, Night Thoughts by William Blake, 1797. Illustrations: etching and engraving. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-343210.webp",
+      "width": 460,
+      "height": 625
+    },
+    "recommendationReason": "Explore books from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Gift of Estate of Maurice Everett Hall Jr., also known as Michael Hall, 2021 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/343210"
+    }
+  },
+  {
+    "id": "ae5e9a37-cc36-f4c0-9d28-144da6e35ff2",
+    "slug": "the-grave-a-poem-met-343211",
+    "title": "The Grave, A Poem",
+    "year": "1813",
+    "medium": "Illustrations: etchings",
+    "dimensions": "17 5/8 × 13 3/8 × 7/8 in. (44.8 × 34 × 2.2 cm)",
+    "description": "The Grave, A Poem (1813). After William Blake; Illustrations: etchings. Collection: The Metropolitan Museum of Art. Credit: Gift of Estate of Maurice Everett Hall Jr., also known as Michael Hall, 2021",
+    "movement": "Books",
+    "tags": [
+      "books",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [],
+      "mediumCategory": "books",
+      "period": "1813",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "c74040e1-aa5c-6c68-d0e9-82497ef6425a",
+      "slug": "after-william-blake-met-c74040e1",
+      "name": "After William Blake",
+      "nationality": "British",
+      "biography": "British, London 1757–1827 London"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "459 / 625",
+      "background": "#ede8df",
+      "alt": "The Grave, A Poem by After William Blake, 1813. Illustrations: etchings. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-343211.webp",
+      "width": 459,
+      "height": 625
+    },
+    "recommendationReason": "Explore books from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Gift of Estate of Maurice Everett Hall Jr., also known as Michael Hall, 2021 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/343211"
+    }
+  },
+  {
+    "id": "0d7f0eaa-ab73-8b4b-843d-0f8ab696d51f",
+    "slug": "chatel-argent-and-the-val-d-aosta-from-above-villeneuve-met-343383",
+    "title": "Chatel Argent and the Val d'Aosta from above Villeneuve",
+    "year": "1836",
+    "medium": "Watercolor and  gouache (bodycolor) over graphite",
+    "dimensions": "sheet: 10 1/8 x 12 in. (25.7 x 30.5 cm)",
+    "description": "Chatel Argent and the Val d'Aosta from above Villeneuve (1836). Joseph Mallord William Turner; Watercolor and  gouache (bodycolor) over graphite. Collection: The Metropolitan Museum of Art. Credit: Gift of Harold K. Hochschild, 1940",
+    "movement": "Drawings",
+    "tags": [
+      "castles",
+      "mountains",
+      "landscapes",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "castles",
+        "mountains",
+        "landscapes"
+      ],
+      "mediumCategory": "drawings",
+      "period": "1836",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "6bd7d3a6-432b-3c5d-d6c8-56ec42cd7959",
+      "slug": "joseph-mallord-william-turner-met-6bd7d3a6",
+      "name": "Joseph Mallord William Turner",
+      "nationality": "British",
+      "biography": "British, London 1775–1851 London"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "600 / 479",
+      "background": "#ede8df",
+      "alt": "Chatel Argent and the Val d'Aosta from above Villeneuve by Joseph Mallord William Turner, 1836. Watercolor and  gouache (bodycolor) over graphite. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-343383.webp",
+      "width": 600,
+      "height": 479
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Gift of Harold K. Hochschild, 1940 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/343383"
+    }
+  },
+  {
+    "id": "f88f9b94-983f-73f6-1ad7-a7eaee5e601d",
+    "slug": "the-fort-of-l-esseillon-val-de-la-maurienne-france-met-343384",
+    "title": "The Fort of L'Esseillon, Val de la Maurienne, France",
+    "year": "1835–36",
+    "medium": "Watercolor",
+    "dimensions": "sheet: 7 3/4 x 11 in. (19.7 x 28 cm)",
+    "description": "The Fort of L'Esseillon, Val de la Maurienne, France (1835–36). Joseph Mallord William Turner; Watercolor. Collection: The Metropolitan Museum of Art. Credit: Bequest of Walter C. Baker, 1971",
+    "movement": "Drawings",
+    "tags": [
+      "mountains",
+      "landscapes",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "mountains",
+        "landscapes"
+      ],
+      "mediumCategory": "drawings",
+      "period": "1835–36",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "6bd7d3a6-432b-3c5d-d6c8-56ec42cd7959",
+      "slug": "joseph-mallord-william-turner-met-6bd7d3a6",
+      "name": "Joseph Mallord William Turner",
+      "nationality": "British",
+      "biography": "British, London 1775–1851 London"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "599 / 410",
+      "background": "#ede8df",
+      "alt": "The Fort of L'Esseillon, Val de la Maurienne, France by Joseph Mallord William Turner, 1835–36. Watercolor. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-343384.webp",
+      "width": 599,
+      "height": 410
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Bequest of Walter C. Baker, 1971 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/343384"
+    }
+  },
+  {
+    "id": "1aae0b78-524f-43e9-c3ae-6571bf4c99b7",
+    "slug": "god-judging-adam-met-347414",
+    "title": "God Judging Adam",
+    "year": "ca. 1795",
+    "medium": "Color relief etching finished with pen and ink and watercolor",
+    "dimensions": "sheet: 16 3/4 x 20 3/4in. (42.5 x 52.7cm)",
+    "description": "God Judging Adam (ca. 1795). William Blake; Color relief etching finished with pen and ink and watercolor. Collection: The Metropolitan Museum of Art. Credit: Rogers Fund, 1916",
+    "movement": "Prints",
+    "tags": [
+      "horses",
+      "adam",
+      "chariots",
+      "god the father",
+      "prints",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "horses",
+        "adam",
+        "chariots",
+        "god the father"
+      ],
+      "mediumCategory": "prints",
+      "period": "ca. 1795",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "8f14460e-8e75-f52b-df12-e466298bad75",
+      "slug": "william-blake-met-8f14460e",
+      "name": "William Blake",
+      "nationality": "British",
+      "biography": "British, London 1757–1827 London"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "600 / 490",
+      "background": "#ede8df",
+      "alt": "God Judging Adam by William Blake, ca. 1795. Color relief etching finished with pen and ink and watercolor. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-347414.webp",
+      "width": 600,
+      "height": 490
+    },
+    "recommendationReason": "Explore prints from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Rogers Fund, 1916 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/347414"
+    }
+  },
+  {
+    "id": "07d7b26d-31a7-871f-26ef-b31e4c768919",
+    "slug": "pity-met-347416",
+    "title": "Pity",
+    "year": "ca. 1795",
+    "medium": "Relief etching, printed in color and finished with pen and ink and watercolor",
+    "dimensions": "sheet: 16 5/8 x 20 3/4in. (42.2 x 52.7cm)",
+    "description": "Pity (ca. 1795). William Blake; Relief etching, printed in color and finished with pen and ink and watercolor. Collection: The Metropolitan Museum of Art. Credit: Gift of Mrs. Robert W. Goelet, 1958, transferred from European Paintings",
+    "movement": "Prints",
+    "tags": [
+      "shakespeare",
+      "infants",
+      "women",
+      "horses",
+      "prints",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "shakespeare",
+        "infants",
+        "women",
+        "horses"
+      ],
+      "mediumCategory": "prints",
+      "period": "ca. 1795",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "8f14460e-8e75-f52b-df12-e466298bad75",
+      "slug": "william-blake-met-8f14460e",
+      "name": "William Blake",
+      "nationality": "British",
+      "biography": "British, London 1757–1827 London"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "599 / 479",
+      "background": "#ede8df",
+      "alt": "Pity by William Blake, ca. 1795. Relief etching, printed in color and finished with pen and ink and watercolor. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-347416.webp",
+      "width": 599,
+      "height": 479
+    },
+    "recommendationReason": "Explore prints from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Gift of Mrs. Robert W. Goelet, 1958, transferred from European Paintings Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/347416"
+    }
+  },
+  {
+    "id": "6c96ab64-d12e-d425-3c9d-4a13ea3ff749",
+    "slug": "hallucinations-met-347669",
+    "title": "Hallucinations",
+    "year": "n.d.",
+    "medium": "Charcoal on tan paper",
+    "dimensions": "image: 11 5/8 x 9 5/16 in. (29.5 x 23.7 cm)\r\nmount: 14 3/4 x 11 5/8 in. (37.5 x 29.6 cm)",
+    "description": "Hallucinations (n.d.). Odilon Redon; Charcoal on tan paper. Collection: The Metropolitan Museum of Art. Credit: Bequest of Scofield Thayer, 1982",
+    "movement": "Drawings",
+    "tags": [
+      "faces",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "faces"
+      ],
+      "mediumCategory": "drawings",
+      "period": "n.d.",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "9336d52e-cbbb-7187-6af8-c1662cc81e10",
+      "slug": "odilon-redon-met-9336d52e",
+      "name": "Odilon Redon",
+      "nationality": "French",
+      "biography": "French, Bordeaux 1840–1916 Paris"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "499 / 625",
+      "background": "#ede8df",
+      "alt": "Hallucinations by Odilon Redon, n.d.. Charcoal on tan paper. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-347669.webp",
+      "width": 499,
+      "height": 625
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Bequest of Scofield Thayer, 1982 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/347669"
+    }
+  },
+  {
+    "id": "c97a5ecb-6f62-8e80-9c56-4a514ed6c4c3",
+    "slug": "head-of-silenus-met-348027",
+    "title": "Head of Silenus",
+    "year": "1855–1906",
+    "medium": "Black chalk, brush and light brown wash",
+    "dimensions": "sheet: 10 5/16 x 7 5/8 in. (26.2 x 19.4 cm)",
+    "description": "Head of Silenus (1855–1906). Paul Cézanne; Black chalk, brush and light brown wash. Collection: The Metropolitan Museum of Art. Credit: Anonymous Gift, 1965",
+    "movement": "Drawings",
+    "tags": [
+      "heads",
+      "silenus",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "heads",
+        "silenus"
+      ],
+      "mediumCategory": "drawings",
+      "period": "1855–1906",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "b28e2fd2-e4f3-2eac-5b1f-327deb6c9664",
+      "slug": "paul-cezanne-met-b28e2fd2",
+      "name": "Paul Cézanne",
+      "nationality": "French",
+      "biography": "French, Aix-en-Provence 1839–1906 Aix-en-Provence"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "472 / 624",
+      "background": "#ede8df",
+      "alt": "Head of Silenus by Paul Cézanne, 1855–1906. Black chalk, brush and light brown wash. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-348027.webp",
+      "width": 472,
+      "height": 624
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Anonymous Gift, 1965 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/348027"
+    }
+  },
+  {
+    "id": "519928c1-99a1-0bcb-a441-a6d7288b396b",
+    "slug": "study-of-man-between-trees-met-355550",
+    "title": "Study of Man between Trees",
+    "year": "1860–80",
+    "medium": "Medium not supplied",
+    "dimensions": "9 3/4 x 7 1/2 in. (24.8 x 19.1 cm)",
+    "description": "Study of Man between Trees (1860–80). Odilon Redon. Collection: The Metropolitan Museum of Art. Credit: The Elisha Whittelsey Collection, The Elisha Whittelsey Fund, 1962",
+    "movement": "Drawings",
+    "tags": [
+      "men",
+      "trees",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "men",
+        "trees"
+      ],
+      "mediumCategory": "drawings",
+      "period": "1860–80",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "9336d52e-cbbb-7187-6af8-c1662cc81e10",
+      "slug": "odilon-redon-met-9336d52e",
+      "name": "Odilon Redon",
+      "nationality": "French",
+      "biography": "French, Bordeaux 1840–1916 Paris"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "519 / 624",
+      "background": "#ede8df",
+      "alt": "Study of Man between Trees by Odilon Redon, 1860–80. . Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-355550.webp",
+      "width": 519,
+      "height": 624
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. The Elisha Whittelsey Collection, The Elisha Whittelsey Fund, 1962 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/355550"
+    }
+  },
+  {
+    "id": "69fa1b80-d123-90ff-7c60-d88311f791c9",
+    "slug": "view-of-london-from-greenwich-met-356768",
+    "title": "View of London from Greenwich",
+    "year": "1825",
+    "medium": "Watercolor and ink and traces of graphite",
+    "dimensions": "sheet: 8 3/8 x 11 in. (21.3 x 28 cm)",
+    "description": "View of London from Greenwich (1825). Joseph Mallord William Turner; Watercolor and ink and traces of graphite. Collection: The Metropolitan Museum of Art. Credit: Bequest of Alexandrine Sinsheimer, 1958",
+    "movement": "Drawings",
+    "tags": [
+      "cities",
+      "rivers",
+      "landscapes",
+      "london",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "cities",
+        "rivers",
+        "landscapes",
+        "london"
+      ],
+      "mediumCategory": "drawings",
+      "period": "1825",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "6bd7d3a6-432b-3c5d-d6c8-56ec42cd7959",
+      "slug": "joseph-mallord-william-turner-met-6bd7d3a6",
+      "name": "Joseph Mallord William Turner",
+      "nationality": "British",
+      "biography": "British, London 1775–1851 London"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "600 / 453",
+      "background": "#ede8df",
+      "alt": "View of London from Greenwich by Joseph Mallord William Turner, 1825. Watercolor and ink and traces of graphite. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-356768.webp",
+      "width": 600,
+      "height": 453
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Bequest of Alexandrine Sinsheimer, 1958 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/356768"
+    }
+  },
+  {
+    "id": "56404445-fd02-8082-1620-3e653e945b6b",
+    "slug": "eyes-closed-met-356778",
+    "title": "Eyes Closed",
+    "year": "1890",
+    "medium": "Lithograph",
+    "dimensions": "image: 8 9/16 x 7 1/4 in. (21.7 x 18.4 cm)\r\nsheet: 14 x 10 13/16 in. (35.6 x 27.5 cm)",
+    "description": "Eyes Closed (1890). Odilon Redon; Lithograph. Collection: The Metropolitan Museum of Art. Credit: Harris Brisbane Dick Fund, 1925",
+    "movement": "Prints",
+    "tags": [
+      "eyes",
+      "heads",
+      "prints",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "eyes",
+        "heads"
+      ],
+      "mediumCategory": "prints",
+      "period": "1890",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "9336d52e-cbbb-7187-6af8-c1662cc81e10",
+      "slug": "odilon-redon-met-9336d52e",
+      "name": "Odilon Redon",
+      "nationality": "French",
+      "biography": "French, Bordeaux 1840–1916 Paris"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "511 / 625",
+      "background": "#ede8df",
+      "alt": "Eyes Closed by Odilon Redon, 1890. Lithograph. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-356778.webp",
+      "width": 511,
+      "height": 625
+    },
+    "recommendationReason": "Explore prints from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Harris Brisbane Dick Fund, 1925 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/356778"
+    }
+  },
+  {
+    "id": "223abfff-d5da-7bf0-4860-190905cda35c",
+    "slug": "woman-at-a-well-met-358709",
+    "title": "Woman at a Well",
+    "year": "1891",
+    "medium": "Etching and aquatint on laid paper; second state of three",
+    "dimensions": "sheet: 12 1/2 x 8 1/8 in. (31.8 x 20.6 cm)\r\nplate: 9 1/4 x 7 11/16 in. (23.5 x 19.5 cm)",
+    "description": "Woman at a Well (1891). Camille Pissarro; Etching and aquatint on laid paper; second state of three. Collection: The Metropolitan Museum of Art. Credit: The Elisha Whittelsey Collection, The Elisha Whittelsey Fund, 1993",
+    "movement": "Prints",
+    "tags": [
+      "wells",
+      "women",
+      "prints",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "wells",
+        "women"
+      ],
+      "mediumCategory": "prints",
+      "period": "1891",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "a77d4331-530f-233b-2e1b-2985af47d402",
+      "slug": "camille-pissarro-met-a77d4331",
+      "name": "Camille Pissarro",
+      "nationality": "French",
+      "biography": "French, Charlotte Amalie, Saint Thomas 1830–1903 Paris"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "410 / 625",
+      "background": "#ede8df",
+      "alt": "Woman at a Well by Camille Pissarro, 1891. Etching and aquatint on laid paper; second state of three. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-358709.webp",
+      "width": 410,
+      "height": 625
+    },
+    "recommendationReason": "Explore prints from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. The Elisha Whittelsey Collection, The Elisha Whittelsey Fund, 1993 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/358709"
+    }
+  },
+  {
+    "id": "b259ca1b-556e-f1f9-a6aa-8bc257173ff3",
+    "slug": "goose-girl-met-358710",
+    "title": "Goose Girl",
+    "year": "1888",
+    "medium": "Etching and drypoint on china paper; first state of three",
+    "dimensions": "sheet: 9 3/8 x 13 3/4 in. (23.8 x 35 cm)\r\nplate: 5 5/16 x 7 11/16 in. (13.5 x 19.5 cm)",
+    "description": "Goose Girl (1888). Camille Pissarro; Etching and drypoint on china paper; first state of three. Collection: The Metropolitan Museum of Art. Credit: The Elisha Whittelsey Collection, The Elisha Whittelsey Fund, 1962",
+    "movement": "Prints",
+    "tags": [
+      "geese",
+      "girls",
+      "prints",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "geese",
+        "girls"
+      ],
+      "mediumCategory": "prints",
+      "period": "1888",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "a77d4331-530f-233b-2e1b-2985af47d402",
+      "slug": "camille-pissarro-met-a77d4331",
+      "name": "Camille Pissarro",
+      "nationality": "French",
+      "biography": "French, Charlotte Amalie, Saint Thomas 1830–1903 Paris"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "600 / 494",
+      "background": "#ede8df",
+      "alt": "Goose Girl by Camille Pissarro, 1888. Etching and drypoint on china paper; first state of three. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-358710.webp",
+      "width": 600,
+      "height": 494
+    },
+    "recommendationReason": "Explore prints from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. The Elisha Whittelsey Collection, The Elisha Whittelsey Fund, 1962 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/358710"
+    }
+  },
+  {
+    "id": "66c4c559-89b4-5654-a9a4-393347cd4727",
+    "slug": "portrait-of-paul-cezanne-met-358711",
+    "title": "Portrait of Paul Cézanne",
+    "year": "1874",
+    "medium": "Etching on laid paper; only state",
+    "dimensions": "sheet: 17 5/8 x 11 1/2 in. (44.8 x 29.2 cm)\r\nplate: 10 9/16 x 8 7/16 in. (26.9 x 21.5 cm)",
+    "description": "Portrait of Paul Cézanne (1874). Camille Pissarro; Etching on laid paper; only state. Collection: The Metropolitan Museum of Art. Credit: The Elisha Whittelsey Collection, The Elisha Whittelsey Fund, 1928",
+    "movement": "Prints",
+    "tags": [
+      "men",
+      "portraits",
+      "prints",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "men",
+        "portraits"
+      ],
+      "mediumCategory": "prints",
+      "period": "1874",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "a77d4331-530f-233b-2e1b-2985af47d402",
+      "slug": "camille-pissarro-met-a77d4331",
+      "name": "Camille Pissarro",
+      "nationality": "French",
+      "biography": "French, Charlotte Amalie, Saint Thomas 1830–1903 Paris"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "478 / 625",
+      "background": "#ede8df",
+      "alt": "Portrait of Paul Cézanne by Camille Pissarro, 1874. Etching on laid paper; only state. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-358711.webp",
+      "width": 478,
+      "height": 625
+    },
+    "recommendationReason": "Explore prints from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. The Elisha Whittelsey Collection, The Elisha Whittelsey Fund, 1928 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/358711"
+    }
+  },
+  {
+    "id": "4fa800ad-d8c7-4a06-39a2-dfae2431faac",
+    "slug": "the-maid-at-the-market-met-358712",
+    "title": "The Maid at the Market",
+    "year": "1888",
+    "medium": "Etching and drypoint on china paper; second state of four",
+    "dimensions": "sheet: 13 7/8 x 9 3/16 in. (35.3 x 23.3 cm)\r\nplate: 7 5/8 x 5 3/16 in. (19.4 x 13.1 cm)",
+    "description": "The Maid at the Market (1888). Camille Pissarro; Etching and drypoint on china paper; second state of four. Collection: The Metropolitan Museum of Art. Credit: Gift of an Anonymous Donor, 1917",
+    "movement": "Prints",
+    "tags": [
+      "women",
+      "markets",
+      "servants",
+      "prints",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "women",
+        "markets",
+        "servants"
+      ],
+      "mediumCategory": "prints",
+      "period": "1888",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "a77d4331-530f-233b-2e1b-2985af47d402",
+      "slug": "camille-pissarro-met-a77d4331",
+      "name": "Camille Pissarro",
+      "nationality": "French",
+      "biography": "French, Charlotte Amalie, Saint Thomas 1830–1903 Paris"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "442 / 625",
+      "background": "#ede8df",
+      "alt": "The Maid at the Market by Camille Pissarro, 1888. Etching and drypoint on china paper; second state of four. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-358712.webp",
+      "width": 442,
+      "height": 625
+    },
+    "recommendationReason": "Explore prints from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Gift of an Anonymous Donor, 1917 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/358712"
+    }
+  },
+  {
+    "id": "5c09ca92-f53e-d3b5-b1e5-33748c515f2b",
+    "slug": "chestnut-vendor-st-martin-s-market-pontoise-met-358713",
+    "title": "Chestnut Vendor, St. Martin's Market, Pontoise",
+    "year": "1881",
+    "medium": "Drypoint, with stippling; first state before steelfacing, on yellow/brown laid paper; first state of two",
+    "dimensions": "sheet: 17 x 12 5/16 in. (43.2 x 31.3 cm)\r\nplate: 7 13/16 x 6 in. (19.9 x 15.3 cm)",
+    "description": "Chestnut Vendor, St. Martin's Market, Pontoise (1881). Camille Pissarro; Drypoint, with stippling; first state before steelfacing, on yellow/brown laid paper; first state of two. Collection: The Metropolitan Museum of Art. Credit: Gift of W. L. Andrews, 1917",
+    "movement": "Prints",
+    "tags": [
+      "human figures",
+      "buildings",
+      "markets",
+      "prints",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "human figures",
+        "buildings",
+        "markets"
+      ],
+      "mediumCategory": "prints",
+      "period": "1881",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "a77d4331-530f-233b-2e1b-2985af47d402",
+      "slug": "camille-pissarro-met-a77d4331",
+      "name": "Camille Pissarro",
+      "nationality": "French",
+      "biography": "French, Charlotte Amalie, Saint Thomas 1830–1903 Paris"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "467 / 625",
+      "background": "#ede8df",
+      "alt": "Chestnut Vendor, St. Martin's Market, Pontoise by Camille Pissarro, 1881. Drypoint, with stippling; first state before steelfacing, on yellow/brown laid paper; first state of two. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-358713.webp",
+      "width": 467,
+      "height": 625
+    },
+    "recommendationReason": "Explore prints from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Gift of W. L. Andrews, 1917 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/358713"
+    }
+  },
+  {
+    "id": "829763aa-7135-b4c4-1aef-fa21f57b8cd1",
+    "slug": "two-bathers-les-deux-baigneuses-from-l-estampe-originale-met-358765",
+    "title": "Two Bathers (Les Deux Baigneuses), from \"L'Estampe Originale\"",
+    "year": "1895",
+    "medium": "Etching; only state",
+    "dimensions": "Sheet: 18 7/8 x 13 9/16 in. (48 x 34.4 cm)\r\nPlate: 10 1/4 x 9 7/16 in. (26 x 24 cm)",
+    "description": "Two Bathers (Les Deux Baigneuses), from \"L'Estampe Originale\" (1895). Auguste Renoir; Etching; only state. Collection: The Metropolitan Museum of Art. Credit: Rogers Fund, 1922",
+    "movement": "Prints",
+    "tags": [
+      "female nudes",
+      "bathing",
+      "prints",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "female nudes",
+        "bathing"
+      ],
+      "mediumCategory": "prints",
+      "period": "1895",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "e81d5813-22c6-d030-914e-8c254f110af5",
+      "slug": "auguste-renoir-met-e81d5813",
+      "name": "Auguste Renoir",
+      "nationality": "French",
+      "biography": "French, Limoges 1841–1919 Cagnes-sur-Mer"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "square",
+      "aspectRatio": "577 / 625",
+      "background": "#ede8df",
+      "alt": "Two Bathers (Les Deux Baigneuses), from \"L'Estampe Originale\" by Auguste Renoir, 1895. Etching; only state. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-358765.webp",
+      "width": 577,
+      "height": 625
+    },
+    "recommendationReason": "Explore prints from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Rogers Fund, 1922 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/358765"
+    }
+  },
+  {
+    "id": "b632a571-d3ac-59c5-eb79-bb1c94418784",
+    "slug": "les-deux-baigneuses-cancelled-impression-met-358770",
+    "title": "Les Deux Baigneuses (Cancelled impression)",
+    "year": "1895",
+    "medium": "Etching on wove paper; impression from cancelled plate",
+    "dimensions": "sheet: 14 1/4 x 10 9/16 in. (36.2 x 26.9 cm)\r\nplate: 10 3/16 x 9 1/2 in. (25.9 x 24.1 cm)",
+    "description": "Les Deux Baigneuses (Cancelled impression) (1895). Auguste Renoir; Etching on wove paper; impression from cancelled plate. Collection: The Metropolitan Museum of Art. Credit: Bequest of Scofield Thayer, 1982",
+    "movement": "Prints",
+    "tags": [
+      "female nudes",
+      "bathing",
+      "prints",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "female nudes",
+        "bathing"
+      ],
+      "mediumCategory": "prints",
+      "period": "1895",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "e81d5813-22c6-d030-914e-8c254f110af5",
+      "slug": "auguste-renoir-met-e81d5813",
+      "name": "Auguste Renoir",
+      "nationality": "French",
+      "biography": "French, Limoges 1841–1919 Cagnes-sur-Mer"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "square",
+      "aspectRatio": "582 / 624",
+      "background": "#ede8df",
+      "alt": "Les Deux Baigneuses (Cancelled impression) by Auguste Renoir, 1895. Etching on wove paper; impression from cancelled plate. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-358770.webp",
+      "width": 582,
+      "height": 624
+    },
+    "recommendationReason": "Explore prints from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Bequest of Scofield Thayer, 1982 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/358770"
+    }
+  },
+  {
+    "id": "52bbdc4a-bf4a-3b50-4eca-2d81c64a7236",
+    "slug": "the-hat-pinned-with-flowers-le-chapeau-epingle-met-358922",
+    "title": "The Hat Pinned with Flowers (Le Chapeau Épinglé)",
+    "year": "1898",
+    "medium": "Color lithograph on off-white laid paper",
+    "dimensions": "image: 24 3/16 x 19 9/16 in. (61.5 x 49.7 cm)\r\nsheet: 35 5/8 x 24 15/16 in. (90.5 x 63.3 cm)",
+    "description": "The Hat Pinned with Flowers (Le Chapeau Épinglé) (1898). Auguste Renoir; Color lithograph on off-white laid paper. Collection: The Metropolitan Museum of Art. Credit: Harris Brisbane Dick Fund, 1931",
+    "movement": "Prints",
+    "tags": [
+      "hats",
+      "girls",
+      "flowers",
+      "prints",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "hats",
+        "girls",
+        "flowers"
+      ],
+      "mediumCategory": "prints",
+      "period": "1898",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "e81d5813-22c6-d030-914e-8c254f110af5",
+      "slug": "auguste-renoir-met-e81d5813",
+      "name": "Auguste Renoir",
+      "nationality": "French",
+      "biography": "French, Limoges 1841–1919 Cagnes-sur-Mer"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "444 / 625",
+      "background": "#ede8df",
+      "alt": "The Hat Pinned with Flowers (Le Chapeau Épinglé) by Auguste Renoir, 1898. Color lithograph on off-white laid paper. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-358922.webp",
+      "width": 444,
+      "height": 625
+    },
+    "recommendationReason": "Explore prints from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Harris Brisbane Dick Fund, 1931 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/358922"
+    }
+  },
+  {
+    "id": "92b03236-3de2-6798-9f55-dee067253be2",
+    "slug": "auguste-rodin-met-358923",
+    "title": "Auguste Rodin",
+    "year": "1900",
+    "medium": "Lithograph on off white wove paper",
+    "dimensions": "Plate: 15 3/8 × 15 3/8 in. (39 × 39 cm)\r\nSheet: 25 3/8 × 19 7/8 in. (64.5 × 50.5 cm)",
+    "description": "Auguste Rodin (1900). Auguste Renoir; Lithograph on off white wove paper. Collection: The Metropolitan Museum of Art. Credit: Harris Brisbane Dick Fund, 1931",
+    "movement": "Prints",
+    "tags": [
+      "men",
+      "portraits",
+      "prints",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "men",
+        "portraits"
+      ],
+      "mediumCategory": "prints",
+      "period": "1900",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "e81d5813-22c6-d030-914e-8c254f110af5",
+      "slug": "auguste-renoir-met-e81d5813",
+      "name": "Auguste Renoir",
+      "nationality": "French",
+      "biography": "French, Limoges 1841–1919 Cagnes-sur-Mer"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "489 / 624",
+      "background": "#ede8df",
+      "alt": "Auguste Rodin by Auguste Renoir, 1900. Lithograph on off white wove paper. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-358923.webp",
+      "width": 489,
+      "height": 624
+    },
+    "recommendationReason": "Explore prints from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Harris Brisbane Dick Fund, 1931 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/358923"
+    }
+  },
+  {
+    "id": "c2442f4f-5d22-4275-d2e8-99f51b520f25",
+    "slug": "the-two-bathers-met-358926",
+    "title": "The Two Bathers",
+    "year": "1895",
+    "medium": "Etching on cream wove paper; only state",
+    "dimensions": "sheet: 23 3/8 x 16 15/16 in. (59.3 x 43 cm)\r\nplate: 10 1/4 x 9 1/2 in. (26 x 24.2 cm)",
+    "description": "The Two Bathers (1895). Auguste Renoir; Etching on cream wove paper; only state. Collection: The Metropolitan Museum of Art. Credit: Bequest of Scofield Thayer, 1982",
+    "movement": "Prints",
+    "tags": [
+      "female nudes",
+      "bathing",
+      "prints",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "female nudes",
+        "bathing"
+      ],
+      "mediumCategory": "prints",
+      "period": "1895",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "e81d5813-22c6-d030-914e-8c254f110af5",
+      "slug": "auguste-renoir-met-e81d5813",
+      "name": "Auguste Renoir",
+      "nationality": "French",
+      "biography": "French, Limoges 1841–1919 Cagnes-sur-Mer"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "541 / 624",
+      "background": "#ede8df",
+      "alt": "The Two Bathers by Auguste Renoir, 1895. Etching on cream wove paper; only state. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-358926.webp",
+      "width": 541,
+      "height": 624
+    },
+    "recommendationReason": "Explore prints from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Bequest of Scofield Thayer, 1982 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/358926"
+    }
+  },
+  {
+    "id": "5de90a00-d6d4-a6a8-834d-95dd07e7bac3",
+    "slug": "day-le-jour-from-the-series-dreams-songes-plate-vi-met-359761",
+    "title": "Day (Le Jour), from the series, Dreams (Songes), plate VI",
+    "year": "1891",
+    "medium": "Lithograph on chine collé; only state",
+    "dimensions": "image: 8 1/4 x 6 1/8 in. (21 x 15.6 cm)\r\nsheet: 17 5/8 x 12 7/16 in. (44.8 x 31.6 cm)",
+    "description": "Day (Le Jour), from the series, Dreams (Songes), plate VI (1891). Odilon Redon; Lithograph on chine collé; only state. Collection: The Metropolitan Museum of Art. Credit: Rogers Fund, 1920",
+    "movement": "Prints",
+    "tags": [
+      "windows",
+      "trees",
+      "prints",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "windows",
+        "trees"
+      ],
+      "mediumCategory": "prints",
+      "period": "1891",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "9336d52e-cbbb-7187-6af8-c1662cc81e10",
+      "slug": "odilon-redon-met-9336d52e",
+      "name": "Odilon Redon",
+      "nationality": "French",
+      "biography": "French, Bordeaux 1840–1916 Paris"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "426 / 625",
+      "background": "#ede8df",
+      "alt": "Day (Le Jour), from the series, Dreams (Songes), plate VI by Odilon Redon, 1891. Lithograph on chine collé; only state. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-359761.webp",
+      "width": 426,
+      "height": 625
+    },
+    "recommendationReason": "Explore prints from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Rogers Fund, 1920 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/359761"
+    }
+  },
+  {
+    "id": "012b0e82-f6a8-96a1-9131-d089166e621b",
+    "slug": "rivaux-abbey-yorkshire-part-x-plate-51-from-liber-studiorum-met-359775",
+    "title": "Rivaux Abbey, Yorkshire, part X, plate 51 from \"Liber Studiorum\"",
+    "year": "May 23, 1812",
+    "medium": "Etching and mezzotint; first state of four",
+    "dimensions": "plate: 7 1/4 x 10 9/16 in. (18.4 x 26.8 cm)\r\nsheet: 8 9/16 x 11 15/16 in. (21.7 x 30.3 cm)",
+    "description": "Rivaux Abbey, Yorkshire, part X, plate 51 from \"Liber Studiorum\" (May 23, 1812). Designed and etched by Joseph Mallord William Turner; Etching and mezzotint; first state of four. Collection: The Metropolitan Museum of Art. Credit: Harris Brisbane Dick Fund, 1928",
+    "movement": "Prints",
+    "tags": [
+      "abbeys",
+      "ruins",
+      "prints",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "abbeys",
+        "ruins"
+      ],
+      "mediumCategory": "prints",
+      "period": "May 23, 1812",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "e36c8c53-fc01-cf75-cf73-27e310e7d1ea",
+      "slug": "designed-and-etched-by-joseph-mallord-william-turner-met-e36c8c53",
+      "name": "Designed and etched by Joseph Mallord William Turner",
+      "nationality": "British",
+      "biography": "British, London 1775–1851 London"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "599 / 443",
+      "background": "#ede8df",
+      "alt": "Rivaux Abbey, Yorkshire, part X, plate 51 from \"Liber Studiorum\" by Designed and etched by Joseph Mallord William Turner, May 23, 1812. Etching and mezzotint; first state of four. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-359775.webp",
+      "width": 599,
+      "height": 443
+    },
+    "recommendationReason": "Explore prints from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Harris Brisbane Dick Fund, 1928 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/359775"
+    }
+  },
+  {
+    "id": "4565f416-8c6d-70f1-0bcf-e2bbbbd632c6",
+    "slug": "lake-of-thun-swiss-part-iii-plate-15-from-liber-studiorum-met-359776",
+    "title": "Lake of Thun, Swiss, part III, plate 15 from \"Liber Studiorum\"",
+    "year": "June 10, 1808",
+    "medium": "Etching, drypoint and mezzotint; first state of three",
+    "dimensions": "plate: 7 3/16 x 10 7/16 in. (18.3 x 26.5 cm)\r\nsheet: 8 1/2 x 11 7/16 in. (21.6 x 29.1 cm)",
+    "description": "Lake of Thun, Swiss, part III, plate 15 from \"Liber Studiorum\" (June 10, 1808). Designed and etched by Joseph Mallord William Turner; Etching, drypoint and mezzotint; first state of three. Collection: The Metropolitan Museum of Art. Credit: Harris Brisbane Dick Fund, 1928",
+    "movement": "Prints",
+    "tags": [
+      "men",
+      "lakes",
+      "mountains",
+      "waves",
+      "carts",
+      "prints",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "men",
+        "lakes",
+        "mountains",
+        "waves",
+        "carts"
+      ],
+      "mediumCategory": "prints",
+      "period": "June 10, 1808",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "e36c8c53-fc01-cf75-cf73-27e310e7d1ea",
+      "slug": "designed-and-etched-by-joseph-mallord-william-turner-met-e36c8c53",
+      "name": "Designed and etched by Joseph Mallord William Turner",
+      "nationality": "British",
+      "biography": "British, London 1775–1851 London"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "599 / 442",
+      "background": "#ede8df",
+      "alt": "Lake of Thun, Swiss, part III, plate 15 from \"Liber Studiorum\" by Designed and etched by Joseph Mallord William Turner, June 10, 1808. Etching, drypoint and mezzotint; first state of three. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-359776.webp",
+      "width": 599,
+      "height": 442
+    },
+    "recommendationReason": "Explore prints from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Harris Brisbane Dick Fund, 1928 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/359776"
+    }
+  },
+  {
+    "id": "51da1ddf-18f8-f191-16a7-33942861d95d",
+    "slug": "the-old-knight-met-360189",
+    "title": "The Old Knight",
+    "year": "1896",
+    "medium": "Lithograph on chine collé",
+    "dimensions": "Image: 11 13/16 x 9 1/4 in. (30 x 23.5 cm)\r\nSheet: 18 3/16 × 13 1/16 in. (46.2 × 33.2 cm)",
+    "description": "The Old Knight (1896). Odilon Redon; Lithograph on chine collé. Collection: The Metropolitan Museum of Art. Credit: Harris Brisbane Dick Fund, 1926",
+    "movement": "Prints",
+    "tags": [
+      "men",
+      "knights",
+      "prints",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "men",
+        "knights"
+      ],
+      "mediumCategory": "prints",
+      "period": "1896",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "9336d52e-cbbb-7187-6af8-c1662cc81e10",
+      "slug": "odilon-redon-met-9336d52e",
+      "name": "Odilon Redon",
+      "nationality": "French",
+      "biography": "French, Bordeaux 1840–1916 Paris"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "480 / 625",
+      "background": "#ede8df",
+      "alt": "The Old Knight by Odilon Redon, 1896. Lithograph on chine collé. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-360189.webp",
+      "width": 480,
+      "height": 625
+    },
+    "recommendationReason": "Explore prints from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Harris Brisbane Dick Fund, 1926 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/360189"
+    }
+  },
+  {
+    "id": "705d44a1-6f75-be8a-47fe-1a4d7e954253",
+    "slug": "dark-prison-carcere-oscura-met-361825",
+    "title": "Dark Prison (Carcere Oscura)",
+    "year": "1790–99",
+    "medium": "Watercolor over graphite",
+    "dimensions": "Sheet: 14 3/16 x 9 1/4 in. (36 x 23.5 cm)",
+    "description": "Dark Prison (Carcere Oscura) (1790–99). Joseph Mallord William Turner; Watercolor over graphite. Collection: The Metropolitan Museum of Art. Credit: Rogers Fund, 1906",
+    "movement": "Drawings",
+    "tags": [
+      "prisons",
+      "interiors",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "prisons",
+        "interiors"
+      ],
+      "mediumCategory": "drawings",
+      "period": "1790–99",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "6bd7d3a6-432b-3c5d-d6c8-56ec42cd7959",
+      "slug": "joseph-mallord-william-turner-met-6bd7d3a6",
+      "name": "Joseph Mallord William Turner",
+      "nationality": "British",
+      "biography": "British, London 1775–1851 London"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "426 / 624",
+      "background": "#ede8df",
+      "alt": "Dark Prison (Carcere Oscura) by Joseph Mallord William Turner, 1790–99. Watercolor over graphite. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-361825.webp",
+      "width": 426,
+      "height": 624
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Rogers Fund, 1906 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/361825"
+    }
+  },
+  {
+    "id": "a14448af-238d-7b4b-8ec8-399b13889653",
+    "slug": "poem-by-jito-tenno-empress-jito-from-the-series-one-hundred-poems-explained-by-the-nu-met-36485",
+    "title": "Poem by Jitō Tenno (Empress Jitō), from the series One Hundred Poems Explained by the Nurse (Hyakunin isshu uba ga etoki)",
+    "year": "1839",
+    "medium": "Woodblock print; ink and color on paper",
+    "dimensions": "10 1/8 x 14 3/4 in. (25.7 x 37.5 cm)",
+    "description": "Poem by Jitō Tenno (Empress Jitō), from the series One Hundred Poems Explained by the Nurse (Hyakunin isshu uba ga etoki) (1839). Katsushika Hokusai; Woodblock print; ink and color on paper. Collection: The Metropolitan Museum of Art. Credit: Rogers Fund, 1914",
+    "movement": "Prints",
+    "tags": [
+      "men",
+      "rivers",
+      "prints",
+      "asian art"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "men",
+        "rivers"
+      ],
+      "mediumCategory": "prints",
+      "period": "Edo period (1615–1868)",
+      "geography": "Japan"
+    },
+    "artist": {
+      "id": "9e524268-edf4-e793-6c46-c3d7c248fb81",
+      "slug": "katsushika-hokusai-met-9e524268",
+      "name": "Katsushika Hokusai",
+      "nationality": "Japanese",
+      "biography": "Japanese, Tokyo (Edo) 1760–1849 Tokyo (Edo)"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "599 / 414",
+      "background": "#ede8df",
+      "alt": "Poem by Jitō Tenno (Empress Jitō), from the series One Hundred Poems Explained by the Nurse (Hyakunin isshu uba ga etoki) by Katsushika Hokusai, 1839. Woodblock print; ink and color on paper. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-36485.webp",
+      "width": 599,
+      "height": 414
+    },
+    "recommendationReason": "Explore prints from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Rogers Fund, 1914 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/36485"
+    }
+  },
+  {
+    "id": "9457102b-b2a8-6341-94de-57043177ab1c",
+    "slug": "poem-by-kakinomoto-hitomaro-from-the-series-one-hundred-poems-explained-by-the-nurse--met-36486",
+    "title": "Poem by Kakinomoto Hitomaro, from the series One Hundred Poems Explained by the Nurse (Hyakunin isshu uba ga etoki)",
+    "year": "1839",
+    "medium": "Woodblock print; ink and color on paper",
+    "dimensions": "9 7/8 x 14 in. (25.1 x 35.6 cm)",
+    "description": "Poem by Kakinomoto Hitomaro, from the series One Hundred Poems Explained by the Nurse (Hyakunin isshu uba ga etoki) (1839). Katsushika Hokusai; Woodblock print; ink and color on paper. Collection: The Metropolitan Museum of Art. Credit: Rogers Fund, 1914",
+    "movement": "Prints",
+    "tags": [
+      "men",
+      "hills",
+      "landscapes",
+      "prints",
+      "asian art"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "men",
+        "hills",
+        "landscapes"
+      ],
+      "mediumCategory": "prints",
+      "period": "Edo period (1615–1868)",
+      "geography": "Japan"
+    },
+    "artist": {
+      "id": "9e524268-edf4-e793-6c46-c3d7c248fb81",
+      "slug": "katsushika-hokusai-met-9e524268",
+      "name": "Katsushika Hokusai",
+      "nationality": "Japanese",
+      "biography": "Japanese, Tokyo (Edo) 1760–1849 Tokyo (Edo)"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "599 / 409",
+      "background": "#ede8df",
+      "alt": "Poem by Kakinomoto Hitomaro, from the series One Hundred Poems Explained by the Nurse (Hyakunin isshu uba ga etoki) by Katsushika Hokusai, 1839. Woodblock print; ink and color on paper. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-36486.webp",
+      "width": 599,
+      "height": 409
+    },
+    "recommendationReason": "Explore prints from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Rogers Fund, 1914 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/36486"
+    }
+  },
+  {
+    "id": "d6f91007-9ba5-fa95-267d-b98a3de6e59b",
+    "slug": "poem-by-kanke-sugawara-michizane-from-the-series-one-hundred-poems-explained-by-the-n-met-36487",
+    "title": "Poem by Kanke (Sugawara Michizane), from the series One Hundred Poems Explained by the Nurse (Hyakunin isshu uba ga etoki)",
+    "year": "ca. 1839",
+    "medium": "Woodblock print; ink and color on paper",
+    "dimensions": "10 x 14 3/5 in. (25.4 x 37.1 cm)",
+    "description": "Poem by Kanke (Sugawara Michizane), from the series One Hundred Poems Explained by the Nurse (Hyakunin isshu uba ga etoki) (ca. 1839). Katsushika Hokusai; Woodblock print; ink and color on paper. Collection: The Metropolitan Museum of Art. Credit: Rogers Fund, 1914",
+    "movement": "Prints",
+    "tags": [
+      "poetry",
+      "men",
+      "bulls",
+      "carts",
+      "prints",
+      "asian art"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "poetry",
+        "men",
+        "bulls",
+        "carts"
+      ],
+      "mediumCategory": "prints",
+      "period": "Edo period (1615–1868)",
+      "geography": "Japan"
+    },
+    "artist": {
+      "id": "9e524268-edf4-e793-6c46-c3d7c248fb81",
+      "slug": "katsushika-hokusai-met-9e524268",
+      "name": "Katsushika Hokusai",
+      "nationality": "Japanese",
+      "biography": "Japanese, Tokyo (Edo) 1760–1849 Tokyo (Edo)"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "599 / 411",
+      "background": "#ede8df",
+      "alt": "Poem by Kanke (Sugawara Michizane), from the series One Hundred Poems Explained by the Nurse (Hyakunin isshu uba ga etoki) by Katsushika Hokusai, ca. 1839. Woodblock print; ink and color on paper. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-36487.webp",
+      "width": 599,
+      "height": 411
+    },
+    "recommendationReason": "Explore prints from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Rogers Fund, 1914 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/36487"
+    }
+  },
+  {
+    "id": "dcad1e67-6b55-1091-a947-825c0148095a",
+    "slug": "poem-by-onakatomi-no-yoshinobu-ason-from-the-series-one-hundred-poems-explained-by-th-met-36488",
+    "title": "Poem by Ōnakatomi no Yoshinobu Ason, from the series One Hundred Poems Explained by the Nurse (Hyakunin isshu uba ga etoki)",
+    "year": "1839",
+    "medium": "Woodblock print; ink and color on paper",
+    "dimensions": "10 x 14 1/8 in. (25.4 x 35.9 cm)",
+    "description": "Poem by Ōnakatomi no Yoshinobu Ason, from the series One Hundred Poems Explained by the Nurse (Hyakunin isshu uba ga etoki) (1839). Katsushika Hokusai; Woodblock print; ink and color on paper. Collection: The Metropolitan Museum of Art. Credit: Rogers Fund, 1914",
+    "movement": "Prints",
+    "tags": [
+      "human figures",
+      "trees",
+      "prints",
+      "asian art"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "human figures",
+        "trees"
+      ],
+      "mediumCategory": "prints",
+      "period": "Edo period (1615–1868)",
+      "geography": "Japan"
+    },
+    "artist": {
+      "id": "9e524268-edf4-e793-6c46-c3d7c248fb81",
+      "slug": "katsushika-hokusai-met-9e524268",
+      "name": "Katsushika Hokusai",
+      "nationality": "Japanese",
+      "biography": "Japanese, Tokyo (Edo) 1760–1849 Tokyo (Edo)"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "599 / 413",
+      "background": "#ede8df",
+      "alt": "Poem by Ōnakatomi no Yoshinobu Ason, from the series One Hundred Poems Explained by the Nurse (Hyakunin isshu uba ga etoki) by Katsushika Hokusai, 1839. Woodblock print; ink and color on paper. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-36488.webp",
+      "width": 599,
+      "height": 413
+    },
+    "recommendationReason": "Explore prints from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Rogers Fund, 1914 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/36488"
+    }
+  },
+  {
+    "id": "5da141a4-6c4e-fc18-c089-006f11be668d",
+    "slug": "kintai-bridge-in-suo-province-suo-no-kuni-kintaibashi-from-the-series-remarkable-view-met-36489",
+    "title": "Kintai Bridge in Suō Province (Suō no kuni Kintaibashi), from the series Remarkable Views of Bridges in Various Provinces (Shokoku meikyō kiran)",
+    "year": "1827–30",
+    "medium": "Woodblock print; ink and color on paper",
+    "dimensions": "10 7/32 x 15 7/32 in. (26.0 x 38.7 cm)",
+    "description": "Kintai Bridge in Suō Province (Suō no kuni Kintaibashi), from the series Remarkable Views of Bridges in Various Provinces (Shokoku meikyō kiran) (1827–30). Katsushika Hokusai; Woodblock print; ink and color on paper. Collection: The Metropolitan Museum of Art. Credit: Rogers Fund, 1914",
+    "movement": "Prints",
+    "tags": [
+      "bridges",
+      "landscapes",
+      "prints",
+      "asian art"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "bridges",
+        "landscapes"
+      ],
+      "mediumCategory": "prints",
+      "period": "Edo period (1615–1868)",
+      "geography": "Japan"
+    },
+    "artist": {
+      "id": "9e524268-edf4-e793-6c46-c3d7c248fb81",
+      "slug": "katsushika-hokusai-met-9e524268",
+      "name": "Katsushika Hokusai",
+      "nationality": "Japanese",
+      "biography": "Japanese, Tokyo (Edo) 1760–1849 Tokyo (Edo)"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "599 / 414",
+      "background": "#ede8df",
+      "alt": "Kintai Bridge in Suō Province (Suō no kuni Kintaibashi), from the series Remarkable Views of Bridges in Various Provinces (Shokoku meikyō kiran) by Katsushika Hokusai, 1827–30. Woodblock print; ink and color on paper. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-36489.webp",
+      "width": 599,
+      "height": 414
+    },
+    "recommendationReason": "Explore prints from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Rogers Fund, 1914 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/36489"
+    }
+  },
+  {
+    "id": "c271aacf-843e-822e-76f5-027879e4ff25",
+    "slug": "south-wind-clear-sky-gaifu-kaisei-also-known-as-red-fuji-from-the-series-thirty-six-v-met-36490",
+    "title": "South Wind, Clear Sky (Gaifū kaisei), also known as Red Fuji, from the series Thirty-six Views of Mount Fuji (Fugaku sanjūrokkei)",
+    "year": "ca. 1830–32",
+    "medium": "Woodblock print; ink and color on paper",
+    "dimensions": "9 5/8 x 14 in. (24.4 x 35.6 cm)",
+    "description": "South Wind, Clear Sky (Gaifū kaisei), also known as Red Fuji, from the series Thirty-six Views of Mount Fuji (Fugaku sanjūrokkei) (ca. 1830–32). Katsushika Hokusai; Woodblock print; ink and color on paper. Collection: The Metropolitan Museum of Art. Credit: Rogers Fund, 1914",
+    "movement": "Prints",
+    "tags": [
+      "mountains",
+      "prints",
+      "asian art"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "mountains"
+      ],
+      "mediumCategory": "prints",
+      "period": "Edo period (1615–1868)",
+      "geography": "Japan"
+    },
+    "artist": {
+      "id": "9e524268-edf4-e793-6c46-c3d7c248fb81",
+      "slug": "katsushika-hokusai-met-9e524268",
+      "name": "Katsushika Hokusai",
+      "nationality": "Japanese",
+      "biography": "Japanese, Tokyo (Edo) 1760–1849 Tokyo (Edo)"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "599 / 413",
+      "background": "#ede8df",
+      "alt": "South Wind, Clear Sky (Gaifū kaisei), also known as Red Fuji, from the series Thirty-six Views of Mount Fuji (Fugaku sanjūrokkei) by Katsushika Hokusai, ca. 1830–32. Woodblock print; ink and color on paper. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-36490.webp",
+      "width": 599,
+      "height": 413
+    },
+    "recommendationReason": "Explore prints from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Rogers Fund, 1914 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/36490"
+    }
+  },
+  {
+    "id": "dc4fd8c4-80b3-a5cb-693c-eb6261b06300",
+    "slug": "under-the-wave-off-kanagawa-kanagawa-oki-nami-ura-also-known-as-the-great-wave-from-t-met-36491",
+    "title": "Under the Wave off Kanagawa (Kanagawa oki nami ura), also known as The Great Wave, from the series Thirty-six Views of Mount Fuji (Fugaku sanjūrokkei)",
+    "year": "ca. 1830–32",
+    "medium": "Woodblock print; ink and color on paper",
+    "dimensions": "9 5/8 x 14 1/16 in. (24.4 x 35.7 cm)",
+    "description": "Under the Wave off Kanagawa (Kanagawa oki nami ura), also known as The Great Wave, from the series Thirty-six Views of Mount Fuji (Fugaku sanjūrokkei) (ca. 1830–32). Katsushika Hokusai; Woodblock print; ink and color on paper. Collection: The Metropolitan Museum of Art. Credit: Rogers Fund, 1914",
+    "movement": "Prints",
+    "tags": [
+      "waves",
+      "prints",
+      "asian art"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "waves"
+      ],
+      "mediumCategory": "prints",
+      "period": "Edo period (1615–1868)",
+      "geography": "Japan"
+    },
+    "artist": {
+      "id": "9e524268-edf4-e793-6c46-c3d7c248fb81",
+      "slug": "katsushika-hokusai-met-9e524268",
+      "name": "Katsushika Hokusai",
+      "nationality": "Japanese",
+      "biography": "Japanese, Tokyo (Edo) 1760–1849 Tokyo (Edo)"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "600 / 414",
+      "background": "#ede8df",
+      "alt": "Under the Wave off Kanagawa (Kanagawa oki nami ura), also known as The Great Wave, from the series Thirty-six Views of Mount Fuji (Fugaku sanjūrokkei) by Katsushika Hokusai, ca. 1830–32. Woodblock print; ink and color on paper. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-36491.webp",
+      "width": 600,
+      "height": 414
+    },
+    "recommendationReason": "Explore prints from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Rogers Fund, 1914 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/36491"
+    }
+  },
+  {
+    "id": "5ef4b9f2-e066-3463-c16f-6ae82ccfea3f",
+    "slug": "storm-below-mount-fuji-sanka-no-haku-u-from-the-series-thirty-six-views-of-mount-fuji-met-36492",
+    "title": "Storm below Mount Fuji (Sanka no haku u), from the series Thirty-six Views of Mount Fuji (Fugaku sanjūrokkei)",
+    "year": "ca. 1830–32",
+    "medium": "Woodblock print; ink and color on paper",
+    "dimensions": "10 1/8 x 15 1/8 in. (25.7 x 38.4 cm)",
+    "description": "Storm below Mount Fuji (Sanka no haku u), from the series Thirty-six Views of Mount Fuji (Fugaku sanjūrokkei) (ca. 1830–32). Katsushika Hokusai; Woodblock print; ink and color on paper. Collection: The Metropolitan Museum of Art. Credit: Rogers Fund, 1914",
+    "movement": "Prints",
+    "tags": [
+      "mountains",
+      "storms",
+      "prints",
+      "asian art"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "mountains",
+        "storms"
+      ],
+      "mediumCategory": "prints",
+      "period": "Edo period (1615–1868)",
+      "geography": "Japan"
+    },
+    "artist": {
+      "id": "9e524268-edf4-e793-6c46-c3d7c248fb81",
+      "slug": "katsushika-hokusai-met-9e524268",
+      "name": "Katsushika Hokusai",
+      "nationality": "Japanese",
+      "biography": "Japanese, Tokyo (Edo) 1760–1849 Tokyo (Edo)"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "600 / 407",
+      "background": "#ede8df",
+      "alt": "Storm below Mount Fuji (Sanka no haku u), from the series Thirty-six Views of Mount Fuji (Fugaku sanjūrokkei) by Katsushika Hokusai, ca. 1830–32. Woodblock print; ink and color on paper. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-36492.webp",
+      "width": 600,
+      "height": 407
+    },
+    "recommendationReason": "Explore prints from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Rogers Fund, 1914 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/36492"
+    }
+  },
+  {
+    "id": "b8a9357c-2449-1040-cd2a-fc884d7e90c7",
+    "slug": "haneda-rakugan-met-36512",
+    "title": "Haneda Rakugan",
+    "year": "ca. 1835",
+    "medium": "Woodblock print; ink and color on paper",
+    "dimensions": "9 15/32 x 13 27/32 in. (24.1 x 35.2 cm)",
+    "description": "Haneda Rakugan (ca. 1835). Utagawa Hiroshige; Woodblock print; ink and color on paper. Collection: The Metropolitan Museum of Art. Credit: Rogers Fund, 1914",
+    "movement": "Prints",
+    "tags": [
+      "landscapes",
+      "prints",
+      "asian art"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "landscapes"
+      ],
+      "mediumCategory": "prints",
+      "period": "Edo period (1615–1868)",
+      "geography": "Japan"
+    },
+    "artist": {
+      "id": "a4adb2fa-da27-bd40-f4d0-4d3f81c1b07f",
+      "slug": "utagawa-hiroshige-met-a4adb2fa",
+      "name": "Utagawa Hiroshige",
+      "nationality": "Japanese",
+      "biography": "Japanese, Tokyo (Edo) 1797–1858 Tokyo (Edo)"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "599 / 411",
+      "background": "#ede8df",
+      "alt": "Haneda Rakugan by Utagawa Hiroshige, ca. 1835. Woodblock print; ink and color on paper. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-36512.webp",
+      "width": 599,
+      "height": 411
+    },
+    "recommendationReason": "Explore prints from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Rogers Fund, 1914 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/36512"
+    }
+  },
+  {
+    "id": "f8943714-1a19-4421-d754-cb7126eb99bf",
+    "slug": "oi-station-met-36513",
+    "title": "Ōi Station",
+    "year": "ca. 1835",
+    "medium": "Woodblock print; ink and color on paper",
+    "dimensions": "9 1/4 x 14 15/32 in. (23.5 x 36.8 cm)",
+    "description": "Ōi Station (ca. 1835). Utagawa Hiroshige; Woodblock print; ink and color on paper. Collection: The Metropolitan Museum of Art. Credit: Rogers Fund, 1914",
+    "movement": "Prints",
+    "tags": [
+      "human figures",
+      "hills",
+      "trees",
+      "snow",
+      "prints",
+      "asian art"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "human figures",
+        "hills",
+        "trees",
+        "snow"
+      ],
+      "mediumCategory": "prints",
+      "period": "Edo period (1615–1868)",
+      "geography": "Japan"
+    },
+    "artist": {
+      "id": "a4adb2fa-da27-bd40-f4d0-4d3f81c1b07f",
+      "slug": "utagawa-hiroshige-met-a4adb2fa",
+      "name": "Utagawa Hiroshige",
+      "nationality": "Japanese",
+      "biography": "Japanese, Tokyo (Edo) 1797–1858 Tokyo (Edo)"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "599 / 389",
+      "background": "#ede8df",
+      "alt": "Ōi Station by Utagawa Hiroshige, ca. 1835. Woodblock print; ink and color on paper. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-36513.webp",
+      "width": 599,
+      "height": 389
+    },
+    "recommendationReason": "Explore prints from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Rogers Fund, 1914 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/36513"
+    }
+  },
+  {
+    "id": "62fbe945-6ffc-06fb-c039-d6efed592894",
+    "slug": "cherry-blossoms-at-arashiyama-from-the-series-famous-places-of-kyoto-met-36515",
+    "title": "Cherry Blossoms at Arashiyama, from the series Famous Places of Kyōto",
+    "year": "ca. 1834",
+    "medium": "Woodblock print; ink and color on paper",
+    "dimensions": "9 3/8 x 14 15/32 in. (23.8 x 36.8 cm)",
+    "description": "Cherry Blossoms at Arashiyama, from the series Famous Places of Kyōto (ca. 1834). Utagawa Hiroshige; Woodblock print; ink and color on paper. Collection: The Metropolitan Museum of Art. Credit: Rogers Fund, 1914",
+    "movement": "Prints",
+    "tags": [
+      "human figures",
+      "trees",
+      "boats",
+      "prints",
+      "asian art"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "human figures",
+        "trees",
+        "boats"
+      ],
+      "mediumCategory": "prints",
+      "period": "Edo period (1615–1868)",
+      "geography": "Japan"
+    },
+    "artist": {
+      "id": "a4adb2fa-da27-bd40-f4d0-4d3f81c1b07f",
+      "slug": "utagawa-hiroshige-met-a4adb2fa",
+      "name": "Utagawa Hiroshige",
+      "nationality": "Japanese",
+      "biography": "Japanese, Tokyo (Edo) 1797–1858 Tokyo (Edo)"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "599 / 388",
+      "background": "#ede8df",
+      "alt": "Cherry Blossoms at Arashiyama, from the series Famous Places of Kyōto by Utagawa Hiroshige, ca. 1834. Woodblock print; ink and color on paper. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-36515.webp",
+      "width": 599,
+      "height": 388
+    },
+    "recommendationReason": "Explore prints from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Rogers Fund, 1914 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/36515"
+    }
+  },
+  {
+    "id": "a3befe93-b430-ea70-2d92-606a1097f781",
+    "slug": "yase-no-sato-met-36516",
+    "title": "Yase no Sato",
+    "year": "ca. 1834",
+    "medium": "Woodblock print; ink and color on paper",
+    "dimensions": "10 7/32 x 15 1/8 in. (26.0 x 38.4 cm)",
+    "description": "Yase no Sato (ca. 1834). Utagawa Hiroshige; Woodblock print; ink and color on paper. Collection: The Metropolitan Museum of Art. Credit: Rogers Fund, 1914",
+    "movement": "Prints",
+    "tags": [
+      "men",
+      "landscapes",
+      "prints",
+      "asian art"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "men",
+        "landscapes"
+      ],
+      "mediumCategory": "prints",
+      "period": "Edo period (1615–1868)",
+      "geography": "Japan"
+    },
+    "artist": {
+      "id": "a4adb2fa-da27-bd40-f4d0-4d3f81c1b07f",
+      "slug": "utagawa-hiroshige-met-a4adb2fa",
+      "name": "Utagawa Hiroshige",
+      "nationality": "Japanese",
+      "biography": "Japanese, Tokyo (Edo) 1797–1858 Tokyo (Edo)"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "599 / 410",
+      "background": "#ede8df",
+      "alt": "Yase no Sato by Utagawa Hiroshige, ca. 1834. Woodblock print; ink and color on paper. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-36516.webp",
+      "width": 599,
+      "height": 410
+    },
+    "recommendationReason": "Explore prints from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Rogers Fund, 1914 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/36516"
+    }
+  },
+  {
+    "id": "b4973d7d-420e-2266-5dc1-3884343a41a6",
+    "slug": "yodogawa-met-36517",
+    "title": "Yodogawa",
+    "year": "ca. 1834",
+    "medium": "Woodblock print; ink and color on paper",
+    "dimensions": "9 29/32 x 14 7/8 in. (25.2 x 37.8 cm)",
+    "description": "Yodogawa (ca. 1834). Utagawa Hiroshige; Woodblock print; ink and color on paper. Collection: The Metropolitan Museum of Art. Credit: Rogers Fund, 1914",
+    "movement": "Prints",
+    "tags": [
+      "men",
+      "boats",
+      "prints",
+      "asian art"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "men",
+        "boats"
+      ],
+      "mediumCategory": "prints",
+      "period": "Edo period (1615–1868)",
+      "geography": "Japan"
+    },
+    "artist": {
+      "id": "a4adb2fa-da27-bd40-f4d0-4d3f81c1b07f",
+      "slug": "utagawa-hiroshige-met-a4adb2fa",
+      "name": "Utagawa Hiroshige",
+      "nationality": "Japanese",
+      "biography": "Japanese, Tokyo (Edo) 1797–1858 Tokyo (Edo)"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "600 / 404",
+      "background": "#ede8df",
+      "alt": "Yodogawa by Utagawa Hiroshige, ca. 1834. Woodblock print; ink and color on paper. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-36517.webp",
+      "width": 600,
+      "height": 404
+    },
+    "recommendationReason": "Explore prints from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Rogers Fund, 1914 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/36517"
+    }
+  },
+  {
+    "id": "aaccb928-2cb9-950f-045b-e75700c456b4",
+    "slug": "mitsukei-tenryugawa-met-36518",
+    "title": "Mitsukei Tenryugawa",
+    "year": "ca. 1834",
+    "medium": "Woodblock print; ink and color on paper",
+    "dimensions": "9 3/4 x 14 29/32 in. (24.8 x 37.9 cm)",
+    "description": "Mitsukei Tenryugawa (ca. 1834). Utagawa Hiroshige; Woodblock print; ink and color on paper. Collection: The Metropolitan Museum of Art. Credit: Rogers Fund, 1914",
+    "movement": "Prints",
+    "tags": [
+      "boats",
+      "prints",
+      "asian art"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "boats"
+      ],
+      "mediumCategory": "prints",
+      "period": "Edo period (1615–1868)",
+      "geography": "Japan"
+    },
+    "artist": {
+      "id": "a4adb2fa-da27-bd40-f4d0-4d3f81c1b07f",
+      "slug": "utagawa-hiroshige-met-a4adb2fa",
+      "name": "Utagawa Hiroshige",
+      "nationality": "Japanese",
+      "biography": "Japanese, Tokyo (Edo) 1797–1858 Tokyo (Edo)"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "599 / 410",
+      "background": "#ede8df",
+      "alt": "Mitsukei Tenryugawa by Utagawa Hiroshige, ca. 1834. Woodblock print; ink and color on paper. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-36518.webp",
+      "width": 599,
+      "height": 410
+    },
+    "recommendationReason": "Explore prints from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Rogers Fund, 1914 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/36518"
+    }
+  },
+  {
+    "id": "62bc847f-fd5a-f9bb-6b1f-09c4c5a3df0f",
+    "slug": "morning-mist-at-mishima-met-36520",
+    "title": "Morning Mist at Mishima",
+    "year": "ca. 1833",
+    "medium": "Woodblock print; ink and color on paper",
+    "dimensions": "H. 9 1/2 in. (24.1 cm); W. 14 7/8 in. (37.8 cm)",
+    "description": "Morning Mist at Mishima (ca. 1833). Utagawa Hiroshige; Woodblock print; ink and color on paper. Collection: The Metropolitan Museum of Art. Credit: Rogers Fund, 1914",
+    "movement": "Prints",
+    "tags": [
+      "animals",
+      "gates",
+      "men",
+      "prints",
+      "asian art"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "animals",
+        "gates",
+        "men"
+      ],
+      "mediumCategory": "prints",
+      "period": "Edo period (1615–1868)",
+      "geography": "Japan"
+    },
+    "artist": {
+      "id": "a4adb2fa-da27-bd40-f4d0-4d3f81c1b07f",
+      "slug": "utagawa-hiroshige-met-a4adb2fa",
+      "name": "Utagawa Hiroshige",
+      "nationality": "Japanese",
+      "biography": "Japanese, Tokyo (Edo) 1797–1858 Tokyo (Edo)"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "599 / 398",
+      "background": "#ede8df",
+      "alt": "Morning Mist at Mishima by Utagawa Hiroshige, ca. 1833. Woodblock print; ink and color on paper. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-36520.webp",
+      "width": 599,
+      "height": 398
+    },
+    "recommendationReason": "Explore prints from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Rogers Fund, 1914 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/36520"
+    }
+  },
+  {
+    "id": "37c386b3-77eb-41db-66d5-26ff4e3a709e",
+    "slug": "sudden-shower-at-shono-from-the-series-fifty-three-stations-of-the-tokaido-met-36521",
+    "title": "Sudden Shower at Shōno, from the series Fifty-three Stations of the Tōkaidō",
+    "year": "1834–35",
+    "medium": "Woodblock print; ink and color on paper",
+    "dimensions": "Image: 9 3/4 x 14 1/4 in. (24.8 x 36.2 cm)",
+    "description": "Sudden Shower at Shōno, from the series Fifty-three Stations of the Tōkaidō (1834–35). Utagawa Hiroshige; Woodblock print; ink and color on paper. Collection: The Metropolitan Museum of Art. Credit: Rogers Fund, 1914",
+    "movement": "Prints",
+    "tags": [
+      "human figures",
+      "trees",
+      "rain",
+      "prints",
+      "asian art"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "human figures",
+        "trees",
+        "rain"
+      ],
+      "mediumCategory": "prints",
+      "period": "Edo period (1615–1868)",
+      "geography": "Japan"
+    },
+    "artist": {
+      "id": "a4adb2fa-da27-bd40-f4d0-4d3f81c1b07f",
+      "slug": "utagawa-hiroshige-met-a4adb2fa",
+      "name": "Utagawa Hiroshige",
+      "nationality": "Japanese",
+      "biography": "Japanese, Tokyo (Edo) 1797–1858 Tokyo (Edo)"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "599 / 406",
+      "background": "#ede8df",
+      "alt": "Sudden Shower at Shōno, from the series Fifty-three Stations of the Tōkaidō by Utagawa Hiroshige, 1834–35. Woodblock print; ink and color on paper. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-36521.webp",
+      "width": 599,
+      "height": 406
+    },
+    "recommendationReason": "Explore prints from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Rogers Fund, 1914 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/36521"
+    }
+  },
+  {
+    "id": "212f9b44-790c-be13-ce67-c9016f7fa8fd",
+    "slug": "the-charger-met-369616",
+    "title": "The Charger",
+    "year": "1894",
+    "medium": "Lithograph",
+    "dimensions": "sheet: 19 1/8 x 13 11/16 in. (48.5 x 34.8 cm)\r\nimage: 9 1/2 x 7 11/16 in. (24.1 x 19.5 cm)",
+    "description": "The Charger (1894). Odilon Redon; Lithograph. Collection: The Metropolitan Museum of Art. Credit: Rogers Fund, 1922",
+    "movement": "Prints",
+    "tags": [
+      "horses",
+      "prints",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "horses"
+      ],
+      "mediumCategory": "prints",
+      "period": "1894",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "9336d52e-cbbb-7187-6af8-c1662cc81e10",
+      "slug": "odilon-redon-met-9336d52e",
+      "name": "Odilon Redon",
+      "nationality": "French",
+      "biography": "French, Bordeaux 1840–1916 Paris"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "510 / 624",
+      "background": "#ede8df",
+      "alt": "The Charger by Odilon Redon, 1894. Lithograph. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-369616.webp",
+      "width": 510,
+      "height": 624
+    },
+    "recommendationReason": "Explore prints from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Rogers Fund, 1922 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/369616"
+    }
+  },
+  {
+    "id": "b9ea4f3b-2911-eac4-2818-be0545cdc9fe",
+    "slug": "caricature-of-a-man-pointing-met-381969",
+    "title": "Caricature of a Man Pointing",
+    "year": "1610–80",
+    "medium": "Pen and brown ink",
+    "dimensions": "Sheet: 5 1/16 x 4 1/8 in. (12.9 x 10.4 cm)",
+    "description": "Caricature of a Man Pointing (1610–80). Gian Lorenzo Bernini; Pen and brown ink. Collection: The Metropolitan Museum of Art. Credit: Purchase, Alain and Marie-Christine van den Broek d'Obrenan Gift, 2008",
+    "movement": "Drawings",
+    "tags": [
+      "men",
+      "caricature",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "men",
+        "caricature"
+      ],
+      "mediumCategory": "drawings",
+      "period": "1610–80",
+      "geography": "Italy"
+    },
+    "artist": {
+      "id": "0c77e837-a483-79ac-1ac0-e36bedbe40d9",
+      "slug": "gian-lorenzo-bernini-met-0c77e837",
+      "name": "Gian Lorenzo Bernini",
+      "nationality": "Italian",
+      "biography": "Italian, Naples 1598–1680 Rome"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "502 / 625",
+      "background": "#ede8df",
+      "alt": "Caricature of a Man Pointing by Gian Lorenzo Bernini, 1610–80. Pen and brown ink. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-381969.webp",
+      "width": 502,
+      "height": 625
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Purchase, Alain and Marie-Christine van den Broek d'Obrenan Gift, 2008 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/381969"
+    }
+  },
+  {
+    "id": "9c0d0fea-bc5e-b785-6233-4db5e559de22",
+    "slug": "frontispiece-from-liber-studiorum-met-382907",
+    "title": "Frontispiece from \"Liber Studiorum\"",
+    "year": "May 1812",
+    "medium": "Etching and mezzotint; first state of five (Finberg)",
+    "dimensions": "plate: 7 7/16 x 10 1/2 in. (18.9 x 26.7 cm)\r\nsheet: 8 3/8 x 11 11/16 in. (21.3 x 29.7 cm)",
+    "description": "Frontispiece from \"Liber Studiorum\" (May 1812). Designed, etched and engraved by Joseph Mallord William Turner; Etching and mezzotint; first state of five (Finberg). Collection: The Metropolitan Museum of Art. Credit: Harris Brisbane Dick Fund, 1928",
+    "movement": "Prints",
+    "tags": [
+      "prints",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [],
+      "mediumCategory": "prints",
+      "period": "May 1812",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "514d3afb-1b08-316a-a19d-1ef11fc0f2d3",
+      "slug": "designed-etched-and-engraved-by-joseph-mallord-william-turner-met-514d3afb",
+      "name": "Designed, etched and engraved by Joseph Mallord William Turner",
+      "nationality": "British",
+      "biography": "British, London 1775–1851 London"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "600 / 407",
+      "background": "#ede8df",
+      "alt": "Frontispiece from \"Liber Studiorum\" by Designed, etched and engraved by Joseph Mallord William Turner, May 1812. Etching and mezzotint; first state of five (Finberg). Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-382907.webp",
+      "width": 600,
+      "height": 407
+    },
+    "recommendationReason": "Explore prints from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Harris Brisbane Dick Fund, 1928 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/382907"
+    }
+  },
+  {
+    "id": "f7ed55f9-ffb5-313a-3a44-e51843959e65",
+    "slug": "bridge-and-cows-part-i-plate-2-from-liber-studiorum-met-382908",
+    "title": "Bridge and Cows, part I, plate 2 from \"Liber Studiorum\"",
+    "year": "June 11, 1807",
+    "medium": "Etching and mezzotint; second state of five (Finberg)",
+    "dimensions": "plate: 7 1/4 x 10 1/2 in. (18.4 x 26.7 cm)\r\nsheet: 8 1/4 x 11 1/2 in. (21 x 29.2 cm)",
+    "description": "Bridge and Cows, part I, plate 2 from \"Liber Studiorum\" (June 11, 1807). Designed and etched by Joseph Mallord William Turner; Etching and mezzotint; second state of five (Finberg). Collection: The Metropolitan Museum of Art. Credit: Harris Brisbane Dick Fund, 1928",
+    "movement": "Prints",
+    "tags": [
+      "bridges",
+      "cows",
+      "landscapes",
+      "prints",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "bridges",
+        "cows",
+        "landscapes"
+      ],
+      "mediumCategory": "prints",
+      "period": "June 11, 1807",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "e36c8c53-fc01-cf75-cf73-27e310e7d1ea",
+      "slug": "designed-and-etched-by-joseph-mallord-william-turner-met-e36c8c53",
+      "name": "Designed and etched by Joseph Mallord William Turner",
+      "nationality": "British",
+      "biography": "British, London 1775–1851 London"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "600 / 427",
+      "background": "#ede8df",
+      "alt": "Bridge and Cows, part I, plate 2 from \"Liber Studiorum\" by Designed and etched by Joseph Mallord William Turner, June 11, 1807. Etching and mezzotint; second state of five (Finberg). Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-382908.webp",
+      "width": 600,
+      "height": 427
+    },
+    "recommendationReason": "Explore prints from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Harris Brisbane Dick Fund, 1928 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/382908"
+    }
+  },
+  {
+    "id": "55706977-eba5-4970-f38c-80ecda7e942e",
+    "slug": "self-portrait-met-393509",
+    "title": "Self-Portrait",
+    "year": "ca. 1866",
+    "medium": "Conté crayon",
+    "dimensions": "sheet: 10 1/2 x 8 1/4 in. (26.7 x 21 cm)",
+    "description": "Self-Portrait (ca. 1866). Gustave Courbet; Conté crayon. Collection: The Metropolitan Museum of Art. Credit: Purchase, Walter and Leonore Annenberg Acquisitions Endowment Fund and Guy Wildenstein Gift, 2010",
+    "movement": "Drawings",
+    "tags": [
+      "men",
+      "self-portraits",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "men",
+        "self-portraits"
+      ],
+      "mediumCategory": "drawings",
+      "period": "ca. 1866",
+      "geography": "France"
+    },
+    "artist": {
+      "id": "7b4d0e0b-51ca-226a-e3e4-714fc2c84edf",
+      "slug": "gustave-courbet-met-7b4d0e0b",
+      "name": "Gustave Courbet",
+      "nationality": "French",
+      "biography": "French, Ornans 1819–1877 La Tour-de-Peilz"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "494 / 625",
+      "background": "#ede8df",
+      "alt": "Self-Portrait by Gustave Courbet, ca. 1866. Conté crayon. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-393509.webp",
+      "width": 494,
+      "height": 625
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Purchase, Walter and Leonore Annenberg Acquisitions Endowment Fund and Guy Wildenstein Gift, 2010 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/393509"
+    }
+  },
+  {
+    "id": "f064e4ee-6370-0228-ba3a-804db71999fc",
+    "slug": "isolated-view-of-bernini-s-baldacchino-plate-39-from-the-album-basilica-di-s-pietro-i-met-414596",
+    "title": "Isolated View of Bernini's Baldacchino. Plate 39 from the Album 'Basilica di S. Pietro in Vaticano'",
+    "year": "1653–91",
+    "medium": "Engraving",
+    "dimensions": "Plate: 26 1/2 x 14 7/16 in. (67.3 x 36.6 cm)\r\nSheet: 29 3/16 x 14 3/8 in. (74.2 x 36.5 cm)",
+    "description": "Isolated View of Bernini's Baldacchino. Plate 39 from the Album 'Basilica di S. Pietro in Vaticano' (1653–91). After Gian Lorenzo Bernini; Engraving. Collection: The Metropolitan Museum of Art. Credit: Harris Brisbane Dick Fund, 1945",
+    "movement": "Prints",
+    "tags": [
+      "architecture",
+      "angels",
+      "cross",
+      "prints",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "architecture",
+        "angels",
+        "cross"
+      ],
+      "mediumCategory": "prints",
+      "period": "1653–91",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "22c86008-1028-39aa-216e-bf28201271e9",
+      "slug": "after-gian-lorenzo-bernini-met-22c86008",
+      "name": "After Gian Lorenzo Bernini",
+      "nationality": "Italian",
+      "biography": "Italian, Naples 1598–1680 Rome"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "408 / 624",
+      "background": "#ede8df",
+      "alt": "Isolated View of Bernini's Baldacchino. Plate 39 from the Album 'Basilica di S. Pietro in Vaticano' by After Gian Lorenzo Bernini, 1653–91. Engraving. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-414596.webp",
+      "width": 408,
+      "height": 624
+    },
+    "recommendationReason": "Explore prints from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Harris Brisbane Dick Fund, 1945 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/414596"
+    }
+  },
+  {
+    "id": "d5acfd7c-bbac-b41a-2ba3-fd388d0a0425",
+    "slug": "mrs-james-pulham-sr-frances-amys-ca-1766-1856-met-435921",
+    "title": "Mrs. James Pulham Sr. (Frances Amys, ca. 1766–1856)",
+    "year": "1818",
+    "medium": "Oil on canvas",
+    "dimensions": "29 3/4 x 24 3/4 in. (75.6 x 62.9 cm)",
+    "description": "Mrs. James Pulham Sr. (Frances Amys, ca. 1766–1856) (1818). John Constable; Oil on canvas. Collection: The Metropolitan Museum of Art. Credit: Gift of George A. Hearn, 1906",
+    "movement": "Paintings",
+    "tags": [
+      "portraits",
+      "women",
+      "paintings",
+      "european paintings"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "portraits",
+        "women"
+      ],
+      "mediumCategory": "paintings",
+      "period": "1818",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "13eb7c04-ced6-e721-8695-c87e65ea6407",
+      "slug": "john-constable-met-13eb7c04",
+      "name": "John Constable",
+      "nationality": "British",
+      "biography": "British, East Bergholt 1776–1837 Hampstead"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "523 / 625",
+      "background": "#ede8df",
+      "alt": "Mrs. James Pulham Sr. (Frances Amys, ca. 1766–1856) by John Constable, 1818. Oil on canvas. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-435921.webp",
+      "width": 523,
+      "height": 625
+    },
+    "recommendationReason": "Explore paintings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Gift of George A. Hearn, 1906 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/435921"
+    }
+  },
+  {
+    "id": "96348beb-deab-c923-0d3a-3965b6685de1",
+    "slug": "salisbury-cathedral-from-the-bishop-s-grounds-met-435922",
+    "title": "Salisbury Cathedral from the Bishop's Grounds",
+    "year": "ca. 1825",
+    "medium": "Oil on canvas",
+    "dimensions": "34 5/8 x 44 in. (87.9 x 111.8 cm)",
+    "description": "Salisbury Cathedral from the Bishop's Grounds (ca. 1825). John Constable; Oil on canvas. Collection: The Metropolitan Museum of Art. Credit: Bequest of Mary Stillman Harkness, 1950",
+    "movement": "Paintings",
+    "tags": [
+      "cathedrals",
+      "cows",
+      "trees",
+      "paintings",
+      "european paintings"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "cathedrals",
+        "cows",
+        "trees"
+      ],
+      "mediumCategory": "paintings",
+      "period": "ca. 1825",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "13eb7c04-ced6-e721-8695-c87e65ea6407",
+      "slug": "john-constable-met-13eb7c04",
+      "name": "John Constable",
+      "nationality": "British",
+      "biography": "British, East Bergholt 1776–1837 Hampstead"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "599 / 472",
+      "background": "#ede8df",
+      "alt": "Salisbury Cathedral from the Bishop's Grounds by John Constable, ca. 1825. Oil on canvas. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-435922.webp",
+      "width": 599,
+      "height": 472
+    },
+    "recommendationReason": "Explore paintings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Bequest of Mary Stillman Harkness, 1950 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/435922"
+    }
+  },
+  {
+    "id": "13e5058a-9765-ca9d-c6a6-9333c7011ce2",
+    "slug": "stoke-by-nayland-met-435923",
+    "title": "Stoke-by-Nayland",
+    "year": "ca. 1810–11",
+    "medium": "Oil on canvas",
+    "dimensions": "11 1/8 x 14 1/4 in. (28.3 x 36.2 cm)",
+    "description": "Stoke-by-Nayland (ca. 1810–11). John Constable; Oil on canvas. Collection: The Metropolitan Museum of Art. Credit: Charles B. Curtis Fund, 1926",
+    "movement": "Paintings",
+    "tags": [
+      "landscapes",
+      "paintings",
+      "european paintings"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "landscapes"
+      ],
+      "mediumCategory": "paintings",
+      "period": "ca. 1810–11",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "13eb7c04-ced6-e721-8695-c87e65ea6407",
+      "slug": "john-constable-met-13eb7c04",
+      "name": "John Constable",
+      "nationality": "British",
+      "biography": "British, East Bergholt 1776–1837 Hampstead"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "600 / 472",
+      "background": "#ede8df",
+      "alt": "Stoke-by-Nayland by John Constable, ca. 1810–11. Oil on canvas. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-435923.webp",
+      "width": 600,
+      "height": 472
+    },
+    "recommendationReason": "Explore paintings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Charles B. Curtis Fund, 1926 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/435923"
+    }
+  },
+  {
+    "id": "a32e0878-2e58-9e41-2ff1-f08c18e9ecfa",
+    "slug": "madame-frederic-breyer-fanny-helene-van-bruyssel-1830-1894-met-436000",
+    "title": "Madame Frederic Breyer (Fanny Hélène Van Bruyssel, 1830–1894)",
+    "year": "1858",
+    "medium": "Oil on canvas",
+    "dimensions": "36 x 28 5/8 in. (91.4 x 72.7 cm)",
+    "description": "Madame Frederic Breyer (Fanny Hélène Van Bruyssel, 1830–1894) (1858). Gustave Courbet; Oil on canvas. Collection: The Metropolitan Museum of Art. Credit: H. O. Havemeyer Collection, Bequest of Mrs. H. O. Havemeyer, 1929",
+    "movement": "Paintings",
+    "tags": [
+      "portraits",
+      "women",
+      "paintings",
+      "european paintings"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "portraits",
+        "women"
+      ],
+      "mediumCategory": "paintings",
+      "period": "1858",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "7b4d0e0b-51ca-226a-e3e4-714fc2c84edf",
+      "slug": "gustave-courbet-met-7b4d0e0b",
+      "name": "Gustave Courbet",
+      "nationality": "French",
+      "biography": "French, Ornans 1819–1877 La Tour-de-Peilz"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "492 / 624",
+      "background": "#ede8df",
+      "alt": "Madame Frederic Breyer (Fanny Hélène Van Bruyssel, 1830–1894) by Gustave Courbet, 1858. Oil on canvas. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-436000.webp",
+      "width": 492,
+      "height": 624
+    },
+    "recommendationReason": "Explore paintings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. H. O. Havemeyer Collection, Bequest of Mrs. H. O. Havemeyer, 1929 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/436000"
+    }
+  },
+  {
+    "id": "af53a126-5289-9bde-a941-42aa28469a63",
+    "slug": "jo-la-belle-irlandaise-met-436001",
+    "title": "Jo, La Belle Irlandaise",
+    "year": "1865–66",
+    "medium": "Oil on canvas",
+    "dimensions": "22 x 26 in. (55.9 x 66 cm)",
+    "description": "Jo, La Belle Irlandaise (1865–66). Gustave Courbet; Oil on canvas. Collection: The Metropolitan Museum of Art. Credit: H. O. Havemeyer Collection, Bequest of Mrs. H. O. Havemeyer, 1929",
+    "movement": "Paintings",
+    "tags": [
+      "portraits",
+      "women",
+      "mirrors",
+      "paintings",
+      "european paintings"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "portraits",
+        "women",
+        "mirrors"
+      ],
+      "mediumCategory": "paintings",
+      "period": "1865–66",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "7b4d0e0b-51ca-226a-e3e4-714fc2c84edf",
+      "slug": "gustave-courbet-met-7b4d0e0b",
+      "name": "Gustave Courbet",
+      "nationality": "French",
+      "biography": "French, Ornans 1819–1877 La Tour-de-Peilz"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "600 / 509",
+      "background": "#ede8df",
+      "alt": "Jo, La Belle Irlandaise by Gustave Courbet, 1865–66. Oil on canvas. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-436001.webp",
+      "width": 600,
+      "height": 509
+    },
+    "recommendationReason": "Explore paintings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. H. O. Havemeyer Collection, Bequest of Mrs. H. O. Havemeyer, 1929 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/436001"
+    }
+  },
+  {
+    "id": "a833bcb5-8241-1f92-372f-a1d32ee83188",
+    "slug": "woman-with-a-parrot-met-436002",
+    "title": "Woman with a Parrot",
+    "year": "1866",
+    "medium": "Oil on canvas",
+    "dimensions": "51 x 77 in. (129.5 x 195.6 cm)",
+    "description": "Woman with a Parrot (1866). Gustave Courbet; Oil on canvas. Collection: The Metropolitan Museum of Art. Credit: H. O. Havemeyer Collection, Bequest of Mrs. H. O. Havemeyer, 1929",
+    "movement": "Paintings",
+    "tags": [
+      "female nudes",
+      "parrots",
+      "paintings",
+      "european paintings"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "female nudes",
+        "parrots"
+      ],
+      "mediumCategory": "paintings",
+      "period": "1866",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "7b4d0e0b-51ca-226a-e3e4-714fc2c84edf",
+      "slug": "gustave-courbet-met-7b4d0e0b",
+      "name": "Gustave Courbet",
+      "nationality": "French",
+      "biography": "French, Ornans 1819–1877 La Tour-de-Peilz"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "599 / 403",
+      "background": "#ede8df",
+      "alt": "Woman with a Parrot by Gustave Courbet, 1866. Oil on canvas. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-436002.webp",
+      "width": 599,
+      "height": 403
+    },
+    "recommendationReason": "Explore paintings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. H. O. Havemeyer Collection, Bequest of Mrs. H. O. Havemeyer, 1929 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/436002"
+    }
+  },
+  {
+    "id": "e0baffe6-5fa8-9396-d361-2d47bcdc8e68",
+    "slug": "the-young-bather-met-436003",
+    "title": "The Young Bather",
+    "year": "1866",
+    "medium": "Oil on canvas",
+    "dimensions": "51 1/4 x 38 1/4 in. (130.2 x 97.2 cm)",
+    "description": "The Young Bather (1866). Gustave Courbet; Oil on canvas. Collection: The Metropolitan Museum of Art. Credit: H. O. Havemeyer Collection, Bequest of Mrs. H. O. Havemeyer, 1929",
+    "movement": "Paintings",
+    "tags": [
+      "female nudes",
+      "bathing",
+      "paintings",
+      "european paintings"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "female nudes",
+        "bathing"
+      ],
+      "mediumCategory": "paintings",
+      "period": "1866",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "7b4d0e0b-51ca-226a-e3e4-714fc2c84edf",
+      "slug": "gustave-courbet-met-7b4d0e0b",
+      "name": "Gustave Courbet",
+      "nationality": "French",
+      "biography": "French, Ornans 1819–1877 La Tour-de-Peilz"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "472 / 625",
+      "background": "#ede8df",
+      "alt": "The Young Bather by Gustave Courbet, 1866. Oil on canvas. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-436003.webp",
+      "width": 472,
+      "height": 625
+    },
+    "recommendationReason": "Explore paintings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. H. O. Havemeyer Collection, Bequest of Mrs. H. O. Havemeyer, 1929 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/436003"
+    }
+  },
+  {
+    "id": "dbb83130-c2e8-bac7-35d8-81db071ea07c",
+    "slug": "the-woman-in-the-waves-met-436004",
+    "title": "The Woman in the Waves",
+    "year": "1868",
+    "medium": "Oil on canvas",
+    "dimensions": "25 3/4 x 21 1/4 in. (65.4 x 54 cm)",
+    "description": "The Woman in the Waves (1868). Gustave Courbet; Oil on canvas. Collection: The Metropolitan Museum of Art. Credit: H. O. Havemeyer Collection, Bequest of Mrs. H. O. Havemeyer, 1929",
+    "movement": "Paintings",
+    "tags": [
+      "female nudes",
+      "paintings",
+      "european paintings"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "female nudes"
+      ],
+      "mediumCategory": "paintings",
+      "period": "1868",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "7b4d0e0b-51ca-226a-e3e4-714fc2c84edf",
+      "slug": "gustave-courbet-met-7b4d0e0b",
+      "name": "Gustave Courbet",
+      "nationality": "French",
+      "biography": "French, Ornans 1819–1877 La Tour-de-Peilz"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "516 / 625",
+      "background": "#ede8df",
+      "alt": "The Woman in the Waves by Gustave Courbet, 1868. Oil on canvas. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-436004.webp",
+      "width": 516,
+      "height": 625
+    },
+    "recommendationReason": "Explore paintings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. H. O. Havemeyer Collection, Bequest of Mrs. H. O. Havemeyer, 1929 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/436004"
+    }
+  },
+  {
+    "id": "0588d01c-9fea-9d22-b80b-6dc24c585270",
+    "slug": "the-calm-sea-met-436005",
+    "title": "The Calm Sea",
+    "year": "1869",
+    "medium": "Oil on canvas",
+    "dimensions": "23 1/2 x 28 3/4 in. (59.7 x 73 cm)",
+    "description": "The Calm Sea (1869). Gustave Courbet; Oil on canvas. Collection: The Metropolitan Museum of Art. Credit: H. O. Havemeyer Collection, Bequest of Mrs. H. O. Havemeyer, 1929",
+    "movement": "Paintings",
+    "tags": [
+      "seascapes",
+      "clouds",
+      "boats",
+      "paintings",
+      "european paintings"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "seascapes",
+        "clouds",
+        "boats"
+      ],
+      "mediumCategory": "paintings",
+      "period": "1869",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "7b4d0e0b-51ca-226a-e3e4-714fc2c84edf",
+      "slug": "gustave-courbet-met-7b4d0e0b",
+      "name": "Gustave Courbet",
+      "nationality": "French",
+      "biography": "French, Ornans 1819–1877 La Tour-de-Peilz"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "599 / 489",
+      "background": "#ede8df",
+      "alt": "The Calm Sea by Gustave Courbet, 1869. Oil on canvas. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-436005.webp",
+      "width": 599,
+      "height": 489
+    },
+    "recommendationReason": "Explore paintings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. H. O. Havemeyer Collection, Bequest of Mrs. H. O. Havemeyer, 1929 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/436005"
+    }
+  },
+  {
+    "id": "f24c23af-e7d5-e9c7-cebb-e83a2525519b",
+    "slug": "sunflowers-met-436524",
+    "title": "Sunflowers",
+    "year": "1887",
+    "medium": "Oil on canvas",
+    "dimensions": "17 x 24 in. (43.2 x 61 cm)",
+    "description": "Sunflowers (1887). Vincent van Gogh; Oil on canvas. Collection: The Metropolitan Museum of Art. Credit: Rogers Fund, 1949",
+    "movement": "Paintings",
+    "tags": [
+      "sunflowers",
+      "still life",
+      "paintings",
+      "european paintings"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "sunflowers",
+        "still life"
+      ],
+      "mediumCategory": "paintings",
+      "period": "1887",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "bb7e7b17-2698-b302-5a9f-faa4e874f883",
+      "slug": "vincent-van-gogh-met-bb7e7b17",
+      "name": "Vincent van Gogh",
+      "nationality": "Dutch",
+      "biography": "Dutch, Zundert 1853–1890 Auvers-sur-Oise"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "599 / 423",
+      "background": "#ede8df",
+      "alt": "Sunflowers by Vincent van Gogh, 1887. Oil on canvas. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-436524.webp",
+      "width": 599,
+      "height": 423
+    },
+    "recommendationReason": "Explore paintings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Rogers Fund, 1949 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/436524"
+    }
+  },
+  {
+    "id": "ca757abd-1d5c-9d4d-91be-040857ba32f5",
+    "slug": "bouquet-of-flowers-in-a-vase-met-436525",
+    "title": "Bouquet of Flowers in a Vase",
+    "year": "1890",
+    "medium": "Oil on canvas",
+    "dimensions": "25 5/8 x 21 1/4 in. (65.1 x 54 cm)",
+    "description": "Bouquet of Flowers in a Vase (1890). Vincent van Gogh; Oil on canvas. Collection: The Metropolitan Museum of Art. Credit: The Walter H. and Leonore Annenberg Collection, Gift of Walter H. and Leonore Annenberg, 1993, Bequest of Walter H. Annenberg, 2002",
+    "movement": "Paintings",
+    "tags": [
+      "flowers",
+      "still life",
+      "paintings",
+      "european paintings"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "flowers",
+        "still life"
+      ],
+      "mediumCategory": "paintings",
+      "period": "1890",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "bb7e7b17-2698-b302-5a9f-faa4e874f883",
+      "slug": "vincent-van-gogh-met-bb7e7b17",
+      "name": "Vincent van Gogh",
+      "nationality": "Dutch",
+      "biography": "Dutch, Zundert 1853–1890 Auvers-sur-Oise"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "520 / 624",
+      "background": "#ede8df",
+      "alt": "Bouquet of Flowers in a Vase by Vincent van Gogh, 1890. Oil on canvas. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-436525.webp",
+      "width": 520,
+      "height": 624
+    },
+    "recommendationReason": "Explore paintings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. The Walter H. and Leonore Annenberg Collection, Gift of Walter H. and Leonore Annenberg, 1993, Bequest of Walter H. Annenberg, 2002 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/436525"
+    }
+  },
+  {
+    "id": "0ce75569-3baa-fa47-0b6e-2730e3bb9cce",
+    "slug": "first-steps-after-millet-met-436526",
+    "title": "First Steps, after Millet",
+    "year": "1890",
+    "medium": "Oil on canvas",
+    "dimensions": "28 1/2 x 35 7/8 in. (72.4 x 91.1 cm)",
+    "description": "First Steps, after Millet (1890). Vincent van Gogh; Oil on canvas. Collection: The Metropolitan Museum of Art. Credit: Gift of George N. and Helen M. Richard, 1964",
+    "movement": "Paintings",
+    "tags": [
+      "gardens",
+      "children",
+      "men",
+      "women",
+      "paintings",
+      "european paintings"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "gardens",
+        "children",
+        "men",
+        "women"
+      ],
+      "mediumCategory": "paintings",
+      "period": "1890",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "bb7e7b17-2698-b302-5a9f-faa4e874f883",
+      "slug": "vincent-van-gogh-met-bb7e7b17",
+      "name": "Vincent van Gogh",
+      "nationality": "Dutch",
+      "biography": "Dutch, Zundert 1853–1890 Auvers-sur-Oise"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "599 / 475",
+      "background": "#ede8df",
+      "alt": "First Steps, after Millet by Vincent van Gogh, 1890. Oil on canvas. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-436526.webp",
+      "width": 599,
+      "height": 475
+    },
+    "recommendationReason": "Explore paintings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Gift of George N. and Helen M. Richard, 1964 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/436526"
+    }
+  },
+  {
+    "id": "5e9b651e-cd60-2272-4257-ab1df07934e6",
+    "slug": "the-flowering-orchard-met-436527",
+    "title": "The Flowering Orchard",
+    "year": "1888",
+    "medium": "Oil on canvas",
+    "dimensions": "28 1/2 x 21 in. (72.4 x 53.3 cm)",
+    "description": "The Flowering Orchard (1888). Vincent van Gogh; Oil on canvas. Collection: The Metropolitan Museum of Art. Credit: The Mr. and Mrs. Henry Ittleson Jr. Purchase Fund, 1956",
+    "movement": "Paintings",
+    "tags": [
+      "trees",
+      "paintings",
+      "european paintings"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "trees"
+      ],
+      "mediumCategory": "paintings",
+      "period": "1888",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "bb7e7b17-2698-b302-5a9f-faa4e874f883",
+      "slug": "vincent-van-gogh-met-bb7e7b17",
+      "name": "Vincent van Gogh",
+      "nationality": "Dutch",
+      "biography": "Dutch, Zundert 1853–1890 Auvers-sur-Oise"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "466 / 624",
+      "background": "#ede8df",
+      "alt": "The Flowering Orchard by Vincent van Gogh, 1888. Oil on canvas. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-436527.webp",
+      "width": 466,
+      "height": 624
+    },
+    "recommendationReason": "Explore paintings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. The Mr. and Mrs. Henry Ittleson Jr. Purchase Fund, 1956 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/436527"
+    }
+  },
+  {
+    "id": "202b49b5-4cf0-5f12-cda0-162753883940",
+    "slug": "the-adoration-of-the-shepherds-met-436570",
+    "title": "The Adoration of the Shepherds",
+    "year": "ca. 1605–10",
+    "medium": "Oil on canvas",
+    "dimensions": "56 7/8 x 39 7/8 in. (144.5 x 101.3 cm); with added strips 64 1/2 x 42 in. (163.8 x 106.7 cm)",
+    "description": "The Adoration of the Shepherds (ca. 1605–10). El Greco (Domenikos Theotokopoulos); Oil on canvas. Collection: The Metropolitan Museum of Art. Credit: Rogers Fund, 1905",
+    "movement": "Paintings",
+    "tags": [
+      "cows",
+      "lambs",
+      "virgin mary",
+      "jesus",
+      "adoration of the shepherds",
+      "paintings",
+      "european paintings"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "cows",
+        "lambs",
+        "virgin mary",
+        "jesus",
+        "adoration of the shepherds"
+      ],
+      "mediumCategory": "paintings",
+      "period": "ca. 1605–10",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "2d98ff58-8340-5073-c021-2f31ca5fef07",
+      "slug": "el-greco-domenikos-theotokopoulos-met-2d98ff58",
+      "name": "El Greco (Domenikos Theotokopoulos)",
+      "nationality": "Greek",
+      "biography": "Greek, Iráklion (Candia) 1541–1614 Toledo"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "407 / 624",
+      "background": "#ede8df",
+      "alt": "The Adoration of the Shepherds by El Greco (Domenikos Theotokopoulos), ca. 1605–10. Oil on canvas. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-436570.webp",
+      "width": 407,
+      "height": 624
+    },
+    "recommendationReason": "Explore paintings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Rogers Fund, 1905 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/436570"
+    }
+  },
+  {
+    "id": "53a2d7e7-e5f7-18a4-b75a-a18bceb702f2",
+    "slug": "the-adoration-of-the-shepherds-met-436571",
+    "title": "The Adoration of the Shepherds",
+    "year": "ca. 1612–14",
+    "medium": "Oil on canvas",
+    "dimensions": "43 1/2 x 25 5/8 in. (110.5 x 65.1 cm)",
+    "description": "The Adoration of the Shepherds (ca. 1612–14). El Greco (Domenikos Theotokopoulos) and Workshop; Oil on canvas. Collection: The Metropolitan Museum of Art. Credit: Bequest of George Blumenthal, 1941",
+    "movement": "Paintings",
+    "tags": [
+      "men",
+      "lambs",
+      "angels",
+      "madonna and child",
+      "virgin mary",
+      "jesus",
+      "adoration of the shepherds",
+      "shepherds",
+      "paintings",
+      "european paintings"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "men",
+        "lambs",
+        "angels",
+        "madonna and child",
+        "virgin mary",
+        "jesus",
+        "adoration of the shepherds",
+        "shepherds"
+      ],
+      "mediumCategory": "paintings",
+      "period": "ca. 1612–14",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "4e19be31-bebc-0747-a968-17ee31aa5cd3",
+      "slug": "el-greco-domenikos-theotokopoulos-and-workshop-met-4e19be31",
+      "name": "El Greco (Domenikos Theotokopoulos) and Workshop",
+      "nationality": "Greek",
+      "biography": "Greek, Iráklion (Candia) 1541–1614 Toledo"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "373 / 624",
+      "background": "#ede8df",
+      "alt": "The Adoration of the Shepherds by El Greco (Domenikos Theotokopoulos) and Workshop, ca. 1612–14. Oil on canvas. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-436571.webp",
+      "width": 373,
+      "height": 624
+    },
+    "recommendationReason": "Explore paintings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Bequest of George Blumenthal, 1941 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/436571"
+    }
+  },
+  {
+    "id": "96b4afeb-79ed-be3d-5125-f07b6dcf5f7e",
+    "slug": "christ-healing-the-blind-met-436572",
+    "title": "Christ Healing the Blind",
+    "year": "ca. 1570",
+    "medium": "Oil on canvas",
+    "dimensions": "47 x 57 1/2 in. (119.4 x 146.1 cm)",
+    "description": "Christ Healing the Blind (ca. 1570). El Greco (Domenikos Theotokopoulos); Oil on canvas. Collection: The Metropolitan Museum of Art. Credit: Gift of Mr. and Mrs. Charles Wrightsman, 1978",
+    "movement": "Paintings",
+    "tags": [
+      "men",
+      "women",
+      "christ",
+      "paintings",
+      "european paintings"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "men",
+        "women",
+        "christ"
+      ],
+      "mediumCategory": "paintings",
+      "period": "ca. 1570",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "2d98ff58-8340-5073-c021-2f31ca5fef07",
+      "slug": "el-greco-domenikos-theotokopoulos-met-2d98ff58",
+      "name": "El Greco (Domenikos Theotokopoulos)",
+      "nationality": "Greek",
+      "biography": "Greek, Iráklion (Candia) 1541–1614 Toledo"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "599 / 498",
+      "background": "#ede8df",
+      "alt": "Christ Healing the Blind by El Greco (Domenikos Theotokopoulos), ca. 1570. Oil on canvas. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-436572.webp",
+      "width": 599,
+      "height": 498
+    },
+    "recommendationReason": "Explore paintings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Gift of Mr. and Mrs. Charles Wrightsman, 1978 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/436572"
+    }
+  },
+  {
+    "id": "92803748-b790-ae44-63be-3caa5adfeda0",
+    "slug": "portrait-of-an-old-man-met-436574",
+    "title": "Portrait of an Old Man",
+    "year": "ca. 1595–1600",
+    "medium": "Oil on canvas",
+    "dimensions": "20 3/4 x 18 3/8 in. (52.7 x 46.7 cm)",
+    "description": "Portrait of an Old Man (ca. 1595–1600). El Greco (Domenikos Theotokopoulos); Oil on canvas. Collection: The Metropolitan Museum of Art. Credit: Purchase, Joseph Pulitzer Bequest, 1924",
+    "movement": "Paintings",
+    "tags": [
+      "men",
+      "portraits",
+      "paintings",
+      "european paintings"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "men",
+        "portraits"
+      ],
+      "mediumCategory": "paintings",
+      "period": "ca. 1595–1600",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "2d98ff58-8340-5073-c021-2f31ca5fef07",
+      "slug": "el-greco-domenikos-theotokopoulos-met-2d98ff58",
+      "name": "El Greco (Domenikos Theotokopoulos)",
+      "nationality": "Greek",
+      "biography": "Greek, Iráklion (Candia) 1541–1614 Toledo"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "554 / 624",
+      "background": "#ede8df",
+      "alt": "Portrait of an Old Man by El Greco (Domenikos Theotokopoulos), ca. 1595–1600. Oil on canvas. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-436574.webp",
+      "width": 554,
+      "height": 624
+    },
+    "recommendationReason": "Explore paintings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Purchase, Joseph Pulitzer Bequest, 1924 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/436574"
+    }
+  },
+  {
+    "id": "8b1616fe-e357-3fc9-6cfd-16fb29a4aa9d",
+    "slug": "the-vision-of-saint-john-met-436576",
+    "title": "The Vision of Saint John",
+    "year": "ca. 1608–14",
+    "medium": "Oil on canvas",
+    "dimensions": "87 1/2 x 76 in. (222.3 x 193 cm); with added strips 88 1/2 x 78 1/2 in. (224.8 x 199.4 cm) [top truncated]",
+    "description": "The Vision of Saint John (ca. 1608–14). El Greco (Domenikos Theotokopoulos); Oil on canvas. Collection: The Metropolitan Museum of Art. Credit: Rogers Fund, 1956",
+    "movement": "Paintings",
+    "tags": [
+      "infants",
+      "male nudes",
+      "female nudes",
+      "saint john the evangelist",
+      "paintings",
+      "european paintings"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "infants",
+        "male nudes",
+        "female nudes",
+        "saint john the evangelist"
+      ],
+      "mediumCategory": "paintings",
+      "period": "ca. 1608–14",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "2d98ff58-8340-5073-c021-2f31ca5fef07",
+      "slug": "el-greco-domenikos-theotokopoulos-met-2d98ff58",
+      "name": "El Greco (Domenikos Theotokopoulos)",
+      "nationality": "Greek",
+      "biography": "Greek, Iráklion (Candia) 1541–1614 Toledo"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "555 / 624",
+      "background": "#ede8df",
+      "alt": "The Vision of Saint John by El Greco (Domenikos Theotokopoulos), ca. 1608–14. Oil on canvas. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-436576.webp",
+      "width": 555,
+      "height": 624
+    },
+    "recommendationReason": "Explore paintings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Rogers Fund, 1956 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/436576"
+    }
+  },
+  {
+    "id": "10ca432f-56b0-4590-55a1-e5bf72443b9b",
+    "slug": "saint-andrew-met-436577",
+    "title": "Saint Andrew",
+    "year": "ca. 1610",
+    "medium": "Oil on canvas",
+    "dimensions": "43 1/4 x 25 1/4 in. (109.9 x 64.1 cm)",
+    "description": "Saint Andrew (ca. 1610). Workshop of El Greco (Domenikos Theotokopoulos); Oil on canvas. Collection: The Metropolitan Museum of Art. Credit: Bequest of Stephen C. Clark, 1960",
+    "movement": "Paintings",
+    "tags": [
+      "men",
+      "saints",
+      "paintings",
+      "european paintings"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "men",
+        "saints"
+      ],
+      "mediumCategory": "paintings",
+      "period": "ca. 1610",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "bd5fe7b4-bb53-15a4-ba9f-250e306ae079",
+      "slug": "workshop-of-el-greco-domenikos-theotokopoulos-met-bd5fe7b4",
+      "name": "Workshop of El Greco (Domenikos Theotokopoulos)",
+      "nationality": "Greek",
+      "biography": "Greek, Iráklion (Candia) 1541–1614 Toledo"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "375 / 623",
+      "background": "#ede8df",
+      "alt": "Saint Andrew by Workshop of El Greco (Domenikos Theotokopoulos), ca. 1610. Oil on canvas. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-436577.webp",
+      "width": 375,
+      "height": 623
+    },
+    "recommendationReason": "Explore paintings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Bequest of Stephen C. Clark, 1960 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/436577"
+    }
+  },
+  {
+    "id": "55b06d85-2b53-f3f7-be7b-c7186495b4b9",
+    "slug": "anna-van-der-aar-born-1576-77-died-after-1626-met-436618",
+    "title": "Anna van der Aar (born 1576/77, died after 1626)",
+    "year": "1626",
+    "medium": "Oil on wood",
+    "dimensions": "8 3/4 x 6 1/2 in. (22.2 x 16.5 cm)",
+    "description": "Anna van der Aar (born 1576/77, died after 1626) (1626). Frans Hals; Oil on wood. Collection: The Metropolitan Museum of Art. Credit: H. O. Havemeyer Collection, Bequest of Mrs. H. O. Havemeyer, 1929",
+    "movement": "Paintings",
+    "tags": [
+      "portraits",
+      "women",
+      "paintings",
+      "european paintings"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "portraits",
+        "women"
+      ],
+      "mediumCategory": "paintings",
+      "period": "1626",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "0239a5bb-cb37-796c-9a18-aec4efe36992",
+      "slug": "frans-hals-met-0239a5bb",
+      "name": "Frans Hals",
+      "nationality": "Dutch",
+      "biography": "Dutch, Antwerp 1582/83–1666 Haarlem"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "467 / 625",
+      "background": "#ede8df",
+      "alt": "Anna van der Aar (born 1576/77, died after 1626) by Frans Hals, 1626. Oil on wood. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-436618.webp",
+      "width": 467,
+      "height": 625
+    },
+    "recommendationReason": "Explore paintings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. H. O. Havemeyer Collection, Bequest of Mrs. H. O. Havemeyer, 1929 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/436618"
+    }
+  },
+  {
+    "id": "3ddd6da5-9be9-9b05-86c3-8bf4934969a0",
+    "slug": "petrus-scriverius-1576-1660-met-436619",
+    "title": "Petrus Scriverius (1576–1660)",
+    "year": "1626",
+    "medium": "Oil on wood",
+    "dimensions": "8 3/4 x 6 1/2 in. (22.2 x 16.5 cm)",
+    "description": "Petrus Scriverius (1576–1660) (1626). Frans Hals; Oil on wood. Collection: The Metropolitan Museum of Art. Credit: H. O. Havemeyer Collection, Bequest of Mrs. H. O. Havemeyer, 1929",
+    "movement": "Paintings",
+    "tags": [
+      "men",
+      "portraits",
+      "paintings",
+      "european paintings"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "men",
+        "portraits"
+      ],
+      "mediumCategory": "paintings",
+      "period": "1626",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "0239a5bb-cb37-796c-9a18-aec4efe36992",
+      "slug": "frans-hals-met-0239a5bb",
+      "name": "Frans Hals",
+      "nationality": "Dutch",
+      "biography": "Dutch, Antwerp 1582/83–1666 Haarlem"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "462 / 624",
+      "background": "#ede8df",
+      "alt": "Petrus Scriverius (1576–1660) by Frans Hals, 1626. Oil on wood. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-436619.webp",
+      "width": 462,
+      "height": 624
+    },
+    "recommendationReason": "Explore paintings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. H. O. Havemeyer Collection, Bequest of Mrs. H. O. Havemeyer, 1929 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/436619"
+    }
+  },
+  {
+    "id": "7e03c8eb-5609-d47d-d52c-95a48858461b",
+    "slug": "paulus-verschuur-1606-1667-met-436620",
+    "title": "Paulus Verschuur (1606–1667)",
+    "year": "1643",
+    "medium": "Oil on canvas",
+    "dimensions": "46 3/4 x 37 in. (118.7 x 94 cm)",
+    "description": "Paulus Verschuur (1606–1667) (1643). Frans Hals; Oil on canvas. Collection: The Metropolitan Museum of Art. Credit: Gift of Archer M. Huntington, in memory of his father, Collis Potter Huntington, 1926",
+    "movement": "Paintings",
+    "tags": [
+      "men",
+      "portraits",
+      "paintings",
+      "european paintings"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "men",
+        "portraits"
+      ],
+      "mediumCategory": "paintings",
+      "period": "1643",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "0239a5bb-cb37-796c-9a18-aec4efe36992",
+      "slug": "frans-hals-met-0239a5bb",
+      "name": "Frans Hals",
+      "nationality": "Dutch",
+      "biography": "Dutch, Antwerp 1582/83–1666 Haarlem"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "495 / 624",
+      "background": "#ede8df",
+      "alt": "Paulus Verschuur (1606–1667) by Frans Hals, 1643. Oil on canvas. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-436620.webp",
+      "width": 495,
+      "height": 624
+    },
+    "recommendationReason": "Explore paintings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Gift of Archer M. Huntington, in memory of his father, Collis Potter Huntington, 1926 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/436620"
+    }
+  },
+  {
+    "id": "57f6adce-8ec6-2035-6ef9-910ffd193556",
+    "slug": "portrait-of-a-man-possibly-nicolaes-pietersz-duyst-van-voorhout-born-about-1600-died--met-436621",
+    "title": "Portrait of a Man, Possibly Nicolaes Pietersz Duyst van Voorhout (born about 1600, died 1650)",
+    "year": "ca. 1636–38",
+    "medium": "Oil on canvas",
+    "dimensions": "31 3/4 x 26 in. (80.6 x 66 cm)",
+    "description": "Portrait of a Man, Possibly Nicolaes Pietersz Duyst van Voorhout (born about 1600, died 1650) (ca. 1636–38). Frans Hals; Oil on canvas. Collection: The Metropolitan Museum of Art. Credit: The Jules Bache Collection, 1949",
+    "movement": "Paintings",
+    "tags": [
+      "men",
+      "portraits",
+      "paintings",
+      "european paintings"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "men",
+        "portraits"
+      ],
+      "mediumCategory": "paintings",
+      "period": "ca. 1636–38",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "0239a5bb-cb37-796c-9a18-aec4efe36992",
+      "slug": "frans-hals-met-0239a5bb",
+      "name": "Frans Hals",
+      "nationality": "Dutch",
+      "biography": "Dutch, Antwerp 1582/83–1666 Haarlem"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "511 / 624",
+      "background": "#ede8df",
+      "alt": "Portrait of a Man, Possibly Nicolaes Pietersz Duyst van Voorhout (born about 1600, died 1650) by Frans Hals, ca. 1636–38. Oil on canvas. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-436621.webp",
+      "width": 511,
+      "height": 624
+    },
+    "recommendationReason": "Explore paintings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. The Jules Bache Collection, 1949 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/436621"
+    }
+  },
+  {
+    "id": "deb10a3c-9088-7a16-e707-a7b360f1c12c",
+    "slug": "portrait-of-a-man-met-436623",
+    "title": "Portrait of a Man",
+    "year": "early 1650s",
+    "medium": "Oil on canvas",
+    "dimensions": "43 1/2 x 34 in. (110.5 x 86.4 cm)",
+    "description": "Portrait of a Man (early 1650s). Frans Hals; Oil on canvas. Collection: The Metropolitan Museum of Art. Credit: Marquand Collection, Gift of Henry G. Marquand, 1890",
+    "movement": "Paintings",
+    "tags": [
+      "men",
+      "portraits",
+      "paintings",
+      "european paintings"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "men",
+        "portraits"
+      ],
+      "mediumCategory": "paintings",
+      "period": "early 1650s",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "0239a5bb-cb37-796c-9a18-aec4efe36992",
+      "slug": "frans-hals-met-0239a5bb",
+      "name": "Frans Hals",
+      "nationality": "Dutch",
+      "biography": "Dutch, Antwerp 1582/83–1666 Haarlem"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "462 / 624",
+      "background": "#ede8df",
+      "alt": "Portrait of a Man by Frans Hals, early 1650s. Oil on canvas. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-436623.webp",
+      "width": 462,
+      "height": 624
+    },
+    "recommendationReason": "Explore paintings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Marquand Collection, Gift of Henry G. Marquand, 1890 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/436623"
+    }
+  },
+  {
+    "id": "ecb6ffac-b81b-532f-8701-a73d945c60e6",
+    "slug": "portrait-of-a-woman-met-436624",
+    "title": "Portrait of a Woman",
+    "year": "ca. 1650, reworked probably 18th century",
+    "medium": "Oil on canvas",
+    "dimensions": "39 3/8 x 32 1/4 in. (100 x 81.9 cm)",
+    "description": "Portrait of a Woman (ca. 1650, reworked probably 18th century). Frans Hals; Oil on canvas. Collection: The Metropolitan Museum of Art. Credit: Marquand Collection, Gift of Henry G. Marquand, 1890",
+    "movement": "Paintings",
+    "tags": [
+      "portraits",
+      "women",
+      "paintings",
+      "european paintings"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "portraits",
+        "women"
+      ],
+      "mediumCategory": "paintings",
+      "period": "ca. 1650, reworked probably 18th century",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "0239a5bb-cb37-796c-9a18-aec4efe36992",
+      "slug": "frans-hals-met-0239a5bb",
+      "name": "Frans Hals",
+      "nationality": "Dutch",
+      "biography": "Dutch, Antwerp 1582/83–1666 Haarlem"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "515 / 624",
+      "background": "#ede8df",
+      "alt": "Portrait of a Woman by Frans Hals, ca. 1650, reworked probably 18th century. Oil on canvas. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-436624.webp",
+      "width": 515,
+      "height": 624
+    },
+    "recommendationReason": "Explore paintings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Marquand Collection, Gift of Henry G. Marquand, 1890 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/436624"
+    }
+  },
+  {
+    "id": "e52778a6-c513-48c6-480f-81dddbb0d7c7",
+    "slug": "the-smoker-met-436625",
+    "title": "The Smoker",
+    "year": "ca. 1623–25",
+    "medium": "Oil on wood",
+    "dimensions": "Octagonal, 18 3/8 x 19 1/2 in. (46.7 x 49.5 cm)",
+    "description": "The Smoker (ca. 1623–25). Frans Hals; Oil on wood. Collection: The Metropolitan Museum of Art. Credit: Marquand Collection, Gift of Henry G. Marquand, 1889",
+    "movement": "Paintings",
+    "tags": [
+      "men",
+      "women",
+      "smoking",
+      "pipes",
+      "paintings",
+      "european paintings"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "men",
+        "women",
+        "smoking",
+        "pipes"
+      ],
+      "mediumCategory": "paintings",
+      "period": "ca. 1623–25",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "0239a5bb-cb37-796c-9a18-aec4efe36992",
+      "slug": "frans-hals-met-0239a5bb",
+      "name": "Frans Hals",
+      "nationality": "Dutch",
+      "biography": "Dutch, Antwerp 1582/83–1666 Haarlem"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "square",
+      "aspectRatio": "600 / 567",
+      "background": "#ede8df",
+      "alt": "The Smoker by Frans Hals, ca. 1623–25. Oil on wood. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-436625.webp",
+      "width": 600,
+      "height": 567
+    },
+    "recommendationReason": "Explore paintings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Marquand Collection, Gift of Henry G. Marquand, 1889 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/436625"
+    }
+  },
+  {
+    "id": "2c9e1e66-fa34-6432-af6d-37a607ee112e",
+    "slug": "boy-with-a-lute-met-436626",
+    "title": "Boy with a Lute",
+    "year": "ca. 1625",
+    "medium": "Oil on canvas",
+    "dimensions": "28 3/8 x 23 1/4 in. (72.1 x 59.1 cm)",
+    "description": "Boy with a Lute (ca. 1625). Frans Hals; Oil on canvas. Collection: The Metropolitan Museum of Art. Credit: Bequest of Benjamin Altman, 1913",
+    "movement": "Paintings",
+    "tags": [
+      "boys",
+      "portraits",
+      "lutes",
+      "paintings",
+      "european paintings"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "boys",
+        "portraits",
+        "lutes"
+      ],
+      "mediumCategory": "paintings",
+      "period": "ca. 1625",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "0239a5bb-cb37-796c-9a18-aec4efe36992",
+      "slug": "frans-hals-met-0239a5bb",
+      "name": "Frans Hals",
+      "nationality": "Dutch",
+      "biography": "Dutch, Antwerp 1582/83–1666 Haarlem"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "512 / 624",
+      "background": "#ede8df",
+      "alt": "Boy with a Lute by Frans Hals, ca. 1625. Oil on canvas. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-436626.webp",
+      "width": 512,
+      "height": 624
+    },
+    "recommendationReason": "Explore paintings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Bequest of Benjamin Altman, 1913 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/436626"
+    }
+  },
+  {
+    "id": "5599fdbb-5da3-2df4-b8b1-62cbaba6984f",
+    "slug": "young-woman-knitting-met-437159",
+    "title": "Young Woman Knitting",
+    "year": "ca. 1883",
+    "medium": "Oil on canvas",
+    "dimensions": "19 3/4 x 23 5/8 in. (50.2 x 60 cm)",
+    "description": "Young Woman Knitting (ca. 1883). Berthe Morisot; Oil on canvas. Collection: The Metropolitan Museum of Art. Credit: Bequest of Miss Adelaide Milton de Groot (1876-1967), 1967",
+    "movement": "Paintings",
+    "tags": [
+      "women",
+      "knitting",
+      "paintings",
+      "european paintings"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "women",
+        "knitting"
+      ],
+      "mediumCategory": "paintings",
+      "period": "ca. 1883",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "3a140e2e-2a9d-bc2c-b42d-e096a42bdc25",
+      "slug": "berthe-morisot-met-3a140e2e",
+      "name": "Berthe Morisot",
+      "nationality": "French",
+      "biography": "French, Bourges 1841–1895 Paris"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "599 / 501",
+      "background": "#ede8df",
+      "alt": "Young Woman Knitting by Berthe Morisot, ca. 1883. Oil on canvas. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-437159.webp",
+      "width": 599,
+      "height": 501
+    },
+    "recommendationReason": "Explore paintings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Bequest of Miss Adelaide Milton de Groot (1876-1967), 1967 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/437159"
+    }
+  },
+  {
+    "id": "d9f2635b-381f-12c5-2de4-fc251a3b72fa",
+    "slug": "christ-and-the-woman-of-samaria-met-437403",
+    "title": "Christ and the Woman of Samaria",
+    "year": "Date not supplied",
+    "medium": "Oil on wood",
+    "dimensions": "25 x 19 1/4 in. (63.5 x 48.9 cm)",
+    "description": "Christ and the Woman of Samaria. Style of Rembrandt; Oil on wood. Collection: The Metropolitan Museum of Art. Credit: Bequest of Lillian S. Timken, 1959",
+    "movement": "Paintings",
+    "tags": [
+      "men",
+      "women",
+      "christ",
+      "paintings",
+      "european paintings"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "men",
+        "women",
+        "christ"
+      ],
+      "mediumCategory": "paintings",
+      "period": "Date not supplied",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "5479acbb-eb05-649e-905e-6ba5c785fb19",
+      "slug": "style-of-rembrandt-met-5479acbb",
+      "name": "Style of Rembrandt",
+      "nationality": "Dutch",
+      "biography": "Dutch, ca. 1655"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "488 / 624",
+      "background": "#ede8df",
+      "alt": "Christ and the Woman of Samaria by Style of Rembrandt, . Oil on wood. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-437403.webp",
+      "width": 488,
+      "height": 624
+    },
+    "recommendationReason": "Explore paintings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Bequest of Lillian S. Timken, 1959 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/437403"
+    }
+  },
+  {
+    "id": "b88bda05-806c-cea8-e4de-e713760640ff",
+    "slug": "head-of-christ-met-437404",
+    "title": "Head of Christ",
+    "year": "Date not supplied",
+    "medium": "Oil on canvas",
+    "dimensions": "16 3/4 x 13 1/2 in. (42.5 x 34.3 cm); with added strips 18 5/8 x 14 5/8 in. (47.3 x 37.1 cm)",
+    "description": "Head of Christ. Style of Rembrandt; Oil on canvas. Collection: The Metropolitan Museum of Art. Credit: Mr. and Mrs. Isaac D. Fletcher Collection, Bequest of Isaac D. Fletcher, 1917",
+    "movement": "Paintings",
+    "tags": [
+      "christ",
+      "paintings",
+      "european paintings"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "christ"
+      ],
+      "mediumCategory": "paintings",
+      "period": "Date not supplied",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "5479acbb-eb05-649e-905e-6ba5c785fb19",
+      "slug": "style-of-rembrandt-met-5479acbb",
+      "name": "Style of Rembrandt",
+      "nationality": "Dutch",
+      "biography": "Dutch, 1650s"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "495 / 624",
+      "background": "#ede8df",
+      "alt": "Head of Christ by Style of Rembrandt, . Oil on canvas. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-437404.webp",
+      "width": 495,
+      "height": 624
+    },
+    "recommendationReason": "Explore paintings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Mr. and Mrs. Isaac D. Fletcher Collection, Bequest of Isaac D. Fletcher, 1917 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/437404"
+    }
+  },
+  {
+    "id": "62da9e7b-3abf-403b-d5f0-5f9a230ef4d4",
+    "slug": "portrait-of-a-man-the-auctioneer-met-437406",
+    "title": "Portrait of a Man (\"The Auctioneer\")",
+    "year": "probably ca. 1658–62",
+    "medium": "Oil on canvas",
+    "dimensions": "42 3/4 x 34 in. (108.6 x 86.4 cm)",
+    "description": "Portrait of a Man (\"The Auctioneer\") (probably ca. 1658–62). Follower of Rembrandt; Oil on canvas. Collection: The Metropolitan Museum of Art. Credit: Bequest of Benjamin Altman, 1913",
+    "movement": "Paintings",
+    "tags": [
+      "men",
+      "portraits",
+      "paintings",
+      "european paintings"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "men",
+        "portraits"
+      ],
+      "mediumCategory": "paintings",
+      "period": "probably ca. 1658–62",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "561253a1-f035-77cf-8643-6ec363318c1e",
+      "slug": "follower-of-rembrandt-met-561253a1",
+      "name": "Follower of Rembrandt",
+      "nationality": "Dutch",
+      "biography": "Dutch, third quarter 17th century"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "500 / 624",
+      "background": "#ede8df",
+      "alt": "Portrait of a Man (\"The Auctioneer\") by Follower of Rembrandt, probably ca. 1658–62. Oil on canvas. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-437406.webp",
+      "width": 500,
+      "height": 624
+    },
+    "recommendationReason": "Explore paintings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Bequest of Benjamin Altman, 1913 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/437406"
+    }
+  },
+  {
+    "id": "4c7b40fa-079d-b57d-55f3-77c70519c942",
+    "slug": "christ-with-a-staff-met-437407",
+    "title": "Christ with a Staff",
+    "year": "Date not supplied",
+    "medium": "Oil on canvas",
+    "dimensions": "37 1/2 x 32 1/2 in. (95.3 x 82.6 cm)",
+    "description": "Christ with a Staff. Follower of Rembrandt; Oil on canvas. Collection: The Metropolitan Museum of Art. Credit: The Jules Bache Collection, 1949",
+    "movement": "Paintings",
+    "tags": [
+      "christ",
+      "paintings",
+      "european paintings"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "christ"
+      ],
+      "mediumCategory": "paintings",
+      "period": "Date not supplied",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "561253a1-f035-77cf-8643-6ec363318c1e",
+      "slug": "follower-of-rembrandt-met-561253a1",
+      "name": "Follower of Rembrandt",
+      "nationality": "Dutch",
+      "biography": "Dutch, third quarter 17th century"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "522 / 624",
+      "background": "#ede8df",
+      "alt": "Christ with a Staff by Follower of Rembrandt, . Oil on canvas. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-437407.webp",
+      "width": 522,
+      "height": 624
+    },
+    "recommendationReason": "Explore paintings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. The Jules Bache Collection, 1949 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/437407"
+    }
+  },
+  {
+    "id": "d832378c-95ad-8cf4-23e0-72ff9be06fc7",
+    "slug": "man-in-a-beret-met-437408",
+    "title": "Man in a Beret",
+    "year": "Date not supplied",
+    "medium": "Oil on canvas",
+    "dimensions": "29 7/8 x 24 3/4 in. (75.9 x 62.9 cm)",
+    "description": "Man in a Beret. Style of Rembrandt; Oil on canvas. Collection: The Metropolitan Museum of Art. Credit: Gift of Charles S. Payson, 1975",
+    "movement": "Paintings",
+    "tags": [
+      "men",
+      "portraits",
+      "paintings",
+      "european paintings"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "men",
+        "portraits"
+      ],
+      "mediumCategory": "paintings",
+      "period": "Date not supplied",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "5479acbb-eb05-649e-905e-6ba5c785fb19",
+      "slug": "style-of-rembrandt-met-5479acbb",
+      "name": "Style of Rembrandt",
+      "nationality": "Dutch",
+      "biography": "Dutch, fourth quarter 17th century"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "518 / 625",
+      "background": "#ede8df",
+      "alt": "Man in a Beret by Style of Rembrandt, . Oil on canvas. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-437408.webp",
+      "width": 518,
+      "height": 625
+    },
+    "recommendationReason": "Explore paintings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Gift of Charles S. Payson, 1975 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/437408"
+    }
+  },
+  {
+    "id": "ff46904d-0c65-e2f3-90a5-98ee5d02cc81",
+    "slug": "portrait-of-a-woman-met-437409",
+    "title": "Portrait of a Woman",
+    "year": "Date not supplied",
+    "medium": "Oil on canvas",
+    "dimensions": "47 5/8 x 38 5/8 in. (121 x 98.1 cm)",
+    "description": "Portrait of a Woman. Style of Rembrandt; Oil on canvas. Collection: The Metropolitan Museum of Art. Credit: H. O. Havemeyer Collection, Bequest of Mrs. H. O. Havemeyer, 1929",
+    "movement": "Paintings",
+    "tags": [
+      "portraits",
+      "women",
+      "paintings",
+      "european paintings"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "portraits",
+        "women"
+      ],
+      "mediumCategory": "paintings",
+      "period": "Date not supplied",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "5479acbb-eb05-649e-905e-6ba5c785fb19",
+      "slug": "style-of-rembrandt-met-5479acbb",
+      "name": "Style of Rembrandt",
+      "nationality": "Dutch",
+      "biography": "Dutch, mid- to late 1640s"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "507 / 624",
+      "background": "#ede8df",
+      "alt": "Portrait of a Woman by Style of Rembrandt, . Oil on canvas. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-437409.webp",
+      "width": 507,
+      "height": 624
+    },
+    "recommendationReason": "Explore paintings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. H. O. Havemeyer Collection, Bequest of Mrs. H. O. Havemeyer, 1929 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/437409"
+    }
+  },
+  {
+    "id": "9462526f-3a9e-0179-1c72-dfcb383e17b3",
+    "slug": "portrait-of-a-man-with-a-breastplate-and-plumed-hat-met-437410",
+    "title": "Portrait of a Man with a Breastplate and Plumed Hat",
+    "year": "Date not supplied",
+    "medium": "Oil on canvas",
+    "dimensions": "47 3/4 x 38 3/4 in. (121.3 x 98.4 cm)",
+    "description": "Portrait of a Man with a Breastplate and Plumed Hat. Style of Rembrandt; Oil on canvas. Collection: The Metropolitan Museum of Art. Credit: H. O. Havemeyer Collection, Bequest of Mrs. H. O. Havemeyer, 1929",
+    "movement": "Paintings",
+    "tags": [
+      "men",
+      "portraits",
+      "paintings",
+      "european paintings"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "men",
+        "portraits"
+      ],
+      "mediumCategory": "paintings",
+      "period": "Date not supplied",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "5479acbb-eb05-649e-905e-6ba5c785fb19",
+      "slug": "style-of-rembrandt-met-5479acbb",
+      "name": "Style of Rembrandt",
+      "nationality": "Dutch",
+      "biography": "Dutch, mid- to late 1640s"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "505 / 625",
+      "background": "#ede8df",
+      "alt": "Portrait of a Man with a Breastplate and Plumed Hat by Style of Rembrandt, . Oil on canvas. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-437410.webp",
+      "width": 505,
+      "height": 625
+    },
+    "recommendationReason": "Explore paintings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. H. O. Havemeyer Collection, Bequest of Mrs. H. O. Havemeyer, 1929 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/437410"
+    }
+  },
+  {
+    "id": "39d44e1c-677f-33d3-1f9b-277b6f47496a",
+    "slug": "man-with-a-steel-gorget-met-437411",
+    "title": "Man with a Steel Gorget",
+    "year": "Date not supplied",
+    "medium": "Oil on canvas",
+    "dimensions": "37 1/8 x 30 5/8 in. (94.3 x 77.8 cm)",
+    "description": "Man with a Steel Gorget. Style of Rembrandt; Oil on canvas. Collection: The Metropolitan Museum of Art. Credit: Bequest of Benjamin Altman, 1913",
+    "movement": "Paintings",
+    "tags": [
+      "men",
+      "portraits",
+      "paintings",
+      "european paintings"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "men",
+        "portraits"
+      ],
+      "mediumCategory": "paintings",
+      "period": "Date not supplied",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "5479acbb-eb05-649e-905e-6ba5c785fb19",
+      "slug": "style-of-rembrandt-met-5479acbb",
+      "name": "Style of Rembrandt",
+      "nationality": "Dutch",
+      "biography": "Dutch, second or third quarter 17th century"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "515 / 624",
+      "background": "#ede8df",
+      "alt": "Man with a Steel Gorget by Style of Rembrandt, . Oil on canvas. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-437411.webp",
+      "width": 515,
+      "height": 624
+    },
+    "recommendationReason": "Explore paintings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Bequest of Benjamin Altman, 1913 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/437411"
+    }
+  },
+  {
+    "id": "c5980e27-daf1-0781-243a-a5eba862b618",
+    "slug": "philip-iv-1605-1665-king-of-spain-met-437873",
+    "title": "Philip IV (1605–1665), King of Spain",
+    "year": "probably 1624",
+    "medium": "Oil on canvas",
+    "dimensions": "78 3/4 x 40 1/2 in. (200 x 102.9 cm)",
+    "description": "Philip IV (1605–1665), King of Spain (probably 1624). Velázquez (Diego Rodríguez de Silva y Velázquez); Oil on canvas. Collection: The Metropolitan Museum of Art. Credit: Bequest of Benjamin Altman, 1913",
+    "movement": "Paintings",
+    "tags": [
+      "kings",
+      "philip iv",
+      "men",
+      "portraits",
+      "paintings",
+      "european paintings"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "kings",
+        "philip iv",
+        "men",
+        "portraits"
+      ],
+      "mediumCategory": "paintings",
+      "period": "probably 1624",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "6ff086c1-6f80-8233-76de-af54001bc6eb",
+      "slug": "velazquez-diego-rodriguez-de-silva-y-velazquez-met-6ff086c1",
+      "name": "Velázquez (Diego Rodríguez de Silva y Velázquez)",
+      "nationality": "Spanish",
+      "biography": "Spanish, Seville 1599–1660 Madrid"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "322 / 624",
+      "background": "#ede8df",
+      "alt": "Philip IV (1605–1665), King of Spain by Velázquez (Diego Rodríguez de Silva y Velázquez), probably 1624. Oil on canvas. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-437873.webp",
+      "width": 322,
+      "height": 624
+    },
+    "recommendationReason": "Explore paintings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Bequest of Benjamin Altman, 1913 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/437873"
+    }
+  },
+  {
+    "id": "cbfb7f65-1a01-c7c0-54be-a5f82afa2223",
+    "slug": "portrait-of-a-man-possibly-a-self-portrait-met-437874",
+    "title": "Portrait of a Man, Possibly a Self-Portrait",
+    "year": "ca. 1635",
+    "medium": "Oil on canvas",
+    "dimensions": "27 x 21 3/4 in. (68.6 x 55.2 cm)",
+    "description": "Portrait of a Man, Possibly a Self-Portrait (ca. 1635). Velázquez (Diego Rodríguez de Silva y Velázquez); Oil on canvas. Collection: The Metropolitan Museum of Art. Credit: The Jules Bache Collection, 1949",
+    "movement": "Paintings",
+    "tags": [
+      "men",
+      "portraits",
+      "paintings",
+      "european paintings"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "men",
+        "portraits"
+      ],
+      "mediumCategory": "paintings",
+      "period": "ca. 1635",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "6ff086c1-6f80-8233-76de-af54001bc6eb",
+      "slug": "velazquez-diego-rodriguez-de-silva-y-velazquez-met-6ff086c1",
+      "name": "Velázquez (Diego Rodríguez de Silva y Velázquez)",
+      "nationality": "Spanish",
+      "biography": "Spanish, Seville 1599–1660 Madrid"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "497 / 624",
+      "background": "#ede8df",
+      "alt": "Portrait of a Man, Possibly a Self-Portrait by Velázquez (Diego Rodríguez de Silva y Velázquez), ca. 1635. Oil on canvas. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-437874.webp",
+      "width": 497,
+      "height": 624
+    },
+    "recommendationReason": "Explore paintings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. The Jules Bache Collection, 1949 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/437874"
+    }
+  },
+  {
+    "id": "7945e723-9711-f85e-57e7-dc08021ef462",
+    "slug": "a-maid-asleep-met-437878",
+    "title": "A Maid Asleep",
+    "year": "ca. 1656–57",
+    "medium": "Oil on canvas",
+    "dimensions": "34 1/2 x 30 1/8 in. (87.6 x 76.5 cm)",
+    "description": "A Maid Asleep (ca. 1656–57). Johannes Vermeer; Oil on canvas. Collection: The Metropolitan Museum of Art. Credit: Bequest of Benjamin Altman, 1913",
+    "movement": "Paintings",
+    "tags": [
+      "interiors",
+      "fruit",
+      "sleeping",
+      "women",
+      "servants",
+      "paintings",
+      "european paintings"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "interiors",
+        "fruit",
+        "sleeping",
+        "women",
+        "servants"
+      ],
+      "mediumCategory": "paintings",
+      "period": "ca. 1656–57",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "12d65c3d-d389-58a7-da41-6a6fa94ec5ec",
+      "slug": "johannes-vermeer-met-12d65c3d",
+      "name": "Johannes Vermeer",
+      "nationality": "Dutch",
+      "biography": "Dutch, Delft 1632–1675 Delft"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "544 / 624",
+      "background": "#ede8df",
+      "alt": "A Maid Asleep by Johannes Vermeer, ca. 1656–57. Oil on canvas. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-437878.webp",
+      "width": 544,
+      "height": 624
+    },
+    "recommendationReason": "Explore paintings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Bequest of Benjamin Altman, 1913 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/437878"
+    }
+  },
+  {
+    "id": "8922736d-c17a-6f78-b574-74aed6db7eb0",
+    "slug": "young-woman-with-a-lute-met-437880",
+    "title": "Young Woman with a Lute",
+    "year": "ca. 1662–63",
+    "medium": "Oil on canvas",
+    "dimensions": "20 1/4 x 18 in. (51.4 x 45.7 cm)",
+    "description": "Young Woman with a Lute (ca. 1662–63). Johannes Vermeer; Oil on canvas. Collection: The Metropolitan Museum of Art. Credit: Bequest of Collis P. Huntington, 1900",
+    "movement": "Paintings",
+    "tags": [
+      "interiors",
+      "women",
+      "music",
+      "lutes",
+      "maps",
+      "paintings",
+      "european paintings"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "interiors",
+        "women",
+        "music",
+        "lutes",
+        "maps"
+      ],
+      "mediumCategory": "paintings",
+      "period": "ca. 1662–63",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "12d65c3d-d389-58a7-da41-6a6fa94ec5ec",
+      "slug": "johannes-vermeer-met-12d65c3d",
+      "name": "Johannes Vermeer",
+      "nationality": "Dutch",
+      "biography": "Dutch, Delft 1632–1675 Delft"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "544 / 624",
+      "background": "#ede8df",
+      "alt": "Young Woman with a Lute by Johannes Vermeer, ca. 1662–63. Oil on canvas. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-437880.webp",
+      "width": 544,
+      "height": 624
+    },
+    "recommendationReason": "Explore paintings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Bequest of Collis P. Huntington, 1900 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/437880"
+    }
+  },
+  {
+    "id": "00d14dc6-9df7-bfdc-a26a-4fb2a847ddd8",
+    "slug": "the-pink-dress-albertie-marguerite-carre-later-madame-ferdinand-henri-himmes-1854-193-met-438009",
+    "title": "The Pink Dress (Albertie-Marguerite Carré, later Madame Ferdinand-Henri Himmes, 1854–1935)",
+    "year": "ca. 1870",
+    "medium": "Oil on canvas",
+    "dimensions": "21 1/2 x 26 1/2 in. (54.6 x 67.3 cm)",
+    "description": "The Pink Dress (Albertie-Marguerite Carré, later Madame Ferdinand-Henri Himmes, 1854–1935) (ca. 1870). Berthe Morisot; Oil on canvas. Collection: The Metropolitan Museum of Art. Credit: The Walter H. and Leonore Annenberg Collection, Bequest of Walter H. Annenberg, 2002",
+    "movement": "Paintings",
+    "tags": [
+      "portraits",
+      "women",
+      "paintings",
+      "european paintings"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "portraits",
+        "women"
+      ],
+      "mediumCategory": "paintings",
+      "period": "ca. 1870",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "3a140e2e-2a9d-bc2c-b42d-e096a42bdc25",
+      "slug": "berthe-morisot-met-3a140e2e",
+      "name": "Berthe Morisot",
+      "nationality": "French",
+      "biography": "French, Bourges 1841–1895 Paris"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "599 / 487",
+      "background": "#ede8df",
+      "alt": "The Pink Dress (Albertie-Marguerite Carré, later Madame Ferdinand-Henri Himmes, 1854–1935) by Berthe Morisot, ca. 1870. Oil on canvas. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-438009.webp",
+      "width": 599,
+      "height": 487
+    },
+    "recommendationReason": "Explore paintings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. The Walter H. and Leonore Annenberg Collection, Bequest of Walter H. Annenberg, 2002 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/438009"
+    }
+  },
+  {
+    "id": "bc5ee683-acbf-a310-7058-6cce40108b12",
+    "slug": "saint-jerome-as-scholar-met-459088",
+    "title": "Saint Jerome as Scholar",
+    "year": "ca. 1610",
+    "medium": "Oil on canvas",
+    "dimensions": "42 1/2 x 35 1/16 in. (108 x 89 cm)",
+    "description": "Saint Jerome as Scholar (ca. 1610). El Greco (Domenikos Theotokopoulos); Oil on canvas. Collection: The Metropolitan Museum of Art. Credit: Robert Lehman Collection, 1975",
+    "movement": "Paintings",
+    "tags": [
+      "men",
+      "saint jerome",
+      "paintings",
+      "robert lehman collection"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "men",
+        "saint jerome"
+      ],
+      "mediumCategory": "paintings",
+      "period": "ca. 1610",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "2d98ff58-8340-5073-c021-2f31ca5fef07",
+      "slug": "el-greco-domenikos-theotokopoulos-met-2d98ff58",
+      "name": "El Greco (Domenikos Theotokopoulos)",
+      "nationality": "Greek",
+      "biography": "Greek, Iráklion (Candia) 1541–1614 Toledo"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "515 / 624",
+      "background": "#ede8df",
+      "alt": "Saint Jerome as Scholar by El Greco (Domenikos Theotokopoulos), ca. 1610. Oil on canvas. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-459088.webp",
+      "width": 515,
+      "height": 624
+    },
+    "recommendationReason": "Explore paintings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Robert Lehman Collection, 1975 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/459088"
+    }
+  },
+  {
+    "id": "f4dcaa73-97b8-094b-100b-fb5b4240a5db",
+    "slug": "maria-teresa-infanta-of-spain-met-459089",
+    "title": "María Teresa, Infanta of Spain",
+    "year": "mid-17th century",
+    "medium": "Oil on canvas",
+    "dimensions": "19 x 14 9/16 in. (48 x 37 cm)",
+    "description": "María Teresa, Infanta of Spain (mid-17th century). Workshop of Velázquez (Diego Rodríguez de Silva y Velázquez); Oil on canvas. Collection: The Metropolitan Museum of Art. Credit: Robert Lehman Collection, 1975",
+    "movement": "Paintings",
+    "tags": [
+      "portraits",
+      "women",
+      "paintings",
+      "robert lehman collection"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "portraits",
+        "women"
+      ],
+      "mediumCategory": "paintings",
+      "period": "mid-17th century",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "390b951f-66fc-e7da-e8e0-bf94eb949f82",
+      "slug": "workshop-of-velazquez-diego-rodriguez-de-silva-y-velazquez-met-390b951f",
+      "name": "Workshop of Velázquez (Diego Rodríguez de Silva y Velázquez)",
+      "nationality": "Spanish",
+      "biography": "Spanish, Seville 1599–1660 Madrid"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "portrait",
+      "aspectRatio": "487 / 625",
+      "background": "#ede8df",
+      "alt": "María Teresa, Infanta of Spain by Workshop of Velázquez (Diego Rodríguez de Silva y Velázquez), mid-17th century. Oil on canvas. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-459089.webp",
+      "width": 487,
+      "height": 625
+    },
+    "recommendationReason": "Explore paintings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Robert Lehman Collection, 1975 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/459089"
+    }
+  },
+  {
+    "id": "1dfd9164-b71d-2c11-95aa-11fe1b3e136f",
+    "slug": "cloud-study-met-727706",
+    "title": "Cloud study",
+    "year": "1830–35",
+    "medium": "Watercolor over graphite",
+    "dimensions": "Sheet: 5 × 6 in. (12.7 × 15.2 cm)",
+    "description": "Cloud study (1830–35). John Constable; Watercolor over graphite. Collection: The Metropolitan Museum of Art. Credit: Purchase, 2015 Benefit Fund, The Elisha Whittelsey Collection, The Elisha Whittelsey Fund, and Connie Simmons and James D. Krugman Gift, 2016",
+    "movement": "Drawings",
+    "tags": [
+      "clouds",
+      "drawings",
+      "drawings and prints"
+    ],
+    "features": {
+      "palette": [],
+      "mood": [],
+      "composition": [],
+      "subjects": [
+        "clouds"
+      ],
+      "mediumCategory": "drawings",
+      "period": "1830–35",
+      "geography": "Not supplied"
+    },
+    "artist": {
+      "id": "13eb7c04-ced6-e721-8695-c87e65ea6407",
+      "slug": "john-constable-met-13eb7c04",
+      "name": "John Constable",
+      "nationality": "British",
+      "biography": "British, East Bergholt 1776–1837 Hampstead"
+    },
+    "visual": {
+      "kind": "image",
+      "aspect": "landscape",
+      "aspectRatio": "600 / 436",
+      "background": "#ede8df",
+      "alt": "Cloud study by John Constable, 1830–35. Watercolor over graphite. Image from The Metropolitan Museum of Art.",
+      "src": "/artworks/met-727706.webp",
+      "width": 600,
+      "height": 436
+    },
+    "recommendationReason": "Explore drawings from The Met's public-domain collection. Connections use museum catalog metadata.",
+    "isDemo": false,
+    "museum": {
+      "name": "The Metropolitan Museum of Art",
+      "city": "New York",
+      "country": "United States",
+      "url": "https://www.metmuseum.org/"
+    },
+    "rights": {
+      "imageSource": "The Metropolitan Museum of Art Open Access",
+      "rightsHolder": "Public domain; image provided by The Metropolitan Museum of Art",
+      "license": "CC0 1.0 Universal",
+      "usageNotes": "The Met API marked this object isPublicDomain=true when verified 2026-09-27. Purchase, 2015 Benefit Fund, The Elisha Whittelsey Collection, The Elisha Whittelsey Fund, and Connie Simmons and James D. Krugman Gift, 2016 Local WebP derivative resized without cropping. Museum attribution does not imply endorsement or availability for sale.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/727706"
     }
   }
 ];

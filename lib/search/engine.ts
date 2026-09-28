@@ -1,21 +1,6 @@
 import type { Artwork, ArtworkAspect } from "../artworks/types.ts";
-
-export const MAX_SEARCH_LENGTH = 160;
-
-export type SearchFilters = {
-  artist: string;
-  movement: string;
-  mood: string;
-  palette: string;
-  orientation: "" | ArtworkAspect;
-};
-
-export const EMPTY_SEARCH_FILTERS: SearchFilters = {
-  artist: "", movement: "", mood: "", palette: "", orientation: "",
-};
-
-export type SearchState = { query: string; filters: SearchFilters };
-export type SearchMatch = { label: string; value: string };
+import { EMPTY_SEARCH_FILTERS, MAX_SEARCH_LENGTH, parseSearchStateFromFacets, type SearchFilters, type SearchMatch, type SearchFacets, type SearchState } from "./state.ts";
+export { EMPTY_SEARCH_FILTERS, MAX_SEARCH_LENGTH, searchStateToParams, type SearchFilters, type SearchState } from "./state.ts";
 export type SearchResult = {
   artwork: Artwork;
   score: number;
@@ -81,7 +66,7 @@ export function searchArtworks(artworks: Artwork[], query: string, filters: Sear
     if (filters.palette && !artwork.features.palette.includes(filters.palette)) continue;
     if (filters.orientation && artwork.visual.aspect !== filters.orientation) continue;
 
-    const fields = fieldsFor(artwork);
+    const fields = terms.length ? fieldsFor(artwork) : [];
     const matches: SearchMatch[] = [];
     const corrections: SearchResult["corrections"] = [];
     let score = 0;
@@ -112,7 +97,7 @@ export function searchArtworks(artworks: Artwork[], query: string, filters: Sear
   return results.sort((left, right) => right.score - left.score);
 }
 
-export function getSearchFacets(artworks: Artwork[]) {
+export function getSearchFacets(artworks: Artwork[]): SearchFacets {
   const unique = (values: string[]) => [...new Set(values)].sort((left, right) => left.localeCompare(right));
   return {
     artists: [...new Map(artworks.map(({ artist }) => [artist.slug, { value: artist.slug, label: artist.name }])).values()].sort((left, right) => left.label.localeCompare(right.label)),
@@ -124,26 +109,5 @@ export function getSearchFacets(artworks: Artwork[]) {
 }
 
 export function parseSearchState(params: URLSearchParams, artworks: Artwork[]): SearchState {
-  const facets = getSearchFacets(artworks);
-  const selected = (key: string, options: string[]) => {
-    const value = params.get(key) ?? "";
-    return options.includes(value) ? value : "";
-  };
-  return {
-    query: (params.get("q") ?? "").slice(0, MAX_SEARCH_LENGTH),
-    filters: {
-      artist: selected("artist", facets.artists.map(({ value }) => value)),
-      movement: selected("movement", facets.movements),
-      mood: selected("mood", facets.moods),
-      palette: selected("palette", facets.palettes),
-      orientation: selected("orientation", facets.orientations) as SearchFilters["orientation"],
-    },
-  };
-}
-
-export function searchStateToParams({ query, filters }: SearchState) {
-  const params = new URLSearchParams();
-  if (query.trim()) params.set("q", query.trim().slice(0, MAX_SEARCH_LENGTH));
-  for (const [key, value] of Object.entries(filters)) if (value) params.set(key, value);
-  return params;
+  return parseSearchStateFromFacets(params, getSearchFacets(artworks));
 }

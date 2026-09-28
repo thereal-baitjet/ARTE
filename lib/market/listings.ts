@@ -1,4 +1,4 @@
-import { DEMO_ARTWORKS } from "../artworks/demoArtworks.ts";
+import { SYNTHETIC_ARTWORKS } from "../artworks/syntheticArtworks.ts";
 import type { Artwork } from "../artworks/types.ts";
 
 export type Currency = "USD" | "EUR" | "GBP";
@@ -23,12 +23,12 @@ const gallery = {
 
 // Fixed dates are intentional: this fixture must age instead of pretending to be refreshed.
 export const DEMO_LISTINGS: Listing[] = [
-  { id: "demo-quiet-red", artwork: DEMO_ARTWORKS[0], isDemo: true, gallery, status: "active", priceCents: 85000, currency: "USD", checkedAt: "2026-09-27T00:00:00Z", expiresAt: "2027-09-27T00:00:00Z", sourceUrl: "/sources/demo" },
-  { id: "demo-night-window", artwork: DEMO_ARTWORKS[1], isDemo: true, gallery, status: "active", priceCents: 240000, currency: "USD", checkedAt: "2026-09-27T00:00:00Z", expiresAt: "2027-09-27T00:00:00Z", sourceUrl: "/sources/demo" },
-  { id: "demo-form-three", artwork: DEMO_ARTWORKS[2], isDemo: true, gallery, status: "active", priceCents: null, currency: "EUR", checkedAt: "2026-09-27T00:00:00Z", expiresAt: "2027-09-27T00:00:00Z", sourceUrl: "/sources/demo" },
-  { id: "demo-blue-interval", artwork: DEMO_ARTWORKS[4], isDemo: true, gallery, status: "reserved", priceCents: 160000, currency: "GBP", checkedAt: "2026-09-27T00:00:00Z", expiresAt: "2027-09-27T00:00:00Z", sourceUrl: "/sources/demo" },
-  { id: "demo-garden", artwork: DEMO_ARTWORKS[5], isDemo: true, gallery, status: "active", priceCents: 640000, currency: "EUR", checkedAt: "2026-08-01T00:00:00Z", expiresAt: "2027-09-27T00:00:00Z", sourceUrl: "/sources/demo" },
-  { id: "demo-dust-gold", artwork: DEMO_ARTWORKS[7], isDemo: true, gallery, status: "expired", priceCents: 120000, currency: "USD", checkedAt: "2026-08-01T00:00:00Z", expiresAt: "2026-09-01T00:00:00Z", sourceUrl: "/sources/demo" },
+  { id: "demo-quiet-red", artwork: SYNTHETIC_ARTWORKS[0], isDemo: true, gallery, status: "active", priceCents: 85000, currency: "USD", checkedAt: "2026-09-27T00:00:00Z", expiresAt: "2027-09-27T00:00:00Z", sourceUrl: "/sources/demo" },
+  { id: "demo-night-window", artwork: SYNTHETIC_ARTWORKS[1], isDemo: true, gallery, status: "active", priceCents: 240000, currency: "USD", checkedAt: "2026-09-27T00:00:00Z", expiresAt: "2027-09-27T00:00:00Z", sourceUrl: "/sources/demo" },
+  { id: "demo-form-three", artwork: SYNTHETIC_ARTWORKS[2], isDemo: true, gallery, status: "active", priceCents: null, currency: "EUR", checkedAt: "2026-09-27T00:00:00Z", expiresAt: "2027-09-27T00:00:00Z", sourceUrl: "/sources/demo" },
+  { id: "demo-blue-interval", artwork: SYNTHETIC_ARTWORKS[4], isDemo: true, gallery, status: "reserved", priceCents: 160000, currency: "GBP", checkedAt: "2026-09-27T00:00:00Z", expiresAt: "2027-09-27T00:00:00Z", sourceUrl: "/sources/demo" },
+  { id: "demo-garden", artwork: SYNTHETIC_ARTWORKS[5], isDemo: true, gallery, status: "active", priceCents: 640000, currency: "EUR", checkedAt: "2026-08-01T00:00:00Z", expiresAt: "2027-09-27T00:00:00Z", sourceUrl: "/sources/demo" },
+  { id: "demo-dust-gold", artwork: SYNTHETIC_ARTWORKS[7], isDemo: true, gallery, status: "expired", priceCents: 120000, currency: "USD", checkedAt: "2026-08-01T00:00:00Z", expiresAt: "2026-09-01T00:00:00Z", sourceUrl: "/sources/demo" },
 ];
 
 export type Freshness = "current" | "stale" | "expired";

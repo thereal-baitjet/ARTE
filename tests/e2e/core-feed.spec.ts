@@ -32,17 +32,20 @@ test("guest likes and saves persist across reload even when the feed adapts", as
   await page.goto("/discover", { waitUntil: "networkidle" });
   const first = page.locator("[data-artwork-id]").first();
   const artworkId = await first.getAttribute("data-artwork-id");
+  const artworkHref = await first.getByRole("link", { name: "View artwork" }).getAttribute("href");
   expect(artworkId).toBeTruthy();
+  expect(artworkHref).toBeTruthy();
   await first.locator('[data-action="like"]').click();
   await first.locator('[data-action="save"]').click();
   await page.reload({ waitUntil: "networkidle" });
-  const restored = page.locator(`[data-artwork-id="${artworkId}"]`);
-  if (!(await restored.count())) {
-    await page.locator("[data-feed-sentinel]").scrollIntoViewIfNeeded();
-    await expect.poll(async () => page.locator(`[data-artwork-id="${artworkId}"]`).count()).toBeGreaterThan(0);
-  }
-  await expect(page.locator(`[data-artwork-id="${artworkId}"]`).locator('[data-action="like"]')).toHaveAttribute("aria-pressed", "true");
-  await expect(page.locator(`[data-artwork-id="${artworkId}"]`).locator('[data-action="save"]')).toHaveAttribute("aria-pressed", "true");
+  const persisted = await page.evaluate(() => ({ likes: JSON.parse(localStorage.getItem("arte:guest:likes") ?? "[]"), saves: JSON.parse(localStorage.getItem("arte:guest:saves") ?? "[]") }));
+  expect(persisted.likes).toContain(artworkId);
+  expect(persisted.saves).toContain(artworkId);
+  await page.goto(artworkHref!, { waitUntil: "networkidle" });
+  await expect(page.locator('[data-action="like"]')).toHaveAttribute("aria-pressed", "true");
+  await expect(page.locator('[data-action="save"]')).toHaveAttribute("aria-pressed", "true");
+  await page.goto("/collections", { waitUntil: "networkidle" });
+  await expect(page.locator(`[data-collection-artwork="${artworkId}"]`)).toBeVisible();
 });
 
 test("artwork and artist routes work and feed position is restored", async ({ page }) => {

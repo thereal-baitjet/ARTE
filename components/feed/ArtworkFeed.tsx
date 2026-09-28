@@ -8,14 +8,17 @@ import type { RecommendationPage, RecommendedArtwork } from "@/lib/recommendatio
 import { ArtworkSlide } from "@/components/artwork/ArtworkSlide";
 
 const SCROLL_KEY = "arte:discover:scrollY";
+const NEXT_ROOM_SIZE = 2;
+const AUTOLOAD_COOLDOWN_MS = 1_200;
+const END_PROXIMITY_PX = 150;
 
 type ApiPage = RecommendationPage & { profileEventCount?: number };
 
-async function requestPage(events: AnalyticsEvent[], hiddenArtworkIds: string[], cursor: string | null): Promise<ApiPage> {
+async function requestPage(events: AnalyticsEvent[], hiddenArtworkIds: string[], cursor: string | null, limit = 4): Promise<ApiPage> {
   const response = await fetch("/api/recommendations", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ events, hiddenArtworkIds, cursor, limit: 4 }),
+    body: JSON.stringify({ events, hiddenArtworkIds, cursor, limit }),
   });
   if (!response.ok) throw new Error("Recommendation request failed");
   return response.json() as Promise<ApiPage>;
@@ -33,6 +36,7 @@ export function ArtworkFeed({ initialItems, initialCursor }: { initialItems: Rec
   const sentinelRef = useRef<HTMLDivElement | null>(null);
   const eventsRef = useRef<AnalyticsEvent[]>([]);
   const hiddenRef = useRef<string[]>([]);
+  const automaticRef = useRef({ checkpointY: 0, lastScrollY: 0, mustLeaveEnd: false, nextAllowedAt: 0 });
 
   useEffect(() => {
     let cancelled = false;
@@ -69,6 +73,9 @@ export function ArtworkFeed({ initialItems, initialCursor }: { initialItems: Rec
           })
           .finally(() => {
             if (cancelled || generation !== generationRef.current) return;
+            // Restoring the previous position or refreshing preferences is not
+            // permission to page through the gallery without another scroll.
+            automaticRef.current = { checkpointY: window.scrollY, lastScrollY: window.scrollY, mustLeaveEnd: false, nextAllowedAt: 0 };
             loadingRef.current = false;
             setHydrated(true);
           });
@@ -85,6 +92,12 @@ export function ArtworkFeed({ initialItems, initialCursor }: { initialItems: Rec
   }, [initialItems, initialCursor]);
 
   useEffect(() => {
+    // Disable anchoring on the actual page scroller while this feed is mounted.
+    // Excluding only the feed still lets the browser anchor its changing shell
+    // and jump past newly inserted works to keep the end button in view.
+    const scroller = document.documentElement;
+    const previousAnchor = scroller.style.overflowAnchor;
+    scroller.style.overflowAnchor = "none";
     const saved = Number(sessionStorage.getItem(SCROLL_KEY) ?? "0");
     const restoreFrame = window.requestAnimationFrame(() => {
       if (Number.isFinite(saved) && saved > 0) window.scrollTo({ top: saved, behavior: "auto" });
@@ -100,17 +113,19 @@ export function ArtworkFeed({ initialItems, initialCursor }: { initialItems: Rec
       if (frame) window.cancelAnimationFrame(frame);
       window.removeEventListener("scroll", remember);
       sessionStorage.setItem(SCROLL_KEY, String(window.scrollY));
+      scroller.style.overflowAnchor = previousAnchor;
     };
   }, []);
 
   const loadMore = useCallback(async () => {
     if (!cursor || loadingRef.current) return;
     loadingRef.current = true;
+    automaticRef.current.mustLeaveEnd = true;
     const generation = generationRef.current;
     setLoading(true);
     setError(null);
     try {
-      const page = await requestPage(eventsRef.current, hiddenRef.current, cursor);
+      const page = await requestPage(eventsRef.current, hiddenRef.current, cursor, NEXT_ROOM_SIZE);
       if (generation !== generationRef.current) return;
       setItems((current) => {
         const known = new Set(current.map(({ id }) => id));
@@ -121,17 +136,56 @@ export function ArtworkFeed({ initialItems, initialCursor }: { initialItems: Rec
     } catch {
       if (generation === generationRef.current) setError("The next gallery room could not be loaded.");
     } finally {
-      if (generation === generationRef.current) { loadingRef.current = false; setLoading(false); }
+      if (generation === generationRef.current) {
+        automaticRef.current.checkpointY = window.scrollY;
+        automaticRef.current.lastScrollY = window.scrollY;
+        automaticRef.current.nextAllowedAt = performance.now() + AUTOLOAD_COOLDOWN_MS;
+        loadingRef.current = false;
+        setLoading(false);
+      }
     }
   }, [cursor]);
 
   useEffect(() => {
     const sentinel = sentinelRef.current;
     if (!sentinel || !cursor || !hydrated) return;
-    const observer = new IntersectionObserver(([entry]) => { if (entry.isIntersecting) void loadMore(); }, { rootMargin: "500px 0px" });
+    let nearEnd = false;
+    let timer = 0;
+    const tryAutomaticLoad = () => {
+      const automatic = automaticRef.current;
+      const minimumProgress = Math.max(160, Math.min(480, window.innerHeight / 2));
+      if (!nearEnd || loadingRef.current || error || automatic.mustLeaveEnd ||
+        automatic.lastScrollY - automatic.checkpointY < minimumProgress ||
+        window.scrollY - automatic.checkpointY < minimumProgress) return;
+      const remaining = automatic.nextAllowedAt - performance.now();
+      if (remaining > 0) {
+        window.clearTimeout(timer);
+        timer = window.setTimeout(tryAutomaticLoad, remaining);
+        return;
+      }
+      void loadMore();
+    };
+    const onScroll = () => {
+      if (loadingRef.current) return;
+      automaticRef.current.lastScrollY = window.scrollY;
+      tryAutomaticLoad();
+    };
+    const observer = new IntersectionObserver(([entry]) => {
+      nearEnd = entry.isIntersecting;
+      if (!nearEnd) {
+        automaticRef.current.mustLeaveEnd = false;
+        window.clearTimeout(timer);
+      }
+      tryAutomaticLoad();
+    }, { rootMargin: `0px 0px ${END_PROXIMITY_PX}px 0px` });
     observer.observe(sentinel);
-    return () => observer.disconnect();
-  }, [cursor, loadMore, hydrated]);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => {
+      observer.disconnect();
+      window.clearTimeout(timer);
+      window.removeEventListener("scroll", onScroll);
+    };
+  }, [cursor, loadMore, hydrated, error]);
 
   useEffect(() => {
     const handleKeyboard = (event: KeyboardEvent) => {
@@ -182,7 +236,8 @@ export function ArtworkFeed({ initialItems, initialCursor }: { initialItems: Rec
       {items.map((artwork, index) => <ArtworkSlide key={artwork.id} artwork={artwork} position={index} onHide={() => hideArtwork(artwork)} />)}
       <div ref={sentinelRef} data-feed-sentinel className="flex min-h-28 items-center justify-center px-6 py-10 text-center">
         {loading ? <p role="status" className="text-xs uppercase tracking-[0.15em] text-[var(--muted-text)]">Preparing the next room…</p> : null}
-        {error ? <div><p className="text-sm text-[var(--muted-text)]">{error}</p>{cursor ? <button type="button" onClick={() => void loadMore()} className="focus-ring mt-4 border-b border-[var(--primary-ink)] pb-1 text-xs uppercase tracking-[0.12em]">Try again</button> : null}</div> : null}
+        {error ? <div><p role="alert" className="text-sm text-[var(--muted-text)]">{error}</p>{cursor ? <button type="button" onClick={() => void loadMore()} disabled={loading || !hydrated} className="focus-ring mt-4 border-b border-[var(--primary-ink)] pb-1 text-xs uppercase tracking-[0.12em]">Try again</button> : null}</div> : null}
+        {cursor && !error && !loading ? <button type="button" onClick={() => void loadMore()} disabled={!hydrated} className="focus-ring border-b border-[var(--primary-ink)] pb-1 text-xs uppercase tracking-[0.12em] disabled:opacity-50">Load more works</button> : null}
         {!cursor && !loading && !error ? <p className="text-xs uppercase tracking-[0.15em] text-[var(--muted-text)]">End of the current collection</p> : null}
       </div>
     </div>

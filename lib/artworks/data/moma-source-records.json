@@ -1,0 +1,2513 @@
+[
+  {
+    "id": 79802,
+    "moma": {
+      "Title": "The Starry Night",
+      "Artist": [
+        "Vincent van Gogh"
+      ],
+      "ConstituentID": [
+        2206
+      ],
+      "ArtistBio": [
+        "Dutch, 1853–1890"
+      ],
+      "Nationality": [
+        "Dutch"
+      ],
+      "BeginDate": [
+        1853
+      ],
+      "EndDate": [
+        1890
+      ],
+      "Gender": [
+        "male"
+      ],
+      "Date": "Saint Rémy, June 1889",
+      "Medium": "Oil on canvas",
+      "Dimensions": "29 x 36 1/4\" (73.7 x 92.1 cm)",
+      "CreditLine": "Acquired through the Lillie P. Bliss Bequest (by exchange)",
+      "AccessionNumber": "472.1941",
+      "Classification": "Painting",
+      "Department": "Painting & Sculpture",
+      "DateAcquired": "1941-06-10",
+      "Cataloged": "Y",
+      "ObjectID": 79802,
+      "URL": "https://www.moma.org/collection/works/79802",
+      "ImageURL": "https://www.moma.org/media/W1siZiIsIjQ2NzUxNyJdLFsicCIsImNvbnZlcnQiLCItcmVzaXplIDEwMjR4MTAyNFx1MDAzZSJdXQ.jpg?sha=d518423159c0c0ae",
+      "OnView": "\"MoMA, Floor 5, 501\"",
+      "Height (cm)": 73.7,
+      "Width (cm)": 92.1
+    },
+    "_datasetSource": {
+      "sourceUrl": "https://github.com/MuseumofModernArt/collection/tree/3053da6addd4d210b955021f410430ac3bbf18d4",
+      "dataUrl": "https://media.githubusercontent.com/media/MuseumofModernArt/collection/3053da6addd4d210b955021f410430ac3bbf18d4/Artworks.json",
+      "commit": "3053da6addd4d210b955021f410430ac3bbf18d4",
+      "dataSha256": "288d65589d7dadec509984c50f726454be4bbe00e68e61cf7d6116713a408807",
+      "dataSizeBytes": 144917269,
+      "metadataLicense": "CC0 1.0 Universal",
+      "imageLicenseNotice": "MoMA metadata CC0 excludes images; images are independently sourced from Wikimedia Commons."
+    },
+    "_commonsEvidence": {
+      "apiUrl": "https://commons.wikimedia.org/w/api.php?action=query&format=json&prop=imageinfo%7Crevisions&iiprop=url%7Cextmetadata%7Csha1%7Csize&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=File%3AVanGogh-starry+night.jpg",
+      "retrievalNote": "Retrieved in batched Commons API queries; this URL reproduces the individual file query.",
+      "page": {
+        "pageid": 9860,
+        "ns": 6,
+        "title": "File:VanGogh-starry night.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 780240,
+            "width": 1879,
+            "height": 1500,
+            "url": "https://upload.wikimedia.org/wikipedia/commons/c/cd/VanGogh-starry_night.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:VanGogh-starry_night.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=9860",
+            "sha1": "65fae843342d8367058d9b9f6d89056f7cb656c1",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2004-12-04 18:47:28",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "<div class=\"fn\">\n<div style=\"font-size:0.9em;display:inline-block;\">Dutch:  <div style=\"display:inline-block\" dir=\"ltr\" lang=\"nl\"><i>Sterrennacht <span class=\"mw-valign-text-top noprint\" typeof=\"mw:File/Frameless\"><a href=\"https://www.wikidata.org/wiki/Q45585#P1476\" title=\"Edit this at Wikidata\"><img alt=\"Edit this at Wikidata\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"10\" height=\"10\" class=\"mw-file-element\" data-file-width=\"20\" data-file-height=\"20\"></a></span></i></div></div><br><div style=\"font-weight:bold;display:inline-block;\"><div style=\"display:inline-block\" dir=\"ltr\" lang=\"en\"><i>The Starry Night</i></div></div><div style=\"display: none;\">title QS:P1476,nl:\"Sterrennacht <span class=\"mw-valign-text-top noprint\" typeof=\"mw:File/Frameless\"><a href=\"https://www.wikidata.org/wiki/Q45585#P1476\" title=\"Edit this at Wikidata\"><img alt=\"Edit this at Wikidata\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"10\" height=\"10\" class=\"mw-file-element\" data-file-width=\"20\" data-file-height=\"20\"></a></span>\"</div><div style=\"display: none;\">label QS:Lnl,\"Sterrennacht <span class=\"mw-valign-text-top noprint\" typeof=\"mw:File/Frameless\"><a href=\"https://www.wikidata.org/wiki/Q45585#P1476\" title=\"Edit this at Wikidata\"><img alt=\"Edit this at Wikidata\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"10\" height=\"10\" class=\"mw-file-element\" data-file-width=\"20\" data-file-height=\"20\"></a></span>\"</div><div style=\"display: none;\">label QS:Les,\"La noche estrellada\"</div><div style=\"display: none;\">label QS:Lco,\"Notte stillata\"</div><div style=\"display: none;\">label QS:Lms,\"The Starry Night\"</div><div style=\"display: none;\">label QS:Len-gb,\"The Starry Night\"</div><div style=\"display: none;\">label QS:Lbg,\"Звездна нощ\"</div><div style=\"display: none;\">label QS:Ltr,\"Yıldızlı Gece\"</div><div style=\"display: none;\">label QS:Lzh-hk,\"星夜\"</div><div style=\"display: none;\">label QS:Lsv,\"De sterrennacht\"</div><div style=\"display: none;\">label QS:Luk,\"Зоряна ніч\"</div><div style=\"display: none;\">label QS:Lzh-cn,\"星夜\"</div><div style=\"display: none;\">label QS:Luz,\"Yulduzli tun\"</div><div style=\"display: none;\">label QS:Lkk,\"Жұлдызды түн\"</div><div style=\"display: none;\">label QS:Leo,\"Stela nokto\"</div><div style=\"display: none;\">label QS:Lcs,\"Hvězdná noc\"</div><div style=\"display: none;\">label QS:Lbs,\"Zvjezdana noć\"</div><div style=\"display: none;\">label QS:Lbn,\"তারাময় রাত\"</div><div style=\"display: none;\">label QS:Lfr,\"La Nuit étoilée\"</div><div style=\"display: none;\">label QS:Lhr,\"Zvjezdana noć\"</div><div style=\"display: none;\">label QS:Lvi,\"Đêm đầy sao\"</div><div style=\"display: none;\">label QS:Llv,\"Zvaigžņotā nakts\"</div><div style=\"display: none;\">label QS:Laf,\"Die Sterrenag\"</div><div style=\"display: none;\">label QS:Lsr,\"Звездана ноћ\"</div><div style=\"display: none;\">label QS:Lnb,\"Stjernenatt\"</div><div style=\"display: none;\">label QS:Laz,\"Ulduzlu gecə\"</div><div style=\"display: none;\">label QS:Lckb,\"شەوی ئەستێرەکان\"</div><div style=\"display: none;\">label QS:Len,\"The Starry Night\"</div><div style=\"display: none;\">label QS:Lar,\"ليلة النجوم\"</div><div style=\"display: none;\">label QS:Lbr,\"An Noz stergannek\"</div><div style=\"display: none;\">label QS:Lyue,\"星夜\"</div><div style=\"display: none;\">label QS:Lhu,\"Csillagos éj\"</div><div style=\"display: none;\">label QS:Leu,\"Gau izartsua\"</div><div style=\"display: none;\">label QS:Last,\"La nueche estrellada\"</div><div style=\"display: none;\">label QS:Lru,\"Звёздная ночь\"</div><div style=\"display: none;\">label QS:Lba,\"Йондоҙло төн\"</div><div style=\"display: none;\">label QS:Lcy,\"Y Noson Serennog\"</div><div style=\"display: none;\">label QS:Lbe,\"Зорная ноч\"</div><div style=\"display: none;\">label QS:Lsr-ec,\"Звездана ноћ\"</div><div style=\"display: none;\">label QS:Lzh,\"星夜\"</div><div style=\"display: none;\">label QS:Lda,\"Stjernenatten\"</div><div style=\"display: none;\">label QS:Lka,\"ვარსკვლავებიანი ღამე\"</div><div style=\"display: none;\">label QS:Lja,\"星月夜\"</div><div style=\"display: none;\">label QS:Larz,\"ليله النجوم\"</div><div style=\"display: none;\">label QS:Lhe,\"ליל כוכבים\"</div><div style=\"display: none;\">label QS:Lla,\"Nox stellans\"</div><div style=\"display: none;\">label QS:Lhi,\"तारामय रात\"</div><div style=\"display: none;\">label QS:Lte,\"ది స్టార్రీ నైట్\"</div><div style=\"display: none;\">label QS:Lfi,\"Tähtikirkas yö\"</div><div style=\"display: none;\">label QS:Lta,\"விண்மீன்கள் நிறைந்த இரவு\"</div><div style=\"display: none;\">label QS:Lit,\"Notte stellata\"</div><div style=\"display: none;\">label QS:Lne,\"तारामय रात\"</div><div style=\"display: none;\">label QS:Lht,\"Nuit zetwal (1889)\"</div><div style=\"display: none;\">label QS:Let,\"Tähistaevas\"</div><div style=\"display: none;\">label QS:Lkm,\"រាត្រីពោរពេញដោយផ្កាយ\"</div><div style=\"display: none;\">label QS:Lsh,\"Zvjezdana noć\"</div><div style=\"display: none;\">label QS:Lwuu,\"星夜\"</div><div style=\"display: none;\">label QS:Las,\"দ্য ষ্টাৰী নাইট\"</div><div style=\"display: none;\">label QS:Ltt,\"Йолдызлы төн\"</div><div style=\"display: none;\">label QS:Lhy,\"Աստղալից գիշեր\"</div><div style=\"display: none;\">label QS:Lpt,\"A Noite Estrelada\"</div><div style=\"display: none;\">label QS:Lbe-tarask,\"Зорная ноч\"</div><div style=\"display: none;\">label QS:Lde,\"Sternennacht\"</div><div style=\"display: none;\">label QS:Ltw,\"The Starry Night\"</div><div style=\"display: none;\">label QS:Llt,\"Žvaigždėta naktis\"</div><div style=\"display: none;\">label QS:Lsl,\"Zvezdna noč\"</div><div style=\"display: none;\">label QS:Lfa,\"شب پر ستاره\"</div><div style=\"display: none;\">label QS:Lro,\"Noapte înstelată\"</div><div style=\"display: none;\">label QS:Lth,\"ราตรีประดับดาว\"</div><div style=\"display: none;\">label QS:Lwar,\"An Mabitun-on nga Gab-i\"</div><div style=\"display: none;\">label QS:Lpl,\"Gwiaździsta noc\"</div><div style=\"display: none;\">label QS:Lml,\"ദ സ്റ്റാറി നൈറ്റ്\"</div><div style=\"display: none;\">label QS:Lzh-tw,\"星夜\"</div><div style=\"display: none;\">label QS:Lga,\"An Oíche Réaltach\"</div><div style=\"display: none;\">label QS:Lid,\"Malam Berbintang\"</div><div style=\"display: none;\">label QS:Lmk,\"Ѕвездена ноќ\"</div><div style=\"display: none;\">label QS:Lpa,\"ਤਾਰਿਆਂ ਭਰੀ ਰਾਤ\"</div><div style=\"display: none;\">label QS:Lgl,\"A noite estrelada\"</div><div style=\"display: none;\">label QS:Lko,\"별이 빛나는 밤\"</div><div style=\"display: none;\">label QS:Lel,\"Η έναστρη νύχτα\"</div><div style=\"display: none;\">label QS:Lca,\"La nit estelada\"</div></div>",
+                "source": "commons-desc-page"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "The Starry Night by van Gogh|Astronomy Picture of the Day|PD-old-100-expired|PD-Art (PD-old-100-expired)|Artworks with Wikidata item|Artworks with known accession number|Formerly featured pictures on Wikipedia, Turkish|CC-PD-Mark|Artworks with accession number from Wikidata|PD-Art missing SDC copyright status|PD-old missing SDC copyright status|Artworks digital representation of 2D work|Files with Assessments template missing SDC Commons no value quality assessment",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Artist": {
+                "value": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Vincent_van_Gogh\" class=\"extiw\" title=\"w:en:Vincent van Gogh\"><span title=\"Dutch painter (1853–1890)\">Vincent van Gogh</span></a></bdi>",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "1889 <span class=\"mw-valign-text-top noprint\" typeof=\"mw:File/Frameless\"><a href=\"https://www.wikidata.org/wiki/Q45585#P571\" title=\"Edit this at Wikidata\"><img alt=\"Edit this at Wikidata\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"10\" height=\"10\" class=\"mw-file-element\" data-file-width=\"20\" data-file-height=\"20\"></a></span>",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "Downloaded from Houston tourism web site around painting's time in Houston's Museum of Fine Arts (21 September 2003 - 4 January 2004). Can no longer find web site.",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 960008743,
+            "parentid": 960008609,
+            "timestamp": "2024-11-21T14:04:22Z",
+            "slots": {
+              "main": {
+                "contentmodel": "wikitext",
+                "contentformat": "text/x-wiki",
+                "*": "{{Artwork\n |object type        = \n |date               = \n |medium             = \n |dimensions         = \n |institution        = \n |department         = \n |accession number   = \n |place of creation  =    \n |place of discovery =    \n |object history     = \n |exhibition history =    \n |credit line        = \n |inscriptions       = \n |notes              = \n |references         = \n |source             = Downloaded from Houston tourism web site around painting's time in Houston's Museum of Fine Arts (21 September 2003 - 4 January 2004). Can no longer find web site.\n |permission         = \n |other_versions     = <gallery>\nImage:VanGogh-starry night ballance1.jpg\nImage:VanGogh-starry night edit.jpg\nFile:Van Gogh - Starry Night - Google Art Project.jpg|High-resolution\n</gallery>\n |wikidata           =  Q45585\n |other_fields       =  \n}}\n\n{{Assessments|trwiki=2}}\n\n{{PD-Art|PD-old-100-expired}}\n\n[[Category:The Starry Night by van Gogh]]\n[[Category:Astronomy Picture of the Day]]"
+              }
+            }
+          }
+        ]
+      },
+      "pageId": 9860,
+      "revisionId": 960008743,
+      "revisionTimestamp": "2024-11-21T14:04:22Z",
+      "permanentUrl": "https://commons.wikimedia.org/w/index.php?oldid=960008743",
+      "filePageUrl": "https://commons.wikimedia.org/wiki/File:VanGogh-starry_night.jpg",
+      "requiredMetadataFields": {
+        "LicenseShortName": {
+          "value": "Public domain",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "Copyrighted": {
+          "value": "False",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "Artist": {
+          "value": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Vincent_van_Gogh\" class=\"extiw\" title=\"w:en:Vincent van Gogh\"><span title=\"Dutch painter (1853–1890)\">Vincent van Gogh</span></a></bdi>",
+          "source": "commons-desc-page"
+        },
+        "Attribution": null,
+        "Credit": {
+          "value": "Downloaded from Houston tourism web site around painting's time in Houston's Museum of Fine Arts (21 September 2003 - 4 January 2004). Can no longer find web site.",
+          "source": "commons-desc-page"
+        },
+        "LicenseUrl": null
+      },
+      "missingFieldNote": "Null fields were not supplied by the Commons API; no license URL or attribution value has been invented.",
+      "publicDomainBasis": "Commons labels this faithful 2D reproduction PD-Art and PD-old-100-expired. MoMA records creation before 1931 and artist death before 1926; original wikitext, categories, and artist dates are archived.",
+      "retrievedAt": "2026-09-27T23:19:45.704315+00:00"
+    },
+    "_identityEvidence": {
+      "objectId": 79802,
+      "commonsTitle": "File:VanGogh-starry night.jpg",
+      "wikidata": "Q45585",
+      "identityBasis": "The Commons file names The Starry Night and Wikidata Q45585. The supporting Google Art Project Commons record for Q45585 explicitly links MoMA object 79802 and accession 472.1941.",
+      "supportingCommonsFile": "File:Van Gogh - Starry Night - Google Art Project.jpg",
+      "supportingCommonsPage": {
+        "pageid": 25498286,
+        "ns": 6,
+        "title": "File:Van Gogh - Starry Night - Google Art Project.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 696195208,
+            "width": 44567,
+            "height": 35291,
+            "url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=25498286",
+            "sha1": "b3e5f8291b4137ff50ba876c84a1f7248186104a",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2026-03-02 17:26:01",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "<div class=\"fn\">\n<div style=\"font-weight:bold;display:inline-block;\"><div style=\"display:inline-block\" dir=\"ltr\" lang=\"en\"><i><a href=\"https://en.wikipedia.org/wiki/The_Starry_Night\" class=\"extiw\" title=\"en:The Starry Night\">The Starry Night</a></i></div></div><div style=\"display: none;\">title QS:P1476,en:\"<a href=\"https://en.wikipedia.org/wiki/The_Starry_Night\" class=\"extiw\" title=\"en:The Starry Night\">The Starry Night</a>\"</div><div style=\"display: none;\">label QS:Len,\"<a href=\"https://en.wikipedia.org/wiki/The_Starry_Night\" class=\"extiw\" title=\"en:The Starry Night\">The Starry Night</a>\"</div><div style=\"display: none;\">label QS:Les,\"<a href=\"https://es.wikipedia.org/wiki/La_noche_estrellada\" class=\"extiw\" title=\"es:La noche estrellada\">La noche estrellada</a>\"</div><div style=\"display: none;\">label QS:Lmk,\"<a href=\"https://mk.wikipedia.org/wiki/%D0%85%D0%B2%D0%B5%D0%B7%D0%B4%D0%B5%D0%BD%D0%B0_%D0%BD%D0%BE%D1%9C\" class=\"extiw\" title=\"mk:Ѕвездена ноќ\">Ѕвездена ноќ</a>\"</div><div style=\"display: none;\">label QS:Lfr,\"<a href=\"https://fr.wikipedia.org/wiki/La_Nuit_%C3%A9toil%C3%A9e\" class=\"extiw\" title=\"fr:La Nuit étoilée\">La Nuit étoilée</a>\"</div><div style=\"display: none;\">label QS:Lar,\"<a href=\"https://ar.wikipedia.org/wiki/%D9%84%D9%8A%D9%84%D8%A9_%D8%A7%D9%84%D9%86%D8%AC%D9%88%D9%85_(%D9%84%D9%88%D8%AD%D8%A9)\" class=\"extiw\" title=\"ar:ليلة النجوم (لوحة)\">ليلة النُجُوم</a>\"</div><div style=\"display: none;\">label QS:Lbr,\"<a href=\"https://br.wikipedia.org/wiki/An_Noz_stergannek\" class=\"extiw\" title=\"br:An Noz stergannek\">An Noz stergannek</a>\"</div><div style=\"display: none;\">label QS:Lca,\"<a href=\"https://ca.wikipedia.org/wiki/La_nit_estelada\" class=\"extiw\" title=\"ca:La nit estelada\">La nit estelada</a>\"</div><div style=\"display: none;\">label QS:Lzh,\"<a href=\"https://zh.wikipedia.org/wiki/%E6%98%9F%E5%A4%9C\" class=\"extiw\" title=\"zh:星夜\">星夜</a>\"</div><div style=\"display: none;\">label QS:Lja,\"<a href=\"https://ja.wikipedia.org/wiki/%E6%98%9F%E6%9C%88%E5%A4%9C\" class=\"extiw\" title=\"ja:星月夜\">星月夜</a>\"</div><div style=\"display: none;\">label QS:Lfi,\"<a href=\"https://fi.wikipedia.org/wiki/T%C3%A4htikirkas_y%C3%B6\" class=\"extiw\" title=\"fi:Tähtikirkas yö\">Tähtikirkas yö</a>\"</div><div style=\"display: none;\">label QS:Lbe-tarask,\"<a href=\"https://be-tarask.wikipedia.org/wiki/%D0%97%D0%BE%D1%80%D0%BD%D0%B0%D1%8F_%D0%BD%D0%BE%D1%87\" class=\"extiw\" title=\"be-x-old:Зорная ноч\">Зорная ноч</a>\"</div><div style=\"display: none;\">label QS:Lth,\"<a href=\"https://th.wikipedia.org/wiki/%E0%B8%84%E0%B8%B7%E0%B8%99%E0%B8%94%E0%B8%B2%E0%B8%A7%E0%B9%80%E0%B8%81%E0%B8%A5%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B8%9F%E0%B9%89%E0%B8%B2_(%E0%B8%9F%E0%B8%B2%E0%B8%99_%E0%B8%81%E0%B9%87%E0%B8%AD%E0%B8%81%E0%B8%AE%E0%B9%8C)\" class=\"extiw\" title=\"th:คืนดาวเกลื่อนฟ้า (ฟาน ก็อกฮ์)\">คืนดาวเกลื่อนฟ้า (ฟาน ก็อกฮ์)</a>\"</div><div style=\"display: none;\">label QS:Lbg,\"<a href=\"https://bg.wikipedia.org/wiki/%D0%97%D0%B2%D0%B5%D0%B7%D0%B4%D0%BD%D0%B0_%D0%BD%D0%BE%D1%89\" class=\"extiw\" title=\"bg:Звездна нощ\">Звездна нощ</a>\"</div><div style=\"display: none;\">label QS:Lro,\"<a href=\"https://ro.wikipedia.org/wiki/Noapte_%C3%AEnstelat%C4%83\" class=\"extiw\" title=\"ro:Noapte înstelată\">Noapte înstelată</a>\"</div><div style=\"display: none;\">label QS:Lko,\"<a href=\"https://ko.wikipedia.org/wiki/%EB%B3%84%EC%9D%B4_%EB%B9%9B%EB%82%98%EB%8A%94_%EB%B0%A4\" class=\"extiw\" title=\"ko:별이 빛나는 밤\">별이 빛나는 밤</a>\"</div><div style=\"display: none;\">label QS:Leo,\"<a href=\"https://eo.wikipedia.org/wiki/Stela_nokto\" class=\"extiw\" title=\"eo:Stela nokto\">Stela nokto</a>\"</div><div style=\"display: none;\">label QS:Laf,\"<a href=\"https://af.wikipedia.org/wiki/Die_Sterrenag\" class=\"extiw\" title=\"af:Die Sterrenag\">Die Sterrenag</a>\"</div><div style=\"display: none;\">label QS:Lru,\"<a href=\"https://ru.wikipedia.org/wiki/%D0%97%D0%B2%D1%91%D0%B7%D0%B4%D0%BD%D0%B0%D1%8F_%D0%BD%D0%BE%D1%87%D1%8C\" class=\"extiw\" title=\"ru:Звёздная ночь\">Звёздная ночь</a>\"</div><div style=\"display: none;\">label QS:Lde,\"<a href=\"https://de.wikipedia.org/wiki/Sternennacht\" class=\"extiw\" title=\"de:Sternennacht\">Sternennacht</a>\"</div><div style=\"display: none;\">label QS:Lhe,\"<a href=\"https://he.wikipedia.org/wiki/%D7%9C%D7%99%D7%9C_%D7%9B%D7%95%D7%9B%D7%91%D7%99%D7%9D\" class=\"extiw\" title=\"he:ליל כוכבים\">ליל כוכבים</a>\"</div><div style=\"display: none;\">label QS:Lit,\"<a href=\"https://it.wikipedia.org/wiki/Notte_stellata\" class=\"extiw\" title=\"it:Notte stellata\">Notte stellata</a>\"</div><div style=\"display: none;\">label QS:Lsv,\"<a href=\"https://sv.wikipedia.org/wiki/De_sterrennacht\" class=\"extiw\" title=\"sv:De sterrennacht\">De sterrennacht</a>\"</div><div style=\"display: none;\">label QS:Let,\"<a href=\"https://et.wikipedia.org/wiki/T%C3%A4histaevas\" class=\"extiw\" title=\"et:Tähistaevas\">Tähistaevas</a>\"</div><div style=\"display: none;\">label QS:Lhr,\"<a href=\"https://hr.wikipedia.org/wiki/Zvjezdana_no%C4%87\" class=\"extiw\" title=\"hr:Zvjezdana noć\">Zvjezdana noć</a>\"</div><div style=\"display: none;\">label QS:Lpt,\"<a href=\"https://pt.wikipedia.org/wiki/A_Noite_Estrelada\" class=\"extiw\" title=\"pt:A Noite Estrelada\">A Noite Estrelada</a>\"</div><div style=\"display: none;\">label QS:Lpl,\"<a href=\"https://pl.wikipedia.org/wiki/Gwia%C5%BAdzista_noc\" class=\"extiw\" title=\"pl:Gwiaździsta noc\">Gwiaździsta noc</a>\"</div><div style=\"display: none;\">label QS:Lnl,\"<a href=\"https://nl.wikipedia.org/wiki/De_sterrennacht\" class=\"extiw\" title=\"nl:De sterrennacht\">De sterrennacht</a>\"</div><div style=\"display: none;\">label QS:Leu,\"<a href=\"https://eu.wikipedia.org/wiki/Gau_izartsua\" class=\"extiw\" title=\"eu:Gau izartsua\">Gau izartsua</a>\"</div><div style=\"display: none;\">label QS:Lfa,\"<a href=\"https://fa.wikipedia.org/wiki/%D8%B4%D8%A8_%D9%BE%D8%B1_%D8%B3%D8%AA%D8%A7%D8%B1%D9%87\" class=\"extiw\" title=\"fa:شب پر ستاره\">شب پر ستاره</a>\"</div></div>",
+                "source": "commons-desc-page"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "The Starry Night by van Gogh|Gigapixel images from the Google Art Project|PD-old-100-expired|Featured pictures on Wikipedia, English|PD-Art (PD-old-100-expired)|Artworks with Wikidata item|Artworks with known accession number|Large images|Works by Van Gogh by Faille number|Featured pictures on Wikipedia, Persian|Featured pictures on Wikipedia, Turkish|Featured pictures on Wikipedia, Vietnamese|Featured pictures of Bouches-du-Rhône|CC-PD-Mark|Google Art Project works by Vincent van Gogh|Works by Van Gogh by JH number|Featured pictures in the public domain|Featured pictures of paintings by Vincent van Gogh|Artworks digital representation of 2D work|Files from Google Arts & Culture|Featured pictures on Wikipedia, Arabic|Featured pictures from the Google Art Project|Files from Google Arts & Culture uploaded by PantheraLeo1359531",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "featured",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Artist": {
+                "value": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Vincent_van_Gogh\" class=\"extiw\" title=\"w:en:Vincent van Gogh\"><span title=\"Dutch painter (1853–1890)\">Vincent van Gogh</span></a></bdi>",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "1889<div style=\"display: none;\">date QS:P571,+1889-00-00T00:00:00Z/9</div>",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a href=\"https://en.wikipedia.org/wiki/en:Google_Arts_%26_Culture\" class=\"extiw\" title=\"w:en:Google Arts &amp; Culture\"><span title=\"app and website exploring partner museums\">Google Arts &amp; Culture</span></a>  — <a rel=\"nofollow\" class=\"external text\" href=\"//www.google.com/culturalinstitute/asset-viewer/bgEuwDxel93-Pg\">bgEuwDxel93-Pg</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 1273167398,
+            "parentid": 1273167347,
+            "timestamp": "2026-09-06T15:38:17Z",
+            "slots": {
+              "main": {
+                "contentmodel": "wikitext",
+                "contentformat": "text/x-wiki",
+                "*": "{{Tile set available}}\n{{Tile set/The Starry Night/grid}}\n\n== {{int:filedesc}} ==\n{{LargeImage}}\n{{Artwork\n| wikidata = Q45585\n | Artist         = {{Creator:Vincent van Gogh}}\n | Title          = {{Title|[[:en:The Starry Night|The Starry Night]]|lang=en<!-- title in the Museum's language rather than nl since Kirby did not provide any title himself -and painted that in France, alternatively, upgrade template:Title to support more languages as nl and fr may be useful -->\n    |af=[[:af:Die Sterrenag|Die Sterrenag]]\n    |ar=[[:ar:ليلة النجوم (لوحة)|ليلة النُجُوم]]\n    |be-tarask=[[:be-x-old:Зорная ноч|Зорная ноч]]\n    |bg=[[:bg:Звездна нощ|Звездна нощ]]\n    |br=[[:br:An Noz stergannek|An Noz stergannek]]\n    |ca=[[:ca:La nit estelada|La nit estelada]]\n    |de=[[:de:Sternennacht|Sternennacht]]\n    |eo=[[:eo:Stela nokto|Stela nokto]]\n    |es=[[:es:La noche estrellada|La noche estrellada]]\n    |et=[[:et:Tähistaevas|Tähistaevas]]\n    |eu=[[:eu:Gau izartsua|Gau izartsua]]\n    |fa=[[:fa:شب پر ستاره|شب پر ستاره]]\n    |fi=[[:fi:Tähtikirkas yö|Tähtikirkas yö]]\n    |fr=[[:fr:La Nuit étoilée|La Nuit étoilée]]\n    |he=[[:he:ליל כוכבים|ליל כוכבים]]\n    |hr=[[:hr:Zvjezdana noć|Zvjezdana noć]]\n    |it=[[:it:Notte stellata|Notte stellata]]\n    |ja=[[:ja:星月夜|星月夜]]\n    |ko=[[:ko:별이 빛나는 밤|별이 빛나는 밤]]\n    |mk=[[:mk:Ѕвездена ноќ|Ѕвездена ноќ]]\n    |nl=[[:nl:De sterrennacht|De sterrennacht]]\n    |pl=[[:pl:Gwiaździsta noc|Gwiaździsta noc]]\n    |pt=[[:pt:A Noite Estrelada|A Noite Estrelada]]\n    |ro=[[:ro:Noapte înstelată|Noapte înstelată]]\n    |ru=[[:ru:Звёздная ночь|Звёздная ночь]]\n    |simple=[[:simple:The Starry Night|The Starry Night]]\n    |sv=[[:sv:De sterrennacht|De sterrennacht]]\n    |th=[[:th:คืนดาวเกลื่อนฟ้า (ฟาน ก็อกฮ์)|คืนดาวเกลื่อนฟ้า (ฟาน ก็อกฮ์)]]\n    |zh=[[:zh:星夜|星夜]]\n}}\n | Year           = 1889\n | Technique      = {{Oil on canvas}}\n | Dimensions     = {{Size|cm|73|92}}\n | Gallery        = {{Institution:Museum of Modern Art}}\n | Notes          = *{{Van Gogh catalogues|F=612|JH=1731}}\n*{{LangSwitch\n |en = * See also F1540 ''[[:File:Van Gogh Starry Night Drawing.jpg | The Starry Night]]'' (drawing, same composition) and the preliminary studies F1541v ''[[:File:Vincent van Gogh - Bird's-Eye View of the Village F1541v JH1729- Sketches of a Perspective Frame F1611v.jpg | Bird's-Eye View of the Village]]'' and  F1730 ''[[:File:Vincent van Gogh - Chestnut Leaf with Pod F1611 JH2058 - Landscape with Cypresses F1541r JH 1730.jpg | Landscape with Cypresses]]'' (Hulsker p. 396).\n*[http://vangoghletters.org/vg/search/advanced?originaltext=original&translation=translation&annotations=notes&essays=essays&bibliography=bibliography&other=other&term=&person_terms=&person_code=&literature_terms=&literature_code=&workofart_terms=&workofart_code=&sketch_terms=&sketch_code=&bibleref_terms=&bibleref_code=&f_number=612&jh_number=&periodical=&from=1&to=1&id_range=&id_type=jlb_id&date_from=1872-09-29&date_until=1890-07-31&period=&correspondent_name=&correspondent_id=&place_name=&place_id=&order=date&search2.x=32&search2.y=7 Letters]\n* {{cite web|title= Letter 782: to Theo van Gogh. Saint-Rémy-de-Provence, on or about Tuesday, 18 June 1889.|url= http://vangoghletters.org/vg/letters/let782/letter.html|work= Vincent van Gogh: The Letters|publisher=[[Van Gogh Museum]]|at= 1v:2|quote= At last I have a landscape with olive trees <nowiki>[</nowiki>probably [[:File:Vincent van Gogh - The Olive Trees - Google Art Project.jpg | F712]]<nowiki>]</nowiki>, and also a new study of a starry sky.}}\n* {{cite web|title= Letter 805: to Theo van Gogh. Saint-Rémy-de-Provence, on or about Friday, 20 September 1889.|url= http://vangoghletters.org/vg/letters/let805/letter.html|work= Vincent van Gogh: The Letters|publisher=[[Van Gogh Museum]]|at= 2r:5|quote= The olive trees with white cloud and background of mountains [F712], as well as the Moonrise and the Night effect – – These are exaggerations from the point of view of the arrangement, their lines are contorted like those of the ancient woodcuts.}}\n |xx =\n}}\n\n | Source         = {{From Google Cultural Institute|bgEuwDxel93-Pg}}\n | ID             = 472.1941\n | References     = \n{{online databases| {{Moma online|79802}} }}\n | Other versions = <gallery>\nFile:VanGogh-starry night.jpg\nFile:VanGogh-starry night ballance1.jpg\nFile:VanGogh-starry night edit.jpg\nFile:Vincent_van_Gogh_Starry_Night.jpg\n</gallery>\n}}\n\n== {{int:license-header}} ==\n{{PD-Art|PD-old-100-expired}}\n=={{Assessment}}==\n{{Assessments|fawiki=1|fawiki-nom=Van Gogh - Starry Night - Google Art Project.jpg|featured=1|enwiki=1|enwiki-nom=The Starry Night (Google Art)|trwiki=1|arwiki=1|arwiki-nom=ليلة النجوم}}{{POTD viwiki|2023-10-13}}\n\n[[Category:The Starry Night by van Gogh]]\n[[Category:Gigapixel images from the Google Art Project]]\n[[Category:Google Art Project works by Vincent van Gogh]]\n[[Category:Featured pictures of Bouches-du-Rhône]]\n[[Category:Featured pictures of paintings by Vincent van Gogh]]\n[[Category:Featured pictures from the Google Art Project]]\n[[Category:Featured pictures in the public domain]]\n[[Category:Files from Google Arts & Culture uploaded by PantheraLeo1359531]]"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "_verifiedAt": "2026-09-27T23:19:45.704315+00:00",
+    "_imageEvidence": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/cd/VanGogh-starry_night.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sha1": "65fae843342d8367058d9b9f6d89056f7cb656c1",
+      "sha256": "6aff8a369d3b52d4844cf8b8b1ed2946dab1311340706fb8b048e72724c97425",
+      "sizeBytes": 780240,
+      "width": 1879,
+      "height": 1500
+    }
+  },
+  {
+    "id": 79277,
+    "moma": {
+      "Title": "The Dream",
+      "Artist": [
+        "Henri Rousseau"
+      ],
+      "ConstituentID": [
+        5056
+      ],
+      "ArtistBio": [
+        "French, 1844–1910"
+      ],
+      "Nationality": [
+        "French"
+      ],
+      "BeginDate": [
+        1844
+      ],
+      "EndDate": [
+        1910
+      ],
+      "Gender": [
+        "male"
+      ],
+      "Date": "1910",
+      "Medium": "Oil on canvas",
+      "Dimensions": "6' 8 1/2\" x 9' 9 1/2\" (204.5 x 298.5 cm)",
+      "CreditLine": "Gift of Nelson A. Rockefeller",
+      "AccessionNumber": "252.1954",
+      "Classification": "Painting",
+      "Department": "Painting & Sculpture",
+      "DateAcquired": "1954-06-16",
+      "Cataloged": "Y",
+      "ObjectID": 79277,
+      "URL": "https://www.moma.org/collection/works/79277",
+      "ImageURL": "https://www.moma.org/media/W1siZiIsIjMzOTE0MCJdLFsicCIsImNvbnZlcnQiLCItcmVzaXplIDEwMjR4MTAyNFx1MDAzZSJdXQ.jpg?sha=164d88f92c6e108e",
+      "OnView": "",
+      "Height (cm)": 204.5,
+      "Width (cm)": 298.5
+    },
+    "_datasetSource": {
+      "sourceUrl": "https://github.com/MuseumofModernArt/collection/tree/3053da6addd4d210b955021f410430ac3bbf18d4",
+      "dataUrl": "https://media.githubusercontent.com/media/MuseumofModernArt/collection/3053da6addd4d210b955021f410430ac3bbf18d4/Artworks.json",
+      "commit": "3053da6addd4d210b955021f410430ac3bbf18d4",
+      "dataSha256": "288d65589d7dadec509984c50f726454be4bbe00e68e61cf7d6116713a408807",
+      "dataSizeBytes": 144917269,
+      "metadataLicense": "CC0 1.0 Universal",
+      "imageLicenseNotice": "MoMA metadata CC0 excludes images; images are independently sourced from Wikimedia Commons."
+    },
+    "_commonsEvidence": {
+      "apiUrl": "https://commons.wikimedia.org/w/api.php?action=query&format=json&prop=imageinfo%7Crevisions&iiprop=url%7Cextmetadata%7Csha1%7Csize&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=File%3AHenri+Rousseau+-+Le+R%C3%AAve+-+Google+Art+Project.jpg",
+      "retrievalNote": "Retrieved in batched Commons API queries; this URL reproduces the individual file query.",
+      "page": {
+        "pageid": 13357343,
+        "ns": 6,
+        "title": "File:Henri Rousseau - Le Rêve - Google Art Project.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 1606448,
+            "width": 4512,
+            "height": 3072,
+            "url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Henri_Rousseau_-_Le_R%C3%AAve_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Henri_Rousseau_-_Le_R%C3%AAve_-_Google_Art_Project.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=13357343",
+            "sha1": "54ba8c8deb2c533b0932f81ff2998146718a07de",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2015-06-17 18:11:36",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "<div class=\"fn\">\n<div style=\"font-size:0.9em;display:inline-block;\">French:  <div style=\"display:inline-block\" dir=\"ltr\" lang=\"fr\"><i>Le Rêve</i></div></div><br><div style=\"font-weight:bold;display:inline-block;\"><div style=\"display:inline-block\" dir=\"ltr\" lang=\"en\"><i>The Dream</i></div></div><div style=\"display: none;\">title QS:P1476,fr:\"Le Rêve\"</div><div style=\"display: none;\">label QS:Lfr,\"Le Rêve\"</div><div style=\"display: none;\">label QS:Len,\"The Dream\"</div></div>",
+                "source": "commons-desc-page"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "The Dream (Rousseau)|PD-old-100-expired|PD-Art (PD-old-auto-expired)|Artworks with Wikidata item|Artworks with known accession number|Featured pictures on Wikipedia, Persian|CC-PD-Mark|Artworks with accession number from Wikidata|Google Art Project works by Henri Rousseau|Google Art Project works in MoMA, The Museum of Modern Art|Artworks digital representation of 2D work|Files from Google Arts & Culture|Files with Assessments template missing SDC Commons no value quality assessment|Jungles in art",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Artist": {
+                "value": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Henri_Rousseau\" class=\"extiw\" title=\"w:en:Henri Rousseau\"><span title=\"French painter (1844–1910)\">Henri Rousseau</span></a></bdi>",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "1910<div style=\"display: none;\">date QS:P571,+1910-00-00T00:00:00Z/9</div>",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a href=\"https://en.wikipedia.org/wiki/en:Google_Arts_%26_Culture\" class=\"extiw\" title=\"w:en:Google Arts &amp; Culture\"><span title=\"app and website exploring partner museums\">Google Arts &amp; Culture</span></a>  — <a rel=\"nofollow\" class=\"external text\" href=\"//www.google.com/culturalinstitute/asset-viewer/LwEt57AOdD6SGA\">LwEt57AOdD6SGA</a>",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "<table cellspacing=\"8\" cellpadding=\"0\" style=\"clear:both; margin:0.5em auto; background-color: var(--background-color-interactive, #f0f0f0); color: inherit; border: 2px solid var(--border-color-subtle, #e0e0e0); width:100%;\" class=\"layouttemplate\" dir=\"ltr\" lang=\"en\">\n<tbody><tr>\n<td>\n<div class=\"center\">This is a faithful photographic reproduction of a two-dimensional, <a href=\"//commons.wikimedia.org/wiki/Public_domain\" class=\"mw-redirect\" title=\"Public domain\">public domain</a> work of art. The work of art itself is in the public domain for the following reason:</div>\n<div dir=\"auto\">\n<table class=\"licensetpl\" style=\"display:none\">\n<tbody><tr>\n<td><span class=\"licensetpl_short\">Public domain</span><span class=\"licensetpl_long\">Public domain</span><span class=\"licensetpl_link_req\">false</span><span class=\"licensetpl_attr_req\">false</span>\n</td></tr></tbody></table>\n<table style=\"width: 100%; clear: both; margin: 0.5em auto; background-color: var(--background-color-progressive-subtle, #f7f8ff); color: var(--color-base, #202122); border: var(--border-subtle, 2px solid #8888aa); border-spacing: 8px; padding: 0px;\" dir=\"ltr\" class=\"layouttemplate\" lang=\"en\">\n<tbody><tr>\n<td><span typeof=\"mw:File\"><span title=\"Public domain\"><img alt=\"Public domain\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/PD-icon.svg/120px-PD-icon.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"64\" height=\"64\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/PD-icon.svg/250px-PD-icon.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"196\" data-file-height=\"196\"></span></span>\n</td>\n<td>\n<p>The author died in 1919, so this work is in the <b><a href=\"https://en.wikipedia.org/wiki/public_domain\" class=\"extiw\" title=\"en:public domain\">public domain</a></b> in its country of origin and other countries and areas where the <a href=\"https://en.wikipedia.org/wiki/List_of_countries%27_copyright_lengths\" class=\"extiw\" title=\"w:List of countries' copyright lengths\">copyright term</a> is the author's <b>life plus 100 years or fewer</b>.\n</p>\n<hr>\n<p>This work is in the <b><a href=\"https://en.wikipedia.org/wiki/public_domain\" class=\"extiw\" title=\"en:public domain\">public domain</a></b> in the <a href=\"https://en.wikipedia.org/wiki/United_States\" class=\"extiw\" title=\"en:United States\">United States</a> because it was <a href=\"//commons.wikimedia.org/wiki/Commons:Publication\" title=\"Commons:Publication\">published</a> (or registered with the <a href=\"https://en.wikipedia.org/wiki/United_States_Copyright_Office\" class=\"extiw\" title=\"en:United States Copyright Office\">U.S. Copyright Office</a>) before January 1, 1931.\n</p>\n</td></tr>\n<tr>\n<td colspan=\"2\" style=\"text-align:center;font-size:x-small;line-height:140%;\"><a href=\"https://creativecommons.org/publicdomain/mark/1.0/deed.en\" class=\"extiw\" title=\"ccorg:publicdomain/mark/1.0/deed.en\">This file has been identified as being free of known restrictions under copyright law, including all related and neighboring rights.</a>\n</td></tr></tbody></table><span class=\"licensetpl_link\" style=\"display:none;\">https://creativecommons.org/publicdomain/mark/1.0/</span><span class=\"licensetpl_short\" style=\"display:none;\">PDM</span><span class=\"licensetpl_long\" style=\"display:none;\">Creative Commons Public Domain Mark 1.0</span><span class=\"licensetpl_link_req\" style=\"display:none;\">false</span><span class=\"licensetpl_attr_req\" style=\"display:none;\">false</span></div>\n<div class=\"center\">The official position taken by the Wikimedia Foundation is that \"<i>faithful reproductions of two-dimensional public domain works of art are public domain</i>\".<br><b>This photographic reproduction is therefore also considered to be in the public domain in the United States.</b> In other jurisdictions, re-use of this content may be restricted; <b>see <a href=\"//commons.wikimedia.org/wiki/Commons:Reuse_of_PD-Art_photographs\" title=\"Commons:Reuse of PD-Art photographs\">Reuse of PD-Art photographs</a> for details.</b></div> \n</td></tr></tbody></table>",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 1047454141,
+            "parentid": 1035827208,
+            "timestamp": "2025-06-22T09:50:02Z",
+            "slots": {
+              "main": {
+                "contentmodel": "wikitext",
+                "contentformat": "text/x-wiki",
+                "*": "{{Artwork\n | wikidata = Q548141\n |artist         = {{Creator:Henri Rousseau}}\n |title          = {{title|lang=fr|Le Rêve|en=The Dream}}\n |description    =\n |date           = 1910\n |medium         = {{technique|Oil|canvas}}\n |dimensions     = {{size|cm|height=204.50|width=298.50}}\n |gallery        = {{Institution:Museum of Modern Art}}\n |location       = Gallery 1\n |references     =\n |object history =\n |credit line    =\n |inscriptions   =\n |notes          =\n |accession number=\n |source         = {{From Google Cultural Institute|LwEt57AOdD6SGA}}\n |permission     = {{PD-Art|PD-old-auto-expired|deathyear=1919}}\n |other_versions = [[File:Henri Rousseau - Le Rêve - Google Art ProjectFXD.jpg|thumb|none|upright=.5|Remastered color]]\n}}\n\n== {{Assessment}} ==\n{{Assessments|fawiki=1|fawiki-nom=Henri Rousseau - Le Rêve - Google Art Project.jpg}}\n\n[[Category:Google Art Project works in MoMA, The Museum of Modern Art]]\n[[Category:The Dream (Rousseau)]]\n[[Category:Google Art Project works by Henri Rousseau]]\n[[Category:Jungles in art]]"
+              }
+            }
+          }
+        ]
+      },
+      "pageId": 13357343,
+      "revisionId": 1047454141,
+      "revisionTimestamp": "2025-06-22T09:50:02Z",
+      "permanentUrl": "https://commons.wikimedia.org/w/index.php?oldid=1047454141",
+      "filePageUrl": "https://commons.wikimedia.org/wiki/File:Henri_Rousseau_-_Le_R%C3%AAve_-_Google_Art_Project.jpg",
+      "requiredMetadataFields": {
+        "LicenseShortName": {
+          "value": "Public domain",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "Copyrighted": {
+          "value": "False",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "Artist": {
+          "value": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Henri_Rousseau\" class=\"extiw\" title=\"w:en:Henri Rousseau\"><span title=\"French painter (1844–1910)\">Henri Rousseau</span></a></bdi>",
+          "source": "commons-desc-page"
+        },
+        "Attribution": null,
+        "Credit": {
+          "value": "<a href=\"https://en.wikipedia.org/wiki/en:Google_Arts_%26_Culture\" class=\"extiw\" title=\"w:en:Google Arts &amp; Culture\"><span title=\"app and website exploring partner museums\">Google Arts &amp; Culture</span></a>  — <a rel=\"nofollow\" class=\"external text\" href=\"//www.google.com/culturalinstitute/asset-viewer/LwEt57AOdD6SGA\">LwEt57AOdD6SGA</a>",
+          "source": "commons-desc-page"
+        },
+        "LicenseUrl": null
+      },
+      "missingFieldNote": "Null fields were not supplied by the Commons API; no license URL or attribution value has been invented.",
+      "publicDomainBasis": "Commons labels this faithful 2D reproduction PD-Art and PD-old-100-expired. MoMA records creation before 1931 and artist death before 1926; original wikitext, categories, and artist dates are archived.",
+      "retrievedAt": "2026-09-27T23:19:45.704315+00:00"
+    },
+    "_identityEvidence": {
+      "objectId": 79277,
+      "commonsTitle": "File:Henri Rousseau - Le Rêve - Google Art Project.jpg",
+      "wikidata": "Q548141",
+      "identityBasis": "Commons identifies The Dream, Henri Rousseau, Museum of Modern Art, 1910, 204.5 × 298.5 cm, matching the official MoMA record.",
+      "metadataNote": "Commons permission template has deathyear=1919; MoMA artist metadata correctly gives Rousseau's death as 1910. Both exceed 100 years; the unmodified source discrepancy is preserved."
+    },
+    "_verifiedAt": "2026-09-27T23:19:45.704315+00:00",
+    "_imageEvidence": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Henri_Rousseau_-_Le_R%C3%AAve_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sha1": "54ba8c8deb2c533b0932f81ff2998146718a07de",
+      "sha256": "fcf3cfc033905205524c3d04c070433b64fdc0e92b9ba4374d6cbee8b841b8f9",
+      "sizeBytes": 1606448,
+      "width": 4512,
+      "height": 3072
+    }
+  },
+  {
+    "id": 80172,
+    "moma": {
+      "Title": "The Sleeping Gypsy",
+      "Artist": [
+        "Henri Rousseau"
+      ],
+      "ConstituentID": [
+        5056
+      ],
+      "ArtistBio": [
+        "French, 1844–1910"
+      ],
+      "Nationality": [
+        "French"
+      ],
+      "BeginDate": [
+        1844
+      ],
+      "EndDate": [
+        1910
+      ],
+      "Gender": [
+        "male"
+      ],
+      "Date": "1897",
+      "Medium": "Oil on canvas",
+      "Dimensions": "51\" x 6' 7\" (129.5 x 200.7 cm)",
+      "CreditLine": "Gift of Mrs. Simon Guggenheim",
+      "AccessionNumber": "646.1939",
+      "Classification": "Painting",
+      "Department": "Painting & Sculpture",
+      "DateAcquired": "1939-12-08",
+      "Cataloged": "Y",
+      "ObjectID": 80172,
+      "URL": "https://www.moma.org/collection/works/80172",
+      "ImageURL": "https://www.moma.org/media/W1siZiIsIjE1MTQzNCJdLFsicCIsImNvbnZlcnQiLCItcmVzaXplIDEwMjR4MTAyNFx1MDAzZSJdXQ.jpg?sha=902bf15a6d8b2429",
+      "OnView": "\"MoMA, Floor 5, 501\"",
+      "Height (cm)": 129.5,
+      "Width (cm)": 200.7
+    },
+    "_datasetSource": {
+      "sourceUrl": "https://github.com/MuseumofModernArt/collection/tree/3053da6addd4d210b955021f410430ac3bbf18d4",
+      "dataUrl": "https://media.githubusercontent.com/media/MuseumofModernArt/collection/3053da6addd4d210b955021f410430ac3bbf18d4/Artworks.json",
+      "commit": "3053da6addd4d210b955021f410430ac3bbf18d4",
+      "dataSha256": "288d65589d7dadec509984c50f726454be4bbe00e68e61cf7d6116713a408807",
+      "dataSizeBytes": 144917269,
+      "metadataLicense": "CC0 1.0 Universal",
+      "imageLicenseNotice": "MoMA metadata CC0 excludes images; images are independently sourced from Wikimedia Commons."
+    },
+    "_commonsEvidence": {
+      "apiUrl": "https://commons.wikimedia.org/w/api.php?action=query&format=json&prop=imageinfo%7Crevisions&iiprop=url%7Cextmetadata%7Csha1%7Csize&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=File%3ALa+Boh%C3%A9mienne+endormie.jpg",
+      "retrievalNote": "Retrieved in batched Commons API queries; this URL reproduces the individual file query.",
+      "page": {
+        "pageid": 38035490,
+        "ns": 6,
+        "title": "File:La Bohémienne endormie.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 6725346,
+            "width": 5411,
+            "height": 3457,
+            "url": "https://upload.wikimedia.org/wikipedia/commons/0/06/La_Boh%C3%A9mienne_endormie.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:La_Boh%C3%A9mienne_endormie.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=38035490",
+            "sha1": "3d2f13af3c483cadcd272ffcc28964984dfbeba9",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2021-01-09 19:44:53",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "<div class=\"fn\">\n<div style=\"font-size:0.9em;display:inline-block;\">French:  <div style=\"display:inline-block\" dir=\"ltr\" lang=\"fr\"><i>La Bohémienne endormie</i></div></div><br><div style=\"font-weight:bold;display:inline-block;\"><div style=\"display:inline-block\" dir=\"ltr\" lang=\"en\"><i>The Sleeping Gypsy</i></div></div><div style=\"display: none;\">title QS:P1476,fr:\"La Bohémienne endormie\"</div><div style=\"display: none;\">label QS:Lfr,\"La Bohémienne endormie\"</div><div style=\"display: none;\">label QS:Len,\"The Sleeping Gypsy\"</div></div>",
+                "source": "commons-desc-page"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "The Sleeping Gypsy|PD-old-100-expired|Featured pictures on Wikipedia, English|PD-Art (PD-old-100-expired)|Commons featured widescreen desktop backgrounds|Artworks with Wikidata item|Artworks with known accession number|Featured pictures on Wikipedia, Persian|Featured pictures on Wikipedia, Spanish|Featured pictures on Wikipedia, Turkish|CC-PD-Mark|Artworks with accession number from Wikidata|Featured pictures in the public domain|Artworks digital representation of 2D work|Featured pictures on Wikipedia, Arabic",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "quality|featured|valued|potd",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Artist": {
+                "value": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Henri_Rousseau\" class=\"extiw\" title=\"w:en:Henri Rousseau\"><span title=\"French painter (1844–1910)\">Henri Rousseau</span></a></bdi>",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "1897<div style=\"display: none;\">date QS:P571,+1897-00-00T00:00:00Z/9</div>",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Oakenchips\" title=\"User:Oakenchips\">Oakenchips</a>",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "<table cellspacing=\"8\" cellpadding=\"0\" style=\"clear:both; margin:0.5em auto; background-color: var(--background-color-interactive, #f0f0f0); color: inherit; border: 2px solid var(--border-color-subtle, #e0e0e0); width:100%;\" class=\"layouttemplate\" dir=\"ltr\" lang=\"en\">\n<tbody><tr>\n<td>\n<div class=\"center\">This is a faithful photographic reproduction of a two-dimensional, <a href=\"//commons.wikimedia.org/wiki/Public_domain\" class=\"mw-redirect\" title=\"Public domain\">public domain</a> work of art. The work of art itself is in the public domain for the following reason:</div>\n<div dir=\"auto\">\n<table class=\"licensetpl\" style=\"display:none\">\n<tbody><tr>\n<td><span class=\"licensetpl_short\">Public domain</span><span class=\"licensetpl_long\">Public domain</span><span class=\"licensetpl_link_req\">false</span><span class=\"licensetpl_attr_req\">false</span>\n</td></tr></tbody></table>\n<table style=\"width: 100%; clear: both; margin: 0.5em auto; background-color: var(--background-color-progressive-subtle, #f7f8ff); color: var(--color-base, #202122); border: var(--border-subtle, 2px solid #8888aa); border-spacing: 8px; padding: 0px;\" dir=\"ltr\" class=\"layouttemplate\" lang=\"en\">\n<tbody><tr>\n<td><span typeof=\"mw:File\"><span title=\"Public domain\"><img alt=\"Public domain\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/PD-icon.svg/120px-PD-icon.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"64\" height=\"64\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/PD-icon.svg/250px-PD-icon.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"196\" data-file-height=\"196\"></span></span>\n</td>\n<td>\n<p>This work is in the <b><a href=\"https://en.wikipedia.org/wiki/public_domain\" class=\"extiw\" title=\"en:public domain\">public domain</a></b> in its country of origin and other countries and areas where the <a href=\"https://en.wikipedia.org/wiki/List_of_countries%27_copyright_lengths\" class=\"extiw\" title=\"w:List of countries' copyright lengths\">copyright term</a> is the author's <b>life plus 100 years or fewer</b>.\n</p>\n<hr>\n<p>This work is in the <b><a href=\"https://en.wikipedia.org/wiki/public_domain\" class=\"extiw\" title=\"en:public domain\">public domain</a></b> in the <a href=\"https://en.wikipedia.org/wiki/United_States\" class=\"extiw\" title=\"en:United States\">United States</a> because it was <a href=\"//commons.wikimedia.org/wiki/Commons:Publication\" title=\"Commons:Publication\">published</a> (or registered with the <a href=\"https://en.wikipedia.org/wiki/United_States_Copyright_Office\" class=\"extiw\" title=\"en:United States Copyright Office\">U.S. Copyright Office</a>) before January 1, 1931.\n</p>\n</td></tr>\n<tr>\n<td colspan=\"2\" style=\"text-align:center;font-size:x-small;line-height:140%;\"><a href=\"https://creativecommons.org/publicdomain/mark/1.0/deed.en\" class=\"extiw\" title=\"ccorg:publicdomain/mark/1.0/deed.en\">This file has been identified as being free of known restrictions under copyright law, including all related and neighboring rights.</a>\n</td></tr></tbody></table><span class=\"licensetpl_link\" style=\"display:none;\">https://creativecommons.org/publicdomain/mark/1.0/</span><span class=\"licensetpl_short\" style=\"display:none;\">PDM</span><span class=\"licensetpl_long\" style=\"display:none;\">Creative Commons Public Domain Mark 1.0</span><span class=\"licensetpl_link_req\" style=\"display:none;\">false</span><span class=\"licensetpl_attr_req\" style=\"display:none;\">false</span></div>\n<div class=\"center\">The official position taken by the Wikimedia Foundation is that \"<i>faithful reproductions of two-dimensional public domain works of art are public domain</i>\".<br><b>This photographic reproduction is therefore also considered to be in the public domain in the United States.</b> In other jurisdictions, re-use of this content may be restricted; <b>see <a href=\"//commons.wikimedia.org/wiki/Commons:Reuse_of_PD-Art_photographs\" title=\"Commons:Reuse of PD-Art photographs\">Reuse of PD-Art photographs</a> for details.</b></div> \n</td></tr></tbody></table>",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 967956208,
+            "parentid": 901817711,
+            "timestamp": "2024-12-09T06:34:27Z",
+            "slots": {
+              "main": {
+                "contentmodel": "wikitext",
+                "contentformat": "text/x-wiki",
+                "*": "== {{int:filedesc}} ==\n{{Artwork\n | wikidata = Q1219263\n |artist         = {{Creator:Henri Rousseau}}\n |title          = {{title|lang=fr|La Bohémienne endormie|en=The Sleeping Gypsy}}\n |description    =\n |date           = 1897\n |medium         = {{technique|Oil|canvas}}\n |dimensions     = {{size|cm|height=129.50|width=200.70}}\n |gallery        = {{Institution:Museum of Modern Art}}\n |location       = Gallery 1\n |references     =\n |object history =\n |credit line    =\n |inscriptions   =\n |notes          =\n |accession number=\n |source         = [[User:Oakenchips|Oakenchips]]\n |permission     = {{PD-Art|PD-old-100-expired}}\n |other_versions=\n}}\n\n== {{Assessment}} ==\n{{Assessments|fawiki=1|fawiki-nom=La Bohémienne endormie.jpg|featured=1|quality=1|enwiki=1|enwiki-nom=The Sleeping Gypsy|eswiki=1|trwiki=1|wallpaper=2|arwiki=1|arwiki-nom=الغجرية النائمة}}\n{{Picture of the day|year=2021|month=09|day=03}}\n{{VI|[[:Category:The Sleeping Gypsy by Henri Rousseau|The Sleeping Gypsy by Henri Rousseau]]|18:30, 6 February 2015 (UTC)|\nsubpage=La Bohémienne endormie.jpg}}\n\n[[Category:The Sleeping Gypsy]]\n[[Category:Quality images by Oakenchips]]\n[[Category:Valued images by Oakenchips]]\n[[Category:Featured pictures in the public domain]]"
+              }
+            }
+          }
+        ]
+      },
+      "pageId": 38035490,
+      "revisionId": 967956208,
+      "revisionTimestamp": "2024-12-09T06:34:27Z",
+      "permanentUrl": "https://commons.wikimedia.org/w/index.php?oldid=967956208",
+      "filePageUrl": "https://commons.wikimedia.org/wiki/File:La_Boh%C3%A9mienne_endormie.jpg",
+      "requiredMetadataFields": {
+        "LicenseShortName": {
+          "value": "Public domain",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "Copyrighted": {
+          "value": "False",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "Artist": {
+          "value": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Henri_Rousseau\" class=\"extiw\" title=\"w:en:Henri Rousseau\"><span title=\"French painter (1844–1910)\">Henri Rousseau</span></a></bdi>",
+          "source": "commons-desc-page"
+        },
+        "Attribution": null,
+        "Credit": {
+          "value": "<a href=\"//commons.wikimedia.org/wiki/User:Oakenchips\" title=\"User:Oakenchips\">Oakenchips</a>",
+          "source": "commons-desc-page"
+        },
+        "LicenseUrl": null
+      },
+      "missingFieldNote": "Null fields were not supplied by the Commons API; no license URL or attribution value has been invented.",
+      "publicDomainBasis": "Commons labels this faithful 2D reproduction PD-Art and PD-old-100-expired. MoMA records creation before 1931 and artist death before 1926; original wikitext, categories, and artist dates are archived.",
+      "retrievedAt": "2026-09-27T23:19:45.704315+00:00"
+    },
+    "_identityEvidence": {
+      "objectId": 80172,
+      "commonsTitle": "File:La Bohémienne endormie.jpg",
+      "wikidata": "Q1219263",
+      "identityBasis": "Commons identifies The Sleeping Gypsy, Henri Rousseau, Museum of Modern Art, 1897, 129.5 × 200.7 cm, matching MoMA."
+    },
+    "_verifiedAt": "2026-09-27T23:19:45.704315+00:00",
+    "_imageEvidence": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/06/La_Boh%C3%A9mienne_endormie.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sha1": "3d2f13af3c483cadcd272ffcc28964984dfbeba9",
+      "sha256": "915217f60b2f56aad0df22cb9588779c9dc5668e2a986c51888624931ca767a4",
+      "sizeBytes": 6725346,
+      "width": 5411,
+      "height": 3457
+    }
+  },
+  {
+    "id": 78296,
+    "moma": {
+      "Title": "The Bather",
+      "Artist": [
+        "Paul Cézanne"
+      ],
+      "ConstituentID": [
+        1053
+      ],
+      "ArtistBio": [
+        "French, 1839–1906"
+      ],
+      "Nationality": [
+        "French"
+      ],
+      "BeginDate": [
+        1839
+      ],
+      "EndDate": [
+        1906
+      ],
+      "Gender": [
+        "male"
+      ],
+      "Date": "c. 1885",
+      "Medium": "Oil on canvas",
+      "Dimensions": "50 x 38 1/8\" (127 x 96.8 cm)",
+      "CreditLine": "Lillie P. Bliss Collection",
+      "AccessionNumber": "1.1934",
+      "Classification": "Painting",
+      "Department": "Painting & Sculpture",
+      "DateAcquired": "1934-09-23",
+      "Cataloged": "Y",
+      "ObjectID": 78296,
+      "URL": "https://www.moma.org/collection/works/78296",
+      "ImageURL": "https://www.moma.org/media/W1siZiIsIjQ0NjEwOCJdLFsicCIsImNvbnZlcnQiLCItcmVzaXplIDEwMjR4MTAyNFx1MDAzZSJdXQ.jpg?sha=cd908018fb6d0215",
+      "OnView": "",
+      "Height (cm)": 127,
+      "Width (cm)": 96.8
+    },
+    "_datasetSource": {
+      "sourceUrl": "https://github.com/MuseumofModernArt/collection/tree/3053da6addd4d210b955021f410430ac3bbf18d4",
+      "dataUrl": "https://media.githubusercontent.com/media/MuseumofModernArt/collection/3053da6addd4d210b955021f410430ac3bbf18d4/Artworks.json",
+      "commit": "3053da6addd4d210b955021f410430ac3bbf18d4",
+      "dataSha256": "288d65589d7dadec509984c50f726454be4bbe00e68e61cf7d6116713a408807",
+      "dataSizeBytes": 144917269,
+      "metadataLicense": "CC0 1.0 Universal",
+      "imageLicenseNotice": "MoMA metadata CC0 excludes images; images are independently sourced from Wikimedia Commons."
+    },
+    "_commonsEvidence": {
+      "apiUrl": "https://commons.wikimedia.org/w/api.php?action=query&format=json&prop=imageinfo%7Crevisions&iiprop=url%7Cextmetadata%7Csha1%7Csize&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=File%3APaul+C%C3%A9zanne+-+Le+Grand+Baigneur+-+Google+Art+Project.jpg",
+      "retrievalNote": "Retrieved in batched Commons API queries; this URL reproduces the individual file query.",
+      "page": {
+        "pageid": 13356810,
+        "ns": 6,
+        "title": "File:Paul Cézanne - Le Grand Baigneur - Google Art Project.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 10149905,
+            "width": 4277,
+            "height": 5641,
+            "url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Paul_C%C3%A9zanne_-_Le_Grand_Baigneur_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Paul_C%C3%A9zanne_-_Le_Grand_Baigneur_-_Google_Art_Project.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=13356810",
+            "sha1": "19eb0538378f3dd4cdd68a9f546aa58083bc4822",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2011-02-18 09:22:38",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "<div class=\"fn\">\n<div style=\"font-size:0.9em;display:inline-block;\">French:  <div style=\"display:inline-block\" dir=\"ltr\" lang=\"fr\"><i>Le Grand Baigneur</i></div></div><br><div style=\"font-weight:bold;display:inline-block;\"><div style=\"display:inline-block\" dir=\"ltr\" lang=\"en\"><i>The Bather</i></div></div><div style=\"display: none;\">title QS:P1476,fr:\"Le Grand Baigneur\"</div><div style=\"display: none;\">label QS:Lfr,\"Le Grand Baigneur\"</div><div style=\"display: none;\">label QS:Len,\"The Bather\"</div></div>",
+                "source": "commons-desc-page"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "1880s paintings from France|Bathers by Paul Cézanne|PD-old-100-expired|Le Grand Baigneur by Paul Cézanne|PD-Art (PD-old-auto-expired)|Artworks with Wikidata item|Artworks with known accession number|CC-PD-Mark|Artworks with accession number from Wikidata|Google Art Project works by Paul Cézanne|1885 oil on canvas paintings in the United States|Google Art Project works in MoMA, The Museum of Modern Art|PD-Art missing SDC copyright status|PD-old missing SDC copyright status|Artworks digital representation of 2D work|Files from Google Arts & Culture|Paintings by Paul Cézanne in the Museum of Modern Art",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Artist": {
+                "value": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Paul_C%C3%A9zanne\" class=\"extiw\" title=\"w:en:Paul Cézanne\"><span title=\"French painter (1839–1906)\">Paul Cézanne</span></a></bdi>",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "1885<div style=\"display: none;\">date QS:P571,+1885-00-00T00:00:00Z/9</div>",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a href=\"https://en.wikipedia.org/wiki/en:Google_Arts_%26_Culture\" class=\"extiw\" title=\"w:en:Google Arts &amp; Culture\"><span title=\"app and website exploring partner museums\">Google Arts &amp; Culture</span></a>  — <a rel=\"nofollow\" class=\"external text\" href=\"//www.google.com/culturalinstitute/asset-viewer/4wEd5xlQxCKFCw\">4wEd5xlQxCKFCw</a>",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "<table cellspacing=\"8\" cellpadding=\"0\" style=\"clear:both; margin:0.5em auto; background-color: var(--background-color-interactive, #f0f0f0); color: inherit; border: 2px solid var(--border-color-subtle, #e0e0e0); width:100%;\" class=\"layouttemplate\" dir=\"ltr\" lang=\"en\">\n<tbody><tr>\n<td>\n<div class=\"center\">This is a faithful photographic reproduction of a two-dimensional, <a href=\"//commons.wikimedia.org/wiki/Public_domain\" class=\"mw-redirect\" title=\"Public domain\">public domain</a> work of art. The work of art itself is in the public domain for the following reason:</div>\n<div dir=\"auto\">\n<table class=\"licensetpl\" style=\"display:none\">\n<tbody><tr>\n<td><span class=\"licensetpl_short\">Public domain</span><span class=\"licensetpl_long\">Public domain</span><span class=\"licensetpl_link_req\">false</span><span class=\"licensetpl_attr_req\">false</span>\n</td></tr></tbody></table>\n<table style=\"width: 100%; clear: both; margin: 0.5em auto; background-color: var(--background-color-progressive-subtle, #f7f8ff); color: var(--color-base, #202122); border: var(--border-subtle, 2px solid #8888aa); border-spacing: 8px; padding: 0px;\" dir=\"ltr\" class=\"layouttemplate\" lang=\"en\">\n<tbody><tr>\n<td><span typeof=\"mw:File\"><span title=\"Public domain\"><img alt=\"Public domain\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/PD-icon.svg/120px-PD-icon.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"64\" height=\"64\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/PD-icon.svg/250px-PD-icon.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"196\" data-file-height=\"196\"></span></span>\n</td>\n<td>\n<p>The author died in 1906, so this work is in the <b><a href=\"https://en.wikipedia.org/wiki/public_domain\" class=\"extiw\" title=\"en:public domain\">public domain</a></b> in its country of origin and other countries and areas where the <a href=\"https://en.wikipedia.org/wiki/List_of_countries%27_copyright_lengths\" class=\"extiw\" title=\"w:List of countries' copyright lengths\">copyright term</a> is the author's <b>life plus 100 years or fewer</b>.\n</p>\n<hr>\n<p>This work is in the <b><a href=\"https://en.wikipedia.org/wiki/public_domain\" class=\"extiw\" title=\"en:public domain\">public domain</a></b> in the <a href=\"https://en.wikipedia.org/wiki/United_States\" class=\"extiw\" title=\"en:United States\">United States</a> because it was <a href=\"//commons.wikimedia.org/wiki/Commons:Publication\" title=\"Commons:Publication\">published</a> (or registered with the <a href=\"https://en.wikipedia.org/wiki/United_States_Copyright_Office\" class=\"extiw\" title=\"en:United States Copyright Office\">U.S. Copyright Office</a>) before January 1, 1931.\n</p>\n</td></tr>\n<tr>\n<td colspan=\"2\" style=\"text-align:center;font-size:x-small;line-height:140%;\"><a href=\"https://creativecommons.org/publicdomain/mark/1.0/deed.en\" class=\"extiw\" title=\"ccorg:publicdomain/mark/1.0/deed.en\">This file has been identified as being free of known restrictions under copyright law, including all related and neighboring rights.</a>\n</td></tr></tbody></table><span class=\"licensetpl_link\" style=\"display:none;\">https://creativecommons.org/publicdomain/mark/1.0/</span><span class=\"licensetpl_short\" style=\"display:none;\">PDM</span><span class=\"licensetpl_long\" style=\"display:none;\">Creative Commons Public Domain Mark 1.0</span><span class=\"licensetpl_link_req\" style=\"display:none;\">false</span><span class=\"licensetpl_attr_req\" style=\"display:none;\">false</span></div>\n<div class=\"center\">The official position taken by the Wikimedia Foundation is that \"<i>faithful reproductions of two-dimensional public domain works of art are public domain</i>\".<br><b>This photographic reproduction is therefore also considered to be in the public domain in the United States.</b> In other jurisdictions, re-use of this content may be restricted; <b>see <a href=\"//commons.wikimedia.org/wiki/Commons:Reuse_of_PD-Art_photographs\" title=\"Commons:Reuse of PD-Art photographs\">Reuse of PD-Art photographs</a> for details.</b></div> \n</td></tr></tbody></table>",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 1039897943,
+            "parentid": 940204724,
+            "timestamp": "2025-06-03T22:23:58Z",
+            "slots": {
+              "main": {
+                "contentmodel": "wikitext",
+                "contentformat": "text/x-wiki",
+                "*": "{{Artwork\n | wikidata = Q2520343\n |artist         = {{Creator:Paul Cézanne}}\n |title          = {{title|lang=fr|Le Grand Baigneur|en=The Bather}}\n |description    =\n |date           = 1885\n |medium         = {{technique|Oil|canvas}}\n |dimensions     = {{size|cm|height=127|width=96.80}}\n |gallery        = {{Institution:Museum of Modern Art}}\n |location       = Gallery 1\n |references     =\n |object history =\n |credit line    =\n |inscriptions   =\n |notes          =\n |accession number=\n |source         = {{From Google Cultural Institute|4wEd5xlQxCKFCw}}\n |permission     = {{PD-Art|PD-old-auto-expired|deathyear=1906}}\n |other_versions=\n}}\n\n[[Category:Google Art Project works in MoMA, The Museum of Modern Art]]\n[[Category:Bathers by Paul Cézanne]]\n[[Category:Paintings by Paul Cézanne in the Museum of Modern Art]]\n[[Category:1885 oil on canvas paintings in the United States]]\n[[Category:1880s paintings from France]]\n[[Category:Google Art Project works by Paul Cézanne]]\n[[Category:Le Grand Baigneur by Paul Cézanne]]"
+              }
+            }
+          }
+        ]
+      },
+      "pageId": 13356810,
+      "revisionId": 1039897943,
+      "revisionTimestamp": "2025-06-03T22:23:58Z",
+      "permanentUrl": "https://commons.wikimedia.org/w/index.php?oldid=1039897943",
+      "filePageUrl": "https://commons.wikimedia.org/wiki/File:Paul_C%C3%A9zanne_-_Le_Grand_Baigneur_-_Google_Art_Project.jpg",
+      "requiredMetadataFields": {
+        "LicenseShortName": {
+          "value": "Public domain",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "Copyrighted": {
+          "value": "False",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "Artist": {
+          "value": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Paul_C%C3%A9zanne\" class=\"extiw\" title=\"w:en:Paul Cézanne\"><span title=\"French painter (1839–1906)\">Paul Cézanne</span></a></bdi>",
+          "source": "commons-desc-page"
+        },
+        "Attribution": null,
+        "Credit": {
+          "value": "<a href=\"https://en.wikipedia.org/wiki/en:Google_Arts_%26_Culture\" class=\"extiw\" title=\"w:en:Google Arts &amp; Culture\"><span title=\"app and website exploring partner museums\">Google Arts &amp; Culture</span></a>  — <a rel=\"nofollow\" class=\"external text\" href=\"//www.google.com/culturalinstitute/asset-viewer/4wEd5xlQxCKFCw\">4wEd5xlQxCKFCw</a>",
+          "source": "commons-desc-page"
+        },
+        "LicenseUrl": null
+      },
+      "missingFieldNote": "Null fields were not supplied by the Commons API; no license URL or attribution value has been invented.",
+      "publicDomainBasis": "Commons labels this faithful 2D reproduction PD-Art and PD-old-100-expired. MoMA records creation before 1931 and artist death before 1926; original wikitext, categories, and artist dates are archived.",
+      "retrievedAt": "2026-09-27T23:19:45.704315+00:00"
+    },
+    "_identityEvidence": {
+      "objectId": 78296,
+      "commonsTitle": "File:Paul Cézanne - Le Grand Baigneur - Google Art Project.jpg",
+      "wikidata": "Q2520343",
+      "identityBasis": "Commons identifies The Bather, Paul Cézanne, Museum of Modern Art, 1885, 127 × 96.8 cm, matching MoMA."
+    },
+    "_verifiedAt": "2026-09-27T23:19:45.704315+00:00",
+    "_imageEvidence": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Paul_C%C3%A9zanne_-_Le_Grand_Baigneur_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sha1": "19eb0538378f3dd4cdd68a9f546aa58083bc4822",
+      "sha256": "c9635e0a2615eb5cd70588056616cd64b87c773e155d33cc9bcbed4e5e582917",
+      "sizeBytes": 10149905,
+      "width": 4277,
+      "height": 5641
+    }
+  },
+  {
+    "id": 78486,
+    "moma": {
+      "Title": "Still Life with Apples",
+      "Artist": [
+        "Paul Cézanne"
+      ],
+      "ConstituentID": [
+        1053
+      ],
+      "ArtistBio": [
+        "French, 1839–1906"
+      ],
+      "Nationality": [
+        "French"
+      ],
+      "BeginDate": [
+        1839
+      ],
+      "EndDate": [
+        1906
+      ],
+      "Gender": [
+        "male"
+      ],
+      "Date": "1895-98",
+      "Medium": "Oil on canvas",
+      "Dimensions": "27 x 36 1/2\" (68.6 x 92.7 cm)",
+      "CreditLine": "Lillie P. Bliss Collection",
+      "AccessionNumber": "22.1934",
+      "Classification": "Painting",
+      "Department": "Painting & Sculpture",
+      "DateAcquired": "1934-09-23",
+      "Cataloged": "Y",
+      "ObjectID": 78486,
+      "URL": "https://www.moma.org/collection/works/78486",
+      "ImageURL": "https://www.moma.org/media/W1siZiIsIjQ1NzQ0OSJdLFsicCIsImNvbnZlcnQiLCItcmVzaXplIDEwMjR4MTAyNFx1MDAzZSJdXQ.jpg?sha=cbabe6f201d42192",
+      "OnView": "",
+      "Height (cm)": 68.6,
+      "Width (cm)": 92.7
+    },
+    "_datasetSource": {
+      "sourceUrl": "https://github.com/MuseumofModernArt/collection/tree/3053da6addd4d210b955021f410430ac3bbf18d4",
+      "dataUrl": "https://media.githubusercontent.com/media/MuseumofModernArt/collection/3053da6addd4d210b955021f410430ac3bbf18d4/Artworks.json",
+      "commit": "3053da6addd4d210b955021f410430ac3bbf18d4",
+      "dataSha256": "288d65589d7dadec509984c50f726454be4bbe00e68e61cf7d6116713a408807",
+      "dataSizeBytes": 144917269,
+      "metadataLicense": "CC0 1.0 Universal",
+      "imageLicenseNotice": "MoMA metadata CC0 excludes images; images are independently sourced from Wikimedia Commons."
+    },
+    "_commonsEvidence": {
+      "apiUrl": "https://commons.wikimedia.org/w/api.php?action=query&format=json&prop=imageinfo%7Crevisions&iiprop=url%7Cextmetadata%7Csha1%7Csize&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=File%3APaul+C%C3%A9zanne+-+Nature+morte+-+Google+Art+Project.jpg",
+      "retrievalNote": "Retrieved in batched Commons API queries; this URL reproduces the individual file query.",
+      "page": {
+        "pageid": 13356688,
+        "ns": 6,
+        "title": "File:Paul Cézanne - Nature morte - Google Art Project.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 15611488,
+            "width": 6320,
+            "height": 4630,
+            "url": "https://upload.wikimedia.org/wikipedia/commons/d/db/Paul_C%C3%A9zanne_-_Nature_morte_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Paul_C%C3%A9zanne_-_Nature_morte_-_Google_Art_Project.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=13356688",
+            "sha1": "ca2532e8f74631269bd875869727d4bdea2f97d9",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2011-02-18 09:19:17",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "<div class=\"fn\">\n<div style=\"font-size:0.9em;display:inline-block;\">French:  <div style=\"display:inline-block\" dir=\"ltr\" lang=\"fr\"><i>Nature morte</i></div></div><br><div style=\"font-weight:bold;display:inline-block;\"><div style=\"display:inline-block\" dir=\"ltr\" lang=\"en\"><i>Still Life with Apples</i></div></div><div style=\"display: none;\">title QS:P1476,fr:\"Nature morte\"</div><div style=\"display: none;\">label QS:Lfr,\"Nature morte\"</div><div style=\"display: none;\">label QS:Len,\"Still Life with Apples\"</div></div>",
+                "source": "commons-desc-page"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "PD-old-100-expired|Still Life with Apples by Paul Cézanne|PD-Art (PD-old-100-expired)|Artworks with Wikidata item|Artworks with known accession number|1890s paintings of fruits|CC-PD-Mark|Artworks with accession number from Wikidata|1890s still-life paintings|1890s oil on canvas paintings in the United States|Google Art Project works in MoMA, The Museum of Modern Art|PD-Art missing SDC copyright status|PD-old missing SDC copyright status|Artworks digital representation of 2D work|Files from Google Arts & Culture|Still-life paintings with apples by Paul Cézanne|Paintings by Paul Cézanne in the Museum of Modern Art",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Artist": {
+                "value": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Paul_C%C3%A9zanne\" class=\"extiw\" title=\"w:en:Paul Cézanne\"><span title=\"French painter (1839–1906)\">Paul Cézanne</span></a></bdi>",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "from 1895 until 1898<div style=\"display: none;\">date QS:P571,+1895-00-00T00:00:00Z/8,P580,+1895-00-00T00:00:00Z/9,P582,+1898-00-00T00:00:00Z/9</div>",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a href=\"https://en.wikipedia.org/wiki/en:Google_Arts_%26_Culture\" class=\"extiw\" title=\"w:en:Google Arts &amp; Culture\"><span title=\"app and website exploring partner museums\">Google Arts &amp; Culture</span></a>  — <a rel=\"nofollow\" class=\"external text\" href=\"//www.google.com/culturalinstitute/asset-viewer/0wEgb-hqtnYM2A\">0wEgb-hqtnYM2A</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 1123477260,
+            "parentid": 878787063,
+            "timestamp": "2025-11-30T17:36:19Z",
+            "slots": {
+              "main": {
+                "contentmodel": "wikitext",
+                "contentformat": "text/x-wiki",
+                "*": "== {{int:filedesc}} ==\n{{Artwork\n | wikidata = Q18688316\n |artist         = {{Creator:Paul Cézanne}}\n |title          = {{title|lang=fr|Nature morte|en=Still Life with Apples}}\n |description    =\n |date           = {{other date|-|1895|1898}}\n |medium         = {{technique|Oil|canvas}}\n |dimensions     = {{size|cm|height=68.60|width=92.70}}\n |gallery        = {{Institution:Museum of Modern Art}}\n |location       = Gallery 1\n |references     =\n |object history =\n |credit line    =\n |inscriptions   =\n |notes          =\n |accession number=\n |source         = {{From Google Cultural Institute|0wEgb-hqtnYM2A}}\n |permission     = \n |other_versions=\n}}\n\n== {{int:license-header}} ==\n{{PD-Art|PD-old-100-expired}}\n\n[[Category:Google Art Project works in MoMA, The Museum of Modern Art]]\n\n[[Category:Still Life with Apples by Paul Cézanne]]\n[[Category:Still-life paintings with apples by Paul Cézanne]]\n[[Category:Paintings by Paul Cézanne in the Museum of Modern Art]]\n[[Category:1890s still-life paintings]]\n[[Category:1890s paintings of fruits]]\n[[Category:1890s oil on canvas paintings in the United States]]"
+              }
+            }
+          }
+        ]
+      },
+      "pageId": 13356688,
+      "revisionId": 1123477260,
+      "revisionTimestamp": "2025-11-30T17:36:19Z",
+      "permanentUrl": "https://commons.wikimedia.org/w/index.php?oldid=1123477260",
+      "filePageUrl": "https://commons.wikimedia.org/wiki/File:Paul_C%C3%A9zanne_-_Nature_morte_-_Google_Art_Project.jpg",
+      "requiredMetadataFields": {
+        "LicenseShortName": {
+          "value": "Public domain",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "Copyrighted": {
+          "value": "False",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "Artist": {
+          "value": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Paul_C%C3%A9zanne\" class=\"extiw\" title=\"w:en:Paul Cézanne\"><span title=\"French painter (1839–1906)\">Paul Cézanne</span></a></bdi>",
+          "source": "commons-desc-page"
+        },
+        "Attribution": null,
+        "Credit": {
+          "value": "<a href=\"https://en.wikipedia.org/wiki/en:Google_Arts_%26_Culture\" class=\"extiw\" title=\"w:en:Google Arts &amp; Culture\"><span title=\"app and website exploring partner museums\">Google Arts &amp; Culture</span></a>  — <a rel=\"nofollow\" class=\"external text\" href=\"//www.google.com/culturalinstitute/asset-viewer/0wEgb-hqtnYM2A\">0wEgb-hqtnYM2A</a>",
+          "source": "commons-desc-page"
+        },
+        "LicenseUrl": null
+      },
+      "missingFieldNote": "Null fields were not supplied by the Commons API; no license URL or attribution value has been invented.",
+      "publicDomainBasis": "Commons labels this faithful 2D reproduction PD-Art and PD-old-100-expired. MoMA records creation before 1931 and artist death before 1926; original wikitext, categories, and artist dates are archived.",
+      "retrievedAt": "2026-09-27T23:19:45.704315+00:00"
+    },
+    "_identityEvidence": {
+      "objectId": 78486,
+      "commonsTitle": "File:Paul Cézanne - Nature morte - Google Art Project.jpg",
+      "wikidata": "Q18688316",
+      "identityBasis": "Commons identifies Still Life with Apples, Paul Cézanne, Museum of Modern Art, 1895–98, 68.6 × 92.7 cm, matching MoMA. The similarly titled Getty image is excluded."
+    },
+    "_verifiedAt": "2026-09-27T23:19:45.704315+00:00",
+    "_imageEvidence": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/db/Paul_C%C3%A9zanne_-_Nature_morte_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sha1": "ca2532e8f74631269bd875869727d4bdea2f97d9",
+      "sha256": "1a7729eabb57832efe1c2178b9c9da158ed961484d6ab072c6ae5315721b9153",
+      "sizeBytes": 15611488,
+      "width": 6320,
+      "height": 4630
+    }
+  },
+  {
+    "id": 79333,
+    "moma": {
+      "Title": "Evening, Honfleur",
+      "Artist": [
+        "Georges-Pierre Seurat"
+      ],
+      "ConstituentID": [
+        5358
+      ],
+      "ArtistBio": [
+        "French, 1859–1891"
+      ],
+      "Nationality": [
+        "French"
+      ],
+      "BeginDate": [
+        1859
+      ],
+      "EndDate": [
+        1891
+      ],
+      "Gender": [
+        "male"
+      ],
+      "Date": "1886",
+      "Medium": "Oil on canvas, with painted wood frame",
+      "Dimensions": "30 3/4 x 37\" (78.3 x 94 cm) including frame",
+      "CreditLine": "Gift of Mrs. David M. Levy",
+      "AccessionNumber": "266.1957",
+      "Classification": "Painting",
+      "Department": "Painting & Sculpture",
+      "DateAcquired": "1957-12-04",
+      "Cataloged": "Y",
+      "ObjectID": 79333,
+      "URL": "https://www.moma.org/collection/works/79333",
+      "ImageURL": "https://www.moma.org/media/W1siZiIsIjQ1NjM4NiJdLFsicCIsImNvbnZlcnQiLCItcmVzaXplIDEwMjR4MTAyNFx1MDAzZSJdXQ.jpg?sha=c9c836f14cc44ff6",
+      "OnView": "\"MoMA, Floor 5, 501\"",
+      "Height (cm)": 65.4,
+      "Width (cm)": 81.1
+    },
+    "_datasetSource": {
+      "sourceUrl": "https://github.com/MuseumofModernArt/collection/tree/3053da6addd4d210b955021f410430ac3bbf18d4",
+      "dataUrl": "https://media.githubusercontent.com/media/MuseumofModernArt/collection/3053da6addd4d210b955021f410430ac3bbf18d4/Artworks.json",
+      "commit": "3053da6addd4d210b955021f410430ac3bbf18d4",
+      "dataSha256": "288d65589d7dadec509984c50f726454be4bbe00e68e61cf7d6116713a408807",
+      "dataSizeBytes": 144917269,
+      "metadataLicense": "CC0 1.0 Universal",
+      "imageLicenseNotice": "MoMA metadata CC0 excludes images; images are independently sourced from Wikimedia Commons."
+    },
+    "_commonsEvidence": {
+      "apiUrl": "https://commons.wikimedia.org/w/api.php?action=query&format=json&prop=imageinfo%7Crevisions&iiprop=url%7Cextmetadata%7Csha1%7Csize&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=File%3AGeorges-Pierre+Seurat+-+Honfleur%2C+un+soir%2C+embouchure+de+la+Seine+-+Google+Art+Project.jpg",
+      "retrievalNote": "Retrieved in batched Commons API queries; this URL reproduces the individual file query.",
+      "page": {
+        "pageid": 13357810,
+        "ns": 6,
+        "title": "File:Georges-Pierre Seurat - Honfleur, un soir, embouchure de la Seine - Google Art Project.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 28689489,
+            "width": 5921,
+            "height": 4925,
+            "url": "https://upload.wikimedia.org/wikipedia/commons/5/52/Georges-Pierre_Seurat_-_Honfleur%2C_un_soir%2C_embouchure_de_la_Seine_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Georges-Pierre_Seurat_-_Honfleur,_un_soir,_embouchure_de_la_Seine_-_Google_Art_Project.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=13357810",
+            "sha1": "796446cda6ab5b8b1bdb517a5fc0a4c0b498dae0",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2011-02-18 09:49:35",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "<div class=\"fn\">\n<div style=\"font-size:0.9em;display:inline-block;\">French:  <div style=\"display:inline-block\" dir=\"ltr\" lang=\"fr\"><i>Honfleur, un soir, embouchure de la Seine</i></div></div><br><div style=\"font-weight:bold;display:inline-block;\"><div style=\"display:inline-block\" dir=\"ltr\" lang=\"en\"><i>Evening, Honfleur</i></div></div><div style=\"display: none;\">title QS:P1476,fr:\"Honfleur, un soir, embouchure de la Seine\"</div><div style=\"display: none;\">label QS:Lfr,\"Honfleur, un soir, embouchure de la Seine\"</div><div style=\"display: none;\">label QS:Len,\"Evening, Honfleur\"</div></div>",
+                "source": "commons-desc-page"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "PD-old-100-expired|Unsupported technique|Honfleur, Evening by Georges Seurat|PD-Art (PD-old-auto-expired)|Artworks with Wikidata item|Artworks with known accession number|Featured pictures of Calvados|CC-PD-Mark|Artworks with accession number from Wikidata|Google Art Project works by Georges Seurat|Featured pictures of paintings from France|Google Art Project works in MoMA, The Museum of Modern Art|Featured pictures in the public domain|Artworks digital representation of 2D work|Files from Google Arts & Culture|Featured pictures from the Google Art Project",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "featured",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Artist": {
+                "value": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Georges_Seurat\" class=\"extiw\" title=\"w:en:Georges Seurat\"><span title=\"French painter (1859-1891)\">Georges Seurat</span></a></bdi>",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "1886<div style=\"display: none;\">date QS:P571,+1886-00-00T00:00:00Z/9</div>",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a href=\"https://en.wikipedia.org/wiki/en:Google_Arts_%26_Culture\" class=\"extiw\" title=\"w:en:Google Arts &amp; Culture\"><span title=\"app and website exploring partner museums\">Google Arts &amp; Culture</span></a>  — <a rel=\"nofollow\" class=\"external text\" href=\"//www.google.com/culturalinstitute/asset-viewer/0gFv7DUM_Mlypg\">0gFv7DUM_Mlypg</a>",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "<table cellspacing=\"8\" cellpadding=\"0\" style=\"clear:both; margin:0.5em auto; background-color: var(--background-color-interactive, #f0f0f0); color: inherit; border: 2px solid var(--border-color-subtle, #e0e0e0); width:100%;\" class=\"layouttemplate\" dir=\"ltr\" lang=\"en\">\n<tbody><tr>\n<td>\n<div class=\"center\">This is a faithful photographic reproduction of a two-dimensional, <a href=\"//commons.wikimedia.org/wiki/Public_domain\" class=\"mw-redirect\" title=\"Public domain\">public domain</a> work of art. The work of art itself is in the public domain for the following reason:</div>\n<div dir=\"auto\">\n<table class=\"licensetpl\" style=\"display:none\">\n<tbody><tr>\n<td><span class=\"licensetpl_short\">Public domain</span><span class=\"licensetpl_long\">Public domain</span><span class=\"licensetpl_link_req\">false</span><span class=\"licensetpl_attr_req\">false</span>\n</td></tr></tbody></table>\n<table style=\"width: 100%; clear: both; margin: 0.5em auto; background-color: var(--background-color-progressive-subtle, #f7f8ff); color: var(--color-base, #202122); border: var(--border-subtle, 2px solid #8888aa); border-spacing: 8px; padding: 0px;\" dir=\"ltr\" class=\"layouttemplate\" lang=\"en\">\n<tbody><tr>\n<td><span typeof=\"mw:File\"><span title=\"Public domain\"><img alt=\"Public domain\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/PD-icon.svg/120px-PD-icon.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"64\" height=\"64\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/PD-icon.svg/250px-PD-icon.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"196\" data-file-height=\"196\"></span></span>\n</td>\n<td>\n<p>The author died in 1891, so this work is in the <b><a href=\"https://en.wikipedia.org/wiki/public_domain\" class=\"extiw\" title=\"en:public domain\">public domain</a></b> in its country of origin and other countries and areas where the <a href=\"https://en.wikipedia.org/wiki/List_of_countries%27_copyright_lengths\" class=\"extiw\" title=\"w:List of countries' copyright lengths\">copyright term</a> is the author's <b>life plus 100 years or fewer</b>.\n</p>\n<hr>\n<p>This work is in the <b><a href=\"https://en.wikipedia.org/wiki/public_domain\" class=\"extiw\" title=\"en:public domain\">public domain</a></b> in the <a href=\"https://en.wikipedia.org/wiki/United_States\" class=\"extiw\" title=\"en:United States\">United States</a> because it was <a href=\"//commons.wikimedia.org/wiki/Commons:Publication\" title=\"Commons:Publication\">published</a> (or registered with the <a href=\"https://en.wikipedia.org/wiki/United_States_Copyright_Office\" class=\"extiw\" title=\"en:United States Copyright Office\">U.S. Copyright Office</a>) before January 1, 1931.\n</p>\n</td></tr>\n<tr>\n<td colspan=\"2\" style=\"text-align:center;font-size:x-small;line-height:140%;\"><a href=\"https://creativecommons.org/publicdomain/mark/1.0/deed.en\" class=\"extiw\" title=\"ccorg:publicdomain/mark/1.0/deed.en\">This file has been identified as being free of known restrictions under copyright law, including all related and neighboring rights.</a>\n</td></tr></tbody></table><span class=\"licensetpl_link\" style=\"display:none;\">https://creativecommons.org/publicdomain/mark/1.0/</span><span class=\"licensetpl_short\" style=\"display:none;\">PDM</span><span class=\"licensetpl_long\" style=\"display:none;\">Creative Commons Public Domain Mark 1.0</span><span class=\"licensetpl_link_req\" style=\"display:none;\">false</span><span class=\"licensetpl_attr_req\" style=\"display:none;\">false</span></div>\n<div class=\"center\">The official position taken by the Wikimedia Foundation is that \"<i>faithful reproductions of two-dimensional public domain works of art are public domain</i>\".<br><b>This photographic reproduction is therefore also considered to be in the public domain in the United States.</b> In other jurisdictions, re-use of this content may be restricted; <b>see <a href=\"//commons.wikimedia.org/wiki/Commons:Reuse_of_PD-Art_photographs\" title=\"Commons:Reuse of PD-Art photographs\">Reuse of PD-Art photographs</a> for details.</b></div> \n</td></tr></tbody></table>",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 1271417307,
+            "parentid": 1034780126,
+            "timestamp": "2026-09-02T18:06:56Z",
+            "slots": {
+              "main": {
+                "contentmodel": "wikitext",
+                "contentformat": "text/x-wiki",
+                "*": "{{Artwork\n | wikidata = Q3786544\n |artist         = {{Creator:Georges Seurat}}\n |title          = {{title|lang=fr|Honfleur, un soir, embouchure de la Seine|en=Evening, Honfleur}}\n |description    =\n |date           = 1886\n |medium         = {{technique|Oil|canvas with painted wooden frame}}\n |dimensions     = {{size|cm|height=78.30|width=94}}\n |gallery        = {{Institution:Museum of Modern Art}}\n |location       = Gallery 1\n |references     =\n |object history =\n |credit line    =\n |inscriptions   =\n |notes          =\n |accession number=\n |source         = {{From Google Cultural Institute|0gFv7DUM_Mlypg}}\n |permission     = {{PD-Art|PD-old-auto-expired|deathyear=1891}}\n |other_versions=[[:File:Georges Seurat 033.jpg]]\n}}\n{{Assessments|featured=1}}\n\n[[Category:Honfleur, Evening by Georges Seurat]]\n[[Category:Google Art Project works in MoMA, The Museum of Modern Art]]\n[[Category:Google Art Project works by Georges Seurat]]\n[[Category:Featured pictures of Calvados]]\n[[Category:Featured pictures of paintings from France]]\n[[Category:Featured pictures from the Google Art Project]]\n[[Category:Featured pictures in the public domain]]"
+              }
+            }
+          }
+        ]
+      },
+      "pageId": 13357810,
+      "revisionId": 1271417307,
+      "revisionTimestamp": "2026-09-02T18:06:56Z",
+      "permanentUrl": "https://commons.wikimedia.org/w/index.php?oldid=1271417307",
+      "filePageUrl": "https://commons.wikimedia.org/wiki/File:Georges-Pierre_Seurat_-_Honfleur,_un_soir,_embouchure_de_la_Seine_-_Google_Art_Project.jpg",
+      "requiredMetadataFields": {
+        "LicenseShortName": {
+          "value": "Public domain",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "Copyrighted": {
+          "value": "False",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "Artist": {
+          "value": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Georges_Seurat\" class=\"extiw\" title=\"w:en:Georges Seurat\"><span title=\"French painter (1859-1891)\">Georges Seurat</span></a></bdi>",
+          "source": "commons-desc-page"
+        },
+        "Attribution": null,
+        "Credit": {
+          "value": "<a href=\"https://en.wikipedia.org/wiki/en:Google_Arts_%26_Culture\" class=\"extiw\" title=\"w:en:Google Arts &amp; Culture\"><span title=\"app and website exploring partner museums\">Google Arts &amp; Culture</span></a>  — <a rel=\"nofollow\" class=\"external text\" href=\"//www.google.com/culturalinstitute/asset-viewer/0gFv7DUM_Mlypg\">0gFv7DUM_Mlypg</a>",
+          "source": "commons-desc-page"
+        },
+        "LicenseUrl": null
+      },
+      "missingFieldNote": "Null fields were not supplied by the Commons API; no license URL or attribution value has been invented.",
+      "publicDomainBasis": "Commons labels this faithful 2D reproduction PD-Art and PD-old-100-expired. MoMA records creation before 1931 and artist death before 1926; original wikitext, categories, and artist dates are archived.",
+      "retrievedAt": "2026-09-27T23:19:45.704315+00:00"
+    },
+    "_identityEvidence": {
+      "objectId": 79333,
+      "commonsTitle": "File:Georges-Pierre Seurat - Honfleur, un soir, embouchure de la Seine - Google Art Project.jpg",
+      "wikidata": "Q3786544",
+      "identityBasis": "Commons identifies Evening, Honfleur, Georges Seurat, Museum of Modern Art, 1886, 78.3 × 94 cm with painted frame, matching MoMA."
+    },
+    "_verifiedAt": "2026-09-27T23:19:45.704315+00:00",
+    "_imageEvidence": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/52/Georges-Pierre_Seurat_-_Honfleur%2C_un_soir%2C_embouchure_de_la_Seine_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sha1": "796446cda6ab5b8b1bdb517a5fc0a4c0b498dae0",
+      "sha256": "a0c92d3fabb3b445019aef1c8233199d42a95c87b7f23859b844375576f0f1a3",
+      "sizeBytes": 28689489,
+      "width": 5921,
+      "height": 4925
+    }
+  },
+  {
+    "id": 79409,
+    "moma": {
+      "Title": "Grandcamp, Evening",
+      "Artist": [
+        "Georges-Pierre Seurat"
+      ],
+      "ConstituentID": [
+        5358
+      ],
+      "ArtistBio": [
+        "French, 1859–1891"
+      ],
+      "Nationality": [
+        "French"
+      ],
+      "BeginDate": [
+        1859
+      ],
+      "EndDate": [
+        1891
+      ],
+      "Gender": [
+        "male"
+      ],
+      "Date": "1885, painted border c. 1888-89",
+      "Medium": "Oil on canvas",
+      "Dimensions": "26 x 32 1/2\" (66.2 x 82.4 cm)",
+      "CreditLine": "Estate of John Hay Whitney",
+      "AccessionNumber": "285.1983",
+      "Classification": "Painting",
+      "Department": "Painting & Sculpture",
+      "DateAcquired": "1983-02-14",
+      "Cataloged": "Y",
+      "ObjectID": 79409,
+      "URL": "https://www.moma.org/collection/works/79409",
+      "ImageURL": "https://www.moma.org/media/W1siZiIsIjE1OTIwNyJdLFsicCIsImNvbnZlcnQiLCItcmVzaXplIDEwMjR4MTAyNFx1MDAzZSJdXQ.jpg?sha=1f6e2aca6355de47",
+      "OnView": "\"MoMA, Floor 5, 501\"",
+      "Height (cm)": 66.2,
+      "Width (cm)": 82.4
+    },
+    "_datasetSource": {
+      "sourceUrl": "https://github.com/MuseumofModernArt/collection/tree/3053da6addd4d210b955021f410430ac3bbf18d4",
+      "dataUrl": "https://media.githubusercontent.com/media/MuseumofModernArt/collection/3053da6addd4d210b955021f410430ac3bbf18d4/Artworks.json",
+      "commit": "3053da6addd4d210b955021f410430ac3bbf18d4",
+      "dataSha256": "288d65589d7dadec509984c50f726454be4bbe00e68e61cf7d6116713a408807",
+      "dataSizeBytes": 144917269,
+      "metadataLicense": "CC0 1.0 Universal",
+      "imageLicenseNotice": "MoMA metadata CC0 excludes images; images are independently sourced from Wikimedia Commons."
+    },
+    "_commonsEvidence": {
+      "apiUrl": "https://commons.wikimedia.org/w/api.php?action=query&format=json&prop=imageinfo%7Crevisions&iiprop=url%7Cextmetadata%7Csha1%7Csize&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=File%3AGeorges-Pierre+Seurat+-+Grandcamp%2C+un+soir+-+Google+Art+Project.jpg",
+      "retrievalNote": "Retrieved in batched Commons API queries; this URL reproduces the individual file query.",
+      "page": {
+        "pageid": 13357921,
+        "ns": 6,
+        "title": "File:Georges-Pierre Seurat - Grandcamp, un soir - Google Art Project.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 11670783,
+            "width": 4189,
+            "height": 3353,
+            "url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Georges-Pierre_Seurat_-_Grandcamp%2C_un_soir_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Georges-Pierre_Seurat_-_Grandcamp,_un_soir_-_Google_Art_Project.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=13357921",
+            "sha1": "649999a52b2e9822de08bc4418c11075c01806cf",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2011-02-18 09:53:26",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "<div class=\"fn\">\n<div style=\"font-size:0.9em;display:inline-block;\">French:  <div style=\"display:inline-block\" dir=\"ltr\" lang=\"fr\"><i>Grandcamp, un soir</i></div></div><br><div style=\"font-weight:bold;display:inline-block;\"><div style=\"display:inline-block\" dir=\"ltr\" lang=\"en\"><i>Grandcamp, Evening</i></div></div><div style=\"display: none;\">title QS:P1476,fr:\"Grandcamp, un soir\"</div><div style=\"display: none;\">label QS:Lfr,\"Grandcamp, un soir\"</div><div style=\"display: none;\">label QS:Len,\"Grandcamp, Evening\"</div></div>",
+                "source": "commons-desc-page"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "PD-old-100-expired|Grandcamp, un soir by Georges Seurat|PD-Art (PD-old-auto-expired)|Artworks with Wikidata item|Artworks with known accession number|CC-PD-Mark|Artworks with accession number from Wikidata|Google Art Project works by Georges Seurat|1880s landscape paintings|Google Art Project works in MoMA, The Museum of Modern Art|Artworks digital representation of 2D work|Files from Google Arts & Culture|Pointillistic paintings by Georges Seurat|Paintings by Georges Seurat in the Museum of Modern Art",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Artist": {
+                "value": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Georges_Seurat\" class=\"extiw\" title=\"w:en:Georges Seurat\"><span title=\"French painter (1859-1891)\">Georges Seurat</span></a></bdi>",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "1885<div style=\"display: none;\">date QS:P571,+1885-00-00T00:00:00Z/9</div>",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a href=\"https://en.wikipedia.org/wiki/en:Google_Arts_%26_Culture\" class=\"extiw\" title=\"w:en:Google Arts &amp; Culture\"><span title=\"app and website exploring partner museums\">Google Arts &amp; Culture</span></a>  — <a rel=\"nofollow\" class=\"external text\" href=\"//www.google.com/culturalinstitute/asset-viewer/VwHfdCLk4xuIAQ\">VwHfdCLk4xuIAQ</a>",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "<table cellspacing=\"8\" cellpadding=\"0\" style=\"clear:both; margin:0.5em auto; background-color: var(--background-color-interactive, #f0f0f0); color: inherit; border: 2px solid var(--border-color-subtle, #e0e0e0); width:100%;\" class=\"layouttemplate\" dir=\"ltr\" lang=\"en\">\n<tbody><tr>\n<td>\n<div class=\"center\">This is a faithful photographic reproduction of a two-dimensional, <a href=\"//commons.wikimedia.org/wiki/Public_domain\" class=\"mw-redirect\" title=\"Public domain\">public domain</a> work of art. The work of art itself is in the public domain for the following reason:</div>\n<div dir=\"auto\">\n<table class=\"licensetpl\" style=\"display:none\">\n<tbody><tr>\n<td><span class=\"licensetpl_short\">Public domain</span><span class=\"licensetpl_long\">Public domain</span><span class=\"licensetpl_link_req\">false</span><span class=\"licensetpl_attr_req\">false</span>\n</td></tr></tbody></table>\n<table style=\"width: 100%; clear: both; margin: 0.5em auto; background-color: var(--background-color-progressive-subtle, #f7f8ff); color: var(--color-base, #202122); border: var(--border-subtle, 2px solid #8888aa); border-spacing: 8px; padding: 0px;\" dir=\"ltr\" class=\"layouttemplate\" lang=\"en\">\n<tbody><tr>\n<td><span typeof=\"mw:File\"><span title=\"Public domain\"><img alt=\"Public domain\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/PD-icon.svg/120px-PD-icon.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"64\" height=\"64\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/PD-icon.svg/250px-PD-icon.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"196\" data-file-height=\"196\"></span></span>\n</td>\n<td>\n<p>The author died in 1891, so this work is in the <b><a href=\"https://en.wikipedia.org/wiki/public_domain\" class=\"extiw\" title=\"en:public domain\">public domain</a></b> in its country of origin and other countries and areas where the <a href=\"https://en.wikipedia.org/wiki/List_of_countries%27_copyright_lengths\" class=\"extiw\" title=\"w:List of countries' copyright lengths\">copyright term</a> is the author's <b>life plus 100 years or fewer</b>.\n</p>\n<hr>\n<p>This work is in the <b><a href=\"https://en.wikipedia.org/wiki/public_domain\" class=\"extiw\" title=\"en:public domain\">public domain</a></b> in the <a href=\"https://en.wikipedia.org/wiki/United_States\" class=\"extiw\" title=\"en:United States\">United States</a> because it was <a href=\"//commons.wikimedia.org/wiki/Commons:Publication\" title=\"Commons:Publication\">published</a> (or registered with the <a href=\"https://en.wikipedia.org/wiki/United_States_Copyright_Office\" class=\"extiw\" title=\"en:United States Copyright Office\">U.S. Copyright Office</a>) before January 1, 1931.\n</p>\n</td></tr>\n<tr>\n<td colspan=\"2\" style=\"text-align:center;font-size:x-small;line-height:140%;\"><a href=\"https://creativecommons.org/publicdomain/mark/1.0/deed.en\" class=\"extiw\" title=\"ccorg:publicdomain/mark/1.0/deed.en\">This file has been identified as being free of known restrictions under copyright law, including all related and neighboring rights.</a>\n</td></tr></tbody></table><span class=\"licensetpl_link\" style=\"display:none;\">https://creativecommons.org/publicdomain/mark/1.0/</span><span class=\"licensetpl_short\" style=\"display:none;\">PDM</span><span class=\"licensetpl_long\" style=\"display:none;\">Creative Commons Public Domain Mark 1.0</span><span class=\"licensetpl_link_req\" style=\"display:none;\">false</span><span class=\"licensetpl_attr_req\" style=\"display:none;\">false</span></div>\n<div class=\"center\">The official position taken by the Wikimedia Foundation is that \"<i>faithful reproductions of two-dimensional public domain works of art are public domain</i>\".<br><b>This photographic reproduction is therefore also considered to be in the public domain in the United States.</b> In other jurisdictions, re-use of this content may be restricted; <b>see <a href=\"//commons.wikimedia.org/wiki/Commons:Reuse_of_PD-Art_photographs\" title=\"Commons:Reuse of PD-Art photographs\">Reuse of PD-Art photographs</a> for details.</b></div> \n</td></tr></tbody></table>",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 1271417298,
+            "parentid": 1034780072,
+            "timestamp": "2026-09-02T18:06:54Z",
+            "slots": {
+              "main": {
+                "contentmodel": "wikitext",
+                "contentformat": "text/x-wiki",
+                "*": "{{Artwork\n | wikidata = Q3775512\n |artist         = {{Creator:Georges Seurat}}\n |title          = {{title|lang=fr|Grandcamp, un soir|en=Grandcamp, Evening}}\n |description    =\n |date           = 1885\n |medium         = {{technique|Oil|canvas}}\n |dimensions     = {{size|cm|height=66.20|width=82.40}}\n |gallery        = {{Institution:Museum of Modern Art}}\n |location       = Gallery 1\n |references     =\n |object history =\n |credit line    =\n |inscriptions   =\n |notes          =\n |accession number=\n |source         = {{From Google Cultural Institute|VwHfdCLk4xuIAQ}}\n |permission     = {{PD-Art|PD-old-auto-expired|deathyear=1891}}\n |other_versions=\n}}\n\n[[Category:Google Art Project works in MoMA, The Museum of Modern Art]]\n[[Category:Pointillistic paintings by Georges Seurat]]\n[[Category:Google Art Project works by Georges Seurat]]\n[[Category:Paintings by Georges Seurat in the Museum of Modern Art|Seurat]]\n[[Category:1880s landscape paintings]]\n[[Category:Grandcamp, un soir by Georges Seurat]]"
+              }
+            }
+          }
+        ]
+      },
+      "pageId": 13357921,
+      "revisionId": 1271417298,
+      "revisionTimestamp": "2026-09-02T18:06:54Z",
+      "permanentUrl": "https://commons.wikimedia.org/w/index.php?oldid=1271417298",
+      "filePageUrl": "https://commons.wikimedia.org/wiki/File:Georges-Pierre_Seurat_-_Grandcamp,_un_soir_-_Google_Art_Project.jpg",
+      "requiredMetadataFields": {
+        "LicenseShortName": {
+          "value": "Public domain",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "Copyrighted": {
+          "value": "False",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "Artist": {
+          "value": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Georges_Seurat\" class=\"extiw\" title=\"w:en:Georges Seurat\"><span title=\"French painter (1859-1891)\">Georges Seurat</span></a></bdi>",
+          "source": "commons-desc-page"
+        },
+        "Attribution": null,
+        "Credit": {
+          "value": "<a href=\"https://en.wikipedia.org/wiki/en:Google_Arts_%26_Culture\" class=\"extiw\" title=\"w:en:Google Arts &amp; Culture\"><span title=\"app and website exploring partner museums\">Google Arts &amp; Culture</span></a>  — <a rel=\"nofollow\" class=\"external text\" href=\"//www.google.com/culturalinstitute/asset-viewer/VwHfdCLk4xuIAQ\">VwHfdCLk4xuIAQ</a>",
+          "source": "commons-desc-page"
+        },
+        "LicenseUrl": null
+      },
+      "missingFieldNote": "Null fields were not supplied by the Commons API; no license URL or attribution value has been invented.",
+      "publicDomainBasis": "Commons labels this faithful 2D reproduction PD-Art and PD-old-100-expired. MoMA records creation before 1931 and artist death before 1926; original wikitext, categories, and artist dates are archived.",
+      "retrievedAt": "2026-09-27T23:19:45.704315+00:00"
+    },
+    "_identityEvidence": {
+      "objectId": 79409,
+      "commonsTitle": "File:Georges-Pierre Seurat - Grandcamp, un soir - Google Art Project.jpg",
+      "wikidata": "Q3775512",
+      "identityBasis": "Commons identifies Grandcamp, Evening, Georges Seurat, Museum of Modern Art, 1885, 66.2 × 82.4 cm, matching MoMA."
+    },
+    "_verifiedAt": "2026-09-27T23:19:45.704315+00:00",
+    "_imageEvidence": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Georges-Pierre_Seurat_-_Grandcamp%2C_un_soir_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sha1": "649999a52b2e9822de08bc4418c11075c01806cf",
+      "sha256": "a1c6ab20470cb0fce917e91033543467f24049eec50ff36aefe19e8787410055",
+      "sizeBytes": 11670783,
+      "width": 4189,
+      "height": 3353
+    }
+  },
+  {
+    "id": 80354,
+    "moma": {
+      "Title": "The Channel at Gravelines, Evening",
+      "Artist": [
+        "Georges-Pierre Seurat"
+      ],
+      "ConstituentID": [
+        5358
+      ],
+      "ArtistBio": [
+        "French, 1859–1891"
+      ],
+      "Nationality": [
+        "French"
+      ],
+      "BeginDate": [
+        1859
+      ],
+      "EndDate": [
+        1891
+      ],
+      "Gender": [
+        "male"
+      ],
+      "Date": "summer 1890",
+      "Medium": "Oil on canvas",
+      "Dimensions": "25 3/4 x 32 1/4\" (65.4 x 81.9 cm)",
+      "CreditLine": "Gift of Mr. and Mrs. William A. M. Burden",
+      "AccessionNumber": "785.1963",
+      "Classification": "Painting",
+      "Department": "Painting & Sculpture",
+      "DateAcquired": "1963-12-18",
+      "Cataloged": "Y",
+      "ObjectID": 80354,
+      "URL": "https://www.moma.org/collection/works/80354",
+      "ImageURL": "https://www.moma.org/media/W1siZiIsIjIzNTkwOSJdLFsicCIsImNvbnZlcnQiLCItcmVzaXplIDEwMjR4MTAyNFx1MDAzZSJdXQ.jpg?sha=0c5f329340e2cf92",
+      "OnView": "",
+      "Height (cm)": 65.4,
+      "Width (cm)": 81.9
+    },
+    "_datasetSource": {
+      "sourceUrl": "https://github.com/MuseumofModernArt/collection/tree/3053da6addd4d210b955021f410430ac3bbf18d4",
+      "dataUrl": "https://media.githubusercontent.com/media/MuseumofModernArt/collection/3053da6addd4d210b955021f410430ac3bbf18d4/Artworks.json",
+      "commit": "3053da6addd4d210b955021f410430ac3bbf18d4",
+      "dataSha256": "288d65589d7dadec509984c50f726454be4bbe00e68e61cf7d6116713a408807",
+      "dataSizeBytes": 144917269,
+      "metadataLicense": "CC0 1.0 Universal",
+      "imageLicenseNotice": "MoMA metadata CC0 excludes images; images are independently sourced from Wikimedia Commons."
+    },
+    "_commonsEvidence": {
+      "apiUrl": "https://commons.wikimedia.org/w/api.php?action=query&format=json&prop=imageinfo%7Crevisions&iiprop=url%7Cextmetadata%7Csha1%7Csize&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=File%3AGeorges-Pierre+Seurat+-+The+Channel+at+Gravelines%2C+Evening+-+Google+Art+Project.jpg",
+      "retrievalNote": "Retrieved in batched Commons API queries; this URL reproduces the individual file query.",
+      "page": {
+        "pageid": 22264567,
+        "ns": 6,
+        "title": "File:Georges-Pierre Seurat - The Channel at Gravelines, Evening - Google Art Project.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 13611989,
+            "width": 5604,
+            "height": 4525,
+            "url": "https://upload.wikimedia.org/wikipedia/commons/4/48/Georges-Pierre_Seurat_-_The_Channel_at_Gravelines%2C_Evening_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Georges-Pierre_Seurat_-_The_Channel_at_Gravelines,_Evening_-_Google_Art_Project.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=22264567",
+            "sha1": "6cdf803e67d0bd41d155a3e35e3ee77c19a55cb0",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2012-10-22 02:03:41",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "<div class=\"fn\">\n<div style=\"font-weight:bold;display:inline-block;\"><div style=\"display:inline-block\" dir=\"ltr\" lang=\"en\"><i>The Channel at Gravelines, Evening</i></div></div><div style=\"display: none;\">title QS:P1476,en:\"The Channel at Gravelines, Evening\"</div><div style=\"display: none;\">label QS:Len,\"The Channel at Gravelines, Evening\"</div></div>",
+                "source": "commons-desc-page"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "PD-old-100-expired|The Channel at Gravelines, Evening by Georges Seurat|Paintings of sailboats|PD-Art (PD-old-100-expired)|Artworks with Wikidata item|Artworks with known accession number|CC-PD-Mark|Google Art Project works by Georges Seurat|Canals in France in art|Google Art Project works in MoMA, The Museum of Modern Art|1890 landscape paintings from France|Google Art Project paintings|1890 marine paintings|Artworks digital representation of 2D work|Files from Google Arts & Culture|Paintings of Gravelines|Paintings of anchors|Pointillistic paintings by Georges Seurat|Paintings by Georges Seurat in the Museum of Modern Art",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Artist": {
+                "value": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Georges_Seurat\" class=\"extiw\" title=\"w:en:Georges Seurat\"><span title=\"French painter (1859-1891)\">Georges Seurat</span></a></bdi>",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "1890<div style=\"display: none;\">date QS:P571,+1890-00-00T00:00:00Z/9</div>",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"//www.google.com/culturalinstitute/asset-viewer/sQE4P7QBI5YApA\">sQE4P7QBI5YApA at Google Cultural Institute</a> maximum zoom level",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 1271417317,
+            "parentid": 856700217,
+            "timestamp": "2026-09-02T18:06:58Z",
+            "slots": {
+              "main": {
+                "contentmodel": "wikitext",
+                "contentformat": "text/x-wiki",
+                "*": "=={{int:filedesc}}==\n{{Google Art Project\n|wikidata=Q3793240\n|commons_artist={{Creator:Georges Seurat}}\n|commons_title=\n|commons_description=\n|commons_date=\n|commons_medium=\n|commons_dimensions=\n|commons_institution=\n|commons_location=\n|commons_references=\n|commons_object_history=\n|commons_exhibition_history=\n|commons_credit_line=\n|commons_inscriptions=\n|commons_notes=\n|commons_accession_number=\n|commons_source=\n|commons_permission=\n|commons_other_versions=\n|commons_zoom=\n\n|artist_birth_date_display = December 2, 1859\n|artist_birth_day = 2\n|artist_birth_month = 12\n|artist_birth_place = Paris, France\n|artist_birth_year = 1859\n|artist_death_date_display = March 29, 1891\n|artist_death_day = 29\n|artist_death_month = 3\n|artist_death_place = Paris, France\n|artist_death_year = 1891\n|artist_first_name = Georges-Pierre\n|artist_gender = Male\n|artist_id = 320195\n|artist_last_name = Seurat\n|artist_nationality = French\n|artist_pretty_display_date = (December 2, 1859 - March 29, 1891)\n|absolute_url = /collection/moma-the-museum-of-modern-art/artwork/the-channel-at-gravelines-evening-georges-pierre-seurat/610128/\n|artist_display_name = Georges-Pierre Seurat\n|canonical_artist_detail_url = /artist/georges-seurat/4125003/\n|canonical_artist_id = 4125003\n|collection_detail_url = /collection/moma-the-museum-of-modern-art/\n|collection_display_name = MoMA, The Museum of Modern Art\n|collection_id = 319003\n|collection_website = http://www.MoMA.org/?ref=googleartproject\n|created = 1/3/2012 9:39:26 PM\n|detail_url = /collection/moma-the-museum-of-modern-art/artwork/the-channel-at-gravelines-evening-georges-pierre-seurat/610128/\n|earliest_date = 1890\n|earliest_date_display = 1890\n|facet_medium = Oil on canvas\n|has_streetview = True\n|height = 654\n|id = 610128\n|in_streetview = True\n|latest_date = 1890\n|level_detail_url = /collection/moma-the-museum-of-modern-art/level/5th-floor-the-mercedes-t-and-sid-r-bass-gallery-/7/\n|level_display_name = 5th Floor, The Mercedes T. and Sid R. Bass Gallery-\n|modified = 3/24/2012 7:59:06 AM\n|museum_internal_id = 785.1963.a-b\n|object_link = http://www.moma.org/collection/browse_results.php?object_id=80354\n|object_work_type = Painting\n|pivot_earliest_decade = 1890\n|pivot_latest_decade = 1900\n|pretty_dimensions = w819 x h654 mm\n|pretty_display_date = 1890\n|primary_asset_is_gigapixel = False\n|primary_image_aspect_ratio = 1.23970944309927\n|record_type = Object\n|room_detail_url = /collection/moma-the-museum-of-modern-art/level/5th-floor-the-mercedes-t-and-sid-r-bass-gallery-/7/gallery-1/324010/\n|room_display_name = Gallery 1\n|slug = the-channel-at-gravelines-evening-georges-pierre-seurat\n|title = The Channel at Gravelines, Evening\n|title_firstletter = c\n|width = 819\n|Credit_Line = Gift of Mr. and Mrs. William A. M. Burden\n|Medium = {{technique|oil|canvas}}\n|special:url_id = sQE4P7QBI5YApA\n}}\n\n=={{int:license-header}}==\n{{PD-Art|PD-old-100-1923|deathyear=1891}}\n\n[[Category:Google Art Project works by Georges Seurat]]\n[[Category:Pointillistic paintings by Georges Seurat]]\n[[Category:1890 landscape paintings from France]]\n[[Category:Paintings of Gravelines]]\n[[Category:Paintings by Georges Seurat in the Museum of Modern Art|Seurat]]\n[[Category:Paintings of anchors]]\n[[Category:Paintings of sailboats]]\n[[Category:Canals in France in art]]\n[[Category:The Channel at Gravelines, Evening by Georges Seurat]]\n[[Category:1890 marine paintings]]"
+              }
+            }
+          }
+        ]
+      },
+      "pageId": 22264567,
+      "revisionId": 1271417317,
+      "revisionTimestamp": "2026-09-02T18:06:58Z",
+      "permanentUrl": "https://commons.wikimedia.org/w/index.php?oldid=1271417317",
+      "filePageUrl": "https://commons.wikimedia.org/wiki/File:Georges-Pierre_Seurat_-_The_Channel_at_Gravelines,_Evening_-_Google_Art_Project.jpg",
+      "requiredMetadataFields": {
+        "LicenseShortName": {
+          "value": "Public domain",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "Copyrighted": {
+          "value": "False",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "Artist": {
+          "value": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Georges_Seurat\" class=\"extiw\" title=\"w:en:Georges Seurat\"><span title=\"French painter (1859-1891)\">Georges Seurat</span></a></bdi>",
+          "source": "commons-desc-page"
+        },
+        "Attribution": null,
+        "Credit": {
+          "value": "<a rel=\"nofollow\" class=\"external text\" href=\"//www.google.com/culturalinstitute/asset-viewer/sQE4P7QBI5YApA\">sQE4P7QBI5YApA at Google Cultural Institute</a> maximum zoom level",
+          "source": "commons-desc-page"
+        },
+        "LicenseUrl": null
+      },
+      "missingFieldNote": "Null fields were not supplied by the Commons API; no license URL or attribution value has been invented.",
+      "publicDomainBasis": "Commons labels this faithful 2D reproduction PD-Art and PD-old-100-expired. MoMA records creation before 1931 and artist death before 1926; original wikitext, categories, and artist dates are archived.",
+      "retrievedAt": "2026-09-27T23:19:45.704315+00:00"
+    },
+    "_identityEvidence": {
+      "objectId": 80354,
+      "commonsTitle": "File:Georges-Pierre Seurat - The Channel at Gravelines, Evening - Google Art Project.jpg",
+      "wikidata": "Q3793240",
+      "identityBasis": "Commons explicitly links MoMA object 80354 and accession 785.1963.a-b, with matching title and artist."
+    },
+    "_verifiedAt": "2026-09-27T23:19:45.704315+00:00",
+    "_imageEvidence": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/48/Georges-Pierre_Seurat_-_The_Channel_at_Gravelines%2C_Evening_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sha1": "6cdf803e67d0bd41d155a3e35e3ee77c19a55cb0",
+      "sha256": "8cfa49d44f0113c11d27f70de80d3d17bfe3ef00efba6a8aed33cbb07a7690ec",
+      "sizeBytes": 13611989,
+      "width": 5604,
+      "height": 4525
+    }
+  },
+  {
+    "id": 78616,
+    "moma": {
+      "Title": "Still Life with Three Puppies",
+      "Artist": [
+        "Paul Gauguin"
+      ],
+      "ConstituentID": [
+        2098
+      ],
+      "ArtistBio": [
+        "French, 1848–1903"
+      ],
+      "Nationality": [
+        "French"
+      ],
+      "BeginDate": [
+        1848
+      ],
+      "EndDate": [
+        1903
+      ],
+      "Gender": [
+        "male"
+      ],
+      "Date": "1888",
+      "Medium": "Oil on wood",
+      "Dimensions": "36 1/8 x 24 5/8\" (91.8 x 62.6 cm)",
+      "CreditLine": "Mrs. Simon Guggenheim Fund",
+      "AccessionNumber": "48.1952",
+      "Classification": "Painting",
+      "Department": "Painting & Sculpture",
+      "DateAcquired": "1952-05-20",
+      "Cataloged": "Y",
+      "ObjectID": 78616,
+      "URL": "https://www.moma.org/collection/works/78616",
+      "ImageURL": "https://www.moma.org/media/W1siZiIsIjE1MTM0NiJdLFsicCIsImNvbnZlcnQiLCItcmVzaXplIDEwMjR4MTAyNFx1MDAzZSJdXQ.jpg?sha=e807ccb559dd75e0",
+      "OnView": "\"MoMA, Floor 5, 501\"",
+      "Height (cm)": 91.8,
+      "Width (cm)": 62.6
+    },
+    "_datasetSource": {
+      "sourceUrl": "https://github.com/MuseumofModernArt/collection/tree/3053da6addd4d210b955021f410430ac3bbf18d4",
+      "dataUrl": "https://media.githubusercontent.com/media/MuseumofModernArt/collection/3053da6addd4d210b955021f410430ac3bbf18d4/Artworks.json",
+      "commit": "3053da6addd4d210b955021f410430ac3bbf18d4",
+      "dataSha256": "288d65589d7dadec509984c50f726454be4bbe00e68e61cf7d6116713a408807",
+      "dataSizeBytes": 144917269,
+      "metadataLicense": "CC0 1.0 Universal",
+      "imageLicenseNotice": "MoMA metadata CC0 excludes images; images are independently sourced from Wikimedia Commons."
+    },
+    "_commonsEvidence": {
+      "apiUrl": "https://commons.wikimedia.org/w/api.php?action=query&format=json&prop=imageinfo%7Crevisions&iiprop=url%7Cextmetadata%7Csha1%7Csize&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=File%3APaul+Gauguin+-+Nature+morte+avec+trois+petits+chiens+-+Google+Art+Project.jpg",
+      "retrievalNote": "Retrieved in batched Commons API queries; this URL reproduces the individual file query.",
+      "page": {
+        "pageid": 13356985,
+        "ns": 6,
+        "title": "File:Paul Gauguin - Nature morte avec trois petits chiens - Google Art Project.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 7233727,
+            "width": 3054,
+            "height": 4434,
+            "url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Paul_Gauguin_-_Nature_morte_avec_trois_petits_chiens_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Paul_Gauguin_-_Nature_morte_avec_trois_petits_chiens_-_Google_Art_Project.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=13356985",
+            "sha1": "ec105135505c8e76faebe8f08db08811b81a715b",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2011-02-18 09:27:47",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "<div class=\"fn\">\n<div style=\"font-size:0.9em;display:inline-block;\">French:  <div style=\"display:inline-block\" dir=\"ltr\" lang=\"fr\"><i>Nature morte aux trois petits chiens <span class=\"mw-valign-text-top noprint\" typeof=\"mw:File/Frameless\"><a href=\"https://www.wikidata.org/wiki/Q18688327#P1476\" title=\"Edit this at Wikidata\"><img alt=\"Edit this at Wikidata\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"10\" height=\"10\" class=\"mw-file-element\" data-file-width=\"20\" data-file-height=\"20\"></a></span></i></div></div><br><div style=\"font-weight:bold;display:inline-block;\"><div style=\"display:inline-block\" dir=\"ltr\" lang=\"en\"><i>Still Life with Three Puppies</i></div></div><div style=\"display: none;\">title QS:P1476,fr:\"Nature morte aux trois petits chiens <span class=\"mw-valign-text-top noprint\" typeof=\"mw:File/Frameless\"><a href=\"https://www.wikidata.org/wiki/Q18688327#P1476\" title=\"Edit this at Wikidata\"><img alt=\"Edit this at Wikidata\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"10\" height=\"10\" class=\"mw-file-element\" data-file-width=\"20\" data-file-height=\"20\"></a></span>\"</div><div style=\"display: none;\">label QS:Lfr,\"Nature morte aux trois petits chiens <span class=\"mw-valign-text-top noprint\" typeof=\"mw:File/Frameless\"><a href=\"https://www.wikidata.org/wiki/Q18688327#P1476\" title=\"Edit this at Wikidata\"><img alt=\"Edit this at Wikidata\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"10\" height=\"10\" class=\"mw-file-element\" data-file-width=\"20\" data-file-height=\"20\"></a></span>\"</div><div style=\"display: none;\">label QS:Len,\"Still Life with Three Puppies\"</div><div style=\"display: none;\">label QS:Lde,\"Stilleben mit drei Welpen\"</div><div style=\"display: none;\">label QS:Lca,\"Natura morta amb tres cadells\"</div></div>",
+                "source": "commons-desc-page"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "1880s paintings from France|Still-life paintings of fruits|1888 paintings|Meals in art|PD-old-100-expired|PD-Art (PD-old-auto-expired)|Artworks with Wikidata item|Artworks with known accession number|1880s paintings of fruits|CC-PD-Mark|Artworks with accession number from Wikidata|Google Art Project works by Paul Gauguin|1880s still-life paintings|19th-century paintings of dogs|1888 oil on canvas paintings in the United States|Works by Gauguin by Wildenstein Index Number|Dogs in art of France|Google Art Project works in MoMA, The Museum of Modern Art|Paintings by Paul Gauguin in the United States|Artworks digital representation of 2D work|Files from Google Arts & Culture|Still-life paintings with pears by Paul Gauguin|1880s paintings by Paul Gauguin|Paintings of animals by Paul Gauguin|Paintings by Paul Gauguin in the Museum of Modern Art",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Artist": {
+                "value": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Paul_Gauguin\" class=\"extiw\" title=\"w:en:Paul Gauguin\"><span title=\"French painter and printmaker (1848–1903)\">Paul Gauguin</span></a></bdi>",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "1888 <span class=\"mw-valign-text-top noprint\" typeof=\"mw:File/Frameless\"><a href=\"https://www.wikidata.org/wiki/Q18688327#P571\" title=\"Edit this at Wikidata\"><img alt=\"Edit this at Wikidata\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"10\" height=\"10\" class=\"mw-file-element\" data-file-width=\"20\" data-file-height=\"20\"></a></span>",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a href=\"https://en.wikipedia.org/wiki/en:Google_Arts_%26_Culture\" class=\"extiw\" title=\"w:en:Google Arts &amp; Culture\"><span title=\"app and website exploring partner museums\">Google Arts &amp; Culture</span></a>  — <a rel=\"nofollow\" class=\"external text\" href=\"//www.google.com/culturalinstitute/asset-viewer/MQHj7hahHL85Vg\">MQHj7hahHL85Vg</a>",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "<table cellspacing=\"8\" cellpadding=\"0\" style=\"clear:both; margin:0.5em auto; background-color: var(--background-color-interactive, #f0f0f0); color: inherit; border: 2px solid var(--border-color-subtle, #e0e0e0); width:100%;\" class=\"layouttemplate\" dir=\"ltr\" lang=\"en\">\n<tbody><tr>\n<td>\n<div class=\"center\">This is a faithful photographic reproduction of a two-dimensional, <a href=\"//commons.wikimedia.org/wiki/Public_domain\" class=\"mw-redirect\" title=\"Public domain\">public domain</a> work of art. The work of art itself is in the public domain for the following reason:</div>\n<div dir=\"auto\">\n<table class=\"licensetpl\" style=\"display:none\">\n<tbody><tr>\n<td><span class=\"licensetpl_short\">Public domain</span><span class=\"licensetpl_long\">Public domain</span><span class=\"licensetpl_link_req\">false</span><span class=\"licensetpl_attr_req\">false</span>\n</td></tr></tbody></table>\n<table style=\"width: 100%; clear: both; margin: 0.5em auto; background-color: var(--background-color-progressive-subtle, #f7f8ff); color: var(--color-base, #202122); border: var(--border-subtle, 2px solid #8888aa); border-spacing: 8px; padding: 0px;\" dir=\"ltr\" class=\"layouttemplate\" lang=\"en\">\n<tbody><tr>\n<td><span typeof=\"mw:File\"><span title=\"Public domain\"><img alt=\"Public domain\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/PD-icon.svg/120px-PD-icon.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"64\" height=\"64\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/PD-icon.svg/250px-PD-icon.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"196\" data-file-height=\"196\"></span></span>\n</td>\n<td>\n<p>The author died in 1903, so this work is in the <b><a href=\"https://en.wikipedia.org/wiki/public_domain\" class=\"extiw\" title=\"en:public domain\">public domain</a></b> in its country of origin and other countries and areas where the <a href=\"https://en.wikipedia.org/wiki/List_of_countries%27_copyright_lengths\" class=\"extiw\" title=\"w:List of countries' copyright lengths\">copyright term</a> is the author's <b>life plus 100 years or fewer</b>.\n</p>\n<hr>\n<p>This work is in the <b><a href=\"https://en.wikipedia.org/wiki/public_domain\" class=\"extiw\" title=\"en:public domain\">public domain</a></b> in the <a href=\"https://en.wikipedia.org/wiki/United_States\" class=\"extiw\" title=\"en:United States\">United States</a> because it was <a href=\"//commons.wikimedia.org/wiki/Commons:Publication\" title=\"Commons:Publication\">published</a> (or registered with the <a href=\"https://en.wikipedia.org/wiki/United_States_Copyright_Office\" class=\"extiw\" title=\"en:United States Copyright Office\">U.S. Copyright Office</a>) before January 1, 1931.\n</p>\n</td></tr>\n<tr>\n<td colspan=\"2\" style=\"text-align:center;font-size:x-small;line-height:140%;\"><a href=\"https://creativecommons.org/publicdomain/mark/1.0/deed.en\" class=\"extiw\" title=\"ccorg:publicdomain/mark/1.0/deed.en\">This file has been identified as being free of known restrictions under copyright law, including all related and neighboring rights.</a>\n</td></tr></tbody></table><span class=\"licensetpl_link\" style=\"display:none;\">https://creativecommons.org/publicdomain/mark/1.0/</span><span class=\"licensetpl_short\" style=\"display:none;\">PDM</span><span class=\"licensetpl_long\" style=\"display:none;\">Creative Commons Public Domain Mark 1.0</span><span class=\"licensetpl_link_req\" style=\"display:none;\">false</span><span class=\"licensetpl_attr_req\" style=\"display:none;\">false</span></div>\n<div class=\"center\">The official position taken by the Wikimedia Foundation is that \"<i>faithful reproductions of two-dimensional public domain works of art are public domain</i>\".<br><b>This photographic reproduction is therefore also considered to be in the public domain in the United States.</b> In other jurisdictions, re-use of this content may be restricted; <b>see <a href=\"//commons.wikimedia.org/wiki/Commons:Reuse_of_PD-Art_photographs\" title=\"Commons:Reuse of PD-Art photographs\">Reuse of PD-Art photographs</a> for details.</b></div> \n</td></tr></tbody></table>",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 1259445460,
+            "parentid": 1243829852,
+            "timestamp": "2026-08-10T20:10:06Z",
+            "slots": {
+              "main": {
+                "contentmodel": "wikitext",
+                "contentformat": "text/x-wiki",
+                "*": "== {{int:filedesc}} ==\n{{Artwork\n |wikidata         = Q18688327\n |artist           = {{Creator:Paul Gauguin}}\n |title            = \n |description      =\n |date             = \n |medium           = \n |dimensions       = \n |institution      = {{Institution:Museum of Modern Art}}\n |department       = Gallery 1\n |references       = {{Gauguin catalogues|W=293|W2=311|S=127}}\n |object history   =\n |accession number =\n |source           = {{From Google Cultural Institute|MQHj7hahHL85Vg}}\n |permission       = {{PD-Art|PD-old-auto-expired|deathyear=1903}}\n |other_versions   =\n}}\n{{DEFAULTSORT:Gauguin, Paul; Still life with threee puppies}}\n\n[[Category:Google Art Project works in MoMA, The Museum of Modern Art]]\n[[Category:Paintings of animals by Paul Gauguin]]\n[[Category:Dogs in art of France]]\n[[Category:1888 paintings]]\n[[Category:1880s still-life paintings]]\n[[Category:1880s paintings of fruits]]\n[[Category:1880s paintings from France]]\n[[Category:Paintings by Paul Gauguin in the Museum of Modern Art]]\n[[Category:Google Art Project works by Paul Gauguin]]\n[[Category:Paintings by Paul Gauguin in the United States]]\n[[Category:1880s paintings by Paul Gauguin]]\n[[Category:Still-life paintings of fruits]]\n[[Category:1888 oil on canvas paintings in the United States]]\n[[Category:19th-century paintings of dogs]]\n[[Category:Meals in art]]\n[[Category:Still-life paintings with pears by Paul Gauguin]]"
+              }
+            }
+          }
+        ]
+      },
+      "pageId": 13356985,
+      "revisionId": 1259445460,
+      "revisionTimestamp": "2026-08-10T20:10:06Z",
+      "permanentUrl": "https://commons.wikimedia.org/w/index.php?oldid=1259445460",
+      "filePageUrl": "https://commons.wikimedia.org/wiki/File:Paul_Gauguin_-_Nature_morte_avec_trois_petits_chiens_-_Google_Art_Project.jpg",
+      "requiredMetadataFields": {
+        "LicenseShortName": {
+          "value": "Public domain",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "Copyrighted": {
+          "value": "False",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "Artist": {
+          "value": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Paul_Gauguin\" class=\"extiw\" title=\"w:en:Paul Gauguin\"><span title=\"French painter and printmaker (1848–1903)\">Paul Gauguin</span></a></bdi>",
+          "source": "commons-desc-page"
+        },
+        "Attribution": null,
+        "Credit": {
+          "value": "<a href=\"https://en.wikipedia.org/wiki/en:Google_Arts_%26_Culture\" class=\"extiw\" title=\"w:en:Google Arts &amp; Culture\"><span title=\"app and website exploring partner museums\">Google Arts &amp; Culture</span></a>  — <a rel=\"nofollow\" class=\"external text\" href=\"//www.google.com/culturalinstitute/asset-viewer/MQHj7hahHL85Vg\">MQHj7hahHL85Vg</a>",
+          "source": "commons-desc-page"
+        },
+        "LicenseUrl": null
+      },
+      "missingFieldNote": "Null fields were not supplied by the Commons API; no license URL or attribution value has been invented.",
+      "publicDomainBasis": "Commons labels this faithful 2D reproduction PD-Art and PD-old-100-expired. MoMA records creation before 1931 and artist death before 1926; original wikitext, categories, and artist dates are archived.",
+      "retrievedAt": "2026-09-27T23:19:45.704315+00:00"
+    },
+    "_identityEvidence": {
+      "objectId": 78616,
+      "commonsTitle": "File:Paul Gauguin - Nature morte avec trois petits chiens - Google Art Project.jpg",
+      "wikidata": "Q18688327",
+      "identityBasis": "Commons identifies Still Life with Three Puppies, Paul Gauguin and Museum of Modern Art; Q18688327 and the pictured composition match the official object record."
+    },
+    "_verifiedAt": "2026-09-27T23:19:45.704315+00:00",
+    "_imageEvidence": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Paul_Gauguin_-_Nature_morte_avec_trois_petits_chiens_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sha1": "ec105135505c8e76faebe8f08db08811b81a715b",
+      "sha256": "d6d4023368a83c8e1eb0250b5e720bdb7ce10a03807ff5143ae30572c6fad0a3",
+      "sizeBytes": 7233727,
+      "width": 3054,
+      "height": 4434
+    }
+  },
+  {
+    "id": 79792,
+    "moma": {
+      "Title": "Hope, II",
+      "Artist": [
+        "Gustav Klimt"
+      ],
+      "ConstituentID": [
+        3147
+      ],
+      "ArtistBio": [
+        "Austrian, 1862–1918"
+      ],
+      "Nationality": [
+        "Austrian"
+      ],
+      "BeginDate": [
+        1862
+      ],
+      "EndDate": [
+        1918
+      ],
+      "Gender": [
+        "male"
+      ],
+      "Date": "1907-08",
+      "Medium": "Oil, gold, and platinum on canvas",
+      "Dimensions": "43 1/2 x 43 1/2\" (110.5 x 110.5 cm)",
+      "CreditLine": "Jo Carole and Ronald S. Lauder and Helen Acheson Funds, and Serge Sabarsky",
+      "AccessionNumber": "468.1978",
+      "Classification": "Painting",
+      "Department": "Painting & Sculpture",
+      "DateAcquired": "1978-06-13",
+      "Cataloged": "Y",
+      "ObjectID": 79792,
+      "URL": "https://www.moma.org/collection/works/79792",
+      "ImageURL": "https://www.moma.org/media/W1siZiIsIjI0MTYxMyJdLFsicCIsImNvbnZlcnQiLCItcmVzaXplIDEwMjR4MTAyNFx1MDAzZSJdXQ.jpg?sha=9f0bdd82b2f2dc1a",
+      "OnView": "\"MoMA, Floor 5\"",
+      "Height (cm)": 110.5,
+      "Width (cm)": 110.5
+    },
+    "_datasetSource": {
+      "sourceUrl": "https://github.com/MuseumofModernArt/collection/tree/3053da6addd4d210b955021f410430ac3bbf18d4",
+      "dataUrl": "https://media.githubusercontent.com/media/MuseumofModernArt/collection/3053da6addd4d210b955021f410430ac3bbf18d4/Artworks.json",
+      "commit": "3053da6addd4d210b955021f410430ac3bbf18d4",
+      "dataSha256": "288d65589d7dadec509984c50f726454be4bbe00e68e61cf7d6116713a408807",
+      "dataSizeBytes": 144917269,
+      "metadataLicense": "CC0 1.0 Universal",
+      "imageLicenseNotice": "MoMA metadata CC0 excludes images; images are independently sourced from Wikimedia Commons."
+    },
+    "_commonsEvidence": {
+      "apiUrl": "https://commons.wikimedia.org/w/api.php?action=query&format=json&prop=imageinfo%7Crevisions&iiprop=url%7Cextmetadata%7Csha1%7Csize&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=File%3AGustav+Klimt+-+Hope%2C+II+-+Google+Art+Project.jpg",
+      "retrievalNote": "Retrieved in batched Commons API queries; this URL reproduces the individual file query.",
+      "page": {
+        "pageid": 22007080,
+        "ns": 6,
+        "title": "File:Gustav Klimt - Hope, II - Google Art Project.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 4159432,
+            "width": 3648,
+            "height": 3699,
+            "url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Gustav_Klimt_-_Hope%2C_II_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Gustav_Klimt_-_Hope,_II_-_Google_Art_Project.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=22007080",
+            "sha1": "f9ad27ccc2d52018772a4835e91f360b0ce54e1c",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2020-09-07 11:59:24",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "<div class=\"fn\">\n<div style=\"font-weight:bold;display:inline-block;\"><div style=\"display:inline-block\" dir=\"ltr\" lang=\"en\"><i>Hope, II</i></div></div><div style=\"display: none;\">title QS:P1476,en:\"Hope, II\"</div><div style=\"display: none;\">label QS:Len,\"Hope, II\"</div></div>",
+                "source": "commons-desc-page"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Die Hoffnung II|PD-old-100-expired|Featured pictures on Wikipedia, English|PD-Art (PD-old-auto-expired)|Artworks with Wikidata item|Artworks with known accession number|Featured pictures on Wikipedia, Persian|CC-PD-Mark|Google Art Project works by Gustav Klimt|Artworks with Wikidata item missing medium|Google Art Project works in MoMA, The Museum of Modern Art|Google Art Project paintings|Artworks digital representation of 2D work|Files from Google Arts & Culture|Files with Assessments template missing SDC Commons no value quality assessment",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Artist": {
+                "value": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Gustav_Klimt\" class=\"extiw\" title=\"w:en:Gustav Klimt\"><span title=\"Austrian symbolist painter (1862–1918)\">Gustav Klimt</span></a></bdi>",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "(1907 - 1908)",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"//www.google.com/culturalinstitute/asset-viewer/igEr3RtRyxrpnw\">igEr3RtRyxrpnw at Google Cultural Institute</a> maximum zoom level",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 1215426404,
+            "parentid": 1088671142,
+            "timestamp": "2026-05-17T05:56:59Z",
+            "slots": {
+              "main": {
+                "contentmodel": "wikitext",
+                "contentformat": "text/x-wiki",
+                "*": "=={{int:filedesc}}==\n{{Google Art Project\n|wikidata=Q19883512\n|commons_artist={{Creator:Gustav Klimt}}\n|commons_title=\n|commons_description=\n|commons_date=\n|commons_medium=\n|commons_dimensions=\n|commons_institution=\n|commons_location=\n|commons_references=\n|commons_object_history=\n|commons_exhibition_history=\n|commons_credit_line=\n|commons_inscriptions=\n|commons_notes=\n|commons_accession_number=\n|commons_source=\n|commons_permission=\n|commons_other_versions=\n|commons_zoom=\n\n|artist_birth_date_display = July 14, 1862\n|artist_birth_day = 14\n|artist_birth_month = 7\n|artist_birth_place = Baumgarten, Austria\n|artist_birth_year = 1862\n|artist_death_date_display = February 6, 1918\n|artist_death_day = 6\n|artist_death_month = 2\n|artist_death_place = Vienna, Austria\n|artist_death_year = 1918\n|artist_gender = Male\n|artist_id = 637006\n|artist_nationality = Austrian\n|artist_pretty_display_date = (July 14, 1862 - February 6, 1918)\n|absolute_url = /collection/moma-the-museum-of-modern-art/artwork/hope-ii-gustav-klimt/634004/\n|artist_display_name = Gustav Klimt\n|canonical_artist_detail_url = /artist/gustav-klimt/4127340/\n|canonical_artist_id = 4127340\n|collection_detail_url = /collection/moma-the-museum-of-modern-art/\n|collection_display_name = MoMA, The Museum of Modern Art\n|collection_id = 319003\n|collection_website = http://www.MoMA.org/?ref=googleartproject\n|created = 1/5/2012 4:22:33 PM\n|detail_url = /collection/moma-the-museum-of-modern-art/artwork/hope-ii-gustav-klimt/634004/\n|earliest_date = 1907\n|earliest_date_display = 1907\n|facet_medium = Oil, gold, and platinum on canvas\n|height = 1105\n|id = 634004\n|in_streetview = True\n|latest_date = 1908\n|latest_date_display = 1908\n|level_detail_url = /collection/moma-the-museum-of-modern-art/level/5th-floor-the-mercedes-t-and-sid-r-bass-gallery-/7/\n|level_display_name = 5th Floor, The Mercedes T. and Sid R. Bass Gallery-\n|modified = 3/24/2012 8:05:07 AM\n|museum_internal_id = 468.1978\n|object_link = http://www.moma.org/collection/browse_results.php?object_id=79792\n|object_work_type = Painting\n|pivot_earliest_decade = 1900\n|pivot_latest_decade = 1910\n|pretty_dimensions = w1105 x h1105 mm\n|pretty_display_date = (1907 - 1908)\n|primary_asset_is_gigapixel = False\n|primary_image_aspect_ratio = 0.986328125\n|record_type = Object\n|room_detail_url = /collection/moma-the-museum-of-modern-art/level/5th-floor-the-mercedes-t-and-sid-r-bass-gallery-/7/gallery-1/324010/\n|room_display_name = Gallery 1\n|slug = hope-ii-gustav-klimt\n|title = Hope, II\n|title_firstletter = h\n|width = 1105\n|Credit_Line = Jo Carole and Ronald S. Lauder and Helen Acheson Funds, and Serge Sabarsky\n|Medium = Oil, gold, and platinum on canvas\n|special:url_id = igEr3RtRyxrpnw\n}}\n{{Assessments|enwiki=1|fawiki=1}}\n\n=={{int:license-header}}==\n{{PD-Art-two-auto|1918}}\n\n[[Category:Google Art Project works by Gustav Klimt]]\n[[Category:Die Hoffnung II]]"
+              }
+            }
+          }
+        ]
+      },
+      "pageId": 22007080,
+      "revisionId": 1215426404,
+      "revisionTimestamp": "2026-05-17T05:56:59Z",
+      "permanentUrl": "https://commons.wikimedia.org/w/index.php?oldid=1215426404",
+      "filePageUrl": "https://commons.wikimedia.org/wiki/File:Gustav_Klimt_-_Hope,_II_-_Google_Art_Project.jpg",
+      "requiredMetadataFields": {
+        "LicenseShortName": {
+          "value": "Public domain",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "Copyrighted": {
+          "value": "False",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "Artist": {
+          "value": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Gustav_Klimt\" class=\"extiw\" title=\"w:en:Gustav Klimt\"><span title=\"Austrian symbolist painter (1862–1918)\">Gustav Klimt</span></a></bdi>",
+          "source": "commons-desc-page"
+        },
+        "Attribution": null,
+        "Credit": {
+          "value": "<a rel=\"nofollow\" class=\"external text\" href=\"//www.google.com/culturalinstitute/asset-viewer/igEr3RtRyxrpnw\">igEr3RtRyxrpnw at Google Cultural Institute</a> maximum zoom level",
+          "source": "commons-desc-page"
+        },
+        "LicenseUrl": null
+      },
+      "missingFieldNote": "Null fields were not supplied by the Commons API; no license URL or attribution value has been invented.",
+      "publicDomainBasis": "Commons labels this faithful 2D reproduction PD-Art and PD-old-100-expired. MoMA records creation before 1931 and artist death before 1926; original wikitext, categories, and artist dates are archived.",
+      "retrievedAt": "2026-09-27T23:19:45.704315+00:00"
+    },
+    "_identityEvidence": {
+      "objectId": 79792,
+      "commonsTitle": "File:Gustav Klimt - Hope, II - Google Art Project.jpg",
+      "wikidata": "Q19883512",
+      "identityBasis": "Commons explicitly links MoMA object 79792 and accession 468.1978, with matching title and artist."
+    },
+    "_verifiedAt": "2026-09-27T23:19:45.704315+00:00",
+    "_imageEvidence": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Gustav_Klimt_-_Hope%2C_II_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sha1": "f9ad27ccc2d52018772a4835e91f360b0ce54e1c",
+      "sha256": "73dca708334a72258153d8fa7bdad84ddbbbeadbac1c0d67dbce3a1ab35c563e",
+      "sizeBytes": 4159432,
+      "width": 3648,
+      "height": 3699
+    }
+  },
+  {
+    "id": 80013,
+    "moma": {
+      "Title": "The Olive Trees",
+      "Artist": [
+        "Vincent van Gogh"
+      ],
+      "ConstituentID": [
+        2206
+      ],
+      "ArtistBio": [
+        "Dutch, 1853–1890"
+      ],
+      "Nationality": [
+        "Dutch"
+      ],
+      "BeginDate": [
+        1853
+      ],
+      "EndDate": [
+        1890
+      ],
+      "Gender": [
+        "male"
+      ],
+      "Date": "Saint Rémy, June-July 1889",
+      "Medium": "Oil on canvas",
+      "Dimensions": "28 5/8 x 36\" (72.6 x 91.4 cm)",
+      "CreditLine": "Mrs. John Hay Whitney Bequest",
+      "AccessionNumber": "581.1998",
+      "Classification": "Painting",
+      "Department": "Painting & Sculpture",
+      "DateAcquired": "1998-09-22",
+      "Cataloged": "Y",
+      "ObjectID": 80013,
+      "URL": "https://www.moma.org/collection/works/80013",
+      "ImageURL": "https://www.moma.org/media/W1siZiIsIjUwMjEwNyJdLFsicCIsImNvbnZlcnQiLCItcmVzaXplIDEwMjR4MTAyNFx1MDAzZSJdXQ.jpg?sha=8679a4fe3f9741b5",
+      "OnView": "\"MoMA, Floor 5, 501\"",
+      "Height (cm)": 72.7,
+      "Width (cm)": 91.4
+    },
+    "_datasetSource": {
+      "sourceUrl": "https://github.com/MuseumofModernArt/collection/tree/3053da6addd4d210b955021f410430ac3bbf18d4",
+      "dataUrl": "https://media.githubusercontent.com/media/MuseumofModernArt/collection/3053da6addd4d210b955021f410430ac3bbf18d4/Artworks.json",
+      "commit": "3053da6addd4d210b955021f410430ac3bbf18d4",
+      "dataSha256": "288d65589d7dadec509984c50f726454be4bbe00e68e61cf7d6116713a408807",
+      "dataSizeBytes": 144917269,
+      "metadataLicense": "CC0 1.0 Universal",
+      "imageLicenseNotice": "MoMA metadata CC0 excludes images; images are independently sourced from Wikimedia Commons."
+    },
+    "_commonsEvidence": {
+      "apiUrl": "https://commons.wikimedia.org/w/api.php?action=query&format=json&prop=imageinfo%7Crevisions&iiprop=url%7Cextmetadata%7Csha1%7Csize&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=File%3AVincent+van+Gogh+-+The+Olive+Trees+-+Google+Art+Project.jpg",
+      "retrievalNote": "Retrieved in batched Commons API queries; this URL reproduces the individual file query.",
+      "page": {
+        "pageid": 22264597,
+        "ns": 6,
+        "title": "File:Vincent van Gogh - The Olive Trees - Google Art Project.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 5747899,
+            "width": 4043,
+            "height": 3211,
+            "url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Vincent_van_Gogh_-_The_Olive_Trees_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Vincent_van_Gogh_-_The_Olive_Trees_-_Google_Art_Project.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=22264597",
+            "sha1": "39162133869eba7bdbefe093471ef72902beefe8",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2012-10-22 02:05:03",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "<div class=\"fn\">\n<div style=\"font-weight:bold;display:inline-block;\"><div style=\"display:inline-block\" dir=\"ltr\" lang=\"en\"><i>The Olive Trees</i></div></div><div style=\"display: none;\">title QS:P1476,en:\"The Olive Trees\"</div><div style=\"display: none;\">label QS:Len,\"The Olive Trees\"</div></div>",
+                "source": "commons-desc-page"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "1880s paintings from France|Olive Trees with the Alpilles in the Background|PD-old-100-expired|PD-Art (PD-old-100-expired)|Artworks with Wikidata item|Artworks with known accession number|CC-PD-Mark|1889 oil on canvas paintings in the United States|Google Art Project works by Vincent van Gogh|Google Art Project works in MoMA, The Museum of Modern Art|Google Art Project paintings|Artworks digital representation of 2D work|Files from Google Arts & Culture",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Artist": {
+                "value": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Vincent_van_Gogh\" class=\"extiw\" title=\"w:en:Vincent van Gogh\"><span title=\"Dutch painter (1853–1890)\">Vincent van Gogh</span></a></bdi>",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "1889<div style=\"display: none;\">date QS:P571,+1889-00-00T00:00:00Z/9</div>",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"//www.google.com/culturalinstitute/asset-viewer/dQGSvz9nCSYxgw\">dQGSvz9nCSYxgw at Google Cultural Institute</a> maximum zoom level",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 931273821,
+            "parentid": 617779484,
+            "timestamp": "2024-10-01T21:48:22Z",
+            "slots": {
+              "main": {
+                "contentmodel": "wikitext",
+                "contentformat": "text/x-wiki",
+                "*": "=={{int:filedesc}}==\n{{Google Art Project\n|wikidata=Q9212498\n|commons_artist={{Creator:Vincent van Gogh}}\n|commons_title=\n|commons_description=\n|commons_date=\n|commons_medium=\n|commons_dimensions=\n|commons_institution=\n|commons_location=\n|commons_references=\n|commons_object_history=\n|commons_exhibition_history=\n|commons_credit_line=\n|commons_inscriptions=\n|commons_notes=\n|commons_accession_number=\n|commons_source=\n|commons_permission=\n|commons_other_versions=\n|commons_zoom=\n\n|artist_birth_date_display = March 30, 1853\n|artist_birth_day = 30\n|artist_birth_month = 3\n|artist_birth_place = Groot-Zundert, Netherlands\n|artist_birth_year = 1853\n|artist_death_date_display = July 29, 1890\n|artist_death_day = 29\n|artist_death_month = 7\n|artist_death_place = Utrecht, Netherlands\n|artist_death_year = 1890\n|artist_first_name = Vincent\n|artist_gender = Male\n|artist_id = 328188\n|artist_last_name = van Gogh\n|artist_nationality = Dutch\n|artist_pretty_display_date = (March 30, 1853 - July 29, 1890)\n|absolute_url = /collection/moma-the-museum-of-modern-art/artwork/the-olive-trees-vincent-van-gogh/637004/\n|artist_display_name = Vincent van Gogh\n|canonical_artist_detail_url = /artist/vincent-van-gogh/4125032/\n|canonical_artist_id = 4125032\n|collection_detail_url = /collection/moma-the-museum-of-modern-art/\n|collection_display_name = MoMA, The Museum of Modern Art\n|collection_id = 319003\n|collection_website = http://www.MoMA.org/?ref=googleartproject\n|created = 1/5/2012 4:01:59 PM\n|detail_url = /collection/moma-the-museum-of-modern-art/artwork/the-olive-trees-vincent-van-gogh/637004/\n|earliest_date = 1889\n|earliest_date_display = 1889\n|facet_medium = Oil on canvas\n|has_streetview = True\n|height = 726\n|id = 637004\n|in_streetview = True\n|latest_date = 1889\n|latest_date_display = 1889\n|level_detail_url = /collection/moma-the-museum-of-modern-art/level/5th-floor-the-mercedes-t-and-sid-r-bass-gallery-/7/\n|level_display_name = 5th Floor, The Mercedes T. and Sid R. Bass Gallery-\n|modified = 3/24/2012 8:05:12 AM\n|museum_internal_id = 581.1998\n|object_link = http://www.moma.org/collection/browse_results.php?object_id=80013\n|object_work_type = Painting\n|pivot_earliest_decade = 1880\n|pivot_latest_decade = 1890\n|pretty_dimensions = w914 x h726 mm\n|pretty_display_date = 1889\n|primary_asset_is_gigapixel = False\n|primary_image_aspect_ratio = 1.25798525798526\n|record_type = Object\n|room_detail_url = /collection/moma-the-museum-of-modern-art/level/5th-floor-the-mercedes-t-and-sid-r-bass-gallery-/7/gallery-1/324010/\n|room_display_name = Gallery 1\n|slug = the-olive-trees-vincent-van-gogh\n|title = The Olive Trees\n|title_firstletter = o\n|width = 914\n|Credit_Line = Mrs. John Hay Whitney Bequest\n|Medium = {{technique|oil|canvas}}\n|special:url_id = dQGSvz9nCSYxgw\n}}\n\n=={{int:license-header}}==\n{{PD-Art|PD-old-100-1923|deathyear=1890}}\n\n[[Category:Olive Trees with the Alpilles in the Background]]\n[[Category:1889 oil on canvas paintings in the United States]]\n[[Category:1880s paintings from France]]\n[[Category:Google Art Project works by Vincent van Gogh]]"
+              }
+            }
+          }
+        ]
+      },
+      "pageId": 22264597,
+      "revisionId": 931273821,
+      "revisionTimestamp": "2024-10-01T21:48:22Z",
+      "permanentUrl": "https://commons.wikimedia.org/w/index.php?oldid=931273821",
+      "filePageUrl": "https://commons.wikimedia.org/wiki/File:Vincent_van_Gogh_-_The_Olive_Trees_-_Google_Art_Project.jpg",
+      "requiredMetadataFields": {
+        "LicenseShortName": {
+          "value": "Public domain",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "Copyrighted": {
+          "value": "False",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "Artist": {
+          "value": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Vincent_van_Gogh\" class=\"extiw\" title=\"w:en:Vincent van Gogh\"><span title=\"Dutch painter (1853–1890)\">Vincent van Gogh</span></a></bdi>",
+          "source": "commons-desc-page"
+        },
+        "Attribution": null,
+        "Credit": {
+          "value": "<a rel=\"nofollow\" class=\"external text\" href=\"//www.google.com/culturalinstitute/asset-viewer/dQGSvz9nCSYxgw\">dQGSvz9nCSYxgw at Google Cultural Institute</a> maximum zoom level",
+          "source": "commons-desc-page"
+        },
+        "LicenseUrl": null
+      },
+      "missingFieldNote": "Null fields were not supplied by the Commons API; no license URL or attribution value has been invented.",
+      "publicDomainBasis": "Commons labels this faithful 2D reproduction PD-Art and PD-old-100-expired. MoMA records creation before 1931 and artist death before 1926; original wikitext, categories, and artist dates are archived.",
+      "retrievedAt": "2026-09-27T23:19:45.704315+00:00"
+    },
+    "_identityEvidence": {
+      "objectId": 80013,
+      "commonsTitle": "File:Vincent van Gogh - The Olive Trees - Google Art Project.jpg",
+      "wikidata": "Q9212498",
+      "identityBasis": "Commons explicitly links MoMA object 80013 and accession 581.1998, with matching title and artist."
+    },
+    "_verifiedAt": "2026-09-27T23:19:45.704315+00:00",
+    "_imageEvidence": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Vincent_van_Gogh_-_The_Olive_Trees_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sha1": "39162133869eba7bdbefe093471ef72902beefe8",
+      "sha256": "5d5162759c28bc0a3dd5d16ef9635ad1a1973dd4a7a4f11a1a7c5ab1d92e8598",
+      "sizeBytes": 5747899,
+      "width": 4043,
+      "height": 3211
+    }
+  },
+  {
+    "id": 79105,
+    "moma": {
+      "Title": "Portrait of Joseph Roulin",
+      "Artist": [
+        "Vincent van Gogh"
+      ],
+      "ConstituentID": [
+        2206
+      ],
+      "ArtistBio": [
+        "Dutch, 1853–1890"
+      ],
+      "Nationality": [
+        "Dutch"
+      ],
+      "BeginDate": [
+        1853
+      ],
+      "EndDate": [
+        1890
+      ],
+      "Gender": [
+        "male"
+      ],
+      "Date": "Arles, early 1889",
+      "Medium": "Oil on canvas",
+      "Dimensions": "25 3/8 x 21 3/4\" (64.4 x 55.2 cm)",
+      "CreditLine": "Gift of Mr. and Mrs. William A. M. Burden, Mr. and Mrs. Paul Rosenberg,  Nelson A. Rockefeller, Mr. and Mrs. Armand P. Bartos, The Sidney and Harriet Janis Collection, Mr. and Mrs. Werner E. Josten, and Loula D. Lasker Bequest (all by exchange)",
+      "AccessionNumber": "196.1989",
+      "Classification": "Painting",
+      "Department": "Painting & Sculpture",
+      "DateAcquired": "1989-10-10",
+      "Cataloged": "Y",
+      "ObjectID": 79105,
+      "URL": "https://www.moma.org/collection/works/79105",
+      "ImageURL": "https://www.moma.org/media/W1siZiIsIjQ2ODMxNiJdLFsicCIsImNvbnZlcnQiLCItcmVzaXplIDEwMjR4MTAyNFx1MDAzZSJdXQ.jpg?sha=85503b995e8567af",
+      "OnView": "",
+      "Height (cm)": 64.5,
+      "Width (cm)": 55.2
+    },
+    "_datasetSource": {
+      "sourceUrl": "https://github.com/MuseumofModernArt/collection/tree/3053da6addd4d210b955021f410430ac3bbf18d4",
+      "dataUrl": "https://media.githubusercontent.com/media/MuseumofModernArt/collection/3053da6addd4d210b955021f410430ac3bbf18d4/Artworks.json",
+      "commit": "3053da6addd4d210b955021f410430ac3bbf18d4",
+      "dataSha256": "288d65589d7dadec509984c50f726454be4bbe00e68e61cf7d6116713a408807",
+      "dataSizeBytes": 144917269,
+      "metadataLicense": "CC0 1.0 Universal",
+      "imageLicenseNotice": "MoMA metadata CC0 excludes images; images are independently sourced from Wikimedia Commons."
+    },
+    "_commonsEvidence": {
+      "apiUrl": "https://commons.wikimedia.org/w/api.php?action=query&format=json&prop=imageinfo%7Crevisions&iiprop=url%7Cextmetadata%7Csha1%7Csize&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=File%3AVincent+van+Gogh+-+Portrait+de+Joseph+Roulin+-+Google+Art+Project.jpg",
+      "retrievalNote": "Retrieved in batched Commons API queries; this URL reproduces the individual file query.",
+      "page": {
+        "pageid": 13357994,
+        "ns": 6,
+        "title": "File:Vincent van Gogh - Portrait de Joseph Roulin - Google Art Project.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 31508888,
+            "width": 5017,
+            "height": 5928,
+            "url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Vincent_van_Gogh_-_Portrait_de_Joseph_Roulin_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Vincent_van_Gogh_-_Portrait_de_Joseph_Roulin_-_Google_Art_Project.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=13357994",
+            "sha1": "aa28c8ef3cedcaae563e0bf0ed4107e433657788",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2011-02-18 10:03:39",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "<div class=\"fn\">\n<div style=\"font-size:0.9em;display:inline-block;\">French:  <div style=\"display:inline-block\" dir=\"ltr\" lang=\"fr\"><i>Portrait de Joseph Roulin</i></div></div><br><div style=\"font-weight:bold;display:inline-block;\"><div style=\"display:inline-block\" dir=\"ltr\" lang=\"en\"><i>Portrait of Joseph Roulin</i></div></div><div style=\"display: none;\">title QS:P1476,fr:\"Portrait de Joseph Roulin\"</div><div style=\"display: none;\">label QS:Lfr,\"Portrait de Joseph Roulin\"</div><div style=\"display: none;\">label QS:Len,\"Portrait of Joseph Roulin\"</div></div>",
+                "source": "commons-desc-page"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Portrait of Joseph Roulin (Moma)|PD-old-100-expired|PD-Art (PD-old-auto-expired)|Artworks with Wikidata item|Artworks with known accession number|Featured pictures on Wikipedia, Persian|CC-PD-Mark|Artworks with accession number from Wikidata|Google Art Project works by Vincent van Gogh|Google Art Project works in MoMA, The Museum of Modern Art|Artworks digital representation of 2D work|Files from Google Arts & Culture|Files with Assessments template missing SDC Commons no value quality assessment",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Artist": {
+                "value": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Vincent_van_Gogh\" class=\"extiw\" title=\"w:en:Vincent van Gogh\"><span title=\"Dutch painter (1853–1890)\">Vincent van Gogh</span></a></bdi>",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "1889<div style=\"display: none;\">date QS:P571,+1889-00-00T00:00:00Z/9</div>",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a href=\"https://en.wikipedia.org/wiki/en:Google_Arts_%26_Culture\" class=\"extiw\" title=\"w:en:Google Arts &amp; Culture\"><span title=\"app and website exploring partner museums\">Google Arts &amp; Culture</span></a>  — <a rel=\"nofollow\" class=\"external text\" href=\"//www.google.com/culturalinstitute/asset-viewer/dgHM8pgTjWF6Cg\">dgHM8pgTjWF6Cg</a>",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "<table cellspacing=\"8\" cellpadding=\"0\" style=\"clear:both; margin:0.5em auto; background-color: var(--background-color-interactive, #f0f0f0); color: inherit; border: 2px solid var(--border-color-subtle, #e0e0e0); width:100%;\" class=\"layouttemplate\" dir=\"ltr\" lang=\"en\">\n<tbody><tr>\n<td>\n<div class=\"center\">This is a faithful photographic reproduction of a two-dimensional, <a href=\"//commons.wikimedia.org/wiki/Public_domain\" class=\"mw-redirect\" title=\"Public domain\">public domain</a> work of art. The work of art itself is in the public domain for the following reason:</div>\n<div dir=\"auto\">\n<table class=\"licensetpl\" style=\"display:none\">\n<tbody><tr>\n<td><span class=\"licensetpl_short\">Public domain</span><span class=\"licensetpl_long\">Public domain</span><span class=\"licensetpl_link_req\">false</span><span class=\"licensetpl_attr_req\">false</span>\n</td></tr></tbody></table>\n<table style=\"width: 100%; clear: both; margin: 0.5em auto; background-color: var(--background-color-progressive-subtle, #f7f8ff); color: var(--color-base, #202122); border: var(--border-subtle, 2px solid #8888aa); border-spacing: 8px; padding: 0px;\" dir=\"ltr\" class=\"layouttemplate\" lang=\"en\">\n<tbody><tr>\n<td><span typeof=\"mw:File\"><span title=\"Public domain\"><img alt=\"Public domain\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/PD-icon.svg/120px-PD-icon.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"64\" height=\"64\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/PD-icon.svg/250px-PD-icon.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"196\" data-file-height=\"196\"></span></span>\n</td>\n<td>\n<p>The author died in 1890, so this work is in the <b><a href=\"https://en.wikipedia.org/wiki/public_domain\" class=\"extiw\" title=\"en:public domain\">public domain</a></b> in its country of origin and other countries and areas where the <a href=\"https://en.wikipedia.org/wiki/List_of_countries%27_copyright_lengths\" class=\"extiw\" title=\"w:List of countries' copyright lengths\">copyright term</a> is the author's <b>life plus 100 years or fewer</b>.\n</p>\n<hr>\n<p>This work is in the <b><a href=\"https://en.wikipedia.org/wiki/public_domain\" class=\"extiw\" title=\"en:public domain\">public domain</a></b> in the <a href=\"https://en.wikipedia.org/wiki/United_States\" class=\"extiw\" title=\"en:United States\">United States</a> because it was <a href=\"//commons.wikimedia.org/wiki/Commons:Publication\" title=\"Commons:Publication\">published</a> (or registered with the <a href=\"https://en.wikipedia.org/wiki/United_States_Copyright_Office\" class=\"extiw\" title=\"en:United States Copyright Office\">U.S. Copyright Office</a>) before January 1, 1931.\n</p>\n</td></tr>\n<tr>\n<td colspan=\"2\" style=\"text-align:center;font-size:x-small;line-height:140%;\"><a href=\"https://creativecommons.org/publicdomain/mark/1.0/deed.en\" class=\"extiw\" title=\"ccorg:publicdomain/mark/1.0/deed.en\">This file has been identified as being free of known restrictions under copyright law, including all related and neighboring rights.</a>\n</td></tr></tbody></table><span class=\"licensetpl_link\" style=\"display:none;\">https://creativecommons.org/publicdomain/mark/1.0/</span><span class=\"licensetpl_short\" style=\"display:none;\">PDM</span><span class=\"licensetpl_long\" style=\"display:none;\">Creative Commons Public Domain Mark 1.0</span><span class=\"licensetpl_link_req\" style=\"display:none;\">false</span><span class=\"licensetpl_attr_req\" style=\"display:none;\">false</span></div>\n<div class=\"center\">The official position taken by the Wikimedia Foundation is that \"<i>faithful reproductions of two-dimensional public domain works of art are public domain</i>\".<br><b>This photographic reproduction is therefore also considered to be in the public domain in the United States.</b> In other jurisdictions, re-use of this content may be restricted; <b>see <a href=\"//commons.wikimedia.org/wiki/Commons:Reuse_of_PD-Art_photographs\" title=\"Commons:Reuse of PD-Art photographs\">Reuse of PD-Art photographs</a> for details.</b></div> \n</td></tr></tbody></table>",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 1086669318,
+            "parentid": 1042600261,
+            "timestamp": "2025-09-16T20:48:27Z",
+            "slots": {
+              "main": {
+                "contentmodel": "wikitext",
+                "contentformat": "text/x-wiki",
+                "*": "{{Artwork\n | wikidata = Q18689459\n |artist         = {{Creator:Vincent van Gogh}}\n |title          = {{title|lang=fr|Portrait de Joseph Roulin|en=Portrait of Joseph Roulin}}\n |description    =\n |date           = 1889\n |medium         = {{technique|Oil|canvas}}\n |dimensions     = {{size|cm|height=64.40|width=55.20}}\n |gallery        = {{Institution:Museum of Modern Art}}\n |location       = Gallery 1\n |references     =\n |object history =\n |credit line    =\n |inscriptions   =\n |notes          =\n |accession number=\n |source         = {{From Google Cultural Institute|dgHM8pgTjWF6Cg}}\n |permission     = {{PD-Art|PD-old-auto-expired|deathyear=1890}}\n |other_versions=\n}}\n\n{{Assessments|fawiki=1|fawiki-nom=Vincent van Gogh - Portrait de Joseph Roulin - Google Art Project.jpg}}\n[[Category:Google Art Project works in MoMA, The Museum of Modern Art]]\n[[Category:Portrait of Joseph Roulin (Moma)]]\n[[Category:Google Art Project works by Vincent van Gogh]]"
+              }
+            }
+          }
+        ]
+      },
+      "pageId": 13357994,
+      "revisionId": 1086669318,
+      "revisionTimestamp": "2025-09-16T20:48:27Z",
+      "permanentUrl": "https://commons.wikimedia.org/w/index.php?oldid=1086669318",
+      "filePageUrl": "https://commons.wikimedia.org/wiki/File:Vincent_van_Gogh_-_Portrait_de_Joseph_Roulin_-_Google_Art_Project.jpg",
+      "requiredMetadataFields": {
+        "LicenseShortName": {
+          "value": "Public domain",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "Copyrighted": {
+          "value": "False",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "Artist": {
+          "value": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Vincent_van_Gogh\" class=\"extiw\" title=\"w:en:Vincent van Gogh\"><span title=\"Dutch painter (1853–1890)\">Vincent van Gogh</span></a></bdi>",
+          "source": "commons-desc-page"
+        },
+        "Attribution": null,
+        "Credit": {
+          "value": "<a href=\"https://en.wikipedia.org/wiki/en:Google_Arts_%26_Culture\" class=\"extiw\" title=\"w:en:Google Arts &amp; Culture\"><span title=\"app and website exploring partner museums\">Google Arts &amp; Culture</span></a>  — <a rel=\"nofollow\" class=\"external text\" href=\"//www.google.com/culturalinstitute/asset-viewer/dgHM8pgTjWF6Cg\">dgHM8pgTjWF6Cg</a>",
+          "source": "commons-desc-page"
+        },
+        "LicenseUrl": null
+      },
+      "missingFieldNote": "Null fields were not supplied by the Commons API; no license URL or attribution value has been invented.",
+      "publicDomainBasis": "Commons labels this faithful 2D reproduction PD-Art and PD-old-100-expired. MoMA records creation before 1931 and artist death before 1926; original wikitext, categories, and artist dates are archived.",
+      "retrievedAt": "2026-09-27T23:19:45.704315+00:00"
+    },
+    "_identityEvidence": {
+      "objectId": 79105,
+      "commonsTitle": "File:Vincent van Gogh - Portrait de Joseph Roulin - Google Art Project.jpg",
+      "wikidata": "Q18689459",
+      "identityBasis": "Commons identifies Portrait of Joseph Roulin, Vincent van Gogh, Museum of Modern Art, 1889, 64.4 × 55.2 cm, matching MoMA. The similarly named Kröller-Müller portrait is excluded."
+    },
+    "_verifiedAt": "2026-09-27T23:19:45.704315+00:00",
+    "_imageEvidence": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Vincent_van_Gogh_-_Portrait_de_Joseph_Roulin_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sha1": "aa28c8ef3cedcaae563e0bf0ed4107e433657788",
+      "sha256": "02db0d8b30277b7f8c5bfd3da4ba641955615acb49f96962da0b6bbdc4638c98",
+      "sizeBytes": 31508888,
+      "width": 5017,
+      "height": 5928
+    }
+  }
+]

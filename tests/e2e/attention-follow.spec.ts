@@ -1,15 +1,16 @@
 import { expect, test } from "@playwright/test";
+import { PUBLIC_ARTWORKS } from "../../lib/artworks/publicCatalog";
 
 test("attention starts honestly empty then reflects a save", async ({ page }) => {
   await page.goto("/trending", { waitUntil: "networkidle" });
   await expect(page.getByRole("heading", { name: "Your attention starts with a work." })).toBeVisible();
   await expect(page.getByText("it does not represent activity across ARTE", { exact: false })).toBeVisible();
-  await page.goto("/artwork/quiet-red-study-demo", { waitUntil: "networkidle" });
+  await page.goto(`/artwork/${PUBLIC_ARTWORKS[0].slug}`, { waitUntil: "networkidle" });
   await page.locator('[data-action="save"]').click();
   await page.goto("/trending", { waitUntil: "networkidle" });
   await page.getByRole("button", { name: "Recently saved" }).click();
   await expect(page.locator("[data-attention-artwork]")).toHaveCount(1);
-  await expect(page.locator("[data-attention-artwork]")).toContainText("Quiet Red Study");
+  await expect(page.locator("[data-attention-artwork]")).toContainText(PUBLIC_ARTWORKS[0].title);
   await page.reload({ waitUntil: "networkidle" });
   await expect(page.locator("[data-attention-artwork]")).toHaveCount(1);
 });

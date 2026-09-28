@@ -4,41 +4,58 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { ArtworkCard } from "@/components/artwork/ArtworkCard";
 import { readHiddenArtworkIds, readStoredEvents } from "@/lib/analytics/client";
-import { DEMO_ARTWORKS } from "@/lib/artworks/demoArtworks";
-import { buildAttentionRanking, mostSavedAttention, type AttentionResult } from "@/lib/trending/attention";
+import type { ArtworkSummary } from "@/lib/artworks/types";
+import type { AttentionResult } from "@/lib/trending/attention";
+
+type AttentionCard = Omit<AttentionResult, "artwork"> & { artwork: ArtworkSummary };
 
 export function AttentionDashboard() {
-  const [ranking, setRanking] = useState<AttentionResult[]>([]);
+  const [ranking, setRanking] = useState<AttentionCard[]>([]);
   const [ready, setReady] = useState(false);
   const [mode, setMode] = useState<"attention" | "saved">("attention");
+  const [error, setError] = useState("");
+  const [total, setTotal] = useState(0);
+  const [attempt, setAttempt] = useState(0);
   useEffect(() => {
-    let frame = 0;
-    const refresh = () => {
-      window.cancelAnimationFrame(frame);
-      frame = window.requestAnimationFrame(() => {
-        const hidden = new Set(readHiddenArtworkIds());
-        setRanking(buildAttentionRanking(readStoredEvents(), DEMO_ARTWORKS).filter(({ artwork }) => !hidden.has(artwork.id)));
-        setReady(true);
-      });
+    let controller: AbortController | null = null;
+    let version = 0;
+    const refresh = async () => {
+      const current = ++version;
+      controller?.abort();
+      controller = new AbortController();
+      setError("");
+      setReady(false);
+      setRanking([]); setTotal(0);
+      try {
+        const response = await fetch("/api/attention", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ events: readStoredEvents(), hiddenArtworkIds: readHiddenArtworkIds(), mode }), signal: controller.signal, cache: "no-store" });
+        if (!response.ok) throw new Error("Your attention view is temporarily unavailable. Your activity has not changed.");
+        const result = await response.json() as { items: AttentionCard[]; total: number };
+        if (current === version) { setRanking(result.items); setTotal(result.total); setReady(true); }
+      } catch (cause) {
+        if (current === version && !(cause instanceof Error && cause.name === "AbortError")) { setError(cause instanceof Error ? cause.message : "Could not read your activity."); setReady(true); }
+      }
     };
-    refresh();
-    window.addEventListener("arte:analytics-event", refresh);
-    window.addEventListener("arte:analytics-reset", refresh);
-    window.addEventListener("storage", refresh);
+    const notify = () => { void refresh(); };
+    notify();
+    window.addEventListener("arte:analytics-event", notify);
+    window.addEventListener("arte:analytics-reset", notify);
+    window.addEventListener("storage", notify);
     return () => {
-      window.cancelAnimationFrame(frame);
-      window.removeEventListener("arte:analytics-event", refresh);
-      window.removeEventListener("arte:analytics-reset", refresh);
-      window.removeEventListener("storage", refresh);
+      version++; controller?.abort();
+      window.removeEventListener("arte:analytics-event", notify);
+      window.removeEventListener("arte:analytics-reset", notify);
+      window.removeEventListener("storage", notify);
     };
-  }, []);
-  const visible = mode === "saved" ? mostSavedAttention(ranking) : ranking;
+  }, [mode, attempt]);
+  const visible = ranking;
   return (
     <div className="mt-10">
       <div className="flex flex-wrap gap-3" aria-label="Attention view">
         <button type="button" aria-pressed={mode === "attention"} onClick={() => setMode("attention")} className="focus-ring min-h-11 border border-[var(--hairline)] px-5 text-xs uppercase tracking-[0.12em] aria-pressed:bg-[var(--primary-ink)] aria-pressed:text-[var(--soft-white)]">Your attention</button>
         <button type="button" aria-pressed={mode === "saved"} onClick={() => setMode("saved")} className="focus-ring min-h-11 border border-[var(--hairline)] px-5 text-xs uppercase tracking-[0.12em] aria-pressed:bg-[var(--primary-ink)] aria-pressed:text-[var(--soft-white)]">Recently saved</button>
       </div>
+      {error ? <div role="alert" className="mt-8 text-sm"><p>{error}</p><button type="button" onClick={() => setAttempt((value) => value + 1)} className="focus-ring min-h-11 underline">Retry attention view</button></div> : null}
+      {ready && total > visible.length ? <p className="mt-5 text-xs text-[var(--muted-text)]">Showing your strongest {visible.length} connections from {total} works with activity.</p> : null}
       {!ready ? <p role="status" className="mt-10 text-sm">Reading your activity…</p> : visible.length ? (
         <div className="mt-8 grid gap-10 md:grid-cols-2 xl:grid-cols-3">
           {visible.map(({ artwork, score, signals }) => (
@@ -58,7 +75,7 @@ export function AttentionDashboard() {
       )}
       <details className="mt-12 max-w-3xl border-t border-[var(--hairline)] pt-5 text-sm leading-7 text-[var(--muted-text)]">
         <summary className="focus-ring cursor-pointer">How this view is calculated</summary>
-        <p className="mt-4">We use available activity from the last 30 days in this browser. Saves, likes, shares, details, related works, and time spent contribute different weights. A signal loses half its weight every seven days. Repeated views and detail opens count once per artwork, session, and day; active likes and saves count once per session. Hidden works stay out of this view.</p>
+        <p className="mt-4">We use up to 500 recent events from the last 30 days in this browser. A limited copy is sent to ARTE to calculate this view and is not saved by this calculation. Guest activity is not written to an account database. Saves, likes, shares, details, related works, and time spent contribute different weights. A signal loses half its weight every seven days. Repeated views and detail opens count once per artwork, session, and day; active likes and saves count once per session. Hidden works stay out of this view.</p>
         <p className="mt-3">This is personal attention, not a platform popularity chart or a measure of artistic quality. Paused or reset history can make this view incomplete.</p>
       </details>
     </div>

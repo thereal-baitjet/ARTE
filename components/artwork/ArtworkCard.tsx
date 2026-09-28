@@ -1,8 +1,8 @@
 import Link from "next/link";
-import type { Artwork } from "@/lib/artworks/types";
+import type { ArtworkSummary } from "@/lib/artworks/types";
 import { ArtworkVisual } from "./ArtworkVisual";
 
-export function ArtworkCard({ artwork }: { artwork: Artwork }) {
+export function ArtworkCard({ artwork }: { artwork: ArtworkSummary }) {
   return (
     <article>
       <Link href={`/artwork/${artwork.slug}`} className="focus-ring block">

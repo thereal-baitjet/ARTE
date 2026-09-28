@@ -5,7 +5,7 @@ import { useEffect, useRef, useState, type FormEvent } from "react";
 import { ArtworkCard } from "@/components/artwork/ArtworkCard";
 import { getSupabaseBrowserClient } from "@/lib/supabase/client";
 import { recordAnalyticsEvent } from "@/lib/analytics/client";
-import type { Artwork } from "@/lib/artworks/types";
+import type { ArtworkSummary } from "@/lib/artworks/types";
 import {
   createAccountCollection, deleteAccountCollection, readAccountCollections, readGuestCollections,
   removeAccountSave, renameAccountCollection, updateAccountCollectionItem, validateCollectionName,
@@ -15,7 +15,7 @@ import {
 const buttonStyle = "focus-ring min-h-11 border border-[var(--hairline)] px-4 text-xs disabled:opacity-45";
 const inputStyle = "focus-ring min-h-11 w-full border border-[var(--hairline)] bg-[var(--soft-white)] px-3 text-sm";
 
-export function CollectionsWorkspace({ artworks, initialCollectionId = null }: { artworks: Artwork[]; initialCollectionId?: string | null }) {
+export function CollectionsWorkspace({ initialCollectionId = null }: { initialCollectionId?: string | null }) {
   const [snapshot, setSnapshot] = useState<CollectionSnapshot | null>(null);
   const [selectedId, setSelectedId] = useState<string | null>(initialCollectionId);
   const [name, setName] = useState("");
@@ -26,6 +26,15 @@ export function CollectionsWorkspace({ artworks, initialCollectionId = null }: {
   const [message, setMessage] = useState<string | null>(null);
   const [confirmDelete, setConfirmDelete] = useState(false);
   const [attempt, setAttempt] = useState(0);
+  const [pageIndex, setPageIndex] = useState(0);
+  const [lookup, setLookup] = useState<{ key: string; items: ArtworkSummary[] }>({ key: "", items: [] });
+  const [lookupError, setLookupError] = useState("");
+  const [choices, setChoices] = useState<ArtworkSummary[]>([]);
+  const [choiceCursor, setChoiceCursor] = useState<string | null>(null);
+  const [nextChoiceCursor, setNextChoiceCursor] = useState<string | null>(null);
+  const [choicesError, setChoicesError] = useState("");
+  const [choicesLoading, setChoicesLoading] = useState(true);
+  const [catalogAttempt, setCatalogAttempt] = useState(0);
   const pending = useRef(false);
   const activeOwner = useRef<string | null | undefined>(undefined);
 
@@ -69,12 +78,58 @@ export function CollectionsWorkspace({ artworks, initialCollectionId = null }: {
   const selected = snapshot?.collections.find(({ id }) => id === selectedId);
   const missingCollection = Boolean(snapshot && selectedId && !selected);
   const visibleIds = selected ? selected.artworkIds : snapshot?.savedIds ?? [];
-  const visibleArtworks = visibleIds.flatMap((id) => artworks.find((artwork) => artwork.id === id) ?? []);
-  const unavailableCount = visibleIds.length - visibleArtworks.length;
-  const availableArtworks = artworks.filter((artwork) => !selected?.artworkIds.includes(artwork.id)).sort((a, b) => Number(snapshot?.savedIds.includes(b.id)) - Number(snapshot?.savedIds.includes(a.id)));
+  const currentPage = Math.min(pageIndex, Math.max(0, Math.ceil(visibleIds.length / 24) - 1));
+  const pageIds = visibleIds.slice(currentPage * 24, (currentPage + 1) * 24);
+  // Current page plus a small saved-work shortcut set: never more than forty IDs per request.
+  const requestedIds = [...new Set([...pageIds, ...(selected ? snapshot?.savedIds.slice(0, 16) ?? [] : [])])];
+  const lookupKey = JSON.stringify({ owner: snapshot?.userId ?? null, ids: requestedIds });
+  const artworkMap = new Map([...choices, ...(lookup.key === lookupKey ? lookup.items : [])].map((artwork) => [artwork.id, artwork]));
+  const visibleArtworks = lookup.key === lookupKey ? pageIds.flatMap((id) => artworkMap.get(id) ?? []) : [];
+  const lookupLoading = requestedIds.length > 0 && lookup.key !== lookupKey && !lookupError;
+  const unavailableCount = lookup.key === lookupKey ? pageIds.length - visibleArtworks.length : 0;
+  const availableArtworks = [...artworkMap.values()].filter((artwork) => !selected?.artworkIds.includes(artwork.id)).sort((a, b) => Number(snapshot?.savedIds.includes(b.id)) - Number(snapshot?.savedIds.includes(a.id)));
+
+  useEffect(() => {
+    const controller = new AbortController();
+    const request = JSON.parse(lookupKey) as { ids: string[] };
+    const hydrate = async () => {
+      setLookupError("");
+      if (!request.ids.length) { setLookup({ key: lookupKey, items: [] }); return; }
+      try {
+        const response = await fetch("/api/artworks/lookup", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ ids: request.ids }), signal: controller.signal, cache: "no-store" });
+        if (!response.ok) throw new Error("Your artwork references could not be loaded. Saved references are still safe.");
+        const data = await response.json() as { items: ArtworkSummary[] };
+        if (!controller.signal.aborted) setLookup({ key: lookupKey, items: data.items });
+      } catch (cause) {
+        if (!controller.signal.aborted) setLookupError(cause instanceof Error ? cause.message : "Artworks are temporarily unavailable.");
+      }
+    };
+    void hydrate();
+    return () => controller.abort();
+  }, [lookupKey, catalogAttempt]);
+
+  useEffect(() => {
+    const controller = new AbortController();
+    const load = async () => {
+      setChoicesLoading(true); setChoicesError("");
+      try {
+        const query = new URLSearchParams({ limit: "20" });
+        if (choiceCursor) query.set("cursor", choiceCursor);
+        const response = await fetch(`/api/artworks/choices?${query}`, { signal: controller.signal });
+        if (!response.ok) throw new Error("Artwork choices are temporarily unavailable.");
+        const data = await response.json() as { items: ArtworkSummary[]; nextCursor: string | null };
+        if (!controller.signal.aborted) { setChoices(data.items); setNextChoiceCursor(data.nextCursor); setChoicesLoading(false); }
+      } catch (cause) {
+        if (!controller.signal.aborted) { setChoicesError(cause instanceof Error ? cause.message : "Could not load artwork choices."); setChoicesLoading(false); }
+      }
+    };
+    void load();
+    return () => controller.abort();
+  }, [choiceCursor, catalogAttempt]);
 
   function select(collection?: PrivateCollection) {
     setSelectedId(collection?.id ?? null);
+    setPageIndex(0);
     setRename(collection?.name ?? "");
     setArtworkId("");
     setConfirmDelete(false);
@@ -140,7 +195,7 @@ export function CollectionsWorkspace({ artworks, initialCollectionId = null }: {
     });
   }
 
-  async function changeArtwork(artwork: Artwork, add: boolean) {
+  async function changeArtwork(artwork: ArtworkSummary, add: boolean) {
     await mutate(async () => {
       if (!snapshot) return;
       const client = getSupabaseBrowserClient();
@@ -196,15 +251,23 @@ export function CollectionsWorkspace({ artworks, initialCollectionId = null }: {
                   <label className="min-w-40 flex-1 text-xs">Rename collection<input className={`${inputStyle} mt-2`} value={rename} onChange={(event) => setRename(event.target.value)} maxLength={80} required disabled={busy} /></label>
                   <button className={buttonStyle} disabled={busy || !rename.trim() || rename.trim() === selected.name}>Save name</button>
                 </form>
-                <form onSubmit={(event) => { event.preventDefault(); const artwork = artworks.find(({ id }) => id === artworkId); if (artwork) void changeArtwork(artwork, true); }} className="mt-5 flex max-w-lg flex-wrap items-end gap-3">
-                  <label className="min-w-40 flex-1 text-xs">Add artwork<select className={`${inputStyle} mt-2`} value={artworkId} onChange={(event) => setArtworkId(event.target.value)} disabled={busy || !availableArtworks.length} required><option value="">{availableArtworks.length ? "Choose from the artwork catalog" : "All artworks are in this collection"}</option>{availableArtworks.map((artwork) => <option key={artwork.id} value={artwork.id}>{snapshot.savedIds.includes(artwork.id) ? "Saved · " : ""}{artwork.title}</option>)}</select></label>
+                <form onSubmit={(event) => { event.preventDefault(); const artwork = artworkMap.get(artworkId); if (artwork) void changeArtwork(artwork, true); }} className="mt-5 flex max-w-lg flex-wrap items-end gap-3">
+                  <label className="min-w-40 flex-1 text-xs">Add artwork<select className={`${inputStyle} mt-2`} value={artworkId} onChange={(event) => setArtworkId(event.target.value)} disabled={busy || choicesLoading || !availableArtworks.length} required><option value="">{availableArtworks.length ? "Choose from saved works or this catalog page" : "Browse another catalog page"}</option>{availableArtworks.map((artwork) => <option key={artwork.id} value={artwork.id}>{snapshot.savedIds.includes(artwork.id) ? "Saved · " : ""}{artwork.title}</option>)}</select></label>
                   <button className={buttonStyle} disabled={busy || !artworkId}>Add to collection</button>
                 </form>
+                <div className="mt-3 flex flex-wrap gap-3 text-xs">
+                  <button type="button" className={buttonStyle} disabled={busy || choicesLoading || !nextChoiceCursor} onClick={() => { setArtworkId(""); setChoiceCursor(nextChoiceCursor); }}>Browse more artwork choices</button>
+                  {choiceCursor ? <button type="button" className={buttonStyle} disabled={busy || choicesLoading} onClick={() => { setArtworkId(""); setChoiceCursor(null); }}>First artwork choices</button> : null}
+                  <p className="w-full leading-6 text-[var(--muted-text)]">Twenty public works per page, plus a few of your saved works. You can also save a work from Discover and return here.</p>
+                </div>
                 <div className="mt-5 text-xs">{confirmDelete ? <div className="flex flex-wrap items-center gap-3"><span>Delete this collection? Your saved artworks will remain.</span><button type="button" className={`${buttonStyle} text-[var(--oxblood)]`} disabled={busy} onClick={() => void deleteCollection()}>Delete permanently</button><button type="button" className={buttonStyle} disabled={busy} onClick={() => setConfirmDelete(false)}>Cancel</button></div> : <button type="button" className="focus-ring min-h-11 text-[var(--muted-text)] underline underline-offset-4" disabled={busy} onClick={() => setConfirmDelete(true)}>Delete collection</button>}</div>
               </> : <p className="mt-3 text-sm leading-6 text-[var(--muted-text)]">Works you save in Discover appear here, even before you create a collection.</p>}
             </div>
+            {lookupError || choicesError ? <div role="alert" className="mt-6 text-sm"><p>{lookupError || choicesError}</p><button type="button" className={`${buttonStyle} mt-3`} onClick={() => setCatalogAttempt((value) => value + 1)}>Retry artwork loading</button></div> : null}
+            {lookupLoading ? <p role="status" className="mt-6 text-sm">Loading the artworks on this page…</p> : null}
             {unavailableCount > 0 ? <p className="mt-6 text-sm text-[var(--muted-text)]">{unavailableCount} {unavailableCount === 1 ? "artwork is" : "artworks are"} currently unavailable in this catalog. Your saved references are retained.</p> : null}
-            {visibleArtworks.length ? <div className="mt-8 grid gap-x-6 gap-y-10 sm:grid-cols-2 xl:grid-cols-3">{visibleArtworks.map((artwork) => <div key={artwork.id} data-collection-artwork={artwork.id}><ArtworkCard artwork={artwork} /><button type="button" className={`${buttonStyle} mt-4 w-full`} aria-label={`Remove ${artwork.title} from ${selected ? "collection" : "saved artworks"}`} disabled={busy} onClick={() => void changeArtwork(artwork, false)}>{selected ? "Remove from collection" : "Remove from saved"}</button></div>)}</div> : <div className="py-14"><h3 className="display-serif text-2xl">{selected ? "A space for your next discovery." : "Start with a work that moves you."}</h3><p className="mt-3 text-sm leading-7 text-[var(--muted-text)]">{selected ? "Choose an artwork above to begin this collection." : "Tap Save on an artwork in Discover. It will be waiting here."}</p><Link className={`${buttonStyle} mt-6 inline-flex items-center`} href="/discover">Explore artworks</Link></div>}
+            {lookupLoading ? null : visibleArtworks.length ? <div className="mt-8 grid gap-x-6 gap-y-10 sm:grid-cols-2 xl:grid-cols-3">{visibleArtworks.map((artwork) => <div key={artwork.id} data-collection-artwork={artwork.id}><ArtworkCard artwork={artwork} /><button type="button" className={`${buttonStyle} mt-4 w-full`} aria-label={`Remove ${artwork.title} from ${selected ? "collection" : "saved artworks"}`} disabled={busy} onClick={() => void changeArtwork(artwork, false)}>{selected ? "Remove from collection" : "Remove from saved"}</button></div>)}</div> : <div className="py-14"><h3 className="display-serif text-2xl">{selected ? "A space for your next discovery." : "Start with a work that moves you."}</h3><p className="mt-3 text-sm leading-7 text-[var(--muted-text)]">{selected ? "Choose an artwork above to begin this collection." : "Tap Save on an artwork in Discover. It will be waiting here."}</p><Link className={`${buttonStyle} mt-6 inline-flex items-center`} href="/discover">Explore artworks</Link></div>}
+            {visibleIds.length > 24 ? <nav aria-label="Collection artwork pages" className="mt-8 flex flex-wrap items-center gap-4"><button type="button" className={buttonStyle} disabled={busy || currentPage === 0} onClick={() => setPageIndex((value) => Math.max(0, value - 1))}>Previous artworks</button><span className="text-xs">Page {currentPage + 1} of {Math.ceil(visibleIds.length / 24)}</span><button type="button" className={buttonStyle} disabled={busy || (currentPage + 1) * 24 >= visibleIds.length} onClick={() => setPageIndex(currentPage + 1)}>Next artworks</button></nav> : null}
             </>}
           </section>
         </div>

@@ -25,7 +25,10 @@ test("release health and security headers expose no secrets", async ({ request }
   expect(response.status()).toBe(200);
   const data = await response.json();
   expect(data.status).toBe("ok");
-  expect(Object.keys(data).sort()).toEqual(["accountBackendConfigured", "app", "catalog", "status"]);
+  expect(data.catalog).toBe("public-domain");
+  expect(Number.isInteger(data.artworkCount)).toBe(true);
+  expect(data.artworkCount).toBeGreaterThanOrEqual(1000);
+  expect(Object.keys(data).sort()).toEqual(["accountBackendConfigured", "app", "artworkCount", "catalog", "status"]);
   expect(response.headers()["x-content-type-options"]).toBe("nosniff");
   expect(response.headers()["x-frame-options"]).toBe("DENY");
 });

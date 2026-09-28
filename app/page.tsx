@@ -1,13 +1,16 @@
 import Link from "next/link";
+import { ArtworkVisual } from "@/components/artwork/ArtworkVisual";
+import { PUBLIC_ARTWORKS } from "@/lib/artworks/publicCatalog";
 
 const principles = [
   "Museum masterpieces and public-domain collections",
-  "Contemporary and emerging artists",
+  "Painting, prints, and sculpture across cultures",
   "Personalized discovery that remains explainable",
   "Commercial listings clearly separated from museum records",
 ];
 
 export default function Home() {
+  const featured = PUBLIC_ARTWORKS.find((artwork) => artwork.slug === "corridor-in-the-asylum-met-336327") ?? PUBLIC_ARTWORKS[0];
   return (
     <main id="main-content" className="min-h-screen overflow-hidden">
       <header className="page-shell flex items-center justify-between px-6 py-6 md:px-10">
@@ -38,27 +41,22 @@ export default function Home() {
               Shape your taste
             </Link>
           </div>
-          <p className="mt-6 max-w-xl text-xs leading-6 text-[var(--muted-text)]">Try the working demo without an account. Explore public-domain museum artworks and clearly labeled synthetic studies. Real marketplace inventory is not connected yet.</p>
+          <p className="mt-6 max-w-xl text-xs leading-6 text-[var(--muted-text)]">Explore {PUBLIC_ARTWORKS.length} public-domain artworks from The Met and the Cleveland Museum of Art without an account. Save favorites, discover connections, and build your own collection.</p>
         </div>
 
         <div className="relative mx-auto w-full max-w-xl">
-          <div className="aspect-[4/5] border border-[var(--hairline)] bg-[var(--soft-white)] p-5 md:p-8">
-            <div className="flex h-full items-end bg-[linear-gradient(145deg,#201a18_0%,#51443b_42%,#b18f63_68%,#f0d5a7_100%)] p-7">
-              <div className="max-w-xs bg-[color:var(--gallery-ivory)]/94 p-5 backdrop-blur-sm">
-                <p className="text-[10px] uppercase tracking-[0.18em] text-[var(--muted-text)]">Preview mode</p>
-                <p className="display-serif mt-2 text-3xl">Artwork always comes first.</p>
-              </div>
-            </div>
-          </div>
+          <Link href={`/artwork/${featured.slug}`} aria-label={`View ${featured.title}`} className="focus-ring block border border-[var(--hairline)] bg-[var(--soft-white)] p-5 md:p-8">
+            <ArtworkVisual artwork={featured} />
+          </Link>
           <p className="mt-3 text-xs leading-5 text-[var(--muted-text)]">
-            Abstract gradient placeholder — no artwork or rights claim is implied.
+            {featured.title} · {featured.artist.name}<br />{featured.museum?.name ?? "Museum collection"} · Public domain
           </p>
         </div>
       </section>
       <footer className="page-shell flex flex-wrap items-center justify-between gap-6 px-6 py-9 text-xs text-[var(--muted-text)] md:px-10">
         <span>ARTE · Discover art that discovers you.</span>
         <nav aria-label="Footer" className="flex flex-wrap gap-6">
-          <Link href="/sources/demo" className="focus-ring underline underline-offset-4">Sources & rights</Link>
+          <Link href="/sources" className="focus-ring underline underline-offset-4">Sources & rights</Link>
           <Link href="/settings" className="focus-ring underline underline-offset-4">Privacy controls</Link>
           <Link href="/profile" className="focus-ring underline underline-offset-4">Your account</Link>
         </nav>

@@ -4,9 +4,10 @@ import Link from "next/link";
 import { HostedActivityReset } from "./HostedActivityReset";
 import { useEffect, useState } from "react";
 import { personalizationAnalyticsEnabled, readHiddenArtworkIds, readStoredEvents, resetLocalTasteHistory, restoreHiddenArtworkHistory, setPersonalizationAnalyticsEnabled } from "@/lib/analytics/client";
-import type { AnalyticsEvent } from "@/lib/analytics/types";
-import { DEMO_ARTWORKS } from "@/lib/artworks/demoArtworks";
-import { summarizeTaste, tasteShareText, type TasteSummary } from "@/lib/taste/profile";
+import type { TasteSummary } from "@/lib/taste/profile";
+import { tasteShareText } from "@/lib/taste/share";
+
+const EMPTY_SUMMARY: TasteSummary = { dimensions: [], eventCount: 0, artworkCount: 0, hasPositiveSignals: false, headline: "Your eye is still exploring." };
 
 function TasteCard({ summary }: { summary: TasteSummary }) {
   return (
@@ -25,7 +26,9 @@ function TasteCard({ summary }: { summary: TasteSummary }) {
 }
 
 export function TasteDashboard() {
-  const [events, setEvents] = useState<AnalyticsEvent[]>([]);
+  const [summary, setSummary] = useState<TasteSummary>(EMPTY_SUMMARY);
+  const [calculationError, setCalculationError] = useState("");
+  const [attempt, setAttempt] = useState(0);
   const [hiddenCount, setHiddenCount] = useState(0);
   const [enabled, setEnabled] = useState(true);
   const [ready, setReady] = useState(false);
@@ -35,19 +38,35 @@ export function TasteDashboard() {
   const [shareText, setShareText] = useState<string | null>(null);
 
   useEffect(() => {
-    function refresh() {
-      setEvents(readStoredEvents());
+    let controller: AbortController | null = null;
+    let version = 0;
+    async function refresh() {
+      const current = ++version;
+      controller?.abort();
+      controller = new AbortController();
       setHiddenCount(readHiddenArtworkIds().length);
       setEnabled(personalizationAnalyticsEnabled());
-      setReady(true);
+      setShareText(null);
+      setCalculationError("");
+      setSummary(EMPTY_SUMMARY);
+      const events = readStoredEvents();
+      if (!events.length) { setReady(true); return; }
+      setReady(false);
+      try {
+        const response = await fetch("/api/taste", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ events }), signal: controller.signal, cache: "no-store" });
+        if (!response.ok) throw new Error("Your Art DNA could not be calculated. Your saved activity has not changed.");
+        const result = await response.json() as TasteSummary;
+        if (current === version) { setSummary(result); setReady(true); }
+      } catch (error) {
+        if (current === version && !(error instanceof Error && error.name === "AbortError")) { setCalculationError(error instanceof Error ? error.message : "Your Art DNA is temporarily unavailable."); setReady(true); }
+      }
     }
-    refresh();
+    const notify = () => { void refresh(); };
+    notify();
     const subscriptions = ["arte:analytics-event", "arte:analytics-reset", "arte:analytics-preference", "storage"];
-    subscriptions.forEach((event) => window.addEventListener(event, refresh));
-    return () => subscriptions.forEach((event) => window.removeEventListener(event, refresh));
-  }, []);
-
-  const summary = summarizeTaste(events, DEMO_ARTWORKS);
+    subscriptions.forEach((event) => window.addEventListener(event, notify));
+    return () => { version++; controller?.abort(); subscriptions.forEach((event) => window.removeEventListener(event, notify)); };
+  }, [attempt]);
 
   async function shareTaste() {
     const text = tasteShareText(summary);
@@ -88,6 +107,7 @@ export function TasteDashboard() {
         <Link href="/onboarding" className="focus-ring inline-flex min-h-11 items-center border-b border-[var(--primary-ink)] text-xs uppercase tracking-[0.13em]">Choose your starting works</Link>
       </div>
       <p className="mt-6 max-w-3xl leading-7 text-[var(--secondary-ink)]">An evolving estimate from your recent activity on this device. This is a view of your current interests within our current artwork catalog, not a fixed identity or a measure of expertise.</p>
+      {calculationError ? <div role="alert" className="mt-6 text-sm"><p>{calculationError}</p><button className="focus-ring mt-2 min-h-11 underline" onClick={() => setAttempt((value) => value + 1)}>Retry Art DNA</button></div> : null}
       {!ready ? <p role="status" className="mt-12">Reading your local activity…</p> : <>
         <div className="mt-10"><TasteCard summary={summary} /></div>
         <div className="mt-6 flex flex-wrap gap-4">
@@ -107,7 +127,7 @@ export function TasteDashboard() {
         <section aria-labelledby="privacy-heading" className="mt-16 border-t border-[var(--hairline)] pt-8">
           <p className="text-[10px] uppercase tracking-[0.18em] text-[var(--muted-text)]">You are in control</p>
           <h2 id="privacy-heading" className="display-serif mt-3 text-4xl">Activity & privacy</h2>
-          <p className="mt-4 max-w-3xl text-sm leading-7 text-[var(--secondary-ink)]">Your Art DNA and recommendations currently use activity stored in this browser. They do not sync a complete taste history across devices. When a hosted account service is configured, activity may also be sent there. Local controls change this device only; they do not erase hosted records or account likes. Signed-in users have a separate account-activity reset below.</p>
+          <p className="mt-4 max-w-3xl text-sm leading-7 text-[var(--secondary-ink)]">Your Art DNA and recommendations currently use activity stored in this browser. They do not sync a complete taste history across devices. A limited copy of up to 500 recent events is sent to ARTE for personalized results and taste/attention calculations. Guest history is not written to the account database; calculation inputs are used transiently. Signed-in account activity can also be stored with your account. Local controls change this device only; they do not erase hosted records or account likes. Signed-in users have a separate account-activity reset below.</p>
           <div className="mt-7 border border-[var(--hairline)] p-5 md:p-7">
             <div className="flex flex-wrap items-start justify-between gap-5"><div className="max-w-xl"><h3 className="text-sm font-medium">Passive activity tracking</h3><p className="mt-2 text-sm leading-6 text-[var(--muted-text)]">{enabled ? "On: viewing and dwell-time signals can shape your feed." : "Paused: new passive signals are not recorded."} Likes, saves, searches, and other explicit actions still work and may be recorded. Pausing does not delete earlier activity.</p></div><button type="button" aria-pressed={!enabled} onClick={toggleTracking} className="focus-ring min-h-11 border border-[var(--primary-ink)] px-5 text-xs">{enabled ? "Pause passive tracking" : "Resume passive tracking"}</button></div>
             <div className="mt-7 flex flex-wrap items-center gap-4 border-t border-[var(--hairline)] pt-6"><button type="button" onClick={restoreHidden} disabled={!hiddenCount} className="focus-ring min-h-11 border border-[var(--hairline)] px-5 text-xs disabled:opacity-40">Restore hidden works ({hiddenCount})</button><button type="button" onClick={() => { setConfirmReset(true); setClearLikes(false); }} className="focus-ring min-h-11 px-2 text-xs text-[var(--oxblood)] underline underline-offset-4">Reset local recommendations</button></div>

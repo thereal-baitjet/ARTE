@@ -1,3 +1,4 @@
+import { museumSourceLabel } from "@/lib/artworks/providers";
 import type { Artwork } from "@/lib/artworks/types";
 import type { RecommendedArtwork } from "@/lib/recommendations/types";
 import { WhyThisRecommendation } from "@/components/recommendation/WhyThisRecommendation";
@@ -9,7 +10,7 @@ export function ArtworkMetadata({ artwork, position }: { artwork: Artwork | Reco
 
   return (
     <div>
-      <p className="text-[10px] uppercase tracking-[0.2em] text-[var(--oxblood)]">{artwork.isDemo ? "Demo artwork" : "The Met · Open Access"}</p>
+      <p className="text-[10px] uppercase tracking-[0.2em] text-[var(--oxblood)]">{artwork.isDemo ? "Demo artwork" : museumSourceLabel(artwork.rights.sourceUrl, artwork.museum?.name)}</p>
       <p className="mt-5 text-sm text-[var(--secondary-ink)]">{artwork.artist.name}</p>
       <h2 className="display-serif mt-2 text-4xl font-medium leading-none lg:text-5xl">
         <cite className="not-italic">{artwork.title}</cite>

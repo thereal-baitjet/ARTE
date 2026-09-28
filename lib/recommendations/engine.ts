@@ -91,6 +91,14 @@ function diversify(sorted: RecommendedArtwork[]) {
 
   while (remainingTotal > 0) {
     const window = result.slice(-DIVERSITY_WINDOW + 1);
+    // The largest two group sizes determine feasibility after any one pick.
+    // Compute them once per position instead of recounting every artist for every candidate.
+    let largestGroup = 0;
+    let secondLargestGroup = 0;
+    for (const items of groups.values()) {
+      if (items.length >= largestGroup) { secondLargestGroup = largestGroup; largestGroup = items.length; }
+      else if (items.length > secondLargestGroup) secondLargestGroup = items.length;
+    }
     const choices = [...groups.entries()].filter(([artistId, items]) => items.length > 0 && artistId !== previousArtist).map(([artistId, items]) => {
       const strictIndex = items.findIndex((candidate) => {
         const sameMovement = window.filter((item) => item.movement === candidate.movement).length;
@@ -98,9 +106,9 @@ function diversify(sorted: RecommendedArtwork[]) {
         return sameMovement < MAX_SAME_MOVEMENT_IN_WINDOW && sameMedium < MAX_SAME_MEDIUM_IN_WINDOW;
       });
       const itemIndex = strictIndex >= 0 ? strictIndex : 0;
-      const countsAfter = [...groups.entries()].map(([id, candidates]) => candidates.length - (id === artistId ? 1 : 0));
       const totalAfter = remainingTotal - 1;
-      const feasible = totalAfter === 0 || Math.max(...countsAfter) <= Math.ceil(totalAfter / 2);
+      const largestAfter = items.length === largestGroup ? Math.max(largestGroup - 1, secondLargestGroup) : largestGroup;
+      const feasible = totalAfter === 0 || largestAfter <= Math.ceil(totalAfter / 2);
       return { artistId, itemIndex, item: items[itemIndex], strict: strictIndex >= 0, feasible, remaining: items.length };
     });
     if (!choices.length) {

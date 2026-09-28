@@ -14,13 +14,15 @@ const primaryShapeClasses = {
   veil: "left-[30%] top-[-8%] h-[116%] w-[32%] rotate-[18deg] blur-md",
 } as const;
 
-export function ArtworkVisual({ artwork, compact = false }: { artwork: Artwork; compact?: boolean }) {
+export function ArtworkVisual({ artwork, compact = false }: { artwork: Pick<Artwork, "visual">; compact?: boolean }) {
   const widthClass = compact ? "max-w-full" : widthClasses[artwork.visual.aspect];
 
   if (artwork.visual.kind === "image") {
+    // NGA already serves a bounded 843px image; direct delivery avoids the optimizer's upstream timeout.
+    const isBoundedNgaImage = artwork.visual.src.startsWith("https://api.nga.gov/iiif/");
     return (
       <div className={`${widthClass} relative flex w-full items-center justify-center overflow-hidden border border-black/10`} style={{ aspectRatio: artwork.visual.aspectRatio, background: artwork.visual.background }}>
-        <Image src={artwork.visual.src} alt={artwork.visual.alt} fill sizes={compact ? "(max-width: 767px) 100vw, (max-width: 1279px) 45vw, 30vw" : "(max-width: 767px) 100vw, (max-width: 1279px) 75vw, 65vw"} className="object-contain" />
+        <Image src={artwork.visual.src} alt={artwork.visual.alt} fill unoptimized={isBoundedNgaImage} sizes={compact ? "(max-width: 767px) 100vw, (max-width: 1279px) 45vw, 30vw" : "(max-width: 767px) 100vw, (max-width: 1279px) 75vw, 65vw"} className="object-contain" />
       </div>
     );
   }

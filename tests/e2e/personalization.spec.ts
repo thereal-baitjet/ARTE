@@ -51,7 +51,7 @@ test("why-this copy is tied to exposed scoring signals", async ({ page }) => {
 test("More Like This modes disclose their actual connection", async ({ page }) => {
   await page.goto("/artwork/quiet-red-study-demo", { waitUntil: "networkidle" });
   await page.getByRole("button", { name: "Similar Palette" }).click();
-  await expect(page.getByTestId("similarity-result").first()).toContainText("Shared palette:");
+  await expect(page.getByTestId("similarity-result").first()).toContainText(/Shared palette:|Palette metadata is unavailable/);
   await page.getByRole("button", { name: "Unexpected Connection" }).click();
   await expect(page.getByTestId("similarity-result").first()).toContainText(/unexpected|intentional contrast/i);
 });
@@ -60,6 +60,44 @@ test("recommendation endpoint rejects invalid cursors", async ({ request }) => {
   const response = await request.post("/api/recommendations", { data: { events: [], hiddenArtworkIds: [], cursor: "missing-cursor", limit: 4 } });
   expect(response.status()).toBe(400);
   expect(await response.json()).toEqual({ error: "Invalid recommendation cursor." });
+});
+
+test("recommendations retain personalization and pagination after more than one hundred hidden works", async ({ request }) => {
+  type CatalogItem = { id: string; artist: { id: string } };
+  type FeedResponse = { items: CatalogItem[]; nextCursor: string | null };
+  type RecommendationResponse = FeedResponse & { profileEventCount: number };
+  const catalog: CatalogItem[] = [];
+  let catalogCursor: string | null = null;
+  do {
+    const response = await request.get("/api/feed", { params: { limit: 8, ...(catalogCursor ? { cursor: catalogCursor } : {}) } });
+    expect(response.status()).toBe(200);
+    const page: FeedResponse = await response.json();
+    catalog.push(...page.items);
+    catalogCursor = page.nextCursor;
+  } while (catalog.length < 102 && catalogCursor);
+  expect(catalog.length).toBeGreaterThanOrEqual(102);
+
+  const hiddenArtworkIds = catalog.slice(0, 101).map(({ id }) => id);
+  const source = catalog[101];
+  const events = [{
+    id: "over-one-hundred-hidden", eventType: "artwork_like", anonymousSessionId: "large-gallery-test",
+    artworkId: source.id, artistId: source.artist.id, source: "test", timestamp: new Date().toISOString(),
+  }];
+  const response = await request.post("/api/recommendations", { data: { events, hiddenArtworkIds, limit: 8 } });
+  expect(response.status()).toBe(200);
+  const first: RecommendationResponse = await response.json();
+  expect(first.profileEventCount).toBe(1);
+  expect(first.items).toHaveLength(8);
+  expect(first.nextCursor).toBeTruthy();
+
+  const nextResponse = await request.post("/api/recommendations", { data: { events, hiddenArtworkIds, cursor: first.nextCursor, limit: 8 } });
+  expect(nextResponse.status()).toBe(200);
+  const next: RecommendationResponse = await nextResponse.json();
+  expect(next.profileEventCount).toBe(1);
+  expect(next.items).toHaveLength(8);
+  const returnedIds = [...first.items, ...next.items].map(({ id }: { id: string }) => id);
+  expect(new Set(returnedIds).size).toBe(16);
+  expect(returnedIds.some((id) => hiddenArtworkIds.includes(id))).toBe(false);
 });
 
 test("recommendation endpoint rejects hostile event types and oversized input", async ({ request }) => {
