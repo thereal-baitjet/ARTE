@@ -472,3 +472,27 @@ The gallery starts with four works and appends two at a time within 150 pixels o
 New remote images remain external runtime dependencies despite import-time successful decoding. A cached-image contact sheet proves the reviewed bytes displayed correctly; it does not prove the current production browser can reach the source CDNs. Git publication must include generated source metadata/catalogs, manifests, seed sections, and local assets; ignored import caches and generated browser reports must not be published.
 
 The full-product limitations are unchanged: no complete cross-device history hydration, no live database-backed public publication, incomplete external-source administration, demo commerce with unsent inquiries, and no platform-wide attention aggregate. Completing this catalog release does not close those separate implementation gates.
+
+---
+
+## Signed-in experience — September 2026
+
+This release replaces per-button account lookups with one verified session store and shared, paginated interaction reads. Saves, likes, and follows use independent optimistic writes with rollback and stale-account protection. Private collection drafts, selections, messages, feed ranking, and taste results are cleared when identity changes. Collection reads no longer silently stop at the default 1,000-row API limit.
+
+The account page now presents session controls and private-gallery destinations directly. Settings has dedicated privacy controls, with clear account versus guest scope, reset confirmation, persistent tracking preferences, recovery states, and mobile navigation. Sign-out closes this browser's session while preserving independently signed-in devices.
+
+Account activity is hydrated from the existing database, bounded to 500 recent signals and current saved preferences. It stays in memory and is never replayed into guest history or another account. Current likes, saves, and follows replace historical toggle events to prevent duplicate weighting. Older releases wrote activity without reliable ownership; the first verified sign-in archives that ambiguous local history under `arte:analytics:legacy-v1` and removes it from active guest recommendations. Guest likes, saves, follows, collections, and privacy preferences are preserved. The archive is not replayed or uploaded.
+
+Cross-tab messages contain invalidations only. Tracking changes, hidden-work restoration, and activity resets reload authoritative settings in other tabs. Activity resets preserve intentional likes, saves, follows, collections, and the tracking preference. These changes use existing schema and require no additional production migration.
+
+The earlier cross-device-history limitation is superseded for this bounded recent-activity implementation. Public catalog publication, administration, demo commerce, and platform-wide attention limitations remain. Shared Corridor still separately requires its existing migration and explicit early-access enrollment; these account fixes do not enroll anyone.
+
+### Verification checkpoint
+
+- Focused interaction tests exercise concurrent writes, failed-write rollback, stale account responses, batch loading, retry, and pagination beyond 1,000 rows.
+- Account-activity tests cover owner validation, bounded hydration, deduplication, retained choices, and legacy-history quarantine.
+- Seven deterministic account/Corridor browser tests passed during implementation, including verified Auth request volume, failed-session recovery, note lifecycle, keyboard/mobile accessibility, and cross-tab sign-out. These fixtures do not prove database authorization.
+- `tests/integration/account-browser-local.mjs` uses two real disposable Supabase accounts and a production Next build. Its gates cover persistence, failure/retry, private collection CRUD and RLS, fresh-device activity and preferences, reset semantics, cross-tab/local sign-out, account switching, mobile accessibility, and request volume. Database CI runs it alongside pgTAP, Auth/API tests, and migration reset/reapply.
+- Local lint, types, production build, 103 unit tests, and 65 public-gallery browser tests passed. The first pushed revision also passed application CI. The real-account browser journey passed its first nine gates and exposed an identity-change defect: an artwork left open during sign-out recorded a new guest visit. A regression reproduced the failure; the detail-open signal now records once per mounted artwork after identity verification. The strict zero-guest-history assertion remains in the real-account test.
+- Read-only production queries with `limit=0` resolved the required profile, event, interaction, and collection columns without retrieving account rows. Public metadata cannot prove production RPC availability or signed-in RLS/write behavior. No production user's private data was accessed.
+- Final exact-commit CI and deployment evidence are recorded in [PR #2](https://github.com/thereal-baitjet/ARTE/pull/2). They remain required release gates at this pre-publication checkpoint; disposable local Auth testing does not imply a production authenticated smoke test.

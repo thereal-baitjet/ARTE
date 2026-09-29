@@ -1,31 +1,15 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useId, useRef, useState } from "react";
+import { useState } from "react";
 import { recordAnalyticsEvent } from "@/lib/analytics/client";
-import { getSupabaseBrowserClient } from "@/lib/supabase/client";
+import { useInteraction } from "@/lib/account/interactions";
+import { getAuthSnapshot } from "@/lib/auth/session";
 import type { Artwork } from "@/lib/artworks/types";
 import type { RecommendedArtwork } from "@/lib/recommendations/types";
 
 type InteractionTable = "likes" | "saves";
 type DisplayArtwork = Artwork | RecommendedArtwork;
-
-const storageKeys: Record<InteractionTable, string> = {
-  likes: "arte:guest:likes",
-  saves: "arte:guest:saves",
-};
-
-function readGuestSet(table: InteractionTable): Set<string> {
-  const raw = localStorage.getItem(storageKeys[table]);
-  try {
-    const parsed: unknown = JSON.parse(raw ?? "[]");
-    return new Set(Array.isArray(parsed) ? parsed.filter((value): value is string => typeof value === "string") : []);
-  } catch { return new Set(); }
-}
-
-function writeGuestSet(table: InteractionTable, values: Set<string>) {
-  localStorage.setItem(storageKeys[table], JSON.stringify([...values]));
-}
 
 function recommendationReason(artwork: DisplayArtwork) {
   return "recommendation" in artwork ? artwork.recommendation.explanation.text : artwork.recommendationReason;
@@ -40,140 +24,26 @@ function PersistentToggle({ table, artwork, inactiveLabel, activeLabel, action, 
   position?: number;
   source: string;
 }) {
-  const [active, setActive] = useState(false);
-  const [ready, setReady] = useState(false);
-  const [pending, setPending] = useState(false);
-  const [status, setStatus] = useState<string | null>(null);
-  const [revision, setRevision] = useState(0);
-  const identityEpoch = useRef(0);
-  const owner = useRef<string | null | undefined>(undefined);
-  const inFlight = useRef(false);
-  const originId = useId();
-  const client = getSupabaseBrowserClient();
-
-  useEffect(() => {
-    function invalidateIdentity() {
-      identityEpoch.current++;
-      owner.current = undefined;
-    }
-    function refresh() {
-      invalidateIdentity();
-      setReady(false);
-      setRevision((value) => value + 1);
-    }
-    const subscription = client?.auth.onAuthStateChange((event, session) => {
-      if (event === "INITIAL_SESSION") return;
-      if (event === "SIGNED_OUT" || session?.user.id !== owner.current) refresh();
-    }).data.subscription;
-    function storageChanged(event: StorageEvent) {
-      if (event.key === null || event.key === storageKeys[table]) refresh();
-    }
-    function interactionChanged(event: Event) {
-      if ((event as CustomEvent<{ originId?: string }>).detail?.originId !== originId) refresh();
-    }
-    window.addEventListener("storage", storageChanged);
-    window.addEventListener(`arte:${table}-changed`, interactionChanged);
-    window.addEventListener("arte:analytics-reset", refresh);
-    return () => {
-      invalidateIdentity();
-      subscription?.unsubscribe();
-      window.removeEventListener("storage", storageChanged);
-      window.removeEventListener(`arte:${table}-changed`, interactionChanged);
-      window.removeEventListener("arte:analytics-reset", refresh);
-    };
-  }, [client, originId, table]);
-
-  useEffect(() => {
-    let cancelled = false;
-    const epoch = ++identityEpoch.current;
-    async function hydrate() {
-      setReady(false);
-      try {
-        const response = client ? await client.auth.getUser() : null;
-        if (response?.error && response.error.name !== "AuthSessionMissingError") throw response.error;
-        const user = response?.data.user ?? null;
-        let next: boolean;
-        if (client && user) {
-          const result = await client.from(table).select("artwork_id").eq("user_id", user.id).eq("artwork_id", artwork.id).maybeSingle();
-          if (result.error) throw result.error;
-          next = Boolean(result.data);
-        } else next = readGuestSet(table).has(artwork.id);
-        if (!cancelled && epoch === identityEpoch.current) {
-          owner.current = user?.id ?? null;
-          setActive(next);
-          setReady(true);
-          setStatus(null);
-        }
-      } catch {
-        if (!cancelled && epoch === identityEpoch.current) {
-          owner.current = undefined;
-          setActive(false);
-          setStatus(`${inactiveLabel} status could not be loaded. Please retry.`);
-        }
-      }
-    }
-    void hydrate();
-    return () => { cancelled = true; };
-  }, [artwork.id, client, inactiveLabel, revision, table]);
-
+  const interaction = useInteraction(table, artwork.id);
+  const { active, ready, pending, failed, loadFailed } = interaction;
   async function toggle() {
-    if (!ready || inFlight.current || owner.current === undefined) return;
-    const epoch = identityEpoch.current;
-    const userId = owner.current;
-    const previous = active;
+    const revision = getAuthSnapshot().revision;
     const next = !active;
-    inFlight.current = true;
-    setActive(next);
-    setPending(true);
-    setStatus(null);
+    if (!await interaction.set(next) || getAuthSnapshot().revision !== revision) return;
     try {
-      if (client) {
-        const response = await client.auth.getUser();
-        if (response.error && response.error.name !== "AuthSessionMissingError") throw response.error;
-        if ((response.data.user?.id ?? null) !== userId || epoch !== identityEpoch.current) {
-          identityEpoch.current++;
-          owner.current = undefined;
-          setReady(false);
-          setRevision((value) => value + 1);
-          return;
-        }
-      }
-      if (client && userId) {
-        const result = next
-          ? await client.from(table).upsert({ user_id: userId, artwork_id: artwork.id }).select("artwork_id").single()
-          : await client.from(table).delete().eq("user_id", userId).eq("artwork_id", artwork.id).select("artwork_id").single();
-        if (result.error) throw result.error;
-      } else {
-        const values = readGuestSet(table);
-        if (next) values.add(artwork.id); else values.delete(artwork.id);
-        writeGuestSet(table, values);
-      }
-      if (epoch !== identityEpoch.current) return;
-      // A successful save remains successful if analytics storage is unavailable.
-      try {
-        recordAnalyticsEvent({
-          eventType: table === "likes" ? (next ? "artwork_like" : "artwork_unlike") : (next ? "artwork_save" : "artwork_unsave"),
-          artwork, source, position, recommendationReason: recommendationReason(artwork),
-        });
-      } catch { /* Analytics is best-effort. */ }
-      window.dispatchEvent(new CustomEvent(`arte:${table}-changed`, { detail: { originId, artworkId: artwork.id } }));
-    } catch {
-      if (epoch === identityEpoch.current) {
-        setActive(previous);
-        setStatus(`${inactiveLabel} could not be updated. Please try again.`);
-      }
-    } finally {
-      inFlight.current = false;
-      setPending(false);
-    }
+      recordAnalyticsEvent({
+        eventType: table === "likes" ? (next ? "artwork_like" : "artwork_unlike") : (next ? "artwork_save" : "artwork_unsave"),
+        artwork, source, position, recommendationReason: recommendationReason(artwork),
+      });
+    } catch { /* Intentional actions remain saved when analytics is unavailable. */ }
   }
-
+  const status = loadFailed ? `${inactiveLabel} status could not be loaded. Please retry.` : failed ? `${inactiveLabel} could not be updated. Please try again.` : null;
   return (
     <>
       <button type="button" data-action={action} aria-pressed={active} aria-label={`${active ? activeLabel : inactiveLabel} ${artwork.title}`} disabled={!ready || pending} onClick={() => void toggle()} className="focus-ring min-h-11 border border-[var(--hairline)] px-4 text-[11px] uppercase tracking-[0.12em] disabled:opacity-45">
         {active ? activeLabel : inactiveLabel}
       </button>
-      {status ? <span role="status" className="col-span-2 text-xs leading-6 text-[var(--oxblood)]">{status}{!ready ? <button type="button" className="focus-ring ml-2 min-h-11 underline" onClick={() => setRevision((value) => value + 1)}>Retry {inactiveLabel.toLowerCase()}</button> : null}</span> : null}
+      {status ? <span role="status" className="col-span-2 text-xs leading-6 text-[var(--oxblood)]">{status}{loadFailed ? <button type="button" className="focus-ring ml-2 min-h-11 underline" onClick={interaction.retry}>Retry {inactiveLabel.toLowerCase()}</button> : null}</span> : null}
     </>
   );
 }
@@ -181,11 +51,15 @@ function PersistentToggle({ table, artwork, inactiveLabel, activeLabel, action, 
 function ShareButton({ artwork, position, source }: { artwork: DisplayArtwork; position?: number; source: string }) {
   const [status, setStatus] = useState<string | null>(null);
   async function share() {
+    const revision = getAuthSnapshot().revision;
     const url = `${window.location.origin}/artwork/${artwork.slug}`;
     try {
       if (navigator.share) await navigator.share({ title: artwork.title, text: `${artwork.artist.name} — ${artwork.title}`, url });
       else { await navigator.clipboard.writeText(url); setStatus("Artwork link copied."); }
-      recordAnalyticsEvent({ eventType: "artwork_share", artwork, source, position, recommendationReason: recommendationReason(artwork) });
+      if (getAuthSnapshot().revision === revision) {
+        try { recordAnalyticsEvent({ eventType: "artwork_share", artwork, source, position, recommendationReason: recommendationReason(artwork) }); }
+        catch { /* Sharing is successful even when analytics is unavailable. */ }
+      }
     } catch {
       setStatus("Sharing was cancelled.");
     }

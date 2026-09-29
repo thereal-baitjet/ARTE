@@ -9,6 +9,10 @@ on:
       - "tests/integration/*.mjs"
       - "app/api/corridor/**"
       - "lib/corridor/**"
+      - "lib/auth/**"
+      - "lib/account/**"
+      - "lib/analytics/**"
+      - "components/**"
       - "scripts/generate-database-catalog-test.mjs"
       - "scripts/build-met-catalog.mjs"
       - "scripts/build-catalog-manifest.mjs"
@@ -25,6 +29,10 @@ on:
       - "tests/integration/*.mjs"
       - "app/api/corridor/**"
       - "lib/corridor/**"
+      - "lib/auth/**"
+      - "lib/account/**"
+      - "lib/analytics/**"
+      - "components/**"
       - "scripts/generate-database-catalog-test.mjs"
       - "scripts/build-met-catalog.mjs"
       - "scripts/build-catalog-manifest.mjs"
@@ -81,6 +89,25 @@ jobs:
           SUPABASE_ANON_KEY="$ANON_KEY" \
           SUPABASE_SERVICE_ROLE_KEY="$SERVICE_ROLE_KEY" \
           node tests/integration/corridor-api-local.mjs
+      - name: Install browser for authenticated gauntlet
+        run: npx playwright install --with-deps chromium
+      - name: Verify signed-in browser journeys with real local Auth
+        shell: bash
+        run: |
+          eval "$(supabase status -o env)"
+          SUPABASE_URL="$API_URL" \
+          SUPABASE_ANON_KEY="$ANON_KEY" \
+          SUPABASE_SERVICE_ROLE_KEY="$SERVICE_ROLE_KEY" \
+          NEXT_PUBLIC_SUPABASE_URL="$API_URL" \
+          NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY="$ANON_KEY" \
+          node tests/integration/account-browser-local.mjs
+      - name: Upload authenticated browser evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: authenticated-gauntlet
+          path: test-results/account-browser/
+          retention-days: 7
       - name: Re-apply migrations and seed to prove repeatability
         run: supabase db reset --local
       - name: Re-run database tests

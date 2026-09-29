@@ -2,7 +2,8 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
-import { hideArtworkLocally, readHiddenArtworkIds, readStoredEvents, recordAnalyticsEvent, restoreHiddenArtworkHistory } from "@/lib/analytics/client";
+import { hideArtworkLocally, readHiddenArtworkIds, readStoredEvents, recordAnalyticsEvent, restoreHiddenArtworkHistory, useActivitySnapshot } from "@/lib/analytics/client";
+import { useAuth } from "@/lib/auth/session";
 import type { AnalyticsEvent } from "@/lib/analytics/types";
 import type { RecommendationPage, RecommendedArtwork } from "@/lib/recommendations/types";
 import { ArtworkSlide } from "@/components/artwork/ArtworkSlide";
@@ -17,6 +18,7 @@ type ApiPage = RecommendationPage & { profileEventCount?: number };
 async function requestPage(events: AnalyticsEvent[], hiddenArtworkIds: string[], cursor: string | null, limit = 4): Promise<ApiPage> {
   const response = await fetch("/api/recommendations", {
     method: "POST",
+    cache: "no-store",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ events, hiddenArtworkIds, cursor, limit }),
   });
@@ -24,7 +26,16 @@ async function requestPage(events: AnalyticsEvent[], hiddenArtworkIds: string[],
   return response.json() as Promise<ApiPage>;
 }
 
-export function ArtworkFeed({ initialItems, initialCursor }: { initialItems: RecommendedArtwork[]; initialCursor: string | null }) {
+type ArtworkFeedProps = { initialItems: RecommendedArtwork[]; initialCursor: string | null };
+export function ArtworkFeed(props: ArtworkFeedProps) {
+  const auth = useAuth();
+  return <ArtworkFeedView key={auth.revision} {...props} />;
+}
+
+function ArtworkFeedView({ initialItems, initialCursor }: ArtworkFeedProps) {
+  const auth = useAuth();
+  const activity = useActivitySnapshot();
+  const scrollKey = auth.status === "authenticated" ? `${SCROLL_KEY}:${auth.user!.id}` : SCROLL_KEY;
   const router = useRouter();
   const [items, setItems] = useState(initialItems);
   const [cursor, setCursor] = useState(initialCursor);
@@ -49,6 +60,7 @@ export function ArtworkFeed({ initialItems, initialCursor }: { initialItems: Rec
         setHydrated(false);
         setLoading(false);
         setError(null);
+        if (activity.status === "loading") { setItems(initialItems); setCursor(initialCursor); return; }
         eventsRef.current = readStoredEvents();
         hiddenRef.current = readHiddenArtworkIds();
         const hidden = new Set(hiddenRef.current);
@@ -89,7 +101,7 @@ export function ArtworkFeed({ initialItems, initialCursor }: { initialItems: Rec
       window.cancelAnimationFrame(frame);
       window.removeEventListener("arte:analytics-reset", refresh);
     };
-  }, [initialItems, initialCursor]);
+  }, [initialItems, initialCursor, activity.scope, activity.status]);
 
   useEffect(() => {
     // Disable anchoring on the actual page scroller while this feed is mounted.
@@ -98,24 +110,24 @@ export function ArtworkFeed({ initialItems, initialCursor }: { initialItems: Rec
     const scroller = document.documentElement;
     const previousAnchor = scroller.style.overflowAnchor;
     scroller.style.overflowAnchor = "none";
-    const saved = Number(sessionStorage.getItem(SCROLL_KEY) ?? "0");
+    const saved = Number(sessionStorage.getItem(scrollKey) ?? "0");
     const restoreFrame = window.requestAnimationFrame(() => {
       if (Number.isFinite(saved) && saved > 0) window.scrollTo({ top: saved, behavior: "auto" });
     });
     let frame = 0;
     const remember = () => {
       if (frame) return;
-      frame = window.requestAnimationFrame(() => { sessionStorage.setItem(SCROLL_KEY, String(window.scrollY)); frame = 0; });
+      frame = window.requestAnimationFrame(() => { sessionStorage.setItem(scrollKey, String(window.scrollY)); frame = 0; });
     };
     window.addEventListener("scroll", remember, { passive: true });
     return () => {
       window.cancelAnimationFrame(restoreFrame);
       if (frame) window.cancelAnimationFrame(frame);
       window.removeEventListener("scroll", remember);
-      sessionStorage.setItem(SCROLL_KEY, String(window.scrollY));
+      sessionStorage.setItem(scrollKey, String(window.scrollY));
       scroller.style.overflowAnchor = previousAnchor;
     };
-  }, []);
+  }, [scrollKey]);
 
   const loadMore = useCallback(async () => {
     if (!cursor || loadingRef.current) return;
@@ -215,7 +227,7 @@ export function ArtworkFeed({ initialItems, initialCursor }: { initialItems: Rec
   }, [router]);
 
   function hideArtwork(artwork: RecommendedArtwork) {
-    hideArtworkLocally(artwork.id);
+    try { hideArtworkLocally(artwork.id); } catch { setError("This work could not be hidden. Check whether browser storage is available."); return; }
     // Pagination must retain its initial ranking snapshot. A newly hidden cursor
     // would otherwise disappear from the API ranking and strand the next page.
     // Local filtering suppresses hides immediately; the next refresh re-ranks.
@@ -226,7 +238,7 @@ export function ArtworkFeed({ initialItems, initialCursor }: { initialItems: Rec
     return (
       <section className="mx-auto flex min-h-[70vh] max-w-lg flex-col items-center justify-center px-6 text-center">
         <p className="display-serif text-4xl">Your current gallery is empty.</p>
-        <button type="button" onClick={() => { restoreHiddenArtworkHistory(); window.location.reload(); }} className="focus-ring mt-7 border-b border-[var(--primary-ink)] pb-1 text-xs uppercase tracking-[0.14em]">Restore hidden works</button>
+        <button type="button" onClick={() => { void restoreHiddenArtworkHistory().catch(() => setError("Hidden works could not be restored. Please try again.")); }} className="focus-ring mt-7 border-b border-[var(--primary-ink)] pb-1 text-xs uppercase tracking-[0.14em]">Restore hidden works</button>
       </section>
     );
   }

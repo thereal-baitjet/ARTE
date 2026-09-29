@@ -1,114 +1,132 @@
 "use client";
 
 import Link from "next/link";
-import { FormEvent, useEffect, useState } from "react";
+import { type FormEvent, useEffect, useId, useRef, useState } from "react";
+import { getAuthSnapshot, retryAuth, useAuth } from "@/lib/auth/session";
 import { getSupabaseBrowserClient } from "@/lib/supabase/client";
 
-export function AuthPanel() {
-  const client = getSupabaseBrowserClient();
+export function AuthPanel({ compact = false }: { compact?: boolean }) {
+  const auth = useAuth();
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
-  const [accountEmail, setAccountEmail] = useState<string | null>(null);
-  const [checkingSession, setCheckingSession] = useState(Boolean(client));
+  const [cooldownUntil, setCooldownUntil] = useState(0);
+  const [secondsRemaining, setSecondsRemaining] = useState(0);
+  const pending = useRef(false);
+  const mounted = useRef(true);
+  const statusId = useId();
+  const errorId = useId();
 
   useEffect(() => {
-    if (!client) return;
-    let cancelled = false;
-    const { data: { subscription } } = client.auth.onAuthStateChange((_event, session) => {
-      if (!cancelled) {
-        setAccountEmail(session?.user.email ?? null);
-        setCheckingSession(false);
-      }
-    });
-    void client.auth.getSession().then(({ data, error }) => {
-      if (cancelled) return;
-      setAccountEmail(data.session?.user.email ?? null);
-      if (error) setStatus("Your session could not be checked. Please sign in again.");
-      setCheckingSession(false);
-    }).catch(() => {
-      if (!cancelled) { setCheckingSession(false); setStatus("Your session could not be checked. Please try again."); }
-    });
-    return () => { cancelled = true; subscription.unsubscribe(); };
-  }, [client]);
+    mounted.current = true;
+    const url = new URL(window.location.href);
+    const fragment = new URLSearchParams(url.hash.slice(1));
+    if (url.searchParams.has("error") || fragment.has("error") || url.searchParams.has("error_code") || fragment.has("error_code")) {
+      queueMicrotask(() => {
+        if (mounted.current) setStatus("This sign-in link has expired or could not be used. Request a fresh link below.");
+      });
+      for (const key of ["error", "error_code", "error_description"]) url.searchParams.delete(key);
+      url.hash = "";
+      window.history.replaceState(window.history.state, "", url.pathname + url.search);
+    }
+    return () => { mounted.current = false; };
+  }, []);
+
+  useEffect(() => {
+    if (!cooldownUntil) return;
+    const timer = window.setInterval(() => {
+      const remaining = Math.max(0, Math.ceil((cooldownUntil - Date.now()) / 1000));
+      setSecondsRemaining(remaining);
+      if (!remaining) { clearInterval(timer); setCooldownUntil(0); }
+    }, 1000);
+    return () => clearInterval(timer);
+  }, [cooldownUntil]);
 
   async function submit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    if (!client || !email) return;
-
+    const client = getSupabaseBrowserClient();
+    if (!client || !email.trim() || pending.current || Date.now() < cooldownUntil) return;
+    pending.current = true;
     setBusy(true);
     setStatus(null);
-
+    const identityRevision = getAuthSnapshot().revision;
     try {
       const { error } = await client.auth.signInWithOtp({
         email: email.trim(),
         options: { emailRedirectTo: window.location.origin + "/auth" },
       });
-      setStatus(error ? "Sign-in could not be started. Please try again." : "Check your email for the sign-in link.");
+      if (!mounted.current || getAuthSnapshot().revision !== identityRevision) return;
+      if (error) {
+        setStatus(error.status === 429 ? "Please wait a moment before requesting another sign-in link." : "Sign-in could not be started. Please try again.");
+      } else {
+        setStatus("Check your email for the sign-in link. You can close this page and return from your email.");
+        setCooldownUntil(Date.now() + 60_000);
+        setSecondsRemaining(60);
+      }
     } catch {
-      setStatus("Sign-in could not be started. Check your connection and try again.");
-    } finally { setBusy(false); }
+      if (mounted.current && getAuthSnapshot().revision === identityRevision) setStatus("Sign-in could not be started. Check your connection and try again.");
+    } finally {
+      pending.current = false;
+      if (mounted.current) setBusy(false);
+    }
   }
 
   async function signOut() {
-    if (!client || busy) return;
+    const client = getSupabaseBrowserClient();
+    if (!client || pending.current) return;
+    pending.current = true;
     setBusy(true);
     setStatus(null);
     try {
-      const { error } = await client.auth.signOut();
-      if (error) setStatus("Sign-out could not be completed. Please try again.");
-      else { setAccountEmail(null); setStatus("You are signed out."); }
+      const { error } = await client.auth.signOut({ scope: "local" });
+      if (mounted.current) setStatus(error ? "Sign-out could not be completed. Please try again." : "You are signed out.");
     } catch {
-      setStatus("Sign-out could not be completed. Check your connection and try again.");
-    } finally { setBusy(false); }
+      if (mounted.current) setStatus("Sign-out could not be completed. Check your connection and try again.");
+    } finally {
+      pending.current = false;
+      if (mounted.current) setBusy(false);
+    }
   }
 
-  if (!client) {
-    return (
-      <p className="max-w-xl text-sm leading-7 text-[var(--muted-text)]">
-        This preview is open to guests. Likes, saves, collections, and taste preferences stay in this browser.
-        Account sign-in will be available when cloud sync is connected.
-      </p>
-    );
+  if (!auth.configured) {
+    return <p className="max-w-xl text-sm leading-7 text-[var(--muted-text)]">Explore freely as a guest. Likes, saves, and collections stay in this browser. Account sign-in is not available yet.</p>;
   }
+  if (auth.status === "loading") return <p role="status" className="text-sm leading-7 text-[var(--muted-text)]">Checking your account…</p>;
 
-  if (checkingSession) return <p role="status" className="mt-8 text-sm text-[var(--muted-text)]">Checking your account…</p>;
-
-  if (accountEmail) {
+  if (auth.status === "authenticated" && auth.user) {
     return (
-      <div className="mt-8 space-y-5">
-        <p className="text-sm text-[var(--secondary-ink)]">Signed in as <strong>{accountEmail}</strong></p>
-        <p className="max-w-xl text-sm leading-7 text-[var(--muted-text)]">Account likes and saves are stored securely. Your recommendation history and Art DNA currently stay on this device.</p>
-        <div className="flex flex-wrap gap-4">
-          <Link href="/discover" className="focus-ring bg-[var(--primary-ink)] px-5 py-4 text-xs uppercase tracking-[0.14em] text-[var(--soft-white)]">Enter the gallery</Link>
-          <button type="button" disabled={busy} onClick={() => void signOut()} className="focus-ring min-h-12 border border-[var(--hairline)] px-5 text-xs uppercase tracking-[0.14em] disabled:opacity-50">{busy ? "Signing out…" : "Sign out"}</button>
+      <div className="space-y-5">
+        <div>
+          <p className="text-[10px] uppercase tracking-[0.18em] text-[var(--muted-text)]">Private account</p>
+          <p className="mt-2 break-words text-sm leading-7 text-[var(--secondary-ink)]">Signed in as <strong className="font-medium">{auth.user.email ?? "an ARTE member"}</strong></p>
         </div>
-        {status ? <p role="status" className="text-sm text-[var(--muted-text)]">{status}</p> : null}
+        {!compact && <p className="max-w-xl text-sm leading-7 text-[var(--muted-text)]">Your saved works, collections, and recent activity are linked to your account. Return on another device to continue exploring your gallery.</p>}
+        <div className="flex flex-wrap items-center gap-x-6 gap-y-3">
+          {!compact && <Link href="/discover" className="focus-ring inline-flex min-h-12 items-center border-b border-[var(--primary-ink)] text-xs uppercase tracking-[0.12em]">Enter the gallery</Link>}
+          <button type="button" disabled={busy} onClick={() => void signOut()} className="focus-ring min-h-12 text-xs text-[var(--muted-text)] underline underline-offset-4 disabled:opacity-50">{busy ? "Signing out…" : "Sign out"}</button>
+        </div>
+        <p className="text-xs leading-6 text-[var(--muted-text)]">Signing out closes your session in this browser. Other devices stay signed in.</p>
+        {status && <p role="status" className="text-sm leading-7 text-[var(--secondary-ink)]">{status}</p>}
       </div>
     );
   }
 
   return (
-    <form onSubmit={submit} className="mt-8 max-w-md space-y-4">
-      <label className="block">
-        <span className="text-xs uppercase tracking-[0.12em] text-[var(--muted-text)]">Email</span>
-        <input
-          type="email"
-          required
-          autoComplete="email"
-          value={email}
-          onChange={(event) => setEmail(event.target.value)}
-          className="mt-2 min-h-12 w-full border border-[var(--hairline)] bg-[var(--soft-white)] px-4 outline-none focus:border-[var(--primary-ink)]"
-        />
-      </label>
-      <button
-        type="submit"
-        disabled={busy}
-        className="focus-ring min-h-12 bg-[var(--primary-ink)] px-5 text-xs uppercase tracking-[0.14em] text-[var(--soft-white)] disabled:opacity-50"
-      >
-        {busy ? "Sending…" : "Send magic link"}
-      </button>
-      {status ? <p role="status" className="text-sm text-[var(--muted-text)]">{status}</p> : null}
-    </form>
+    <div className="max-w-md">
+      {auth.status === "error" && <div id={errorId} role="status" className="mb-5 text-sm leading-7 text-[var(--secondary-ink)]"><p>{auth.error ?? "Your account could not be checked. Please try again."}</p><div className="flex flex-wrap gap-x-5"><button type="button" disabled={busy} onClick={() => void retryAuth()} className="focus-ring min-h-11 underline underline-offset-4">Retry account check</button><button type="button" disabled={busy} onClick={() => void signOut()} className="focus-ring min-h-11 underline underline-offset-4">Use a different account</button></div></div>}
+      <form onSubmit={submit} className="space-y-4" aria-describedby={auth.status === "error" ? errorId : undefined}>
+        <label className="block">
+          <span className="text-xs uppercase tracking-[0.12em] text-[var(--muted-text)]">Email</span>
+          <input type="email" required autoComplete="email" autoCapitalize="none" spellCheck={false} maxLength={254} value={email} disabled={busy}
+            onChange={(event) => setEmail(event.target.value)} aria-describedby={status ? statusId : undefined}
+            className="focus-ring mt-2 min-h-12 w-full border border-[var(--hairline)] bg-[var(--soft-white)] px-4 text-base disabled:opacity-50" />
+        </label>
+        <button type="submit" disabled={busy || secondsRemaining > 0} className="focus-ring min-h-12 border border-[var(--primary-ink)] px-5 text-xs uppercase tracking-[0.12em] disabled:opacity-50">
+          {busy ? "Sending…" : secondsRemaining > 0 ? `Send again in ${secondsRemaining}s` : "Send magic link"}
+        </button>
+        <p className="text-xs leading-6 text-[var(--muted-text)]">A private sign-in link, with no password to remember.</p>
+        {status && <p id={statusId} role="status" className="text-sm leading-7 text-[var(--secondary-ink)]">{status}</p>}
+      </form>
+    </div>
   );
 }
