@@ -54,6 +54,29 @@ try {
 
   const ownerId = await signUpAndIn(ownerClient, "owner");
   const otherId = await signUpAndIn(otherClient, "other");
+  assert.equal((await publicClient.rpc("shared_corridor_page", { p_artwork_id: artworkId })).error?.code, "42501");
+  assert.equal(success(await ownerClient.rpc("shared_corridor_access", { p_artwork_id: artworkId }), "non-cohort gate"), false);
+  assert.equal((await ownerClient.from("early_access_members").insert({ user_id: ownerId })).error?.code, "42501");
+  success(await adminClient.from("early_access_members").insert([{ user_id: ownerId }, { user_id: otherId }]), "provision cohort");
+  assert.equal((await ownerClient.from("shared_corridor_notes").select("*")).error?.code, "42501", "direct REST cannot expose owner IDs");
+  const writeNote = (client, operation, text, work = artworkId) => client.rpc("shared_corridor_write", {
+    p_artwork_id: work, p_operation: operation, p_note_text: text,
+  });
+  const note = success(await writeNote(ownerClient, "create", "A moment of stillness"), "create corridor note");
+  assert.deepEqual(Object.keys(note).sort(), ["createdAt", "id", "isOwn", "noteText", "updatedAt"]);
+  assert.equal((await writeNote(ownerClient, "create", "Duplicate")).error?.code, "23505");
+  const shared = success(await otherClient.rpc("shared_corridor_page", { p_artwork_id: artworkId }), "cohort reads note");
+  assert.equal(shared.notes.find((item) => item.id === note.id)?.isOwn, false);
+  assert.equal((await writeNote(otherClient, "update", "Not mine")).error?.code, "P0404");
+  assert.equal((await writeNote(otherClient, "delete", null)).error?.code, "P0404");
+  success(await writeNote(ownerClient, "update", "Soft and still"), "edit own corridor note");
+  success(await writeNote(ownerClient, "delete", null), "delete own corridor note");
+  const parallel = await Promise.all(artworks.slice(1, 13).map((work) => writeNote(ownerClient, "create", "Quiet light", work.id)));
+  assert.equal(parallel.filter((result) => !result.error).length, 9, "atomic daily cap survives concurrent requests and deletion");
+  assert.equal(parallel.filter((result) => result.error?.code === "P0429").length, 3);
+  success(await adminClient.from("early_access_members").update({ revoked_at: new Date().toISOString() }).eq("user_id", ownerId), "revoke membership");
+  assert.equal((await ownerClient.rpc("shared_corridor_page", { p_artwork_id: artworkId })).error?.code, "42501", "existing session loses access after revocation");
+
   const escalation = await ownerClient.from("profiles").update({ role: "admin" }).eq("id", ownerId);
   assert.equal(escalation.error?.code, "42501", "an owner cannot promote their own role");
 

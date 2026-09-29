@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { SharedCorridorGate } from "@/components/corridor/SharedCorridorGate";
 import { ArtworkActions } from "@/components/artwork/ArtworkActions";
 import { ArtworkRights } from "@/components/artwork/ArtworkRights";
 import { ArtworkVisual } from "@/components/artwork/ArtworkVisual";
@@ -44,6 +45,7 @@ export default async function ArtworkPage({ params }: Props) {
         </aside>
       </div>
       <div className="mx-auto mt-16 max-w-4xl"><ArtworkRights rights={artwork.rights} /></div>
+      {!artwork.isDemo && <SharedCorridorGate artworkId={artwork.id} />}
       <MoreLikeThisPanel source={artwork} groups={relatedGroups} />
     </article>
   );
