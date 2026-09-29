@@ -200,17 +200,39 @@ try {
   await browser?.close().catch(() => {});
   server.kill("SIGTERM");
   const cleanup = [];
-  if (userId) cleanup.push(admin.auth.admin.deleteUser(userId).then((result) => checked(result, "Delete disposable email-test account")));
+  if (userId) cleanup.push({
+    operation: "Delete disposable email-test account",
+    run: async () => {
+      const result = await admin.auth.admin.deleteUser(userId);
+      if (result.error) throw new Error(`Auth cleanup failed (HTTP ${result.error.status ?? "unknown"}, code ${result.error.code ?? "unknown"}): ${result.error.message}`);
+    },
+  });
   if (mailboxKind === "mailpit" && capturedIds.size) {
-    cleanup.push(mailboxRequest("/api/v1/messages", { method: "DELETE", headers: { "content-type": "application/json" }, body: JSON.stringify({ IDs: [...capturedIds] }) })
-      .then((response) => { assert.ok(response.ok(), "Delete only captured test messages"); }));
+    cleanup.push({
+      operation: "Delete captured Mailpit test messages",
+      run: async () => {
+        const response = await mailboxRequest("/api/v1/messages", { method: "DELETE", headers: { "content-type": "application/json" }, body: JSON.stringify({ IDs: [...capturedIds] }) });
+        assert.ok(response.ok, `Mailpit cleanup failed (HTTP ${response.status})`);
+      },
+    });
   } else if (mailboxKind === "inbucket") {
-    cleanup.push(mailboxRequest(`/api/v1/mailbox/${encodeURIComponent(mailboxName)}`, { method: "DELETE" })
-      .then((response) => { assert.ok(response.ok(), "Delete the disposable test mailbox"); }));
+    cleanup.push({
+      operation: "Delete disposable Inbucket test mailbox",
+      run: async () => {
+        const response = await mailboxRequest(`/api/v1/mailbox/${encodeURIComponent(mailboxName)}`, { method: "DELETE" });
+        assert.ok(response.ok, `Inbucket cleanup failed (HTTP ${response.status})`);
+      },
+    });
   }
-  const results = await Promise.allSettled(cleanup);
-  if (results.some((result) => result.status === "rejected")) failure = `${failure ? `${failure}\n` : ""}Local email-test cleanup did not complete`;
-  await writeFile(`${artifacts}/report.json`, JSON.stringify({ checks, mailbox: mailboxKind, uncaughtPageErrors: pageErrorCount, ...(failure ? { failure } : {}) }, null, 2));
+  const results = await Promise.allSettled(cleanup.map(({ run }) => run()));
+  const cleanupResults = results.map((result, index) => ({
+    operation: cleanup[index].operation,
+    status: result.status,
+    ...(result.status === "rejected" ? { error: redact(result.reason instanceof Error ? result.reason.message : result.reason) } : {}),
+  }));
+  const cleanupErrors = cleanupResults.filter((result) => result.status === "rejected").map(({ operation, error }) => `${operation}: ${error}`);
+  if (cleanupErrors.length) failure = [failure, "Local email-test cleanup did not complete", ...cleanupErrors].filter(Boolean).join("\n");
+  await writeFile(`${artifacts}/report.json`, JSON.stringify({ checks, mailbox: mailboxKind, uncaughtPageErrors: pageErrorCount, cleanup: cleanupResults, ...(failure ? { failure } : {}) }, null, 2));
 }
 if (failure) throw new Error(failure);
 console.log(`Real local SMTP and magic-link browser integration passed ${checks.length} release gates.`);
