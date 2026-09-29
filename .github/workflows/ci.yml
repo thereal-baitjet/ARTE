@@ -24,6 +24,13 @@ jobs:
       - run: npm run build
       - run: npx playwright install --with-deps chromium
       - run: npm run test:e2e
+      - name: Build isolated corridor browser fixtures
+        run: npm run build
+        env:
+          NEXT_PUBLIC_SUPABASE_URL: http://127.0.0.1:54321
+          NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY: corridor-test-public-key
+      - name: Verify corridor interactions and accessibility
+        run: npx playwright test --config playwright.corridor.config.ts
       - name: Upload Playwright report
         if: always()
         uses: actions/upload-artifact@v4
