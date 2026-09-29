@@ -1,4 +1,5 @@
 import { createClient, type SupabaseClient } from "@supabase/supabase-js";
+import { fetchWithMagicLinkTimeout } from "../auth/magic-link";
 
 let browserClient: SupabaseClient | null | undefined;
 
@@ -14,6 +15,7 @@ export function getSupabaseBrowserClient(): SupabaseClient | null {
   }
 
   browserClient = createClient(url, publishableKey, {
+    global: { fetch: fetchWithMagicLinkTimeout },
     auth: {
       persistSession: true,
       autoRefreshToken: true,

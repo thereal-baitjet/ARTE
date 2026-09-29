@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { type FormEvent, useEffect, useId, useRef, useState } from "react";
 import { getAuthSnapshot, retryAuth, useAuth } from "@/lib/auth/session";
+import { magicLinkErrorMessage, magicLinkIsUncertain } from "@/lib/auth/magic-link";
 import { getSupabaseBrowserClient } from "@/lib/supabase/client";
 
 export function AuthPanel({ compact = false }: { compact?: boolean }) {
@@ -49,22 +50,33 @@ export function AuthPanel({ compact = false }: { compact?: boolean }) {
     pending.current = true;
     setBusy(true);
     setStatus(null);
-    const identityRevision = getAuthSnapshot().revision;
+    const initialUserId = getAuthSnapshot().user?.id ?? null;
+    const canShowOutcome = () => {
+      const current = getAuthSnapshot();
+      return mounted.current && !(current.status === "authenticated" && current.user?.id !== initialUserId);
+    };
+    const beginCooldown = () => {
+      setCooldownUntil(Date.now() + 60_000);
+      setSecondsRemaining(60);
+    };
+    const showError = (error: unknown) => {
+      setStatus(magicLinkErrorMessage(error));
+      if (magicLinkIsUncertain(error) || (typeof error === "object" && error !== null && "status" in error && error.status === 429)) beginCooldown();
+    };
     try {
       const { error } = await client.auth.signInWithOtp({
         email: email.trim(),
         options: { emailRedirectTo: window.location.origin + "/auth" },
       });
-      if (!mounted.current || getAuthSnapshot().revision !== identityRevision) return;
+      if (!canShowOutcome()) return;
       if (error) {
-        setStatus(error.status === 429 ? "Please wait a moment before requesting another sign-in link." : "Sign-in could not be started. Please try again.");
+        showError(error);
       } else {
         setStatus("Check your email for the sign-in link. You can close this page and return from your email.");
-        setCooldownUntil(Date.now() + 60_000);
-        setSecondsRemaining(60);
+        beginCooldown();
       }
-    } catch {
-      if (mounted.current && getAuthSnapshot().revision === identityRevision) setStatus("Sign-in could not be started. Check your connection and try again.");
+    } catch (error) {
+      if (canShowOutcome()) showError(error);
     } finally {
       pending.current = false;
       if (mounted.current) setBusy(false);
