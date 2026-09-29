@@ -10,6 +10,7 @@ on:
       - "app/api/corridor/**"
       - "lib/corridor/**"
       - "lib/auth/**"
+      - "lib/supabase/**"
       - "lib/account/**"
       - "lib/analytics/**"
       - "components/**"
@@ -30,6 +31,7 @@ on:
       - "app/api/corridor/**"
       - "lib/corridor/**"
       - "lib/auth/**"
+      - "lib/supabase/**"
       - "lib/account/**"
       - "lib/analytics/**"
       - "components/**"
@@ -107,6 +109,24 @@ jobs:
         with:
           name: authenticated-gauntlet
           path: test-results/account-browser/
+          retention-days: 7
+      - name: Verify magic-link email delivery and callback with local SMTP
+        shell: bash
+        run: |
+          eval "$(supabase status -o env)"
+          SUPABASE_URL="$API_URL" \
+          SUPABASE_ANON_KEY="$ANON_KEY" \
+          SUPABASE_SERVICE_ROLE_KEY="$SERVICE_ROLE_KEY" \
+          NEXT_PUBLIC_SUPABASE_URL="$API_URL" \
+          NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY="$ANON_KEY" \
+          SUPABASE_MAILBOX_URL="${MAILPIT_URL:-${INBUCKET_URL:-http://127.0.0.1:54324}}" \
+          node tests/integration/magic-link-local.mjs
+      - name: Upload magic-link browser evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: magic-link-delivery
+          path: test-results/magic-link/
           retention-days: 7
       - name: Re-apply migrations and seed to prove repeatability
         run: supabase db reset --local
