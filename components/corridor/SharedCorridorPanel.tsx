@@ -144,7 +144,7 @@ export default function SharedCorridorPanel({ artworkId, token, onAccessLost }: 
       <p role="status" aria-live="polite" aria-atomic="true" className="mt-4 text-sm leading-6">{busy && own && !editing ? "Saving quietly…" : status}</p>
       {error && <div className="mt-3 text-sm leading-6">
         <p role="status">{error}</p>
-        {!busy && <button className={control} onClick={() => { setLoading(true); setError(""); setPage(null); setRetry((value) => value + 1); }}>Refresh notes</button>}
+        {!busy && <button className={control} onClick={() => { setLoading(true); setError(""); setStatus(""); setEditing(false); setConfirmDelete(false); setPage(null); setRetry((value) => value + 1); }}>Refresh notes</button>}
       </div>}
     </div>
   );
