@@ -14,9 +14,18 @@ type Note = { id: string; noteText: string; isOwn: boolean; createdAt: string; u
 function note(id: string, text: string, own = false): Note {
   return { id, noteText: text, isOwn: own, createdAt: new Date().toISOString(), updatedAt: new Date().toISOString() };
 }
+async function accountBackend(page: Page) {
+  await page.route("http://127.0.0.1:54321/**", (route) => {
+    const path = new URL(route.request().url()).pathname;
+    if (path === "/auth/v1/user") return route.fulfill({ json: session.user });
+    if (path === "/auth/v1/logout") return route.fulfill({ status: 204 });
+    if (path === "/rest/v1/profiles") return route.fulfill({ json: { id: userId, role: "user", personalization_analytics_enabled: true } });
+    return route.fulfill({ json: [] });
+  });
+}
 async function setup(page: Page, signedIn = true, eligible = true) {
   if (signedIn) await page.addInitScript((value) => localStorage.setItem("sb-127-auth-token", JSON.stringify(value)), session);
-  await page.route("http://127.0.0.1:54321/**", (route) => route.fulfill({ json: { ...session.user } }));
+  await accountBackend(page);
   const state = { own: null as Note | null, fail: false, hold: null as (() => void) | null, reads: 0, waiting: false, eligible };
   await page.route("**/api/corridor/**", async (route) => {
     const request = route.request();
@@ -108,7 +117,7 @@ test("signing out in another tab clears private notes", async ({ page, context }
   await page.getByRole("button", { name: gate }).click();
   await expect(page.getByText("Quiet reflection 1")).toBeVisible();
   const otherTab = await context.newPage();
-  await otherTab.route("http://127.0.0.1:54321/**", (route) => route.fulfill({ json: {} }));
+  await accountBackend(otherTab);
   await otherTab.goto("/auth");
   await otherTab.getByRole("button", { name: "Sign out", exact: true }).click();
   await expect(otherTab.getByText("You are signed out.")).toBeVisible();

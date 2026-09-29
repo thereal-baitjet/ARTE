@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useRef, useState, type FormEvent } from "react";
 import { ArtworkCard } from "@/components/artwork/ArtworkCard";
 import { getSupabaseBrowserClient } from "@/lib/supabase/client";
+import { getAuthSnapshot, retryAuth, useAuth } from "@/lib/auth/session";
 import { recordAnalyticsEvent } from "@/lib/analytics/client";
 import type { ArtworkSummary } from "@/lib/artworks/types";
 import {
@@ -16,6 +17,20 @@ const buttonStyle = "focus-ring min-h-11 border border-[var(--hairline)] px-4 te
 const inputStyle = "focus-ring min-h-11 w-full border border-[var(--hairline)] bg-[var(--soft-white)] px-3 text-sm";
 
 export function CollectionsWorkspace({ initialCollectionId = null }: { initialCollectionId?: string | null }) {
+  const auth = useAuth();
+  if (auth.status === "loading" || auth.status === "error") return (
+    <div className="page-shell px-6 py-12 md:px-12 lg:py-20">
+      <p className="text-[10px] uppercase tracking-[0.22em] text-[var(--muted-text)]">Collections</p>
+      <h1 className="display-serif mt-4 text-4xl md:text-6xl">Your visual notebook.</h1>
+      <p role="status" className="mt-8 text-sm leading-7 text-[var(--muted-text)]">{auth.status === "error" ? "Your account could not be checked. Your notebook is still safe." : "Opening your notebook…"}</p>
+      {auth.status === "error" ? <button type="button" className={`${buttonStyle} mt-4`} onClick={retryAuth}>Try again</button> : null}
+    </div>
+  );
+  const userId = auth.status === "authenticated" ? auth.user!.id : null;
+  return <NotebookWorkspace key={userId ?? "guest"} initialCollectionId={initialCollectionId} userId={userId} />;
+}
+
+function NotebookWorkspace({ initialCollectionId, userId }: { initialCollectionId: string | null; userId: string | null }) {
   const [snapshot, setSnapshot] = useState<CollectionSnapshot | null>(null);
   const [selectedId, setSelectedId] = useState<string | null>(initialCollectionId);
   const [name, setName] = useState("");
@@ -37,43 +52,69 @@ export function CollectionsWorkspace({ initialCollectionId = null }: { initialCo
   const [catalogAttempt, setCatalogAttempt] = useState(0);
   const pending = useRef(false);
   const activeOwner = useRef<string | null | undefined>(undefined);
+  const refreshAfterWrite = useRef(false);
+  const broadcast = useRef<BroadcastChannel | null>(null);
+  const selectedRef = useRef(initialCollectionId);
+  const initialized = useRef(false);
+
+  function ensureCurrentOwner() {
+    const auth = getAuthSnapshot();
+    const current = auth.status === "authenticated" ? auth.user?.id : auth.status === "guest" ? null : undefined;
+    if (activeOwner.current !== userId || current !== userId) throw new Error("Your session changed. Please reopen your notebook.");
+  }
 
   useEffect(() => {
     let cancelled = false;
     let version = 0;
     const client = getSupabaseBrowserClient();
     async function hydrate() {
+      if (pending.current) { refreshAfterWrite.current = true; return; }
       const current = ++version;
       activeOwner.current = undefined;
       setSnapshot(null);
       setError(null);
       try {
-        let next: CollectionSnapshot;
-        if (client) {
-          const { data, error: authError } = await client.auth.getUser();
-          if (authError && authError.name !== "AuthSessionMissingError") throw new Error("Your account could not be checked. Please try again.");
-          next = data.user ? await readAccountCollections(client, data.user.id) : readGuestCollections();
-        } else next = readGuestCollections();
+        const next = client && userId ? await readAccountCollections(client, userId) : readGuestCollections();
         if (!cancelled && current === version) {
           activeOwner.current = next.userId;
           setSnapshot(next);
+          if (!initialized.current) {
+            setRename(next.collections.find(({ id }) => id === selectedRef.current)?.name ?? "");
+            initialized.current = true;
+          }
         }
       } catch (cause) {
         if (!cancelled && current === version) setError(cause instanceof Error ? cause.message : "Your collections could not be loaded.");
       }
     }
     void hydrate();
-    const subscription = client?.auth.onAuthStateChange((event) => {
-      if (event === "SIGNED_IN" || event === "SIGNED_OUT") queueMicrotask(() => { if (!cancelled) void hydrate(); });
-    });
     function refreshGuest(event: StorageEvent) {
-      if (event.key === "arte:guest:saves" || event.key === "arte:guest:collections") void hydrate();
+      if (event.key === null || event.key === "arte:guest:saves" || event.key === "arte:guest:collections") void hydrate();
     }
+    const refreshSaves = (event: Event) => {
+      if ((event as CustomEvent<{ origin?: string }>).detail?.origin !== "notebook") void hydrate();
+    };
+    const channels: BroadcastChannel[] = [];
+    try {
+      if (typeof BroadcastChannel !== "undefined") {
+      const collections = new BroadcastChannel("arte:account-collections");
+      collections.onmessage = (event: MessageEvent<{ type?: string }>) => { if (event.data?.type === "invalidate") void hydrate(); };
+      broadcast.current = collections;
+      const interactions = new BroadcastChannel("arte:account-interactions");
+      interactions.onmessage = (event: MessageEvent<{ type?: string; table?: string }>) => { if (event.data?.type === "invalidate" && event.data.table === "saves") void hydrate(); };
+      channels.push(collections, interactions);
+      }
+    } catch { /* The notebook also works when browser messaging is unavailable. */ }
     window.addEventListener("storage", refreshGuest);
-    const refreshSaves = () => { void hydrate(); };
     window.addEventListener("arte:saves-changed", refreshSaves);
-    return () => { cancelled = true; version++; activeOwner.current = undefined; subscription?.data.subscription.unsubscribe(); window.removeEventListener("storage", refreshGuest); window.removeEventListener("arte:saves-changed", refreshSaves); };
-  }, [attempt]);
+    return () => {
+      cancelled = true; version++; activeOwner.current = undefined;
+      for (const channel of channels) channel.close();
+      broadcast.current = null;
+      window.removeEventListener("storage", refreshGuest);
+      window.removeEventListener("arte:saves-changed", refreshSaves);
+    };
+  }, [attempt, userId]);
 
   const selected = snapshot?.collections.find(({ id }) => id === selectedId);
   const missingCollection = Boolean(snapshot && selectedId && !selected);
@@ -128,6 +169,7 @@ export function CollectionsWorkspace({ initialCollectionId = null }: { initialCo
   }, [choiceCursor, catalogAttempt]);
 
   function select(collection?: PrivateCollection) {
+    selectedRef.current = collection?.id ?? null;
     setSelectedId(collection?.id ?? null);
     setPageIndex(0);
     setRename(collection?.name ?? "");
@@ -143,16 +185,24 @@ export function CollectionsWorkspace({ initialCollectionId = null }: { initialCo
     setBusy(true);
     setError(null);
     setMessage(null);
-    try { await operation(); }
-    catch (cause) { setError(cause instanceof Error ? cause.message : "Your change could not be saved. Please try again."); }
-    finally { pending.current = false; setBusy(false); }
+    try { ensureCurrentOwner(); await operation(); }
+    catch (cause) {
+      if (activeOwner.current === userId) setError(cause instanceof Error ? cause.message : "Your change could not be saved. Please try again.");
+    } finally {
+      pending.current = false;
+      if (activeOwner.current === userId) {
+        setBusy(false);
+        if (refreshAfterWrite.current) { refreshAfterWrite.current = false; setAttempt((value) => value + 1); }
+      }
+    }
   }
 
   function updateCollections(collections: PrivateCollection[]) {
     if (!snapshot) return;
-    if (activeOwner.current !== snapshot.userId) throw new Error("Your session changed. Please reload your notebook before making another change.");
+    ensureCurrentOwner();
     if (!snapshot.userId) writeGuestCollections(collections);
     setSnapshot({ ...snapshot, collections });
+    broadcast.current?.postMessage({ type: "invalidate" });
   }
 
   async function create(event: FormEvent<HTMLFormElement>) {
@@ -196,6 +246,7 @@ export function CollectionsWorkspace({ initialCollectionId = null }: { initialCo
   }
 
   async function changeArtwork(artwork: ArtworkSummary, add: boolean) {
+    const revision = getAuthSnapshot().revision;
     await mutate(async () => {
       if (!snapshot) return;
       const client = getSupabaseBrowserClient();
@@ -204,12 +255,14 @@ export function CollectionsWorkspace({ initialCollectionId = null }: { initialCo
         updateCollections(snapshot.collections.map((collection) => collection.id === selected.id ? { ...collection, artworkIds: add ? [...new Set([...collection.artworkIds, artwork.id])] : collection.artworkIds.filter((id) => id !== artwork.id) } : collection));
       } else {
         if (client && snapshot.userId) await removeAccountSave(client, snapshot.userId, artwork.id);
-        if (activeOwner.current !== snapshot.userId) throw new Error("Your session changed. Please reload your notebook before making another change.");
+        ensureCurrentOwner();
         const savedIds = snapshot.savedIds.filter((id) => id !== artwork.id);
         if (!snapshot.userId) writeGuestSaves(savedIds);
         setSnapshot({ ...snapshot, savedIds });
-        window.dispatchEvent(new Event("arte:saves-changed"));
+        window.dispatchEvent(new CustomEvent("arte:saves-changed", { detail: { origin: "notebook" } }));
+        broadcast.current?.postMessage({ type: "invalidate" });
       }
+      if (getAuthSnapshot().revision !== revision) return;
       // Analytics failure must never turn a persisted change into a reported failure.
       try { recordAnalyticsEvent({ eventType: selected ? (add ? "collection_add" : "collection_remove") : "artwork_unsave", artwork, source: "collections" }); } catch { /* Personalization storage may be unavailable. */ }
       setArtworkId("");
@@ -266,7 +319,7 @@ export function CollectionsWorkspace({ initialCollectionId = null }: { initialCo
             {lookupError || choicesError ? <div role="alert" className="mt-6 text-sm"><p>{lookupError || choicesError}</p><button type="button" className={`${buttonStyle} mt-3`} onClick={() => setCatalogAttempt((value) => value + 1)}>Retry artwork loading</button></div> : null}
             {lookupLoading ? <p role="status" className="mt-6 text-sm">Loading the artworks on this page…</p> : null}
             {unavailableCount > 0 ? <p className="mt-6 text-sm text-[var(--muted-text)]">{unavailableCount} {unavailableCount === 1 ? "artwork is" : "artworks are"} currently unavailable in this catalog. Your saved references are retained.</p> : null}
-            {lookupLoading ? null : visibleArtworks.length ? <div className="mt-8 grid gap-x-6 gap-y-10 sm:grid-cols-2 xl:grid-cols-3">{visibleArtworks.map((artwork) => <div key={artwork.id} data-collection-artwork={artwork.id}><ArtworkCard artwork={artwork} /><button type="button" className={`${buttonStyle} mt-4 w-full`} aria-label={`Remove ${artwork.title} from ${selected ? "collection" : "saved artworks"}`} disabled={busy} onClick={() => void changeArtwork(artwork, false)}>{selected ? "Remove from collection" : "Remove from saved"}</button></div>)}</div> : <div className="py-14"><h3 className="display-serif text-2xl">{selected ? "A space for your next discovery." : "Start with a work that moves you."}</h3><p className="mt-3 text-sm leading-7 text-[var(--muted-text)]">{selected ? "Choose an artwork above to begin this collection." : "Tap Save on an artwork in Discover. It will be waiting here."}</p><Link className={`${buttonStyle} mt-6 inline-flex items-center`} href="/discover">Explore artworks</Link></div>}
+            {lookupLoading || lookupError ? null : visibleArtworks.length ? <div className="mt-8 grid gap-x-6 gap-y-10 sm:grid-cols-2 xl:grid-cols-3">{visibleArtworks.map((artwork) => <div key={artwork.id} data-collection-artwork={artwork.id}><ArtworkCard artwork={artwork} /><button type="button" className={`${buttonStyle} mt-4 w-full`} aria-label={`Remove ${artwork.title} from ${selected ? "collection" : "saved artworks"}`} disabled={busy} onClick={() => void changeArtwork(artwork, false)}>{selected ? "Remove from collection" : "Remove from saved"}</button></div>)}</div> : visibleIds.length === 0 ? <div className="py-14"><h3 className="display-serif text-2xl">{selected ? "A space for your next discovery." : "Start with a work that moves you."}</h3><p className="mt-3 text-sm leading-7 text-[var(--muted-text)]">{selected ? "Choose an artwork above to begin this collection." : "Tap Save on an artwork in Discover. It will be waiting here."}</p><Link className={`${buttonStyle} mt-6 inline-flex items-center`} href="/discover">Explore artworks</Link></div> : null}
             {visibleIds.length > 24 ? <nav aria-label="Collection artwork pages" className="mt-8 flex flex-wrap items-center gap-4"><button type="button" className={buttonStyle} disabled={busy || currentPage === 0} onClick={() => setPageIndex((value) => Math.max(0, value - 1))}>Previous artworks</button><span className="text-xs">Page {currentPage + 1} of {Math.ceil(visibleIds.length / 24)}</span><button type="button" className={buttonStyle} disabled={busy || (currentPage + 1) * 24 >= visibleIds.length} onClick={() => setPageIndex(currentPage + 1)}>Next artworks</button></nav> : null}
             </>}
           </section>

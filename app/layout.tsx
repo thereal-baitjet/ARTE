@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Geist } from "next/font/google";
 import "./globals.css";
+import { AccountSession } from "@/components/auth/AccountSession";
 
 const display = Cormorant_Garamond({
   subsets: ["latin"],
@@ -30,7 +31,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${display.variable} ${interfaceFont.variable}`}>
         <a href="#main-content" className="focus-ring sr-only z-[100] bg-[var(--gallery-ivory)] p-4 focus:not-sr-only focus:fixed focus:left-4 focus:top-4">Skip to content</a>
-        {children}
+        <AccountSession>{children}</AccountSession>
       </body>
     </html>
   );

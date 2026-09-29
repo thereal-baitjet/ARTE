@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { getAuthSnapshot } from "@/lib/auth/session";
 import { recordAnalyticsEvent } from "@/lib/analytics/client";
 import type { RecommendedArtwork } from "@/lib/recommendations/types";
 import { ArtworkActions } from "./ArtworkActions";
@@ -13,6 +14,7 @@ export function ArtworkSlide({ artwork, onHide, position }: { artwork: Recommend
   useEffect(() => {
     const visual = visualRef.current;
     if (!visual) return;
+    const revision = getAuthSnapshot().revision;
     let visibleSince: number | null = null;
     let impressionRecorded = false;
     let meaningfullyVisible = false;
@@ -22,13 +24,13 @@ export function ArtworkSlide({ artwork, onHide, position }: { artwork: Recommend
       if (visibleSince === null) return;
       const durationMs = Math.round(performance.now() - visibleSince);
       visibleSince = null;
-      if (durationMs >= 250) {
+      if (durationMs >= 250 && getAuthSnapshot().revision === revision) {
         recordAnalyticsEvent({ eventType: "artwork_dwell", artwork, source: "discover_feed", position, recommendationReason: artwork.recommendation.explanation.text, payload: { durationMs } });
       }
     };
 
     const updateVisibility = () => {
-      if (meaningfullyVisible && document.visibilityState === "visible") {
+      if (meaningfullyVisible && document.visibilityState === "visible" && getAuthSnapshot().revision === revision) {
         if (!impressionRecorded) {
           impressionRecorded = true;
           recordAnalyticsEvent({ eventType: "artwork_impression", artwork, source: "discover_feed", position, recommendationReason: artwork.recommendation.explanation.text });

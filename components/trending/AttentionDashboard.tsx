@@ -3,13 +3,21 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { ArtworkCard } from "@/components/artwork/ArtworkCard";
-import { readHiddenArtworkIds, readStoredEvents } from "@/lib/analytics/client";
+import { readHiddenArtworkIds, readStoredEvents, retryAccountActivity, useActivitySnapshot } from "@/lib/analytics/client";
+import { useAuth } from "@/lib/auth/session";
 import type { ArtworkSummary } from "@/lib/artworks/types";
 import type { AttentionResult } from "@/lib/trending/attention";
 
 type AttentionCard = Omit<AttentionResult, "artwork"> & { artwork: ArtworkSummary };
 
 export function AttentionDashboard() {
+  const auth = useAuth();
+  return <AttentionDashboardView key={auth.revision} />;
+}
+
+function AttentionDashboardView() {
+  const auth = useAuth();
+  const activity = useActivitySnapshot();
   const [ranking, setRanking] = useState<AttentionCard[]>([]);
   const [ready, setReady] = useState(false);
   const [mode, setMode] = useState<"attention" | "saved">("attention");
@@ -26,6 +34,7 @@ export function AttentionDashboard() {
       setError("");
       setReady(false);
       setRanking([]); setTotal(0);
+      if (activity.status !== "ready" || !activity.scope) return;
       try {
         const response = await fetch("/api/attention", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ events: readStoredEvents(), hiddenArtworkIds: readHiddenArtworkIds(), mode }), signal: controller.signal, cache: "no-store" });
         if (!response.ok) throw new Error("Your attention view is temporarily unavailable. Your activity has not changed.");
@@ -46,7 +55,7 @@ export function AttentionDashboard() {
       window.removeEventListener("arte:analytics-reset", notify);
       window.removeEventListener("storage", notify);
     };
-  }, [mode, attempt]);
+  }, [mode, attempt, activity.scope, activity.status]);
   const visible = ranking;
   return (
     <div className="mt-10">
@@ -54,9 +63,10 @@ export function AttentionDashboard() {
         <button type="button" aria-pressed={mode === "attention"} onClick={() => setMode("attention")} className="focus-ring min-h-11 border border-[var(--hairline)] px-5 text-xs uppercase tracking-[0.12em] aria-pressed:bg-[var(--primary-ink)] aria-pressed:text-[var(--soft-white)]">Your attention</button>
         <button type="button" aria-pressed={mode === "saved"} onClick={() => setMode("saved")} className="focus-ring min-h-11 border border-[var(--hairline)] px-5 text-xs uppercase tracking-[0.12em] aria-pressed:bg-[var(--primary-ink)] aria-pressed:text-[var(--soft-white)]">Recently saved</button>
       </div>
+      {activity.status === "error" ? <div role="alert" className="mt-8 text-sm"><p>{activity.error}</p><button type="button" onClick={() => void retryAccountActivity()} className="focus-ring min-h-11 underline">Retry account activity</button></div> : null}
       {error ? <div role="alert" className="mt-8 text-sm"><p>{error}</p><button type="button" onClick={() => setAttempt((value) => value + 1)} className="focus-ring min-h-11 underline">Retry attention view</button></div> : null}
       {ready && total > visible.length ? <p className="mt-5 text-xs text-[var(--muted-text)]">Showing your strongest {visible.length} connections from {total} works with activity.</p> : null}
-      {!ready ? <p role="status" className="mt-10 text-sm">Reading your activity…</p> : visible.length ? (
+      {activity.status === "error" ? null : !ready ? <p role="status" className="mt-10 text-sm">Reading your activity…</p> : visible.length ? (
         <div className="mt-8 grid gap-10 md:grid-cols-2 xl:grid-cols-3">
           {visible.map(({ artwork, score, signals }) => (
             <article key={artwork.id} data-attention-artwork={artwork.id}>
@@ -75,7 +85,7 @@ export function AttentionDashboard() {
       )}
       <details className="mt-12 max-w-3xl border-t border-[var(--hairline)] pt-5 text-sm leading-7 text-[var(--muted-text)]">
         <summary className="focus-ring cursor-pointer">How this view is calculated</summary>
-        <p className="mt-4">We use up to 500 recent events from the last 30 days in this browser. A limited copy is sent to ARTE to calculate this view and is not saved by this calculation. Guest activity is not written to an account database. Saves, likes, shares, details, related works, and time spent contribute different weights. A signal loses half its weight every seven days. Repeated views and detail opens count once per artwork, session, and day; active likes and saves count once per session. Hidden works stay out of this view.</p>
+        <p className="mt-4">We use up to 500 recent signals from the last 30 days {auth.status === "authenticated" ? "from your account activity and saved preferences" : "in this browser"}. A limited copy is sent to ARTE to calculate this view and is not saved by this calculation. Guest activity is not written to an account database. Saves, likes, shares, details, related works, and time spent contribute different weights. A signal loses half its weight every seven days. Repeated views and detail opens count once per artwork, session, and day; active likes and saves count once {auth.status === "authenticated" ? "per account" : "per session"}. Hidden works stay out of this view.</p>
         <p className="mt-3">This is personal attention, not a platform popularity chart or a measure of artistic quality. Paused or reset history can make this view incomplete.</p>
       </details>
     </div>

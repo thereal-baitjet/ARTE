@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { ArtworkCard } from "@/components/artwork/ArtworkCard";
+import { getAuthSnapshot } from "@/lib/auth/session";
 import { recordAnalyticsEvent } from "@/lib/analytics/client";
 import { EMPTY_SEARCH_FILTERS, MAX_SEARCH_LENGTH, searchStateToParams, type SearchFacets, type SearchFilters, type SearchPageResponse, type SearchState } from "@/lib/search/state";
 
@@ -34,6 +35,7 @@ export function ArtworkSearch({ initialPage, facets }: { initialPage: SearchPage
   useEffect(() => () => requestRef.current?.abort(), []);
 
   async function requestPage(nextState: SearchState, cursor: string | null = null) {
+    const authRevision = getAuthSnapshot().revision;
     requestRef.current?.abort();
     const controller = new AbortController();
     requestRef.current = controller;
@@ -58,7 +60,7 @@ export function ArtworkSearch({ initialPage, facets }: { initialPage: SearchPage
         const known = new Set(current.results.map(({ artwork }) => artwork.id));
         return { ...nextPage, results: [...current.results, ...nextPage.results.filter(({ artwork }) => !known.has(artwork.id))] };
       });
-      if (!cursor) recordAnalyticsEvent({ eventType: "search_query", source: "catalog_search", payload: { query: nextPage.state.query, ...nextPage.state.filters, resultCount: nextPage.total } });
+      if (!cursor && getAuthSnapshot().revision === authRevision) recordAnalyticsEvent({ eventType: "search_query", source: "catalog_search", payload: { query: nextPage.state.query, ...nextPage.state.filters, resultCount: nextPage.total } });
     } catch (cause) {
       if (controller.signal.aborted || requestRef.current !== controller) return;
       setError({ state: nextState, cursor: retryCursor, message: cause instanceof Error && !(cause instanceof TypeError) ? cause.message : "Search could not be loaded. Please try again." });
