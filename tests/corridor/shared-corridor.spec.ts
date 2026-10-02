@@ -26,10 +26,10 @@ async function accountBackend(page: Page) {
 async function setup(page: Page, signedIn = true, eligible = true) {
   if (signedIn) await page.addInitScript((value) => localStorage.setItem("sb-127-auth-token", JSON.stringify(value)), session);
   await accountBackend(page);
-  const state = { own: null as Note | null, fail: false, hold: null as (() => void) | null, reads: 0, waiting: false, eligible };
+  const state = { own: null as Note | null, fail: false, hold: null as (() => void) | null, reads: 0, accessReads: 0, waiting: false, eligible };
   await page.route("**/api/corridor/**", async (route) => {
     const request = route.request();
-    if (request.url().includes("access=1")) { await route.fulfill({ json: { eligible: state.eligible } }); return; }
+    if (request.url().includes("access=1")) { state.accessReads++; await route.fulfill({ json: { eligible: state.eligible } }); return; }
     if (request.method() === "GET") {
       state.reads++;
       const more = request.url().includes("cursor=");
@@ -60,6 +60,46 @@ test("regular authenticated member has no feature", async ({ page }) => {
   await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
   await expect(page.getByRole("button", { name: gate })).toHaveCount(0);
 });
+
+test("an early-access member can find the guestbook from account and Discover", async ({ page }) => {
+  const state = await setup(page);
+  await expect(page.getByText("Shared Corridor · Private guestbook", { exact: true })).toBeVisible();
+  expect(state.reads).toBe(0);
+  await page.goto("/profile");
+  const accountEntry = page.getByRole("link", { name: /Shared Corridor.*private guestbook/ });
+  await expect(accountEntry).toBeVisible();
+  await expect(accountEntry).toHaveAttribute("href", `/artwork/${work.slug}#shared-corridor`);
+  await accountEntry.click();
+  await expect(page.getByRole("button", { name: gate })).toHaveAttribute("aria-expanded", "false");
+  await page.getByRole("button", { name: gate }).click();
+  await expect(page.getByRole("textbox", { name: "A thought to leave here" })).toBeVisible();
+  await page.goto("/discover");
+  const firstArtwork = page.locator("article[data-artwork-id]").first();
+  const feedEntry = firstArtwork.getByRole("link", { name: "Open the Shared Corridor guestbook", exact: true });
+  await firstArtwork.locator("aside").scrollIntoViewIfNeeded();
+  await expect(feedEntry).toBeVisible();
+  await expect(feedEntry).toHaveAttribute("href", new RegExp("^/artwork/.+#shared-corridor$"));
+  const noteReads = state.reads;
+  await feedEntry.click();
+  await expect(page.getByRole("button", { name: gate })).toHaveAttribute("aria-expanded", "false");
+  expect(state.reads, "navigation alone does not load private notes").toBe(noteReads);
+});
+
+for (const signedIn of [false, true]) {
+  test(`${signedIn ? "non-cohort members" : "guests"} have no guestbook entry on account or Discover`, async ({ page }) => {
+    const state = await setup(page, signedIn, false);
+    await page.goto("/profile");
+    await expect(page.getByRole("heading", { name: "A gallery of your own." })).toBeVisible();
+    await expect(page.getByRole("link", { name: /Shared Corridor/ })).toHaveCount(0);
+    await page.goto("/discover");
+    await expect(async () => {
+      await page.locator("article[data-artwork-id]").first().locator("aside").scrollIntoViewIfNeeded();
+    }).toPass({ timeout: 5_000 });
+    await expect(page.getByRole("link", { name: "Open the Shared Corridor guestbook", exact: true })).toHaveCount(0);
+    expect(state.reads).toBe(0);
+    if (!signedIn) expect(state.accessReads).toBe(0);
+  });
+}
 test("member can create optimistically, edit, paginate and delete on mobile", async ({ page }, info) => {
   await page.setViewportSize({ width: 375, height: 812 });
   const errors: string[] = [];

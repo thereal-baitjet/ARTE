@@ -2,6 +2,7 @@ import { createClient } from "@supabase/supabase-js";
 import { bearerToken } from "@/lib/admin/validation";
 import { ActivityRequestError, readBoundedJson } from "@/lib/activity/request";
 import { isUuid, noteText, parseCursor } from "@/lib/corridor/validation";
+import { CorridorContractError, corridorEligibility, corridorNote, corridorPage } from "@/lib/corridor/contracts";
 
 type Context = { params: Promise<{ artworkId: string }> };
 const reply = (body: unknown, status = 200) => Response.json(body, {
@@ -17,6 +18,13 @@ const errors: Record<string, [number, string]> = {
   "22023": [400, "Please refresh and try again."],
 };
 
+function rpcError(error: { code?: string }, operation: string) {
+  const code = error.code ?? "unknown";
+  const [status, message] = errors[code] ?? [503, "The Shared Corridor is resting. Please try again shortly."];
+  if (status === 503) console.error("[corridor] database request failed", { operation, code });
+  return reply({ error: message }, status);
+}
+
 async function handle(request: Request, context: Context) {
   const token = bearerToken(request.headers.get("authorization"));
   if (!token) return reply({ error: "Please sign in again." }, 401);
@@ -31,11 +39,13 @@ async function handle(request: Request, context: Context) {
     const user = await client.auth.getUser(token);
     if (user.error || !user.data.user) return reply({ error: "Please sign in again." }, 401);
     const search = new URL(request.url).searchParams;
+    const access = await client.rpc("shared_corridor_access", { p_artwork_id: artworkId });
+    if (access.error) return rpcError(access.error, "access");
+    const eligible = corridorEligibility(access.data);
+    if (request.method === "GET" && search.get("access") === "1") return reply({ eligible });
+    if (!eligible) return reply({ error: "The Shared Corridor is unavailable." }, 403);
     let result;
-    if (request.method === "GET" && search.get("access") === "1") {
-      result = await client.rpc("shared_corridor_access", { p_artwork_id: artworkId });
-      if (!result.error) return reply({ eligible: result.data === true });
-    } else if (request.method === "GET") {
+    if (request.method === "GET") {
       let cursor;
       try { cursor = parseCursor(search.get("cursor")); } catch { return reply({ error: "Please refresh and try again." }, 400); }
       result = await client.rpc("shared_corridor_page", { p_artwork_id: artworkId, p_before: cursor?.createdAt ?? null, p_before_id: cursor?.id ?? null });
@@ -48,12 +58,19 @@ async function handle(request: Request, context: Context) {
       result = await client.rpc("shared_corridor_write", { p_artwork_id: artworkId,
         p_operation: request.method === "POST" ? "create" : request.method === "PATCH" ? "update" : "delete", p_note_text: text });
     }
-    if (result.error) {
-      const [status, message] = errors[result.error.code] ?? [503, "The Shared Corridor is resting. Please try again shortly."];
-      return reply({ error: message }, status);
-    }
-    return reply(result.data);
-  } catch { return reply({ error: "The Shared Corridor is resting. Please try again shortly." }, 503); }
+    if (result.error) return rpcError(result.error, request.method);
+    if (request.method === "GET") return reply(corridorPage(result.data));
+    if (request.method === "DELETE") return reply(null);
+    const saved = corridorNote(result.data);
+    if (!saved.isOwn) throw new CorridorContractError("write");
+    return reply(saved);
+  } catch (error) {
+    console.error("[corridor] request unavailable", {
+      operation: error instanceof CorridorContractError ? error.operation : request.method,
+      code: error instanceof CorridorContractError ? "invalid_response" : "request_failed",
+    });
+    return reply({ error: "The Shared Corridor is resting. Please try again shortly." }, 503);
+  }
 }
 export const GET = handle;
 export const POST = handle;
