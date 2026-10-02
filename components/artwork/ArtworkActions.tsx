@@ -5,6 +5,7 @@ import { useState } from "react";
 import { recordAnalyticsEvent } from "@/lib/analytics/client";
 import { useInteraction } from "@/lib/account/interactions";
 import { getAuthSnapshot } from "@/lib/auth/session";
+import { SharedCorridorEntry } from "@/components/corridor/SharedCorridorEntry";
 import type { Artwork } from "@/lib/artworks/types";
 import type { RecommendedArtwork } from "@/lib/recommendations/types";
 
@@ -89,6 +90,7 @@ export function ArtworkActions({ artwork, onHide, context = "feed", position }: 
           <Link href={`/artwork/${artwork.slug}`} onClick={() => recordAnalyticsEvent({ eventType: "artwork_detail_open", artwork, source, position, recommendationReason: reason })} className="focus-ring flex min-h-11 items-center justify-center border-b border-[var(--primary-ink)] text-center text-[11px] uppercase tracking-[0.12em]">View artwork</Link>
         </div>
       ) : null}
+      {context === "feed" && !artwork.isDemo && <SharedCorridorEntry artworkId={artwork.id} artworkSlug={artwork.slug} />}
       {onHide ? (
         <button type="button" onClick={() => { recordAnalyticsEvent({ eventType: "artwork_hide", artwork, source, position, recommendationReason: reason }); onHide(); }} className="focus-ring min-h-11 w-full text-[11px] uppercase tracking-[0.12em] text-[var(--muted-text)]">Hide / Not for me</button>
       ) : null}

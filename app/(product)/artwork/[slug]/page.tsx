@@ -42,10 +42,10 @@ export default async function ArtworkPage({ params }: Props) {
           <p className="mt-7 text-sm leading-7 text-[var(--secondary-ink)]">{artwork.description}</p>
           {artwork.museum ? <p className="mt-5 text-xs leading-6 text-[var(--muted-text)]">Collection: <a className="focus-ring underline underline-offset-4" href={artwork.museum.url}>{artwork.museum.name}</a>, {artwork.museum.city}. This work is presented for discovery and is not offered for sale.</p> : null}
           <ArtworkActions artwork={artwork} context="detail" />
+          {!artwork.isDemo && <SharedCorridorGate artworkId={artwork.id} />}
         </aside>
       </div>
       <div className="mx-auto mt-16 max-w-4xl"><ArtworkRights rights={artwork.rights} /></div>
-      {!artwork.isDemo && <SharedCorridorGate artworkId={artwork.id} />}
       <MoreLikeThisPanel source={artwork} groups={relatedGroups} />
     </article>
   );

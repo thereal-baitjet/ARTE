@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useAuth } from "@/lib/auth/session";
 import { AuthPanel } from "./AuthPanel";
+import { SharedCorridorEntry } from "@/components/corridor/SharedCorridorEntry";
 
 const destinations = [
   ["Your collections", "/collections", "Return to the works you saved. Arrange them into private collections."],
@@ -11,7 +12,7 @@ const destinations = [
   ["Privacy & settings", "/settings", "Manage your session, activity, and recommendation history."],
 ] as const;
 
-export function AccountOverview() {
+export function AccountOverview({ corridorArtwork }: { corridorArtwork: { id: string; slug: string } }) {
   const auth = useAuth();
   const signedIn = auth.status === "authenticated";
   return (
@@ -21,6 +22,7 @@ export function AccountOverview() {
       <p className="mt-6 max-w-2xl text-base leading-8 text-[var(--secondary-ink)]">{signedIn ? "A private place for the works you want to return to. Follow your curiosity, at your own pace." : "Keep a little of what moves you. Explore freely, save discoveries, and make space for your own way of seeing."}</p>
       <div className="mt-10 border-y border-[var(--hairline)] py-7 md:py-8"><AuthPanel compact /></div>
       <nav aria-label="Your gallery" className="mt-10 grid gap-x-12 gap-y-8 sm:grid-cols-2">
+        <SharedCorridorEntry artworkId={corridorArtwork.id} artworkSlug={corridorArtwork.slug} location="account" />
         {destinations.map(([label, href, detail]) => <Link href={href} key={href} className="focus-ring block min-h-32 border-b border-[var(--hairline)] pb-7">
           <h2 className="display-serif text-3xl">{label} <span aria-hidden="true" className="ml-2 text-lg text-[var(--muted-text)]">↗</span></h2>
           <p className="mt-3 max-w-sm text-sm leading-7 text-[var(--muted-text)]">{detail}</p>

@@ -2,6 +2,8 @@
 
 Private, anonymous notes on published, non-synthetic public-domain works. The artwork page remains static. A client-only gate verifies the current session and membership; the note bundle and six-note page load only when the member opens the corridor.
 
+Eligible members can open the guestbook from **Your ARTE**, from a visible **Discover** artwork, or directly from the artwork page. The detail control sits beside the artwork actions, before the rights information, and stays collapsed until selected. Guests and non-members receive no guestbook entry. Discover checks eligibility only near the viewport; entering an artwork does not load notes until its guestbook is opened.
+
 ## Enable
 
 1. Apply `supabase/migrations/20260929140000_shared_corridor.sql` to the same Supabase project used by ARTE.
@@ -15,6 +17,14 @@ on conflict (user_id) do update set revoked_at = null, expires_at = null;
 ```
 
 No accounts are enrolled by the migration. Signup metadata and profile roles do not grant access. Never expose a service-role key in the browser or use it for corridor API requests.
+
+The static catalog also needs its corresponding published, non-synthetic public-domain database records with matching UUIDs. Verify the reviewed catalog import separately; never reset a production database to seed it. Run the read-only deployment preflight with the application's public Supabase environment variables:
+
+```sh
+node --experimental-strip-types scripts/check-corridor-production.mjs
+```
+
+The preflight checks a real catalog work and anonymous RPC denial. It does not establish membership or a successful signed-in journey. The API supports boolean and explicit one-row `has_access` eligibility responses, validates note/page contracts, strips unexpected metadata, and logs only operation/error codes when a contract or database request fails. It never coerces malformed access values into membership.
 
 To revoke a membership:
 
